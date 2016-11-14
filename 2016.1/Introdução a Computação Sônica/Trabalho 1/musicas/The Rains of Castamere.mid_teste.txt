@@ -1,0 +1,2776 @@
+
+------------------------------------------
+--- Arquivo Midi: musicas/The Rains of Castamere.mid
+------------------------------------------
+resolução            = 384 tiques   (número de divisões da semínima)
+duração              = 86 s
+número de tiques     = 48634
+duração do tique     = 0.0017683102 s
+duração da semínima  = 0.67903113 s
+total de seminimas   = 126
+andamento            = 88 bpm
+------------------------------------------
+
+
+------------------------------------------
+--- Conteúdo da sequência:
+------------------------------------------
+
+------------------------------------------
+--- Início da trilha nº 0
+------------------------------------------
+Fórmula de Compasso: 4:4
+Tonalidade         : 
+Texto              : 
+------------------------------------------
+Trilha nº 0
+Evento nº 0
+	Mensagem: Mensagem Meta
+		Byte 1 => 88
+		Byte 2 => 4
+		Byte 3 => 4
+		Byte 4 => 2
+		Byte 5 => 36
+		Byte 6 => 8
+	Instante: 0,00000 s
+------------------------------------------
+Trilha nº 0
+Evento nº 1
+	Mensagem: Mensagem Meta
+		Byte 1 => 127
+		Byte 2 => 10
+		Byte 3 => 83
+		Byte 4 => 97
+		Byte 5 => 109
+		Byte 6 => 112
+		Byte 7 => 108
+		Byte 8 => 105
+		Byte 9 => 116
+		Byte 10 => 117
+		Byte 11 => 100
+		Byte 12 => 101
+	Instante: 0,00000 s
+------------------------------------------
+Trilha nº 0
+Evento nº 2
+	Mensagem: Mensagem Meta
+		Byte 1 => 3
+		Byte 2 => 9
+		Byte 3 => 77
+		Byte 4 => 101
+		Byte 5 => 116
+		Byte 6 => 97
+		Byte 7 => 84
+		Byte 8 => 114
+		Byte 9 => 97
+		Byte 10 => 99
+		Byte 11 => 107
+	Instante: 0,00000 s
+------------------------------------------
+Trilha nº 0
+Evento nº 3
+	Mensagem: Mensagem Meta
+		Byte 1 => 81
+		Byte 2 => 3
+		Byte 3 => 10
+		Byte 4 => 103
+		Byte 5 => 90
+	Instante: 0,00000 s
+------------------------------------------
+Trilha nº 0
+Evento nº 4
+	Mensagem: Mensagem Meta
+		Byte 1 => 47
+		Byte 2 => 0
+	Instante: 86,00000 s
+------------------------------------------
+
+------------------------------------------
+--- Início da trilha nº 1
+------------------------------------------
+Tonalidade         : --
+Texto              : --
+------------------------------------------
+Trilha nº 1
+Evento nº 0
+	Mensagem: Mensagem Meta
+		Byte 1 => 3
+		Byte 2 => 5
+		Byte 3 => 83
+		Byte 4 => 58
+		Byte 5 => 32
+		Byte 6 => 32
+		Byte 7 => 49
+	Instante: 0,00000 s
+------------------------------------------
+Trilha nº 1
+Evento nº 1
+	Mensagem: Program Change
+		Byte 1 => 0
+	Instante: 0,00000 s
+------------------------------------------
+Trilha nº 1
+Evento nº 2
+	Mensagem: Control Change
+		Byte 1 => 7
+		Byte 2 => 100
+	Instante: 0,00354 s
+------------------------------------------
+Trilha nº 1
+Evento nº 3
+	Mensagem: Control Change
+		Byte 1 => 10
+		Byte 2 => 64
+	Instante: 0,00530 s
+------------------------------------------
+Trilha nº 1
+Evento nº 4
+	Mensagem: Control Change
+		Byte 1 => 91
+		Byte 2 => 30
+	Instante: 0,00884 s
+------------------------------------------
+Trilha nº 1
+Evento nº 5
+	Mensagem: Control Change
+		Byte 1 => 93
+		Byte 2 => 30
+	Instante: 0,01061 s
+------------------------------------------
+Trilha nº 1
+Evento nº 6
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 2,03709 s
+------------------------------------------
+Trilha nº 1
+Evento nº 7
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 2,71436 s
+------------------------------------------
+Trilha nº 1
+Evento nº 8
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 2,71612 s
+------------------------------------------
+Trilha nº 1
+Evento nº 9
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 3,73290 s
+------------------------------------------
+Trilha nº 1
+Evento nº 10
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 3,73467 s
+------------------------------------------
+Trilha nº 1
+Evento nº 11
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 4,07242 s
+------------------------------------------
+Trilha nº 1
+Evento nº 12
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 4,07419 s
+------------------------------------------
+Trilha nº 1
+Evento nº 13
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 5,09097 s
+------------------------------------------
+Trilha nº 1
+Evento nº 14
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 5,09273 s
+------------------------------------------
+Trilha nº 1
+Evento nº 15
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 5,43048 s
+------------------------------------------
+Trilha nº 1
+Evento nº 16
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 5,43225 s
+------------------------------------------
+Trilha nº 1
+Evento nº 17
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 6,10951 s
+------------------------------------------
+Trilha nº 1
+Evento nº 18
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 6,11128 s
+------------------------------------------
+Trilha nº 1
+Evento nº 19
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 6,78854 s
+------------------------------------------
+Trilha nº 1
+Evento nº 20
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 6,79031 s
+------------------------------------------
+Trilha nº 1
+Evento nº 21
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 7,80709 s
+------------------------------------------
+Trilha nº 1
+Evento nº 22
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 7,80886 s
+------------------------------------------
+Trilha nº 1
+Evento nº 23
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 8,14661 s
+------------------------------------------
+Trilha nº 1
+Evento nº 24
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 8,14837 s
+------------------------------------------
+Trilha nº 1
+Evento nº 25
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 8,82564 s
+------------------------------------------
+Trilha nº 1
+Evento nº 26
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 8,82740 s
+------------------------------------------
+Trilha nº 1
+Evento nº 27
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 9,50467 s
+------------------------------------------
+Trilha nº 1
+Evento nº 28
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 9,50644 s
+------------------------------------------
+Trilha nº 1
+Evento nº 29
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 10,18370 s
+------------------------------------------
+Trilha nº 1
+Evento nº 30
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 10,18547 s
+------------------------------------------
+Trilha nº 1
+Evento nº 31
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 10,86273 s
+------------------------------------------
+Trilha nº 1
+Evento nº 32
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 10,86450 s
+------------------------------------------
+Trilha nº 1
+Evento nº 33
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 13,57885 s
+------------------------------------------
+Trilha nº 1
+Evento nº 34
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 13,58062 s
+------------------------------------------
+Trilha nº 1
+Evento nº 35
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 13,91837 s
+------------------------------------------
+Trilha nº 1
+Evento nº 36
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 13,92014 s
+------------------------------------------
+Trilha nº 1
+Evento nº 37
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 14,59740 s
+------------------------------------------
+Trilha nº 1
+Evento nº 38
+	Mensagem: Note ON
+		Byte 1 => 70
+		Byte 2 => 80
+	Instante: 14,59917 s
+------------------------------------------
+Trilha nº 1
+Evento nº 39
+	Mensagem: Note OFF
+		Byte 1 => 70
+		Byte 2 => 0
+	Instante: 14,93692 s
+------------------------------------------
+Trilha nº 1
+Evento nº 40
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 14,93868 s
+------------------------------------------
+Trilha nº 1
+Evento nº 41
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 15,61595 s
+------------------------------------------
+Trilha nº 1
+Evento nº 42
+	Mensagem: Note ON
+		Byte 1 => 60
+		Byte 2 => 80
+	Instante: 15,61772 s
+------------------------------------------
+Trilha nº 1
+Evento nº 43
+	Mensagem: Note OFF
+		Byte 1 => 60
+		Byte 2 => 0
+	Instante: 15,95546 s
+------------------------------------------
+Trilha nº 1
+Evento nº 44
+	Mensagem: Note ON
+		Byte 1 => 60
+		Byte 2 => 80
+	Instante: 15,95723 s
+------------------------------------------
+Trilha nº 1
+Evento nº 45
+	Mensagem: Note OFF
+		Byte 1 => 60
+		Byte 2 => 0
+	Instante: 16,29498 s
+------------------------------------------
+Trilha nº 1
+Evento nº 46
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 16,29675 s
+------------------------------------------
+Trilha nº 1
+Evento nº 47
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 16,97401 s
+------------------------------------------
+Trilha nº 1
+Evento nº 48
+	Mensagem: Note ON
+		Byte 1 => 70
+		Byte 2 => 80
+	Instante: 16,97578 s
+------------------------------------------
+Trilha nº 1
+Evento nº 49
+	Mensagem: Note OFF
+		Byte 1 => 70
+		Byte 2 => 0
+	Instante: 17,65304 s
+------------------------------------------
+Trilha nº 1
+Evento nº 50
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 17,65481 s
+------------------------------------------
+Trilha nº 1
+Evento nº 51
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 18,67159 s
+------------------------------------------
+Trilha nº 1
+Evento nº 52
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 18,67336 s
+------------------------------------------
+Trilha nº 1
+Evento nº 53
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 19,01110 s
+------------------------------------------
+Trilha nº 1
+Evento nº 54
+	Mensagem: Note ON
+		Byte 1 => 70
+		Byte 2 => 80
+	Instante: 19,01287 s
+------------------------------------------
+Trilha nº 1
+Evento nº 55
+	Mensagem: Note OFF
+		Byte 1 => 70
+		Byte 2 => 0
+	Instante: 19,69013 s
+------------------------------------------
+Trilha nº 1
+Evento nº 56
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 19,69190 s
+------------------------------------------
+Trilha nº 1
+Evento nº 57
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 20,36917 s
+------------------------------------------
+Trilha nº 1
+Evento nº 58
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 20,37093 s
+------------------------------------------
+Trilha nº 1
+Evento nº 59
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 21,04820 s
+------------------------------------------
+Trilha nº 1
+Evento nº 60
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 21,04996 s
+------------------------------------------
+Trilha nº 1
+Evento nº 61
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 21,72723 s
+------------------------------------------
+Trilha nº 1
+Evento nº 62
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 21,72900 s
+------------------------------------------
+Trilha nº 1
+Evento nº 63
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 23,76432 s
+------------------------------------------
+Trilha nº 1
+Evento nº 64
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 24,10560 s
+------------------------------------------
+Trilha nº 1
+Evento nº 65
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 24,44335 s
+------------------------------------------
+Trilha nº 1
+Evento nº 66
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 24,44512 s
+------------------------------------------
+Trilha nº 1
+Evento nº 67
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 25,46190 s
+------------------------------------------
+Trilha nº 1
+Evento nº 68
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 25,46367 s
+------------------------------------------
+Trilha nº 1
+Evento nº 69
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 25,80141 s
+------------------------------------------
+Trilha nº 1
+Evento nº 70
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 25,80318 s
+------------------------------------------
+Trilha nº 1
+Evento nº 71
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 26,81996 s
+------------------------------------------
+Trilha nº 1
+Evento nº 72
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 26,82173 s
+------------------------------------------
+Trilha nº 1
+Evento nº 73
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 27,15948 s
+------------------------------------------
+Trilha nº 1
+Evento nº 74
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 27,16125 s
+------------------------------------------
+Trilha nº 1
+Evento nº 75
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 27,83851 s
+------------------------------------------
+Trilha nº 1
+Evento nº 76
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 27,84028 s
+------------------------------------------
+Trilha nº 1
+Evento nº 77
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 28,51754 s
+------------------------------------------
+Trilha nº 1
+Evento nº 78
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 28,51931 s
+------------------------------------------
+Trilha nº 1
+Evento nº 79
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 29,53609 s
+------------------------------------------
+Trilha nº 1
+Evento nº 80
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 29,53785 s
+------------------------------------------
+Trilha nº 1
+Evento nº 81
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 29,87560 s
+------------------------------------------
+Trilha nº 1
+Evento nº 82
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 29,87737 s
+------------------------------------------
+Trilha nº 1
+Evento nº 83
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 30,55463 s
+------------------------------------------
+Trilha nº 1
+Evento nº 84
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 30,55640 s
+------------------------------------------
+Trilha nº 1
+Evento nº 85
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 31,23366 s
+------------------------------------------
+Trilha nº 1
+Evento nº 86
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 31,23543 s
+------------------------------------------
+Trilha nº 1
+Evento nº 87
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 31,91269 s
+------------------------------------------
+Trilha nº 1
+Evento nº 88
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 31,91446 s
+------------------------------------------
+Trilha nº 1
+Evento nº 89
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 32,59172 s
+------------------------------------------
+Trilha nº 1
+Evento nº 90
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 32,59349 s
+------------------------------------------
+Trilha nº 1
+Evento nº 91
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 34,62882 s
+------------------------------------------
+Trilha nº 1
+Evento nº 92
+	Mensagem: Note ON
+		Byte 1 => 60
+		Byte 2 => 80
+	Instante: 34,63059 s
+------------------------------------------
+Trilha nº 1
+Evento nº 93
+	Mensagem: Note OFF
+		Byte 1 => 60
+		Byte 2 => 0
+	Instante: 35,30785 s
+------------------------------------------
+Trilha nº 1
+Evento nº 94
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 35,30962 s
+------------------------------------------
+Trilha nº 1
+Evento nº 95
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 36,32640 s
+------------------------------------------
+Trilha nº 1
+Evento nº 96
+	Mensagem: Note ON
+		Byte 1 => 70
+		Byte 2 => 80
+	Instante: 36,32816 s
+------------------------------------------
+Trilha nº 1
+Evento nº 97
+	Mensagem: Note OFF
+		Byte 1 => 70
+		Byte 2 => 0
+	Instante: 36,66591 s
+------------------------------------------
+Trilha nº 1
+Evento nº 98
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 36,66768 s
+------------------------------------------
+Trilha nº 1
+Evento nº 99
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 37,68446 s
+------------------------------------------
+Trilha nº 1
+Evento nº 100
+	Mensagem: Note ON
+		Byte 1 => 60
+		Byte 2 => 80
+	Instante: 37,68623 s
+------------------------------------------
+Trilha nº 1
+Evento nº 101
+	Mensagem: Note OFF
+		Byte 1 => 60
+		Byte 2 => 0
+	Instante: 38,02398 s
+------------------------------------------
+Trilha nº 1
+Evento nº 102
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 38,02574 s
+------------------------------------------
+Trilha nº 1
+Evento nº 103
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 38,70301 s
+------------------------------------------
+Trilha nº 1
+Evento nº 104
+	Mensagem: Note ON
+		Byte 1 => 70
+		Byte 2 => 80
+	Instante: 38,70477 s
+------------------------------------------
+Trilha nº 1
+Evento nº 105
+	Mensagem: Note OFF
+		Byte 1 => 70
+		Byte 2 => 0
+	Instante: 39,38204 s
+------------------------------------------
+Trilha nº 1
+Evento nº 106
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 39,38380 s
+------------------------------------------
+Trilha nº 1
+Evento nº 107
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 40,40058 s
+------------------------------------------
+Trilha nº 1
+Evento nº 108
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 40,40235 s
+------------------------------------------
+Trilha nº 1
+Evento nº 109
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 40,74010 s
+------------------------------------------
+Trilha nº 1
+Evento nº 110
+	Mensagem: Note ON
+		Byte 1 => 70
+		Byte 2 => 80
+	Instante: 40,74187 s
+------------------------------------------
+Trilha nº 1
+Evento nº 111
+	Mensagem: Note OFF
+		Byte 1 => 70
+		Byte 2 => 0
+	Instante: 41,41913 s
+------------------------------------------
+Trilha nº 1
+Evento nº 112
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 41,42090 s
+------------------------------------------
+Trilha nº 1
+Evento nº 113
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 42,09816 s
+------------------------------------------
+Trilha nº 1
+Evento nº 114
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 42,09993 s
+------------------------------------------
+Trilha nº 1
+Evento nº 115
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 42,77719 s
+------------------------------------------
+Trilha nº 1
+Evento nº 116
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 42,77896 s
+------------------------------------------
+Trilha nº 1
+Evento nº 117
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 43,45622 s
+------------------------------------------
+Trilha nº 1
+Evento nº 118
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 43,45799 s
+------------------------------------------
+Trilha nº 1
+Evento nº 119
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 46,17235 s
+------------------------------------------
+Trilha nº 1
+Evento nº 120
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 48,21121 s
+------------------------------------------
+Trilha nº 1
+Evento nº 121
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 48,88847 s
+------------------------------------------
+Trilha nº 1
+Evento nº 122
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 48,89024 s
+------------------------------------------
+Trilha nº 1
+Evento nº 123
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 49,22799 s
+------------------------------------------
+Trilha nº 1
+Evento nº 124
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 49,22976 s
+------------------------------------------
+Trilha nº 1
+Evento nº 125
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 49,56750 s
+------------------------------------------
+Trilha nº 1
+Evento nº 126
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 49,56927 s
+------------------------------------------
+Trilha nº 1
+Evento nº 127
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 50,92556 s
+------------------------------------------
+Trilha nº 1
+Evento nº 128
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 50,92733 s
+------------------------------------------
+Trilha nº 1
+Evento nº 129
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 51,60460 s
+------------------------------------------
+Trilha nº 1
+Evento nº 130
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 51,60637 s
+------------------------------------------
+Trilha nº 1
+Evento nº 131
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 51,94411 s
+------------------------------------------
+Trilha nº 1
+Evento nº 132
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 51,94588 s
+------------------------------------------
+Trilha nº 1
+Evento nº 133
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 52,28363 s
+------------------------------------------
+Trilha nº 1
+Evento nº 134
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 52,28540 s
+------------------------------------------
+Trilha nº 1
+Evento nº 135
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 53,64169 s
+------------------------------------------
+Trilha nº 1
+Evento nº 136
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 53,98298 s
+------------------------------------------
+Trilha nº 1
+Evento nº 137
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 54,32072 s
+------------------------------------------
+Trilha nº 1
+Evento nº 138
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 54,32249 s
+------------------------------------------
+Trilha nº 1
+Evento nº 139
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 54,66024 s
+------------------------------------------
+Trilha nº 1
+Evento nº 140
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 54,66201 s
+------------------------------------------
+Trilha nº 1
+Evento nº 141
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 54,99975 s
+------------------------------------------
+Trilha nº 1
+Evento nº 142
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 55,00152 s
+------------------------------------------
+Trilha nº 1
+Evento nº 143
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 56,35781 s
+------------------------------------------
+Trilha nº 1
+Evento nº 144
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 56,35958 s
+------------------------------------------
+Trilha nº 1
+Evento nº 145
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 57,03685 s
+------------------------------------------
+Trilha nº 1
+Evento nº 146
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 57,03861 s
+------------------------------------------
+Trilha nº 1
+Evento nº 147
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 57,37636 s
+------------------------------------------
+Trilha nº 1
+Evento nº 148
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 57,37813 s
+------------------------------------------
+Trilha nº 1
+Evento nº 149
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 59,07394 s
+------------------------------------------
+Trilha nº 1
+Evento nº 150
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 59,07571 s
+------------------------------------------
+Trilha nº 1
+Evento nº 151
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 59,75297 s
+------------------------------------------
+Trilha nº 1
+Evento nº 152
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 59,75474 s
+------------------------------------------
+Trilha nº 1
+Evento nº 153
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 60,09249 s
+------------------------------------------
+Trilha nº 1
+Evento nº 154
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 60,09425 s
+------------------------------------------
+Trilha nº 1
+Evento nº 155
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 60,43200 s
+------------------------------------------
+Trilha nº 1
+Evento nº 156
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 60,43377 s
+------------------------------------------
+Trilha nº 1
+Evento nº 157
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 61,79006 s
+------------------------------------------
+Trilha nº 1
+Evento nº 158
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 61,79183 s
+------------------------------------------
+Trilha nº 1
+Evento nº 159
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 62,46909 s
+------------------------------------------
+Trilha nº 1
+Evento nº 160
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 62,47086 s
+------------------------------------------
+Trilha nº 1
+Evento nº 161
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 63,14812 s
+------------------------------------------
+Trilha nº 1
+Evento nº 162
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 63,14989 s
+------------------------------------------
+Trilha nº 1
+Evento nº 163
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 63,82716 s
+------------------------------------------
+Trilha nº 1
+Evento nº 164
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 63,82893 s
+------------------------------------------
+Trilha nº 1
+Evento nº 165
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 64,84570 s
+------------------------------------------
+Trilha nº 1
+Evento nº 166
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 64,84747 s
+------------------------------------------
+Trilha nº 1
+Evento nº 167
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 65,18522 s
+------------------------------------------
+Trilha nº 1
+Evento nº 168
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 65,18699 s
+------------------------------------------
+Trilha nº 1
+Evento nº 169
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 66,20377 s
+------------------------------------------
+Trilha nº 1
+Evento nº 170
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 66,20554 s
+------------------------------------------
+Trilha nº 1
+Evento nº 171
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 66,54328 s
+------------------------------------------
+Trilha nº 1
+Evento nº 172
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 66,54505 s
+------------------------------------------
+Trilha nº 1
+Evento nº 173
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 67,56183 s
+------------------------------------------
+Trilha nº 1
+Evento nº 174
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 67,56360 s
+------------------------------------------
+Trilha nº 1
+Evento nº 175
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 67,90134 s
+------------------------------------------
+Trilha nº 1
+Evento nº 176
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 67,90311 s
+------------------------------------------
+Trilha nº 1
+Evento nº 177
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 69,93844 s
+------------------------------------------
+Trilha nº 1
+Evento nº 178
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 69,94021 s
+------------------------------------------
+Trilha nº 1
+Evento nº 179
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 70,61747 s
+------------------------------------------
+Trilha nº 1
+Evento nº 180
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 70,61924 s
+------------------------------------------
+Trilha nº 1
+Evento nº 181
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 70,95699 s
+------------------------------------------
+Trilha nº 1
+Evento nº 182
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 70,95876 s
+------------------------------------------
+Trilha nº 1
+Evento nº 183
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 71,29650 s
+------------------------------------------
+Trilha nº 1
+Evento nº 184
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 71,29827 s
+------------------------------------------
+Trilha nº 1
+Evento nº 185
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 72,65456 s
+------------------------------------------
+Trilha nº 1
+Evento nº 186
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 72,65633 s
+------------------------------------------
+Trilha nº 1
+Evento nº 187
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 73,33360 s
+------------------------------------------
+Trilha nº 1
+Evento nº 188
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 73,33536 s
+------------------------------------------
+Trilha nº 1
+Evento nº 189
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 74,01263 s
+------------------------------------------
+Trilha nº 1
+Evento nº 190
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 74,01439 s
+------------------------------------------
+Trilha nº 1
+Evento nº 191
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 74,69166 s
+------------------------------------------
+Trilha nº 1
+Evento nº 192
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 74,69342 s
+------------------------------------------
+Trilha nº 1
+Evento nº 193
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 75,71021 s
+------------------------------------------
+Trilha nº 1
+Evento nº 194
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 75,71197 s
+------------------------------------------
+Trilha nº 1
+Evento nº 195
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 76,04972 s
+------------------------------------------
+Trilha nº 1
+Evento nº 196
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 76,05148 s
+------------------------------------------
+Trilha nº 1
+Evento nº 197
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 77,06826 s
+------------------------------------------
+Trilha nº 1
+Evento nº 198
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 77,07003 s
+------------------------------------------
+Trilha nº 1
+Evento nº 199
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 77,40778 s
+------------------------------------------
+Trilha nº 1
+Evento nº 200
+	Mensagem: Note ON
+		Byte 1 => 69
+		Byte 2 => 80
+	Instante: 77,40955 s
+------------------------------------------
+Trilha nº 1
+Evento nº 201
+	Mensagem: Note OFF
+		Byte 1 => 69
+		Byte 2 => 0
+	Instante: 77,74729 s
+------------------------------------------
+Trilha nº 1
+Evento nº 202
+	Mensagem: Note ON
+		Byte 1 => 67
+		Byte 2 => 80
+	Instante: 77,74906 s
+------------------------------------------
+Trilha nº 1
+Evento nº 203
+	Mensagem: Note OFF
+		Byte 1 => 67
+		Byte 2 => 0
+	Instante: 78,08681 s
+------------------------------------------
+Trilha nº 1
+Evento nº 204
+	Mensagem: Note ON
+		Byte 1 => 64
+		Byte 2 => 80
+	Instante: 78,08858 s
+------------------------------------------
+Trilha nº 1
+Evento nº 205
+	Mensagem: Note OFF
+		Byte 1 => 64
+		Byte 2 => 0
+	Instante: 78,42632 s
+------------------------------------------
+Trilha nº 1
+Evento nº 206
+	Mensagem: Note ON
+		Byte 1 => 65
+		Byte 2 => 80
+	Instante: 78,42809 s
+------------------------------------------
+Trilha nº 1
+Evento nº 207
+	Mensagem: Note OFF
+		Byte 1 => 65
+		Byte 2 => 0
+	Instante: 78,76584 s
+------------------------------------------
+Trilha nº 1
+Evento nº 208
+	Mensagem: Note ON
+		Byte 1 => 62
+		Byte 2 => 80
+	Instante: 78,76761 s
+------------------------------------------
+Trilha nº 1
+Evento nº 209
+	Mensagem: Note OFF
+		Byte 1 => 62
+		Byte 2 => 0
+	Instante: 81,48196 s
+------------------------------------------
+Trilha nº 1
+Evento nº 210
+	Mensagem: Mensagem Meta
+		Byte 1 => 47
+		Byte 2 => 0
+	Instante: 86,00000 s
+------------------------------------------
+
+------------------------------------------
+--- Início da trilha nº 2
+------------------------------------------
+Tonalidade         : --
+Texto              : --
+------------------------------------------
+Trilha nº 2
+Evento nº 0
+	Mensagem: Mensagem Meta
+		Byte 1 => 3
+		Byte 2 => 5
+		Byte 3 => 83
+		Byte 4 => 58
+		Byte 5 => 32
+		Byte 6 => 32
+		Byte 7 => 50
+	Instante: 0,00000 s
+------------------------------------------
+Trilha nº 2
+Evento nº 1
+	Mensagem: Note ON
+		Byte 1 => 38
+		Byte 2 => 80
+	Instante: 2,71612 s
+------------------------------------------
+Trilha nº 2
+Evento nº 2
+	Mensagem: Note OFF
+		Byte 1 => 38
+		Byte 2 => 0
+	Instante: 5,43048 s
+------------------------------------------
+Trilha nº 2
+Evento nº 3
+	Mensagem: Note ON
+		Byte 1 => 38
+		Byte 2 => 80
+	Instante: 8,14837 s
+------------------------------------------
+Trilha nº 2
+Evento nº 4
+	Mensagem: Note OFF
+		Byte 1 => 38
+		Byte 2 => 0
+	Instante: 10,86273 s
+------------------------------------------
+Trilha nº 2
+Evento nº 5
+	Mensagem: Note ON
+		Byte 1 => 48
+		Byte 2 => 80
+	Instante: 10,86450 s
+------------------------------------------
+Trilha nº 2
+Evento nº 6
+	Mensagem: Note OFF
+		Byte 1 => 48
+		Byte 2 => 0
+	Instante: 12,22079 s
+------------------------------------------
+Trilha nº 2
+Evento nº 7
+	Mensagem: Note ON
+		Byte 1 => 55
+		Byte 2 => 80
+	Instante: 12,22256 s
+------------------------------------------
+Trilha nº 2
+Evento nº 8
+	Mensagem: Note OFF
+		Byte 1 => 55
+		Byte 2 => 0
+	Instante: 13,57885 s
+------------------------------------------
+Trilha nº 2
+Evento nº 9
+	Mensagem: Note ON
+		Byte 1 => 41
+		Byte 2 => 80
+	Instante: 13,58062 s
+------------------------------------------
+Trilha nº 2
+Evento nº 10
+	Mensagem: Note OFF
+		Byte 1 => 41
+		Byte 2 => 0
+	Instante: 14,93692 s
+------------------------------------------
+Trilha nº 2
+Evento nº 11
+	Mensagem: Note ON
+		Byte 1 => 48
+		Byte 2 => 80
+	Instante: 14,93868 s
+------------------------------------------
+Trilha nº 2
+Evento nº 12
+	Mensagem: Note OFF
+		Byte 1 => 48
+		Byte 2 => 0
+	Instante: 16,29498 s
+------------------------------------------
+Trilha nº 2
+Evento nº 13
+	Mensagem: Note ON
+		Byte 1 => 41
+		Byte 2 => 80
+	Instante: 16,29675 s
+------------------------------------------
+Trilha nº 2
+Evento nº 14
+	Mensagem: Note OFF
+		Byte 1 => 41
+		Byte 2 => 0
+	Instante: 17,65304 s
+------------------------------------------
+Trilha nº 2
+Evento nº 15
+	Mensagem: Note ON
+		Byte 1 => 48
+		Byte 2 => 80
+	Instante: 17,65481 s
+------------------------------------------
+Trilha nº 2
+Evento nº 16
+	Mensagem: Note OFF
+		Byte 1 => 48
+		Byte 2 => 0
+	Instante: 19,01110 s
+------------------------------------------
+Trilha nº 2
+Evento nº 17
+	Mensagem: Note ON
+		Byte 1 => 43
+		Byte 2 => 80
+	Instante: 19,01287 s
+------------------------------------------
+Trilha nº 2
+Evento nº 18
+	Mensagem: Note OFF
+		Byte 1 => 43
+		Byte 2 => 0
+	Instante: 21,72723 s
+------------------------------------------
+Trilha nº 2
+Evento nº 19
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 21,72900 s
+------------------------------------------
+Trilha nº 2
+Evento nº 20
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 24,44335 s
+------------------------------------------
+Trilha nº 2
+Evento nº 21
+	Mensagem: Note ON
+		Byte 1 => 38
+		Byte 2 => 80
+	Instante: 24,44512 s
+------------------------------------------
+Trilha nº 2
+Evento nº 22
+	Mensagem: Note OFF
+		Byte 1 => 38
+		Byte 2 => 0
+	Instante: 24,78287 s
+------------------------------------------
+Trilha nº 2
+Evento nº 23
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 24,78464 s
+------------------------------------------
+Trilha nº 2
+Evento nº 24
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 25,12238 s
+------------------------------------------
+Trilha nº 2
+Evento nº 25
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 25,12415 s
+------------------------------------------
+Trilha nº 2
+Evento nº 26
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 27,15948 s
+------------------------------------------
+Trilha nº 2
+Evento nº 27
+	Mensagem: Note ON
+		Byte 1 => 38
+		Byte 2 => 80
+	Instante: 27,16125 s
+------------------------------------------
+Trilha nº 2
+Evento nº 28
+	Mensagem: Note OFF
+		Byte 1 => 38
+		Byte 2 => 0
+	Instante: 27,49899 s
+------------------------------------------
+Trilha nº 2
+Evento nº 29
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 27,50076 s
+------------------------------------------
+Trilha nº 2
+Evento nº 30
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 27,83851 s
+------------------------------------------
+Trilha nº 2
+Evento nº 31
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 27,84028 s
+------------------------------------------
+Trilha nº 2
+Evento nº 32
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 29,87560 s
+------------------------------------------
+Trilha nº 2
+Evento nº 33
+	Mensagem: Note ON
+		Byte 1 => 38
+		Byte 2 => 80
+	Instante: 29,87737 s
+------------------------------------------
+Trilha nº 2
+Evento nº 34
+	Mensagem: Note OFF
+		Byte 1 => 38
+		Byte 2 => 0
+	Instante: 30,21512 s
+------------------------------------------
+Trilha nº 2
+Evento nº 35
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 30,21688 s
+------------------------------------------
+Trilha nº 2
+Evento nº 36
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 30,55463 s
+------------------------------------------
+Trilha nº 2
+Evento nº 37
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 30,55640 s
+------------------------------------------
+Trilha nº 2
+Evento nº 38
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 32,59172 s
+------------------------------------------
+Trilha nº 2
+Evento nº 39
+	Mensagem: Note ON
+		Byte 1 => 48
+		Byte 2 => 80
+	Instante: 32,59349 s
+------------------------------------------
+Trilha nº 2
+Evento nº 40
+	Mensagem: Note OFF
+		Byte 1 => 48
+		Byte 2 => 0
+	Instante: 32,93124 s
+------------------------------------------
+Trilha nº 2
+Evento nº 41
+	Mensagem: Note ON
+		Byte 1 => 55
+		Byte 2 => 80
+	Instante: 32,93301 s
+------------------------------------------
+Trilha nº 2
+Evento nº 42
+	Mensagem: Note OFF
+		Byte 1 => 55
+		Byte 2 => 0
+	Instante: 33,27076 s
+------------------------------------------
+Trilha nº 2
+Evento nº 43
+	Mensagem: Note ON
+		Byte 1 => 60
+		Byte 2 => 80
+	Instante: 33,27253 s
+------------------------------------------
+Trilha nº 2
+Evento nº 44
+	Mensagem: Note OFF
+		Byte 1 => 60
+		Byte 2 => 0
+	Instante: 35,30785 s
+------------------------------------------
+Trilha nº 2
+Evento nº 45
+	Mensagem: Note ON
+		Byte 1 => 41
+		Byte 2 => 80
+	Instante: 35,30962 s
+------------------------------------------
+Trilha nº 2
+Evento nº 46
+	Mensagem: Note OFF
+		Byte 1 => 41
+		Byte 2 => 0
+	Instante: 35,64737 s
+------------------------------------------
+Trilha nº 2
+Evento nº 47
+	Mensagem: Note ON
+		Byte 1 => 48
+		Byte 2 => 80
+	Instante: 35,64914 s
+------------------------------------------
+Trilha nº 2
+Evento nº 48
+	Mensagem: Note OFF
+		Byte 1 => 48
+		Byte 2 => 0
+	Instante: 35,98688 s
+------------------------------------------
+Trilha nº 2
+Evento nº 49
+	Mensagem: Note ON
+		Byte 1 => 53
+		Byte 2 => 80
+	Instante: 35,98865 s
+------------------------------------------
+Trilha nº 2
+Evento nº 50
+	Mensagem: Note OFF
+		Byte 1 => 53
+		Byte 2 => 0
+	Instante: 36,66591 s
+------------------------------------------
+Trilha nº 2
+Evento nº 51
+	Mensagem: Note ON
+		Byte 1 => 48
+		Byte 2 => 80
+	Instante: 36,66768 s
+------------------------------------------
+Trilha nº 2
+Evento nº 52
+	Mensagem: Note OFF
+		Byte 1 => 48
+		Byte 2 => 0
+	Instante: 38,02398 s
+------------------------------------------
+Trilha nº 2
+Evento nº 53
+	Mensagem: Note ON
+		Byte 1 => 41
+		Byte 2 => 80
+	Instante: 38,02574 s
+------------------------------------------
+Trilha nº 2
+Evento nº 54
+	Mensagem: Note OFF
+		Byte 1 => 41
+		Byte 2 => 0
+	Instante: 38,36349 s
+------------------------------------------
+Trilha nº 2
+Evento nº 55
+	Mensagem: Note ON
+		Byte 1 => 48
+		Byte 2 => 80
+	Instante: 38,36526 s
+------------------------------------------
+Trilha nº 2
+Evento nº 56
+	Mensagem: Note OFF
+		Byte 1 => 48
+		Byte 2 => 0
+	Instante: 38,70301 s
+------------------------------------------
+Trilha nº 2
+Evento nº 57
+	Mensagem: Note ON
+		Byte 1 => 53
+		Byte 2 => 80
+	Instante: 38,70477 s
+------------------------------------------
+Trilha nº 2
+Evento nº 58
+	Mensagem: Note OFF
+		Byte 1 => 53
+		Byte 2 => 0
+	Instante: 39,38204 s
+------------------------------------------
+Trilha nº 2
+Evento nº 59
+	Mensagem: Note ON
+		Byte 1 => 48
+		Byte 2 => 80
+	Instante: 39,38380 s
+------------------------------------------
+Trilha nº 2
+Evento nº 60
+	Mensagem: Note OFF
+		Byte 1 => 48
+		Byte 2 => 0
+	Instante: 40,74010 s
+------------------------------------------
+Trilha nº 2
+Evento nº 61
+	Mensagem: Note ON
+		Byte 1 => 43
+		Byte 2 => 80
+	Instante: 40,74187 s
+------------------------------------------
+Trilha nº 2
+Evento nº 62
+	Mensagem: Note OFF
+		Byte 1 => 43
+		Byte 2 => 0
+	Instante: 41,07961 s
+------------------------------------------
+Trilha nº 2
+Evento nº 63
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 41,08138 s
+------------------------------------------
+Trilha nº 2
+Evento nº 64
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 41,41913 s
+------------------------------------------
+Trilha nº 2
+Evento nº 65
+	Mensagem: Note ON
+		Byte 1 => 55
+		Byte 2 => 80
+	Instante: 41,42090 s
+------------------------------------------
+Trilha nº 2
+Evento nº 66
+	Mensagem: Note OFF
+		Byte 1 => 55
+		Byte 2 => 0
+	Instante: 42,09816 s
+------------------------------------------
+Trilha nº 2
+Evento nº 67
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 42,09993 s
+------------------------------------------
+Trilha nº 2
+Evento nº 68
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 42,43768 s
+------------------------------------------
+Trilha nº 2
+Evento nº 69
+	Mensagem: Note ON
+		Byte 1 => 52
+		Byte 2 => 80
+	Instante: 42,43945 s
+------------------------------------------
+Trilha nº 2
+Evento nº 70
+	Mensagem: Note OFF
+		Byte 1 => 52
+		Byte 2 => 0
+	Instante: 42,77719 s
+------------------------------------------
+Trilha nº 2
+Evento nº 71
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 42,77896 s
+------------------------------------------
+Trilha nº 2
+Evento nº 72
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 43,45622 s
+------------------------------------------
+Trilha nº 2
+Evento nº 73
+	Mensagem: Note ON
+		Byte 1 => 38
+		Byte 2 => 80
+	Instante: 43,45799 s
+------------------------------------------
+Trilha nº 2
+Evento nº 74
+	Mensagem: Note OFF
+		Byte 1 => 38
+		Byte 2 => 0
+	Instante: 44,47477 s
+------------------------------------------
+Trilha nº 2
+Evento nº 75
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 44,47654 s
+------------------------------------------
+Trilha nº 2
+Evento nº 76
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 44,81429 s
+------------------------------------------
+Trilha nº 2
+Evento nº 77
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 44,81606 s
+------------------------------------------
+Trilha nº 2
+Evento nº 78
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 45,15380 s
+------------------------------------------
+Trilha nº 2
+Evento nº 79
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 45,15557 s
+------------------------------------------
+Trilha nº 2
+Evento nº 80
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 45,49332 s
+------------------------------------------
+Trilha nº 2
+Evento nº 81
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 45,49509 s
+------------------------------------------
+Trilha nº 2
+Evento nº 82
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 45,83283 s
+------------------------------------------
+Trilha nº 2
+Evento nº 83
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 45,83460 s
+------------------------------------------
+Trilha nº 2
+Evento nº 84
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 46,17235 s
+------------------------------------------
+Trilha nº 2
+Evento nº 85
+	Mensagem: Note ON
+		Byte 1 => 38
+		Byte 2 => 80
+	Instante: 46,17411 s
+------------------------------------------
+Trilha nº 2
+Evento nº 86
+	Mensagem: Note OFF
+		Byte 1 => 38
+		Byte 2 => 0
+	Instante: 47,19090 s
+------------------------------------------
+Trilha nº 2
+Evento nº 87
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 47,19266 s
+------------------------------------------
+Trilha nº 2
+Evento nº 88
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 47,53041 s
+------------------------------------------
+Trilha nº 2
+Evento nº 89
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 47,53218 s
+------------------------------------------
+Trilha nº 2
+Evento nº 90
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 48,88847 s
+------------------------------------------
+Trilha nº 2
+Evento nº 91
+	Mensagem: Note ON
+		Byte 1 => 38
+		Byte 2 => 80
+	Instante: 48,89024 s
+------------------------------------------
+Trilha nº 2
+Evento nº 92
+	Mensagem: Note OFF
+		Byte 1 => 38
+		Byte 2 => 0
+	Instante: 49,90702 s
+------------------------------------------
+Trilha nº 2
+Evento nº 93
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 49,90879 s
+------------------------------------------
+Trilha nº 2
+Evento nº 94
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 50,24654 s
+------------------------------------------
+Trilha nº 2
+Evento nº 95
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 50,24830 s
+------------------------------------------
+Trilha nº 2
+Evento nº 96
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 51,60460 s
+------------------------------------------
+Trilha nº 2
+Evento nº 97
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 51,60637 s
+------------------------------------------
+Trilha nº 2
+Evento nº 98
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 52,62314 s
+------------------------------------------
+Trilha nº 2
+Evento nº 99
+	Mensagem: Note ON
+		Byte 1 => 52
+		Byte 2 => 80
+	Instante: 52,62491 s
+------------------------------------------
+Trilha nº 2
+Evento nº 100
+	Mensagem: Note OFF
+		Byte 1 => 52
+		Byte 2 => 0
+	Instante: 52,96266 s
+------------------------------------------
+Trilha nº 2
+Evento nº 101
+	Mensagem: Note ON
+		Byte 1 => 60
+		Byte 2 => 80
+	Instante: 52,96443 s
+------------------------------------------
+Trilha nº 2
+Evento nº 102
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 52,96443 s
+------------------------------------------
+Trilha nº 2
+Evento nº 103
+	Mensagem: Note OFF
+		Byte 1 => 60
+		Byte 2 => 0
+	Instante: 54,32072 s
+------------------------------------------
+Trilha nº 2
+Evento nº 104
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 54,32072 s
+------------------------------------------
+Trilha nº 2
+Evento nº 105
+	Mensagem: Note ON
+		Byte 1 => 38
+		Byte 2 => 80
+	Instante: 54,32249 s
+------------------------------------------
+Trilha nº 2
+Evento nº 106
+	Mensagem: Note OFF
+		Byte 1 => 38
+		Byte 2 => 0
+	Instante: 55,33927 s
+------------------------------------------
+Trilha nº 2
+Evento nº 107
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 55,34104 s
+------------------------------------------
+Trilha nº 2
+Evento nº 108
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 55,67878 s
+------------------------------------------
+Trilha nº 2
+Evento nº 109
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 55,68055 s
+------------------------------------------
+Trilha nº 2
+Evento nº 110
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 57,03685 s
+------------------------------------------
+Trilha nº 2
+Evento nº 111
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 57,03861 s
+------------------------------------------
+Trilha nº 2
+Evento nº 112
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 58,05539 s
+------------------------------------------
+Trilha nº 2
+Evento nº 113
+	Mensagem: Note ON
+		Byte 1 => 52
+		Byte 2 => 80
+	Instante: 58,05716 s
+------------------------------------------
+Trilha nº 2
+Evento nº 114
+	Mensagem: Note OFF
+		Byte 1 => 52
+		Byte 2 => 0
+	Instante: 58,39491 s
+------------------------------------------
+Trilha nº 2
+Evento nº 115
+	Mensagem: Note ON
+		Byte 1 => 60
+		Byte 2 => 80
+	Instante: 58,39668 s
+------------------------------------------
+Trilha nº 2
+Evento nº 116
+	Mensagem: Note ON
+		Byte 1 => 57
+		Byte 2 => 80
+	Instante: 58,39668 s
+------------------------------------------
+Trilha nº 2
+Evento nº 117
+	Mensagem: Note OFF
+		Byte 1 => 60
+		Byte 2 => 0
+	Instante: 59,75297 s
+------------------------------------------
+Trilha nº 2
+Evento nº 118
+	Mensagem: Note OFF
+		Byte 1 => 57
+		Byte 2 => 0
+	Instante: 59,75297 s
+------------------------------------------
+Trilha nº 2
+Evento nº 119
+	Mensagem: Note ON
+		Byte 1 => 46
+		Byte 2 => 80
+	Instante: 59,75474 s
+------------------------------------------
+Trilha nº 2
+Evento nº 120
+	Mensagem: Note OFF
+		Byte 1 => 46
+		Byte 2 => 0
+	Instante: 60,77152 s
+------------------------------------------
+Trilha nº 2
+Evento nº 121
+	Mensagem: Note ON
+		Byte 1 => 46
+		Byte 2 => 80
+	Instante: 60,77328 s
+------------------------------------------
+Trilha nº 2
+Evento nº 122
+	Mensagem: Note OFF
+		Byte 1 => 46
+		Byte 2 => 0
+	Instante: 61,11103 s
+------------------------------------------
+Trilha nº 2
+Evento nº 123
+	Mensagem: Note ON
+		Byte 1 => 58
+		Byte 2 => 80
+	Instante: 61,11280 s
+------------------------------------------
+Trilha nº 2
+Evento nº 124
+	Mensagem: Note OFF
+		Byte 1 => 58
+		Byte 2 => 0
+	Instante: 61,79006 s
+------------------------------------------
+Trilha nº 2
+Evento nº 125
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 61,79183 s
+------------------------------------------
+Trilha nº 2
+Evento nº 126
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 62,46909 s
+------------------------------------------
+Trilha nº 2
+Evento nº 127
+	Mensagem: Note ON
+		Byte 1 => 43
+		Byte 2 => 80
+	Instante: 62,47086 s
+------------------------------------------
+Trilha nº 2
+Evento nº 128
+	Mensagem: Note OFF
+		Byte 1 => 43
+		Byte 2 => 0
+	Instante: 62,80861 s
+------------------------------------------
+Trilha nº 2
+Evento nº 129
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 62,81038 s
+------------------------------------------
+Trilha nº 2
+Evento nº 130
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 63,48764 s
+------------------------------------------
+Trilha nº 2
+Evento nº 131
+	Mensagem: Note ON
+		Byte 1 => 55
+		Byte 2 => 80
+	Instante: 63,48941 s
+------------------------------------------
+Trilha nº 2
+Evento nº 132
+	Mensagem: Note OFF
+		Byte 1 => 55
+		Byte 2 => 0
+	Instante: 63,82716 s
+------------------------------------------
+Trilha nº 2
+Evento nº 133
+	Mensagem: Note ON
+		Byte 1 => 46
+		Byte 2 => 80
+	Instante: 65,18699 s
+------------------------------------------
+Trilha nº 2
+Evento nº 134
+	Mensagem: Note OFF
+		Byte 1 => 46
+		Byte 2 => 0
+	Instante: 65,52473 s
+------------------------------------------
+Trilha nº 2
+Evento nº 135
+	Mensagem: Note ON
+		Byte 1 => 53
+		Byte 2 => 80
+	Instante: 65,52650 s
+------------------------------------------
+Trilha nº 2
+Evento nº 136
+	Mensagem: Note OFF
+		Byte 1 => 53
+		Byte 2 => 0
+	Instante: 65,86425 s
+------------------------------------------
+Trilha nº 2
+Evento nº 137
+	Mensagem: Note ON
+		Byte 1 => 58
+		Byte 2 => 80
+	Instante: 65,86602 s
+------------------------------------------
+Trilha nº 2
+Evento nº 138
+	Mensagem: Note OFF
+		Byte 1 => 58
+		Byte 2 => 0
+	Instante: 66,54328 s
+------------------------------------------
+Trilha nº 2
+Evento nº 139
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 66,54505 s
+------------------------------------------
+Trilha nº 2
+Evento nº 140
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 67,22231 s
+------------------------------------------
+Trilha nº 2
+Evento nº 141
+	Mensagem: Note ON
+		Byte 1 => 52
+		Byte 2 => 80
+	Instante: 67,22408 s
+------------------------------------------
+Trilha nº 2
+Evento nº 142
+	Mensagem: Note OFF
+		Byte 1 => 52
+		Byte 2 => 0
+	Instante: 67,90134 s
+------------------------------------------
+Trilha nº 2
+Evento nº 143
+	Mensagem: Note ON
+		Byte 1 => 38
+		Byte 2 => 80
+	Instante: 67,90311 s
+------------------------------------------
+Trilha nº 2
+Evento nº 144
+	Mensagem: Note OFF
+		Byte 1 => 38
+		Byte 2 => 0
+	Instante: 68,91989 s
+------------------------------------------
+Trilha nº 2
+Evento nº 145
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 68,92166 s
+------------------------------------------
+Trilha nº 2
+Evento nº 146
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 69,25941 s
+------------------------------------------
+Trilha nº 2
+Evento nº 147
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 69,26118 s
+------------------------------------------
+Trilha nº 2
+Evento nº 148
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 70,61747 s
+------------------------------------------
+Trilha nº 2
+Evento nº 149
+	Mensagem: Note ON
+		Byte 1 => 46
+		Byte 2 => 80
+	Instante: 70,61924 s
+------------------------------------------
+Trilha nº 2
+Evento nº 150
+	Mensagem: Note OFF
+		Byte 1 => 46
+		Byte 2 => 0
+	Instante: 71,63602 s
+------------------------------------------
+Trilha nº 2
+Evento nº 151
+	Mensagem: Note ON
+		Byte 1 => 46
+		Byte 2 => 80
+	Instante: 71,63778 s
+------------------------------------------
+Trilha nº 2
+Evento nº 152
+	Mensagem: Note OFF
+		Byte 1 => 46
+		Byte 2 => 0
+	Instante: 71,97553 s
+------------------------------------------
+Trilha nº 2
+Evento nº 153
+	Mensagem: Note ON
+		Byte 1 => 58
+		Byte 2 => 80
+	Instante: 71,97729 s
+------------------------------------------
+Trilha nº 2
+Evento nº 154
+	Mensagem: Note OFF
+		Byte 1 => 58
+		Byte 2 => 0
+	Instante: 72,65456 s
+------------------------------------------
+Trilha nº 2
+Evento nº 155
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 72,65633 s
+------------------------------------------
+Trilha nº 2
+Evento nº 156
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 73,33360 s
+------------------------------------------
+Trilha nº 2
+Evento nº 157
+	Mensagem: Note ON
+		Byte 1 => 43
+		Byte 2 => 80
+	Instante: 73,33536 s
+------------------------------------------
+Trilha nº 2
+Evento nº 158
+	Mensagem: Note OFF
+		Byte 1 => 43
+		Byte 2 => 0
+	Instante: 73,67311 s
+------------------------------------------
+Trilha nº 2
+Evento nº 159
+	Mensagem: Note ON
+		Byte 1 => 50
+		Byte 2 => 80
+	Instante: 73,67487 s
+------------------------------------------
+Trilha nº 2
+Evento nº 160
+	Mensagem: Note OFF
+		Byte 1 => 50
+		Byte 2 => 0
+	Instante: 74,35214 s
+------------------------------------------
+Trilha nº 2
+Evento nº 161
+	Mensagem: Note ON
+		Byte 1 => 55
+		Byte 2 => 80
+	Instante: 74,35390 s
+------------------------------------------
+Trilha nº 2
+Evento nº 162
+	Mensagem: Note OFF
+		Byte 1 => 55
+		Byte 2 => 0
+	Instante: 74,69166 s
+------------------------------------------
+Trilha nº 2
+Evento nº 163
+	Mensagem: Note ON
+		Byte 1 => 46
+		Byte 2 => 80
+	Instante: 76,05148 s
+------------------------------------------
+Trilha nº 2
+Evento nº 164
+	Mensagem: Note OFF
+		Byte 1 => 46
+		Byte 2 => 0
+	Instante: 77,40778 s
+------------------------------------------
+Trilha nº 2
+Evento nº 165
+	Mensagem: Note ON
+		Byte 1 => 45
+		Byte 2 => 80
+	Instante: 77,40955 s
+------------------------------------------
+Trilha nº 2
+Evento nº 166
+	Mensagem: Note OFF
+		Byte 1 => 45
+		Byte 2 => 0
+	Instante: 78,76584 s
+------------------------------------------
+Trilha nº 2
+Evento nº 167
+	Mensagem: Note ON
+		Byte 1 => 38
+		Byte 2 => 80
+	Instante: 78,76761 s
+------------------------------------------
+Trilha nº 2
+Evento nº 168
+	Mensagem: Note OFF
+		Byte 1 => 38
+		Byte 2 => 0
+	Instante: 80,12390 s
+------------------------------------------
+Trilha nº 2
+Evento nº 169
+	Mensagem: Mensagem Meta
+		Byte 1 => 47
+		Byte 2 => 0
+	Instante: 86,00000 s
+------------------------------------------
