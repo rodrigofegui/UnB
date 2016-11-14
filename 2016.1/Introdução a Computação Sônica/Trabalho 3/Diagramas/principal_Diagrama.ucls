@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.10" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="conversao" project="Trabalho3" file="/Trabalho3/src/conversao" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="46" width="104" x="128" y="98"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="2" language="java" name="Principal" project="Trabalho3" file="/Trabalho3/src/Principal.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="113" width="114" x="272" y="98"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="3" language="java" name="melodias" project="Trabalho3" file="/Trabalho3/src/melodias" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="46" width="104" x="426" y="98"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="instrumentos" project="Trabalho3" file="/Trabalho3/src/instrumentos" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="46" width="104" x="570" y="98"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="interfaceGrafica" project="Trabalho3" file="/Trabalho3/src/interfaceGrafica" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="46" width="117" x="714" y="98"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

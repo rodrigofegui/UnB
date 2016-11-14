@@ -1,0 +1,27 @@
+Enunciado:	
+
+Escreva um programa que:
+
+Converta arquivos Midi em programas Java equivalentes, os quais deverão fazer uso de classes do pacote sintese. 
+
+Em sequida, cada programa Java assim gerado deverá ser compilado normalmente -- ao estilo de T2 -- mas com a diferença de que, no caso deste trabalho, o código será produzido de maneira automatizada. 
+
+
+Recomendação 1:  É preciso definir um pequeno banco de instrumentos aditivos para que haja uma correspondência com os instrumentos lidos do arquivo Midi (cada um deles é apenas um número inteiro identificador, cujo valor estará entre 0 e 127). Portanto, o conteúdo espectral desses instrumentos aditivos deverá ser definido pelo aluno. 
+
+Tais instrumentos assim definidos não necessariamente terão o conteúdo espectral do instrumento acústico a que se refere o nome midi. Por exemplo, suponha-se que o código lido como instrumento midi é o número 0 (zero), correspondente portanto ao piano. O instrumento aditivo a ser definido pelo aluno, neste caso, pode ser um instrumento aditivo qualquer. 
+
+Desta maneira, o número de unidades-H  fica a critério do aluno, assim como a forma de cada envoltória. Além disso, o som que se produz com o instrumento definido não precisa ser parecido com o som do piano. Entretanto, deve-se levar em conta uma certa qualidade tímbrica. 
+
+
+Recomendação 2:  Conteúdo mínimo da interface gráfica: 
+1. Leitura do arquivo; 
+2. Exibição de seu conteúdo Midi; 
+3. Exibição da tradução obtida para Java/sintese; 
+4. Exibição [instrumentos midi] x [conteúdo dos instrumentos aditivos]. 
+
+
+Recomendação 3:  Atualização: 
+1. Baixar o pacote sintese; 
+2. Consultar a documentação; 
+3. Consultar a Seção 17.11 (Há alguns exemplos com a classe BancoDeInstrumentos). 

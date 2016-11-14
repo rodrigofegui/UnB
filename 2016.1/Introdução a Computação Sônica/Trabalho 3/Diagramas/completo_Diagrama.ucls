@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.10" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="interfaceGrafica.FormatacaoPadrao" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/FormatacaoPadrao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="95" width="134" x="131" y="-533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="melodias.Melodias" project="Trabalho3" 
+    file="/Trabalho3/src/melodias/Melodias.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="221" width="194" x="305" y="-533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="interfaceGrafica.BarraDeMenu" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/BarraDeMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="239" width="195" x="870" y="-533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="melodias.IntervalosMusicais" project="Trabalho3" 
+    file="/Trabalho3/src/melodias/IntervalosMusicais.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="527" width="139" x="1105" y="-533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="conversao.ConversorMidiJava" project="Trabalho3" 
+    file="/Trabalho3/src/conversao/ConversorMidiJava.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="707" width="291" x="539" y="-533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="Principal" project="Trabalho3" file="/Trabalho3/src/Principal.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="113" width="114" x="1284" y="-533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="conversao.NotasMidi" project="Trabalho3" 
+    file="/Trabalho3/src/conversao/NotasMidi.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="473" width="181" x="539" y="844"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="instrumentos.Instrumento" project="Trabalho3" 
+    file="/Trabalho3/src/instrumentos/Instrumento.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="563" width="226" x="2144" y="-533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="instrumentos.IN3" project="Trabalho3" file="/Trabalho3/src/instrumentos/IN3.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="221" width="178" x="1781" y="844"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="melodias.BaseadoMidi" project="Trabalho3" 
+    file="/Trabalho3/src/melodias/BaseadoMidi.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="185" width="183" x="1438" y="-533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="instrumentos.IN2" project="Trabalho3" file="/Trabalho3/src/instrumentos/IN2.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="203" width="178" x="1999" y="844"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="instrumentos.IN1" project="Trabalho3" file="/Trabalho3/src/instrumentos/IN1.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="149" width="153" x="2217" y="844"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="interfaceGrafica.FiltroMidi" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/FiltroMidi.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="131" width="143" x="1661" y="-533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="interfaceGrafica.InterfaceGrafica" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/InterfaceGrafica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1337" width="260" x="1844" y="-533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="interfaceGrafica.ControleComandos" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/ControleComandos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1301" width="261" x="2410" y="-533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="interfaceGrafica.ControleComandos.Par" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/ControleComandos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="149" width="89" x="2410" y="844"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="17">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="18" name="notasLidas"/>      
+      <multiplicity id="19" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="20">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="16"/>  
+  </nesting>  
+  <generalization id="21">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="22">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="23">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <association id="24">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="25" name="formulaCompasso"/>      
+      <multiplicity id="26" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

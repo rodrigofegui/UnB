@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.10" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="interfaceGrafica.FormatacaoPadrao" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/FormatacaoPadrao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="95" width="134" x="233" y="-366"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="interfaceGrafica.BarraDeMenu" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/BarraDeMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="239" width="195" x="407" y="-366"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="interfaceGrafica.FiltroMidi" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/FiltroMidi.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="131" width="143" x="642" y="-366"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="interfaceGrafica.InterfaceGrafica" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/InterfaceGrafica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1337" width="260" x="1126" y="-366"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="interfaceGrafica.ControleComandos" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/ControleComandos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1301" width="261" x="825" y="-366"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="interfaceGrafica.ControleComandos.Par" project="Trabalho3" 
+    file="/Trabalho3/src/interfaceGrafica/ControleComandos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="149" width="89" x="825" y="1011"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <nesting id="7">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </nesting>  
+  <association id="8">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="9" name="formulaCompasso"/>      
+      <multiplicity id="10" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

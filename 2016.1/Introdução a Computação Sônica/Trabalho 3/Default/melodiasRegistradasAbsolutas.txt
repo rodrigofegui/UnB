@@ -1,0 +1,3 @@
+/home/rodrigo/Dropbox/UnB/UnB 2016.1/ICS/Trabalhos/Trabalho3/musicas/Midi/mvioloncelo1.mid
+/home/rodrigo/Dropbox/UnB/UnB 2016.1/ICS/Trabalhos/Trabalho3/musicas/Midi/The Rains of Castamere.mid
+/home/rodrigo/Dropbox/UnB/UnB 2016.1/ICS/Trabalhos/Trabalho3/musicas/Midi/bwv772.mid
