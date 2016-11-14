@@ -1,0 +1,11 @@
+Codigo      Descrição   Unidades Existentes
+1           Pudim       100
+2           Maça        120
+3           Escova      10
+4           Agua        100
+5           Fones       50
+6           Batata      200
+7           Pão         150
+8           Camera      2
+9           Chiclete    400
+10          Quadros     25
