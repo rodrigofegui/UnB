@@ -1,0 +1,39 @@
+Enunciado:	
+
+Escreva uma carta espectral SOM-A -- correspondente a uma partitura de sua escolha -- que contenha dois ou mais instrumentos aditivos (dependendo de quantos instrumentos houver na orquestra), cada um deles sendo construído com base na Transformada Rápida de Fourier (FFT) aplicada ao sinal (de uma nota) de um dado instrumento acústico, também de sua escolha. Siga as instruções: 
+
+
+1. Obtenha a FFT de sinais amostrados (arquivos .wav) por meio do programa INS-A, de modo a construir dois ou mais instrumentos aditivos (arquivos '.ins'). 
+
+2. Escolha uma obra musical que tenha pelo menos duas vozes, cada uma delas estando associada a um instrumento diferente. Em seguida, escreva-a (**) em código SOM-A. Por fim, insira ao início da carta os instrumentos gerados no item 1. 
+
+3. Interprete a carta no programa SOM-A durante a apresentação em sala de aula. 
+
+4. Elabore a apresentação de modo a ilustrar as partes do trabalho. (Ex. um pouco da partitura na escrita musical padrão, os instrumentos produzidos, algo sobre a música escolhida [autor, ano de composição, tipo de música, etc.]). 
+
+
+(*) Áudio de instrumentos acústicos: há amostras disponíveis no site University of Iowa -- Electronic Music Studios. 
+
+(**) A parte da carta correspondente às notas (partitura) -- aquela que vem logo depois da definição da
+orquestra -- poderá ser:
+
+        (1) editada â mão, 
+        (2) poderá ser reescrita a partir de outra(s) carta(s), ou 
+        (3) poderá resultar da tradução de arquivos Midi para SOM-A. 
+
+
+
+
+
+PREPARAÇÃO
+
+a) Instale o SOM-A (http://cic.unb.br/~lcmm/cic-icsonica-2016-1/ics/trabalhos/t4/som-a.zip). 
+1. Em seguida à descompactação do arquivo 'som-a.zip', aparecerá uma pasta 'som-a' contendo várias sub-pastas. Não destrua nem renomeie nenhuma delas. 
+
+2. Entre na pasta 'som-a' e execute: java -jar som-a.jar
+
+(Se precisar, dimensione antes a memória destinada ao programa: por exemplo: 
+               java -Xms2000M -Xmx4000M -jar som-a.jar , 
+               isto é, java [valor inicial] [valor máximo] -jar som-a.jar )
+
+b) Instale o INS-A (http://cic.unb.br/~lcmm/cic-icsonica-2016-1/ics/trabalhos/t4/ins-a.zip). 
