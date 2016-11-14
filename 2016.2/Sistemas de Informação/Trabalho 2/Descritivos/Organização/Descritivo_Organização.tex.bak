@@ -1,0 +1,47 @@
+%%%%%%%%%%% INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%%%%%%%
+% Versão: 		1.0
+% Autor:		Rodrigo Guimarães
+% Finalidade:	Descritivo do SPT para o Trabalho 2
+%				da disciplina SI 2016.2
+%%%%%%%%%%% FIM INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%% INCLUSÃO DE PACOTES %%%%%%%%%%%%%%%%
+% Classe Base do Documento: Artigo
+\documentclass [12pt]{article}
+% Layout do Papel
+\usepackage{../Layout/Layout_Documento}
+% Case não funcione, verificar o diretório do arquivo 'Layout_Documento.sty'
+%\usepackage{lipsum}
+%%%%%%%%%%% FIM INCLUSÃO DE PACOTES %%%%%%%%%%%
+
+%%%%%%%%%%% INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%
+\title {Descritivo}
+\subtitle {Organização}
+%%%%%%%%%%% FIM INFORMAÇÕES BÁSICAS %%%%%%%%%%%
+
+%%%%%%%%%%% DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\inserirTitulo
+
+	Continuando o meu trabalho como novato na~\textit{SoluçõesSoftware Ltda}. fui designado para desenvolver o Sistema de Folha de Pagamento para a empresa~\textit{TrabalhoFeliz};
+	
+	\textit{TrabalhoFeliz} é uma empresa que oferece cursos, tanto presenciais quanto~\textit{online}. Cada disciplina ministrada possui um gerente, este é um professor da disciplina e só é possível ser gerente de uma disciplina, para os professores presenciais e~\textit{online}.
+	
+	Para suporte às atividades presenciais, há a equipe de limpeza e da alimentação. Enquanto que para as~\textit{online}, há a equipe áudio-visual, oferecendo todo o suporte técnico para as transmissões.
+
+	Todos os empregados desta empresa preenchem um formulário, para o controle do~\textit{Setor de Recursos Humanos}, com as informações: nome; CPF; telefone de contato; endereço residencial; data de nascimento; cargo, sendo professor: a disciplina ministrada; e a escolha sobre o recebimento ou não do vale transporte, onde se for escolhido receber deve ser informado a quantidade de passagens necessárias. A data de admissão, assim como a matrícula, é de responsabilidade do próprio setor.
+	
+	Todo cargo possui um código e uma descrição, seguido pelo salário base.
+	
+	Toda disciplina possui um código e uma descrição.
+	
+	Há a política de não horas extras, ou seja, todas as atividades desenvolvidas pelos empregados para a empresa devem ser feitas no horário comercial.
+	
+	Em tal sistema deve ser possível admitir ou demitir um funcionário; acrescentar novos cargos, assim como as disciplinas, nunca excluir. 
+	
+\bibliographystyle{ieeetr}
+\bibliography{Descritivo_SI}
+
+\end{document}
+%%%%%%%%%%% FIM DOCUMENTO %%%%%%%%%%%%%%%%%%%%%

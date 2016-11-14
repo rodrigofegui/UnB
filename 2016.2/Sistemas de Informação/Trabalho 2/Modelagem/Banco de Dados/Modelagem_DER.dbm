@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.8.1" last-position="4,93" last-zoom="1.1"
+	 default-schema="public" default-owner="postgres">
+<database name="novo_banco_de_dados">
+</database>
+
+<schema name="public" protected="true" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<table name="Funcionario">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="600" y="380"/>
+	<column name="matricula" not-null="true">
+		<type name="decimal" length="8"/>
+	</column>
+	<column name="cpf" not-null="true">
+		<type name="decimal" length="11"/>
+	</column>
+	<column name="nome" not-null="true">
+		<type name="varchar" length="100"/>
+	</column>
+	<column name="dataNascimento" not-null="true">
+		<type name="date"/>
+	</column>
+	<column name="telefone">
+		<type name="decimal" length="13"/>
+	</column>
+	<column name="email">
+		<type name="varchar" length="100"/>
+	</column>
+	<column name="dataAdmissao">
+		<type name="date"/>
+	</column>
+	<column name="valeTransporte_Dia">
+		<type name="decimal"/>
+	</column>
+	<constraint name="ID_Fun" type="pk-constr" table="public.&quot;Funcionario&quot;">
+		<columns names="matricula" ref-type="src-columns"/>
+	</constraint>
+
+	<customidxs object-type="column">
+		<object name="codigo_Profissoes" index="7"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="Profissoes_fk" index="1"/>
+	</customidxs>
+</table>
+
+<table name="Profissoes">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="600" y="100"/>
+	<column name="codigo" not-null="true">
+		<type name="decimal"/>
+	</column>
+	<column name="descricao" not-null="true">
+		<type name="varchar" length="100"/>
+	</column>
+	<column name="salarioBase" not-null="true">
+		<type name="money"/>
+	</column>
+	<constraint name="ID_Prof" type="pk-constr" table="public.&quot;Profissoes&quot;">
+		<columns names="codigo" ref-type="src-columns"/>
+	</constraint>
+
+	<customidxs object-type="column">
+		<object name="codigo_Disciplina" index="2"/>
+		<object name="codigo_INSS" index="3"/>
+		<object name="codigo_IRRF" index="4"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="Disciplina_fk" index="3"/>
+		<object name="INSS_fk" index="1"/>
+		<object name="IRRF_fk" index="2"/>
+	</customidxs>
+</table>
+
+<table name="INSS">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="60" y="120"/>
+	<column name="codigo" not-null="true">
+		<type name="decimal"/>
+	</column>
+	<column name="limiteSuperior" not-null="true">
+		<type name="money"/>
+	</column>
+	<column name="aliquota">
+		<type name="decimal" length="2"/>
+	</column>
+	<constraint name="ID_IN" type="pk-constr" table="public.&quot;INSS&quot;">
+		<columns names="codigo" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="Cargo" type="rel1n"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#5db49e"
+	 src-table="public.&quot;Profissoes&quot;"
+	 dst-table="public.&quot;Funcionario&quot;"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0.875057" y="-11.1091"/>
+	</label>
+	<label ref-type="dst-label">
+		<position x="13.1563" y="-15.4727"/>
+	</label>
+	<label ref-type="name-label">
+		<position x="27.4481" y="-46.8425"/>
+	</label>
+</relationship>
+
+<relationship name="DescontoINSS" type="rel1n"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#c0d95d"
+	 src-table="public.&quot;INSS&quot;"
+	 dst-table="public.&quot;Profissoes&quot;"
+	 src-required="true" dst-required="false">
+	<label ref-type="src-label">
+		<position x="-2.16188" y="-12.9273"/>
+	</label>
+	<label ref-type="dst-label">
+		<position x="-26.1827" y="-10.9273"/>
+	</label>
+	<label ref-type="name-label">
+		<position x="-3.38445" y="-44.1152"/>
+	</label>
+</relationship>
+
+<table name="IRRF">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="60" y="220"/>
+	<column name="codigo" not-null="true">
+		<type name="decimal"/>
+	</column>
+	<column name="limiteSuperior" not-null="true">
+		<type name="money"/>
+	</column>
+	<column name="aliquota" not-null="true">
+		<type name="decimal" length="2"/>
+	</column>
+	<column name="desconto" not-null="true">
+		<type name="money"/>
+	</column>
+	<constraint name="ID_IR" type="pk-constr" table="public.&quot;IRRF&quot;">
+		<columns names="codigo" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="DescontoIRRF" type="rel1n"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#511cde"
+	 src-table="public.&quot;IRRF&quot;"
+	 dst-table="public.&quot;Profissoes&quot;"
+	 src-required="true" dst-required="false">
+	<label ref-type="src-label">
+		<position x="-3.98006" y="-13.8364"/>
+	</label>
+	<label ref-type="dst-label">
+		<position x="-41.6373" y="-1.29091"/>
+	</label>
+	<label ref-type="name-label">
+		<position x="-8.33899" y="-46.5698"/>
+	</label>
+</relationship>
+
+<table name="Disciplina">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="60" y="40"/>
+	<column name="codigo" not-null="true">
+		<type name="decimal"/>
+	</column>
+	<column name="descricao" not-null="true">
+		<type name="varchar" length="100"/>
+	</column>
+	<constraint name="ID_Dis" type="pk-constr" table="public.&quot;Disciplina&quot;">
+		<columns names="codigo" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="Professor" type="rel1n"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#bfa0c1"
+	 src-table="public.&quot;Disciplina&quot;"
+	 dst-table="public.&quot;Profissoes&quot;"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="-2.31102" y="-10.2"/>
+	</label>
+	<label ref-type="dst-label">
+		<position x="1.99909" y="-12.3818"/>
+	</label>
+	<label ref-type="name-label">
+		<position x="6.76825" y="-48.9334"/>
+	</label>
+</relationship>
+
+<table name="Holerite">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="60" y="540"/>
+	<column name="salarioLiquido" not-null="true">
+		<type name="smallint"/>
+	</column>
+	<column name="mesReferencia" not-null="true">
+		<type name="date"/>
+	</column>
+	<column name="anoReferencia" not-null="true">
+		<type name="smallint"/>
+	</column>
+	<column name="faltas">
+		<type name="decimal" length="2"/>
+	</column>
+	<constraint name="ID_FP" type="pk-constr" table="public.&quot;Holerite&quot;">
+		<columns names="salarioLiquido,mesReferencia,anoReferencia" ref-type="src-columns"/>
+	</constraint>
+
+	<customidxs object-type="column">
+		<object name="matricula_Funcionario" index="0"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="Funcionario_fk" index="1"/>
+		<object name="Holerite_uq" index="2"/>
+	</customidxs>
+</table>
+
+<relationship name="FolhaPagamento" type="rel11"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#4aaa86"
+	 src-table="public.&quot;Funcionario&quot;"
+	 dst-table="public.&quot;Holerite&quot;"
+	 src-required="true" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0.180909" y="18.8909"/>
+	</label>
+	<label ref-type="dst-label">
+		<position x="-3.39625" y="-21.8364"/>
+	</label>
+	<label ref-type="name-label">
+		<position x="2.58927" y="-44.1152"/>
+	</label>
+</relationship>
+
+<table name="Ferias">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="60" y="340"/>
+	<column name="mesReferencia" not-null="true">
+		<type name="date"/>
+	</column>
+	<column name="anoReferencia" not-null="true">
+		<type name="date"/>
+	</column>
+	<constraint name="ID_Ferias" type="pk-constr" table="public.&quot;Ferias&quot;">
+		<columns names="mesReferencia,anoReferencia" ref-type="src-columns"/>
+	</constraint>
+
+	<customidxs object-type="column">
+		<object name="matricula_Funcionario" index="0"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="Funcionario_fk" index="1"/>
+	</customidxs>
+</table>
+
+<relationship name="Ferias" type="rel1n"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#727f2b"
+	 src-table="public.&quot;Funcionario&quot;"
+	 dst-table="public.&quot;Ferias&quot;"
+	 src-required="true" dst-required="false">
+	<label ref-type="src-label">
+		<position x="-28.0009" y="-12.9273"/>
+	</label>
+	<label ref-type="dst-label">
+		<position x="-2.56244" y="-12.7455"/>
+	</label>
+	<label ref-type="name-label">
+		<position x="3.50618" y="-48.6607"/>
+	</label>
+</relationship>
+
+<table name="DecimoTerceiro">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="60" y="440"/>
+	<column name="requisicao" not-null="true">
+		<type name="boolean"/>
+	</column>
+	<column name="parcelaAcumulada" not-null="true">
+		<type name="money"/>
+	</column>
+	<column name="parcelaContador" not-null="true">
+		<type name="decimal"/>
+	</column>
+	<constraint name="ID_Sal13" type="pk-constr" table="public.&quot;DecimoTerceiro&quot;">
+		<columns names="requisicao,parcelaAcumulada" ref-type="src-columns"/>
+	</constraint>
+
+	<customidxs object-type="column">
+		<object name="matricula_Funcionario" index="0"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="DecimoTerceiro_uq" index="2"/>
+		<object name="Funcionario_fk" index="1"/>
+	</customidxs>
+</table>
+
+<relationship name="DecimoTerceiro" type="rel11"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#f46e5a"
+	 src-table="public.&quot;Funcionario&quot;"
+	 dst-table="public.&quot;DecimoTerceiro&quot;"
+	 src-required="true" dst-required="false">
+	<label ref-type="src-label">
+		<position x="-31.6373" y="7.98182"/>
+	</label>
+	<label ref-type="dst-label">
+		<position x="-2.48716" y="-15.4727"/>
+	</label>
+	<label ref-type="name-label">
+		<position x="-14.4562" y="-46.8425"/>
+	</label>
+</relationship>
+
+</dbmodel>

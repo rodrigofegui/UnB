@@ -1,0 +1,89 @@
+%%%%%%%%%%% INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%%%%%%%
+% Versão: 		1.0
+% Autor:		Rodrigo Guimarães
+% Finalidade:	Descritivo do SPT para o Trabalho 2
+%				da disciplina SI 2016.2
+%%%%%%%%%%% FIM INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%% INCLUSÃO DE PACOTES %%%%%%%%%%%%%%%%
+% Classe Base do Documento: Artigo
+\documentclass [12pt]{article}
+% Layout do Papel
+\usepackage{../../Layout/Layout_Documento}
+% Case não funcione, verificar o diretório do arquivo 'Layout_Documento.sty'
+%\usepackage{lipsum}
+%%%%%%%%%%% FIM INCLUSÃO DE PACOTES %%%%%%%%%%%
+
+%%%%%%%%%%% INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%
+\title {Descritivo}
+\subtitle {Sistema de Informação}
+\date {\today}
+%%%%%%%%%%% FIM INFORMAÇÕES BÁSICAS %%%%%%%%%%%
+
+%%%%%%%%%%% DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\inserirTitulo
+
+	O sistema selecionado para o desenvolvimento do trabalho foi o Sistema de Processamento de Transação (SPT), em especial o Sistema de Folha de Pagamento. Tendo como organização base a descrita no arquivo~\emph{Descritivo\_Organização}. Neste arquivo será descrito, brevemente, os aspectos característico deste SI, além do comportamento de tal SI na organização.
+	
+	\section{Conceitualização}	
+	
+	Os SPTs são os sistemas de informação que executam e registram informações transacionais. Essas rotinas são realizadas pelo nível operacional da organização~\cite{Audy:2009}.
+
+	As informações transacionais compreendem todas as informações contidas num único processo de negócios ou unidade de trabalho, e seu propósito principal é apoiar a realização das tarefas operacionais diárias. Além disso, as organizações utilizam as informações transacionais quando realizam tarefas operacionais e decisões repetitivas~\cite{Baltzan:2012}.
+	
+	É notório que quando uma organização decide utilizar a tecnologia da informação os SPTs são os primeiros a serem informatizados. Devido aos benefícios a toda a organização~\cite{Audy:2009}.
+	
+	Com a padronização dos dados e dos procedimentos relativos às transações há uma facilidade no desenvolvimento de sistemas baseados em computadores~\cite{Audy:2009}.
+	
+	\section{Contextualização}
+	Com o SI pretende-se desenvolver um gerenciamento da folha de pagamento.
+	
+	Cada funcionário da empresa preenche uma ficha com suas informações pessoais, como: nome, CPF, data de nascimento, cargo e outras mais; para que haja um controle, primeiramente, da mão-de-obra por parte do~\textit{Setor de Recursos Humanos}.
+	
+	Com base no cargo, será determinado o salário base, que, por sua vez, influenciará nos valores: do salário bruto do mês; das férias; do $13º$ salário; das faltas; alíquotas do INSS~\footnote{Instituto Nacional do Seguro Social, http://www.previdencia.gov.br/} e do IRRF~\footnote{Imposto de Renda Retido na Fonte, http://idg.receita.fazenda.gov.br/acesso-rapido/tributos/IRRF}; e do vale transporte, se o trabalhador escolher recebê-lo. Tendo as respectivas formas de cálculo:
+	
+	\begin{itemize}
+		\item \textbf{Salário Bruto}: É o valor do salário base;
+		\item \textbf{Férias}: Pode ser concedido a cada $12$ meses de trabalho. É o valor do salário do mês anterior, acrescido de $1/3$ do salário base e deduzindo as alíquotas do INSS e do IRRF;
+		\item \textbf{$13º$ Salário}: Dividido, obrigatoriamente, em $2$ parcelas: a $1º$ entre $01/02$ a $30/11$ e a $2º$ até $20/12$. É o somatório acumulado de cada $1/12$ do salário líquido do mês anterior. Ao receber a $1º$ parcela, o somatório é reiniciado para a $2º$ parcela. O $13º$ salário total é o somatório das $2$ parcelas;
+		\item \textbf{Faltas}: Será considerado que o mês comercial tem $30$ dias, dessa forma, cada dia de falta corresponde a uma diminuição de $1/30$, em relação ao salário bruto;
+		\item \textbf{Alíquota do INSS}: Será considera o salário bruto na Tabela~\ref{tab:aliINSSS}. Para os salários acima de R\$$5.189,82$, será deduzido o valor de R\$$570,88$;
+			\begin{table}[h]
+				\centering
+				\caption{Alíquotas do INSS}
+				\label{tab:aliINSSS}
+				\begin{tabular}{r@{ - }l|c}
+					\hline
+					\multicolumn{2}{c|}{Faixa Salarial (R\$)} & Alíquota (\%) \\ \hline\hline
+						0                 & 1.556,94 & 8  \\
+						1.556,95          & 2.594,92 & 9  \\
+						2.594,93          & 5.189,82 & 11 \\ \hline
+				\end{tabular}
+			\end{table}
+		\item \textbf{Alíquota do IRRF}: Será considerado o salário após a dedução do INSS na Tabela~\ref{tab:aliIRRF};
+			\begin{table}[h]
+				\centering
+				\caption{Alíquotas do IRRF}
+				\label{tab:aliIRRF}
+				\begin{tabular}{r@{ - }l|c|c}
+					\hline
+					\multicolumn{2}{c|}{Faixa Salarial (R\$)} & Alíquota (\%) & Parcela a deduzir (R\$) \\ \hline
+					0                   & 1.903,98            & -             & -                       \\
+					1.903,99            & 2.826,65            & 7,5           & 142,80                  \\
+					2.826,66            & 3.751,05            & 15,0          & 354,80                  \\
+					3.751,06            & 4.664,68            & 22,5          & 636,13                  \\
+					4.664,68            & INF                 & 27,5          & 869,36                  \\ \hline
+				\end{tabular}
+			\end{table}
+		\item \textbf{Vale Transporte}: Será deduzido $6\%$ do salário bruto.
+	\end{itemize}
+
+	O acompanhamento é contínuo ao longo dos meses, para uma folha de pagamento de qualidade.
+
+\bibliographystyle{ieeetr}
+\bibliography{Descritivo_SI}
+
+\end{document}
+%%%%%%%%%%% FIM DOCUMENTO %%%%%%%%%%%%%%%%%%%%%

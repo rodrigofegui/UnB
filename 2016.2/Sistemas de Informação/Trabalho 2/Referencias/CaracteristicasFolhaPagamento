@@ -1,0 +1,14 @@
+Características importantes para um Sistema de Folha de Pagamento:
+	- Folha de pagamento é a soma de todos os registros financeiros: vencimentos, salários, bônus e descontos;
+	- Conteúdo necessário na folha de pagamento:
+		* Identificação do Mês/Ano de referência;
+		* Nome da Empresa;
+		* Nome do funcionário;
+		* Matrícula;
+		* Indicação do cargo;
+		* Listagem dos proventos e descontos;
+			* Salário (com bases nos dias trabalhados) (provento);
+			* Férias (provento);
+			* 13º Salário (provento);
+			* INSS e IRRF (descontos);
+			* Vale transporte (desconto) (qnt de transportes);
