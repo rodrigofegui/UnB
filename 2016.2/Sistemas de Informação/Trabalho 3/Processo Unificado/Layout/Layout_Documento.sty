@@ -43,6 +43,8 @@
 \usepackage{array}
 % Manipulação das cores
 \usepackage {color}
+\usepackage{colortbl}
+\usepackage[table,xcdraw]{xcolor}
 % Configuração do texto do rodapé e do cabeçalho
 %\usepackage {fancyheadings}
 \usepackage {fancyhdr}
@@ -56,6 +58,8 @@
 % Possibilita a quebra de tabela em páginas
 \usepackage {longtable}
 \usepackage {supertabular}
+\usepackage{booktabs}
+\usepackage{xparse}
 % Possibilita a inserção de hiperlink
 %\usepackage{hyperref}
 %%%%%%%%%%% FIM INCLUSÃO DE PACOTES %%%%%%%%%%%
@@ -66,6 +70,7 @@
 \definecolor {laranjaElectron} {RGB} {231, 80, 29}
 \definecolor {laranjaClaroElectron} {RGB} {241, 145, 6}
 \definecolor {cinzaClaro} {RGB} {115, 115, 115}
+\definecolor {cinzaMaisClaro} {RGB} {201, 201, 201}
 %%%%%%%%%%% FIM CORES LOCAIS %%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%% MARGENS DA FOLHA %%%%%%%%%%%%%%%%%%
@@ -164,6 +169,12 @@
 
 \newcommand{\subtitle}[1]{\author{#1}}
 \newcommand{\thesubtitle}{\theauthor}
+
+\newcounter{magicrownumbers}
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+\newcounter{tabela}
+\setcounter{tabela}{1}
+\newcommand{\tabela}{\arabic{tabela}}
 %%%%%%%%%%% FIM COMANDOS ADICIONAIS %%%%%%%%%%%
 
 %%%%%%%%%%% AMBIENTES ADICIONAIS %%%%%%%%%%%%%%
@@ -186,4 +197,22 @@
 %									\end{table}
 									\end{center}
 									}
+									
+% Tabela de Levantamento de Requisitos
+\NewDocumentEnvironment{LevantarRequisitos}{m O{ } m}%{O{Nome da função} o o}
+	{\begin{center}
+		\begin{longtable}
+			{@{~NF~$\tabela.\rownumber$:~}>{\centering\arraybackslash}m{0.2cm} |>{\centering\arraybackslash}m{2.5cm} |>{\centering\arraybackslash}m{12cm} |>{\centering\arraybackslash}m{3cm} |>{\centering\arraybackslash}m{2cm} |>{\centering\arraybackslash}m{2cm}} \hline
+			\multicolumn{1}{c|}{\cellcolor{cinzaClaro}\textbf{F~$\mathbf{\tabela}$:}} & \multicolumn{3}{|c|}{~#1} & {\cellcolor{cinzaClaro}\textbf{Oculto:}} & (#2) \\ \hline
+			\multicolumn{1}{c|}{\cellcolor{cinzaClaro}\textbf{Descrição}:} & \multicolumn{5}{|c}{#3} \\ \hline
+			\multicolumn{6}{c}{\cellcolor{cinzaClaro}\textbf{Requisitos Não-Funcionais}} \\ \hline
+			\multicolumn{2}{c|}{\cellcolor{cinzaMaisClaro}\textbf{Nome}} & \cellcolor{cinzaMaisClaro}\textbf{Restrição} & \cellcolor{cinzaMaisClaro}\textbf{Categoria} & \cellcolor{cinzaMaisClaro}\textbf{Desejável} & \cellcolor{cinzaMaisClaro}\textbf{Permanente} \\ \hline
+			\endhead
+	}{
+			%\hline
+		\end{longtable}
+	\end{center}	
+	\setcounter{magicrownumbers}{0}
+	\stepcounter{tabela}
+	}
 %%%%%%%%%%% FIM AMBIENTES ADICIONAIS %%%%%%%%%%

@@ -1,0 +1,80 @@
+%%%%%%%%%%% INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%%%%%%%
+% Versão: 		1.0
+% Autor:			Rodrigo Guimarães
+% Finalidade:	Visão da Empresa para o sistema
+%%%%%%%%%%% FIM INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%% INCLUSÃO DE PACOTES %%%%%%%%%%%%%%%%
+% Classe Base do Documento: Artigo
+%\documentclass [12pt, landscape]{article}
+\documentclass [12pt]{article}
+% Layout do Papel
+\usepackage{../../Layout/Layout_Documento}
+% Case não funcione, verificar o diretório do arquivo 'Layout_Documento.sty'
+%\usepackage{lipsum}
+%%%%%%%%%%% FIM INCLUSÃO DE PACOTES %%%%%%%%%%%
+
+
+%%%%%%%%%%% INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%
+\title {Levantamento de Requisitos}
+\date {\today}
+%%%%%%%%%%% FIM INFORMAÇÕES BÁSICAS %%%%%%%%%%%
+
+%%%%%%%%%%% DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\inserirTitulo
+	
+	Os requisitos funcionais estão descritos como:
+	
+	\begin{enumerate}
+		\item \textbf{Cadastrar Empregado:} O sistema deve registrar um novo empregado no sistema, com seus dados pessoais necessários, expedindo uma notificação ao empregado;
+		\item \textbf{Analisar Contrato:} O sistema deve verificar a situação corrente do contrato com o empragado, possibilitando ou não o trabalho do mesmo;
+		\item \textbf{Gerar holerite:} O sistema deve gerar a holerite com todos os bônus e ônus do empregado, para um mês específico;
+		\item \textbf{Emitir holerite:} O sistema deve emitir a holerite, como forma de comprovação do pagamento realizado ao empregado;
+		\item \textbf{Calcular os bônus:} O sistema deve cálcular os bônus disponíveis para o empregado, para um mês específico;
+		\item \textbf{Calcular os ônus:} O sistema deve cálcular os ônus disponíveis para o empregado, para um mês específico;
+		\item \textbf{Resgatar Salário Base:} O sistema deve ser capaz de obter o valor do salário base do empregado, conforme a sua profissão;
+		\item \textbf{Controlar Férias:} O sistema deve ser capaz de gerenciar os pedidos de férias e as concessões possíveis;
+		\item \textbf{Controlar Parcelas $13$º:} O sistema deve ser capaz de gerenciar o pagamento das parcelas do $13$º salário;
+		\item \textbf{Controlar Faltas:} O sistema deve ser capaz de gerenciar as faltas realizadas pelo empregado;
+		\item \textbf{Controlar alíquota do INSS:} O sistema deve ser capaz de determinar a quantia a ser deduzida do salário do empregado para o INSS;
+		\item \textbf{Controlar alíquota do IRRF:} O sistema deve ser capaz de determinar a quantia a ser deduzida do salário do empregado para o IRRF;
+		\item \textbf{Controlar vale-transporte:} O sistema deve ser capaz de deduzir o vale-transporte, caso seja de desejo do empregado;
+		\item \textbf{Somar às despesas:} O sistema deve ser capaz de somar o pagamento realizado aos empregados às despesas da empresa.
+	\end{enumerate}
+	
+%	\begin{LevantarRequisitos}
+%		{Cadastrar Empregado}
+%		{O sistema deve registrar um novo empregado no sistema, com seus dados pessoais necessários, expedindo uma notificação ao empregado}
+%	\end{LevantarRequisitos}
+		
+%	\begin{LevantarRequisitos}
+%		{Analisar Contrato}
+%		{O sistema deve verificar a situação corrente do contrato com o empragado, possibilitando ou não o trabalho do mesmo}
+%	\end{LevantarRequisitos}
+	
+%	\begin{LevantarRequisitos}
+%		{Gerar holerite}
+%		{O sistema deve gerar a holerite com todos os bônus e ônus do empregado, para um mês específico}
+%	\end{LevantarRequisitos}
+	
+%	\begin{LevantarRequisitos}
+%		{Emitir holerite}
+%		{O sistema deve emitir a holerite, como forma de comprovação do pagamento realizado ao empregado}
+%	\end{LevantarRequisitos}
+	
+%	\begin{LevantarRequisitos}
+%		{Calcular os bônus}
+%		[x]
+%		{O sistema deve cálcular os bônus disponíveis para o empregado, para um mês específico}
+%	\end{LevantarRequisitos}
+	
+%	\begin{LevantarRequisitos}
+%		{Calcular os ônus}
+%		[x]
+%		{O sistema deve cálcular os ônus disponíveis para o empregado, para um mês específico}
+%	\end{LevantarRequisitos}
+	
+\end{document}
+%%%%%%%%%%% FIM DOCUMENTO %%%%%%%%%%%%%%%%%%%%%
