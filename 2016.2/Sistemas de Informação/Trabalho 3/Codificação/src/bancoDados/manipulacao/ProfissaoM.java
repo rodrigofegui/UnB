@@ -77,7 +77,6 @@ public class ProfissaoM {
 		
 		}finally {
 			Conexao.encerrarConexao(conexao, declaracao, resultado);
-			
 		}
 		
 		return profissoes;
