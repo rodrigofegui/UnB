@@ -7,29 +7,30 @@ import java.sql.SQLException;
 import java.util.LinkedList;
 
 import bancoDados.Conexao;
-import bancoDados.tabelas.INSS;
+import bancoDados.tabelas.IRRF;
 
 /**
- * Classe responsável pela mamipulação da tabela INSS no Banco de Dados 
+ * Classe responsável pela mamipulação da tabela IRRF no Banco de Dados 
  * @author	Rodrigo Guimarães
  * @version	1.0
  * @since	29/11/2016
  */
-public class INSSM {
+public class IRRFM {
 	/**
-	 * Criação de uma instância da tabela INSS no BD
-	 * @param inss Instância a ser registrada no BD
+	 * Criação de uma instância da tabela IRRF no BD
+	 * @param irrf Instância a ser registrada no BD
 	 */
-	public void inserir (INSS inss){
+	public void inserir (IRRF irrf){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
-		String instrucao = "INSERT INTO INSS (limiteSuperior, aliquota) VALUES (?, ?)";
+		String instrucao = "INSERT INTO IRRF (limiteSuperior, aliquota, desconto) VALUES (?, ?, ?)";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
 			
-			declaracao.setFloat	(1, inss.getLimSuperior());
-			declaracao.setFloat	(2, inss.getAliquota());
+			declaracao.setFloat	(1, irrf.getLimSuperior());
+			declaracao.setFloat	(2, irrf.getAliquota());
+			declaracao.setFloat	(3, irrf.getDesconto());
 			
 			declaracao.executeUpdate();
 			
@@ -42,28 +43,29 @@ public class INSSM {
 	}
 	
 	/**
-	 * Leitura de toda a Tabela INSS no BD
+	 * Leitura de toda a Tabela IRRF no BD
 	 * @return Todas as instâncias existentes no BD
 	 */
-	public LinkedList<INSS> lerCompleto (){
+	public LinkedList<IRRF> lerCompleto (){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		ResultSet resultado = null;
-		LinkedList<INSS> listInss = new LinkedList<INSS>();
-		String instrucao = "SELECT * FROM INSS";
+		LinkedList<IRRF> listirrf = new LinkedList<IRRF>();
+		String instrucao = "SELECT * FROM IRRF";
 		
 		try {
 			declaracao = conexao.prepareStatement(instrucao);
 			resultado = declaracao.executeQuery();
 			
 			while (resultado.next()){
-				INSS inss = new INSS();
+				IRRF irrf = new IRRF();
 				
-				inss.setCodigo(resultado.getInt("codigo"));
-				inss.setLimSuperior(resultado.getFloat("limiteSuperior"));
-				inss.setAliquota(resultado.getFloat("aliquota"));
+				irrf.setCodigo(resultado.getInt("codigo"));
+				irrf.setLimSuperior(resultado.getFloat("limiteSuperior"));
+				irrf.setAliquota(resultado.getFloat("aliquota"));
+				irrf.setDesconto(resultado.getFloat("desconto"));
 				
-				listInss.add(inss);
+				listirrf.add(irrf);
 			}
 				
 			
@@ -74,26 +76,27 @@ public class INSSM {
 			Conexao.encerrarConexao(conexao, declaracao, resultado);
 		}
 		
-		return listInss;
+		return listirrf;
 	}
 	
 	/**
-	 * Atualização de uma instância da tabela INSS no BD
-	 * @param inss Instância a ser atualizada no BD
+	 * Atualização de uma instância da tabela IRRF no BD
+	 * @param irrf Instância a ser atualizada no BD
 	 */
-	public void atualizar (INSS inss){
+	public void atualizar (IRRF irrf){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
-		String instrucao = "UPDATE INSS SET"
-							+ "	limiteSuperior = ?, aliquota = ?"
+		String instrucao = "UPDATE IRRF SET"
+							+ "	limiteSuperior = ?, aliquota = ?, desconto = ?"
 							+ " WHERE codigo = ?";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
 			
-			declaracao.setFloat	(1, inss.getLimSuperior());
-			declaracao.setFloat	(2, inss.getAliquota());
-			declaracao.setInt	(3, inss.getCodigo());
+			declaracao.setFloat	(1, irrf.getLimSuperior());
+			declaracao.setFloat	(2, irrf.getAliquota());
+			declaracao.setFloat	(3, irrf.getDesconto());
+			declaracao.setInt	(4, irrf.getCodigo());
 			
 			declaracao.executeUpdate();
 			
@@ -106,18 +109,18 @@ public class INSSM {
 	}
 	
 	/**
-	 * Exclusão de uma instância da tabela INSS do BD
-	 * @param inss Instância a ser excluída do BD
+	 * Exclusão de uma instância da tabela IRRF do BD
+	 * @param irrf Instância a ser excluída do BD
 	 */
-	public void deletar (INSS inss){
+	public void deletar (IRRF irrf){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
-		String instrucao = "DELETE FROM INSS WHERE codigo = ?";
+		String instrucao = "DELETE FROM IRRF WHERE codigo = ?";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
 			
-			declaracao.setInt		(1, inss.getCodigo());
+			declaracao.setInt		(1, irrf.getCodigo());
 			
 			declaracao.executeUpdate();
 			

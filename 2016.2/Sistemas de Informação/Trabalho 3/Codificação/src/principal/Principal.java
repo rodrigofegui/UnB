@@ -8,10 +8,9 @@ public class Principal {
 		INSSM maniInss = new INSSM();
 		INSS inss = new INSS();
 		
-		inss.setLimSuperior(1556.94f);
-		inss.setAliquota(8f);
+		inss.setCodigo(1);
 		
-		maniInss.inserir(inss);
+		maniInss.deletar(inss);
 		
 		System.out.println("Finalizou");
 	}
