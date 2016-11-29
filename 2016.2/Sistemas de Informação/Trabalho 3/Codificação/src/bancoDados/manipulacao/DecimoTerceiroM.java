@@ -1,7 +1,6 @@
 package bancoDados.manipulacao;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,7 +8,6 @@ import java.util.LinkedList;
 
 import bancoDados.Conexao;
 import bancoDados.tabelas.DecimoTerceiro;
-import bancoDados.tabelas.Ferias;
 
 /**
  * Classe responsável pela mamipulação da tabela DecimoTerceiro no Banco de Dados 
@@ -27,15 +25,15 @@ public class DecimoTerceiroM {
 		PreparedStatement declaracao = null;
 		String instrucao = "INSERT INTO DecimoTerceiro ("
 							+ "requisicao, parcelaAcumulada, parcelaContador, Funcionario_matricula)"
-							+ " VALUES (?, ?)";
+							+ " VALUES (?, ?, ?, ?)";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
 			
 			declaracao.setBoolean	(1, decTer.isRequisitado());
-			declaracao.setFloat	(2, decTer.getParcelaAcumulada());
-			declaracao.setInt	(1, decTer.getContParcela());
-			declaracao.setInt	(1, decTer.getFuncMat());
+			declaracao.setFloat		(2, decTer.getParcelaAcumulada());
+			declaracao.setInt		(3, decTer.getContParcela());
+			declaracao.setInt		(4, decTer.getFuncMat());
 			
 			declaracao.executeUpdate();
 			

@@ -9,7 +9,6 @@ import java.util.LinkedList;
 
 import bancoDados.Conexao;
 import bancoDados.tabelas.Funcionario;
-import bancoDados.tabelas.IRRF;
 
 /**
  * Classe responsável pela mamipulação da tabela Funcionário no Banco de Dados 
