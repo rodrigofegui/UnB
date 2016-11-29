@@ -112,7 +112,7 @@ public class FeriasM {
 	public void deletar (Ferias ferias){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
-		String instrucao = "DELETE FROM IRRF WHERE codigo = ?";
+		String instrucao = "DELETE FROM Ferias WHERE codigo = ?";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
