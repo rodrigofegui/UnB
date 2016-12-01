@@ -1,5 +1,7 @@
 package bancoDados.tabelas;
 
+import bancoDados.manipulacao.ProfissaoM;
+
 /**
  * Classe responsável pela implementação da tabela homônima do Banco de Dados 
  * @author	Rodrigo Guimarães
@@ -13,6 +15,25 @@ public class Profissao {
 	private int disciplina_codigo;
 	private int inss_codigo;
 	private int irrf_codigo;
+	
+	
+	
+	/**
+	 * Construção do Profissao, por maneira default
+	 */
+	public Profissao (){
+		setCodigo(-1);
+		
+		setDescricao("");
+		
+		setSalarioBase(0f);
+		
+		setDisciplina_codigo(-1);
+		
+		setInss_codigo(-1);
+		
+		setIrrf_codigo(-1);
+	}
 	
 	
 	
@@ -114,5 +135,52 @@ public class Profissao {
 	 */
 	public void setIrrf_codigo(int irrf_codigo) {
 		this.irrf_codigo = irrf_codigo;
+	}
+	
+	
+	
+	/**
+	 * Inserção das profissões default que devem constar no BD, com base no site
+	 * <a href="http://www.pisosalarial.com.br/salarios/tabela-salarial/">
+	 * Piso Salarial - Tabela Salarial 2016</a>.<br>
+	 */
+	public static void povar (){
+		ProfissaoM profM = new ProfissaoM();
+		Profissao profissao;
+		
+		profissao = new Profissao();
+		profissao.setDescricao("Professor presencial");
+		profissao.setSalarioBase(2764.78f);
+		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
+		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
+		profM.inserir(profissao);
+		
+		profissao = new Profissao();
+		profissao.setDescricao("Professor online");
+		profissao.setSalarioBase(2764.78f);
+		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
+		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
+		profM.inserir(profissao);
+		
+		profissao = new Profissao();
+		profissao.setDescricao("Equipe limpeza");
+		profissao.setSalarioBase(2242.57f);
+		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
+		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
+		profM.inserir(profissao);
+		
+		profissao = new Profissao();
+		profissao.setDescricao("Equipe alimentação");
+		profissao.setSalarioBase(1620.10f);
+		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
+		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
+		profM.inserir(profissao);
+		
+		profissao = new Profissao();
+		profissao.setDescricao("Equipe áudio-visual");
+		profissao.setSalarioBase(2100.00f);
+		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
+		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
+		profM.inserir(profissao);
 	}
 }

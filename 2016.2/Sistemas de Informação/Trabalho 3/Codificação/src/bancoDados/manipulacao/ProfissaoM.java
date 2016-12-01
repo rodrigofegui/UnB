@@ -23,7 +23,19 @@ public class ProfissaoM {
 	public void inserir (Profissao profissao){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
-		String instrucao = "INSERT INTO Profissao (descricao, salarioBase, INSS_codigo, IRRF_codigo) VALUES (?, ?, ?, ?)";
+		String instrucao = "INSERT INTO Profissao (descricao, salarioBase, INSS_codigo, IRRF_codigo";
+		String interrogacao = "";
+		
+		if (profissao.getCodigo() != -1){
+			instrucao += ", codigo)";
+			interrogacao = "?, ?, ?, ?, ?";
+			
+		}else{
+			instrucao += ")";
+			interrogacao = "?, ?, ?, ?";
+		}
+	
+		instrucao += " VALUES (" + interrogacao + ")";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
@@ -32,6 +44,9 @@ public class ProfissaoM {
 			declaracao.setFloat		(2, profissao.getSalarioBase());
 			declaracao.setInt		(3, profissao.getInss_codigo());
 			declaracao.setInt		(4, profissao.getIrrf_codigo());
+			
+			if (profissao.getCodigo() != -1)
+				declaracao.setInt		(5, profissao.getCodigo());
 			
 			declaracao.executeUpdate();
 			

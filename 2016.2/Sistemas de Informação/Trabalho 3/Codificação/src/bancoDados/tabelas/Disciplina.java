@@ -1,5 +1,7 @@
 package bancoDados.tabelas;
 
+import bancoDados.manipulacao.DisciplinaM;
+
 /**
  * Classe responsável pela implementação da tabela homônima do Banco de Dados 
  * @author	Rodrigo Guimarães
@@ -10,6 +12,16 @@ public class Disciplina {
 	private int codigo;
 	private String descricao;
 
+	
+	
+	/**
+	 * Construção do Disciplina, por maneira default
+	 */
+	public Disciplina(){
+		setCodigo(-1);
+		
+		setDescricao("");
+	}
 	
 	
 	
@@ -43,5 +55,19 @@ public class Disciplina {
 	 */
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+	
+	/**
+	 * Inserção das Disciplinas default que devem constar no BD
+	 */
+	public static void povoar (){
+		DisciplinaM discM = new DisciplinaM();
+		
+		discM.inserir("Matemática");
+		discM.inserir("Português");
+		discM.inserir("Geografia");
+		discM.inserir("História");
+		discM.inserir("Biologia");
+		discM.inserir("Física");
 	}
 }

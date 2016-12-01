@@ -14,6 +14,20 @@ public class Ferias {
 	
 	
 	/**
+	 * Construção do Férias, por maneira default
+	 */
+	public Ferias (){
+		setCodigo(-1);
+		
+		setDataRef("0000-00-00");
+		
+		setFuncMat(-1);
+	}
+	
+	
+	
+	
+	/**
 	 * Valor atribuído ao código das Férias
 	 * @return O codigo das Férias
 	 */

@@ -23,12 +23,27 @@ public class DisciplinaM {
 	public void inserir (Disciplina disciplina){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
-		String instrucao = "INSERT INTO Disciplina (descricao) VALUES (?)";
+		String instrucao = "INSERT INTO Disciplina (descricao"; 
+		String interrogacao = "";
+	
+		if (disciplina.getCodigo() != -1){
+			instrucao += ", codigo)";
+			interrogacao = "?, ?";
+		
+		}else{
+			instrucao += ")";
+			interrogacao = "?";
+		}
+		
+		instrucao += " VALUES (" + interrogacao + ")";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
 			
 			declaracao.setString(1, disciplina.getDescricao());
+			
+			if (disciplina.getCodigo() != -1)
+				declaracao.setInt(2, disciplina.getCodigo());
 			
 			declaracao.executeUpdate();
 			
@@ -38,6 +53,19 @@ public class DisciplinaM {
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
 		}
+	}
+	
+	/**
+	 * Criação de uma instância da tabela Disciplina no BD, sem ter uma
+	 * Disciplina jpa criada
+	 * @param descricao Descrição da disciplina a ser criada e inserida no BD
+	 */
+	public void inserir (String descricao){
+		Disciplina disciplina = new Disciplina();
+		
+		disciplina.setDescricao(descricao);
+		
+		inserir(disciplina);
 	}
 	
 	/**

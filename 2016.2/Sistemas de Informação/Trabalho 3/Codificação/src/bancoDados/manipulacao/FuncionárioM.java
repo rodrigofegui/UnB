@@ -27,8 +27,19 @@ public class FuncionárioM {
 		String instrucao = "INSERT INTO Funcionario ("
 							+ "cpf, nome, dataNascimento, telefone,"
 							+ " email, dataAdmissao, valeTransporte_Dia, Profissao_codigo,"
-							+ " Profissao_INSS_codigo, Profissao_IRRF_codigo) VALUES ("
-							+ "?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+							+ " Profissao_INSS_codigo, Profissao_IRRF_codigo";
+		String interrogacao = "";
+		
+		if (func.getMatricula() != -1){
+			instrucao += ", matricula)";
+			interrogacao = "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?";
+			
+		}else{
+			instrucao += ")";
+			interrogacao = "?, ?, ?, ?, ?, ?, ?, ?, ?, ?";
+		}
+	
+		instrucao += " VALUES (" + interrogacao + ")";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
@@ -43,6 +54,9 @@ public class FuncionárioM {
 			declaracao.setInt		(8, func.getCodProf());
 			declaracao.setInt		(9, func.getCodProfInss());
 			declaracao.setInt		(10, func.getCodProfIrrf());
+			
+			if (func.getMatricula() != -1)
+				declaracao.setInt	(11, func.getMatricula());
 			
 			declaracao.executeUpdate();
 			

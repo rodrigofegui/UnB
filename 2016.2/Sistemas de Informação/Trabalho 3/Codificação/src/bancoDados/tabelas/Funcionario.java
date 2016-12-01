@@ -20,6 +20,34 @@ public class Funcionario {
 	private int codProfIrrf;
 	
 	
+	/**
+	 * Construção do Funcionário, por maneira default
+	 */
+	public Funcionario (){
+		setMatricula(-1);
+		
+		setCpf("000.000.000-00");
+		
+		setNome("Fulano");
+		
+		setDataNasc("0000-00-00");
+		
+		setTelefone("000 0 0000 0000");
+		
+		setEmail("fulano@ciclano.com");
+		
+		setDataAdm("0000-00-00");
+		
+		setQntValeTransp(-1);
+		
+		setCodProf(-1);
+		
+		setCodProfInss(-1);
+		
+		setCodProfIrrf(-1);
+	}
+	
+	
 	
 	/**
 	 * Valor atribuído à matricula do Funcionário

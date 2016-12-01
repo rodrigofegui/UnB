@@ -16,7 +16,8 @@ import java.sql.SQLException;
 public class Conexao{
 	private static final String SERVIDOR = "localhost:3306";
 	private static final String NOME = "t3_si";
-	private static final String URL = "jdbc:mysql://" + SERVIDOR + "/" + NOME;
+	private static final String SSL_ERROR = "?autoReconnect=true&useSSL=false";
+	private static final String URL = "jdbc:mysql://" + SERVIDOR + "/" + NOME + SSL_ERROR;
 	private static final String USUARIO = "estudante";
 	private static final String SENHA = "t3si_";
 	private static final String DRIVER = "com.mysql.jdbc.Driver";

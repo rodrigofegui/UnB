@@ -23,13 +23,28 @@ public class INSSM {
 	public void inserir (INSS inss){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
-		String instrucao = "INSERT INTO INSS (limiteSuperior, aliquota) VALUES (?, ?)";
+		String instrucao = "INSERT INTO INSS (limiteSuperior, aliquota";
+		String interrogacao = "";
+		
+		if (inss.getCodigo() != -1){
+			instrucao += ", codigo)";
+			interrogacao = "?, ?, ?";
+			
+		}else{
+			instrucao += ")";
+			interrogacao = "?, ?";
+		}
+	
+		instrucao += " VALUES (" + interrogacao + ")";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
 			
 			declaracao.setFloat	(1, inss.getLimSuperior());
 			declaracao.setFloat	(2, inss.getAliquota());
+			
+			if (inss.getCodigo() != -1)
+				declaracao.setInt(3, inss.getCodigo());
 			
 			declaracao.executeUpdate();
 			

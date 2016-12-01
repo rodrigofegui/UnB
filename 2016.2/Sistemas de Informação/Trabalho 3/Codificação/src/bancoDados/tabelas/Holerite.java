@@ -14,6 +14,24 @@ public class Holerite {
 	private int funcMat;
 	
 	
+	
+	/**
+	 * Construção do Holerite, por maneira default
+	 */
+	public Holerite (){
+		setCodigo(-1);
+		
+		setDataRef("0000-00-00");
+		
+		setSalLiq(0f);
+		
+		setFaltas(0);
+		
+		setFuncMat(-1);
+	}
+	
+	
+	
 	/**
 	 * Valor atribuído à data de referência da Holerite
 	 * @return A data de referência da Holerite

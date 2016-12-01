@@ -24,8 +24,19 @@ public class DecimoTerceiroM {
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "INSERT INTO DecimoTerceiro ("
-							+ "requisicao, parcelaAcumulada, parcelaContador, Funcionario_matricula)"
-							+ " VALUES (?, ?, ?, ?)";
+							+ "requisicao, parcelaAcumulada, parcelaContador, Funcionario_matricula";
+		String interrogacao = "";
+		
+		if (decTer.getCodigo() != -1){
+			instrucao += ", codigo)";
+			interrogacao = "?, ?, ?, ?, ?";
+			
+		}else{
+			instrucao += ")";
+			interrogacao = "?, ?, ?, ?";
+		}
+			
+		instrucao += " VALUES (" + interrogacao + ")";		
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
@@ -34,6 +45,9 @@ public class DecimoTerceiroM {
 			declaracao.setFloat		(2, decTer.getParcelaAcumulada());
 			declaracao.setInt		(3, decTer.getContParcela());
 			declaracao.setInt		(4, decTer.getFuncMat());
+			
+			if (decTer.getCodigo() != -1)
+				declaracao.setInt		(5, decTer.getCodigo());
 			
 			declaracao.executeUpdate();
 			

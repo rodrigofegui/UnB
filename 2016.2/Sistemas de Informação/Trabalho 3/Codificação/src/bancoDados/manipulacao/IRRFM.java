@@ -23,7 +23,19 @@ public class IRRFM {
 	public void inserir (IRRF irrf){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
-		String instrucao = "INSERT INTO IRRF (limiteSuperior, aliquota, desconto) VALUES (?, ?, ?)";
+		String instrucao = "INSERT INTO IRRF (limiteSuperior, aliquota, desconto";
+		String interrogacao = "";
+		
+		if (irrf.getCodigo() != -1){
+			instrucao += ", codigo)";
+			interrogacao = "?, ?, ?, ?";
+			
+		}else{
+			instrucao += ")";
+			interrogacao = "?, ?, ?";
+		}
+	
+		instrucao += " VALUES (" + interrogacao + ")";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
@@ -31,6 +43,9 @@ public class IRRFM {
 			declaracao.setFloat	(1, irrf.getLimSuperior());
 			declaracao.setFloat	(2, irrf.getAliquota());
 			declaracao.setFloat	(3, irrf.getDesconto());
+			
+			if (irrf.getCodigo() != -1)
+				declaracao.setInt(4, irrf.getCodigo());
 			
 			declaracao.executeUpdate();
 			

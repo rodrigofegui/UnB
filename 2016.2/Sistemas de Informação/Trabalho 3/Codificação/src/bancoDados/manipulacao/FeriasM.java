@@ -24,13 +24,28 @@ public class FeriasM {
 	public void inserir (Ferias ferias){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
-		String instrucao = "INSERT INTO Ferias (dataReferencia, Funcionario_matricula) VALUES (?, ?)";
+		String instrucao = "INSERT INTO Ferias (dataReferencia, Funcionario_matricula";
+		String interrogacao = "";
+		
+		if (ferias.getCodigo() != -1){
+			instrucao += ", codigo)";
+			interrogacao = "?, ?, ?";
+			
+		}else{
+			instrucao += ")";
+			interrogacao = "?, ?";
+		}
+	
+		instrucao += " VALUES (" + interrogacao + ")";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
 			
 			declaracao.setDate	(1, Date.valueOf(ferias.getDataRef()));
 			declaracao.setInt	(2, ferias.getFuncMat());
+			
+			if (ferias.getCodigo() != -1)
+				declaracao.setInt	(3, ferias.getCodigo());
 			
 			declaracao.executeUpdate();
 			

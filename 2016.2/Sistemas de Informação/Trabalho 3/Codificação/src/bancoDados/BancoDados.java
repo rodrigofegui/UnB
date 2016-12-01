@@ -1,6 +1,5 @@
 package bancoDados;
 
-import bancoDados.tabelas.Profissao;
 
 /**
  * Classe responsável pela implementação do Banco de Dados 
@@ -9,6 +8,5 @@ import bancoDados.tabelas.Profissao;
  * @since	28/11/2016
  */
 public class BancoDados{
-	private Conexao conexao;
-	private Profissao profissao;
+
 }

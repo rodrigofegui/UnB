@@ -14,6 +14,23 @@ public class DecimoTerceiro {
 	private int funcMat;
 	
 	
+	/**
+	 * Construção do DecimoTerceiro, por maneira default
+	 */
+	public DecimoTerceiro(){
+		setCodigo(-1);
+		
+		setRequisicao(false);
+		
+		setParcelaAcumulada(0f);
+		
+		setContParcela(0);
+		
+		setFuncMat(-1);
+	}
+	
+	
+	
 	
 	/**
 	 * Valor atribuído ao código do 13º

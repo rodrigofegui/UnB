@@ -25,8 +25,19 @@ public class HoleriteM {
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "INSERT INTO Holerite ("
-							+ "dataReferencia, salarioLiquido, faltas, Funcionario_matricula)"
-							+ " VALUES (?, ?, ?, ?)";
+							+ "dataReferencia, salarioLiquido, faltas, Funcionario_matricula";
+		String interrogacao = "";
+		
+		if (holerite.getCodigo() != -1){
+			instrucao += ", codigo)";
+			interrogacao = "?, ?, ?, ?, ?";
+			
+		}else{
+			instrucao += ")";
+			interrogacao = "?, ?, ?, ?";
+		}
+	
+		instrucao += " VALUES (" + interrogacao + ")";
 		
 		try{
 			declaracao = conexao.prepareStatement(instrucao);
@@ -36,6 +47,9 @@ public class HoleriteM {
 			declaracao.setInt	(3, holerite.getFaltas());
 			declaracao.setInt	(4, holerite.getFuncMat());
 			
+			if (holerite.getCodigo() != -1)
+				declaracao.setInt	(5, holerite.getCodigo());
+				
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {

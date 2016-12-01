@@ -1,20 +1,17 @@
 package principal;
 
-import java.sql.Date;
+import trabalhoFeliz.DeptRH;
 
 public class Principal {
 	public static void main(String[] args){
 		/*
-		INSSM maniInss = new INSSM();
-		INSS inss = new INSS();
+		DeptRH deptRH = new DeptRH();
 		
-		inss.setCodigo(1);
-		
-		maniInss.deletar(inss);
+		deptRH.cadrastarFuncionario();
 		//*/
 		
-		System.out.println("Date -> " + Date.valueOf("1994-12-24").toString());
-		
-		System.out.println("Finalizou");
+		String teste = "Stringcomnumeros0123456789esmbolos@-_.com";
+		System.out.println("old   -> " + teste);
+		System.out.println("new -> " + Formatacao.isEmail(teste));
 	}
 }
