@@ -3,7 +3,8 @@ package trabalhoFeliz;
 import java.util.Scanner;
 
 import bancoDados.tabelas.Funcionario;
-import principal.Formatacao;
+import utilitario.Autentificacao;
+import utilitario.Erro;
 
 /**
  * Classe responsável pela implementação de um Empregado
@@ -13,25 +14,35 @@ import principal.Formatacao;
  * @since	29/11/2016
  */
 public class Empregado {
+	private static Scanner entrada = new Scanner (System.in);
+	
 	public static Funcionario preencherDados (){
 		Funcionario func = new Funcionario();
-		Scanner entrada = new Scanner (System.in);
 		
+		preencherNome(func);
 		
-		System.out.println("1. Nome completo:");
-			func.setNome(Formatacao.nome(entrada.nextLine()));
+		preeencherCpf(func);
+		
+		preencherData(func, "Nascimento");
 			
-		System.out.println("2. CPF (somente os números):");
-			func.setCpf(Formatacao.cpf(entrada.nextLine()));
 			
 		System.out.println("3. Data de Nascimento (aaaa-mm-dd, ou só os números nessa sequência):");
-			func.setDataNasc(Formatacao.data(entrada.nextLine()));
+			func.setDataNasc(Autentificacao.data(entrada.nextLine()));
 			
 		System.out.println("4. Telefone:");
 			func.setTelefone(entrada.nextLine());
+		
+		do{
+			System.out.println("5. E-mail:");
 			
-		System.out.println("5. E-mail:");
-			func.setEmail(entrada.nextLine());
+			if (Autentificacao.isEmail(entrada.nextLine())){
+				func.setEmail(entrada.nextLine());
+				break;
+			
+			}else{
+				System.out.println("Erro: E-mail inválido, digite novamente.");
+			}
+		}while(true);
 			
 		System.out.println("6. Profissão, escolha uma opção:");
 			System.out.println("\t1 - Professor presencial;");
@@ -52,6 +63,59 @@ public class Empregado {
 	
 	
 	
+	/**
+	 * Requisitar o preenchimento do nome do funcionário; deve-se tentar
+	 * enquanto for um nome inválido
+	 * @param func Funcionário a ter o nome atribuído
+	 */
+	private static void preencherNome (Funcionario func){
+		do{
+			System.out.println("* Nome completo (sem acentuação):");
+			String linha = entrada.nextLine();
+			
+			if (Autentificacao.isNome(linha)){
+				func.setNome(linha);
+				break;
+				
+			}else
+				System.out.println(Erro.nome());
+		}while (true);
+	}
+	
+	/**
+	 * Requisitar o preenchimento do CPF do funcionário; deve-se tentar
+	 * enquanto for um CPF inválido
+	 * @param func Funcionário a ter o nome atribuído
+	 */
+	private static void preeencherCpf (Funcionario func){
+		do{
+			System.out.println("* CPF (somente os números):");
+			String linha = entrada.nextLine();
+			
+			if (Autentificacao.isCpf(linha)){
+				func.setCpf(Autentificacao.cpf(linha));
+				break;
+				
+			}else
+				System.out.println(Erro.cpf());
+				
+				
+		}while(true);
+	}
 
-
+	private static void preencherData (Funcionario func, String tipo){
+		do{
+			System.out.println("* Data de " + tipo + " (aaaa-mm-dd, só os números nessa sequência):");
+			String linha = Autentificacao.data(entrada.nextLine());
+			
+			if (Autentificacao.isCpf(linha)){
+				func.setCpf(Autentificacao.cpf(linha));
+				break;
+				
+			}else
+				System.out.println(Erro.cpf());
+				
+				
+		}while(true);
+	}
 }

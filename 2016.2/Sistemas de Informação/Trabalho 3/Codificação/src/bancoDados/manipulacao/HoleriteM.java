@@ -9,6 +9,7 @@ import java.util.LinkedList;
 
 import bancoDados.Conexao;
 import bancoDados.tabelas.Holerite;
+import utilitario.Erro;
 
 /**
  * Classe responsável pela mamipulação da tabela Holerite no Banco de Dados 
@@ -53,7 +54,7 @@ public class HoleriteM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.inserirBD("Holerite"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);

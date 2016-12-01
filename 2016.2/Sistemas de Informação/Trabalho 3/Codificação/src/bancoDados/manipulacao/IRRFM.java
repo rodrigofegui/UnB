@@ -8,6 +8,7 @@ import java.util.LinkedList;
 
 import bancoDados.Conexao;
 import bancoDados.tabelas.IRRF;
+import utilitario.Erro;
 
 /**
  * Classe responsável pela mamipulação da tabela IRRF no Banco de Dados 
@@ -50,7 +51,7 @@ public class IRRFM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.inserirBD("INSS"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);

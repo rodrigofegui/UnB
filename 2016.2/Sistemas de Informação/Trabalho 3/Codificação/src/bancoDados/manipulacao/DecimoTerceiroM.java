@@ -8,6 +8,7 @@ import java.util.LinkedList;
 
 import bancoDados.Conexao;
 import bancoDados.tabelas.DecimoTerceiro;
+import utilitario.Erro;
 
 /**
  * Classe responsável pela mamipulação da tabela DecimoTerceiro no Banco de Dados 
@@ -52,7 +53,7 @@ public class DecimoTerceiroM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.inserirBD("DecimoTerceiro"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -88,7 +89,7 @@ public class DecimoTerceiroM {
 				
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.lerBD("DecimoTerceiro"));
 		
 		}finally {
 			Conexao.encerrarConexao(conexao, declaracao, resultado);
@@ -120,7 +121,7 @@ public class DecimoTerceiroM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.atualizarBD("DecimoTerceiro"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -144,7 +145,7 @@ public class DecimoTerceiroM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.deletarBD("DecimoTerceiro"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);

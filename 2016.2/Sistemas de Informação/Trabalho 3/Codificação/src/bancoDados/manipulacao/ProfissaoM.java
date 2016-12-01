@@ -8,6 +8,7 @@ import java.util.LinkedList;
 
 import bancoDados.Conexao;
 import bancoDados.tabelas.Profissao;
+import utilitario.Erro;
 
 /**
  * Classe responsável pela mamipulação da tabela Profissão no Banco de Dados 
@@ -51,7 +52,7 @@ public class ProfissaoM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.inserirBD("Profissao"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);

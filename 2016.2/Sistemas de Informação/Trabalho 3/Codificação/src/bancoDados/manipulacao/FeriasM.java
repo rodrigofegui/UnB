@@ -9,6 +9,7 @@ import java.util.LinkedList;
 
 import bancoDados.Conexao;
 import bancoDados.tabelas.Ferias;
+import utilitario.Erro;
 
 /**
  * Classe responsável pela mamipulação da tabela Ferias no Banco de Dados 
@@ -50,7 +51,7 @@ public class FeriasM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.inserirBD("Ferias"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);

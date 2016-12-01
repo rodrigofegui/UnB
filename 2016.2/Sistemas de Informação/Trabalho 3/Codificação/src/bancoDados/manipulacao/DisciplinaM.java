@@ -8,6 +8,7 @@ import java.util.LinkedList;
 
 import bancoDados.Conexao;
 import bancoDados.tabelas.Disciplina;
+import utilitario.Erro;
 
 /**
  * Classe responsável pela manipulação da tabela Disciplina no Banco de Dados 
@@ -48,7 +49,7 @@ public class DisciplinaM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.inserirBD("Disciplina"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
