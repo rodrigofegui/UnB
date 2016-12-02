@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import utilitario.Erro;
+
 
 /**
  * Classe responsável pela comunicação com o Banco de Dados 
@@ -13,7 +15,7 @@ import java.sql.SQLException;
  * @version	1.0
  * @since	27/11/2016
  */
-public class Conexao{
+public abstract class Conexao{
 	private static final String SERVIDOR = "localhost:3306";
 	private static final String NOME = "t3_si";
 	private static final String SSL_ERROR = "?autoReconnect=true&useSSL=false";
@@ -34,8 +36,13 @@ public class Conexao{
 			 
 			return DriverManager.getConnection(URL, USUARIO, SENHA);
 
-		}catch (ClassNotFoundException | SQLException e) {
-			throw new RuntimeException("Erro na conexao: " + e);
+		}catch (ClassNotFoundException e){
+			System.out.println(Erro.abrirConexao(true));
+			return null;
+			
+		}catch ( SQLException e) {
+			System.out.println(Erro.abrirConexao(false));
+			return null;
 		}
 	}
 	
@@ -50,7 +57,7 @@ public class Conexao{
 
 
         }catch (SQLException e) {
-        	System.out.println("Na tentativa de encerramento, não foi possível conectar ao Banco de Dados.");
+        	System.out.println(Erro.encerrarConexao());
 			e.printStackTrace();
         }
 	}
@@ -68,7 +75,7 @@ public class Conexao{
 				declaracao.close();
 
         } catch (SQLException e) {
-        	System.out.println("Na tentativa de encerramento, não foi possível conectar ao Banco de Dados.");
+        	System.out.println(Erro.encerrarConexao());
 			e.printStackTrace();
         }
 	}
@@ -88,7 +95,7 @@ public class Conexao{
 				resultados.close();
 
         } catch (SQLException e) {
-        	System.out.println("Na tentativa de encerramento, não foi possível conectar ao Banco de Dados.");
+        	System.out.println(Erro.encerrarConexao());
 			e.printStackTrace();
         }
 	}

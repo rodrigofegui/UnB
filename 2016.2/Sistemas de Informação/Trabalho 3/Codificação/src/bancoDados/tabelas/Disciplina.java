@@ -61,13 +61,11 @@ public class Disciplina {
 	 * Inserção das Disciplinas default que devem constar no BD
 	 */
 	public static void povoar (){
-		DisciplinaM discM = new DisciplinaM();
-		
-		discM.inserir("Matemática");
-		discM.inserir("Português");
-		discM.inserir("Geografia");
-		discM.inserir("História");
-		discM.inserir("Biologia");
-		discM.inserir("Física");
+		DisciplinaM.inserir("Matemática");
+		DisciplinaM.inserir("Português");
+		DisciplinaM.inserir("Geografia");
+		DisciplinaM.inserir("História");
+		DisciplinaM.inserir("Biologia");
+		DisciplinaM.inserir("Física");
 	}
 }

@@ -95,9 +95,8 @@ public class INSS {
 	public static int localizarCod (float salarioAlvo){
 		if (salarioAlvo >= 5189.83f)
 			return 4;
-		
-		INSSM inssM = new INSSM();
-		LinkedList<INSS> listInss = inssM.lerCompleto();
+	
+		LinkedList<INSS> listInss = INSSM.lerCompleto();
 		INSS inss;
 		int codigo = -1;
 		
@@ -126,8 +125,7 @@ public class INSS {
 		if (codigoInss == 4)
 			return salarioBruto - 570.88f;
 		
-		INSSM inssM = new INSSM();
-		LinkedList<INSS> listInss = inssM.lerCompleto();
+		LinkedList<INSS> listInss = INSSM.lerCompleto();
 		INSS inss;
 		
 		float salarioDeduzido = 0f;
@@ -172,25 +170,24 @@ public class INSS {
 	 * Inserção das alíquotas do INSS default que devem constar no BD
 	 */
 	public static void povoar (){
-		INSSM inssM = new INSSM();
 		INSS inss;
 		
 		inss = new INSS();
 		inss.setCodigo(1);
 		inss.setLimSuperior(1556.94f);
 		inss.setAliquota(.08f);
-		inssM.inserir(inss);
+		INSSM.inserir(inss);
 		
 		inss = new INSS();
 		inss.setCodigo(2);
 		inss.setLimSuperior(2594.92f);
 		inss.setAliquota(.09f);
-		inssM.inserir(inss);
+		INSSM.inserir(inss);
 		
 		inss = new INSS();
 		inss.setCodigo(3);
 		inss.setLimSuperior(5189.82f);
 		inss.setAliquota(.11f);
-		inssM.inserir(inss);
+		INSSM.inserir(inss);
 	}
 }

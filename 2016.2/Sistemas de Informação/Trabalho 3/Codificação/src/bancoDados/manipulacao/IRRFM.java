@@ -16,12 +16,12 @@ import utilitario.Erro;
  * @version	1.0
  * @since	29/11/2016
  */
-public class IRRFM {
+public abstract class IRRFM {
 	/**
 	 * Criação de uma instância da tabela IRRF no BD
 	 * @param irrf Instância a ser registrada no BD
 	 */
-	public void inserir (IRRF irrf){
+	public static void inserir (IRRF irrf){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "INSERT INTO IRRF (limiteSuperior, aliquota, desconto";
@@ -51,7 +51,7 @@ public class IRRFM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			System.out.println(Erro.inserirBD("INSS"));
+			System.out.println(Erro.inserirBD("IRRF"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -62,7 +62,7 @@ public class IRRFM {
 	 * Leitura de toda a Tabela IRRF no BD
 	 * @return Todas as instâncias existentes no BD
 	 */
-	public LinkedList<IRRF> lerCompleto (){
+	public static LinkedList<IRRF> lerCompleto (){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		ResultSet resultado = null;
@@ -86,7 +86,7 @@ public class IRRFM {
 				
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.lerBD("IRRF"));
 		
 		}finally {
 			Conexao.encerrarConexao(conexao, declaracao, resultado);
@@ -99,7 +99,7 @@ public class IRRFM {
 	 * Atualização de uma instância da tabela IRRF no BD
 	 * @param irrf Instância a ser atualizada no BD
 	 */
-	public void atualizar (IRRF irrf){
+	public static void atualizar (IRRF irrf){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "UPDATE IRRF SET"
@@ -117,7 +117,7 @@ public class IRRFM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.atualizarBD("IRRF"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -128,7 +128,7 @@ public class IRRFM {
 	 * Exclusão de uma instância da tabela IRRF do BD
 	 * @param irrf Instância a ser excluída do BD
 	 */
-	public void deletar (IRRF irrf){
+	public static void deletar (IRRF irrf){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "DELETE FROM IRRF WHERE codigo = ?";
@@ -141,7 +141,7 @@ public class IRRFM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.deletarBD("IRRF"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);

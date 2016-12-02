@@ -16,12 +16,12 @@ import utilitario.Erro;
  * @version	1.0
  * @since	29/11/2016
  */
-public class INSSM {
+public abstract class INSSM {
 	/**
 	 * Criação de uma instância da tabela INSS no BD
 	 * @param inss Instância a ser registrada no BD
 	 */
-	public void inserir (INSS inss){
+	public static void inserir (INSS inss){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "INSERT INTO INSS (limiteSuperior, aliquota";
@@ -61,7 +61,7 @@ public class INSSM {
 	 * Leitura de toda a Tabela INSS no BD
 	 * @return Todas as instâncias existentes no BD
 	 */
-	public LinkedList<INSS> lerCompleto (){
+	public static LinkedList<INSS> lerCompleto (){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		ResultSet resultado = null;
@@ -84,7 +84,7 @@ public class INSSM {
 				
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.lerBD("INSS"));
 		
 		}finally {
 			Conexao.encerrarConexao(conexao, declaracao, resultado);
@@ -97,7 +97,7 @@ public class INSSM {
 	 * Atualização de uma instância da tabela INSS no BD
 	 * @param inss Instância a ser atualizada no BD
 	 */
-	public void atualizar (INSS inss){
+	public static void atualizar (INSS inss){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "UPDATE INSS SET"
@@ -114,7 +114,7 @@ public class INSSM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.atualizarBD("INSS"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -125,7 +125,7 @@ public class INSSM {
 	 * Exclusão de uma instância da tabela INSS do BD
 	 * @param inss Instância a ser excluída do BD
 	 */
-	public void deletar (INSS inss){
+	public static void deletar (INSS inss){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "DELETE FROM INSS WHERE codigo = ?";
@@ -138,7 +138,7 @@ public class INSSM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.deletarBD("INSS"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);

@@ -16,12 +16,12 @@ import utilitario.Erro;
  * @version	1.0
  * @since	29/11/2016
  */
-public class DisciplinaM {
+public abstract class DisciplinaM {
 	/**
 	 * Criação de uma instância da tabela Disciplina no BD
 	 * @param disciplina Instância a ser registrada no BD
 	 */
-	public void inserir (Disciplina disciplina){
+	public static void inserir (Disciplina disciplina){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "INSERT INTO Disciplina (descricao"; 
@@ -61,7 +61,7 @@ public class DisciplinaM {
 	 * Disciplina jpa criada
 	 * @param descricao Descrição da disciplina a ser criada e inserida no BD
 	 */
-	public void inserir (String descricao){
+	public static void inserir (String descricao){
 		Disciplina disciplina = new Disciplina();
 		
 		disciplina.setDescricao(descricao);
@@ -73,7 +73,7 @@ public class DisciplinaM {
 	 * Leitura de toda a Tabela Disciplina no BD
 	 * @return Todas as instâncias existentes no BD
 	 */
-	public LinkedList<Disciplina> lerCompleto (){
+	public static LinkedList<Disciplina> lerCompleto (){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		ResultSet resultado = null;
@@ -96,7 +96,7 @@ public class DisciplinaM {
 				
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.lerBD("Disciplina"));
 		
 		}finally {
 			Conexao.encerrarConexao(conexao, declaracao, resultado);
@@ -110,7 +110,7 @@ public class DisciplinaM {
 	 * Atualização de uma instância da tabela Disciplina no BD
 	 * @param disciplina Instância a ser atualizada no BD
 	 */
-	public void atualizar (Disciplina disciplina){
+	public static void atualizar (Disciplina disciplina){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "UPDATE Disciplina SET"
@@ -126,7 +126,7 @@ public class DisciplinaM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.atualizarBD("Disciplina"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -137,7 +137,7 @@ public class DisciplinaM {
 	 * Exclusão de uma instância da tabela Disciplina do BD
 	 * @param disciplina Instância a ser excluída do BD
 	 */
-	public void deletar (Disciplina disciplina){
+	public static void deletar (Disciplina disciplina){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "DELETE FROM Disciplina WHERE codigo = ?";
@@ -150,7 +150,7 @@ public class DisciplinaM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.deletarBD("Disciplina"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);

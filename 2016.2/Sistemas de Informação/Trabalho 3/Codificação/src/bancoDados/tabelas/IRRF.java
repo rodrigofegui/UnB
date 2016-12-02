@@ -107,8 +107,7 @@ public class IRRF {
 	 * @return Código da faixa de IRRF correspondente
 	 */
 	public static int localizarCod (float salarioAlvo){
-		IRRFM irrfM = new IRRFM ();
-		LinkedList<IRRF> listIrrf = irrfM.lerCompleto();
+		LinkedList<IRRF> listIrrf = IRRFM.lerCompleto();
 		IRRF irrf;
 		int codigo = -1;
 		
@@ -128,41 +127,40 @@ public class IRRF {
 	 * Inserção das alíquotas do IRRF default que devem constar no BD
 	 */
 	public static void povoar (){
-		IRRFM irrfM = new IRRFM();
 		IRRF irrf;
 		
 		irrf = new IRRF();
 		irrf.setCodigo(1);
 		irrf.setLimSuperior(1903.98f);
 		irrf.setDesconto(0f);
-		irrfM.inserir(irrf);
+		IRRFM.inserir(irrf);
 		
 		irrf = new IRRF();
 		irrf.setCodigo(2);
 		irrf.setLimSuperior(2826.65f);
 		irrf.setAliquota(.075f);
 		irrf.setDesconto(142.80f);
-		irrfM.inserir(irrf);
+		IRRFM.inserir(irrf);
 		
 		irrf = new IRRF();
 		irrf.setCodigo(3);
 		irrf.setLimSuperior(3751.05f);
 		irrf.setAliquota(.15f);
 		irrf.setDesconto(354.80f);
-		irrfM.inserir(irrf);
+		IRRFM.inserir(irrf);
 		
 		irrf = new IRRF();
 		irrf.setCodigo(4);
 		irrf.setLimSuperior(4664.68f);
 		irrf.setAliquota(.225f);
 		irrf.setDesconto(636.13f);
-		irrfM.inserir(irrf);
+		IRRFM.inserir(irrf);
 		
 		irrf = new IRRF();
 		irrf.setCodigo(5);
 		irrf.setLimSuperior(999999999999.99f);
 		irrf.setAliquota(.275f);
 		irrf.setDesconto(869.36f);
-		irrfM.inserir(irrf);
+		IRRFM.inserir(irrf);
 	}
 }

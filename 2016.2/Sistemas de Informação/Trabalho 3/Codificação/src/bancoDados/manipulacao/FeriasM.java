@@ -17,12 +17,12 @@ import utilitario.Erro;
  * @version	1.0
  * @since	29/11/2016
  */
-public class FeriasM {
+public abstract class FeriasM {
 	/**
 	 * Criação de uma instância da tabela Ferias no BD
 	 * @param ferias Instância a ser registrada no BD
 	 */
-	public void inserir (Ferias ferias){
+	public static void inserir (Ferias ferias){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "INSERT INTO Ferias (dataReferencia, Funcionario_matricula";
@@ -62,7 +62,7 @@ public class FeriasM {
 	 * Leitura de toda a Tabela Ferias no BD
 	 * @return Todas as instâncias existentes no BD
 	 */
-	public LinkedList<Ferias> lerCompleto (){
+	public static LinkedList<Ferias> lerCompleto (){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		ResultSet resultado = null;
@@ -85,7 +85,7 @@ public class FeriasM {
 				
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.lerBD("Ferias"));
 		
 		}finally {
 			Conexao.encerrarConexao(conexao, declaracao, resultado);
@@ -98,7 +98,7 @@ public class FeriasM {
 	 * Atualização de uma instância da tabela Ferias no BD
 	 * @param ferias Instância a ser atualizada no BD
 	 */
-	public void atualizar (Ferias ferias){
+	public static void atualizar (Ferias ferias){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "UPDATE Ferias SET"
@@ -115,7 +115,7 @@ public class FeriasM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.atualizarBD("Ferias"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -126,7 +126,7 @@ public class FeriasM {
 	 * Exclusão de uma instância da tabela Ferias do BD
 	 * @param ferias Instância a ser excluída do BD
 	 */
-	public void deletar (Ferias ferias){
+	public static void deletar (Ferias ferias){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "DELETE FROM Ferias WHERE codigo = ?";
@@ -139,7 +139,7 @@ public class FeriasM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.deletarBD("Ferias"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);

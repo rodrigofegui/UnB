@@ -5,7 +5,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 /**
- * Classe responsável pela implementação de um controle de formatação
+ * Classe responsável pela implementação de um controle de formatação e de
+ * autentificação dos formatos
  * @author	Rodrigo Guimarães
  * @version	1.0
  * @since	29/11/2016
@@ -43,22 +44,15 @@ public class Autentificacao {
 	 * @return CPF formatado, como sendo: 000.000.000-00
 	 */
 	public static String cpf (String fonte){
-		try{
-			int t = Integer.parseInt(fonte);
-			String resultado = "";
+		String resultado = "";
 			
-			for (int i = 0; i < 9; i += 3)
-				resultado += fonte.substring(i, i + 3) + ".";
-			
-			resultado = resultado.substring(0, resultado.length() - 1);
-			resultado += "-" + fonte.substring(9);
-			
-			return resultado;
-		}catch (NumberFormatException e){
-			System.out.println("Conversão não possível");
-			
-			return "Inv: " + fonte;
-		}
+		for (int i = 0; i < 9; i += 3)
+			resultado += fonte.substring(i, i + 3) + ".";
+		
+		resultado = resultado.substring(0, resultado.length() - 1);
+		resultado += "-" + fonte.substring(9);
+		
+		return resultado;
 	}
 	
 	/**
@@ -98,13 +92,9 @@ public class Autentificacao {
 			resultado += fonte.substring(4, 6) + "-";
 			resultado += fonte.substring(6);
 			
-			if (isData(resultado))
-				return resultado;
-			else
-				return "Inv: " + fonte;
-		}catch (NumberFormatException e){
-			System.out.println("Conversão não possível");
+			return resultado;
 			
+		}catch (NumberFormatException e){
 			return "Inv: " + fonte;
 		}
 	}
@@ -131,6 +121,43 @@ public class Autentificacao {
            return false;
         }
 	}
+
+	/**
+	 * Formatação do telefone para o usual: 000 0 0000 0000
+	 * @param fonte String a ser formatada
+	 * @return Telefone formatado
+	 */
+	public static String telefone (String fonte){
+		String resultado = fonte.substring(0, 3) + " ";
+		
+		resultado += fonte.substring(3, 4) + " ";
+		resultado += fonte.substring(4, 8) + " ";
+		resultado += fonte.substring(8);
+		
+		return resultado;
+	}
+	
+	/**
+	 * Verificação de telefone válido
+	 * @param fonte Telefone a ser avaliado
+	 * @return True:
+	 * <LI> Havendo só números (0-9), além de ter 12
+	 * <p> False:
+	 * <LI> Não sendo só constituído por números;
+	 * <LI> Não tendo 12 números
+	 */
+	public static boolean isTelefone (String fonte){
+		try{
+			int t = Integer.parseInt(fonte);
+						
+			if (fonte.length() == 12)
+				return true;
+			else
+				return false;
+		}catch (NumberFormatException e){
+			return false;
+		}
+	}
 	
 	/**
 	 * Verificação se é um email, seguinda forma: exemplo@exemplo.com;
@@ -143,7 +170,7 @@ public class Autentificacao {
 	 * <LI> Não houver duas partes, considerando "@" como divisor;
 	 * <LI> Na segunda parte, não havendo espaço para "exemplo.com" 
 	 */
-	public static boolean isEmail (String fonte){
+ 	public static boolean isEmail (String fonte){
 		String extraido = fonte.replaceAll("[^a-zA-Z0-9@_.-]", "");
 		
 		System.out.println("ext -> " + extraido);

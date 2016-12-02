@@ -1,5 +1,6 @@
 package trabalhoFeliz;
 
+import bancoDados.manipulacao.FuncionárioM;
 import bancoDados.tabelas.Disciplina;
 import bancoDados.tabelas.INSS;
 import bancoDados.tabelas.IRRF;
@@ -34,7 +35,7 @@ public class DeptRH {
 	public void cadrastarFuncionario (){
 		requisitarDados();
 		
-		Empregado.preencherDados();
+		FuncionárioM.inserir(Empregado.preencherDados());
 	}
 	
 	/**

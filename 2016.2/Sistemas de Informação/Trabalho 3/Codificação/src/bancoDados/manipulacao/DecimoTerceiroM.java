@@ -16,12 +16,12 @@ import utilitario.Erro;
  * @version	1.0
  * @since	29/11/2016
  */
-public class DecimoTerceiroM {
+public abstract class DecimoTerceiroM {
 	/**
 	 * Criação de uma instância da tabela DecimoTerceiro no BD
 	 * @param decTer Instância a ser registrada no BD
 	 */
-	public void inserir (DecimoTerceiro decTer){
+	public static void inserir (DecimoTerceiro decTer){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "INSERT INTO DecimoTerceiro ("
@@ -64,7 +64,7 @@ public class DecimoTerceiroM {
 	 * Leitura de toda a Tabela Ferias no BD
 	 * @return Todas as instâncias existentes no BD
 	 */
-	public LinkedList<DecimoTerceiro> lerCompleto (){
+	public static LinkedList<DecimoTerceiro> lerCompleto (){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		ResultSet resultado = null;
@@ -102,7 +102,7 @@ public class DecimoTerceiroM {
 	 * Atualização de uma instância da tabela DecimoTerceiro no BD
 	 * @param decTer Instância a ser atualizada no BD
 	 */
-	public void atualizar (DecimoTerceiro decTer){
+	public static void atualizar (DecimoTerceiro decTer){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "UPDATE DecimoTerceiro SET"
@@ -132,7 +132,7 @@ public class DecimoTerceiroM {
 	 * Exclusão de uma instância da tabela DecimoTerceiro do BD
 	 * @param decTer Instância a ser excluída do BD
 	 */
-	public void deletar (DecimoTerceiro decTer){
+	public static void deletar (DecimoTerceiro decTer){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "DELETE FROM DecimoTerceiro WHERE codigo = ?";

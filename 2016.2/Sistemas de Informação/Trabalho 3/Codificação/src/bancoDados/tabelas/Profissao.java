@@ -145,7 +145,6 @@ public class Profissao {
 	 * Piso Salarial - Tabela Salarial 2016</a>.<br>
 	 */
 	public static void povar (){
-		ProfissaoM profM = new ProfissaoM();
 		Profissao profissao;
 		
 		profissao = new Profissao();
@@ -153,34 +152,34 @@ public class Profissao {
 		profissao.setSalarioBase(2764.78f);
 		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
 		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
-		profM.inserir(profissao);
+		ProfissaoM.inserir(profissao);
 		
 		profissao = new Profissao();
 		profissao.setDescricao("Professor online");
 		profissao.setSalarioBase(2764.78f);
 		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
 		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
-		profM.inserir(profissao);
+		ProfissaoM.inserir(profissao);
 		
 		profissao = new Profissao();
 		profissao.setDescricao("Equipe limpeza");
 		profissao.setSalarioBase(2242.57f);
 		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
 		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
-		profM.inserir(profissao);
+		ProfissaoM.inserir(profissao);
 		
 		profissao = new Profissao();
 		profissao.setDescricao("Equipe alimentação");
 		profissao.setSalarioBase(1620.10f);
 		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
 		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
-		profM.inserir(profissao);
+		ProfissaoM.inserir(profissao);
 		
 		profissao = new Profissao();
 		profissao.setDescricao("Equipe áudio-visual");
 		profissao.setSalarioBase(2100.00f);
 		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
 		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
-		profM.inserir(profissao);
+		ProfissaoM.inserir(profissao);
 	}
 }

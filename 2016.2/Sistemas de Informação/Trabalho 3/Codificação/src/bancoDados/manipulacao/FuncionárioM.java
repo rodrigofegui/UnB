@@ -17,12 +17,12 @@ import utilitario.Erro;
  * @version	1.0
  * @since	29/11/2016
  */
-public class FuncionárioM {
+public abstract class FuncionárioM {
 	/**
 	 * Criação de uma instância da tabela Funcionario no BD
 	 * @param func Instância a ser registrada no BD
 	 */
-	public void inserir (Funcionario func){
+	public static void inserir (Funcionario func){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "INSERT INTO Funcionario ("
@@ -73,7 +73,7 @@ public class FuncionárioM {
 	 * Leitura de toda a Tabela Funcionario no BD
 	 * @return Todas as instâncias existentes no BD
 	 */
-	public LinkedList<Funcionario> lerCompleto (){
+	public static LinkedList<Funcionario> lerCompleto (){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		ResultSet resultado = null;
@@ -103,7 +103,7 @@ public class FuncionárioM {
 			}
 
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.lerBD("Funcionario"));
 		
 		}finally {
 			Conexao.encerrarConexao(conexao, declaracao, resultado);
@@ -116,7 +116,7 @@ public class FuncionárioM {
 	 * Atualização de uma instância da tabela Funcionario no BD
 	 * @param funcionario Instância a ser atualizada no BD
 	 */
-	public void atualizar (Funcionario funcionario){
+	public static void atualizar (Funcionario funcionario){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "UPDATE IRRF SET"
@@ -143,7 +143,7 @@ public class FuncionárioM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.atualizarBD("Funcionario"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -154,7 +154,7 @@ public class FuncionárioM {
 	 * Exclusão de uma instância da tabela Funcionario do BD
 	 * @param funcionario Instância a ser excluída do BD
 	 */
-	public void deletar (Funcionario funcionario){
+	public static void deletar (Funcionario funcionario){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "DELETE FROM IRRF WHERE codigo = ?";
@@ -167,7 +167,7 @@ public class FuncionárioM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.deletarBD("Funcionario"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);

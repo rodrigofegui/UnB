@@ -17,12 +17,12 @@ import utilitario.Erro;
  * @version	1.0
  * @since	29/11/2016
  */
-public class HoleriteM {
+public abstract class HoleriteM {
 	/**
 	 * Criação de uma instância da tabela Holerite no BD
 	 * @param holerite Instância a ser registrada no BD
 	 */
-	public void inserir (Holerite holerite){
+	public static void inserir (Holerite holerite){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "INSERT INTO Holerite ("
@@ -65,7 +65,7 @@ public class HoleriteM {
 	 * Leitura de toda a Tabela Holerite no BD
 	 * @return Todas as instâncias existentes no BD
 	 */
-	public LinkedList<Holerite> lerCompleto (){
+	public static LinkedList<Holerite> lerCompleto (){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		ResultSet resultado = null;
@@ -90,7 +90,7 @@ public class HoleriteM {
 				
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.lerBD("Holerite"));
 		
 		}finally {
 			Conexao.encerrarConexao(conexao, declaracao, resultado);
@@ -103,7 +103,7 @@ public class HoleriteM {
 	 * Atualização de uma instância da tabela Holerite no BD
 	 * @param holerite Instância a ser atualizada no BD
 	 */
-	public void atualizar (Holerite holerite){
+	public static void atualizar (Holerite holerite){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "UPDATE Holerite SET"
@@ -122,7 +122,7 @@ public class HoleriteM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.atualizarBD("Holerite"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -133,7 +133,7 @@ public class HoleriteM {
 	 * Exclusão de uma instância da tabela Holerite do BD
 	 * @param holerite Instância a ser excluída do BD
 	 */
-	public void deletar (Holerite holerite){
+	public static void deletar (Holerite holerite){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "DELETE FROM Holerite WHERE codigo = ?";
@@ -146,7 +146,7 @@ public class HoleriteM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.deletarBD("Holerite"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);

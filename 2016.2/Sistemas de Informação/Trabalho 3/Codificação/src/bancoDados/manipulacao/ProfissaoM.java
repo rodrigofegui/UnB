@@ -16,12 +16,12 @@ import utilitario.Erro;
  * @version	1.0
  * @since	28/11/2016
  */
-public class ProfissaoM {
+public abstract class ProfissaoM {
 	/**
 	 * Criação de uma instância da tabela Profissão no BD
 	 * @param profissao Instância a ser registrada no BD
 	 */
-	public void inserir (Profissao profissao){
+	public static void inserir (Profissao profissao){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "INSERT INTO Profissao (descricao, salarioBase, INSS_codigo, IRRF_codigo";
@@ -63,7 +63,7 @@ public class ProfissaoM {
 	 * Leitura de toda a Tabela Profissão no BD
 	 * @return Todas as instâncias existentes no BD
 	 */
-	public LinkedList<Profissao> lerCompleto (){
+	public static LinkedList<Profissao> lerCompleto (){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		ResultSet resultado = null;
@@ -89,7 +89,7 @@ public class ProfissaoM {
 				
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.lerBD("Profissao"));
 		
 		}finally {
 			Conexao.encerrarConexao(conexao, declaracao, resultado);
@@ -102,7 +102,7 @@ public class ProfissaoM {
 	 * Atualização de uma instância da tabela Profissão no BD
 	 * @param profissao Instância a ser atualizada no BD
 	 */
-	public void atualizar (Profissao profissao){
+	public static void atualizar (Profissao profissao){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "UPDATE Profissao SET"
@@ -121,7 +121,7 @@ public class ProfissaoM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.atualizarBD("Profissao"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -132,7 +132,7 @@ public class ProfissaoM {
 	 * Exclusão de uma instância da tabela Profissão do BD
 	 * @param profissao Instância a ser excluída do BD
 	 */
-	public void deletar (Profissao profissao){
+	public static void deletar (Profissao profissao){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "DELETE FROM Profissao WHERE codigo = ?";
@@ -145,7 +145,7 @@ public class ProfissaoM {
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println(Erro.deletarBD("Profissao"));
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
