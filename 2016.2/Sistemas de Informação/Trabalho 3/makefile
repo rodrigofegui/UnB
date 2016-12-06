@@ -14,7 +14,7 @@ DOCUMENTADOR = javadoc
 # Diretórios 
 ###################
 # Atual, que contém todas as pastas necessárias
-DIR_BASE = /home/rodrigo/Dropbox/UnB/UnB\ 2016.2/Sistema\ de\ Informação/Trabalhos/Trabalho\ 3/Codificação
+DIR_BASE = /home/rodrigo/Documentos/UnB/2016.2/Sistemas\ de\ Informação/Trabalho\ 3/Codificação/
 # Arquivos-fonte
 DIR_FONTES_ = src/
 DIR_FONTES = $(patsubst %,$(DIR_BASE)/%,$(DIR_FONTES_))
