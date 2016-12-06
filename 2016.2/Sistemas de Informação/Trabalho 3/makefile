@@ -14,7 +14,7 @@ DOCUMENTADOR = javadoc
 # Diretórios 
 ###################
 # Atual, que contém todas as pastas necessárias
-DIR_BASE = /home/rodrigo/Documentos/UnB/2016.2/Sistemas\ de\ Informação/Trabalho\ 3/Codificação/
+DIR_BASE = <diretório>
 # Arquivos-fonte
 DIR_FONTES_ = src/
 DIR_FONTES = $(patsubst %,$(DIR_BASE)/%,$(DIR_FONTES_))
@@ -25,8 +25,7 @@ DIR_BINARIO = $(patsubst %,$(DIR_BASE)/%,$(DIR_BINARIO_))
 DIR_DOCUMENTACAO_ = Javadoc/
 DIR_DOCUMENTACAO = $(patsubst %,$(DIR_BASE)/%,$(DIR_DOCUMENTACAO_))
 # Pacotes JAVA .jar
-#DIR_EXTERN_JAR = /home/rodrigo/Documentos/UnB/2016.2/Sistemas\ de\ Informação/Pacotes\ JAVA/mysql-connector-java-5.1.40-bin.jar
-DIR_EXTERN_JAR = /home/rodrigo/Dropbox/UnB/UnB\ 2016.2/Sistema\ de\ Informação/Trabalhos/mysql-connector-java-5.1.40-bin.jar
+DIR_EXTERN_JAR = <diretório>/mysql-connector-java-5.1.40-bin.jar
 
 ###################
 # Tags importantes
