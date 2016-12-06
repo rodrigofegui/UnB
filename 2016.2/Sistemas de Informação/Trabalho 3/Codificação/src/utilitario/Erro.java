@@ -8,6 +8,23 @@ package utilitario;
  */
 public abstract class Erro{
 	/**
+	 * Mensagem de erro na tentativa de executar um comando de terminal, via aplicação
+	 * @param comando Comando de origem do erro
+	 * @return Mensagem desenvolvida
+	 */
+	public static String executar (String comando){
+		String mensagem = "\nNão foi possível executar o comando:\n"
+						+ comando + "\n"
+						+ "Dica: Verifique a sintaxe do comando.\n"
+						+ "Dica 2: Teste-o fora da aplicação.\n"
+						+ "Tente, novamente, mais tarde.\n";
+		
+		return mensagem;
+	}
+	
+	
+	
+	/**
 	 * Mensagem de erro na tentativa de abrir comunicação com o BD
 	 * @param classeError Distinção da origem do erro: true, para falha
 	 * relacionada com o driver; false, para falha com o BD
@@ -92,6 +109,34 @@ public abstract class Erro{
 	}
 	
 	
+	/**
+	 * Mensagem de erro na tentativa de acesso a um arquivo
+	 * @param nomeArq Nome do arquivo que houve a tentativa de acesso
+	 * @return Mensagem desenvolvida
+	 */
+	public static String acessarArq (String nomeArq){
+		String mensagem = "\nNão foi possível acessar o arquivo:\n"
+						+ nomeArq + "\n"
+						+ "Dica: Verifique se o arquivo está no diretório correto.\n"
+						+ "Tente, novamente, mais tarde.\n";
+		
+		return mensagem;
+	}
+	
+	
+	
+	/**
+	 * Mensagem de erro no numero fornecido
+	 * @return Mensagem desenvolvida
+	 */
+	public static String numero (){
+		String mensagem = "\nNúmero inválido!\n"
+						+ "Dica: Deve haver caracteres inválidos, busque corrigir.\n"
+						+ "Lembre-se: apenas números.\n"
+						+ "Digite, novamente.\n";
+						
+		return mensagem;
+	}
 	
 	/**
 	 * Mensagem de erro no nome fornecido
@@ -177,6 +222,54 @@ public abstract class Erro{
 			mensagem += "Dica: digite um valor para os códigos oferecidos.\n";
 		
 		mensagem += "Digite, novamente.\n";
+		
+		return mensagem;
+	}
+	
+	
+	/**
+	 * Mensagem de erro para uma escolha numérica fornecida
+	 * @param naoNumeral Destinção básica da causa do erro. True, pode
+	 * ter sido fornecido um valor não numérico; false, não pertence 
+	 * ao intervalo disponibilizado
+	 * @return Mensagem desenvolvida
+	 */
+	public static String escolha (boolean naoNumeral){
+		String mensagem = "\nEscolha inválida.\n";
+		
+		if (naoNumeral)
+			mensagem += "Dica: digite um valor numérico.\n";
+		else
+			mensagem += "Dica: digite um valor para os códigos oferecidos.\n";
+		
+		mensagem += "Digite, novamente:";
+		
+		return mensagem;
+	}
+	
+	/**
+	 * Mensagem de erro para um acesso a lista vazia fornecida
+	 * @param objeto Objeto qua foi tentado acesso
+	 * @return Mensagem desenvolvida
+	 */
+	public static String vazio (String objeto){
+		String mensagem = "\n'" + objeto + "' está vazia.\n"
+						+ "Dica: insera um elemento.\n"
+						+ "Tente, novamente, mais tarde\n";
+		
+		return mensagem;
+	}
+	
+	/**
+	 * Mensagem de erro para uma dependência de relações
+	 * @param objeto Objeto qua foi tentado acesso
+	 * @return Mensagem desenvolvida
+	 */
+	public static String dependencia (String objeto){
+		String mensagem = "\nHá dependência de dados em:\n'"
+						+ objeto + "'\n"
+						+ "Não podendo prosseguir."
+						+ vazio(objeto);
 		
 		return mensagem;
 	}

@@ -54,6 +54,7 @@ public abstract class DecimoTerceiroM {
 			
 		}catch (SQLException e) {
 			System.out.println(Erro.inserirBD("DecimoTerceiro"));
+			e.printStackTrace();
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -90,6 +91,7 @@ public abstract class DecimoTerceiroM {
 			
 		}catch (SQLException e) {
 			System.out.println(Erro.lerBD("DecimoTerceiro"));
+			e.printStackTrace();
 		
 		}finally {
 			Conexao.encerrarConexao(conexao, declaracao, resultado);
@@ -114,14 +116,15 @@ public abstract class DecimoTerceiroM {
 			
 			declaracao.setBoolean	(1, decTer.isRequisitado());
 			declaracao.setFloat	(2, decTer.getParcelaAcumulada());
-			declaracao.setInt	(1, decTer.getContParcela());
-			declaracao.setInt	(1, decTer.getFuncMat());
-			declaracao.setInt	(1, decTer.getCodigo());
+			declaracao.setInt	(3, decTer.getContParcela());
+			declaracao.setInt	(4, decTer.getFuncMat());
+			declaracao.setInt	(5, decTer.getCodigo());
 			
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
 			System.out.println(Erro.atualizarBD("DecimoTerceiro"));
+			e.printStackTrace();
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -146,9 +149,30 @@ public abstract class DecimoTerceiroM {
 			
 		}catch (SQLException e) {
 			System.out.println(Erro.deletarBD("DecimoTerceiro"));
+			e.printStackTrace();
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
+		}
+	}
+	
+	/**
+	 * Verificação rápida se a lista de 13º's está vazia
+	 * @return True, se estiver vazia; false, caso contrário
+	 */
+	public static boolean isEmpty (){
+		return lerCompleto().isEmpty();
+	}
+	
+	/**
+	 * Liberando todas as instâncias registradas no BD
+	 */
+	public static void esvaziar (){
+		if (!isEmpty()){
+			LinkedList<DecimoTerceiro> decTers = lerCompleto();
+			
+			for (int pos = 0; pos < decTers.size(); pos++)
+				deletar(decTers.get(pos));
 		}
 	}
 }

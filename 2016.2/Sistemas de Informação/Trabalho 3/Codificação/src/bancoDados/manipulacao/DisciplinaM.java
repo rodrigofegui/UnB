@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.LinkedList;
 
 import bancoDados.Conexao;
+import bancoDados.tabelas.DecimoTerceiro;
 import bancoDados.tabelas.Disciplina;
 import utilitario.Erro;
 
@@ -154,6 +155,26 @@ public abstract class DisciplinaM {
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
+		}
+	}
+	
+	/**
+	 * Verificação rápida se a lista de Disciplinas está vazia
+	 * @return True, se estiver vazia; false, caso contrário
+	 */
+	public static boolean isEmpty (){
+		return lerCompleto().isEmpty();
+	}
+
+	/**
+	 * Liberando todas as instâncias registradas no BD
+	 */
+	public static void esvaziar (){
+		if (!isEmpty()){
+			LinkedList<Disciplina> lista = lerCompleto();
+			
+			for (int pos = 0; pos < lista.size(); pos++)
+				deletar(lista.get(pos));
 		}
 	}
 }

@@ -1,5 +1,10 @@
 package bancoDados.tabelas;
 
+import java.util.LinkedList;
+
+import bancoDados.manipulacao.DecimoTerceiroM;
+import trabalhoFeliz.Empregado;
+
 /**
  * Classe responsável pela implementação da tabela homônima do Banco de Dados 
  * @author	Rodrigo Guimarães
@@ -7,6 +12,9 @@ package bancoDados.tabelas;
  * @since	29/11/2016
  */
 public class DecimoTerceiro {
+	public static final int MES_LIM_1 = 10;
+	public static final int MES_LIM_2 = 11;
+	public static final int LIM_PARCELAS = 2;
 	private int codigo;
 	private boolean requisicao;
 	private float parcelaAcumulada;
@@ -26,9 +34,15 @@ public class DecimoTerceiro {
 		
 		setContParcela(0);
 		
-		setFuncMat(-1);
+		setFuncMat(1);
 	}
 	
+	public DecimoTerceiro (Holerite holerite){
+		this ();
+		
+		setFuncMat(holerite.getFuncMat());
+		setParcelaAcumulada(holerite.getSalLiq()/12f);
+	}
 	
 	
 	
@@ -110,5 +124,30 @@ public class DecimoTerceiro {
 	 */
 	public void setFuncMat(int funcMat) {
 		this.funcMat = funcMat;
+	}
+	
+	
+	public static void atualizar (Holerite holerite){
+		if (DecimoTerceiroM.isEmpty()){
+			DecimoTerceiroM.inserir(new DecimoTerceiro(holerite));
+			
+		}else{
+			LinkedList<DecimoTerceiro> decTers = DecimoTerceiroM.lerCompleto();
+			boolean achou = false;
+			
+			for (int pos = 0; pos < decTers.size(); pos++){
+				DecimoTerceiro decTer = decTers.get(pos);
+				
+				if (decTer.getFuncMat() == holerite.getFuncMat()){
+					achou = true;
+					decTer.setParcelaAcumulada(decTer.getParcelaAcumulada() + (holerite.getSalLiq()/12f));
+					DecimoTerceiroM.atualizar(decTer);
+					break;
+				}
+			}
+			
+			if (!achou)
+				DecimoTerceiroM.inserir(new DecimoTerceiro(holerite));
+		}
 	}
 }

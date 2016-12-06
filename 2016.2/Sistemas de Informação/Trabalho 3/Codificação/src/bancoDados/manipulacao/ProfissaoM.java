@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.LinkedList;
 
 import bancoDados.Conexao;
+import bancoDados.tabelas.Holerite;
 import bancoDados.tabelas.Profissao;
 import utilitario.Erro;
 
@@ -24,16 +25,16 @@ public abstract class ProfissaoM {
 	public static void inserir (Profissao profissao){
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
-		String instrucao = "INSERT INTO Profissao (descricao, salarioBase, INSS_codigo, IRRF_codigo";
+		String instrucao = "INSERT INTO Profissao (descricao, salarioBase, Disciplina_codigo, INSS_codigo, IRRF_codigo";
 		String interrogacao = "";
 		
 		if (profissao.getCodigo() != -1){
 			instrucao += ", codigo)";
-			interrogacao = "?, ?, ?, ?, ?";
+			interrogacao = "?, ?, ?, ?, ?, ?";
 			
 		}else{
 			instrucao += ")";
-			interrogacao = "?, ?, ?, ?";
+			interrogacao = "?, ?, ?, ?, ?";
 		}
 	
 		instrucao += " VALUES (" + interrogacao + ")";
@@ -43,16 +44,18 @@ public abstract class ProfissaoM {
 			
 			declaracao.setString	(1, profissao.getDescricao());
 			declaracao.setFloat		(2, profissao.getSalarioBase());
-			declaracao.setInt		(3, profissao.getInss_codigo());
-			declaracao.setInt		(4, profissao.getIrrf_codigo());
+			declaracao.setInt		(3, profissao.getDisciplina_codigo());
+			declaracao.setInt		(4, profissao.getInss_codigo());
+			declaracao.setInt		(5, profissao.getIrrf_codigo());
 			
 			if (profissao.getCodigo() != -1)
-				declaracao.setInt		(5, profissao.getCodigo());
+				declaracao.setInt		(6, profissao.getCodigo());
 			
 			declaracao.executeUpdate();
 			
 		}catch (SQLException e) {
 			System.out.println(Erro.inserirBD("Profissao"));
+			e.printStackTrace();
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
@@ -106,7 +109,8 @@ public abstract class ProfissaoM {
 		Connection conexao = Conexao.iniciarConexao();
 		PreparedStatement declaracao = null;
 		String instrucao = "UPDATE Profissao SET"
-							+ "	descricao = ?, salarioBase = ?, INSS_codigo = ?, IRRF_codigo = ?"
+							+ "	descricao = ?, salarioBase = ?, Disciplina_codigo = ?, "
+							+ "INSS_codigo = ?, IRRF_codigo = ?"
 							+ " WHERE codigo = ?";
 		
 		try{
@@ -114,9 +118,10 @@ public abstract class ProfissaoM {
 			
 			declaracao.setString	(1, profissao.getDescricao());
 			declaracao.setFloat		(2, profissao.getSalarioBase());
-			declaracao.setInt		(3, profissao.getInss_codigo());
-			declaracao.setInt		(4, profissao.getIrrf_codigo());
-			declaracao.setInt		(5, profissao.getCodigo());
+			declaracao.setInt		(3, profissao.getDisciplina_codigo());
+			declaracao.setInt		(4, profissao.getInss_codigo());
+			declaracao.setInt		(5, profissao.getIrrf_codigo());
+			declaracao.setInt		(6, profissao.getCodigo());
 			
 			declaracao.executeUpdate();
 			
@@ -149,6 +154,26 @@ public abstract class ProfissaoM {
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
+		}
+	}
+	
+	/**
+	 * Verificação rápida se a lista de profissões está vazia
+	 * @return True, se estiver vazia; false, caso contrário
+	 */
+	public static boolean isEmpty (){
+		return lerCompleto().isEmpty();
+	}
+	
+	/**
+	 * Liberando todas as instâncias registradas no BD
+	 */
+	public static void esvaziar (){
+		if (!isEmpty()){
+			LinkedList<Profissao> lista = lerCompleto();
+			
+			for (int pos = 0; pos < lista.size(); pos++)
+				deletar(lista.get(pos));
 		}
 	}
 }

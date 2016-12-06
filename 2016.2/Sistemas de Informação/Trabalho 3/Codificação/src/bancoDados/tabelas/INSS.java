@@ -1,8 +1,12 @@
 package bancoDados.tabelas;
 
 import java.util.LinkedList;
+import java.util.Scanner;
 
 import bancoDados.manipulacao.INSSM;
+import gui.Mensagem;
+import gui.terminal.JanelasT;
+import gui.terminal.Textual;
 
 /**
  * Classe responsável pela implementação da tabela homônima do Banco de Dados 
@@ -111,35 +115,59 @@ public class INSS {
 		return codigo;
 	}
 	
+	/**
+	 * Redução equivalente ao salário bruto do imposto do INSS, sabendo-se o código da
+	 * faixa do INSS e o salário bruto
+	 * @param codigoInss Código da faixa do INSS a ser considerada
+	 * @param salarioBruto Salário bruto a sofrer a dedução do imposto ao INSS
+	 * @return Dedução do imposto, onde para os salários
+	 * até R$5.189,83 a dedução será proporcional ao salário, respeitando a
+	 * alíquota; caso contrário, será deduzido o valor fixo de R$570,88. 
+	 */
+	public static float reducao (int codigoInss, float salarioBruto){
+		if (codigoInss == 4)
+			return -570.88f;
+		
+		LinkedList<INSS> listInss = INSSM.lerCompleto();
+		INSS inss;
+		
+		float reducao = 0f;
+		
+		for (int pos = 0; pos < listInss.size(); pos++){
+			inss = listInss.get(pos);
+			
+			if (codigoInss == inss.getCodigo()){
+				reducao = salarioBruto * inss.aliquota;
+				break;
+			}
+		}
+		
+		return -reducao;
+	}
+	
+	/**
+	 * Redução equivalente ao salário bruto do imposto do INSS, sabendo-se o código da
+	 * faixa do INSS e o salário bruto
+	 * @param salarioBruto Salário bruto a sofrer a dedução do imposto ao INSS
+	 * @return Dedução do imposto, onde para os salários
+	 * até R$5.189,83 a dedução será proporcional ao salário, respeitando a
+	 * alíquota; caso contrário, será reduzido o valor fixo de R$570,88. 
+	 */
+	public static float reducao (float salarioBruto){
+		return reducao(localizarCod(salarioBruto), salarioBruto);
+	}
+	
+	
 	
 	/**
 	 * Deduzir do salário bruto o imposto do INSS, sabendo-se o código da
 	 * faixa do INSS e o salário bruto
 	 * @param codigoInss Código da faixa do INSS a ser considerada
 	 * @param salarioBruto Salário bruto a sofrer a dedução do imposto ao INSS
-	 * @return Salário líquido com a dedução do imposto, onde para os salários
-	 * até R$5.189,83 a dedução será proporcional ao salário, respeitando a
-	 * alíquota; caso contrário, será deduzido o valor fixo de R$570,88. 
+	 * @return Salário líquido com a dedução do imposto
 	 */
 	public static float deduzirAliquota (int codigoInss, float salarioBruto){
-		if (codigoInss == 4)
-			return salarioBruto - 570.88f;
-		
-		LinkedList<INSS> listInss = INSSM.lerCompleto();
-		INSS inss;
-		
-		float salarioDeduzido = 0f;
-		
-		for (int pos = 0; pos < listInss.size(); pos++){
-			inss = listInss.get(pos);
-			
-			if (codigoInss == inss.getCodigo()){
-				salarioDeduzido = salarioBruto * (1 - inss.aliquota);
-				break;
-			}
-		}
-		
-		return salarioDeduzido;
+		return salarioBruto + reducao(codigoInss, salarioBruto);
 	}
 	
 	/**
@@ -189,5 +217,163 @@ public class INSS {
 		inss.setLimSuperior(5189.82f);
 		inss.setAliquota(.11f);
 		INSSM.inserir(inss);
+	}
+
+	/**
+	 * Representação inteligível ao usuário
+	 * @return Representação formatada
+	 */
+	public String toString (){
+		String toString = "" + getCodigo() + " - " + getLimSuperior() + " - " + getAliquota();
+		
+		return toString;
+	}
+
+	
+	
+	/**
+	 * Gerenciamento da Edição da tabela INSS no BD
+	 * @param entradaDados Entrada de dados via terminal
+	 * @param opcao Opção de edição, sendo:
+	 * <h1> 1 - Inserir;
+	 * <h1> 2 - Atualizar;
+	 * <h1> 3 - Visualizar;
+	 * <h1> 4 - Deletar;
+	 */
+	public static void gerenciarEdicao (Scanner entradaDados, int opcao){
+		switch (opcao){
+			case 1:
+				gerenciarInserir(entradaDados);
+				break;
+			case 2:
+				gerenciarAtualizar (entradaDados);
+				break;
+			case 3:
+				gerenciarVisualizar(entradaDados, true);
+				break;
+			case 4:
+				gerenciarDeletar(entradaDados);
+				break;
+		}
+		
+		Textual.aguardeTecla(entradaDados);
+	}
+	
+	/**
+	 * Gerenciamento das opção de inserir uma nova faixa no INSS
+	 * @param entradaDados Entrada de dados via terminal
+	 */
+	private static void gerenciarInserir (Scanner entradaDados){
+		INSS inss = new INSS();
+		String operacao = "Inserir INSS";
+		
+		JanelasT.getJEditarInserirTabela("INSS");
+		
+		inss = coletarInfo(entradaDados, false);
+		
+		System.out.println(Mensagem.aguarde(operacao));
+		
+		INSSM.inserir(inss);
+		
+		System.out.println(Mensagem.sucesso(operacao));
+	}
+	
+	/**
+	 * Gerenciamento das opção de atualizar uma faia do INSS
+	 * @param entradaDados Entrada de dados via terminal
+	 */
+	private static void gerenciarAtualizar (Scanner entradaDados){
+		INSS inss = new INSS();
+		String operacao = "Atualizar INSS";
+		
+		ctrlVisualizar(entradaDados, true);
+		
+		System.out.println(Mensagem.atualizar(false));
+		
+		inss = coletarInfo(entradaDados, true);
+		
+		System.out.println(Mensagem.aguarde(operacao));
+		
+		INSSM.atualizar(inss);
+		
+		System.out.println(Mensagem.sucesso(operacao));
+	}
+	
+	/**
+	 * Gerenciamento das opção de visualizar as faixas do INSS existentes
+	 * @param entradaDados Entrada de dados via terminal
+	 * @param isFull Verificando se a exibição desta opção é completa ou não.
+	 * Sendo true, incluirá o título na janela; caso contrário, não
+	 */
+	private static void gerenciarVisualizar (Scanner entradaDados, boolean isFull){
+		if (isFull)
+			JanelasT.getJEditarVisualizarTabela("INSS");
+		
+		LinkedList<INSS> listInss = INSSM.lerCompleto();
+		INSS inss;
+		
+		System.out.println("Código - Lim. Sup - Alíquota");
+		for (int pos = 0; pos < listInss.size(); pos++){
+			inss = listInss.get(pos);
+			
+			System.out.println(inss.toString());
+		}
+	}
+	
+	/**
+	 * Gerenciamento das opção de exclusão uma faixa do INSS
+	 * @param entradaDados Entrada de dados via terminal
+	 */
+	private static void gerenciarDeletar (Scanner entradaDados){
+		INSS inss = new INSS();
+		String operacao = "Deletar INSS";
+		
+		ctrlVisualizar(entradaDados, false);
+		
+		System.out.println(Mensagem.deletar(false));
+		
+		inss.setCodigo(Mensagem.preencherCodigo(entradaDados));
+		
+		System.out.println(Mensagem.aguarde(operacao));
+		
+		INSSM.deletar(inss);
+		
+		System.out.println(Mensagem.sucesso(operacao));
+	}
+	
+	/**
+	 * Controle de visualização de dados fora da janela principal
+	 * @param entradaDados Entrada de dados via terminal
+	 * @param isAtualizar Verificação qual a origem do pedido.
+	 * Sendo true, está contido na janela de atualização; caso contrário, na de exclusão
+	 */
+	private static void ctrlVisualizar (Scanner entradaDados, boolean isAtualizar){
+		int escolha = 0;
+		
+		if (isAtualizar)
+			escolha = Mensagem.questionaOpcoes(entradaDados, JanelasT.getJEditarAtualizarTabela("INSS"));
+		else
+			escolha = Mensagem.questionaOpcoes(entradaDados, JanelasT.getJEditarDeletarTabela("INSS"));
+		
+		if (escolha == 1)
+			gerenciarVisualizar(entradaDados, false);
+	}
+
+	/**
+	 * Aquisição das informações cruciais, via terminal
+	 * @param entradaDados Entrada de dados via terminal
+	 * @param codigoTambem Verificação se a aquisição do código é necessária
+	 * @return Faixa do INSS com as informações colidas
+	 */
+	private static INSS coletarInfo (Scanner entradaDados, boolean codigoTambem){
+		INSS inss = new INSS();
+		
+		if (codigoTambem)
+			inss.setCodigo(Mensagem.preencherCodigo(entradaDados));
+		
+		inss.setLimSuperior(Mensagem.preencherLimite(entradaDados));
+		inss.setAliquota(Mensagem.preencherAliquota(entradaDados));
+		
+		return inss;
 	}
 }

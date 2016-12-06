@@ -1,6 +1,15 @@
 package bancoDados.tabelas;
 
+import java.util.LinkedList;
+import java.util.Scanner;
+
+import bancoDados.manipulacao.INSSM;
+import bancoDados.manipulacao.IRRFM;
 import bancoDados.manipulacao.ProfissaoM;
+import gui.Mensagem;
+import gui.terminal.JanelasT;
+import gui.terminal.Textual;
+import utilitario.Erro;
 
 /**
  * Classe responsável pela implementação da tabela homônima do Banco de Dados 
@@ -28,11 +37,11 @@ public class Profissao {
 		
 		setSalarioBase(0f);
 		
-		setDisciplina_codigo(-1);
+		setDisciplina_codigo(1);
 		
-		setInss_codigo(-1);
+		setInss_codigo(1);
 		
-		setIrrf_codigo(-1);
+		setIrrf_codigo(1);
 	}
 	
 	
@@ -144,7 +153,7 @@ public class Profissao {
 	 * <a href="http://www.pisosalarial.com.br/salarios/tabela-salarial/">
 	 * Piso Salarial - Tabela Salarial 2016</a>.<br>
 	 */
-	public static void povar (){
+	public static void povoar (){
 		Profissao profissao;
 		
 		profissao = new Profissao();
@@ -169,17 +178,188 @@ public class Profissao {
 		ProfissaoM.inserir(profissao);
 		
 		profissao = new Profissao();
-		profissao.setDescricao("Equipe alimentação");
+		profissao.setDescricao("Equipe alimentacao");
 		profissao.setSalarioBase(1620.10f);
 		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
 		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
 		ProfissaoM.inserir(profissao);
 		
 		profissao = new Profissao();
-		profissao.setDescricao("Equipe áudio-visual");
+		profissao.setDescricao("Equipe audioVisual");
 		profissao.setSalarioBase(2100.00f);
 		profissao.setInss_codigo(INSS.localizarCod(profissao.getSalarioBase()));
 		profissao.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(profissao)));
 		ProfissaoM.inserir(profissao);
+	}
+	
+	/**
+	 * Representação inteligível ao usuário
+	 * @return Representação formatada
+	 */
+	public String toString (){
+		String toString = "" + getCodigo() + " - "
+						+ getSalarioBase() + " - " 
+						+ getInss_codigo() + " - "
+						+ getIrrf_codigo();
+		
+		return toString;
+	}
+
+	
+	
+	/**
+	 * Gerenciamento da Edição da tabela Profissao no BD
+	 * @param entradaDados Entrada de dados via terminal
+	 * @param opcao Opção de edição, sendo:
+	 * <h1> 1 - Inserir;
+	 * <h1> 2 - Atualizar;
+	 * <h1> 3 - Visualizar;
+	 * <h1> 4 - Deletar;
+	 */
+	public static void gerenciarEdicao (Scanner entradaDados, int opcao){
+		if (INSSM.isEmpty()){
+			System.out.println(Erro.dependencia("INSS"));
+		
+		}else if (IRRFM.isEmpty()){
+			System.out.println(Erro.dependencia("IRRF"));
+
+		}else{
+			switch (opcao){
+				case 1:
+					gerenciarInserir(entradaDados);
+					break;
+				case 2:
+					gerenciarAtualizar (entradaDados);
+					break;
+				case 3:
+					gerenciarVisualizar(entradaDados, true);
+					break;
+				case 4:
+					gerenciarDeletar(entradaDados);
+					break;
+			}
+		}
+		
+		Textual.aguardeTecla(entradaDados);
+	}
+	
+	/**
+	 * Gerenciamento das opção de inserir uma nova Profissão
+	 * @param entradaDados Entrada de dados via terminal
+	 */
+	private static void gerenciarInserir (Scanner entradaDados){
+		Profissao prof = new Profissao();
+		String operacao = "Inserir Profissao";
+		
+		JanelasT.getJEditarInserirTabela("Profissao");
+		
+		prof = coletarInfo(entradaDados, false);
+		
+		System.out.println(Mensagem.aguarde(operacao));
+		
+		ProfissaoM.inserir(prof);
+		
+		System.out.println(Mensagem.sucesso(operacao));
+	}
+	
+	/**
+	 * Gerenciamento das opção de atualizar uma profissao
+	 * @param entradaDados Entrada de dados via terminal
+	 */
+	private static void gerenciarAtualizar (Scanner entradaDados){
+		Profissao prof = new Profissao();
+		String operacao = "Atualizar Profissao";
+		
+		ctrlVisualizar(entradaDados, true);
+		
+		System.out.println(Mensagem.atualizar(false));
+		
+		prof = coletarInfo(entradaDados, true);
+		
+		System.out.println(Mensagem.aguarde(operacao));
+		
+		ProfissaoM.atualizar(prof);
+		
+		System.out.println(Mensagem.sucesso(operacao));
+	}
+	
+	/**
+	 * Gerenciamento das opção de visualizar as profissões existentes
+	 * @param entradaDados Entrada de dados via terminal
+	 * @param isFull Verificando se a exibição desta opção é completa ou não.
+	 * Sendo true, incluirá o título na janela; caso contrário, não
+	 */
+	private static void gerenciarVisualizar (Scanner entradaDados, boolean isFull){
+		if (isFull)
+			JanelasT.getJEditarVisualizarTabela("Profissao");
+		
+		LinkedList<Profissao> profissoes = ProfissaoM.lerCompleto();
+		Profissao prof;
+		
+		System.out.println("Código - Descrição - Salário Base - Cod. INSS - Cod. IRRF");
+		for (int pos = 0; pos < profissoes.size(); pos++){
+			prof = profissoes.get(pos);
+			
+			System.out.println(prof.toString());
+		}
+	}
+	
+	/**
+	 * Gerenciamento das opção de exclusão uma profissão
+	 * @param entradaDados Entrada de dados via terminal
+	 */
+	private static void gerenciarDeletar (Scanner entradaDados){
+		Profissao prof = new Profissao();
+		String operacao = "Deletar Profissao";
+		
+		ctrlVisualizar(entradaDados, false);
+		
+		System.out.println(Mensagem.deletar(false));
+		
+		prof.setCodigo(Mensagem.preencherCodigo(entradaDados));
+		
+		System.out.println(Mensagem.aguarde(operacao));
+		
+		ProfissaoM.deletar(prof);
+		
+		System.out.println(Mensagem.sucesso(operacao));
+	}
+	
+	/**
+	 * Controle de visualização de dados fora da janela principal
+	 * @param entradaDados Entrada de dados via terminal
+	 * @param isAtualizar Verificação qual a origem do pedido.
+	 * Sendo true, está contido na janela de atualização; caso contrário, na de exclusão
+	 */
+	private static void ctrlVisualizar (Scanner entradaDados, boolean isAtualizar){
+		int escolha = 0;
+		
+		if (isAtualizar)
+			escolha = Mensagem.questionaOpcoes(entradaDados, JanelasT.getJEditarAtualizarTabela("Profissao"));
+		else
+			escolha = Mensagem.questionaOpcoes(entradaDados, JanelasT.getJEditarDeletarTabela("Profissao"));
+		
+		if (escolha == 1)
+			gerenciarVisualizar(entradaDados, false);
+	}
+	
+	/**
+	 * Aquisição das informações cruciais, via terminal
+	 * @param entradaDados Entrada de dados via terminal
+	 * @param codigoTambem Verificação se a aquisição do código é necessária
+	 * @return Profissão com as informações colidas
+	 */
+	private static Profissao coletarInfo (Scanner entradaDados, boolean codigoTambem){
+		Profissao prof = new Profissao();
+		
+		if (codigoTambem)
+			prof.setCodigo(Mensagem.preencherCodigo(entradaDados));
+		
+		prof.setDescricao(Mensagem.preencherNome(entradaDados));
+		prof.setSalarioBase(Mensagem.preencherSalario(entradaDados));
+		prof.setInss_codigo(INSS.localizarCod(prof.getSalarioBase()));
+		prof.setIrrf_codigo(IRRF.localizarCod(INSS.deduzirAliquota(prof)));
+		
+		return prof;
 	}
 }

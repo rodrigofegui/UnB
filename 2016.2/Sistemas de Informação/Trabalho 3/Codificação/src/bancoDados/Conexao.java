@@ -21,7 +21,7 @@ public abstract class Conexao{
 	private static final String SSL_ERROR = "?autoReconnect=true&useSSL=false";
 	private static final String URL = "jdbc:mysql://" + SERVIDOR + "/" + NOME + SSL_ERROR;
 	private static final String USUARIO = "estudante";
-	private static final String SENHA = "t3si_";
+	private static final String SENHA = "T3si@senha";
 	private static final String DRIVER = "com.mysql.jdbc.Driver";
 	
 

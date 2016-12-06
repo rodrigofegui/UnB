@@ -1,0 +1,54 @@
+%%%%%%%%%%% INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%%%%%%%
+% Versão: 		1.0
+% Autor:		Rodrigo Guimarães
+% Finalidade:	Descritivo do SPT para o Trabalho 2
+%				da disciplina SI 2016.2
+%%%%%%%%%%% FIM INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%% INCLUSÃO DE PACOTES %%%%%%%%%%%%%%%%
+% Classe Base do Documento: Artigo
+\documentclass [12pt]{article}
+% Layout do Papel
+\usepackage{../../Layout/Layout_Documento}
+% Case não funcione, verificar o diretório do arquivo 'Layout_Documento.sty'
+%\usepackage{lipsum}
+%%%%%%%%%%% FIM INCLUSÃO DE PACOTES %%%%%%%%%%%
+
+%%%%%%%%%%% INFORMAÇÕES BÁSICAS %%%%%%%%%%%%%%%
+\title {Contrução SI}
+%%%%%%%%%%% FIM INFORMAÇÕES BÁSICAS %%%%%%%%%%%
+
+%%%%%%%%%%% DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\inserirTitulo
+
+	O padrão arquitetural implementado foi o modelo MVC.
+	
+	\emph{Model-view-controller} (MVC), em português modelo-visão-controlador, é um padrão de arquitetura de software (\emph{design pattern}) que separa a representação da informação da interação do usuário com ele. O modelo consiste nos dados da aplicação, regras de negócios, lógica e funções. Uma visão pode ser qualquer saída de representação dos dados, como uma tabela ou um diagrama. É possível ter várias visões do mesmo dado, como um gráfico de barras para gerenciamento e uma visão tabular para contadores. O controlador faz a mediação da entrada, convertendo-a em comandos para o modelo ou visão. As ideias centrais por trás do MVC são a reusabilidade de código e separação de conceitos.
+
+	Os diagramas de classes ficaram muitos extensos, dessa forma as imagens serão enviadas fora deste arquivo, de modo a possibilitar uma visualização de todos. Vale informar que a classe~\emph{Erro}, faz conexões com todas classes do pacote~\emph{bancoDados.manipuladores} e do~\emph{trabalhoFeliz}, por isso não foi posta, para não dificultar a visualização.
+
+	Os requisitos funcionais estão descritos como:
+	
+	\begin{enumerate}
+		\item \textbf{Cadastrar Empregado:} O sistema cumpriu com o esperado;
+		\item \textbf{Analisar Contrato:} O sistema cumpriu em parte, pois todos os funcionários cadastrados foram considerados como empregados;
+		\item \textbf{Gerar holerite:} O sistema cumpriu com o esperado;
+		\item \textbf{Emitir holerite:} O sistema cumpriu com o esperado;
+		\item \textbf{Calcular os bônus:} O sistema cumpriu com o esperado, embora não tenha sido desenvolvido um método para isto;
+		\item \textbf{Calcular os ônus:} O sistema cumpriu com o esperado, embora não tenha sido desenvolvido um método para isto;
+		\item \textbf{Resgatar Salário Base:} O sistema cumpriu com o esperado;
+		\item \textbf{Controlar Férias:} O sistema cumpriu com o esperado;
+		\item \textbf{Controlar Parcelas $13$º:} O sistema cumpriu com o esperado;
+		\item \textbf{Controlar Faltas:} O sistema cumpriu com o esperado;
+		\item \textbf{Controlar alíquota do INSS:} O sistema cumpriu com o esperado;
+		\item \textbf{Controlar alíquota do IRRF:} O sistema cumpriu com o esperado;
+		\item \textbf{Controlar vale-transporte:} O sistema cumpriu com o esperado;
+		\item \textbf{Somar às despesas:} O sistema cumpriu com o esperado.
+	\end{enumerate}
+	
+	Para o conhecimento dos requisitos originais, consultar o arquivo~\emph{\textbf{LevantamentoRequisitos.pdf}}.
+
+\end{document}
+%%%%%%%%%%% FIM DOCUMENTO %%%%%%%%%%%%%%%%%%%%%

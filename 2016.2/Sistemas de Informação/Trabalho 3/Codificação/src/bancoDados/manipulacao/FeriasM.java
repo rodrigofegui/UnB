@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.LinkedList;
 
 import bancoDados.Conexao;
+import bancoDados.tabelas.Disciplina;
 import bancoDados.tabelas.Ferias;
 import utilitario.Erro;
 
@@ -143,6 +144,26 @@ public abstract class FeriasM {
 			
 		}finally{
 			Conexao.encerrarConexao(conexao, declaracao);
+		}
+	}
+	
+	/**
+	 * Verificação rápida se a lista de férias está vazia
+	 * @return True, se estiver vazia; false, caso contrário
+	 */
+	public static boolean isEmpty (){
+		return lerCompleto().isEmpty();
+	}
+
+	/**
+	 * Liberando todas as instâncias registradas no BD
+	 */
+	public static void esvaziar (){
+		if (!isEmpty()){
+			LinkedList<Ferias> lista = lerCompleto();
+			
+			for (int pos = 0; pos < lista.size(); pos++)
+				deletar(lista.get(pos));
 		}
 	}
 }

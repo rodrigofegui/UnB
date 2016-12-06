@@ -1,7 +1,8 @@
 package trabalhoFeliz;
 
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.LinkedList;
-import java.util.Scanner;
 
 import bancoDados.manipulacao.ProfissaoM;
 import bancoDados.tabelas.Funcionario;
@@ -16,232 +17,189 @@ import utilitario.Erro;
  * @version	1.0
  * @since	29/11/2016
  */
-public class Empregado {
+public class Empregado{
+	private Funcionario func;
+	private int grauAssiduo;
+	private int faltas;
+	private boolean reqFerias;
+	private boolean req13Sal;
 	
-	public static Funcionario preencherDados (){
-		Funcionario func = new Funcionario();
+	
+	
+	/**
+	 * Construção do Departamento, por maneira default
+	 */
+	public Empregado (){
+		setFunc(new Funcionario());
 		
-		preencherNome(func);
+		setGrauAssiduo(Integer.parseInt(Autentificacao.gerarSeqInt(1)));
 		
-		preeencherCpf(func);
+		setFaltas(0);
 		
-		preencherData(func, "Nascimento");
+		setReqFerias(false);
 		
-		preencherTelefone (func);
-		
-		preencherEmail(func);
-		
-		preencherProfissao(func);
-		
-		preencerValeTransporte(func);
-		
+		setReq13Sal(false);
+	}
+	
+	
+	
+	/**
+	 * Valor atribuído ao funcionário corresponde no BD
+	 * @return O funcionário corresponde no BD
+	 */
+	public Funcionario getFunc() {
 		return func;
 	}
 
-	
-	
-	
 	/**
-	 * Requisitar o preenchimento do nome do funcionário; deve-se tentar
-	 * enquanto for um nome inválido
-	 * @param func Funcionário a ter o nome atribuído
+	 * Atribuir valor ao funcionário corresponde no BD
+	 * @param func O funcionário a ser atribuído
 	 */
-	public static void preencherNome (Funcionario func){
-		Scanner entrada = new Scanner (System.in);
-		
-		do{
-			System.out.println("* Nome completo (sem acentuação):");
-			String linha = entrada.nextLine();
-			
-			if (Autentificacao.isNome(linha)){
-				func.setNome(linha);
-				break;
-				
-			}else	System.out.println(Erro.nome());
-			
-		}while (true);
-		
-		entrada.close();
-	}
-	
-	/**
-	 * Requisitar o preenchimento do CPF do funcionário; deve-se tentar
-	 * enquanto for um CPF inválido
-	 * @param func Funcionário a ter o nome atribuído
-	 */
-	public static void preeencherCpf (Funcionario func){
-		Scanner entrada = new Scanner (System.in);
-		do{
-			System.out.println("* CPF (somente os números):");
-			String linha = entrada.nextLine();
-			
-			if (Autentificacao.isCpf(linha)){
-				func.setCpf(Autentificacao.cpf(linha));
-				break;
-				
-			}else	System.out.println(Erro.cpf());				
-				
-		}while(true);
-		
-		entrada.close();
+	public void setFunc(Funcionario func) {
+		this.func = func;
 	}
 
 	/**
-	 * Requisitar o preenchimento da data do funcionário; deve-se tentar
-	 * enquanto for uma data inválida
-	 * @param func Funcionário a ter o nome atribuído
-	 * @param tipo Tipo da data que está sendo requisitada, podendo ser 
-	 * de nascimento ou de admissão
+	 * Valor atribuído ao grau assiduidade
+	 * @return O grau de assiduidade
 	 */
-	public static void preencherData (Funcionario func, String tipo){
-		Scanner entrada = new Scanner (System.in);
-		
-		do{
-			System.out.println("* Data de " + tipo + " (aaaa-mm-dd, só os números [0-9] nessa sequência):");
-			String linha = Autentificacao.data(entrada.nextLine());
-			
-			if (Autentificacao.isData(linha)){
-				if (tipo.equals("Nascimento"))
-					func.setDataNasc(linha);
-				else
-					func.setDataAdm(linha);
-				
-				break;
-				
-			}else	System.out.println(Erro.data(tipo));				
-				
-		}while(true);
-		
-		entrada.close();
+	public int getGrauAssiduo() {
+		return grauAssiduo;
 	}
 
 	/**
-	 * Requisitar o preenchimento do telefone do funcionário; deve-se tentar
-	 * enquanto for um telefone inválido
-	 * @param func Funcionário a ter o telefone atribuído
+	 * Atribuir valor ao grau assiduidade
+	 * @param grauAssiduo O grauAssiduo a ser atribuído
 	 */
-	public static void preencherTelefone (Funcionario func){
-		Scanner entrada = new Scanner (System.in);
-		
-		do{
-			System.out.println("* Telefone (com o DDD, somente os números):");
-			String linha = entrada.nextLine();
-			
-			if (Autentificacao.isTelefone(linha)){
-				func.setTelefone(Autentificacao.telefone(linha));
-				break;
-				
-			}else	System.out.println(Erro.telefone());
-				
-		}while(true);
-		
-		entrada.close();
+	public void setGrauAssiduo(int grauAssiduo) {
+		this.grauAssiduo = grauAssiduo;
 	}
 
 	/**
-	 * Requisitar o preenchimento do e-mail do funcionário; deve-se tentar
-	 * enquanto for um e-mail inválido
-	 * @param func Funcionário a ter o e-mail atribuído
+	 * Valor atribuído às faltas
+	 * @return As faltas do mês
 	 */
-	public static void preencherEmail (Funcionario func){
-		Scanner entrada = new Scanner (System.in);
-		
-		do{
-			System.out.println("* E-mail (exemplo@exemplo.com):");
-			String linha = entrada.nextLine();
-			
-			if (Autentificacao.isEmail(linha)){
-				func.setEmail(linha);
-				break;
-			
-			}else	System.out.println(Erro.email());
-			
-		}while(true);
-		
-		entrada.close();
+	public int getFaltas() {
+		return faltas;
 	}
 
 	/**
-	 * Requisitar o preenchimento da profissão do funcionário; deve-se tentar
-	 * enquanto for uma profissão inválida
-	 * @param func Funcionário a ter a profissão atribuída
+	 * Atribuir valor às faltas
+	 * @param faltas As faltas a serem atribuídas
 	 */
-	public static void preencherProfissao (Funcionario func){
-		Scanner entrada = new Scanner (System.in);
+	public void setFaltas(int faltas) {
+		this.faltas = faltas;
+	}
+
+	/**
+	 * Valor atribuído à requisição de férias
+	 * @return A requisição de férias
+	 */
+	public boolean isReqFerias() {
+		return reqFerias;
+	}
+
+	/**
+	 * Atribuir valor à requisição de férias
+	 * @param reqFerias A requisição de férias a ser atribuída
+	 */
+	public void setReqFerias(boolean reqFerias) {
+		this.reqFerias = reqFerias;
+	}
+
+	/**
+	 * Valor atribuído à requisição do 13º salário
+	 * @return A requisição do 13º Salário
+	 */
+	public boolean isReq13Sal() {
+		return req13Sal;
+	}
+
+	/**
+	 * Atribuir valor à requisição do 13º salário
+	 * @param req13Sal A requisição a ser atribuída
+	 */
+	public void setReq13Sal(boolean req13Sal) {
+		this.req13Sal = req13Sal;
+	}
+	
+	
+
+	/**
+	 * Preenchimento dos dados pessoais do funcionário para a simulação
+	 * @param leitura Arquivo que será lido os dados pessoais
+	 * @param nomeArq Nome do arquivo a ser lido
+	 * @return Funcionários com os dados preenchidos
+	 */
+	public static Funcionario preencherDados (BufferedReader leitura, String nomeArq){	
+		Funcionario func = new Funcionario();
+		
+		try {
+			String text = leitura.readLine();
+			
+			if (text.length() == 0){
+				return null;
+			}
+			
+			func.setCpf(Autentificacao.cpf(text));
+			func.setNome(Autentificacao.nome(leitura.readLine()));
+			func.setDataNasc(Autentificacao.data(leitura.readLine()));
+			func.setTelefone(Autentificacao.telefone(leitura.readLine()));
+			func.setEmail(leitura.readLine());
+			preencherProfissao(leitura, func);
+			func.setDataAdm(Autentificacao.data(leitura.readLine()));
+			func.setQntValeTransp(Integer.parseInt(leitura.readLine()));
+		} catch (IOException e) {
+			System.out.println(Erro.acessarArq(nomeArq));
+		}
+		
+		return func;
+	}
+	
+	/**
+	 * Preenchimento da profissão do funcionário para a simulação
+	 * @param leitura Arquivo que será lido os dados pessoais
+	 * @param func Funcionário a ser atribuído a profissão e os códigos
+	 * da faixa do INSS e do IRRF
+	 */
+	private static void preencherProfissao (BufferedReader leitura, Funcionario func){
 		LinkedList<Profissao> profissoes = ProfissaoM.lerCompleto();
 		LinkedList<Integer> codigos = new LinkedList<Integer>();
-		int maior = 0;
+		Profissao prof = new Profissao();
 		
-		System.out.println("* Profissão, escolha uma opção:");
-		
-		for (int pos = 0; pos < profissoes.size(); pos++){
-			Profissao prof = profissoes.get(pos);
-			
-			System.out.print("\t" + prof.getCodigo() + " - " + prof.getDescricao());
-			codigos.add(prof.getCodigo());
-			
-			if (pos != profissoes.size() - 1)
-				System.out.println(";");
-			else
-				System.out.println(".");
-			
-			if (prof.getCodigo() > maior)
-				maior = prof.getCodigo();
-		}
-			
-		do{
-			System.out.println("Digite a escolha:");
-			
-			try{
-				int linha = Integer.parseInt(entrada.nextLine());
+		try {
+			String linha = leitura.readLine();
+			for (int pos = 0; pos < profissoes.size(); pos++){
+				prof = profissoes.get(pos);
 				
-				if (codigos.contains(linha)){
-					func.setCodProf(linha);
-					func.setCodProfInss(profissoes.get(codigos.indexOf(linha)).getInss_codigo());
-					func.setCodProfIrrf(profissoes.get(codigos.indexOf(linha)).getIrrf_codigo());
+				if (Integer.parseInt(linha) == prof.getCodigo())
 					break;
-					
-				}else System.out.println(Erro.profissaoOuVale("Profissão", false));
-			}catch (NumberFormatException e){
-				System.out.println(Erro.profissaoOuVale("Profissão", true));
 			}
-			
-		}while (true);
 		
-		entrada.close();
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		func.setCodProf(prof.getCodigo());
+		func.setCodProfInss(prof.getInss_codigo());
+		func.setCodProfIrrf(prof.getIrrf_codigo());
 	}
 
+	
+	
 	/**
-	 * Requisitar o preenchimento da quantidade de vale-transporte do
-	 * funcionário; deve-se tentar
-	 * enquanto for uma quantidade inválida
-	 * @param func Funcionário a ter a quantidade atribuída
+	 * Simulação da ação de trabalhar
 	 */
-	public static void preencerValeTransporte (Funcionario func){
-		Scanner entrada = new Scanner (System.in);
+	public void trabalhar (){
+		setGrauAssiduo(Integer.parseInt(Autentificacao.gerarSeqInt(9, 1)) + 1);
 		
-		System.out.println("* Vale transporte:");
-		System.out.println("\tSe não houver interesse, digite 0;");
-		System.out.println("\tCaso contrário, digite a quantidade.");
+		setFaltas(Integer.parseInt(Autentificacao.gerarSeqInt(getGrauAssiduo(), 1)));
 		
-		do{
-			System.out.println("Digite a sua escolha:");
-			
-			try{
-				int linha = Integer.parseInt(entrada.nextLine());
-				
-				if (linha >= 0){
-					func.setQntValeTransp(linha);
-					break;
-					
-				}else System.out.println(Erro.profissaoOuVale("Quantidade de vale-transporte", false));
-			}catch (NumberFormatException e){
-				System.out.println(Erro.profissaoOuVale("Quantidade de vale-transporte", true));
-			}
-			
-		}while (true);
+		setReqFerias(Boolean.parseBoolean(Autentificacao.gerarSeqInt(2, 1)));
 		
-		entrada.close();
+		setReq13Sal(Boolean.parseBoolean(Autentificacao.gerarSeqInt(2, 1)));
 	}
 }
 
