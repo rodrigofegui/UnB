@@ -1,0 +1,51 @@
+Responsável:
+	Rodrigo Ferreira Guimarães
+
+Matrícula:
+	14/0170740
+
+GitHub:
+	https://github.com/rodrigofegui/UnB.git
+
+Linguagem Utilizada:
+	C++
+
+Plataforma necessária:
+	Code:Blocks IDE 16.01 ou superior (esta foi a versão utilizada para o desenvolvimento)
+
+Descritivo:
+	Desenvolvimento dos Tipos e das Entidades Básicas para o sistema de Estante.
+
+Descritivo do módulo:
+	Sendo desenvolvido em C++, houve o desenvolvimento de duas bibliotecas:
+		- Domínio: que controla os tipos básicos e suas validações;
+		- Entidades: que controla as entidades que são compostas pela combinação
+		linear dos tipos desenvolvidos no Domínio;
+	Foram catalogados os seguintes tipos básicos:
+		- Apelido;
+		- Código;
+		- Data;
+		- Gênero Literário;
+		- Nome;
+		- Senha;
+		- Telefone;
+		- Texto;
+		- Título.
+	E as seguintes entidades:
+		- Livro;
+		- Resenha;
+		- Usuário.
+
+Descritivo dos diretórios básicos:
+	Como o trabalho será manipulado e compartilhado conforme a IDE utilizada, então estarão inclusos os diretórios criados pela mesma; todas descritas sob a árvore de diretórios:
+		- /bin: Armazena os arquivos executáveis, gerados pela IDE utilizada, por isso não será detalhada;
+		- /Declaracao: Armazena, como o nome já diz, as declarações, arquivos .hpp, das classes criadas, possibilitando, futuramente, o usuário final conhecer apenas os .hpp, os objetos gerados e a documentação;
+		- /Definição: Armazena todos os códigos-fonte que geram arquivos objetos, onde para cada grupo de classes há um grupo de teste para estas classes, sendo estas discriminadas pela inclusão de "_Tst" ao final de seus respectivos grupos/classes a serem testados;
+		- /doxygen: Armazena a documentação gerada pelos códigos;
+		- /obj: Armazena os arquivos objeto, gerados pela IDE utilizada, por isso não será detalhada;
+		- LEIAME: Arquivo que está sendo lido no momento, espera-se conter todas as informações necessárias para o entendimento mínimo da aplicação;
+		- Principal.cpp: Arquivo que orquestra a execução da aplicação;
+		- Principal.hpp: Arquivo que inclui todas as bibliotecas necessárias para a execução da aplicação;
+		- Trabalho_1.cbp: Identificador de um projeto pela IDE utilizada.
+
+Descritivo do arquivo makefile:
