@@ -5,7 +5,7 @@ Matrícula:
 	14/0170740
 
 GitHub:
-	https://github.com/rodrigofegui/UnB.git
+	https://github.com/rodrigofegui/UnB/tree/master/2017.2/T%C3%A9cnicas%20de%20Programa%C3%A7%C3%A3o%201/Trabalho_1
 
 Linguagem Utilizada:
 	C++
