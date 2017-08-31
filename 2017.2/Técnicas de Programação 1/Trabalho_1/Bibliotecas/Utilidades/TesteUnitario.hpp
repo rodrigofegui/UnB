@@ -31,11 +31,11 @@
              *  Gerenciamento para os testes unitários para cada tipo
              *  de dados manipulados pela classe
              */
-            static void expect (bool avaliar, bool cond);
-            static void expect (char val1, char val2, string cmp);
-            static void expect (int val1, int val2, string cmp);
-            static void expect (double val1, double val2, string cmp);
-            static void expect (string val1, string val2, string cmp);
+            static bool expect (bool avaliar, bool cond);
+            static bool expect (char val1, char val2, string cmp);
+            static bool expect (int val1, int val2, string cmp);
+            static bool expect (double val1, double val2, string cmp);
+            static bool expect (string val1, string val2, string cmp);
 
             /**
              *  Mensagens padrões para sucesso e falha na operação
@@ -48,6 +48,7 @@
              *  Tratamento de falha para cada tipo de dado manipulado
              *  pela classe
              */
+            static void tratarFalha (int falhaCode);
             static void tratarFalha (int falhaCode, char val1, char val2);
             static void tratarFalha (int falhaCode, double val1, double val2);
             static void tratarFalha (int falhaCode, string val1, string val2);
@@ -55,7 +56,9 @@
             /**
              *  Códigos de falha possíveis
              */
-            enum falha {FALHA_EQ, FALHA_NE, FALHA_LT, FALHA_LE, FALHA_GT, FALHA_GE};
+            enum falhaCmp {FALHA_EQ, FALHA_NE, FALHA_LT, FALHA_LE, FALHA_GT, FALHA_GE};
+            enum falhaPtr {FALHA_NULL, FALHA_NNULL};
+            enum retorno  {FALHOU, PASSOU};
 
         public:
             /**
@@ -111,20 +114,25 @@
              */
             static void validarGE();
 
+
+            static bool expect (void *pt, bool cond);
+            static bool expect_Null (void *pt);
+            static bool expect_NotNull (void *pt);
+
             /**
              *  Teste unitário para cond == True
              *  @param cond Valor a ser considerado
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_True (bool cond);
+            static bool expect_True (bool cond);
             /**
              *  Teste unitário para cond == False
              *  @param cond Valor a ser considerado
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_False (bool cond);
+            static bool expect_False (bool cond);
 
             /**
              *  Teste unitário para val1 == val2
@@ -133,7 +141,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_EQ (char val1, char val2);
+            static bool expect_EQ (char val1, char val2);
             /**
              *  Teste unitário para val1 != val2
              *  @param val1 Primeiro valor a ser considerado
@@ -141,7 +149,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_NE (char val1, char val2);
+            static bool expect_NE (char val1, char val2);
             /**
              *  Teste unitário para val1 < val2
              *  @param val1 Primeiro valor a ser considerado
@@ -149,7 +157,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_LT (char val1, char val2);
+            static bool expect_LT (char val1, char val2);
             /**
              *  Teste unitário para val1 <= val2
              *  @param val1 Primeiro valor a ser considerado
@@ -157,7 +165,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_LE (char val1, char val2);
+            static bool expect_LE (char val1, char val2);
             /**
              *  Teste unitário para val1 > val2
              *  @param val1 Primeiro valor a ser considerado
@@ -165,7 +173,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_GT (char val1, char val2);
+            static bool expect_GT (char val1, char val2);
             /**
              *  Teste unitário para val1 => val2
              *  @param val1 Primeiro valor a ser considerado
@@ -173,7 +181,8 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_GE (char val1, char val2);
+            static bool expect_GE (char val1, char val2);
+
 
             /**
              *  Teste unitário para val1 == val2
@@ -182,7 +191,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_EQ (int val1, int val2);
+            static bool expect_EQ (int val1, int val2);
             /**
              *  Teste unitário para val1 != val2
              *  @param val1 Primeiro valor a ser considerado
@@ -190,7 +199,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_NE (int val1, int val2);
+            static bool expect_NE (int val1, int val2);
             /**
              *  Teste unitário para val1 < val2
              *  @param val1 Primeiro valor a ser considerado
@@ -198,7 +207,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_LT (int val1, int val2);
+            static bool expect_LT (int val1, int val2);
             /**
              *  Teste unitário para val1 <= val2
              *  @param val1 Primeiro valor a ser considerado
@@ -206,7 +215,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_LE (int val1, int val2);
+            static bool expect_LE (int val1, int val2);
             /**
              *  Teste unitário para val1 > val2
              *  @param val1 Primeiro valor a ser considerado
@@ -214,7 +223,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_GT (int val1, int val2);
+            static bool expect_GT (int val1, int val2);
             /**
              *  Teste unitário para val1 == val2
              *  @param val1 Primeiro valor a ser considerado
@@ -222,7 +231,8 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_GE (int val1, int val2);
+            static bool expect_GE (int val1, int val2);
+
 
             /**
              *  Teste unitário para val1 == val2
@@ -231,7 +241,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_EQ (double val1, double val2);
+            static bool expect_EQ (double val1, double val2);
             /**
              *  Teste unitário para val1 != val2
              *  @param val1 Primeiro valor a ser considerado
@@ -239,7 +249,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_NE (double val1, double val2);
+            static bool expect_NE (double val1, double val2);
             /**
              *  Teste unitário para val1 < val2
              *  @param val1 Primeiro valor a ser considerado
@@ -247,7 +257,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_LT (double val1, double val2);
+            static bool expect_LT (double val1, double val2);
             /**
              *  Teste unitário para val1 <= val2
              *  @param val1 Primeiro valor a ser considerado
@@ -255,7 +265,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_LE (double val1, double val2);
+            static bool expect_LE (double val1, double val2);
             /**
              *  Teste unitário para val1 > val2
              *  @param val1 Primeiro valor a ser considerado
@@ -263,7 +273,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_GT (double val1, double val2);
+            static bool expect_GT (double val1, double val2);
             /**
              *  Teste unitário para val1 => val2
              *  @param val1 Primeiro valor a ser considerado
@@ -271,7 +281,8 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_GE (double val1, double val2);
+            static bool expect_GE (double val1, double val2);
+
 
             /**
              *  Teste unitário para val1 == val2
@@ -280,7 +291,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_EQ (string val1, string val2);
+            static bool expect_EQ (string val1, string val2);
             /**
              *  Teste unitário para val1 != val2
              *  @param val1 Primeiro valor a ser considerado
@@ -288,7 +299,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_NE (string val1, string val2);
+            static bool expect_NE (string val1, string val2);
             /**
              *  Teste unitário para val1 == val2, sem sensibilidade
              *  de maiúsculo/minúsculo
@@ -297,7 +308,7 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_CEQ (string val1, string val2);
+            static bool expect_CEQ (string val1, string val2);
             /**
              *  Teste unitário para val1 != val2, sem sensibilidade
              *  de maiúsculo/minúsculo
@@ -306,6 +317,6 @@
              *  @return Resultado do teste: positivo ou negativo,
              *  com tratamento de exceção
              */
-            static void expect_CNE (string val1, string val2);
+            static bool expect_CNE (string val1, string val2);
     };
 #endif // TESTE_UNITARIO

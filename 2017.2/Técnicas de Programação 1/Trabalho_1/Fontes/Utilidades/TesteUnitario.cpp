@@ -191,212 +191,258 @@ void TesteUnitario::validarGE(){
 }
 
 
+bool TesteUnitario::expect(void *pt, bool cond){
+    cout << "Testando ponteiro" << endl;
 
-void TesteUnitario::expect (bool avaliar, bool cond){
+    try{
+        if(cond){
+            if (!pt) return PASSOU;
+            else throw 0;
+
+        }else{
+            if (pt) return PASSOU;
+            else throw 1;
+        }
+    }catch(int falha){
+        msgFalha();
+
+        return FALHOU;
+    }
+}
+
+bool TesteUnitario::expect_Null(void *pt){
+    return expect(pt, true);
+}
+
+bool TesteUnitario::expect_NotNull(void *pt){
+    return expect(pt, false);
+}
+
+
+bool TesteUnitario::expect (bool avaliar, bool cond){
     cout << "Testando ";
 
     try{
         if(avaliar){
             cout << "True:" << endl;
-            if (cond) msgSucesso();
+            if (cond) return PASSOU;
             else throw 1;
         }else{
             cout << "False:" << endl;
-            if (!cond) msgSucesso();
+            if (!cond) return PASSOU;
             else throw 2;
         }
     }catch (int falha){
         msgFalha();
+
+        tratarFalha(falha);
+
+        return FALHOU;
     }
 }
 
-void TesteUnitario::expect_True (bool cond){
-    expect(true, cond);
+bool TesteUnitario::expect_True (bool cond){
+    return expect(true, cond);
 }
 
-void TesteUnitario::expect_False (bool cond){
-    expect(false, cond);
+bool TesteUnitario::expect_False (bool cond){
+    return expect(false, cond);
 }
 
 
 
-void TesteUnitario::expect (char val1, char val2, string cmp){
+bool TesteUnitario::expect (char val1, char val2, string cmp){
         cout << "Testando Comparação:" << endl;
 
     try{
         if (cmp == "EQ"){
-            if (val1 == val2) msgSucesso();
+            if (val1 == val2) return PASSOU;
             else throw 0; // FALHA_EQ;
         }else if (cmp == "NE"){
-            if (val1 != val2) msgSucesso();
+            if (val1 != val2) return PASSOU;
             else throw 1; // FALHA_NE;
         }else if (cmp == "LT"){
-            if (val1 < val2) msgSucesso();
+            if (val1 < val2) return PASSOU;
             else throw 2; // FALHA_LT;
         }else if (cmp == "LE"){
-            if (val1 <= val2) msgSucesso();
+            if (val1 <= val2) return PASSOU;
             else throw 3; // FALHA_LE;
         }else if (cmp == "GT"){
-            if (val1 > val2) msgSucesso();
+            if (val1 > val2) return PASSOU;
             else throw 4; // FALHA_GT;
         }else if (cmp == "GE"){
-            if (val1 >= val2) msgSucesso();
+            if (val1 >= val2) return PASSOU;
             else throw 5; //FALHA_GE;
         }
     }catch (int falha){
         msgFalha();
 
         tratarFalha (falha, val1, val2);
+
+        return FALHOU;
     }
 }
 
-void TesteUnitario::expect_EQ (char val1, char val2){
-    expect(val1, val2, "EQ");
+bool TesteUnitario::expect_EQ (char val1, char val2){
+    return expect(val1, val2, "EQ");
 }
 
-void TesteUnitario::expect_NE (char val1, char val2){
-    expect(val1, val2, "NE");
+bool TesteUnitario::expect_NE (char val1, char val2){
+    return expect(val1, val2, "NE");
 }
 
-void TesteUnitario::expect_LT (char val1, char val2){
-    expect(val1, val2, "LT");
+bool TesteUnitario::expect_LT (char val1, char val2){
+    return expect(val1, val2, "LT");
 }
 
-void TesteUnitario::expect_LE (char val1, char val2){
-    expect(val1, val2, "LE");
+bool TesteUnitario::expect_LE (char val1, char val2){
+    return expect(val1, val2, "LE");
 }
 
-void TesteUnitario::expect_GT (char val1, char val2){
-    expect(val1, val2, "GT");
+bool TesteUnitario::expect_GT (char val1, char val2){
+    return expect(val1, val2, "GT");
 }
 
-void TesteUnitario::expect_GE (char val1, char val2){
-   expect(val1, val2, "GE");
-}
-
-
-
-void TesteUnitario::expect (int val1, int val2, string cmp){
-    expect((double) val1, (double) val2, cmp);
-}
-
-void TesteUnitario::expect_EQ (int val1, int val2){
-    expect(val1, val2, "EQ");
-}
-
-void TesteUnitario::expect_NE (int val1, int val2){
-    expect(val1, val2, "NE");
-}
-
-void TesteUnitario::expect_LT (int val1, int val2){
-    expect(val1, val2, "LT");
-}
-
-void TesteUnitario::expect_LE (int val1, int val2){
-    expect(val1, val2, "LE");
-}
-
-void TesteUnitario::expect_GT (int val1, int val2){
-    expect(val1, val2, "GT");
-}
-
-void TesteUnitario::expect_GE (int val1, int val2){
-   expect(val1, val2, "GE");
+bool TesteUnitario::expect_GE (char val1, char val2){
+   return expect(val1, val2, "GE");
 }
 
 
 
-void TesteUnitario::expect (double val1, double val2, string cmp){
+bool TesteUnitario::expect (int val1, int val2, string cmp){
+    return expect((double) val1, (double) val2, cmp);
+}
+
+bool TesteUnitario::expect_EQ (int val1, int val2){
+    return expect(val1, val2, "EQ");
+}
+
+bool TesteUnitario::expect_NE (int val1, int val2){
+    return expect(val1, val2, "NE");
+}
+
+bool TesteUnitario::expect_LT (int val1, int val2){
+    return expect(val1, val2, "LT");
+}
+
+bool TesteUnitario::expect_LE (int val1, int val2){
+    return expect(val1, val2, "LE");
+}
+
+bool TesteUnitario::expect_GT (int val1, int val2){
+    return expect(val1, val2, "GT");
+}
+
+bool TesteUnitario::expect_GE (int val1, int val2){
+   return expect(val1, val2, "GE");
+}
+
+
+
+bool TesteUnitario::expect (double val1, double val2, string cmp){
     cout << "Testando Comparação:" << endl;
 
     try{
         if (cmp == "EQ"){
-            if (val1 == val2) msgSucesso();
+            if (val1 == val2) return PASSOU;
             else throw 0; // FALHA_EQ;
         }else if (cmp == "NE"){
-            if (val1 != val2) msgSucesso();
+            if (val1 != val2) return PASSOU;
             else throw 1; // FALHA_NE;
         }else if (cmp == "LT"){
-            if (val1 < val2) msgSucesso();
+            if (val1 < val2) return PASSOU;
             else throw 2; // FALHA_LT;
         }else if (cmp == "LE"){
-            if (val1 <= val2) msgSucesso();
+            if (val1 <= val2) return PASSOU;
             else throw 3; // FALHA_LE;
         }else if (cmp == "GT"){
-            if (val1 > val2) msgSucesso();
+            if (val1 > val2) return PASSOU;
             else throw 4; // FALHA_GT;
         }else if (cmp == "GE"){
-            if (val1 >= val2) msgSucesso();
+            if (val1 >= val2) return PASSOU;
             else throw 5; //FALHA_GE;
         }
     }catch (int falha){
         msgFalha();
 
         tratarFalha (falha, val1, val2);
+
+        return FALHOU;
     }
 }
 
-void TesteUnitario::expect_EQ (double val1, double val2){
-    expect(val1, val2, "EQ");
+bool TesteUnitario::expect_EQ (double val1, double val2){
+    return expect(val1, val2, "EQ");
 }
 
-void TesteUnitario::expect_NE (double val1, double val2){
-    expect(val1, val2, "NE");
+bool TesteUnitario::expect_NE (double val1, double val2){
+    return expect(val1, val2, "NE");
 }
 
-void TesteUnitario::expect_LT (double val1, double val2){
-    expect(val1, val2, "LT");
+bool TesteUnitario::expect_LT (double val1, double val2){
+    return expect(val1, val2, "LT");
 }
 
-void TesteUnitario::expect_LE (double val1, double val2){
-    expect(val1, val2, "LE");
+bool TesteUnitario::expect_LE (double val1, double val2){
+    return expect(val1, val2, "LE");
 }
 
-void TesteUnitario::expect_GT (double val1, double val2){
-    expect(val1, val2, "GT");
+bool TesteUnitario::expect_GT (double val1, double val2){
+    return expect(val1, val2, "GT");
 }
 
-void TesteUnitario::expect_GE (double val1, double val2){
-   expect(val1, val2, "GE");
+bool TesteUnitario::expect_GE (double val1, double val2){
+   return expect(val1, val2, "GE");
 }
 
 
 
-void TesteUnitario::expect (string val1, string val2, string cmp){
+bool TesteUnitario::expect (string val1, string val2, string cmp){
     cout << "Testando Comparação:" << endl;
 
     try{
         if (cmp == "EQ"){
-            if (val1 == val2) msgSucesso();
+            if (val1 == val2) return PASSOU;
             else throw 0; // FALHA_EQ;
         }else if (cmp == "NE"){
-            if (val1 != val2) msgSucesso();
+            if (val1 != val2) return PASSOU;
             else throw 1; // FALHA_NE;
         }
     }catch (int falha){
         msgFalha();
 
         tratarFalha (falha, val1, val2);
+
+        return FALHOU;
     }
 }
 
-void TesteUnitario::expect_EQ (string val1, string val2){
-    expect (val1, val2, "EQ");
+bool TesteUnitario::expect_EQ (string val1, string val2){
+    return expect (val1, val2, "EQ");
 }
 
-void TesteUnitario::expect_NE (string val1, string val2){
-    expect (val1, val2, "NE");
+bool TesteUnitario::expect_NE (string val1, string val2){
+    return expect (val1, val2, "NE");
 }
 
-void TesteUnitario::expect_CEQ (string val1, string val2){
-    expect (maiuscula(val1), maiuscula(val2), "EQ");
+bool TesteUnitario::expect_CEQ (string val1, string val2){
+    return expect (maiuscula(val1), maiuscula(val2), "EQ");
 }
 
-void TesteUnitario::expect_CNE (string val1, string val2){
-    expect (maiuscula(val1), maiuscula(val2), "NE");
+bool TesteUnitario::expect_CNE (string val1, string val2){
+    return expect (maiuscula(val1), maiuscula(val2), "NE");
 }
 
 
+void TesteUnitario::tratarFalha (int falhaCode){
+    switch (falhaCode){
+        case FALHA_NULL:
+            cout << "Alocou indevidamente!" << endl << endl;
+            break;
+        case FALHA_NNULL:
+            cout << "Não foi alocado" << endl << endl;
+    }
+}
 
 void TesteUnitario::tratarFalha (int falhaCode, char val1, char val2){
     switch(falhaCode){
