@@ -4,19 +4,19 @@
  *  @brief  Responsável por implementar a aplicação
  */
 
-/**
- *  @brief  Controle da execução, como teste ou definitivo
- */
-#define TESTE
 
 /**
  *  Biblioteca necessária
  */
+#include "Bibliotecas/AtivaTeste.hpp"
 #include "Principal.hpp"
 
 using namespace std;
 
 int main(){
+    #ifdef TESTE
+        fullTeste ();
+    #endif // TESTE
 
     cout << "A execucao da aplicação finalizou!" << endl;
     cout << "Volte sempre!" << endl;
