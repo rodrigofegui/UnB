@@ -4,8 +4,9 @@ var indexSectionsWithContent =
   1: "amt",
   2: "ampt",
   3: "acdeghmnsv",
-  4: "r",
-  5: "b"
+  4: "s",
+  5: "r",
+  6: "b"
 };
 
 var indexSectionNames =
@@ -14,8 +15,9 @@ var indexSectionNames =
   1: "classes",
   2: "files",
   3: "functions",
-  4: "enums",
-  5: "defines"
+  4: "variables",
+  5: "enums",
+  6: "defines"
 };
 
 var indexSectionLabels =
@@ -24,7 +26,8 @@ var indexSectionLabels =
   1: "Classes",
   2: "Files",
   3: "Functions",
-  4: "Enumerations",
-  5: "Macros"
+  4: "Variables",
+  5: "Enumerations",
+  6: "Macros"
 };
 

@@ -16,19 +16,20 @@
      *  a ser utilizado como modelo
      */
     class TesteClasse{
-        protected:
-            /*  Controle de Estado do teste */
-            bool status;
-
+        private:
             /*  Validações unitárias */
             virtual void inicializar (){};
             virtual void finalizar (){};
             virtual void validar (){};
 
+        protected:
+            /**  Controle de Estado do teste */
+            bool status;
+
         public:
             /**
-             *  Validação da classe Apelido, com a realização
-             *  de testes unitários
+             *  Executar os testes unitários cadastrados para
+             *  uma dada classe
              *  @return PASSOU ou FALHOU, conforme os teste
              */
             bool executar();
