@@ -44,10 +44,7 @@ void DataTst::validarCampoNOk (string campo){
         status = TesteUnitario::FALHOU;
 
     }catch (invalid_argument e){
-        cout << e.what() << endl;
-    }catch (length_error e){
-        cout << e.what() << endl;
-    }
+    }catch (length_error e){}
 }
 
 void DataTst::finalizar(){

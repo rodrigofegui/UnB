@@ -42,31 +42,11 @@ void Data::validar (string campo) throw (invalid_argument, length_error){
        && (atoi(mes.c_str()) != MES_FEV))
         throw invalid_argument (msgErroArgDia);
 
-    /*  Validação data, fevereiro *
-    if (atoi(mes.c_str()) == MES_FEV){
-        if (Manipulacao::eBissexto(ANO_BASE + atoi(ano.c_str()))){
-            if (!Manipulacao::noLimite(atoi(dia.c_str()), DIA_BISSEXTO))
-                throw invalid_argument ("Ano Bissexto, data estorou!");
-        }else if (!Manipulacao::noLimite(atoi(dia.c_str()), DIA_FEV))
-            throw invalid_argument ("Nem era ano bissexto, data estorou!");
-    }
-    //*/
-
+    /*  Validação data, fevereiro */
     if ((atoi(mes.c_str()) == MES_FEV)
-        && (Manipulacao::eBissexto(ANO_BASE + atoi(ano.c_str()))
-                && !Manipulacao::noLimite(atoi(dia.c_str()), DIA_BISSEXTO)))
+        && ((Manipulacao::eBissexto(ANO_BASE + atoi(ano.c_str()))
+                && !Manipulacao::noLimite(atoi(dia.c_str()), DIA_BISSEXTO))
+            ||(!Manipulacao::eBissexto(ANO_BASE + atoi(ano.c_str()))
+                && !Manipulacao::noLimite(atoi(dia.c_str()), DIA_FEV))))
             throw invalid_argument (msgErroArgDia);
-
-    if ((atoi(mes.c_str()) == MES_FEV)
-        && (!Manipulacao::eBissexto(ANO_BASE + atoi(ano.c_str()))
-                && !Manipulacao::noLimite(atoi(dia.c_str()), DIA_FEV)))
-            throw invalid_argument (msgErroArgDia);
-
-    /*
-    if ((atoi(mes.c_str()) == MES_FEV)
-        && (!Manipulacao::noLimite(atoi(dia.c_str()), DIA_FEV)
-            || (Manipulacao::eBissexto(atoi(mes.c_str()) + ANO_BASE)
-                && !Manipulacao::noLimite(atoi(dia.c_str()), DIA_BISSEXTO))))
-        throw invalid_argument (msgErroArgDia);
-    */
 }

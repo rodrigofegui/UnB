@@ -113,10 +113,21 @@
              *  @param grupo Grupo que servirá de corpo
              *  de pesquisa
              *  @param alvo Número que terá a existência
-             *  avaiada
+             *  avaliada
              *  @return PASSOU ou FALHOU
              */
             static bool localizar(vector<int> grupo, int alvo);
+
+            /**
+             *  Verificar se uma dada string existe num
+             *  dado vetor
+             *  @param grupo Grupo que servirá de corpo
+             *  de pesquisa
+             *  @param alvo String que terá a existência
+             *  avaliada
+             *  @return PASSOU ou FALHOU
+             */
+            static bool localizar(vector<string> grupo, string alvo);
 
             /**
              *  Verificar se um dado ano é bissexto

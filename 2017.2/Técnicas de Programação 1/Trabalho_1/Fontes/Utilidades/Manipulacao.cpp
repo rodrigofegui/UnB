@@ -78,6 +78,14 @@ bool Manipulacao::localizar(vector<int> grupo, int alvo){
     return TesteUnitario::FALHOU;
 }
 
+bool Manipulacao::localizar(vector<string> grupo, string alvo){
+    for (int pos = 0; pos < grupo.size(); pos++)
+        if (grupo.at(pos) == alvo)
+            return TesteUnitario::PASSOU;
+
+    return TesteUnitario::FALHOU;
+}
+
 bool Manipulacao::eBissexto (int ano){
     if ((!(ano%4) && (ano%100))
         || !(ano%400))

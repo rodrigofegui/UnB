@@ -7,8 +7,6 @@
      */
 
     #include <iostream>
-    #include <string>
-    #include <stdlib.h>
     #include <vector>
     #include <stdexcept>
     #include "../Utilidades/Manipulacao.hpp"
