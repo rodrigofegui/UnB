@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nolimite',['noLimite',['../class_manipulacao.html#a0b8179d52523041c8694d55d9621396c',1,'Manipulacao']]]
+  ['localizar',['localizar',['../class_manipulacao.html#a58402e83c73e03f97acbc170e1b1ba62',1,'Manipulacao']]]
 ];

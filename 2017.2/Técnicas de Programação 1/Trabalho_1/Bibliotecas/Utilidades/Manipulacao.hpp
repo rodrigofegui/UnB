@@ -48,6 +48,13 @@
              */
             static bool noLimite (string src, int lim);
 
+            /**
+             *  Verificar se um dado valor está no limite
+             *  permitido
+             *  @param alvo Valor a ser avaliado
+             *  @param lim Limite superior a ser considerado
+             *  @return PASSOU ou FALHOU
+             */
             static bool noLimite (int alvo, int lim);
 
             /**
@@ -93,10 +100,29 @@
              */
             static bool tam(string src, int tam);
 
+            /**
+             *  Verificar se um dado número é par
+             *  @param alvo Número a ser avaliado
+             *  @return PASSOU ou FALHOU
+             */
             static bool ePar(int alvo);
 
+            /**
+             *  Verificar se um dado número existe num
+             *  dado vetor
+             *  @param grupo Grupo que servirá de corpo
+             *  de pesquisa
+             *  @param alvo Número que terá a existência
+             *  avaiada
+             *  @return PASSOU ou FALHOU
+             */
             static bool localizar(vector<int> grupo, int alvo);
 
+            /**
+             *  Verificar se um dado ano é bissexto
+             *  @param ano Ano a ser analisado
+             *  @return PASSOU ou FALHOU
+             */
             static bool eBissexto(int ano);
     };
 

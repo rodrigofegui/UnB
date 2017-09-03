@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['setcampo',['setCampo',['../class_apelido.html#a5fb0dfe81d89a33bc356979c81dc053f',1,'Apelido::setCampo()'],['../class_codigo.html#a4548abfd01e4e42e05f50d352aa6e9df',1,'Codigo::setCampo()']]]
+  ['maiuscula',['maiuscula',['../class_manipulacao.html#aa6c3c12d8c3e87d761b119ea65012533',1,'Manipulacao']]],
+  ['minuscula',['minuscula',['../class_manipulacao.html#af6cc41c98eabbc0746a8c9ed7bac05c2',1,'Manipulacao']]]
 ];

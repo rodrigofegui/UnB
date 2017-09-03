@@ -97,6 +97,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:af6cc41c98eabbc0746a8c9ed7bac05c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b8179d52523041c8694d55d9621396c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#a0b8179d52523041c8694d55d9621396c">noLimite</a> (string src, int lim)</td></tr>
 <tr class="separator:a0b8179d52523041c8694d55d9621396c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40f3365c9f1fe5579e8ba4d942c5ac0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#ae40f3365c9f1fe5579e8ba4d942c5ac0">noLimite</a> (int alvo, int lim)</td></tr>
+<tr class="separator:ae40f3365c9f1fe5579e8ba4d942c5ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d014130cd655a4ca5120c3e1d119572"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#a7d014130cd655a4ca5120c3e1d119572">intervaloF</a> (int alvo, int minimo, int maximo)</td></tr>
+<tr class="separator:a7d014130cd655a4ca5120c3e1d119572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7a8c0f2d7768503e6882dddf8b4a90d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#af7a8c0f2d7768503e6882dddf8b4a90d">haNum</a> (string src)</td></tr>
 <tr class="separator:af7a8c0f2d7768503e6882dddf8b4a90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f3efad566b0b18cf53b2e8a92f5d10d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#a1f3efad566b0b18cf53b2e8a92f5d10d">eAlfabetico</a> (string src)</td></tr>
@@ -105,6 +109,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:afaf7c5d75e1a894c906f29f03429af8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9540a99037d9761ac6a80839a1905367"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#a9540a99037d9761ac6a80839a1905367">tam</a> (string src, int tam)</td></tr>
 <tr class="separator:a9540a99037d9761ac6a80839a1905367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a662a1c5b258c05d63e5b4916510d790c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#a662a1c5b258c05d63e5b4916510d790c">ePar</a> (int alvo)</td></tr>
+<tr class="separator:a662a1c5b258c05d63e5b4916510d790c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58402e83c73e03f97acbc170e1b1ba62"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#a58402e83c73e03f97acbc170e1b1ba62">localizar</a> (vector&lt; int &gt; grupo, int alvo)</td></tr>
+<tr class="separator:a58402e83c73e03f97acbc170e1b1ba62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68594b74806cf6bb71f681aa361e34e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#ac68594b74806cf6bb71f681aa361e34e">eBissexto</a> (int ano)</td></tr>
+<tr class="separator:ac68594b74806cf6bb71f681aa361e34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Responsável por implementar manipulações referentes aos tipos listados, seja manipulacao direta ou verificacoes:</p><ul>
@@ -137,6 +147,39 @@ Static Public Member Functions</h2></td></tr>
 <p>Verificar se todos os caracteres são alfabeticos numa dada string </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>String a ser avaliada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PASSOU ou FALHOU </dd></dl>
+
+</div>
+</div>
+<a id="ac68594b74806cf6bb71f681aa361e34e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac68594b74806cf6bb71f681aa361e34e">&#9670;&nbsp;</a></span>eBissexto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Manipulacao::eBissexto </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ano</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Verificar se um dado ano é bissexto </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ano</td><td>Ano a ser analisado </td></tr>
   </table>
   </dd>
 </dl>
@@ -177,6 +220,39 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a662a1c5b258c05d63e5b4916510d790c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a662a1c5b258c05d63e5b4916510d790c">&#9670;&nbsp;</a></span>ePar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Manipulacao::ePar </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>alvo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Verificar se um dado número é par </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alvo</td><td>Número a ser avaliado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PASSOU ou FALHOU </dd></dl>
+
+</div>
+</div>
 <a id="af7a8c0f2d7768503e6882dddf8b4a90d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7a8c0f2d7768503e6882dddf8b4a90d">&#9670;&nbsp;</a></span>haNum()</h2>
 
@@ -203,6 +279,101 @@ Static Public Member Functions</h2></td></tr>
 <p>Verificar se há a existência de pelo menos um caracter numérico numa dada string </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>String a ser avaliada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PASSOU ou FALHOU </dd></dl>
+
+</div>
+</div>
+<a id="a7d014130cd655a4ca5120c3e1d119572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d014130cd655a4ca5120c3e1d119572">&#9670;&nbsp;</a></span>intervaloF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Manipulacao::intervaloF </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>alvo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minimo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maximo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Verificar se um inteiro está contido num intervalo fechado, conhecendo-se os limites </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alvo</td><td>Número a ser avaliado </td></tr>
+    <tr><td class="paramname">minimo</td><td>Limite inferior do intervalo </td></tr>
+    <tr><td class="paramname">maximo</td><td>Limite superior do intervalo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PASSOU ou FALHOU </dd></dl>
+
+</div>
+</div>
+<a id="a58402e83c73e03f97acbc170e1b1ba62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58402e83c73e03f97acbc170e1b1ba62">&#9670;&nbsp;</a></span>localizar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Manipulacao::localizar </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>grupo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>alvo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Verificar se um dado número existe num dado vetor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grupo</td><td>Grupo que servirá de corpo de pesquisa </td></tr>
+    <tr><td class="paramname">alvo</td><td>Número que terá a existência avaiada </td></tr>
   </table>
   </dd>
 </dl>
@@ -277,7 +448,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0b8179d52523041c8694d55d9621396c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b8179d52523041c8694d55d9621396c">&#9670;&nbsp;</a></span>noLimite()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b8179d52523041c8694d55d9621396c">&#9670;&nbsp;</a></span>noLimite() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,6 +483,50 @@ Static Public Member Functions</h2></td></tr>
 <p>Verificar se uma dada string está no limite de caracteres permitido </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>String a ser avaliada </td></tr>
+    <tr><td class="paramname">lim</td><td>Limite superior a ser considerado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PASSOU ou FALHOU </dd></dl>
+
+</div>
+</div>
+<a id="ae40f3365c9f1fe5579e8ba4d942c5ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40f3365c9f1fe5579e8ba4d942c5ac0">&#9670;&nbsp;</a></span>noLimite() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Manipulacao::noLimite </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>alvo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Verificar se um dado valor está no limite permitido </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alvo</td><td>Valor a ser avaliado </td></tr>
     <tr><td class="paramname">lim</td><td>Limite superior a ser considerado </td></tr>
   </table>
   </dd>
@@ -374,7 +589,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_manipulacao.html">Manipulacao</a></li>
-    <li class="footer">Generated on Sat Sep 2 2017 23:29:46 for Trabalho_1 by
+    <li class="footer">Generated on Sun Sep 3 2017 18:46:46 for Trabalho_1 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
