@@ -7,7 +7,6 @@
      */
     #include <iostream>
     #include <stdexcept>
-    #include "../Utilidades/TesteUnitario.hpp"
     #include "../Utilidades/Manipulacao.hpp"
 
     using namespace std;
