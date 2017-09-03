@@ -7,41 +7,32 @@
      */
 
     #include "../Dominio/Apelido.hpp"
-    #include "../Utilidades/TesteUnitario.hpp"
+    #include "../TesteClasse.hpp"
+
 
     /**
      *  @class ApelidoTst
      *  Responsável por testar diversos cenários da classe Apelido,
      *  a fim de garantir um correto funcionamento
      */
-    class ApelidoTst{
+    class ApelidoTst : public TesteClasse{
         private:
-            /**
-             *  Corpo de teste
-             */
+            /*  Corpo de teste */
             Apelido *apelido;
 
-            /**
-             *  Controle de Estado do teste
-             */
-            bool status;
-
-            /**
-             *  Validações unitárias
-             */
-            void inicializar ();
-            void finalizar ();
-            void validar ();
+            /*  Validações unitárias */
+            void inicializar () override;
+            void finalizar () override;
+            void validar () override;
             void validarCampo(string campo, bool cond);
             void validarCampoOk (string campo);
             void validarCampoNOk (string campo);
 
-        public:
-            /**
-             *  Validação da classe Apelido, com a realização
-             *  de testes unitários
-             *  @return PASSOU ou FALHOU, conforme os teste
-             */
-            bool executar();
+            /*  Constantes de testes    */
+            const string CORRETO_LIM_LETRAS = "abcde";
+            const string CORRETO_MENOS_LETRAS = "ABCD";
+            const string ERRADO_LIM_NUM = "12345";
+            const string ERRADO_ALFANUM = "abc2";
+            const string ERRADO_ALFA_SIMB = "!!asC";
     };
 #endif // APELIDO_TST_HPP

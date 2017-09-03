@@ -1,28 +1,20 @@
 #include "../../Bibliotecas/Dominio_Tst/Apelido_Tst.hpp"
 
-bool ApelidoTst::executar(){
-    inicializar();
-
-    validar();
-
-    finalizar();
-
-    return this->status;
-}
-
 void ApelidoTst::inicializar(){
     this->apelido = new Apelido();
     this->status = TesteUnitario::PASSOU;
 }
 
 void ApelidoTst::validar(){
-    validarCampo("abcde", TesteUnitario::CORRETO);
+    validarCampo(CORRETO_LIM_LETRAS, TesteUnitario::CORRETO);
 
-    validarCampo("12345", TesteUnitario::ERRADO);
+    validarCampo(ERRADO_LIM_NUM, TesteUnitario::ERRADO);
 
-    validarCampo("abc2", TesteUnitario::ERRADO);
+    validarCampo(ERRADO_ALFANUM, TesteUnitario::ERRADO);
 
-    validarCampo("ABCD", TesteUnitario::CORRETO);
+    validarCampo(CORRETO_MENOS_LETRAS, TesteUnitario::CORRETO);
+
+    validarCampo(ERRADO_ALFA_SIMB, TesteUnitario::ERRADO);
 }
 
 void ApelidoTst::validarCampo (string campo, bool cond){

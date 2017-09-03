@@ -31,6 +31,13 @@
             Apelido ();
 
             /**
+             *  Construtor de um apelido, conhecendo-se
+             *  o mesmo
+             *  @param campo Apelido candidato a atribuição
+             */
+            Apelido(string campo);
+
+            /**
              *  Valor atribuído ao apelido
              *  @return Apelido em si
              */

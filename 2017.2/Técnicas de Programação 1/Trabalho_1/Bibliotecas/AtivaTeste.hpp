@@ -8,13 +8,16 @@
     #define ECHO_CATCH
     #define ECHO_MSG_TST
 
+    #include "TesteClasse.hpp"
     #include "Dominio_Tst/Apelido_Tst.hpp"
 
     void fullTeste(){
-        ApelidoTst apelidoTest;
+        TesteClasse *testar;
 
-        if(apelidoTest.executar())  cout << "Apelido: APROVADO!" << endl << endl;
-        else    cout << "Apelido: REPROVADO!" << endl << endl;
+        cout << "Testando Apelido:" << endl;
+        testar = new ApelidoTst;
+        testar->executar();
+        delete testar;
     }
 
 #endif // ATIVA_TESTE_H

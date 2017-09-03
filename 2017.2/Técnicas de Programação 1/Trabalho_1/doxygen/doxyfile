@@ -96,17 +96,19 @@ WARN_LOGFILE            = "/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Prog
 # configuration options related to the input files
 #---------------------------------------------------------------------------
 INPUT                  = \
-	"../Fontes/Dominio/Apelido.cpp" \
 	"../Bibliotecas/Dominio/Apelido.hpp" \
-	"../Fontes/Utilidades/Manipulacao.cpp" \
-	"../Bibliotecas/AtivaTeste.hpp" \
 	"../Fontes/Dominio_Tst/Apelido_Tst.cpp" \
 	"../Bibliotecas/Utilidades/TesteUnitario.hpp" \
-	"../Principal.hpp" \
-	"../Fontes/Utilidades/TesteUnitario.cpp" \
+	"../Fontes/TesteClasse.cpp" \
+	"../Bibliotecas/AtivaTeste.hpp" \
+	"../Fontes/Dominio/Apelido.cpp" \
+	"../Bibliotecas/Utilidades/Manipulacao.hpp" \
+	"../Bibliotecas/TesteClasse.hpp" \
+	"../Fontes/Utilidades/Manipulacao.cpp" \
 	"../Principal.cpp" \
+	"../Principal.hpp" \
 	"../Bibliotecas/Dominio_Tst/Apelido_Tst.hpp" \
-	"../Bibliotecas/Utilidades/Manipulacao.hpp" 
+	"../Fontes/Utilidades/TesteUnitario.cpp" 
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          =
 RECURSIVE              = NO
