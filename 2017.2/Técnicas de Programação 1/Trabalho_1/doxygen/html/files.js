@@ -19,6 +19,12 @@ var files =
     [ "Data_Tst.hpp", "_data___tst_8hpp.html", [
       [ "DataTst", "class_data_tst.html", null ]
     ] ],
+    [ "GeneroLiterario.hpp", "_genero_literario_8hpp.html", [
+      [ "GeneroLiterario", "class_genero_literario.html", "class_genero_literario" ]
+    ] ],
+    [ "GeneroLiterario_Tst.hpp", "_genero_literario___tst_8hpp.html", [
+      [ "GeneroLiterarioTst", "class_genero_literario_tst.html", null ]
+    ] ],
     [ "Manipulacao.hpp", "_manipulacao_8hpp.html", "_manipulacao_8hpp" ],
     [ "Principal.cpp", "_principal_8cpp.html", "_principal_8cpp" ],
     [ "Principal.hpp", "_principal_8hpp.html", null ],
