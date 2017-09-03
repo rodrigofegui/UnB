@@ -99,7 +99,10 @@ INPUT                  = \
 	"../Bibliotecas/Dominio/Apelido.hpp" \
 	"../Fontes/Dominio_Tst/Apelido_Tst.cpp" \
 	"../Bibliotecas/Utilidades/TesteUnitario.hpp" \
+	"../Fontes/Dominio_Tst/Codigo_Tst.cpp" \
+	"../Bibliotecas/Dominio/Codigo.hpp" \
 	"../Fontes/TesteClasse.cpp" \
+	"../Bibliotecas/Dominio_Tst/Codigo_Tst.hpp" \
 	"../Bibliotecas/AtivaTeste.hpp" \
 	"../Fontes/Dominio/Apelido.cpp" \
 	"../Bibliotecas/Utilidades/Manipulacao.hpp" \
@@ -107,6 +110,7 @@ INPUT                  = \
 	"../Fontes/Utilidades/Manipulacao.cpp" \
 	"../Principal.cpp" \
 	"../Principal.hpp" \
+	"../Fontes/Dominio/Codigo.cpp" \
 	"../Bibliotecas/Dominio_Tst/Apelido_Tst.hpp" \
 	"../Fontes/Utilidades/TesteUnitario.cpp" 
 INPUT_ENCODING         = UTF-8

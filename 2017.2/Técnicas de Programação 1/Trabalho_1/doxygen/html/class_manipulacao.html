@@ -101,6 +101,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:af7a8c0f2d7768503e6882dddf8b4a90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f3efad566b0b18cf53b2e8a92f5d10d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#a1f3efad566b0b18cf53b2e8a92f5d10d">eAlfabetico</a> (string src)</td></tr>
 <tr class="separator:a1f3efad566b0b18cf53b2e8a92f5d10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf7c5d75e1a894c906f29f03429af8f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#afaf7c5d75e1a894c906f29f03429af8f">eNum</a> (string src)</td></tr>
+<tr class="separator:afaf7c5d75e1a894c906f29f03429af8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9540a99037d9761ac6a80839a1905367"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulacao.html#a9540a99037d9761ac6a80839a1905367">tam</a> (string src, int tam)</td></tr>
+<tr class="separator:a9540a99037d9761ac6a80839a1905367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Responsável por implementar manipulações referentes aos tipos listados, seja manipulacao direta ou verificacoes:</p><ul>
@@ -131,6 +135,39 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Verificar se todos os caracteres são alfabeticos numa dada string </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>String a ser avaliada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PASSOU ou FALHOU </dd></dl>
+
+</div>
+</div>
+<a id="afaf7c5d75e1a894c906f29f03429af8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaf7c5d75e1a894c906f29f03429af8f">&#9670;&nbsp;</a></span>eNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Manipulacao::eNum </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Verificar se todos os caracteres são numéricos numa dada string </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>String a ser avaliada </td></tr>
   </table>
@@ -283,6 +320,50 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9540a99037d9761ac6a80839a1905367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9540a99037d9761ac6a80839a1905367">&#9670;&nbsp;</a></span>tam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Manipulacao::tam </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Verificar se uma dada string tem um tamanho definido </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>String a ser avaliada </td></tr>
+    <tr><td class="paramname">tam</td><td>Tamanho desejável </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PASSOU ou FALHOU </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_manipulacao_8hpp_source.html">Manipulacao.hpp</a></li>
 <li>Manipulacao.cpp</li>
@@ -293,7 +374,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_manipulacao.html">Manipulacao</a></li>
-    <li class="footer">Generated on Sat Sep 2 2017 21:42:59 for Trabalho_1 by
+    <li class="footer">Generated on Sat Sep 2 2017 23:29:46 for Trabalho_1 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -7,6 +7,12 @@ var files =
       [ "ApelidoTst", "class_apelido_tst.html", null ]
     ] ],
     [ "AtivaTeste.hpp", "_ativa_teste_8hpp_source.html", null ],
+    [ "Codigo.hpp", "_codigo_8hpp.html", [
+      [ "Codigo", "class_codigo.html", "class_codigo" ]
+    ] ],
+    [ "Codigo_Tst.hpp", "_codigo___tst_8hpp.html", [
+      [ "CodigoTst", "class_codigo_tst.html", null ]
+    ] ],
     [ "Manipulacao.hpp", "_manipulacao_8hpp.html", "_manipulacao_8hpp" ],
     [ "Principal.cpp", "_principal_8cpp.html", "_principal_8cpp" ],
     [ "Principal.hpp", "_principal_8hpp.html", null ],
