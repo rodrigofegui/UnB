@@ -62,6 +62,23 @@
              *  @return PASSOU ou FALHOU
              */
             static bool eAlfabetico (string src);
+
+            /**
+             *  Verificar se todos os caracteres são numéricos
+             *  numa dada string
+             *  @param src String a ser avaliada
+             *  @return PASSOU ou FALHOU
+             */
+            static bool eNum (string src);
+
+            /**
+             *  Verificar se uma dada string tem um tamanho
+             *  definido
+             *  @param src String a ser avaliada
+             *  @param tam Tamanho desejável
+             *  @return PASSOU ou FALHOU
+             */
+            static bool tam(string src, int tam);
     };
 
 #endif // MANIPULACAO_HPP
