@@ -11,7 +11,7 @@ Linguagem Utilizada:
 	C++
 
 Plataforma necessária:
-	Code:Blocks IDE 16.01 ou superior (esta foi a versão utilizada para o desenvolvimento)
+	Code:Blocks IDE 16.01 ou superior (esta foi a versão utilizada para o desenvolvimento), deve-se configurar para compilar com o C++11.
 
 Descritivo:
 	Desenvolvimento dos Tipos e das Entidades Básicas para o sistema de Estante.

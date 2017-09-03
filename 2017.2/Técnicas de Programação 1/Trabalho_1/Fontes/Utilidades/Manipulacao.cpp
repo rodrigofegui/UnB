@@ -22,7 +22,18 @@ bool Manipulacao::tam(string src, int tam){
 }
 
 bool Manipulacao::noLimite (string src, int lim){
-    if (src.size() <= lim)
+    return noLimite(src.size(), lim);
+}
+
+bool Manipulacao::noLimite(int alvo, int lim){
+    if (alvo <= lim)
+        return TesteUnitario::PASSOU;
+
+    return TesteUnitario::FALHOU;
+}
+
+bool Manipulacao::intervaloF(int alvo, int minimo, int maximo){
+    if ((alvo >= minimo) && (alvo <= maximo))
         return TesteUnitario::PASSOU;
 
     return TesteUnitario::FALHOU;
@@ -50,4 +61,27 @@ bool Manipulacao::eNum (string src){
             return TesteUnitario::FALHOU;
 
     return TesteUnitario::PASSOU;
+}
+
+bool Manipulacao::ePar (int alvo){
+    if (alvo%2)
+        return TesteUnitario::PASSOU;
+
+    return TesteUnitario::FALHOU;
+}
+
+bool Manipulacao::localizar(vector<int> grupo, int alvo){
+    for (int pos = 0; pos < grupo.size(); pos++)
+        if (grupo.at(pos) == alvo)
+            return TesteUnitario::PASSOU;
+
+    return TesteUnitario::FALHOU;
+}
+
+bool Manipulacao::eBissexto (int ano){
+    if ((!(ano%4) && (ano%100))
+        || !(ano%400))
+        return TesteUnitario::PASSOU;
+
+    return TesteUnitario::FALHOU;
 }

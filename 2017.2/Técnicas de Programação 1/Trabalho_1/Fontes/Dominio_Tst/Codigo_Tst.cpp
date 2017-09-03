@@ -6,10 +6,10 @@ void CodigoTst::inicializar(){
 }
 
 void CodigoTst::validar (){
-    validarCampoNOk (invalido_Limite);
-    validarCampoNOk (invalido_Menos);
-    validarCampoNOk (invalido_Letra);
-    validarCampoOk  (valido_Max);
+    validarCampoNOk (INVALIDO_LETRA);
+    validarCampoNOk (INVALIDO_LETRA);
+    validarCampoNOk (INVALIDO_MENOS);
+    validarCampoOk  (VALIDO_MAX);
 }
 
 void CodigoTst::validarCampoOk (string campo){
@@ -32,8 +32,8 @@ void CodigoTst::validarCampoNOk (string campo){
         this->codigo->setCampo(campo);
         status = TesteUnitario::FALHOU;
 
-    }catch (invalid_argument InvArg){
-    }catch (length_error LenErr){}
+    }catch (invalid_argument e){
+    }catch (length_error e){}
 }
 
 void CodigoTst::finalizar(){

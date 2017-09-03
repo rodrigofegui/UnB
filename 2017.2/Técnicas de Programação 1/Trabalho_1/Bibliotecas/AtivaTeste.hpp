@@ -8,11 +8,14 @@
     #define ECHO_CATCH
     #define ECHO_MSG_TST
 
+    #include "Utilidades/Manipulacao.hpp"
     #include "TesteClasse.hpp"
     #include "Dominio_Tst/Apelido_Tst.hpp"
     #include "Dominio_Tst/Codigo_Tst.hpp"
+    #include "Dominio_Tst/Data_Tst.hpp"
 
     void fullTeste(){
+        //*
         TesteClasse *testar;
 
         cout << "Testando Apelido:" << endl;
@@ -24,6 +27,12 @@
         testar = new CodigoTst ();
         testar->executar();
         delete testar;
+
+        cout << "Testando Data:" << endl;
+        testar = new DataTst ();
+        testar->executar();
+        delete testar;
+        //*/
     }
 
 #endif // ATIVA_TESTE_H

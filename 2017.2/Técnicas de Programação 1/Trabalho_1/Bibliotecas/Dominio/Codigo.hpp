@@ -10,11 +10,16 @@
     #include <stdexcept>
     #include "../Utilidades/Manipulacao.hpp"
 
+    /**
+     *  @class Codigo
+     *  Código a ser atribuido a um livro da estante digital,
+     *  garantindo a integridade do mesmo
+     */
     class Codigo{
         private:
             /*  Mensagens de erro padrão */
-            const string msgErroTam = "Campo fornecido com tamanho inválido!";
-            const string msgErroArg = "Campo foge à especificação numérica!";
+            const string msgErroTam = "Código fornecido com tamanho inválido!";
+            const string msgErroArg = "Código foge à especificação numérica!";
 
             /*  Tamanho do código */
             const static int TAM = 5;
@@ -26,6 +31,17 @@
             void validar (string campo) throw (invalid_argument, length_error);
 
         public:
+            /**
+             *  Construtor padrão
+             */
+            Codigo ();
+
+            /**
+             *  Construir um código, conhecendo-se o seu valor
+             *  @param campo Código candidato à atribuição
+             */
+            Codigo (string campo);
+
             /**
              *  Atribuição do código, respeitando sua integridade
              *  @param campo Código candidato à atribuição

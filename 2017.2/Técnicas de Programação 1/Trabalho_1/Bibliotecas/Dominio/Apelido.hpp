@@ -12,6 +12,7 @@
     using namespace std;
 
     /**
+     *  @class Apelido
      *  Apelido a ser dado ao usuário da estande digital,
      *  garantindo a integridade do mesmo
      */

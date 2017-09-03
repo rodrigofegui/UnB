@@ -29,9 +29,9 @@
             void validarCampoOk (string campo);
             void validarCampoNOk (string campo);
 
-            const string valido_Max = "01234";
-            const string invalido_Limite = "0123456";
-            const string invalido_Menos = "0124";
-            const string invalido_Letra = "0as12";
+            const string VALIDO_MAX = "01234";
+            const string INVALIDO_LIM = "0123456";
+            const string INVALIDO_MENOS = "0124";
+            const string INVALIDO_LETRA = "0as12";
     };
 #endif // CODIGO_TST_H

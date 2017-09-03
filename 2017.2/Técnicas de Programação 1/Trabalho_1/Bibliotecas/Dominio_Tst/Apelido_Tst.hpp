@@ -1,5 +1,5 @@
-#ifndef APELIDO_TST_HPP
-    #define APELIDO_TST_HPP
+#ifndef APELIDO_TST_H
+    #define APELIDO_TST_H
 
     /**
      *  @file   Apelido_Tst.hpp
@@ -35,4 +35,4 @@
             const string ERRADO_ALFANUM = "abc2";
             const string ERRADO_ALFA_SIMB = "!!asC";
     };
-#endif // APELIDO_TST_HPP
+#endif // APELIDO_TST_H

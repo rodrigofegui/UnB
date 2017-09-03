@@ -6,6 +6,7 @@
      *  @author Rodrigo F. Guimarães
      */
     #include <iostream>
+    #include <vector>
     #include "TesteUnitario.hpp"
 
     using namespace std;
@@ -47,6 +48,18 @@
              */
             static bool noLimite (string src, int lim);
 
+            static bool noLimite (int alvo, int lim);
+
+            /**
+             *  Verificar se um inteiro está contido num intervalo
+             *  fechado, conhecendo-se os limites
+             *  @param alvo Número a ser avaliado
+             *  @param minimo Limite inferior do intervalo
+             *  @param maximo Limite superior do intervalo
+             *  @return PASSOU ou FALHOU
+             */
+            static bool intervaloF(int alvo, int minimo, int maximo);
+
             /**
              *  Verificar se há a existência de pelo menos
              *  um caracter numérico numa dada string
@@ -79,6 +92,12 @@
              *  @return PASSOU ou FALHOU
              */
             static bool tam(string src, int tam);
+
+            static bool ePar(int alvo);
+
+            static bool localizar(vector<int> grupo, int alvo);
+
+            static bool eBissexto(int ano);
     };
 
 #endif // MANIPULACAO_HPP
