@@ -19,6 +19,12 @@ var files =
     [ "Data_Tst.hpp", "_data___tst_8hpp.html", [
       [ "DataTst", "class_data_tst.html", null ]
     ] ],
+    [ "DominioBase.hpp", "_dominio_base_8hpp.html", [
+      [ "DominioBase", "class_dominio_base.html", "class_dominio_base" ]
+    ] ],
+    [ "DominioBase_Tst.hpp", "_dominio_base___tst_8hpp.html", [
+      [ "DominioBaseTst", "class_dominio_base_tst.html", "class_dominio_base_tst" ]
+    ] ],
     [ "GeneroLiterario.hpp", "_genero_literario_8hpp.html", [
       [ "GeneroLiterario", "class_genero_literario.html", "class_genero_literario" ]
     ] ],
@@ -26,6 +32,12 @@ var files =
       [ "GeneroLiterarioTst", "class_genero_literario_tst.html", null ]
     ] ],
     [ "Manipulacao.hpp", "_manipulacao_8hpp.html", "_manipulacao_8hpp" ],
+    [ "Nome.hpp", "_nome_8hpp.html", [
+      [ "Nome", "class_nome.html", "class_nome" ]
+    ] ],
+    [ "Nome_Tst.hpp", "_nome___tst_8hpp.html", [
+      [ "NomeTst", "class_nome_tst.html", null ]
+    ] ],
     [ "Principal.cpp", "_principal_8cpp.html", "_principal_8cpp" ],
     [ "Principal.hpp", "_principal_8hpp.html", null ],
     [ "TesteClasse.hpp", "_teste_classe_8hpp.html", [

@@ -16,36 +16,36 @@
     #include "Dominio_Tst/GeneroLiterario_Tst.hpp"
     #include "Dominio_Tst/Nome_Tst.hpp"
 
+    void testarDominios (TesteClasse *);
+
+
     void fullTeste(){
         //*
-        TesteClasse *testar;
+        TesteClasse *sobTeste;
 
+        testarDominios (sobTeste);
+    }
+
+    void testarDominios (TesteClasse *sobTeste){
         cout << "Testando Apelido:" << endl;
-        testar = new ApelidoTst();
-        testar->executar();
-        delete testar;
+        sobTeste = new ApelidoTst();
+        sobTeste->executar();
 
         cout << "Testando Codigo:" << endl;
-        testar = new CodigoTst ();
-        testar->executar();
-        delete testar;
+        sobTeste = new CodigoTst ();
+        sobTeste->executar();
 
         cout << "Testando Data:" << endl;
-        testar = new DataTst ();
-        testar->executar();
-        delete testar;
+        sobTeste = new DataTst ();
+        sobTeste->executar();
 
         cout << "Testando Gênero Literário:" << endl;
-        testar = new GeneroLiterarioTst ();
-        testar->executar();
-        delete testar;
+        sobTeste = new GeneroLiterarioTst ();
+        sobTeste->executar();
 
-        /*
         cout << "Testando Nome:" << endl;
-        testar = new NomeTst ();
-        testar->executar();
-        delete testar;
-        //*/
+        sobTeste = new NomeTst ();
+        sobTeste->executar();
     }
 
 #endif // ATIVA_TESTE_H

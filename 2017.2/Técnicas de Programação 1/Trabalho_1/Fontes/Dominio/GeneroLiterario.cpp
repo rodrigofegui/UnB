@@ -4,5 +4,5 @@ const vector<string> GeneroLiterario::GEN_CADASTRADO ({"EPOPEIA", "NOVELA", "CON
 
 void GeneroLiterario::validar (const string &campo) throw (invalid_argument){
     if(!Manipulacao::localizar(GEN_CADASTRADO, Manipulacao::maiuscula(campo)))
-        throw new invalid_argument (msgErro);
+        throw invalid_argument (msgErro);
 }

@@ -88,19 +88,28 @@ $(document).ready(function(){initNavTree('class_data.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_data_8hpp_source.html">Data.hpp</a>&gt;</code></p>
+
+<p>Inherits <a class="el" href="class_dominio_base.html">DominioBase</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a591d5f350816b82e72009da31a952994"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data.html#a591d5f350816b82e72009da31a952994">setCampo</a> (string campo)  throw (invalid_argument, length_error)</td></tr>
-<tr class="separator:a591d5f350816b82e72009da31a952994"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7d01225121f8b54d363ce901b0e9cc1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data.html#aa7d01225121f8b54d363ce901b0e9cc1">getCampo</a> ()</td></tr>
-<tr class="separator:aa7d01225121f8b54d363ce901b0e9cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11f741cb7f587e2e495452a8905a22a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data.html#af11f741cb7f587e2e495452a8905a22a">Data</a> ()</td></tr>
+<tr class="separator:af11f741cb7f587e2e495452a8905a22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2bf705291868e9f2546fad4fa2515d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data.html#a8f2bf705291868e9f2546fad4fa2515d">Data</a> (const string &amp;campo)</td></tr>
+<tr class="separator:a8f2bf705291868e9f2546fad4fa2515d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_dominio_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_dominio_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_dominio_base.html">DominioBase</a></td></tr>
+<tr class="memitem:a920e80e85280d435b20063de47eec3ad inherit pub_methods_class_dominio_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dominio_base.html#a920e80e85280d435b20063de47eec3ad">setCampo</a> (const string &amp;campo)  throw (invalid_argument, length_error)</td></tr>
+<tr class="separator:a920e80e85280d435b20063de47eec3ad inherit pub_methods_class_dominio_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8168530ac1e3d84cb3b7090ba066d56d inherit pub_methods_class_dominio_base"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dominio_base.html#a8168530ac1e3d84cb3b7090ba066d56d">getCampo</a> () const</td></tr>
+<tr class="separator:a8168530ac1e3d84cb3b7090ba066d56d inherit pub_methods_class_dominio_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3d503873da9460ca8f50b89dc4729f inherit pub_methods_class_dominio_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dominio_base.html#a7f3d503873da9460ca8f50b89dc4729f">deletar</a> ()</td></tr>
+<tr class="separator:a7f3d503873da9460ca8f50b89dc4729f inherit pub_methods_class_dominio_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_data.html">Data</a> padrão a ser utilizada na estante digital, garantindo a sua integridade </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa7d01225121f8b54d363ce901b0e9cc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7d01225121f8b54d363ce901b0e9cc1">&#9670;&nbsp;</a></span>getCampo()</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af11f741cb7f587e2e495452a8905a22a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af11f741cb7f587e2e495452a8905a22a">&#9670;&nbsp;</a></span>Data() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -109,7 +118,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string Data::getCampo </td>
+          <td class="memname">Data::Data </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -121,37 +130,28 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Recuperar o valor atruibuida à data </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_data.html">Data</a> armazenada </dd></dl>
+<p>Construtor padrão </p>
 
 </div>
 </div>
-<a id="a591d5f350816b82e72009da31a952994"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a591d5f350816b82e72009da31a952994">&#9670;&nbsp;</a></span>setCampo()</h2>
+<a id="a8f2bf705291868e9f2546fad4fa2515d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f2bf705291868e9f2546fad4fa2515d">&#9670;&nbsp;</a></span>Data() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Data::setCampo </td>
+          <td class="memname">Data::Data </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>campo</em></td><td>)</td>
           <td></td>
         </tr>
-        <tr>
-          <td align="right">throw </td><td>(</td><td colspan="2">invalid_argument,</td>
-        </tr>
-        <tr>
-          <td align="right"></td><td></td><td colspan="2">length_error</td>
-        </tr>
-        <tr>
-          <td align="right"></td><td>)</td><td></td><td></td>
-        </tr>
       </table>
 </div><div class="memdoc">
-<p>Atribuição da data, respeitando sua integridade </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Construtor de uma data, conhecendo-se a mesma </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td><a class="el" href="class_data.html">Data</a> candidata à atribuição </td></tr>
+    <tr><td class="paramname">campo</td><td><a class="el" href="class_data.html">Data</a> candidata a atribuição </td></tr>
   </table>
   </dd>
 </dl>
@@ -168,7 +168,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_data.html">Data</a></li>
-    <li class="footer">Generated on Sun Sep 3 2017 20:30:38 for Trabalho_1 by
+    <li class="footer">Generated on Tue Sep 5 2017 18:53:59 for Trabalho_1 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

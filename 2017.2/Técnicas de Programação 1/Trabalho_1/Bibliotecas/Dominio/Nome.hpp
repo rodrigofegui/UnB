@@ -7,6 +7,7 @@
      */
 
     #include "DominioBase.hpp"
+    #include <regex>
 
     /**
      *  @class  Nome
@@ -17,16 +18,17 @@
         private:
             /*  Mensagens de erro padrão */
             const string msgErroTam = "Nome fornecido além do tamanho permitido!";
-            const string msgErroNum = "Há números no Nome fornecido!";
-            const string msgErroSimb = "Há símbolos não permitidos no Nome fornecido!";
+            const string msgErroNum = "Nome fornecido contém números!";
+            const string msgErroSimb = "Nome fornecido contém símbolos não permitidos!";
             const string msgErroArg = "Nome fornecido não obedece as especificações!";
 
             /*  Constantes de restrição */
             const static int TAM_MAX = 15;
-            const string SIMB_N_PERMT = "-!\"#$%&'()*+,/:;<=>?@[\\\]_`{|}~";
+            const string SIMB_N_PERMT = "[\-/!\"\#$%&'()*+,:;<=>?@\[\\\]^_`{|}~]+";
 
             /*  Validação do nome a ser armazenado */
             void validar (const string &campo) throw (invalid_argument, length_error) override;
+            bool haInvSimb (const string &campo);
 
         public:
             /**

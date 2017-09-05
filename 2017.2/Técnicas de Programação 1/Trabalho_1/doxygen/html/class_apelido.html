@@ -88,19 +88,22 @@ $(document).ready(function(){initNavTree('class_apelido.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_apelido_8hpp_source.html">Apelido.hpp</a>&gt;</code></p>
+
+<p>Inherits <a class="el" href="class_dominio_base.html">DominioBase</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae428ec9dfc6690dce5afc27bef5cbb52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apelido.html#ae428ec9dfc6690dce5afc27bef5cbb52">Apelido</a> ()</td></tr>
 <tr class="separator:ae428ec9dfc6690dce5afc27bef5cbb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f65464de8d3383e021ea7b0e05dcf93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apelido.html#a5f65464de8d3383e021ea7b0e05dcf93">Apelido</a> (string campo)</td></tr>
-<tr class="separator:a5f65464de8d3383e021ea7b0e05dcf93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcc15bcb641e9f2455698a54d920ecc9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apelido.html#abcc15bcb641e9f2455698a54d920ecc9">getCampo</a> ()</td></tr>
-<tr class="separator:abcc15bcb641e9f2455698a54d920ecc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb0dfe81d89a33bc356979c81dc053f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apelido.html#a5fb0dfe81d89a33bc356979c81dc053f">setCampo</a> (string campo)  throw (invalid_argument, length_error)</td></tr>
-<tr class="separator:a5fb0dfe81d89a33bc356979c81dc053f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a50669b22d0526cb0492d46f8f3b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apelido.html#a60a50669b22d0526cb0492d46f8f3b79">deletar</a> ()</td></tr>
-<tr class="separator:a60a50669b22d0526cb0492d46f8f3b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac460405532ecb52ea80ec7c8b69ce709"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_apelido.html#ac460405532ecb52ea80ec7c8b69ce709">Apelido</a> (const string &amp;campo)</td></tr>
+<tr class="separator:ac460405532ecb52ea80ec7c8b69ce709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_dominio_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_dominio_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_dominio_base.html">DominioBase</a></td></tr>
+<tr class="memitem:a920e80e85280d435b20063de47eec3ad inherit pub_methods_class_dominio_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dominio_base.html#a920e80e85280d435b20063de47eec3ad">setCampo</a> (const string &amp;campo)  throw (invalid_argument, length_error)</td></tr>
+<tr class="separator:a920e80e85280d435b20063de47eec3ad inherit pub_methods_class_dominio_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8168530ac1e3d84cb3b7090ba066d56d inherit pub_methods_class_dominio_base"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dominio_base.html#a8168530ac1e3d84cb3b7090ba066d56d">getCampo</a> () const</td></tr>
+<tr class="separator:a8168530ac1e3d84cb3b7090ba066d56d inherit pub_methods_class_dominio_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3d503873da9460ca8f50b89dc4729f inherit pub_methods_class_dominio_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dominio_base.html#a7f3d503873da9460ca8f50b89dc4729f">deletar</a> ()</td></tr>
+<tr class="separator:a7f3d503873da9460ca8f50b89dc4729f inherit pub_methods_class_dominio_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_apelido.html">Apelido</a> a ser dado ao usuário da estande digital, garantindo a integridade do mesmo </p>
@@ -110,6 +113,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Apelido::Apelido </td>
@@ -118,13 +124,18 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Construtor padrão </p>
 
 </div>
 </div>
-<a id="a5f65464de8d3383e021ea7b0e05dcf93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f65464de8d3383e021ea7b0e05dcf93">&#9670;&nbsp;</a></span>Apelido() <span class="overload">[2/2]</span></h2>
+<a id="ac460405532ecb52ea80ec7c8b69ce709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac460405532ecb52ea80ec7c8b69ce709">&#9670;&nbsp;</a></span>Apelido() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,99 +143,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">Apelido::Apelido </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>campo</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Construtor de um apelido, conhecendo-se o mesmo </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">campo</td><td><a class="el" href="class_apelido.html">Apelido</a> candidato a atribuição </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a60a50669b22d0526cb0492d46f8f3b79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60a50669b22d0526cb0492d46f8f3b79">&#9670;&nbsp;</a></span>deletar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Apelido::deletar </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Destrutor padrão </p>
-
-</div>
-</div>
-<a id="abcc15bcb641e9f2455698a54d920ecc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcc15bcb641e9f2455698a54d920ecc9">&#9670;&nbsp;</a></span>getCampo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string Apelido::getCampo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Valor atribuído ao apelido </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_apelido.html">Apelido</a> em si </dd></dl>
-
-</div>
-</div>
-<a id="a5fb0dfe81d89a33bc356979c81dc053f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fb0dfe81d89a33bc356979c81dc053f">&#9670;&nbsp;</a></span>setCampo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Apelido::setCampo </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>campo</em></td><td>)</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td align="right">throw </td><td>(</td><td colspan="2">invalid_argument,</td>
-        </tr>
-        <tr>
-          <td align="right"></td><td></td><td colspan="2">length_error</td>
-        </tr>
-        <tr>
-          <td align="right"></td><td>)</td><td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Atribuição do apelido, respeitando sua integridade </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">campo</td><td><a class="el" href="class_apelido.html">Apelido</a> candidato a atribuição </td></tr>
   </table>
@@ -243,7 +168,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_apelido.html">Apelido</a></li>
-    <li class="footer">Generated on Sun Sep 3 2017 20:30:38 for Trabalho_1 by
+    <li class="footer">Generated on Tue Sep 5 2017 18:53:59 for Trabalho_1 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

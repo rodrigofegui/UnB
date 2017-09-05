@@ -1,6 +1,8 @@
 var searchData=
 [
   ['validar',['validar',['../class_teste_unitario.html#aab61f4e399c3d314d8eaa0e4ba7c6fa7',1,'TesteUnitario']]],
+  ['validarcamponok',['validarCampoNOk',['../class_dominio_base_tst.html#ad0ebe5178537dbe359182f504c000c8b',1,'DominioBaseTst']]],
+  ['validarcampook',['validarCampoOk',['../class_dominio_base_tst.html#a0eee78a18f4376dc8c561bb675d811e7',1,'DominioBaseTst']]],
   ['validareq',['validarEQ',['../class_teste_unitario.html#ac935217dfd445f64c0b70e0c528e8d07',1,'TesteUnitario']]],
   ['validarfalse',['validarFalse',['../class_teste_unitario.html#ae1fc6e3a9c504f9d176516d32147b9df',1,'TesteUnitario']]],
   ['validarge',['validarGE',['../class_teste_unitario.html#a8b7dcfb4348a6bb9945a12b7132cc1f1',1,'TesteUnitario']]],

@@ -1,19 +1,22 @@
 #include "../../Bibliotecas/Dominio_Tst/DominioBase_Tst.hpp"
 
 void DominioBaseTst::finalizar(){
-    this->corpoTeste->deletar();
-
-    if(status)
+    if(this->status)
         cout << "APROVADO!" << endl << endl;
     else cout << "REPROVADO!" << endl << endl;
+
+    this->corpoTeste->deletar();
+
+    delete this;
 }
 
 void DominioBaseTst::validarCampoOk (const string &campo){
     try{
         this->corpoTeste->setCampo(campo);
-        if(!TesteUnitario::expect_EQ(this->corpoTeste->getCampo(), campo))
-            status = TesteUnitario::FALHOU;
-
+        if(!TesteUnitario::expect_EQ(this->corpoTeste->getCampo(), campo)){
+            this->status = TesteUnitario::FALHOU;
+            cout << "Não passou aqui...OK" << endl;
+        }
     }catch (invalid_argument e){
         cout << e.what() << endl;
         status = TesteUnitario::FALHOU;
@@ -26,8 +29,12 @@ void DominioBaseTst::validarCampoOk (const string &campo){
 void DominioBaseTst::validarCampoNOk (const string &campo){
     try{
         this->corpoTeste->setCampo(campo);
-        status = TesteUnitario::FALHOU;
+        this->status = TesteUnitario::FALHOU;
+        cout << "Não passou aqui...NOK" << endl;
 
-    }catch (invalid_argument InvArg){
-    }catch (length_error LenErr){}
+    }catch (invalid_argument e){
+        cout << e.what() << endl;
+    }catch (length_error e){
+        cout << e.what() << endl;
+    }
 }

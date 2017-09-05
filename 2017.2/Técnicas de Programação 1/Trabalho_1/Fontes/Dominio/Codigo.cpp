@@ -6,8 +6,8 @@ Codigo::Codigo(const string &campo){
 
 void Codigo::validar (const string &campo) throw (invalid_argument, length_error){
     if (campo.size() != TAM)
-        throw new length_error (msgErroTam);
+        throw length_error (msgErroTam);
 
     if (!Manipulacao::eNum(campo))
-        throw new invalid_argument (Codigo::msgErroArg);
+        throw invalid_argument (Codigo::msgErroArg);
 }

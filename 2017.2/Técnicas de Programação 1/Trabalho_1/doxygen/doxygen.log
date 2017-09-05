@@ -1,3 +1,4 @@
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Principal.cpp:54: warning: Reached end of file while still inside a (nested) comment. Nesting level 2 (probable line reference: 46, 21)
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Fontes/Utilidades/TesteUnitario.cpp:205: warning: no matching class member found for 
   void TesteUnitario::capturarFalha(bool(*func)(bool condF), bool cond)
 Possible candidates:
@@ -58,6 +59,3 @@ Possible candidates:
   static void TesteUnitario::capturarFalha(bool(*func)(string), string val1)
   static void TesteUnitario::capturarFalha(bool(*func)(string, string), string val1, string val2)
 
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Dominio/Data.hpp:53: warning: argument 'data' of command @param is not found in the argument list of Data::setCampo(string campo)
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Dominio/Data.hpp:56: warning: The following parameters of Data::setCampo(string campo) are not documented:
-  parameter 'campo'
