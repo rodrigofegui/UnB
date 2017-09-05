@@ -6,17 +6,14 @@
      *  @author Rodrigo F. Guimarães
      */
 
-    #include <iostream>
-    #include <stdexcept>
-    #include "../Utilidades/Manipulacao.hpp"
-    using namespace std;
+    #include "DominioBase.hpp"
 
     /**
      *  @class  GeneroLiterario
      *  Gêneros literários aceitos na estante digital,
      *  garantindo a sua integridade
      */
-    class GeneroLiterario{
+    class GeneroLiterario : public DominioBase{
         private:
             /*  Mensagens de erro padrão */
             const string msgErro = "Gênero não registrado!";
@@ -24,26 +21,20 @@
             /*  Constantes de restrição */
             const static vector<string> GEN_CADASTRADO;
 
-            /*  Gênero a ser armazenado */
-            string campo;
-
             /*  Validação do gênero a ser armazenado */
-            void validar (string campo) throw (invalid_argument);
+            void validar (const string &campo) throw (invalid_argument) override;
 
         public:
             /**
-             *  Atribuição do gênero literário, respeitando
-             *  sua integridade
-             *  @param campo Gênero candidato à atribuição
+             *  Construtor padrão
              */
-            void setCampo (string campo) throw (invalid_argument);
+            GeneroLiterario (){};
 
             /**
-             *  Recuperar o valor atribuída ao gênero
-             *  @return Gênero armazenado
+             *  Construtor de um gênero literário, conhecendo-se
+             *  o mesmo
+             *  @param campo Gênero candidato a atribuição
              */
-            string getCampo();
-
+            GeneroLiterario(const string &campo);
     };
-inline string GeneroLiterario::getCampo(){return this->campo;}
 #endif // GENERO_LITERARIO_H

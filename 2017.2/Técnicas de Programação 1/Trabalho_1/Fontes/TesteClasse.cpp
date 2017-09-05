@@ -7,9 +7,5 @@ bool TesteClasse::executar(){
 
     finalizar();
 
-    if(status)
-        cout << "APROVADO!" << endl << endl;
-    else cout << "REPROVADO!" << endl << endl;
-
     return status;
 }

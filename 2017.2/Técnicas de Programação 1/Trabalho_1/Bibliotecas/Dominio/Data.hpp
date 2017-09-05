@@ -6,18 +6,14 @@
      *  @author Rodrigo F. Guimarães
      */
 
-    #include <iostream>
-    #include <vector>
-    #include <stdexcept>
-    #include "../Utilidades/Manipulacao.hpp"
-    using namespace std;
+    #include "DominioBase.hpp"
 
     /**
      *  @class  Data
      *  Data padrão a ser utilizada na estante digital,
      *  garantindo a sua integridade
      */
-    class Data{
+    class Data : public DominioBase{
         private:
             /*  Mensagens de erro padrão */
             const string msgErroTam = "Data fornecida com tamanho inválido!";
@@ -42,25 +38,20 @@
 
             const static vector<int> MES_31;
 
-            /*  Data a ser armazenada */
-            string campo;
-
             /*  Validação da data a ser armazenado */
-            void validar (string campo) throw (invalid_argument, length_error);
+            void validar (const string &campo) throw (invalid_argument, length_error) override;
 
         public:
             /**
-             *  Atribuição da data, respeitando sua integridade
-             *  @param data Data candidata à atribuição
+             *  Construtor padrão
              */
-            void setCampo (string campo) throw (invalid_argument, length_error);
+            Data (){};
 
             /**
-             *  Recuperar o valor atruibuida à data
-             *  @return Data armazenada
+             *  Construtor de uma data, conhecendo-se
+             *  a mesma
+             *  @param campo Data candidata a atribuição
              */
-            string getCampo ();
+            Data(const string &campo);
     };
-
-    inline string Data::getCampo(){return this->campo;}
 #endif // DATA_H

@@ -1,26 +1,13 @@
 #include "../../Bibliotecas/Dominio/Apelido.hpp"
 
-Apelido::Apelido(){
-    setCampo("");
-}
-
-Apelido::Apelido(string campo){
+Apelido::Apelido(const string &campo){
     setCampo(campo);
 }
 
-bool Apelido::setCampo(string campo) throw (invalid_argument, length_error){
-    validar(campo);
-    this->campo = campo;
-
-    return TesteUnitario::PASSOU;
-}
-
-bool Apelido::validar (string campo) throw (invalid_argument, length_error){
+void Apelido::validar (const string &campo) throw (invalid_argument, length_error){
     if (!Manipulacao::noLimite(campo, Apelido::LIM_MAX))
-        throw length_error ("Campo fornecido maior que o limite!");
+        throw new length_error (msgErroTam);
 
     if(!Manipulacao::eAlfabetico(campo))
-        throw invalid_argument ("Campo foge à especificação alfabética!");
-
-    return TesteUnitario::PASSOU;
+        throw new invalid_argument (msgErroArg);
 }

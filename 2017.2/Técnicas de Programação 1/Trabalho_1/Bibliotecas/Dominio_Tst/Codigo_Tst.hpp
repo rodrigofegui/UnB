@@ -5,9 +5,8 @@
      *  @file   Codigo_Tst.hpp
      *  @author Rodrigo F. Guimarães
      */
-
-     #include "../Dominio/Codigo.hpp"
-     #include "../TesteClasse.hpp"
+    #include "DominioBase_Tst.hpp"
+    #include "../Dominio/Codigo.hpp"
 
     /**
      *  @class  CodigoTst
@@ -15,23 +14,16 @@
      *  classe Codigo, a fim de garantir um correto
      *  funcionamento
      */
-    class CodigoTst : public TesteClasse{
+    class CodigoTst : public DominioBaseTst{
         private:
-            /*  Corpo de teste */
-            Codigo *codigo;
-
             /*  Etapas do teste */
             void inicializar() override;
             void validar() override;
-            void finalizar() override;
 
-            /*  Validações unitárias */
-            void validarCampoOk (string campo);
-            void validarCampoNOk (string campo);
-
-            const string VALIDO_MAX = "01234";
-            const string INVALIDO_LIM = "0123456";
-            const string INVALIDO_MENOS = "0124";
-            const string INVALIDO_LETRA = "0as12";
+            /*  Constantes de testes */
+            const string VAL_MAX   = "01234";
+            const string INV_LIM   = "0123456";
+            const string INV_MENOS = "0124";
+            const string INV_LETRA = "0as12";
     };
 #endif // CODIGO_TST_H

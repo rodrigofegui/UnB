@@ -5,57 +5,36 @@
      *  @file   Apelido.hpp
      *  @author Rodrigo F. Guimarães
      */
-    #include <iostream>
-    #include <stdexcept>
-    #include "../Utilidades/Manipulacao.hpp"
-
-    using namespace std;
+    #include "DominioBase.hpp"
 
     /**
      *  @class Apelido
      *  Apelido a ser dado ao usuário da estande digital,
      *  garantindo a integridade do mesmo
      */
-    class Apelido{
+    class Apelido : public DominioBase{
         private:
+            /*  Mensagens de erro padrão */
+            const string msgErroTam = "Apelido fornecido maior que o limite!";
+            const string msgErroArg = "Apelido foge à especificação alfabética!";
+
+            /*  Constantes de restrição */
             const static int LIM_MAX = 5;
 
-            string campo;
-
-            bool validar (string campo) throw (invalid_argument, length_error);
+            /*  Validação do apelido a ser armazenado */
+            void validar (const string &campo) throw (invalid_argument, length_error) override;
 
         public:
             /**
              *  Construtor padrão
              */
-            Apelido ();
+            Apelido (){};
 
             /**
              *  Construtor de um apelido, conhecendo-se
              *  o mesmo
              *  @param campo Apelido candidato a atribuição
              */
-            Apelido(string campo);
-
-            /**
-             *  Valor atribuído ao apelido
-             *  @return Apelido em si
-             */
-            string getCampo();
-
-            /**
-             *  Atribuição do apelido, respeitando sua integridade
-             *  @param campo Apelido candidato a atribuição
-             */
-            bool setCampo (string campo) throw (invalid_argument, length_error);
-
-            /**
-             *  Destrutor padrão
-             */
-            void deletar ();
-
+            Apelido(const string &campo);
     };
-
-    inline string Apelido::getCampo () {return this->campo;}
-    inline void Apelido::deletar() {delete this;}
 #endif // APELIDO_HPP

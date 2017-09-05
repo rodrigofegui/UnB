@@ -14,6 +14,7 @@
     #include "Dominio_Tst/Codigo_Tst.hpp"
     #include "Dominio_Tst/Data_Tst.hpp"
     #include "Dominio_Tst/GeneroLiterario_Tst.hpp"
+    #include "Dominio_Tst/Nome_Tst.hpp"
 
     void fullTeste(){
         //*
@@ -36,6 +37,12 @@
 
         cout << "Testando Gênero Literário:" << endl;
         testar = new GeneroLiterarioTst ();
+        testar->executar();
+        delete testar;
+
+        /*
+        cout << "Testando Nome:" << endl;
+        testar = new NomeTst ();
         testar->executar();
         delete testar;
         //*/

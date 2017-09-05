@@ -8,6 +8,7 @@
 
     #include <iostream>
     #include "Utilidades/TesteUnitario.hpp"
+    #include "Dominio/DominioBase.hpp"
     using namespace std;
 
     /**
@@ -17,10 +18,10 @@
      */
     class TesteClasse{
         private:
-            /*  Validações unitárias */
+            /*  Etapas do teste */
             virtual void inicializar (){};
-            virtual void finalizar (){};
             virtual void validar (){};
+            virtual void finalizar (){};
 
         protected:
             /**  Controle de Estado do teste */
