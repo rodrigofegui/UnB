@@ -20,7 +20,7 @@
             void validar() override;
 
             /*  Constantes de teste */
-            const string VAL[3]      ={"Rodrigo FErrei.",
+            const string VAL[3]      ={"Rodrigo Ferrei.",
                                        "Rodrigo F. G.",
                                        "Rodrigo.F.G"};
             const string INV_NUM     = "r0dr1g0";

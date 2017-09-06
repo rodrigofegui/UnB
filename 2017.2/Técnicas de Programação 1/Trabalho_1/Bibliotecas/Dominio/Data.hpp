@@ -40,6 +40,16 @@
 
             /*  Validação da data a ser armazenado */
             void validar (const string &campo) throw (invalid_argument, length_error) override;
+            void validarTamanho (const string &campo) throw (invalid_argument, length_error);
+            void validarFormato (const string &campo) throw (invalid_argument, length_error);
+            void validarDia (const string &campo) throw (invalid_argument, length_error);
+            void validarMes (const string &campo) throw (invalid_argument, length_error);
+            void validarAno (const string &campo) throw (invalid_argument, length_error);
+            void validarData () throw (invalid_argument, length_error);
+            void validarFevereiro () throw (invalid_argument, length_error);
+
+            /*  Partes de uma data */
+            string dia, mes, ano;
 
         public:
             /**
@@ -53,5 +63,27 @@
              *  @param campo Data candidata a atribuição
              */
             Data(const string &campo);
+
+            /**
+             *  Recuperar o valor atribuído ao dia
+             *  @return Dia armazenado
+             */
+            int getDia() const;
+
+            /**
+             *  Recuperar o valor atribuído ao mês
+             *  @return Mês armazenado
+             */
+            int getMes() const;
+
+            /**
+             *  Recuperar o valor atribuído ao ano
+             *  @return Ano armazenado
+             */
+            int getAno() const;
     };
+
+    inline int Data::getDia() const{return atoi(this->dia.c_str());}
+    inline int Data::getMes() const{return atoi(this->mes.c_str());}
+    inline int Data::getAno() const{return atoi(this->ano.c_str());}
 #endif // DATA_H

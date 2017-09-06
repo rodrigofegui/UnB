@@ -30,7 +30,6 @@ void DominioBaseTst::validarCampoNOk (const string &campo){
     try{
         this->corpoTeste->setCampo(campo);
         this->status = TesteUnitario::FALHOU;
-        cout << "Não passou aqui...NOK" << endl;
 
     }catch (invalid_argument e){
         cout << e.what() << endl;

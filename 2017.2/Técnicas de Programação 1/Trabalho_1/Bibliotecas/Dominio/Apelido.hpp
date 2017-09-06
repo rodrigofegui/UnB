@@ -23,6 +23,8 @@
 
             /*  Validação do apelido a ser armazenado */
             void validar (const string &campo) throw (invalid_argument, length_error) override;
+            void validarTamanho (const string &campo) throw (invalid_argument, length_error);
+            void validarLetras (const string &campo) throw (invalid_argument, length_error);
 
         public:
             /**

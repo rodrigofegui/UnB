@@ -23,6 +23,7 @@
 
             /*  Validação do gênero a ser armazenado */
             void validar (const string &campo) throw (invalid_argument) override;
+            void validarCadastro (const string &campo) throw (invalid_argument);
 
         public:
             /**

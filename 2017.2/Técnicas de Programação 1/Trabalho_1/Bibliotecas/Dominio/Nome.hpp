@@ -24,10 +24,15 @@
 
             /*  Constantes de restrição */
             const static int TAM_MAX = 15;
-            const string SIMB_N_PERMT = "[\-/!\"\#$%&'()*+,:;<=>?@\[\\\]^_`{|}~]+";
+            const string SIMB_N_PERMT = "[-/!\"#$%&'()*+,:;<=>?@\[\\\]^_`{|}~]+";
+            const string DB_SPACE = "  ";
+            const string DB_PONTO = "..";
 
             /*  Validação do nome a ser armazenado */
             void validar (const string &campo) throw (invalid_argument, length_error) override;
+            void validarTamanho (const string &campo) throw (invalid_argument, length_error);
+            void validarAlfabetico (const string &campo) throw (invalid_argument, length_error);
+            void validarSimbolos (const string &campo) throw (invalid_argument, length_error);
             bool haInvSimb (const string &campo);
 
         public:

@@ -15,6 +15,7 @@
     #include "Dominio_Tst/Data_Tst.hpp"
     #include "Dominio_Tst/GeneroLiterario_Tst.hpp"
     #include "Dominio_Tst/Nome_Tst.hpp"
+    #include "Dominio_Tst/Telefone_Tst.hpp"
 
     void testarDominios (TesteClasse *);
 
@@ -45,6 +46,10 @@
 
         cout << "Testando Nome:" << endl;
         sobTeste = new NomeTst ();
+        sobTeste->executar();
+
+        cout << "Testando Telefone:" << endl;
+        sobTeste = new TelefoneTst ();
         sobTeste->executar();
     }
 
