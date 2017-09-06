@@ -13,6 +13,8 @@ var annotated_dup =
     [ "Manipulacao", "class_manipulacao.html", null ],
     [ "Nome", "class_nome.html", "class_nome" ],
     [ "NomeTst", "class_nome_tst.html", null ],
+    [ "Telefone", "class_telefone.html", "class_telefone" ],
+    [ "TelefoneTst", "class_telefone_tst.html", null ],
     [ "TesteClasse", "class_teste_classe.html", "class_teste_classe" ],
     [ "TesteUnitario", "class_teste_unitario.html", "class_teste_unitario" ]
 ];

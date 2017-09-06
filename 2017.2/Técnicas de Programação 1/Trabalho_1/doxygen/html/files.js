@@ -40,6 +40,12 @@ var files =
     ] ],
     [ "Principal.cpp", "_principal_8cpp.html", "_principal_8cpp" ],
     [ "Principal.hpp", "_principal_8hpp.html", null ],
+    [ "Telefone.hpp", "_telefone_8hpp.html", [
+      [ "Telefone", "class_telefone.html", "class_telefone" ]
+    ] ],
+    [ "Telefone_Tst.hpp", "_telefone___tst_8hpp.html", [
+      [ "TelefoneTst", "class_telefone_tst.html", null ]
+    ] ],
     [ "TesteClasse.hpp", "_teste_classe_8hpp.html", [
       [ "TesteClasse", "class_teste_classe.html", "class_teste_classe" ]
     ] ],
