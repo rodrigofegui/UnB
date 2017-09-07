@@ -58,3 +58,21 @@ Possible candidates:
   static void TesteUnitario::capturarFalha(bool(*func)(string), string val1)
   static void TesteUnitario::capturarFalha(bool(*func)(string, string), string val1, string val2)
 
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Livro.hpp:35: warning: argument 'data' of command @param is not found in the argument list of Livro::Livro(const Data &dataPublicacao)
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Livro.hpp:39: warning: The following parameters of Livro::Livro(const Data &dataPublicacao) are not documented:
+  parameter 'dataPublicacao'
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Livro.hpp:42: warning: argument 'gen' of command @param is not found in the argument list of Livro::Livro(const GeneroLiterario &genero)
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Livro.hpp:46: warning: The following parameters of Livro::Livro(const GeneroLiterario &genero) are not documented:
+  parameter 'genero'
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Livro.hpp:61: warning: argument 'gen' of command @param is not found in the argument list of Livro::Livro(const Data &data, const GeneroLiterario &genero, const Nome &autor, const Titulo &titulo)
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Livro.hpp:68: warning: The following parameters of Livro::Livro(const Data &data, const GeneroLiterario &genero, const Nome &autor, const Titulo &titulo) are not documented:
+  parameter 'genero'
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Livro.hpp:74: warning: argument 'gen' of command @param is not found in the argument list of Livro::Livro(const Codigo &codigo, const Data &data, const GeneroLiterario &genero, const Nome &autor, const Titulo &titulo)
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Livro.hpp:82: warning: The following parameters of Livro::Livro(const Codigo &codigo, const Data &data, const GeneroLiterario &genero, const Nome &autor, const Titulo &titulo) are not documented:
+  parameter 'genero'
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Livro.hpp:139: warning: argument 'título' of command @param is not found in the argument list of Livro::setTitulo(const Titulo &titulo)
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Livro.hpp:142: warning: The following parameters of Livro::setTitulo(const Titulo &titulo) are not documented:
+  parameter 'titulo'
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Usuario.hpp:82: warning: argument 'nnome' of command @param is not found in the argument list of Usuario::setNome(const Nome &nome)
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho_1/Bibliotecas/Entidade/Usuario.hpp:85: warning: The following parameters of Usuario::setNome(const Nome &nome) are not documented:
+  parameter 'nome'

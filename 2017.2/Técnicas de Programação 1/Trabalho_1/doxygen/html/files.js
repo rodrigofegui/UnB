@@ -31,6 +31,12 @@ var files =
     [ "GeneroLiterario_Tst.hpp", "_genero_literario___tst_8hpp.html", [
       [ "GeneroLiterarioTst", "class_genero_literario_tst.html", null ]
     ] ],
+    [ "Livro.hpp", "_livro_8hpp.html", [
+      [ "Livro", "class_livro.html", "class_livro" ]
+    ] ],
+    [ "Livro_Tst.hpp", "_livro___tst_8hpp.html", [
+      [ "LivroTst", "class_livro_tst.html", null ]
+    ] ],
     [ "Manipulacao.hpp", "_manipulacao_8hpp.html", "_manipulacao_8hpp" ],
     [ "Nome.hpp", "_nome_8hpp.html", [
       [ "Nome", "class_nome.html", "class_nome" ]
@@ -40,6 +46,18 @@ var files =
     ] ],
     [ "Principal.cpp", "_principal_8cpp.html", "_principal_8cpp" ],
     [ "Principal.hpp", "_principal_8hpp.html", null ],
+    [ "Resenha.hpp", "_resenha_8hpp.html", [
+      [ "Resenha", "class_resenha.html", "class_resenha" ]
+    ] ],
+    [ "Resenha_Tst.hpp", "_resenha___tst_8hpp.html", [
+      [ "ResenhaTst", "class_resenha_tst.html", null ]
+    ] ],
+    [ "Senha.hpp", "_senha_8hpp.html", [
+      [ "Senha", "class_senha.html", "class_senha" ]
+    ] ],
+    [ "Senha_Tst.hpp", "_senha___tst_8hpp.html", [
+      [ "SenhaTst", "class_senha_tst.html", null ]
+    ] ],
     [ "Telefone.hpp", "_telefone_8hpp.html", [
       [ "Telefone", "class_telefone.html", "class_telefone" ]
     ] ],
@@ -57,5 +75,17 @@ var files =
     ] ],
     [ "Texto_Tst.hpp", "_texto___tst_8hpp.html", [
       [ "TextoTst", "class_texto_tst.html", null ]
+    ] ],
+    [ "Titulo.hpp", "_titulo_8hpp.html", [
+      [ "Titulo", "class_titulo.html", null ]
+    ] ],
+    [ "Titulo_Tst.hpp", "_titulo___tst_8hpp.html", [
+      [ "TituloTst", "class_titulo_tst.html", null ]
+    ] ],
+    [ "Usuario.hpp", "_usuario_8hpp.html", [
+      [ "Usuario", "class_usuario.html", "class_usuario" ]
+    ] ],
+    [ "Usuario_Tst.hpp", "_usuario___tst_8hpp.html", [
+      [ "UsuarioTst", "class_usuario_tst.html", null ]
     ] ]
 ];

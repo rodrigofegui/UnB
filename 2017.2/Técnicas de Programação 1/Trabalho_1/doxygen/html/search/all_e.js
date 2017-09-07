@@ -12,5 +12,9 @@ var searchData=
   ['texto',['Texto',['../class_texto.html',1,'Texto'],['../class_texto.html#adb8ed911c0010361142803bc6f97c0db',1,'Texto::Texto()'],['../class_texto.html#ab684ac74fed8d950b3919625a08d208d',1,'Texto::Texto(const string &amp;campo)']]],
   ['texto_2ehpp',['Texto.hpp',['../_texto_8hpp.html',1,'']]],
   ['texto_5ftst_2ehpp',['Texto_Tst.hpp',['../_texto___tst_8hpp.html',1,'']]],
-  ['textotst',['TextoTst',['../class_texto_tst.html',1,'']]]
+  ['textotst',['TextoTst',['../class_texto_tst.html',1,'']]],
+  ['titulo',['Titulo',['../class_titulo.html',1,'']]],
+  ['titulo_2ehpp',['Titulo.hpp',['../_titulo_8hpp.html',1,'']]],
+  ['titulo_5ftst_2ehpp',['Titulo_Tst.hpp',['../_titulo___tst_8hpp.html',1,'']]],
+  ['titulotst',['TituloTst',['../class_titulo_tst.html',1,'']]]
 ];

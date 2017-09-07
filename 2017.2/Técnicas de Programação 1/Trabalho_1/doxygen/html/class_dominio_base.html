@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('class_dominio_base.html','');});
 
 <p><code>#include &lt;<a class="el" href="_dominio_base_8hpp_source.html">DominioBase.hpp</a>&gt;</code></p>
 
-<p>Inherited by <a class="el" href="class_apelido.html">Apelido</a>, <a class="el" href="class_codigo.html">Codigo</a>, <a class="el" href="class_data.html">Data</a>, <a class="el" href="class_genero_literario.html">GeneroLiterario</a>, <a class="el" href="class_nome.html">Nome</a>, <a class="el" href="class_telefone.html">Telefone</a>, and <a class="el" href="class_texto.html">Texto</a>.</p>
+<p>Inherited by <a class="el" href="class_apelido.html">Apelido</a>, <a class="el" href="class_codigo.html">Codigo</a>, <a class="el" href="class_data.html">Data</a>, <a class="el" href="class_genero_literario.html">GeneroLiterario</a>, <a class="el" href="class_nome.html">Nome</a>, <a class="el" href="class_senha.html">Senha</a>, <a class="el" href="class_telefone.html">Telefone</a>, <a class="el" href="class_texto.html">Texto</a>, and <a class="el" href="class_titulo.html">Titulo</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -97,6 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a920e80e85280d435b20063de47eec3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8168530ac1e3d84cb3b7090ba066d56d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dominio_base.html#a8168530ac1e3d84cb3b7090ba066d56d">getCampo</a> () const</td></tr>
 <tr class="separator:a8168530ac1e3d84cb3b7090ba066d56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a910de563e63b2c2c417cee1326a72512"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dominio_base.html#a910de563e63b2c2c417cee1326a72512">equals</a> (const <a class="el" href="class_dominio_base.html">DominioBase</a> &amp;alvo) const</td></tr>
+<tr class="separator:a910de563e63b2c2c417cee1326a72512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f3d503873da9460ca8f50b89dc4729f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dominio_base.html#a7f3d503873da9460ca8f50b89dc4729f">deletar</a> ()</td></tr>
 <tr class="separator:a7f3d503873da9460ca8f50b89dc4729f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -126,6 +128,31 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Destrutor padrão </p>
+
+</div>
+</div>
+<a id="a910de563e63b2c2c417cee1326a72512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a910de563e63b2c2c417cee1326a72512">&#9670;&nbsp;</a></span>equals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DominioBase::equals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_dominio_base.html">DominioBase</a> &amp;&#160;</td>
+          <td class="paramname"><em>alvo</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Verificar se dois domínios são iguais </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alvo</td><td>Domínio alvo de comparação </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PASSOU ou FALHOU </dd></dl>
 
 </div>
 </div>
@@ -198,7 +225,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_dominio_base.html">DominioBase</a></li>
-    <li class="footer">Generated on Thu Sep 7 2017 13:06:21 for Trabalho_1 by
+    <li class="footer">Generated on Thu Sep 7 2017 19:59:25 for Trabalho_1 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
