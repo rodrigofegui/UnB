@@ -10,7 +10,6 @@
  */
 #include "Bibliotecas/AtivaTeste.hpp"
 #include "Principal.hpp"
-#include <regex>
 
 using namespace std;
 
@@ -19,7 +18,7 @@ int main(){
         fullTeste ();
     #endif // TESTE
 
-    cout << endl<< endl << "A execucao da aplicação finalizou!" << endl;
+    cout << endl << "A execucao da aplicação finalizou!" << endl;
     cout << "Volte sempre!" << endl;
 
     return 0;
