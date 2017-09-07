@@ -13,8 +13,10 @@ void DominioBaseTst::finalizar(){
 void DominioBaseTst::validarCampoOk (const string &campo){
     try{
         this->corpoTeste->setCampo(campo);
+
         if(!TesteUnitario::expect_EQ(this->corpoTeste->getCampo(), campo))
             this->status = TesteUnitario::FALHOU;
+
     }catch (invalid_argument e){
         cout << e.what() << endl;
         status = TesteUnitario::FALHOU;
@@ -30,8 +32,6 @@ void DominioBaseTst::validarCampoNOk (const string &campo){
         this->status = TesteUnitario::FALHOU;
 
     }catch (invalid_argument e){
-        cout << e.what() << endl;
     }catch (length_error e){
-        cout << e.what() << endl;
     }
 }
