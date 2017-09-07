@@ -42,10 +42,10 @@ então estarão inclusos os diretórios criados pela mesma; todas descritas sob 
 árvore de diretórios:
 		- /bin: Armazena os arquivos executáveis, gerados pela IDE utilizada,
 		por isso não será detalhada;
-		- /Declaracao: Armazena, como o nome já diz, as declarações, arquivos
+		- /Bibliotecas: Armazena, como o nome já diz, as declarações, arquivos
 		.hpp, das classes criadas, possibilitando, futuramente, o usuário final
 		conhecer apenas os .hpp, os objetos gerados e a documentação;
-		- /Definição: Armazena todos os códigos-fonte que geram arquivos objetos,
+		- /Fontes: Armazena todos os códigos-fonte que geram arquivos objetos,
 		onde para cada grupo de classes há um grupo de teste para estas classes,
 		sendo estas discriminadas pela inclusão de "_Tst" ao final de seus
 		respectivos grupos/classes a serem testados;
