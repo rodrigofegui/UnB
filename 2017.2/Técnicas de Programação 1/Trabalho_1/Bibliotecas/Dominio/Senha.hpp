@@ -1,51 +1,45 @@
-#ifndef NOME_H
-    #define NOME_H
+#ifndef SENHA_H
+    #define SENHA_H
 
     /**
-     *  @file   Nome.hpp
+     *  @file   Senha.hpp
      *  @author Rodrigo F. Guimarães
      */
-
     #include "DominioBase.hpp"
-    #include <regex>
 
     /**
-     *  @class  Nome
-     *  Nome padrão aceito na estante digital,
+     *  @class  Senha
+     *  Senha padrão aceito na estante digital,
      *  garantindo a sua integridade
      */
-    class Nome : public DominioBase{
+    class Senha : public DominioBase{
         private:
             /*  Mensagens de erro padrão */
             const static string msgErroTam;
-            const static string msgErroNum;
             const static string msgErroSimb;
             const static string msgErroArg;
 
             /*  Constantes de restrição */
-            const static int TAM_MAX = 15;
-            const static string SIMB_N_PERMT;
-            const static string DB_SPACE;
-            const static string DB_PONTO;
+            const static int TAM_MAX = 4;
 
             /*  Validação do nome a ser armazenado */
             void validar (const string &campo) throw (invalid_argument, length_error) override;
             void validarTamanho (const string &campo) throw (invalid_argument, length_error);
             void validarAlfabetico (const string &campo) throw (invalid_argument, length_error);
-            void validarSimbolos (const string &campo) throw (invalid_argument, length_error);
-            bool haInvSimb (const string &campo);
+            void validarDuplicata (const string &campo) throw (invalid_argument, length_error);
 
         public:
             /**
              *  Construtor padrão
              */
-            Nome (){};
+            Senha (){};
 
             /**
-             *  Construtor de um nome, conhecendo-se
-             *  o mesmo
-             *  @param campo Nome candidato a atribuição
+             *  Construtor de uma senha, conhecendo-se
+             *  a mesma
+             *  @param campo Senha candidata a atribuição
              */
-            Nome(const string &campo);
+            Senha (const string &campo);
     };
-#endif // NOME_H
+
+#endif // SENHA_H

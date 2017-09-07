@@ -1,6 +1,8 @@
 #include "../../Bibliotecas/Dominio_Tst/Titulo_Tst.hpp"
 
 void TituloTst::inicializar(){
+    cout << "Testando Domínio/Título:" << endl;
+
     corpoTeste = new Titulo();
     this->status = TesteUnitario::PASSOU;
 }

@@ -2,6 +2,8 @@
 
 
 void NomeTst::inicializar(){
+    cout << "Testando Domínio/Nome:" << endl;
+
     corpoTeste = new Nome();
     this->status = TesteUnitario::PASSOU;
 }

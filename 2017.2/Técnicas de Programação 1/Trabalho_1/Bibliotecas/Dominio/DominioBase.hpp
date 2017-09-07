@@ -39,6 +39,13 @@
             string getCampo() const;
 
             /**
+             *  Verificar se dois domínios são iguais
+             *  @param alvo Domínio alvo de comparação
+             *  @return PASSOU ou FALHOU
+             */
+            bool equals (const DominioBase &alvo) const;
+
+            /**
              *  Destrutor padrão
              */
             void deletar ();

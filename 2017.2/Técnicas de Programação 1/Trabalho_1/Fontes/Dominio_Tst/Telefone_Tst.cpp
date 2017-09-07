@@ -1,6 +1,8 @@
 #include "../../Bibliotecas/Dominio_Tst/Telefone_Tst.hpp"
 
 void TelefoneTst::inicializar(){
+    cout << "Testando Domínio/Telefone:" << endl;
+
     corpoTeste = new Telefone();
     this->status = TesteUnitario::PASSOU;
 }

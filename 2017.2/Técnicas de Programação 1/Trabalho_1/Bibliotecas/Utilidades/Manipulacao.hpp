@@ -135,6 +135,14 @@
              *  @return PASSOU ou FALHOU
              */
             static bool eBissexto(int ano);
+
+            /**
+             *  Verificar se há algum caracter repetido
+             *  numa dada string
+             *  @param src String que será avaliada
+             *  @return PASSOU ou FALHOU
+             */
+            static bool haRepeticao (string src);
     };
 
 #endif // MANIPULACAO_HPP

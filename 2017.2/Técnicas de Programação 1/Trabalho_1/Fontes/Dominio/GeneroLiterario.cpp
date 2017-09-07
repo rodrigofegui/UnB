@@ -9,6 +9,6 @@ void GeneroLiterario::validar (const string &campo) throw (invalid_argument){
 }
 
 void GeneroLiterario::validarCadastro (const string &campo) throw (invalid_argument){
-    if(!Manipulacao::localizar(GEN_CADASTRADO, Manipulacao::maiuscula(campo)))
+    if(!Manipulacao::localizar(GEN_CADASTRADO, campo))
         throw invalid_argument (msgErro);
 }

@@ -20,13 +20,13 @@
     #include "Dominio_Tst/Texto_Tst.hpp"
     #include "Dominio_Tst/Titulo_Tst.hpp"
     #include "Entidade_Tst/Livro_Tst.hpp"
+    #include "Entidade_Tst/Usuario_Tst.hpp"
 
     void testarDominios (TesteClasse *);
     void testarEntidades (TesteClasse *);
 
 
     void fullTeste(){
-        //*
         TesteClasse *sobTeste;
 
         testarDominios (sobTeste);
@@ -65,6 +65,9 @@
 
     void testarEntidades (TesteClasse *sobTeste){
         sobTeste = new LivroTst ();
+        sobTeste->executar();
+
+        sobTeste = new UsuarioTst ();
         sobTeste->executar();
     }
 #endif // ATIVA_TESTE_H

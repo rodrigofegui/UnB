@@ -1,6 +1,8 @@
 #include "../../Bibliotecas/Dominio_Tst/Data_Tst.hpp"
 
 void DataTst::inicializar(){
+    cout << "Testando Domínio/Data:" << endl;
+
     corpoTeste = new Data();
     this->status = TesteUnitario::PASSOU;
 }

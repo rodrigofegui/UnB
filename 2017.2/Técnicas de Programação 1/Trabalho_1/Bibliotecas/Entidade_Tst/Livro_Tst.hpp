@@ -15,20 +15,20 @@
      */
     class LivroTst : public TesteClasse{
         private:
+            /*  Corpo de teste */
+            Livro *livro;
+
             /*  Etapas do teste */
             void inicializar () override;
             void validar () override;
             void finalizar () override;
 
             /*  Validações unitárias */
-            void validarCodigo (const Codigo &codigo);
-            void validarData (const Data &data);
-            void validarGenero (const GeneroLiterario &genero);
-            void validarAutor (const Nome &autor);
-            void validarTitulo (const Titulo &titulo);
-
-            /*  Corpo de teste */
-            Livro *livro;
+            void validarCodigo ();
+            void validarData ();
+            void validarGenero ();
+            void validarAutor ();
+            void validarTitulo ();
 
             /*  Constantes de teste */
             Codigo codigo;

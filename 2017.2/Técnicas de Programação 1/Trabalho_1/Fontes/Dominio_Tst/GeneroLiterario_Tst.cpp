@@ -1,6 +1,8 @@
 #include "../../Bibliotecas/Dominio_Tst/GeneroLiterario_Tst.hpp"
 
 void GeneroLiterarioTst::inicializar(){
+    cout << "Testando Domínio/Gênero Literário:" << endl;
+
     corpoTeste = new GeneroLiterario();
     this->status = TesteUnitario::PASSOU;
 }

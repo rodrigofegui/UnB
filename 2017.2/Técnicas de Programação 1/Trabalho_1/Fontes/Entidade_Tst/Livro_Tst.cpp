@@ -23,48 +23,48 @@ void LivroTst::finalizar (){
 }
 
 void LivroTst::validar (){
-    validarCodigo (codigo);
+    validarCodigo ();
 
-    validarData(data);
+    validarData();
 
-    validarGenero(genero);
+    validarGenero();
 
-    validarAutor(autor);
+    validarAutor();
 
-    validarTitulo(titulo);
+    validarTitulo();
 }
 
-void LivroTst::validarCodigo (const Codigo &codigo){
-    this->livro->setCodigo(codigo);
+void LivroTst::validarCodigo (){
+    this->livro->setCodigo(this->codigo);
 
-    if(!codigo.equals(this->livro->getCodigo()))
+    if(!this->codigo.equals(this->livro->getCodigo()))
         this->status = TesteUnitario::FALHOU;
 }
 
-void LivroTst::validarData (const Data &data){
-    this->livro->setDataPublicacao(data);
+void LivroTst::validarData (){
+    this->livro->setDataPublicacao(this->data);
 
-    if(!data.equals(this->livro->getDataPublicacao()))
+    if(!this->data.equals(this->livro->getDataPublicacao()))
         this->status = TesteUnitario::FALHOU;
 }
 
-void LivroTst::validarGenero (const GeneroLiterario &genero){
-    this->livro->setGenero(genero);
+void LivroTst::validarGenero (){
+    this->livro->setGenero(this->genero);
 
-    if(!genero.equals(this->livro->getGenero()))
+    if(!this->genero.equals(this->livro->getGenero()))
         this->status = TesteUnitario::FALHOU;
 }
 
-void LivroTst::validarAutor (const Nome &autor){
-    this->livro->setAutor(autor);
+void LivroTst::validarAutor (){
+    this->livro->setAutor(this->autor);
 
-    if(!autor.equals(this->livro->getAutor()))
+    if(!this->autor.equals(this->livro->getAutor()))
         this->status = TesteUnitario::FALHOU;
 }
 
-void LivroTst::validarTitulo (const Titulo &titulo){
-    this->livro->setTitulo(titulo);
+void LivroTst::validarTitulo (){
+    this->livro->setTitulo(this->titulo);
 
-    if(!titulo.equals(this->livro->getTitulo()))
+    if(!this->titulo.equals(this->livro->getTitulo()))
         this->status = TesteUnitario::FALHOU;
 }

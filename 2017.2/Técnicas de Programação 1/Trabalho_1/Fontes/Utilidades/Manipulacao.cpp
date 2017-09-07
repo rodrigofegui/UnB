@@ -93,3 +93,13 @@ bool Manipulacao::eBissexto (int ano){
 
     return TesteUnitario::FALHOU;
 }
+
+bool Manipulacao::haRepeticao(string src){
+    src = maiuscula(src);
+
+    for (int pos = 0; pos < src.size(); pos++)
+        if(src.find(src.at(pos), pos + 1) != -1)
+            return TesteUnitario::PASSOU;
+
+    return TesteUnitario::FALHOU;
+}
