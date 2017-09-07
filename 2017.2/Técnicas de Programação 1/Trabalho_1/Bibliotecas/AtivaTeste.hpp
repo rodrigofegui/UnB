@@ -15,11 +15,14 @@
     #include "Dominio_Tst/Data_Tst.hpp"
     #include "Dominio_Tst/GeneroLiterario_Tst.hpp"
     #include "Dominio_Tst/Nome_Tst.hpp"
+    #include "Dominio_Tst/Senha_Tst.hpp"
     #include "Dominio_Tst/Telefone_Tst.hpp"
     #include "Dominio_Tst/Texto_Tst.hpp"
     #include "Dominio_Tst/Titulo_Tst.hpp"
+    #include "Entidade_Tst/Livro_Tst.hpp"
 
     void testarDominios (TesteClasse *);
+    void testarEntidades (TesteClasse *);
 
 
     void fullTeste(){
@@ -27,40 +30,41 @@
         TesteClasse *sobTeste;
 
         testarDominios (sobTeste);
+
+        testarEntidades (sobTeste);
     }
 
     void testarDominios (TesteClasse *sobTeste){
-        cout << "Testando Apelido:" << endl;
         sobTeste = new ApelidoTst();
         sobTeste->executar();
 
-        cout << "Testando Codigo:" << endl;
         sobTeste = new CodigoTst ();
         sobTeste->executar();
 
-        cout << "Testando Data:" << endl;
         sobTeste = new DataTst ();
         sobTeste->executar();
 
-        cout << "Testando Gênero Literário:" << endl;
         sobTeste = new GeneroLiterarioTst ();
         sobTeste->executar();
 
-        cout << "Testando Nome:" << endl;
         sobTeste = new NomeTst ();
         sobTeste->executar();
 
-        cout << "Testando Telefone:" << endl;
+        sobTeste = new SenhaTst ();
+        sobTeste->executar();
+
         sobTeste = new TelefoneTst ();
         sobTeste->executar();
 
-        cout << "Testando Texto:" << endl;
         sobTeste = new TextoTst ();
         sobTeste->executar();
 
-        cout << "Testando Título:" << endl;
         sobTeste = new TituloTst ();
         sobTeste->executar();
     }
 
+    void testarEntidades (TesteClasse *sobTeste){
+        sobTeste = new LivroTst ();
+        sobTeste->executar();
+    }
 #endif // ATIVA_TESTE_H
