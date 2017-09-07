@@ -16,7 +16,7 @@
     class GeneroLiterario : public DominioBase{
         private:
             /*  Mensagens de erro padrão */
-            const string msgErro = "Gênero não registrado!";
+            const static string msgErro;
 
             /*  Constantes de restrição */
             const static vector<string> GEN_CADASTRADO;

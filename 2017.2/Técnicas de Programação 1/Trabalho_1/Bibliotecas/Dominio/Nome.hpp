@@ -17,16 +17,16 @@
     class Nome : public DominioBase{
         private:
             /*  Mensagens de erro padrão */
-            const string msgErroTam = "Nome fornecido além do tamanho permitido!";
-            const string msgErroNum = "Nome fornecido contém números!";
-            const string msgErroSimb = "Nome fornecido contém símbolos não permitidos!";
-            const string msgErroArg = "Nome fornecido não obedece as especificações!";
+            const static string msgErroTam;
+            const static string msgErroNum;
+            const static string msgErroSimb;
+            const static string msgErroArg;
 
             /*  Constantes de restrição */
             const static int TAM_MAX = 15;
-            const string SIMB_N_PERMT = "[-/!\"#$%&'()*+,:;<=>?@\[\\\]^_`{|}~]+";
-            const string DB_SPACE = "  ";
-            const string DB_PONTO = "..";
+            const static string SIMB_N_PERMT;
+            const static string DB_SPACE;
+            const static string DB_PONTO;
 
             /*  Validação do nome a ser armazenado */
             void validar (const string &campo) throw (invalid_argument, length_error) override;

@@ -1,5 +1,8 @@
 #include "../../Bibliotecas/Dominio/Codigo.hpp"
 
+const string Codigo::msgErroTam ("Código fornecido com tamanho inválido!");
+const string Codigo::msgErroArg ("Código foge à especificação numérica!");
+
 Codigo::Codigo(const string &campo){
     setCampo(campo);
 }

@@ -1,5 +1,11 @@
 #include "../../Bibliotecas/Dominio/Data.hpp"
 
+const string Data::msgErroTam ("Data fornecida com tamanho inválido!");
+const string Data::msgErroArgDia ("Data foge da especificação de dia!");
+const string Data::msgErroArgMes ("Data foge da especificação de mês!");
+const string Data::msgErroArgAno ("Data foge da especificação de ano!");
+const string Data::msgErroArg ("Data foge da formatação permitida: DD/MM/AA");
+
 const vector<int> Data::MES_31 ({1, 3, 5, 7, 8, 10, 12});
 
 void Data::validar (const string &campo) throw (invalid_argument, length_error){

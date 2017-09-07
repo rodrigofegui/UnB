@@ -1,5 +1,8 @@
 #include "../../Bibliotecas/Dominio/Apelido.hpp"
 
+const string Apelido::msgErroTam ("Apelido fornecido maior que o limite!");
+const string Apelido::msgErroArg ("Apelido foge à especificação alfabética!");
+
 Apelido::Apelido(const string &campo){
     setCampo(campo);
 }

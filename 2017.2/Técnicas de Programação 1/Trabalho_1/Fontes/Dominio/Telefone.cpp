@@ -1,5 +1,9 @@
 #include "../../Bibliotecas/Dominio/Telefone.hpp"
 
+const string Telefone::msgErroTam ("Telefone fornecido fora do tamanho padrão!");
+const string Telefone::msgErroFmt ("Telefone foge da formatação permitida: (xx)-xxxxxxxxx");
+const string Telefone::msgErroNum ("Telefone contém caracteres não numéricos!");
+
 void Telefone::validar(const string &campo) throw (invalid_argument, length_error){
     validarTamanho (campo);
 

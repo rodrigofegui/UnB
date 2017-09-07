@@ -15,7 +15,7 @@
     class Texto : public DominioBase{
         private:
             /*  Mensagens de erro padrão */
-            const string msgErroTam = "Texto fornecido fora do tamanho padrão!";
+            const static string msgErroTam;
 
             /*  Constantes de validação */
             const static int TAM_MAX = 40;

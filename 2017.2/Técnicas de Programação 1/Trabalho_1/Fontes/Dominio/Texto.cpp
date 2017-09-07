@@ -1,5 +1,7 @@
 #include "../../Bibliotecas/Dominio/Texto.hpp"
 
+const string Texto::msgErroTam ("Texto fornecido fora do tamanho padrão!");
+
 void Texto::validar(const string &campo) throw (invalid_argument, length_error){
     validarTamanho (campo);
 }

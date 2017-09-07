@@ -1,5 +1,7 @@
 #include "../../Bibliotecas/Dominio/GeneroLiterario.hpp"
 
+const string GeneroLiterario::msgErro ("Gênero não registrado!");
+
 const vector<string> GeneroLiterario::GEN_CADASTRADO ({"EPOPEIA", "NOVELA", "CONTO", "ENSAIO", "ROMANCE"});
 
 void GeneroLiterario::validar (const string &campo) throw (invalid_argument){

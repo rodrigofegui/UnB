@@ -16,11 +16,11 @@
     class Data : public DominioBase{
         private:
             /*  Mensagens de erro padrão */
-            const string msgErroTam = "Data fornecida com tamanho inválido!";
-            const string msgErroArgDia = "Data foge da especificação de dia!";
-            const string msgErroArgMes = "Data foge da especificação de mês!";
-            const string msgErroArgAno = "Data foge da especificação de ano!";
-            const string msgErroArg = "Data foge da formatação desejada: DD/MM/AA";
+            const static string msgErroTam;
+            const static string msgErroArgDia;
+            const static string msgErroArgMes;
+            const static string msgErroArgAno;
+            const static string msgErroArg;
 
             /*  Constantes de restrição */
             const static int ANO_BASE = 1900;
@@ -35,7 +35,6 @@
             const static int DIVISAO_1 = 2;
             const static int DIVISAO_2 = 5;
             const static char DIVISOR = '/';
-
             const static vector<int> MES_31;
 
             /*  Validação da data a ser armazenado */

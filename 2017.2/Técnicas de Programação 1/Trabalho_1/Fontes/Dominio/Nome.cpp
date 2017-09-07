@@ -1,5 +1,14 @@
 #include "../../Bibliotecas/Dominio/Nome.hpp"
 
+const string Nome::msgErroTam ("Nome fornecido além do tamanho permitido!");
+const string Nome::msgErroNum ("Nome fornecido contém números!");
+const string Nome::msgErroSimb ("Nome fornecido contém símbolos não permitidos!");
+const string Nome::msgErroArg ("Nome fornecido não obedece as especificações!");
+
+const string Nome::SIMB_N_PERMT ("[-/!\"#$%&'()*+,:;<=>?@\[\\\]^_`{|}~]+");
+const string Nome::DB_SPACE ("  ");
+const string Nome::DB_PONTO ("..");
+
 void Nome::validar (const string &campo) throw (invalid_argument, length_error){
     validarTamanho (campo);
 

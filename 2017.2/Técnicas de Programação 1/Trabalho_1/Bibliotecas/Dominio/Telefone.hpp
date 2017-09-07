@@ -15,9 +15,9 @@
     class Telefone : public DominioBase{
         private:
             /*  Mensagens de erro padrão */
-            const string msgErroTam = "Telefone fornecido fora do tamanho padrão!";
-            const string msgErroFmt = "Telefone foge da formatação permitida: (xx)-xxxxxxxxx";
-            const string msgErroNum = "Telefone contém caracteres não numéricos!";
+            const static string msgErroTam;
+            const static string msgErroFmt;
+            const static string msgErroNum;
 
             /*  Constantes de validação */
             const static int TAM_MAX = 14;

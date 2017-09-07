@@ -15,8 +15,8 @@
     class Apelido : public DominioBase{
         private:
             /*  Mensagens de erro padrão */
-            const string msgErroTam = "Apelido fornecido maior que o limite!";
-            const string msgErroArg = "Apelido foge à especificação alfabética!";
+            const static string msgErroTam;
+            const static string msgErroArg;
 
             /*  Constantes de restrição */
             const static int LIM_MAX = 5;

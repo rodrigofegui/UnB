@@ -16,8 +16,8 @@
     class Codigo : public DominioBase{
         private:
             /*  Mensagens de erro padrão */
-            const string msgErroTam = "Código fornecido com tamanho inválido!";
-            const string msgErroArg = "Código foge à especificação numérica!";
+            const static string msgErroTam;
+            const static string msgErroArg;
 
             /*  Tamanho do código */
             const static int TAM = 5;
