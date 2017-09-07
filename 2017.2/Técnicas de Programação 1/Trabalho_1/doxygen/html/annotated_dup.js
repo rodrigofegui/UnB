@@ -16,5 +16,7 @@ var annotated_dup =
     [ "Telefone", "class_telefone.html", "class_telefone" ],
     [ "TelefoneTst", "class_telefone_tst.html", null ],
     [ "TesteClasse", "class_teste_classe.html", "class_teste_classe" ],
-    [ "TesteUnitario", "class_teste_unitario.html", "class_teste_unitario" ]
+    [ "TesteUnitario", "class_teste_unitario.html", "class_teste_unitario" ],
+    [ "Texto", "class_texto.html", "class_texto" ],
+    [ "TextoTst", "class_texto_tst.html", null ]
 ];

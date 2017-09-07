@@ -51,5 +51,11 @@ var files =
     ] ],
     [ "TesteUnitario.hpp", "_teste_unitario_8hpp.html", [
       [ "TesteUnitario", "class_teste_unitario.html", "class_teste_unitario" ]
+    ] ],
+    [ "Texto.hpp", "_texto_8hpp.html", [
+      [ "Texto", "class_texto.html", "class_texto" ]
+    ] ],
+    [ "Texto_Tst.hpp", "_texto___tst_8hpp.html", [
+      [ "TextoTst", "class_texto_tst.html", null ]
     ] ]
 ];

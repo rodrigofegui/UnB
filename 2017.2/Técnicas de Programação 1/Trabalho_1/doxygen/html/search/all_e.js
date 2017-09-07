@@ -8,5 +8,9 @@ var searchData=
   ['testeclasse',['TesteClasse',['../class_teste_classe.html',1,'']]],
   ['testeclasse_2ehpp',['TesteClasse.hpp',['../_teste_classe_8hpp.html',1,'']]],
   ['testeunitario',['TesteUnitario',['../class_teste_unitario.html',1,'']]],
-  ['testeunitario_2ehpp',['TesteUnitario.hpp',['../_teste_unitario_8hpp.html',1,'']]]
+  ['testeunitario_2ehpp',['TesteUnitario.hpp',['../_teste_unitario_8hpp.html',1,'']]],
+  ['texto',['Texto',['../class_texto.html',1,'Texto'],['../class_texto.html#adb8ed911c0010361142803bc6f97c0db',1,'Texto::Texto()'],['../class_texto.html#ab684ac74fed8d950b3919625a08d208d',1,'Texto::Texto(const string &amp;campo)']]],
+  ['texto_2ehpp',['Texto.hpp',['../_texto_8hpp.html',1,'']]],
+  ['texto_5ftst_2ehpp',['Texto_Tst.hpp',['../_texto___tst_8hpp.html',1,'']]],
+  ['textotst',['TextoTst',['../class_texto_tst.html',1,'']]]
 ];
