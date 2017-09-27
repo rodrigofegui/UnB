@@ -46,6 +46,11 @@
 		<Unit filename="Bibliotecas/Entidade/Livro.hpp" />
 		<Unit filename="Bibliotecas/Entidade/Resenha.hpp" />
 		<Unit filename="Bibliotecas/Entidade/Usuario.hpp" />
+		<Unit filename="Bibliotecas/Interfaces/InterApresServ.hpp" />
+		<Unit filename="Bibliotecas/Interfaces/InterAut.hpp" />
+		<Unit filename="Bibliotecas/Interfaces/InterCtrl.hpp" />
+		<Unit filename="Bibliotecas/Interfaces/InterEst.hpp" />
+		<Unit filename="Bibliotecas/Interfaces/InterUsu.hpp" />
 		<Unit filename="Bibliotecas/Utilidades/Manipulacao.hpp" />
 		<Unit filename="Bibliotecas/Utilidades/TesteUnitario.hpp" />
 		<Unit filename="Bibliotecas_Tst/AtivaTeste.hpp" />
@@ -76,6 +81,9 @@
 		<Unit filename="Fontes/Entidade/Livro.cpp" />
 		<Unit filename="Fontes/Entidade/Resenha.cpp" />
 		<Unit filename="Fontes/Entidade/Usuario.cpp" />
+		<Unit filename="Fontes/Interfaces/InterAut.cpp" />
+		<Unit filename="Fontes/Interfaces/InterEst.cpp" />
+		<Unit filename="Fontes/Interfaces/InterUsu.cpp" />
 		<Unit filename="Fontes/Utilidades/Manipulacao.cpp" />
 		<Unit filename="Fontes/Utilidades/TesteUnitario.cpp" />
 		<Unit filename="Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp" />

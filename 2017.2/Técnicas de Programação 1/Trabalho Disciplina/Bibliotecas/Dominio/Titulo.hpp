@@ -10,7 +10,7 @@
 
     /**
      *  @class Titulo
-     *  Título padrão a ser utilizado na estante digital,
+     *  Titulo padrão a ser utilizado na estante digital,
      *  garantindo a sua integridade
      */
     class Titulo : public DominioBase{
