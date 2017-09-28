@@ -53,21 +53,51 @@
 		<Unit filename="Bibliotecas/Interfaces/InterUsu.hpp" />
 		<Unit filename="Bibliotecas/Utilidades/Manipulacao.hpp" />
 		<Unit filename="Bibliotecas/Utilidades/TesteUnitario.hpp" />
-		<Unit filename="Bibliotecas_Tst/AtivaTeste.hpp" />
-		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Data_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Dominio_Tst/DominioBase_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Dominio_Tst/GeneroLiterario_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Nome_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Senha_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Telefone_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Texto_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Titulo_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp" />
-		<Unit filename="Bibliotecas_Tst/TesteClasse.hpp" />
+		<Unit filename="Bibliotecas_Tst/AtivaTeste.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Data_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Dominio_Tst/DominioBase_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Dominio_Tst/GeneroLiterario_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Nome_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Senha_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Telefone_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Texto_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Dominio_Tst/Titulo_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Bibliotecas_Tst/TesteClasse.hpp">
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="Fontes/Dominio/Apelido.cpp" />
 		<Unit filename="Fontes/Dominio/Codigo.cpp" />
 		<Unit filename="Fontes/Dominio/Data.cpp" />
@@ -86,20 +116,48 @@
 		<Unit filename="Fontes/Interfaces/InterUsu.cpp" />
 		<Unit filename="Fontes/Utilidades/Manipulacao.cpp" />
 		<Unit filename="Fontes/Utilidades/TesteUnitario.cpp" />
-		<Unit filename="Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Dominio_Tst/Codigo_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Dominio_Tst/Data_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Dominio_Tst/DominioBase_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Dominio_Tst/GeneroLiterario_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Dominio_Tst/Nome_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Dominio_Tst/Senha_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Dominio_Tst/Telefone_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Dominio_Tst/Texto_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Dominio_Tst/Titulo_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Entidade_Tst/Livro_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp" />
-		<Unit filename="Fontes_Tst/Entidade_Tst/Usuario_Tst.cpp" />
-		<Unit filename="Fontes_Tst/TesteClasse.cpp" />
+		<Unit filename="Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Dominio_Tst/Codigo_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Dominio_Tst/Data_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Dominio_Tst/DominioBase_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Dominio_Tst/GeneroLiterario_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Dominio_Tst/Nome_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Dominio_Tst/Senha_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Dominio_Tst/Telefone_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Dominio_Tst/Texto_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Dominio_Tst/Titulo_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Entidade_Tst/Livro_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/Entidade_Tst/Usuario_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Fontes_Tst/TesteClasse.cpp">
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="Principal.cpp" />
 		<Unit filename="Principal.hpp" />
 		<Extensions>
@@ -107,6 +165,15 @@
 			<envvars />
 			<lib_finder disable_auto="1" />
 			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project output_directory="Documentação/Codificação" output_language="Portuguese" />
+				<doxyfile_build />
+				<doxyfile_warnings warn_if_undocumented="1" />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
