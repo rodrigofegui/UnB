@@ -1,18 +1,18 @@
-#ifndef INTER_CONTROLE_HPP
-    #define INTER_CONTROLE_HPP
+#ifndef INTER_FUNCIONALIDADE_HPP
+    #define INTER_FUNCIONALIDADE_HPP
 
     /**
-     *  @file   InterCtrl.hpp
+     *  @file   InterFunc.Hpp
      *  @author Rodrigo F. Guimarães
      */
     #include "InterApresServ.hpp"
 
     /**
-     *  @class InterCtrl
+     *  @class InterFunc
      *  Protocolo padrão para o desenvolvimento de
      *  funcionalidades presentes na aplicação.
      */
-    class InterCtrl{
+    class InterFunc{
         public:
             /**
              *  Execução das atividades de um dado Módulo
