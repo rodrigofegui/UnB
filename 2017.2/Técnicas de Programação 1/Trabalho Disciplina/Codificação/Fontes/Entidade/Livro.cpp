@@ -26,11 +26,11 @@ Livro::Livro ( const Data &data,
     setTitulo(titulo);
 }
 
-Livro::Livro (const Codigo &codigo,
-                   const Data &data,
-                   const GeneroLiterario &genero,
-                   const Nome &autor,
-                   const Titulo &titulo){
+Livro::Livro ( const Codigo &codigo,
+               const Data &data,
+               const GeneroLiterario &genero,
+               const Nome &autor,
+               const Titulo &titulo){
     Livro(data, genero, autor, titulo);
     setCodigo(codigo);
 }

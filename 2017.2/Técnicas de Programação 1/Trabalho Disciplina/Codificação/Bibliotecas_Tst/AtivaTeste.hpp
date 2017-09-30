@@ -10,6 +10,7 @@
 
     #include "../Bibliotecas/Utilidades/Manipulacao.hpp"
     #include "TesteClasse.hpp"
+    /*  Domínios */
     #include "Dominio_Tst/Apelido_Tst.hpp"
     #include "Dominio_Tst/Codigo_Tst.hpp"
     #include "Dominio_Tst/Data_Tst.hpp"
@@ -19,9 +20,11 @@
     #include "Dominio_Tst/Telefone_Tst.hpp"
     #include "Dominio_Tst/Texto_Tst.hpp"
     #include "Dominio_Tst/Titulo_Tst.hpp"
+    /*  Entidades */
     #include "Entidade_Tst/Livro_Tst.hpp"
     #include "Entidade_Tst/Resenha_Tst.hpp"
     #include "Entidade_Tst/Usuario_Tst.hpp"
+    #include "Entidade_Tst/Login_Tst.hpp"
 
     void testarDominios (TesteClasse *);
     void testarEntidades (TesteClasse *);
@@ -72,6 +75,9 @@
         sobTeste->executar();
 
         sobTeste = new UsuarioTst ();
+        sobTeste->executar();
+
+        sobTeste = new LoginTst ();
         sobTeste->executar();
     }
 #endif // ATIVA_TESTE_H
