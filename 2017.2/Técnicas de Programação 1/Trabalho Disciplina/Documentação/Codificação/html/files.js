@@ -40,7 +40,9 @@ var files =
     [ "InterCtrl.hpp", "_inter_ctrl_8hpp.html", [
       [ "InterCtrl", "class_inter_ctrl.html", "class_inter_ctrl" ]
     ] ],
-    [ "InterEst.hpp", "_inter_est_8hpp_source.html", null ],
+    [ "InterEst.hpp", "_inter_est_8hpp.html", [
+      [ "InterEst", "class_inter_est.html", "class_inter_est" ]
+    ] ],
     [ "InterUsu.hpp", "_inter_usu_8hpp.html", [
       [ "InterUsu", "class_inter_usu.html", "class_inter_usu" ]
     ] ],

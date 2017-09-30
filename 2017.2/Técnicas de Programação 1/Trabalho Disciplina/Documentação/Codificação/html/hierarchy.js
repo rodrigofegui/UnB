@@ -13,6 +13,7 @@ var hierarchy =
     ] ],
     [ "InterApresServ", "class_inter_apres_serv.html", [
       [ "InterAut", "class_inter_aut.html", null ],
+      [ "InterEst", "class_inter_est.html", null ],
       [ "InterUsu", "class_inter_usu.html", null ]
     ] ],
     [ "InterCtrl", "class_inter_ctrl.html", null ],

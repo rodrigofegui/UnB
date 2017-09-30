@@ -12,9 +12,9 @@ var searchData=
   ['setgenero',['setGenero',['../class_livro.html#aa772ba7a5944a9e822f3528f9eeeefdf',1,'Livro']]],
   ['setnome',['setNome',['../class_usuario.html#a006307ffca27e3c9b9587a0fb2c0ee5a',1,'Usuario']]],
   ['setsenha',['setSenha',['../class_usuario.html#a126a54fc422205571c6db490dcb9ca03',1,'Usuario']]],
-  ['setservico',['setServico',['../class_inter_ctrl.html#aa489ac0d3d605f0ba4c9222905039b10',1,'InterCtrl']]],
+  ['setservico',['setServico',['../class_inter_ctrl.html#a4492852ef4356e95603bdebbaf93d83f',1,'InterCtrl']]],
   ['settelefone',['setTelefone',['../class_usuario.html#a049eaeb994d20c7df85250d50d041caf',1,'Usuario']]],
   ['settexto',['setTexto',['../class_resenha.html#a0ead613373e345e9d7dffe84550970fe',1,'Resenha']]],
-  ['settitulo',['setTitulo',['../class_resenha.html#ab7702729a8b5bbe4ae36fd98a7f2ed3a',1,'Resenha::setTitulo()'],['../class_livro.html#a0ce7eac6588d7980083f241bda0e2480',1,'Livro::setTitulo()']]],
+  ['settitulo',['setTitulo',['../class_livro.html#a0ce7eac6588d7980083f241bda0e2480',1,'Livro::setTitulo()'],['../class_resenha.html#ab7702729a8b5bbe4ae36fd98a7f2ed3a',1,'Resenha::setTitulo()']]],
   ['status',['status',['../class_teste_classe.html#ab1ae8f28b8ef5c4c6e672a0c0d1893fe',1,'TesteClasse']]]
 ];

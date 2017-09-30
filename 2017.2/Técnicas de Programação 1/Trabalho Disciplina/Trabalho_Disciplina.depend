@@ -698,3 +698,215 @@
 
 1506453824 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Fontes/Interfaces/InterUsu.cpp
 
+1506426420 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Dominio/Apelido.cpp
+	"../../Bibliotecas/Dominio/Apelido.hpp"
+
+1506426609 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Dominio/Apelido.hpp
+	"DominioBase.hpp"
+
+1506426568 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Dominio/DominioBase.hpp
+	<iostream>
+	<stdexcept>
+	"../Utilidades/Manipulacao.hpp"
+
+1504812858 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Utilidades/Manipulacao.hpp
+	<iostream>
+	<vector>
+	"TesteUnitario.hpp"
+
+1504204823 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Utilidades/TesteUnitario.hpp
+	<stdio.h>
+	<iostream>
+	<stdexcept>
+	"Manipulacao.hpp"
+
+1506426440 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Dominio/Codigo.cpp
+	"../../Bibliotecas/Dominio/Codigo.hpp"
+
+1506426621 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Dominio/Codigo.hpp
+	"DominioBase.hpp"
+
+1506426452 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Dominio/Data.cpp
+	"../../Bibliotecas/Dominio/Data.hpp"
+
+1506426627 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Dominio/Data.hpp
+	"DominioBase.hpp"
+
+1506426423 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Dominio/DominioBase.cpp
+	"../../Bibliotecas/Dominio/DominioBase.hpp"
+
+1506426462 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Dominio/GeneroLiterario.cpp
+	"../../Bibliotecas/Dominio/GeneroLiterario.hpp"
+
+1506426634 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Dominio/GeneroLiterario.hpp
+	"DominioBase.hpp"
+
+1506426473 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Dominio/Nome.cpp
+	"../../Bibliotecas/Dominio/Nome.hpp"
+
+1506426639 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Dominio/Nome.hpp
+	"DominioBase.hpp"
+	<regex>
+
+1506426484 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Dominio/Senha.cpp
+	"../../Bibliotecas/Dominio/Senha.hpp"
+
+1506426644 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Dominio/Senha.hpp
+	"DominioBase.hpp"
+
+1506426494 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Dominio/Telefone.cpp
+	"../../Bibliotecas/Dominio/Telefone.hpp"
+
+1506426648 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Dominio/Telefone.hpp
+	"DominioBase.hpp"
+
+1506426506 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Dominio/Texto.cpp
+	"../../Bibliotecas/Dominio/Texto.hpp"
+
+1506426654 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Dominio/Texto.hpp
+	"DominioBase.hpp"
+
+1506426519 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Dominio/Titulo.cpp
+	"../../Bibliotecas/Dominio/Titulo.hpp"
+
+1506428789 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Dominio/Titulo.hpp
+	"DominioBase.hpp"
+	<string.h>
+
+1504817905 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Entidade/Livro.cpp
+	"../../Bibliotecas/Entidade/Livro.hpp"
+
+1506427175 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Livro.hpp
+	"../Dominio/Titulo.hpp"
+	"../Dominio/Nome.hpp"
+	"../Dominio/Data.hpp"
+	"../Dominio/Codigo.hpp"
+	"../Dominio/GeneroLiterario.hpp"
+
+1504824824 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Entidade/Resenha.cpp
+	"../../Bibliotecas/Entidade/Resenha.hpp"
+
+1504824645 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Resenha.hpp
+	"../Dominio/Texto.hpp"
+	"../Dominio/Titulo.hpp"
+
+1504822583 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Entidade/Usuario.cpp
+	"../../Bibliotecas/Entidade/Usuario.hpp"
+
+1504822375 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Usuario.hpp
+	"../Dominio/Apelido.hpp"
+	"../Dominio/Nome.hpp"
+	"../Dominio/Senha.hpp"
+	"../Dominio/Telefone.hpp"
+
+1506453813 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Interfaces/InterAut.cpp
+
+1506453832 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Interfaces/InterEst.cpp
+
+1506453824 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Interfaces/InterUsu.cpp
+
+1504813978 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Utilidades/Manipulacao.cpp
+	"../../Bibliotecas/Utilidades/Manipulacao.hpp"
+
+1504204841 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Utilidades/TesteUnitario.cpp
+	"../../Bibliotecas/Utilidades/TesteUnitario.hpp"
+
+1506425987 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp
+	"../../Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp"
+
+1506426789 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp
+	"DominioBase_Tst.hpp"
+	"../../Bibliotecas/Dominio/Apelido.hpp"
+
+1506426030 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Dominio_Tst/DominioBase_Tst.hpp
+	"../../Bibliotecas/Dominio/DominioBase.hpp"
+	"../TesteClasse.hpp"
+
+1506425929 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/TesteClasse.hpp
+	<iostream>
+	"../Bibliotecas/Utilidades/TesteUnitario.hpp"
+	"../Bibliotecas/Dominio/DominioBase.hpp"
+
+1506426063 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Dominio_Tst/Codigo_Tst.cpp
+	"../../Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp"
+
+1506426074 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp
+	"DominioBase_Tst.hpp"
+	"../../Bibliotecas/Dominio/Codigo.hpp"
+
+1506426081 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Dominio_Tst/Data_Tst.cpp
+	"../../Bibliotecas_Tst/Dominio_Tst/Data_Tst.hpp"
+
+1506426093 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Dominio_Tst/Data_Tst.hpp
+	"DominioBase_Tst.hpp"
+	"../../Bibliotecas/Dominio/Data.hpp"
+
+1506426100 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Dominio_Tst/DominioBase_Tst.cpp
+	"../../Bibliotecas_Tst/Dominio_Tst/DominioBase_Tst.hpp"
+
+1506426106 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Dominio_Tst/GeneroLiterario_Tst.cpp
+	"../../Bibliotecas_Tst/Dominio_Tst/GeneroLiterario_Tst.hpp"
+
+1506426117 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Dominio_Tst/GeneroLiterario_Tst.hpp
+	"DominioBase_Tst.hpp"
+	"../../Bibliotecas/Dominio/GeneroLiterario.hpp"
+
+1506426124 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Dominio_Tst/Nome_Tst.cpp
+	"../../Bibliotecas_Tst/Dominio_Tst/Nome_Tst.hpp"
+
+1506426137 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Dominio_Tst/Nome_Tst.hpp
+	"DominioBase_Tst.hpp"
+	"../../Bibliotecas/Dominio/Nome.hpp"
+
+1506426145 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Dominio_Tst/Senha_Tst.cpp
+	"../../Bibliotecas_Tst/Dominio_Tst/Senha_Tst.hpp"
+
+1506426148 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Dominio_Tst/Senha_Tst.hpp
+	"DominioBase_Tst.hpp"
+	"../../Bibliotecas/Dominio/Senha.hpp"
+
+1506426154 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Dominio_Tst/Telefone_Tst.cpp
+	"../../Bibliotecas_Tst/Dominio_Tst/Telefone_Tst.hpp"
+
+1506426157 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Dominio_Tst/Telefone_Tst.hpp
+	"DominioBase_Tst.hpp"
+	"../../Bibliotecas/Dominio/Telefone.hpp"
+
+1506426163 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Dominio_Tst/Texto_Tst.cpp
+	"../../Bibliotecas_Tst/Dominio_Tst/Texto_Tst.hpp"
+
+1506426168 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Dominio_Tst/Texto_Tst.hpp
+	"DominioBase_Tst.hpp"
+	"../../Bibliotecas/Dominio/Texto.hpp"
+
+1506426172 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Dominio_Tst/Titulo_Tst.cpp
+	"../../Bibliotecas_Tst/Dominio_Tst/Titulo_Tst.hpp"
+
+1506426175 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Dominio_Tst/Titulo_Tst.hpp
+	"DominioBase_Tst.hpp"
+	"../../Bibliotecas/Dominio/Titulo.hpp"
+
+1506427321 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Entidade_Tst/Livro_Tst.cpp
+	"../../Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp"
+
+1506426185 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp
+	"../TesteClasse.hpp"
+	"../../Bibliotecas/Entidade/Livro.hpp"
+
+1506426191 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp
+	"../../Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp"
+
+1506426194 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp
+	"../TesteClasse.hpp"
+	"../../Bibliotecas/Entidade/Resenha.hpp"
+
+1506426200 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Entidade_Tst/Usuario_Tst.cpp
+	"../../Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp"
+
+1506426203 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp
+	"../TesteClasse.hpp"
+	"../../Bibliotecas/Entidade/Usuario.hpp"
+
+1506426213 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/TesteClasse.cpp
+	"../Bibliotecas_Tst/TesteClasse.hpp"
+

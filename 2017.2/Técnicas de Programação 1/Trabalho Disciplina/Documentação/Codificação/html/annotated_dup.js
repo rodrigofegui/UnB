@@ -13,6 +13,7 @@ var annotated_dup =
     [ "InterApresServ", "class_inter_apres_serv.html", null ],
     [ "InterAut", "class_inter_aut.html", "class_inter_aut" ],
     [ "InterCtrl", "class_inter_ctrl.html", "class_inter_ctrl" ],
+    [ "InterEst", "class_inter_est.html", "class_inter_est" ],
     [ "InterUsu", "class_inter_usu.html", "class_inter_usu" ],
     [ "Livro", "class_livro.html", "class_livro" ],
     [ "LivroTst", "class_livro_tst.html", null ],
