@@ -18,11 +18,11 @@
              *  Execução das atividades de um dado Módulo
              *  da aplicação.
              */
-            virtual void executar(){};
+            virtual OpResult executar(){};
 
             /**
              *  Configuração de uma funcionalidade da aplicação
              */
-            virtual void setServico (const InterApresServ *servico){};
+            virtual OpResult setServico (const InterApresServ *servico){};
     };
 #endif // INTERIM_CONTROLE_HPP

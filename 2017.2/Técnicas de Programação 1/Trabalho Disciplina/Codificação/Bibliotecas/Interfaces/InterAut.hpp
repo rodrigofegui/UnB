@@ -21,6 +21,6 @@
              *  na Base de Dados
              *  @param login Login candidato
              */
-            virtual void autenticar (const Login &login){};
+            virtual OpResult autenticar (const Login &login){};
     };
 #endif // INTER_AUTENTICACAO_HPP

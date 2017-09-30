@@ -20,6 +20,6 @@
              *  Cadastramento de um usuário na Base de Dados.
              *  @param usuario  Usuario candidato a cadastro
              */
-            virtual void cadastrar (const Usuario *usuario){};
+            virtual OpResult cadastrar (const Usuario &usuario){};
     };
 #endif // INTER_USUARIO_HPP
