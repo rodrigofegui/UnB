@@ -52,6 +52,12 @@ var files =
     [ "Livro_Tst.hpp", "_livro___tst_8hpp.html", [
       [ "LivroTst", "class_livro_tst.html", null ]
     ] ],
+    [ "Login.hpp", "_login_8hpp.html", [
+      [ "Login", "class_login.html", "class_login" ]
+    ] ],
+    [ "Login_Tst.hpp", "_login___tst_8hpp.html", [
+      [ "LoginTst", "class_login_tst.html", null ]
+    ] ],
     [ "Manipulacao.hpp", "_manipulacao_8hpp.html", "_manipulacao_8hpp" ],
     [ "Nome.hpp", "_nome_8hpp.html", [
       [ "Nome", "class_nome.html", "class_nome" ]

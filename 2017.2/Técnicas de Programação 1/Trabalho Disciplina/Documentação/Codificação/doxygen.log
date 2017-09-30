@@ -58,7 +58,7 @@ Possible candidates:
   static void TesteUnitario::capturarFalha(bool(*func)(string), string val1)
   static void TesteUnitario::capturarFalha(bool(*func)(string, string), string val1, string val2)
 
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Principal.cpp:16: warning: Member main() (function) of file Principal.cpp is not documented.
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Principal.cpp:16: warning: Member main() (function) of file Principal.cpp is not documented.
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterAut.hpp:24: warning: return type of member InterAut::autenticar is not documented
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterCtrl.hpp:21: warning: return type of member InterCtrl::executar is not documented
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterCtrl.hpp:26: warning: parameters of member InterCtrl::setServico are not (all) documented

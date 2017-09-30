@@ -773,7 +773,7 @@
 	"DominioBase.hpp"
 	<string.h>
 
-1504817905 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Entidade/Livro.cpp
+1506795194 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Entidade/Livro.cpp
 	"../../Bibliotecas/Entidade/Livro.hpp"
 
 1506427175 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Livro.hpp
@@ -886,10 +886,10 @@
 	"DominioBase_Tst.hpp"
 	"../../Bibliotecas/Dominio/Titulo.hpp"
 
-1506427321 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Entidade_Tst/Livro_Tst.cpp
+1506795725 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Entidade_Tst/Livro_Tst.cpp
 	"../../Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp"
 
-1506426185 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp
+1506795740 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp
 	"../TesteClasse.hpp"
 	"../../Bibliotecas/Entidade/Livro.hpp"
 
@@ -909,4 +909,46 @@
 
 1506426213 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/TesteClasse.cpp
 	"../Bibliotecas_Tst/TesteClasse.hpp"
+
+1506795163 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Entidade/Login.cpp
+	"../../Bibliotecas/Entidade/Login.hpp"
+
+1506796389 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Login.hpp
+	"../Dominio/Apelido.hpp"
+	"../Dominio/Senha.hpp"
+
+1506796998 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Entidade_Tst/Login_Tst.cpp
+	"../../Bibliotecas_Tst/Entidade_Tst/Login_Tst.hpp"
+
+1506795765 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Entidade_Tst/Login_Tst.hpp
+	"../TesteClasse.hpp"
+	"../../Bibliotecas/Entidade/Login.hpp"
+
+1506797162 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Principal.cpp
+	"../Bibliotecas_Tst/AtivaTeste.hpp"
+	"../Bibliotecas/Principal.hpp"
+
+1506796904 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/AtivaTeste.hpp
+	"../Bibliotecas/Utilidades/Manipulacao.hpp"
+	"TesteClasse.hpp"
+	"Dominio_Tst/Apelido_Tst.hpp"
+	"Dominio_Tst/Codigo_Tst.hpp"
+	"Dominio_Tst/Data_Tst.hpp"
+	"Dominio_Tst/GeneroLiterario_Tst.hpp"
+	"Dominio_Tst/Nome_Tst.hpp"
+	"Dominio_Tst/Senha_Tst.hpp"
+	"Dominio_Tst/Telefone_Tst.hpp"
+	"Dominio_Tst/Texto_Tst.hpp"
+	"Dominio_Tst/Titulo_Tst.hpp"
+	"Entidade_Tst/Livro_Tst.hpp"
+	"Entidade_Tst/Resenha_Tst.hpp"
+	"Entidade_Tst/Usuario_Tst.hpp"
+	"Entidade_Tst/Login_Tst.hpp"
+
+1506427274 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Principal.hpp
+	<stdlib.h>
+	<iostream>
+	<string>
+	"Bibliotecas/Utilidades/TesteUnitario.hpp"
+	"Bibliotecas/Dominio/Apelido.hpp"
 

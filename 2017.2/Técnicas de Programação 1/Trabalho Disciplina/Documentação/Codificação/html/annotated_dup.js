@@ -17,6 +17,8 @@ var annotated_dup =
     [ "InterUsu", "class_inter_usu.html", "class_inter_usu" ],
     [ "Livro", "class_livro.html", "class_livro" ],
     [ "LivroTst", "class_livro_tst.html", null ],
+    [ "Login", "class_login.html", "class_login" ],
+    [ "LoginTst", "class_login_tst.html", null ],
     [ "Manipulacao", "class_manipulacao.html", null ],
     [ "Nome", "class_nome.html", "class_nome" ],
     [ "NomeTst", "class_nome_tst.html", null ],

@@ -18,6 +18,7 @@ var hierarchy =
     ] ],
     [ "InterCtrl", "class_inter_ctrl.html", null ],
     [ "Livro", "class_livro.html", null ],
+    [ "Login", "class_login.html", null ],
     [ "Manipulacao", "class_manipulacao.html", null ],
     [ "Resenha", "class_resenha.html", null ],
     [ "TesteClasse", "class_teste_classe.html", [
@@ -33,6 +34,7 @@ var hierarchy =
         [ "TituloTst", "class_titulo_tst.html", null ]
       ] ],
       [ "LivroTst", "class_livro_tst.html", null ],
+      [ "LoginTst", "class_login_tst.html", null ],
       [ "ResenhaTst", "class_resenha_tst.html", null ],
       [ "UsuarioTst", "class_usuario_tst.html", null ]
     ] ],

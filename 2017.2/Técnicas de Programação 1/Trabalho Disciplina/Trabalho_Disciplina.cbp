@@ -44,6 +44,7 @@
 		<Unit filename="Codificação/Bibliotecas/Dominio/Texto.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Titulo.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Entidade/Livro.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Entidade/Login.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Entidade/Resenha.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Entidade/Usuario.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Interfaces/InterApresServ.hpp" />
@@ -65,6 +66,7 @@
 		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Texto_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Titulo_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp" />
+		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Login_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/TesteClasse.hpp" />
@@ -79,11 +81,9 @@
 		<Unit filename="Codificação/Fontes/Dominio/Texto.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Titulo.cpp" />
 		<Unit filename="Codificação/Fontes/Entidade/Livro.cpp" />
+		<Unit filename="Codificação/Fontes/Entidade/Login.cpp" />
 		<Unit filename="Codificação/Fontes/Entidade/Resenha.cpp" />
 		<Unit filename="Codificação/Fontes/Entidade/Usuario.cpp" />
-		<Unit filename="Codificação/Fontes/Interfaces/InterAut.cpp" />
-		<Unit filename="Codificação/Fontes/Interfaces/InterEst.cpp" />
-		<Unit filename="Codificação/Fontes/Interfaces/InterUsu.cpp" />
 		<Unit filename="Codificação/Fontes/Utilidades/Manipulacao.cpp" />
 		<Unit filename="Codificação/Fontes/Utilidades/TesteUnitario.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp" />
@@ -97,9 +97,12 @@
 		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Texto_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Titulo_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Livro_Tst.cpp" />
+		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Login_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Usuario_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/TesteClasse.cpp" />
+		<Unit filename="Principal.cpp" />
+		<Unit filename="Principal.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
