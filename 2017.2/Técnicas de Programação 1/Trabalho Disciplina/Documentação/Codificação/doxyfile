@@ -99,13 +99,13 @@ INPUT                  = \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/DominioBase_Tst.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp" \
+	"../../Codificação/Bibliotecas/Interfaces/InterFunc.hpp" \
 	"../../Codificação/Fontes/Dominio/Nome.cpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Telefone_Tst.cpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/GeneroLiterario_Tst.hpp" \
 	"../../Codificação/Fontes_Tst/Entidade_Tst/Usuario_Tst.cpp" \
 	"../../Codificação/Bibliotecas/Principal.hpp" \
-	"../../Codificação/Bibliotecas/Interfaces/InterCtrl.hpp" \
 	"../../Codificação/Bibliotecas/Entidade/Login.hpp" \
 	"../../Codificação/Bibliotecas/Dominio/Titulo.hpp" \
 	"../../Codificação/Fontes/Entidade/Livro.cpp" \
@@ -125,6 +125,7 @@ INPUT                  = \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Titulo_Tst.cpp" \
 	"../../Codificação/Bibliotecas/Dominio/Apelido.hpp" \
 	"../../Codificação/Fontes/Utilidades/TesteUnitario.cpp" \
+	"../../Codificação/Bibliotecas/Interfaces/InterCntrl.hpp" \
 	"../../Codificação/Fontes/Dominio/Codigo.cpp" \
 	"../../Codificação/Bibliotecas/Dominio/DominioBase.hpp" \
 	"../../Codificação/Fontes_Tst/TesteClasse.cpp" \
@@ -139,9 +140,11 @@ INPUT                  = \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Texto_Tst.hpp" \
 	"../../Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp" \
+	"../../Codificação/Fontes/Apresentacao/AControle.cpp" \
 	"../../Codificação/Bibliotecas_Tst/TesteClasse.hpp" \
 	"../../Codificação/Fontes/Dominio/Telefone.cpp" \
 	"../../Codificação/Fontes/Entidade/Resenha.cpp" \
+	"../../Codificação/Bibliotecas/Apresentacao/AControle.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Login_Tst.hpp" \
 	"../../Codificação/Bibliotecas/Entidade/Resenha.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Nome_Tst.hpp" \
@@ -151,12 +154,14 @@ INPUT                  = \
 	"../../Codificação/Bibliotecas_Tst/AtivaTeste.hpp" \
 	"../../Codificação/Bibliotecas/Entidade/Livro.hpp" \
 	"../../Codificação/Fontes/Principal.cpp" \
+	"../../Codificação/Fontes/Servico/SControle.cpp" \
 	"../../Codificação/Fontes/Dominio/GeneroLiterario.cpp" \
 	"../../Codificação/Fontes/Dominio/Apelido.cpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/DominioBase_Tst.cpp" \
 	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp" \
 	"../../Codificação/Bibliotecas/Dominio/GeneroLiterario.hpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Senha_Tst.cpp" \
+	"../../Codificação/Bibliotecas/Servico/SControle.hpp" \
 	"../../Codificação/Bibliotecas/Interfaces/InterUsu.hpp" \
 	"../../Codificação/Fontes_Tst/Entidade_Tst/Login_Tst.cpp" \
 	"../../Codificação/Fontes/Entidade/Login.cpp" \

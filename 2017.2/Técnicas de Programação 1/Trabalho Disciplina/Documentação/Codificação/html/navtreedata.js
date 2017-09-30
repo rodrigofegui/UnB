@@ -24,7 +24,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_apelido_8hpp.html"
+"_a_controle_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

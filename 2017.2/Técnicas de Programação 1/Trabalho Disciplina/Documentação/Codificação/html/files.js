@@ -1,5 +1,6 @@
 var files =
 [
+    [ "AControle.hpp", "_a_controle_8hpp_source.html", null ],
     [ "Apelido.hpp", "_apelido_8hpp.html", [
       [ "Apelido", "class_apelido.html", "class_apelido" ]
     ] ],
@@ -37,11 +38,14 @@ var files =
     [ "InterAut.hpp", "_inter_aut_8hpp.html", [
       [ "InterAut", "class_inter_aut.html", "class_inter_aut" ]
     ] ],
-    [ "InterCtrl.hpp", "_inter_ctrl_8hpp.html", [
-      [ "InterCtrl", "class_inter_ctrl.html", "class_inter_ctrl" ]
+    [ "InterCntrl.hpp", "_inter_cntrl_8hpp.html", [
+      [ "InterCntrl", "class_inter_cntrl.html", "class_inter_cntrl" ]
     ] ],
     [ "InterEst.hpp", "_inter_est_8hpp.html", [
       [ "InterEst", "class_inter_est.html", "class_inter_est" ]
+    ] ],
+    [ "InterFunc.hpp", "_inter_func_8hpp.html", [
+      [ "InterFunc", "class_inter_func.html", "class_inter_func" ]
     ] ],
     [ "InterUsu.hpp", "_inter_usu_8hpp.html", [
       [ "InterUsu", "class_inter_usu.html", "class_inter_usu" ]
@@ -73,6 +77,7 @@ var files =
     [ "Resenha_Tst.hpp", "_resenha___tst_8hpp.html", [
       [ "ResenhaTst", "class_resenha_tst.html", null ]
     ] ],
+    [ "SControle.hpp", "_s_controle_8hpp_source.html", null ],
     [ "Senha.hpp", "_senha_8hpp.html", [
       [ "Senha", "class_senha.html", "class_senha" ]
     ] ],

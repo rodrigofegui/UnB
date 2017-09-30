@@ -16,7 +16,8 @@ var hierarchy =
       [ "InterEst", "class_inter_est.html", null ],
       [ "InterUsu", "class_inter_usu.html", null ]
     ] ],
-    [ "InterCtrl", "class_inter_ctrl.html", null ],
+    [ "InterCntrl", "class_inter_cntrl.html", null ],
+    [ "InterFunc", "class_inter_func.html", null ],
     [ "Livro", "class_livro.html", null ],
     [ "Login", "class_login.html", null ],
     [ "Manipulacao", "class_manipulacao.html", null ],

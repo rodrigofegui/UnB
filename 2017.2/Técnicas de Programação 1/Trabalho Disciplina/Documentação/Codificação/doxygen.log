@@ -60,14 +60,15 @@ Possible candidates:
 
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Principal.cpp:16: warning: Member main() (function) of file Principal.cpp is not documented.
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterAut.hpp:24: warning: return type of member InterAut::autenticar is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterCtrl.hpp:21: warning: return type of member InterCtrl::executar is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterCtrl.hpp:26: warning: parameters of member InterCtrl::setServico are not (all) documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterCtrl.hpp:26: warning: return type of member InterCtrl::setServico is not documented
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterCntrl.hpp:23: warning: return type of member InterCntrl::construir is not documented
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterEst.hpp:22: warning: return type of member InterEst::consultar is not documented
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterEst.hpp:28: warning: return type of member InterEst::consultar is not documented
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterEst.hpp:35: warning: return type of member InterEst::criarResenha is not documented
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterEst.hpp:41: warning: return type of member InterEst::incluir is not documented
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterEst.hpp:47: warning: return type of member InterEst::remover is not documented
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterFunc.hpp:21: warning: return type of member InterFunc::executar is not documented
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterFunc.hpp:26: warning: parameters of member InterFunc::setServico are not (all) documented
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterFunc.hpp:26: warning: return type of member InterFunc::setServico is not documented
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterUsu.hpp:23: warning: return type of member InterUsu::cadastrar is not documented
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Livro.hpp:35: warning: argument 'data' of command @param is not found in the argument list of Livro::Livro(const Data &dataPublicacao)
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Livro.hpp:39: warning: The following parameters of Livro::Livro(const Data &dataPublicacao) are not documented:
