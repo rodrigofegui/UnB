@@ -5,6 +5,9 @@
      *  @file   InterCntrl.hpp
      *  @author Rodrigo F. Guimarães
      */
+    #include "../Dominio/OpResult.hpp"
+    #include "../Dominio/Versao.hpp"
+    #include <stdio.h>
 
     /**
      *  @class InterCntrl
@@ -27,13 +30,13 @@
              *  Log.
              *  @param msg Mensagem a ser escrita no arquivo
              */
-            virtual static void escritaLog (const string &msg){};
+            virtual void escritaLog (const string &msg){};
 
             /**
              *  Recuperar o valor atribuído ao arquivo de Log
              *  @return Arquivo de Log manipulado
              */
-            virtual static (*FILE) getArqLog () const;
+            virtual FILE getArqLog () const;
 
             /**
              *  Atribuição do arquivo de Log, respeitando sua
@@ -41,6 +44,6 @@
              *  @param arqLog Arquivo de Log a ser manipulado
              *  na aplicação
              */
-            virtual static void setArqLog (const FILE *arqLog){};
+            virtual void setArqLog (const FILE *arqLog){};
     };
 #endif // INTER_CONTROLE_HPP

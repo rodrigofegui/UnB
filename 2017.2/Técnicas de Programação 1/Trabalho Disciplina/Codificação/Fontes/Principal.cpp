@@ -14,9 +14,16 @@
 using namespace std;
 
 int main(){
+    /*
     #ifdef TESTE
         fullTeste ();
     #endif // TESTE
+    //*/
+    //*
+    AControle aplicacao;
+
+    aplicacao.executar();
+    //*/
 
     cout << endl << "A execucao da aplicação finalizou!" << endl;
     cout << "Volte sempre!" << endl;

@@ -8,20 +8,8 @@
      *  bibliotecas importantes e necessárias para
      *  o desenvolvimento desejável da aplicação
      */
-
-    /**
-     *  @brief  Inclusão das bibliotecas necessárias para
-     *  a aplicação
-     */
     #include <stdlib.h>
     #include <iostream>
     #include <string>
-
-    /**
-     *  @brief  Classes dos domínios de dados a serem
-     *  manipulados na aplicação
-     *
-    #include "Bibliotecas/Utilidades/TesteUnitario.hpp"
-    #include "Bibliotecas/Dominio/Apelido.hpp"
-    */
+    #include "Apresentacao/AControle.hpp"
 #endif // PRINCIPAL
