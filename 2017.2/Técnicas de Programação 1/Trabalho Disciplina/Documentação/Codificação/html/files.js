@@ -1,6 +1,8 @@
 var files =
 [
-    [ "AControle.hpp", "_a_controle_8hpp_source.html", null ],
+    [ "AControle.hpp", "_a_controle_8hpp.html", [
+      [ "AControle", "class_a_controle.html", "class_a_controle" ]
+    ] ],
     [ "Apelido.hpp", "_apelido_8hpp.html", [
       [ "Apelido", "class_apelido.html", "class_apelido" ]
     ] ],
@@ -69,6 +71,9 @@ var files =
     [ "Nome_Tst.hpp", "_nome___tst_8hpp.html", [
       [ "NomeTst", "class_nome_tst.html", null ]
     ] ],
+    [ "OpResult.hpp", "_op_result_8hpp.html", [
+      [ "OpResult", "class_op_result.html", "class_op_result" ]
+    ] ],
     [ "Principal.cpp", "_principal_8cpp.html", "_principal_8cpp" ],
     [ "Principal.hpp", "_principal_8hpp.html", null ],
     [ "Resenha.hpp", "_resenha_8hpp.html", [
@@ -113,5 +118,11 @@ var files =
     ] ],
     [ "Usuario_Tst.hpp", "_usuario___tst_8hpp.html", [
       [ "UsuarioTst", "class_usuario_tst.html", null ]
+    ] ],
+    [ "Versao.hpp", "_versao_8hpp.html", [
+      [ "Versao", "class_versao.html", "class_versao" ]
+    ] ],
+    [ "Versao_Tst.hpp", "_versao___tst_8hpp.html", [
+      [ "VersaoTst", "class_versao_tst.html", null ]
     ] ]
 ];

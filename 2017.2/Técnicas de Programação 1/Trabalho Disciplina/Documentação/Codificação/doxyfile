@@ -96,10 +96,12 @@ WARN_LOGFILE            = "/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Prog
 # configuration options related to the input files
 #---------------------------------------------------------------------------
 INPUT                  = \
+	"../../Codificação/Fontes_Tst/Dominio_Tst/Versao_Tst.cpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/DominioBase_Tst.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp" \
 	"../../Codificação/Bibliotecas/Interfaces/InterFunc.hpp" \
+	"../../Codificação/Fontes/Dominio/OpResult.cpp" \
 	"../../Codificação/Fontes/Dominio/Nome.cpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Telefone_Tst.cpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp" \
@@ -110,6 +112,7 @@ INPUT                  = \
 	"../../Codificação/Bibliotecas/Dominio/Titulo.hpp" \
 	"../../Codificação/Fontes/Entidade/Livro.cpp" \
 	"../../Codificação/Fontes/Utilidades/Manipulacao.cpp" \
+	"../../Codificação/Bibliotecas/Dominio/OpResult.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/GeneroLiterario_Tst.cpp" \
 	"../../Codificação/Fontes_Tst/Entidade_Tst/Livro_Tst.cpp" \
@@ -120,6 +123,7 @@ INPUT                  = \
 	"../../Codificação/Bibliotecas/Utilidades/TesteUnitario.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Telefone_Tst.hpp" \
 	"../../Codificação/Bibliotecas/Utilidades/Manipulacao.hpp" \
+	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Versao_Tst.hpp" \
 	"../../Codificação/Fontes/Dominio/Titulo.cpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Nome_Tst.cpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Titulo_Tst.cpp" \
@@ -168,8 +172,10 @@ INPUT                  = \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Titulo_Tst.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Data_Tst.hpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Data_Tst.cpp" \
+	"../../Codificação/Bibliotecas/Dominio/Versao.hpp" \
 	"../../Codificação/Fontes/Dominio/Texto.cpp" \
 	"../../Codificação/Bibliotecas/Dominio/Texto.hpp" \
+	"../../Codificação/Fontes/Dominio/Versao.cpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Texto_Tst.cpp" 
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          =

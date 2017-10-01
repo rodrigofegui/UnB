@@ -1,15 +1,18 @@
 var hierarchy =
 [
+    [ "AControle", "class_a_controle.html", null ],
     [ "DominioBase", "class_dominio_base.html", [
       [ "Apelido", "class_apelido.html", null ],
       [ "Codigo", "class_codigo.html", null ],
       [ "Data", "class_data.html", null ],
       [ "GeneroLiterario", "class_genero_literario.html", null ],
       [ "Nome", "class_nome.html", null ],
+      [ "OpResult", "class_op_result.html", null ],
       [ "Senha", "class_senha.html", null ],
       [ "Telefone", "class_telefone.html", null ],
       [ "Texto", "class_texto.html", null ],
-      [ "Titulo", "class_titulo.html", null ]
+      [ "Titulo", "class_titulo.html", null ],
+      [ "Versao", "class_versao.html", null ]
     ] ],
     [ "InterApresServ", "class_inter_apres_serv.html", [
       [ "InterAut", "class_inter_aut.html", null ],
@@ -32,7 +35,8 @@ var hierarchy =
         [ "SenhaTst", "class_senha_tst.html", null ],
         [ "TelefoneTst", "class_telefone_tst.html", null ],
         [ "TextoTst", "class_texto_tst.html", null ],
-        [ "TituloTst", "class_titulo_tst.html", null ]
+        [ "TituloTst", "class_titulo_tst.html", null ],
+        [ "VersaoTst", "class_versao_tst.html", null ]
       ] ],
       [ "LivroTst", "class_livro_tst.html", null ],
       [ "LoginTst", "class_login_tst.html", null ],
