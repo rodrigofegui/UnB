@@ -20,7 +20,6 @@
     #include "Dominio_Tst/Telefone_Tst.hpp"
     #include "Dominio_Tst/Texto_Tst.hpp"
     #include "Dominio_Tst/Titulo_Tst.hpp"
-    #include "Dominio_Tst/Versao_Tst.hpp"
     /*  Entidades */
     #include "Entidade_Tst/Livro_Tst.hpp"
     #include "Entidade_Tst/Resenha_Tst.hpp"
@@ -65,9 +64,6 @@
         sobTeste->executar();
 
         sobTeste = new TituloTst ();
-        sobTeste->executar();
-
-        sobTeste = new VersaoTst ();
         sobTeste->executar();
     }
 
