@@ -103,3 +103,37 @@ bool Manipulacao::haRepeticao(string src){
 
     return TesteUnitario::FALHOU;
 }
+
+int Manipulacao::aguardarResp (int maximo){
+    int resp = 0;
+
+    cout << "Digite a sua escolha:" << endl;
+
+    do{
+        cin >> resp;
+
+        if (resp > maximo){
+            cout << "Fora do intervalo desejável!" << endl;
+            cout << "Digite novamente:" << endl;
+        }
+
+    }while (resp > maximo);
+}
+
+void Manipulacao::limparTela(){
+    #ifdef LINUX
+        printf ("\e[H\e[2J");
+    #elif defined WIN32
+        system ("cls");
+    #else
+        printf ("\e[H\e[2J");
+    #endif
+
+    return;
+}
+
+void Manipulacao::pausar(){
+    cout << endl << "Pressione ENTER para continuar." << endl;
+    getchar ();
+    getchar ();
+}

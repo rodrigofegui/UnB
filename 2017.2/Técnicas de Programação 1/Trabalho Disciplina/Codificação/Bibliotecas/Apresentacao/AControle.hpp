@@ -5,9 +5,7 @@
      *  @file   AControle.hpp
      *  @author Rodrigo F. Guimarães
      */
-    #include "../Interfaces/InterCntrl.hpp"
     #include "../Interfaces/InterFunc.hpp"
-    #include "../Dominio/Versao.hpp"
 
     /**
      *  @class AControle
@@ -22,10 +20,18 @@
              *      - Estante
              */
             InterFunc *funcAut, *funcUsu, *funcEst;
-            InterCntrl *servCntrl;
+
+            /*  Construção da camada de Serviço */
+            OpResult construir ();
+
+            void aplicacao ();
 
             /*  Apresentação da tela inicial */
             OpResult apresentarTUI();
+
+            /*  Avaliação do resultado da escolha do usuário para
+             *  a tela inicial */
+            void avaliar (const OpResult &resultado);
 
             /*  Passagem de controle para a função de Autenticação */
             OpResult autenticar ();
@@ -40,12 +46,7 @@
             void finalizar ();
 
         public:
-            /**
-             *  Execução da aplicação, com controle de versão
-             */
-            void executar (const Versao &versao);
-
-            /**
+           /**
              *  Execução da aplicação, com a versão mais recente
              */
             void executar ();

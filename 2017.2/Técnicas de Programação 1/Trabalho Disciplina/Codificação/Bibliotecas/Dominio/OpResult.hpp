@@ -33,6 +33,8 @@
             const static string SUCESSO;
             /** Avaliação de Falha na Operação */
             const static string FALHA;
+            /** Sair da execução atual */
+            const static string SAIR;
             /** Avaliação para execução da funcionalidade de Autenticar */
             const static string EXE_AUTENTICAR;
             /** Avaliação para execução da funcionalidade de Usuário */

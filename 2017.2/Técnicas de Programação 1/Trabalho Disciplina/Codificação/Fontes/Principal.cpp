@@ -19,6 +19,7 @@ int main(){
         fullTeste ();
     #endif // TESTE
     //*/
+
     //*
     AControle aplicacao;
 

@@ -25,6 +25,7 @@
              *  Constantes de restrição
              */
             const static vector<string> VER_CADASTRADAS;
+            const static string VER_LATEST;
 
             /**
              *  Construtor padrão

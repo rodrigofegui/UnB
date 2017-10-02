@@ -3,6 +3,7 @@
 const string Versao::msgErro ("Versão não registrada!");
 
 const vector<string> Versao::VER_CADASTRADAS ({"1.0", "Latest"});
+const string Versao::LATEST ("Latest");
 
 void Versao::deletar() {delete this;}
 

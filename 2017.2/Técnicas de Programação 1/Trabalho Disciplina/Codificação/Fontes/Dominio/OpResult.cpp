@@ -11,4 +11,5 @@ const string OpResult::FALHA            ("Operação falhou.");
 const string OpResult::EXE_AUTENTICAR   ("Executar a função de Autenticar.");
 const string OpResult::EXE_USUARIO      ("Executar a função de Usuario.");
 const string OpResult::EXE_ESTANTE      ("Executar a função da Estante.");
+const string OpResult::SAIR             ("Sair da execução atual.");
 

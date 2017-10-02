@@ -36,7 +36,7 @@
              *  Recuperar o valor atribuído ao arquivo de Log
              *  @return Arquivo de Log manipulado
              */
-            virtual FILE getArqLog () const;
+            virtual FILE getArqLog () const {};
 
             /**
              *  Atribuição do arquivo de Log, respeitando sua

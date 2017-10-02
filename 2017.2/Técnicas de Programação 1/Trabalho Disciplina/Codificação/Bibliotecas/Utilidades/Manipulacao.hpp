@@ -143,6 +143,21 @@
              *  @return PASSOU ou FALHOU
              */
             static bool haRepeticao (string src);
+
+            /**
+             *  Aguardar a entrada de um inteiro válido,
+             *  dado um limite superior
+             *  @param maximo Limite superior para o intervalo
+             *  @return Valor válido de leitura
+             */
+            static int aguardarResp (int maximo);
+
+            /**
+             *  Limpar a tela do terminal de execução
+             */
+            static void limparTela ();
+
+            static void pausar();
     };
 
 #endif // MANIPULACAO_HPP

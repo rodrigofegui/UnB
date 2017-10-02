@@ -6,6 +6,7 @@
      *  @author Rodrigo F. Guimarães
      */
     #include "InterApresServ.hpp"
+    #include "../Dominio/OpResult.hpp"
 
     /**
      *  @class InterFunc
@@ -24,5 +25,7 @@
              *  Configuração de uma funcionalidade da aplicação
              */
             virtual OpResult setServico (const InterApresServ *servico){};
+
+            void deletar(){delete this;}
     };
 #endif // INTERIM_CONTROLE_HPP
