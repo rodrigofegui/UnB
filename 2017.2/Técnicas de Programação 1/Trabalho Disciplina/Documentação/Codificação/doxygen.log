@@ -86,6 +86,8 @@ Possible candidates:
   parameter 'titulo'
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Utilidades/Manipulacao.hpp:160: warning: Member pausar() (function) of class Manipulacao is not documented.
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Utilidades/TesteUnitario.hpp:68: warning: Member condicao (enumeration) of class TesteUnitario is not documented.
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/TUI.hpp:25: warning: argument 'Escolha' of command @param is not found in the argument list of TUI::direcionar(const Resultado &)=0
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/TUI.hpp:46: warning: argument 'Direcionamento' of command @param is not found in the argument list of TUI::tratarErro()=0
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Usuario.hpp:82: warning: argument 'nnome' of command @param is not found in the argument list of Usuario::setNome(const Nome &nome)
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Usuario.hpp:85: warning: The following parameters of Usuario::setNome(const Nome &nome) are not documented:
   parameter 'nome'

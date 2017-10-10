@@ -5,5 +5,7 @@ var searchData=
   ['resenha_2ehpp',['Resenha.hpp',['../_resenha_8hpp.html',1,'']]],
   ['resenha_5ftst_2ehpp',['Resenha_Tst.hpp',['../_resenha___tst_8hpp.html',1,'']]],
   ['resenhatst',['ResenhaTst',['../class_resenha_tst.html',1,'']]],
+  ['resultado',['Resultado',['../class_resultado.html',1,'']]],
+  ['resultado_2ehpp',['Resultado.hpp',['../_resultado_8hpp.html',1,'']]],
   ['retorno',['retorno',['../class_teste_unitario.html#ae89b4c72005527440433bcb42deaace6',1,'TesteUnitario']]]
 ];

@@ -123,10 +123,12 @@ INPUT                  = \
 	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/DominioBase_Tst.cpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Data_Tst.cpp" \
+	"../../Codificação/Fontes/Apresentacao/TUI.cpp" \
 	"../../Codificação/Bibliotecas/Interfaces/InterSEst.hpp" \
 	"../../Codificação/Fontes/Dominio/Titulo.cpp" \
 	"../../Codificação/Bibliotecas/Dominio/Titulo.hpp" \
 	"../../Codificação/Fontes_Tst/TesteClasse.cpp" \
+	"../../Codificação/Fontes/Dominio/Resultado.cpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Nome_Tst.hpp" \
 	"../../Codificação/Bibliotecas/Principal.hpp" \
 	"../../Codificação/Fontes/Dominio/Telefone.cpp" \
@@ -161,7 +163,9 @@ INPUT                  = \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Telefone_Tst.cpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp" \
 	"../../Codificação/Fontes/Dominio/GeneroLiterario.cpp" \
+	"../../Codificação/Bibliotecas/Dominio/Resultado.hpp" \
 	"../../Codificação/Bibliotecas/Entidade/Livro.hpp" \
+	"../../Codificação/Bibliotecas/Apresentacao/TUI.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp" \
 	"../../Codificação/Fontes/Entidade/Usuario.cpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Codigo_Tst.cpp" \

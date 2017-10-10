@@ -1040,3 +1040,14 @@
 	<fstream>
 	"DominioBase.hpp"
 
+1507668942 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/TUI.cpp
+	"../../Bibliotecas/Apresentacao/TUI.hpp"
+
+1507668942 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/TUI.hpp
+	"../Dominio/Resultado.hpp"
+
+1507669080 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Dominio/Resultado.hpp
+	"DominioBase.hpp"
+
+1507668674 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Dominio/Resultado.cpp
+

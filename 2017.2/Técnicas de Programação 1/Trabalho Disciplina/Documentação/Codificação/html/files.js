@@ -71,6 +71,9 @@ var files =
     [ "Resenha_Tst.hpp", "_resenha___tst_8hpp.html", [
       [ "ResenhaTst", "class_resenha_tst.html", null ]
     ] ],
+    [ "Resultado.hpp", "_resultado_8hpp.html", [
+      [ "Resultado", "class_resultado.html", null ]
+    ] ],
     [ "Senha.hpp", "_senha_8hpp.html", [
       [ "Senha", "class_senha.html", "class_senha" ]
     ] ],
@@ -100,6 +103,9 @@ var files =
     ] ],
     [ "Titulo_Tst.hpp", "_titulo___tst_8hpp.html", [
       [ "TituloTst", "class_titulo_tst.html", null ]
+    ] ],
+    [ "TUI.hpp", "_t_u_i_8hpp.html", [
+      [ "TUI", "class_t_u_i.html", "class_t_u_i" ]
     ] ],
     [ "Usuario.hpp", "_usuario_8hpp.html", [
       [ "Usuario", "class_usuario.html", "class_usuario" ]

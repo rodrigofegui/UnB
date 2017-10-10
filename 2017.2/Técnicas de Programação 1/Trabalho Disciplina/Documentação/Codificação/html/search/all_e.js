@@ -16,5 +16,8 @@ var searchData=
   ['titulo',['Titulo',['../class_titulo.html',1,'Titulo'],['../class_titulo.html#ae217999bc748d8c81fa4f9fb97ef3908',1,'Titulo::Titulo()'],['../class_titulo.html#ab6529055261c1874cef4ab105743f1dd',1,'Titulo::Titulo(const string &amp;campo)']]],
   ['titulo_2ehpp',['Titulo.hpp',['../_titulo_8hpp.html',1,'']]],
   ['titulo_5ftst_2ehpp',['Titulo_Tst.hpp',['../_titulo___tst_8hpp.html',1,'']]],
-  ['titulotst',['TituloTst',['../class_titulo_tst.html',1,'']]]
+  ['titulotst',['TituloTst',['../class_titulo_tst.html',1,'']]],
+  ['tratarerro',['tratarErro',['../class_t_u_i.html#af8cd14b2f8c2bc0981244ae1906a089e',1,'TUI']]],
+  ['tui',['TUI',['../class_t_u_i.html',1,'']]],
+  ['tui_2ehpp',['TUI.hpp',['../_t_u_i_8hpp.html',1,'']]]
 ];

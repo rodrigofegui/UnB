@@ -6,6 +6,7 @@ var hierarchy =
       [ "Data", "class_data.html", null ],
       [ "GeneroLiterario", "class_genero_literario.html", null ],
       [ "Nome", "class_nome.html", null ],
+      [ "Resultado", "class_resultado.html", null ],
       [ "Senha", "class_senha.html", null ],
       [ "Telefone", "class_telefone.html", null ],
       [ "Texto", "class_texto.html", null ],
@@ -39,5 +40,6 @@ var hierarchy =
       [ "UsuarioTst", "class_usuario_tst.html", null ]
     ] ],
     [ "TesteUnitario", "class_teste_unitario.html", null ],
+    [ "TUI", "class_t_u_i.html", null ],
     [ "Usuario", "class_usuario.html", null ]
 ];
