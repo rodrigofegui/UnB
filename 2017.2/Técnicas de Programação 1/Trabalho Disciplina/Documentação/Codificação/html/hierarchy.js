@@ -1,33 +1,21 @@
 var hierarchy =
 [
-    [ "AControle", "class_a_controle.html", null ],
-    [ "ApresTUI", "class_apres_t_u_i.html", null ],
     [ "DominioBase", "class_dominio_base.html", [
       [ "Apelido", "class_apelido.html", null ],
       [ "Codigo", "class_codigo.html", null ],
       [ "Data", "class_data.html", null ],
       [ "GeneroLiterario", "class_genero_literario.html", null ],
       [ "Nome", "class_nome.html", null ],
-      [ "OpResult", "class_op_result.html", null ],
       [ "Senha", "class_senha.html", null ],
       [ "Telefone", "class_telefone.html", null ],
       [ "Texto", "class_texto.html", null ],
       [ "Titulo", "class_titulo.html", null ]
     ] ],
-    [ "InterApresServ", "class_inter_apres_serv.html", [
-      [ "InterAut", "class_inter_aut.html", [
-        [ "SAutenticacaoTst", "class_s_autenticacao_tst.html", null ]
-      ] ],
-      [ "InterEst", "class_inter_est.html", null ],
-      [ "InterUsu", "class_inter_usu.html", null ]
-    ] ],
-    [ "InterCntrl", "class_inter_cntrl.html", [
-      [ "SControle", "class_s_controle.html", null ]
-    ] ],
-    [ "InterFunc", "class_inter_func.html", [
-      [ "ApreTUI", "class_apre_t_u_i.html", [
-        [ "AAutenticacao", "class_a_autenticacao.html", null ]
-      ] ]
+    [ "InterFunc", "class_inter_func.html", null ],
+    [ "InterServ", "class_inter_serv.html", [
+      [ "InterSAut", "class_inter_s_aut.html", null ],
+      [ "InterSEst", "class_inter_s_est.html", null ],
+      [ "InterSUsu", "class_inter_s_usu.html", null ]
     ] ],
     [ "Livro", "class_livro.html", null ],
     [ "Login", "class_login.html", null ],

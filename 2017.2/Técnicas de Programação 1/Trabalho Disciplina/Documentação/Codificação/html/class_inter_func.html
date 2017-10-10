@@ -81,37 +81,28 @@ $(document).ready(function(){initNavTree('class_inter_func.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Membros públicos</a> &#124;
-<a href="#pro-attribs">Atributos Protegidos</a> &#124;
 <a href="class_inter_func-members.html">Mostrar lista completa dos membros</a>  </div>
   <div class="headertitle">
-<div class="title">Referência à classe InterFunc</div>  </div>
+<div class="title">Referência à classe InterFunc<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_inter_func_8hpp_source.html">InterFunc.hpp</a>&gt;</code></p>
-
-<p>Herdado por <a class="el" href="class_apre_t_u_i.html">ApreTUI</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Membros públicos</h2></td></tr>
-<tr class="memitem:a239ab4d6e7a190e1947aad8fce813e56"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_op_result.html">OpResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_func.html#a239ab4d6e7a190e1947aad8fce813e56">executar</a> ()</td></tr>
-<tr class="separator:a239ab4d6e7a190e1947aad8fce813e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0e9d3cded7d863533a796e44b0c18f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_op_result.html">OpResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_func.html#aa0e9d3cded7d863533a796e44b0c18f9">setServico</a> (<a class="el" href="class_inter_apres_serv.html">InterApresServ</a> *<a class="el" href="class_inter_func.html#a7ce849fc0f04c2601f3aa980aa99cc1d">servico</a>)</td></tr>
-<tr class="separator:aa0e9d3cded7d863533a796e44b0c18f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a316eb9b4be669091ef095d7cc713fb29"><td class="memItemLeft" align="right" valign="top"><a id="a316eb9b4be669091ef095d7cc713fb29"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deletar</b> ()</td></tr>
-<tr class="separator:a316eb9b4be669091ef095d7cc713fb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Atributos Protegidos</h2></td></tr>
-<tr class="memitem:a7ce849fc0f04c2601f3aa980aa99cc1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_inter_apres_serv.html">InterApresServ</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_func.html#a7ce849fc0f04c2601f3aa980aa99cc1d">servico</a></td></tr>
-<tr class="separator:a7ce849fc0f04c2601f3aa980aa99cc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c9d301ad32843410b838bdd6387836"><td class="memItemLeft" align="right" valign="top">virtual Resultado&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_func.html#a57c9d301ad32843410b838bdd6387836">executar</a> ()=0</td></tr>
+<tr class="separator:a57c9d301ad32843410b838bdd6387836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9307e3d44e4e3e6a785f68c9792ea6dd"><td class="memItemLeft" align="right" valign="top">virtual Resultado&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_func.html#a9307e3d44e4e3e6a785f68c9792ea6dd">executar</a> (const Resultado &amp;)=0</td></tr>
+<tr class="separator:a9307e3d44e4e3e6a785f68c9792ea6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a8d45bcb168d3e30a007f8d03cd951"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_func.html#ac4a8d45bcb168d3e30a007f8d03cd951">setServico</a> (<a class="el" href="class_inter_serv.html">InterServ</a> *)=0</td></tr>
+<tr class="separator:ac4a8d45bcb168d3e30a007f8d03cd951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<div class="textblock"><p>Protocolo padrão para o desenvolvimento de funcionalidades presentes na aplicação. </p>
+<div class="textblock"><p>Protocolo de realização das funções básicas da aplicação. </p>
 </div><h2 class="groupheader">Documentação dos métodos</h2>
-<a id="a239ab4d6e7a190e1947aad8fce813e56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a239ab4d6e7a190e1947aad8fce813e56">&#9670;&nbsp;</a></span>executar()</h2>
+<a id="a57c9d301ad32843410b838bdd6387836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c9d301ad32843410b838bdd6387836">&#9670;&nbsp;</a></span>executar() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -120,7 +111,7 @@ Atributos Protegidos</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_op_result.html">OpResult</a> InterFunc::executar </td>
+          <td class="memname">virtual Resultado InterFunc::executar </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -128,18 +119,16 @@ Atributos Protegidos</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Execução das atividades de um dado Módulo da aplicação. </p>
-
-<p>Reimplementado em <a class="el" href="class_apre_t_u_i.html#ad9bc754b205b5654fd12e8ac55ddfdf4">ApreTUI</a>.</p>
+<p>Realização da funcionalidade, garantindo a integridade. </p><dl class="section return"><dt>Retorna</dt><dd>Resultado da execução </dd></dl>
 
 </div>
 </div>
-<a id="aa0e9d3cded7d863533a796e44b0c18f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0e9d3cded7d863533a796e44b0c18f9">&#9670;&nbsp;</a></span>setServico()</h2>
+<a id="a9307e3d44e4e3e6a785f68c9792ea6dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9307e3d44e4e3e6a785f68c9792ea6dd">&#9670;&nbsp;</a></span>executar() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,26 +137,31 @@ Atributos Protegidos</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_op_result.html">OpResult</a> InterFunc::setServico </td>
+          <td class="memname">virtual Resultado InterFunc::executar </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_inter_apres_serv.html">InterApresServ</a> *&#160;</td>
-          <td class="paramname"><em>servico</em></td><td>)</td>
+          <td class="paramtype">const Resultado &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Configuração de uma funcionalidade da aplicação </p>
+<p>Realização da funcionalidade, com dependência sobre execuções passadas e garantindo a integridade </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Dados</td><td>úteis para a execução </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Resultado da execução. </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Documentação dos dados membro</h2>
-<a id="a7ce849fc0f04c2601f3aa980aa99cc1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ce849fc0f04c2601f3aa980aa99cc1d">&#9670;&nbsp;</a></span>servico</h2>
+<a id="ac4a8d45bcb168d3e30a007f8d03cd951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a8d45bcb168d3e30a007f8d03cd951">&#9670;&nbsp;</a></span>setServico()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,16 +170,25 @@ Atributos Protegidos</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_inter_apres_serv.html">InterApresServ</a>* InterFunc::servico</td>
+          <td class="memname">virtual void InterFunc::setServico </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inter_serv.html">InterServ</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Serviço a ser configurado </p>
+<p>Atribuição da Camada de Serviço que a aplicação irá funcionar, para a dada funcionalidade. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Camada</td><td>de serviço a ser considerada </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -198,7 +201,7 @@ Atributos Protegidos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_inter_func.html">InterFunc</a></li>
-    <li class="footer">Gerado em Terça, 10 de Outubro de 2017 08:45:58 para Trabalho_Disciplina por
+    <li class="footer">Gerado em Terça, 10 de Outubro de 2017 17:30:05 para Trabalho_Disciplina por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

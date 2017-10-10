@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['opresult_2ehpp',['OpResult.hpp',['../_op_result_8hpp.html',1,'']]]
+  ['principal_2ecpp',['Principal.cpp',['../_principal_8cpp.html',1,'']]],
+  ['principal_2ehpp',['Principal.hpp',['../_principal_8hpp.html',1,'']]]
 ];

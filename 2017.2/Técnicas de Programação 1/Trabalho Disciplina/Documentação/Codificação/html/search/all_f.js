@@ -1,28 +1,7 @@
 var searchData=
 [
-  ['sair',['SAIR',['../class_op_result.html#ae1976f82152f75a79355282637f147a8',1,'OpResult']]],
-  ['sautenticacao_5ftst_2ehpp',['SAutenticacao_Tst.hpp',['../_s_autenticacao___tst_8hpp.html',1,'']]],
-  ['sautenticacaotst',['SAutenticacaoTst',['../class_s_autenticacao_tst.html',1,'']]],
-  ['scontrole',['SControle',['../class_s_controle.html',1,'SControle'],['../class_s_controle.html#aba2948dc62f451fb6637a7971af093ca',1,'SControle::SControle()']]],
-  ['scontrole_2ehpp',['SControle.hpp',['../_s_controle_8hpp.html',1,'']]],
-  ['senha',['Senha',['../class_senha.html',1,'Senha'],['../class_senha.html#ade5ef5c7f37a1dd7a3bea575fb745a46',1,'Senha::Senha()'],['../class_senha.html#af1480669d27620c340bd658b7fce3ee2',1,'Senha::Senha(const string &amp;campo)']]],
-  ['senha_2ehpp',['Senha.hpp',['../_senha_8hpp.html',1,'']]],
-  ['senha_5ftst_2ehpp',['Senha_Tst.hpp',['../_senha___tst_8hpp.html',1,'']]],
-  ['senhatst',['SenhaTst',['../class_senha_tst.html',1,'']]],
-  ['servico',['servico',['../class_inter_func.html#a7ce849fc0f04c2601f3aa980aa99cc1d',1,'InterFunc::servico()'],['../class_apre_t_u_i.html#acc2d4fe1088f71dbbca254b81246d472',1,'ApreTUI::servico()']]],
-  ['setapelido',['setApelido',['../class_usuario.html#af3b1f0f936fa55c41e51f1c22d40c1e2',1,'Usuario::setApelido()'],['../class_login.html#ace0e2e1c01bd0072768a73553a1cc97c',1,'Login::setApelido()']]],
-  ['setarqlog',['setArqLog',['../class_inter_cntrl.html#a893e46950c94f398e8319a300087db1d',1,'InterCntrl']]],
-  ['setautor',['setAutor',['../class_livro.html#a84c11ec7f3b1f01f21981dc2008090ef',1,'Livro']]],
-  ['setcampo',['setCampo',['../class_dominio_base.html#a920e80e85280d435b20063de47eec3ad',1,'DominioBase']]],
-  ['setcodigo',['setCodigo',['../class_livro.html#a1a1310f9fafd3e1c9cb8fecc927f5e32',1,'Livro']]],
-  ['setdatapublicacao',['setDataPublicacao',['../class_livro.html#a021671319eb46fba4b611bb8d0e01b81',1,'Livro']]],
-  ['setgenero',['setGenero',['../class_livro.html#aa772ba7a5944a9e822f3528f9eeeefdf',1,'Livro']]],
-  ['setnome',['setNome',['../class_usuario.html#a006307ffca27e3c9b9587a0fb2c0ee5a',1,'Usuario']]],
-  ['setsenha',['setSenha',['../class_usuario.html#a126a54fc422205571c6db490dcb9ca03',1,'Usuario::setSenha()'],['../class_login.html#a8cd8c5f025017cd7963586e3dd06ba95',1,'Login::setSenha()']]],
-  ['setservico',['setServico',['../class_inter_func.html#aa0e9d3cded7d863533a796e44b0c18f9',1,'InterFunc']]],
-  ['settelefone',['setTelefone',['../class_usuario.html#a049eaeb994d20c7df85250d50d041caf',1,'Usuario']]],
-  ['settexto',['setTexto',['../class_resenha.html#a0ead613373e345e9d7dffe84550970fe',1,'Resenha']]],
-  ['settitulo',['setTitulo',['../class_livro.html#a0ce7eac6588d7980083f241bda0e2480',1,'Livro::setTitulo()'],['../class_resenha.html#ab7702729a8b5bbe4ae36fd98a7f2ed3a',1,'Resenha::setTitulo()']]],
-  ['status',['status',['../class_teste_classe.html#ab1ae8f28b8ef5c4c6e672a0c0d1893fe',1,'TesteClasse']]],
-  ['sucesso',['SUCESSO',['../class_op_result.html#ad7fddf91ca41331e7c3ae9bdca8cee6a',1,'OpResult']]]
+  ['usuario',['Usuario',['../class_usuario.html',1,'Usuario'],['../class_usuario.html#aa85a5371a098dfba5449140d9b8a472f',1,'Usuario::Usuario()'],['../class_usuario.html#acd21dd8a9d0c75004aa1f36d24b6bc52',1,'Usuario::Usuario(const Apelido &amp;apelido)'],['../class_usuario.html#a43416007cf9b4c2d13a6f94c3c452aaf',1,'Usuario::Usuario(const Nome &amp;nome)'],['../class_usuario.html#aeaf2e49a8d2fc78c58e88b684c74214b',1,'Usuario::Usuario(const Senha &amp;senha)'],['../class_usuario.html#a7fda2f62d5076426873367f09634a4bf',1,'Usuario::Usuario(const Telefone &amp;tel)'],['../class_usuario.html#a9d189547eb8b97e43f804c00b59a0484',1,'Usuario::Usuario(const Apelido &amp;apelido, const Nome &amp;nome, const Senha &amp;senha, const Telefone &amp;tel)']]],
+  ['usuario_2ehpp',['Usuario.hpp',['../_usuario_8hpp.html',1,'']]],
+  ['usuario_5ftst_2ehpp',['Usuario_Tst.hpp',['../_usuario___tst_8hpp.html',1,'']]],
+  ['usuariotst',['UsuarioTst',['../class_usuario_tst.html',1,'']]]
 ];

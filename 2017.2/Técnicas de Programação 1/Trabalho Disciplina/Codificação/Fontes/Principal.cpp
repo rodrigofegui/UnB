@@ -8,27 +8,16 @@
 /**
  *  Biblioteca necessária
  */
-
 #include "../Bibliotecas_Tst/AtivaTeste.hpp"
 #include "../Bibliotecas/Principal.hpp"
-#include "../Bibliotecas/Dominio/Log.hpp"
-
-
-using namespace std;
 
 int main(){
-    //*
-    #ifndef TESTE
+    #ifdef TESTE
         fullTeste ();
+        cout << "aplicação test" << endl;
+    #else
+        cout << "aplicação real" << endl;
     #endif // TESTE
-    //*/
-
-    /*
-    AControle aplicacao;
-
-    aplicacao.executar();
-    //*/
-    FILE *arq = Log::criarArq();
 
 
     cout << endl << "A execucao da aplicação finalizou!" << endl;

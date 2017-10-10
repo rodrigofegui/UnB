@@ -1,8 +1,3 @@
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/AControle.cpp:105: warning: Reached end of file while still inside a (nested) comment. Nesting level 2 (probable line reference: 27, 24)
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Principal.cpp:34: warning: Reached end of file while still inside a (nested) comment. Nesting level 4 (probable line reference: 27, 23, 21, 17)
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/ApreTUI.hpp:5: warning: the name `ApresTUI.hpp' supplied as the second argument in the \file statement is not an input file
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/ApreTUI.hpp:14: warning: Compound ApreTUI is not documented.
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/AAutenticacao.hpp:15: warning: Compound AAutenticacao is not documented.
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Utilidades/TesteUnitario.cpp:205: warning: no matching class member found for 
   void TesteUnitario::capturarFalha(bool(*func)(bool condF), bool cond)
 Possible candidates:
@@ -63,24 +58,17 @@ Possible candidates:
   static void TesteUnitario::capturarFalha(bool(*func)(string), string val1)
   static void TesteUnitario::capturarFalha(bool(*func)(string, string), string val1, string val2)
 
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Principal.cpp:16: warning: Member main() (function) of file Principal.cpp is not documented.
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/AAutenticacao.hpp:28: warning: Member login (variable) of class AAutenticacao is not documented.
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterFunc.hpp:38: warning: Member deletar() (function) of class InterFunc is not documented.
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterFunc.hpp:38: warning: Member deletar() (function) of class InterFunc is not documented.
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/ApreTUI.hpp:50: warning: parameters of member ApreTUI::erroOp are not (all) documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/ApreTUI.hpp:53: warning: return type of member ApreTUI::executar is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterAut.hpp:25: warning: return type of member InterAut::autenticar is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterCntrl.hpp:26: warning: return type of member InterCntrl::construir is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterEst.hpp:22: warning: return type of member InterEst::consultar is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterEst.hpp:28: warning: return type of member InterEst::consultar is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterEst.hpp:35: warning: return type of member InterEst::criarResenha is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterEst.hpp:41: warning: return type of member InterEst::incluir is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterEst.hpp:47: warning: return type of member InterEst::remover is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterFunc.hpp:38: warning: Member deletar() (function) of class InterFunc is not documented.
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterFunc.hpp:31: warning: return type of member InterFunc::executar is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterFunc.hpp:36: warning: parameters of member InterFunc::setServico are not (all) documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterFunc.hpp:36: warning: return type of member InterFunc::setServico is not documented
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterUsu.hpp:23: warning: return type of member InterUsu::cadastrar is not documented
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Principal.cpp:14: warning: return type of member main is not documented
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterFunc.hpp:24: warning: argument 'Dados' of command @param is not found in the argument list of InterFunc::executar(const Resultado &)=0
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterFunc.hpp:33: warning: argument 'Camada' of command @param is not found in the argument list of InterFunc::setServico(InterServ *)=0
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterSAut.hpp:19: warning: argument 'Login' of command @param is not found in the argument list of InterSAut::autenticar(const Login &)=0
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterSEst.hpp:21: warning: argument 'Identificador' of command @param is not found in the argument list of InterSEst::consultar(const Titulo &)=0
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterSEst.hpp:28: warning: argument 'Identificador' of command @param is not found in the argument list of InterSEst::consultar(const Apelido &)=0
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterSEst.hpp:35: warning: argument 'Livro' of command @param is not found in the argument list of InterSEst::criarResenha(const Livro &, const Resenha &)=0
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterSEst.hpp:35: warning: argument 'Resenha' of command @param is not found in the argument list of InterSEst::criarResenha(const Livro &, const Resenha &)=0
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterSEst.hpp:44: warning: argument 'Livro' of command @param is not found in the argument list of InterSEst::incluir(const Livro &)=0
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterSEst.hpp:51: warning: argument 'Exemplar' of command @param is not found in the argument list of InterSEst::remover(const Livro &)=0
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterSUsu.hpp:19: warning: argument 'Usuário' of command @param is not found in the argument list of InterSUsu::cadastrar(const Usuario &)=0
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Livro.hpp:35: warning: argument 'data' of command @param is not found in the argument list of Livro::Livro(const Data &dataPublicacao)
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Livro.hpp:39: warning: The following parameters of Livro::Livro(const Data &dataPublicacao) are not documented:
   parameter 'dataPublicacao'
@@ -97,7 +85,6 @@ Possible candidates:
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Livro.hpp:142: warning: The following parameters of Livro::setTitulo(const Titulo &titulo) are not documented:
   parameter 'titulo'
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Utilidades/Manipulacao.hpp:160: warning: Member pausar() (function) of class Manipulacao is not documented.
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Servico_Tst/SAutenticacao_Tst.hpp:26: warning: return type of member SAutenticacaoTst::autenticar is not documented
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Utilidades/TesteUnitario.hpp:68: warning: Member condicao (enumeration) of class TesteUnitario is not documented.
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Usuario.hpp:82: warning: argument 'nnome' of command @param is not found in the argument list of Usuario::setNome(const Nome &nome)
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Usuario.hpp:85: warning: The following parameters of Usuario::setNome(const Nome &nome) are not documented:

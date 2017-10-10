@@ -1,4 +1,14 @@
 var searchData=
 [
-  ['usuario',['Usuario',['../class_usuario.html#aa85a5371a098dfba5449140d9b8a472f',1,'Usuario::Usuario()'],['../class_usuario.html#acd21dd8a9d0c75004aa1f36d24b6bc52',1,'Usuario::Usuario(const Apelido &amp;apelido)'],['../class_usuario.html#a43416007cf9b4c2d13a6f94c3c452aaf',1,'Usuario::Usuario(const Nome &amp;nome)'],['../class_usuario.html#aeaf2e49a8d2fc78c58e88b684c74214b',1,'Usuario::Usuario(const Senha &amp;senha)'],['../class_usuario.html#a7fda2f62d5076426873367f09634a4bf',1,'Usuario::Usuario(const Telefone &amp;tel)'],['../class_usuario.html#a9d189547eb8b97e43f804c00b59a0484',1,'Usuario::Usuario(const Apelido &amp;apelido, const Nome &amp;nome, const Senha &amp;senha, const Telefone &amp;tel)']]]
+  ['validar',['validar',['../class_teste_unitario.html#aab61f4e399c3d314d8eaa0e4ba7c6fa7',1,'TesteUnitario']]],
+  ['validarcamponok',['validarCampoNOk',['../class_dominio_base_tst.html#ad0ebe5178537dbe359182f504c000c8b',1,'DominioBaseTst']]],
+  ['validarcampook',['validarCampoOk',['../class_dominio_base_tst.html#a0eee78a18f4376dc8c561bb675d811e7',1,'DominioBaseTst']]],
+  ['validareq',['validarEQ',['../class_teste_unitario.html#ac935217dfd445f64c0b70e0c528e8d07',1,'TesteUnitario']]],
+  ['validarfalse',['validarFalse',['../class_teste_unitario.html#ae1fc6e3a9c504f9d176516d32147b9df',1,'TesteUnitario']]],
+  ['validarge',['validarGE',['../class_teste_unitario.html#a8b7dcfb4348a6bb9945a12b7132cc1f1',1,'TesteUnitario']]],
+  ['validargt',['validarGT',['../class_teste_unitario.html#a9188be23524a81b16a529a4707d68807',1,'TesteUnitario']]],
+  ['validarle',['validarLE',['../class_teste_unitario.html#a5ae54fa44a2cb92b26a901ac2da268dd',1,'TesteUnitario']]],
+  ['validarlt',['validarLT',['../class_teste_unitario.html#abc0f37b94a45caf255e104ef4eb86452',1,'TesteUnitario']]],
+  ['validarne',['validarNE',['../class_teste_unitario.html#afe4240712b86269b8a11f8402058f1ba',1,'TesteUnitario']]],
+  ['validartrue',['validarTrue',['../class_teste_unitario.html#acf199ca2a016bb9adfe0bc932004517a',1,'TesteUnitario']]]
 ];

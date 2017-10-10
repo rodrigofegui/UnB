@@ -11,5 +11,6 @@
     #include <stdlib.h>
     #include <iostream>
     #include <string>
-    #include "Apresentacao/AControle.hpp"
+
+    using namespace std;
 #endif // PRINCIPAL

@@ -33,17 +33,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Codificação/Bibliotecas/Apresentacao/AAutenticacao.hpp" />
-		<Unit filename="Codificação/Bibliotecas/Apresentacao/AControle.hpp" />
-		<Unit filename="Codificação/Bibliotecas/Apresentacao/ApreTUI.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Apelido.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Codigo.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Data.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/DominioBase.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/GeneroLiterario.hpp" />
-		<Unit filename="Codificação/Bibliotecas/Dominio/Log.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Nome.hpp" />
-		<Unit filename="Codificação/Bibliotecas/Dominio/OpResult.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Senha.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Telefone.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Texto.hpp" />
@@ -52,14 +47,12 @@
 		<Unit filename="Codificação/Bibliotecas/Entidade/Login.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Entidade/Resenha.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Entidade/Usuario.hpp" />
-		<Unit filename="Codificação/Bibliotecas/Interfaces/InterApresServ.hpp" />
-		<Unit filename="Codificação/Bibliotecas/Interfaces/InterAut.hpp" />
-		<Unit filename="Codificação/Bibliotecas/Interfaces/InterCntrl.hpp" />
-		<Unit filename="Codificação/Bibliotecas/Interfaces/InterEst.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Interfaces/InterFunc.hpp" />
-		<Unit filename="Codificação/Bibliotecas/Interfaces/InterUsu.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Interfaces/InterSAut.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Interfaces/InterSEst.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Interfaces/InterSUsu.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Interfaces/InterServ.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Principal.hpp" />
-		<Unit filename="Codificação/Bibliotecas/Servico/SControle.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Utilidades/Manipulacao.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Utilidades/TesteUnitario.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/AtivaTeste.hpp" />
@@ -77,21 +70,13 @@
 		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Login_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Servico_Tst/SAutenticacao_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Servico_Tst/SEstante_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Servico_Tst/SUsuario_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/TesteClasse.hpp" />
-		<Unit filename="Codificação/Fontes/Apresentacao/AAutenticacao.cpp" />
-		<Unit filename="Codificação/Fontes/Apresentacao/AControle.cpp" />
-		<Unit filename="Codificação/Fontes/Apresentacao/ApreTUI.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Apelido.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Codigo.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Data.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/DominioBase.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/GeneroLiterario.cpp" />
-		<Unit filename="Codificação/Fontes/Dominio/Log.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Nome.cpp" />
-		<Unit filename="Codificação/Fontes/Dominio/OpResult.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Senha.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Telefone.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Texto.cpp" />
@@ -117,9 +102,6 @@
 		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Login_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Usuario_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Servico_Tst/SAutenticacao_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Servico_Tst/SEstante_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Servico_Tst/SUsuario_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/TesteClasse.cpp" />
 		<Extensions>
 			<code_completion />

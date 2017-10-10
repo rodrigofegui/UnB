@@ -924,10 +924,9 @@
 	"../TesteClasse.hpp"
 	"../../Bibliotecas/Entidade/Login.hpp"
 
-1507639444 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Principal.cpp
+1507664672 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Principal.cpp
 	"../Bibliotecas_Tst/AtivaTeste.hpp"
 	"../Bibliotecas/Principal.hpp"
-	"../Bibliotecas/Dominio/Log.hpp"
 
 1506945212 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/AtivaTeste.hpp
 	"../Bibliotecas/Utilidades/Manipulacao.hpp"
@@ -946,11 +945,10 @@
 	"Entidade_Tst/Usuario_Tst.hpp"
 	"Entidade_Tst/Login_Tst.hpp"
 
-1506806897 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Principal.hpp
+1507664647 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Principal.hpp
 	<stdlib.h>
 	<iostream>
 	<string>
-	"Apresentacao/AControle.hpp"
 
 1507216182 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/AControle.cpp
 	"../../Bibliotecas/Apresentacao/AControle.hpp"
