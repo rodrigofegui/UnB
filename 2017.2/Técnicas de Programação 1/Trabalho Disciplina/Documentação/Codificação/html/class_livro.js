@@ -8,6 +8,7 @@ var class_livro =
     [ "Livro", "class_livro.html#a41b976140a7678c8470f4680c4cc53d2", null ],
     [ "Livro", "class_livro.html#a78bb1d8a9af723afb781bc7761370b72", null ],
     [ "deletar", "class_livro.html#ab849abebc44acbafac2d57ad61b319a1", null ],
+    [ "equals", "class_livro.html#ad05c371674689d1acb6ed056b176e79d", null ],
     [ "getAutor", "class_livro.html#ac8b48645f2d1c21bf0f77d6cbf8d0c6b", null ],
     [ "getCodigo", "class_livro.html#a261aab169b551712e987683071d7d5d5", null ],
     [ "getDataPublicacao", "class_livro.html#adfb992a7a7dbb7973b80143d4a773f4f", null ],

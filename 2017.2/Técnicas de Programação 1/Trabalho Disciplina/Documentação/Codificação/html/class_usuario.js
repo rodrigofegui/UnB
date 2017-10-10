@@ -6,6 +6,7 @@ var class_usuario =
     [ "Usuario", "class_usuario.html#aeaf2e49a8d2fc78c58e88b684c74214b", null ],
     [ "Usuario", "class_usuario.html#a7fda2f62d5076426873367f09634a4bf", null ],
     [ "Usuario", "class_usuario.html#a9d189547eb8b97e43f804c00b59a0484", null ],
+    [ "equals", "class_usuario.html#a79a6a2e31f81d3188fa6e70d3432e6e0", null ],
     [ "getApelido", "class_usuario.html#a40d3e84b47c695c1fefa48611363684a", null ],
     [ "getNome", "class_usuario.html#a712640c003aa66605846627f2c90db60", null ],
     [ "getSenha", "class_usuario.html#a8f78d3949b3a9492d0aa0a197860a972", null ],

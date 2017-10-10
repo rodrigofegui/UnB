@@ -1,8 +1,11 @@
 var annotated_dup =
 [
+    [ "AAutenticacao", "class_a_autenticacao.html", "class_a_autenticacao" ],
     [ "AControle", "class_a_controle.html", "class_a_controle" ],
     [ "Apelido", "class_apelido.html", "class_apelido" ],
     [ "ApelidoTst", "class_apelido_tst.html", null ],
+    [ "ApresTUI", "class_apres_t_u_i.html", null ],
+    [ "ApreTUI", "class_apre_t_u_i.html", "class_apre_t_u_i" ],
     [ "Codigo", "class_codigo.html", "class_codigo" ],
     [ "CodigoTst", "class_codigo_tst.html", null ],
     [ "Data", "class_data.html", "class_data" ],
@@ -27,6 +30,8 @@ var annotated_dup =
     [ "OpResult", "class_op_result.html", "class_op_result" ],
     [ "Resenha", "class_resenha.html", "class_resenha" ],
     [ "ResenhaTst", "class_resenha_tst.html", null ],
+    [ "SAutenticacaoTst", "class_s_autenticacao_tst.html", "class_s_autenticacao_tst" ],
+    [ "SControle", "class_s_controle.html", "class_s_controle" ],
     [ "Senha", "class_senha.html", "class_senha" ],
     [ "SenhaTst", "class_senha_tst.html", null ],
     [ "Telefone", "class_telefone.html", "class_telefone" ],
@@ -38,7 +43,5 @@ var annotated_dup =
     [ "Titulo", "class_titulo.html", "class_titulo" ],
     [ "TituloTst", "class_titulo_tst.html", null ],
     [ "Usuario", "class_usuario.html", "class_usuario" ],
-    [ "UsuarioTst", "class_usuario_tst.html", null ],
-    [ "Versao", "class_versao.html", "class_versao" ],
-    [ "VersaoTst", "class_versao_tst.html", null ]
+    [ "UsuarioTst", "class_usuario_tst.html", null ]
 ];

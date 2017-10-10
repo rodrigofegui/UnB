@@ -1,5 +1,8 @@
 var files =
 [
+    [ "AAutenticacao.hpp", "_a_autenticacao_8hpp.html", [
+      [ "AAutenticacao", "class_a_autenticacao.html", "class_a_autenticacao" ]
+    ] ],
     [ "AControle.hpp", "_a_controle_8hpp.html", [
       [ "AControle", "class_a_controle.html", "class_a_controle" ]
     ] ],
@@ -9,6 +12,7 @@ var files =
     [ "Apelido_Tst.hpp", "_apelido___tst_8hpp.html", [
       [ "ApelidoTst", "class_apelido_tst.html", null ]
     ] ],
+    [ "ApreTUI.hpp", "_apre_t_u_i_8hpp_source.html", null ],
     [ "AtivaTeste.hpp", "_ativa_teste_8hpp_source.html", null ],
     [ "Codigo.hpp", "_codigo_8hpp.html", [
       [ "Codigo", "class_codigo.html", "class_codigo" ]
@@ -82,13 +86,20 @@ var files =
     [ "Resenha_Tst.hpp", "_resenha___tst_8hpp.html", [
       [ "ResenhaTst", "class_resenha_tst.html", null ]
     ] ],
-    [ "SControle.hpp", "_s_controle_8hpp_source.html", null ],
+    [ "SAutenticacao_Tst.hpp", "_s_autenticacao___tst_8hpp.html", [
+      [ "SAutenticacaoTst", "class_s_autenticacao_tst.html", "class_s_autenticacao_tst" ]
+    ] ],
+    [ "SControle.hpp", "_s_controle_8hpp.html", [
+      [ "SControle", "class_s_controle.html", "class_s_controle" ]
+    ] ],
     [ "Senha.hpp", "_senha_8hpp.html", [
       [ "Senha", "class_senha.html", "class_senha" ]
     ] ],
     [ "Senha_Tst.hpp", "_senha___tst_8hpp.html", [
       [ "SenhaTst", "class_senha_tst.html", null ]
     ] ],
+    [ "SEstante_Tst.hpp", "_s_estante___tst_8hpp_source.html", null ],
+    [ "SUsuario_Tst.hpp", "_s_usuario___tst_8hpp_source.html", null ],
     [ "Telefone.hpp", "_telefone_8hpp.html", [
       [ "Telefone", "class_telefone.html", "class_telefone" ]
     ] ],
@@ -118,11 +129,5 @@ var files =
     ] ],
     [ "Usuario_Tst.hpp", "_usuario___tst_8hpp.html", [
       [ "UsuarioTst", "class_usuario_tst.html", null ]
-    ] ],
-    [ "Versao.hpp", "_versao_8hpp.html", [
-      [ "Versao", "class_versao.html", "class_versao" ]
-    ] ],
-    [ "Versao_Tst.hpp", "_versao___tst_8hpp.html", [
-      [ "VersaoTst", "class_versao_tst.html", null ]
     ] ]
 ];

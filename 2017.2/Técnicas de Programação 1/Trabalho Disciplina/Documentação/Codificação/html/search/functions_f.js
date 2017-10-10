@@ -10,6 +10,5 @@ var searchData=
   ['validarle',['validarLE',['../class_teste_unitario.html#a5ae54fa44a2cb92b26a901ac2da268dd',1,'TesteUnitario']]],
   ['validarlt',['validarLT',['../class_teste_unitario.html#abc0f37b94a45caf255e104ef4eb86452',1,'TesteUnitario']]],
   ['validarne',['validarNE',['../class_teste_unitario.html#afe4240712b86269b8a11f8402058f1ba',1,'TesteUnitario']]],
-  ['validartrue',['validarTrue',['../class_teste_unitario.html#acf199ca2a016bb9adfe0bc932004517a',1,'TesteUnitario']]],
-  ['versao',['Versao',['../class_versao.html#abe4df3db1fef14d133c0f98881fd0e9c',1,'Versao::Versao()'],['../class_versao.html#a5eff9a2b9d79349a0d5b657616444dc0',1,'Versao::Versao(const string &amp;campo)']]]
+  ['validartrue',['validarTrue',['../class_teste_unitario.html#acf199ca2a016bb9adfe0bc932004517a',1,'TesteUnitario']]]
 ];
