@@ -18,7 +18,7 @@
             const static int LIM_TENT = 3;
 
             /*  Tentativas de operacionalidade */
-            void tentar ();
+            Resultado tentar ();
 
         protected:
             /**
@@ -26,7 +26,7 @@
              *  as intenções do usuário.
              *  @param Escolha a ser considerada
              */
-            virtual void direcionar (const Resultado &) = 0;
+            virtual Resultado direcionar (const Resultado &) = 0;
 
             /**
              *  Leitura dos dados de entrada dos usuário,
@@ -45,9 +45,17 @@
             /**
              *  Tratamento adequado para os eventuais
              *  erros ocorridos.
-             *  @param Direcionamento do tratamento necessário
+             *  @return Ambiente favorável para a continuação da aplicação
              */
-            virtual void tratarErro () = 0;
+            virtual Resultado tratarErro () = 0;
+
+            /**
+             *  Tratamento adequado para os eventuais
+             *  erros ocorridos, sendo referidos como Resultados.
+             *  @param Direcionamento do tratamento necessário
+             *  @return Ambiente favorável para a continuação da aplicação
+             */
+            virtual Resultado tratarErro (const Resultado &) = 0;
 
         public:
             /**

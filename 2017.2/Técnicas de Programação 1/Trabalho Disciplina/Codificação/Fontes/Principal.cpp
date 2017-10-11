@@ -13,12 +13,14 @@
 
 int main(){
     #ifdef TESTE
-        fullTeste ();
-        cout << "aplicação test" << endl;
+        //fullTeste ();
+        AplicacaoTst aplicacao;
     #else
+        Aplicacao aplicacao;
         cout << "aplicação real" << endl;
     #endif // TESTE
 
+    aplicacao.executar();
 
     cout << endl << "A execucao da aplicação finalizou!" << endl;
     cout << "Volte sempre!" << endl;

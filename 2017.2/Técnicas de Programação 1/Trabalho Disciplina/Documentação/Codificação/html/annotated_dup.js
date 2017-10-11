@@ -2,6 +2,8 @@ var annotated_dup =
 [
     [ "Apelido", "class_apelido.html", "class_apelido" ],
     [ "ApelidoTst", "class_apelido_tst.html", null ],
+    [ "Aplicacao", "class_aplicacao.html", "class_aplicacao" ],
+    [ "AplicacaoTst", "class_aplicacao_tst.html", null ],
     [ "Codigo", "class_codigo.html", "class_codigo" ],
     [ "CodigoTst", "class_codigo_tst.html", null ],
     [ "Data", "class_data.html", "class_data" ],
@@ -24,7 +26,7 @@ var annotated_dup =
     [ "NomeTst", "class_nome_tst.html", null ],
     [ "Resenha", "class_resenha.html", "class_resenha" ],
     [ "ResenhaTst", "class_resenha_tst.html", null ],
-    [ "Resultado", "class_resultado.html", null ],
+    [ "Resultado", "class_resultado.html", "class_resultado" ],
     [ "Senha", "class_senha.html", "class_senha" ],
     [ "SenhaTst", "class_senha_tst.html", null ],
     [ "Telefone", "class_telefone.html", "class_telefone" ],

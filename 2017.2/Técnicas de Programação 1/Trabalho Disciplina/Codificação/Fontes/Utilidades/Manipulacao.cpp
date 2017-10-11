@@ -135,5 +135,4 @@ void Manipulacao::limparTela(){
 void Manipulacao::pausar(){
     cout << endl << "Pressione ENTER para continuar." << endl;
     getchar ();
-    getchar ();
 }

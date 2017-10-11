@@ -11,5 +11,5 @@
      *  @class  InterServ
      *  Puramente para polimorfismo
      */
-    class InterServ = 0;
+    class InterServ{};
 #endif // INTER_SERV_HPP

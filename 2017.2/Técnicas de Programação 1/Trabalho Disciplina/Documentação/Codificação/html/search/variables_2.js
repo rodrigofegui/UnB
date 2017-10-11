@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['falha',['FALHA',['../class_op_result.html#a0c92bcc924d1aa77544a93098c5f10e7',1,'OpResult']]]
+  ['falha',['FALHA',['../class_resultado.html#a06f058dfb4dfb406faf00c8d36a3dfaa',1,'Resultado']]],
+  ['flh_5flim',['FLH_LIM',['../class_resultado.html#ada95d80a9aadc0211a33e0729cf3caeb',1,'Resultado']]]
 ];

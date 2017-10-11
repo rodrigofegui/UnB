@@ -25,17 +25,22 @@
     #include "Entidade_Tst/Resenha_Tst.hpp"
     #include "Entidade_Tst/Usuario_Tst.hpp"
     #include "Entidade_Tst/Login_Tst.hpp"
+    /*  Aplicacao */
+    #include "Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.hpp"
 
     void testarDominios (TesteClasse *);
     void testarEntidades (TesteClasse *);
 
 
     void fullTeste(){
+        AplicacaoTst aplicacaoTst;
         TesteClasse *sobTeste;
 
         testarDominios (sobTeste);
 
         testarEntidades (sobTeste);
+
+        aplicacaoTst.executar();
     }
 
     void testarDominios (TesteClasse *sobTeste){

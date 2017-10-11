@@ -40,6 +40,10 @@ var hierarchy =
       [ "UsuarioTst", "class_usuario_tst.html", null ]
     ] ],
     [ "TesteUnitario", "class_teste_unitario.html", null ],
-    [ "TUI", "class_t_u_i.html", null ],
+    [ "TUI", "class_t_u_i.html", [
+      [ "Aplicacao", "class_aplicacao.html", [
+        [ "AplicacaoTst", "class_aplicacao_tst.html", null ]
+      ] ]
+    ] ],
     [ "Usuario", "class_usuario.html", null ]
 ];

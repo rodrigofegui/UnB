@@ -96,80 +96,84 @@ WARN_LOGFILE            = "/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Prog
 # configuration options related to the input files
 #---------------------------------------------------------------------------
 INPUT                  = \
-	"../../Codificação/Bibliotecas/Interfaces/InterSAut.hpp" \
+	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Data_Tst.hpp" \
+	"../../Codificação/Fontes_Tst/Entidade_Tst/Login_Tst.cpp" \
+	"../../Codificação/Bibliotecas/Apresentacao/TUI.hpp" \
+	"../../Codificação/Fontes/Entidade/Resenha.cpp" \
+	"../../Codificação/Bibliotecas/Dominio/Resultado.hpp" \
 	"../../Codificação/Bibliotecas/Dominio/Telefone.hpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Nome_Tst.cpp" \
-	"../../Codificação/Bibliotecas/Entidade/Resenha.hpp" \
-	"../../Codificação/Fontes_Tst/Dominio_Tst/Texto_Tst.cpp" \
-	"../../Codificação/Bibliotecas/Utilidades/TesteUnitario.hpp" \
-	"../../Codificação/Fontes/Dominio/Senha.cpp" \
-	"../../Codificação/Fontes/Dominio/Apelido.cpp" \
-	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp" \
-	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Data_Tst.hpp" \
-	"../../Codificação/Fontes/Dominio/Texto.cpp" \
-	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Texto_Tst.hpp" \
-	"../../Codificação/Fontes_Tst/Entidade_Tst/Login_Tst.cpp" \
-	"../../Codificação/Bibliotecas/Dominio/Texto.hpp" \
-	"../../Codificação/Bibliotecas/Dominio/Codigo.hpp" \
-	"../../Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp" \
-	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Senha_Tst.hpp" \
-	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp" \
-	"../../Codificação/Fontes/Utilidades/Manipulacao.cpp" \
-	"../../Codificação/Fontes_Tst/Dominio_Tst/Senha_Tst.cpp" \
-	"../../Codificação/Fontes/Dominio/DominioBase.cpp" \
-	"../../Codificação/Fontes_Tst/Dominio_Tst/Titulo_Tst.cpp" \
-	"../../Codificação/Fontes/Entidade/Login.cpp" \
-	"../../Codificação/Bibliotecas_Tst/TesteClasse.hpp" \
+	"../../Codificação/Fontes_Tst/Entidade_Tst/Usuario_Tst.cpp" \
 	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp" \
-	"../../Codificação/Fontes_Tst/Dominio_Tst/DominioBase_Tst.cpp" \
-	"../../Codificação/Fontes_Tst/Dominio_Tst/Data_Tst.cpp" \
-	"../../Codificação/Fontes/Apresentacao/TUI.cpp" \
-	"../../Codificação/Bibliotecas/Interfaces/InterSEst.hpp" \
-	"../../Codificação/Fontes/Dominio/Titulo.cpp" \
-	"../../Codificação/Bibliotecas/Dominio/Titulo.hpp" \
-	"../../Codificação/Fontes_Tst/TesteClasse.cpp" \
-	"../../Codificação/Fontes/Dominio/Resultado.cpp" \
-	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Nome_Tst.hpp" \
-	"../../Codificação/Bibliotecas/Principal.hpp" \
-	"../../Codificação/Fontes/Dominio/Telefone.cpp" \
-	"../../Codificação/Fontes/Principal.cpp" \
-	"../../Codificação/Bibliotecas_Tst/AtivaTeste.hpp" \
-	"../../Codificação/Fontes/Entidade/Resenha.cpp" \
+	"../../Codificação/Bibliotecas_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.hpp" \
 	"../../Codificação/Fontes/Utilidades/TesteUnitario.cpp" \
-	"../../Codificação/Fontes_Tst/Dominio_Tst/GeneroLiterario_Tst.cpp" \
-	"../../Codificação/Bibliotecas/Dominio/Nome.hpp" \
-	"../../Codificação/Bibliotecas/Interfaces/InterFunc.hpp" \
-	"../../Codificação/Bibliotecas/Interfaces/InterServ.hpp" \
-	"../../Codificação/Bibliotecas/Dominio/Data.hpp" \
-	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Titulo_Tst.hpp" \
-	"../../Codificação/Bibliotecas/Dominio/Apelido.hpp" \
-	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Telefone_Tst.hpp" \
-	"../../Codificação/Fontes/Entidade/Livro.cpp" \
-	"../../Codificação/Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp" \
-	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/GeneroLiterario_Tst.hpp" \
-	"../../Codificação/Fontes/Dominio/Data.cpp" \
-	"../../Codificação/Bibliotecas/Entidade/Login.hpp" \
-	"../../Codificação/Fontes_Tst/Entidade_Tst/Livro_Tst.cpp" \
-	"../../Codificação/Bibliotecas/Dominio/DominioBase.hpp" \
-	"../../Codificação/Bibliotecas/Utilidades/Manipulacao.hpp" \
+	"../../Codificação/Fontes/Dominio/Senha.cpp" \
+	"../../Codificação/Fontes/Dominio/Nome.cpp" \
 	"../../Codificação/Bibliotecas/Entidade/Usuario.hpp" \
 	"../../Codificação/Bibliotecas/Interfaces/InterSUsu.hpp" \
-	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Login_Tst.hpp" \
 	"../../Codificação/Bibliotecas/Dominio/Senha.hpp" \
-	"../../Codificação/Fontes/Dominio/Codigo.cpp" \
-	"../../Codificação/Bibliotecas/Dominio/GeneroLiterario.hpp" \
-	"../../Codificação/Fontes/Dominio/Nome.cpp" \
-	"../../Codificação/Fontes_Tst/Entidade_Tst/Usuario_Tst.cpp" \
-	"../../Codificação/Fontes_Tst/Dominio_Tst/Telefone_Tst.cpp" \
-	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp" \
-	"../../Codificação/Fontes/Dominio/GeneroLiterario.cpp" \
-	"../../Codificação/Bibliotecas/Dominio/Resultado.hpp" \
-	"../../Codificação/Bibliotecas/Entidade/Livro.hpp" \
-	"../../Codificação/Bibliotecas/Apresentacao/TUI.hpp" \
+	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/GeneroLiterario_Tst.hpp" \
+	"../../Codificação/Fontes/Entidade/Login.cpp" \
+	"../../Codificação/Fontes/Dominio/DominioBase.cpp" \
+	"../../Codificação/Bibliotecas/Dominio/Data.hpp" \
+	"../../Codificação/Fontes_Tst/Dominio_Tst/DominioBase_Tst.cpp" \
+	"../../Codificação/Bibliotecas/Utilidades/TesteUnitario.hpp" \
+	"../../Codificação/Fontes_Tst/Dominio_Tst/GeneroLiterario_Tst.cpp" \
 	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp" \
+	"../../Codificação/Fontes_Tst/Dominio_Tst/Senha_Tst.cpp" \
+	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Titulo_Tst.hpp" \
+	"../../Codificação/Bibliotecas/Principal.hpp" \
+	"../../Codificação/Fontes_Tst/Entidade_Tst/Livro_Tst.cpp" \
+	"../../Codificação/Fontes/Utilidades/Manipulacao.cpp" \
+	"../../Codificação/Fontes/Principal.cpp" \
 	"../../Codificação/Fontes/Entidade/Usuario.cpp" \
+	"../../Codificação/Bibliotecas/Utilidades/Manipulacao.hpp" \
+	"../../Codificação/Bibliotecas/Dominio/Texto.hpp" \
+	"../../Codificação/Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp" \
+	"../../Codificação/Fontes/Dominio/Apelido.cpp" \
+	"../../Codificação/Fontes_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.cpp" \
+	"../../Codificação/Bibliotecas_Tst/TesteClasse.hpp" \
+	"../../Codificação/Bibliotecas/Interfaces/InterSAut.hpp" \
+	"../../Codificação/Fontes_Tst/Dominio_Tst/Telefone_Tst.cpp" \
+	"../../Codificação/Bibliotecas/Entidade/Resenha.hpp" \
+	"../../Codificação/Bibliotecas/Entidade/Login.hpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Codigo_Tst.cpp" \
-	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/DominioBase_Tst.hpp" 
+	"../../Codificação/Fontes_Tst/TesteClasse.cpp" \
+	"../../Codificação/Fontes/Dominio/Titulo.cpp" \
+	"../../Codificação/Bibliotecas/Interfaces/InterFunc.hpp" \
+	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Texto_Tst.hpp" \
+	"../../Codificação/Bibliotecas/Dominio/DominioBase.hpp" \
+	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp" \
+	"../../Codificação/Fontes/Dominio/Texto.cpp" \
+	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp" \
+	"../../Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp" \
+	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Telefone_Tst.hpp" \
+	"../../Codificação/Bibliotecas_Tst/AtivaTeste.hpp" \
+	"../../Codificação/Fontes/Dominio/Data.cpp" \
+	"../../Codificação/Bibliotecas/Dominio/Titulo.hpp" \
+	"../../Codificação/Fontes/Entidade/Livro.cpp" \
+	"../../Codificação/Fontes/Dominio/Telefone.cpp" \
+	"../../Codificação/Fontes/Dominio/GeneroLiterario.cpp" \
+	"../../Codificação/Bibliotecas/Interfaces/InterSEst.hpp" \
+	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Nome_Tst.hpp" \
+	"../../Codificação/Bibliotecas/Entidade/Livro.hpp" \
+	"../../Codificação/Bibliotecas/Dominio/Codigo.hpp" \
+	"../../Codificação/Fontes_Tst/Dominio_Tst/Texto_Tst.cpp" \
+	"../../Codificação/Fontes/Dominio/Codigo.cpp" \
+	"../../Codificação/Bibliotecas/Dominio/Nome.hpp" \
+	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Login_Tst.hpp" \
+	"../../Codificação/Bibliotecas/Apresentacao/Aplicacao/Aplicacao.hpp" \
+	"../../Codificação/Bibliotecas/Interfaces/InterServ.hpp" \
+	"../../Codificação/Fontes_Tst/Dominio_Tst/Titulo_Tst.cpp" \
+	"../../Codificação/Fontes/Apresentacao/Aplicacao/Aplicacao.cpp" \
+	"../../Codificação/Bibliotecas/Dominio/Apelido.hpp" \
+	"../../Codificação/Bibliotecas/Dominio/GeneroLiterario.hpp" \
+	"../../Codificação/Fontes/Apresentacao/TUI.cpp" \
+	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp" \
+	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/DominioBase_Tst.hpp" \
+	"../../Codificação/Fontes/Dominio/Resultado.cpp" \
+	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Senha_Tst.hpp" \
+	"../../Codificação/Fontes_Tst/Dominio_Tst/Data_Tst.cpp" 
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          =
 RECURSIVE              = NO

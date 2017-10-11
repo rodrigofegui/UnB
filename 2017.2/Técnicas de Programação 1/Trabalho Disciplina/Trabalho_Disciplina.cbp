@@ -33,12 +33,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Codificação/Bibliotecas/Apresentacao/Aplicacao/Aplicacao.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Apresentacao/TUI.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Apelido.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Codigo.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Data.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/DominioBase.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/GeneroLiterario.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Nome.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Dominio/Resultado.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Senha.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Telefone.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Texto.hpp" />
@@ -55,6 +58,7 @@
 		<Unit filename="Codificação/Bibliotecas/Principal.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Utilidades/Manipulacao.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Utilidades/TesteUnitario.hpp" />
+		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/AtivaTeste.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp" />
@@ -71,12 +75,15 @@
 		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/TesteClasse.hpp" />
+		<Unit filename="Codificação/Fontes/Apresentacao/Aplicacao/Aplicacao.cpp" />
+		<Unit filename="Codificação/Fontes/Apresentacao/TUI.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Apelido.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Codigo.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Data.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/DominioBase.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/GeneroLiterario.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Nome.cpp" />
+		<Unit filename="Codificação/Fontes/Dominio/Resultado.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Senha.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Telefone.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Texto.cpp" />
@@ -88,6 +95,7 @@
 		<Unit filename="Codificação/Fontes/Principal.cpp" />
 		<Unit filename="Codificação/Fontes/Utilidades/Manipulacao.cpp" />
 		<Unit filename="Codificação/Fontes/Utilidades/TesteUnitario.cpp" />
+		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Codigo_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Data_Tst.cpp" />
