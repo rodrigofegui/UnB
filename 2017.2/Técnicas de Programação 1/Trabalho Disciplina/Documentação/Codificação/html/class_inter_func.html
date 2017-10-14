@@ -88,6 +88,8 @@ $(document).ready(function(){initNavTree('class_inter_func.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_inter_func_8hpp_source.html">InterFunc.hpp</a>&gt;</code></p>
+
+<p>Herdado por <a class="el" href="class_a_aut.html">AAut</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Membros públicos</h2></td></tr>
@@ -95,8 +97,12 @@ Membros públicos</h2></td></tr>
 <tr class="separator:a57c9d301ad32843410b838bdd6387836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9307e3d44e4e3e6a785f68c9792ea6dd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_func.html#a9307e3d44e4e3e6a785f68c9792ea6dd">executar</a> (const <a class="el" href="class_resultado.html">Resultado</a> &amp;)=0</td></tr>
 <tr class="separator:a9307e3d44e4e3e6a785f68c9792ea6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4a8d45bcb168d3e30a007f8d03cd951"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_func.html#ac4a8d45bcb168d3e30a007f8d03cd951">setServico</a> (<a class="el" href="class_inter_serv.html">InterServ</a> *)=0</td></tr>
-<tr class="separator:ac4a8d45bcb168d3e30a007f8d03cd951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8734ac8bbc69cdfdb167efe3de03ea4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_func.html#ac8734ac8bbc69cdfdb167efe3de03ea4">setServico</a> (<a class="el" href="class_inter_s_aut.html">InterSAut</a> *)=0</td></tr>
+<tr class="separator:ac8734ac8bbc69cdfdb167efe3de03ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9bea441f6a4c9b3ed948a6cbeefb07e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_func.html#ac9bea441f6a4c9b3ed948a6cbeefb07e">setServico</a> (<a class="el" href="class_inter_s_usu.html">InterSUsu</a> *)=0</td></tr>
+<tr class="separator:ac9bea441f6a4c9b3ed948a6cbeefb07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3e78a02fb34be1082f23d3b738007e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_func.html#a1e3e78a02fb34be1082f23d3b738007e">setServico</a> (<a class="el" href="class_inter_s_est.html">InterSEst</a> *)=0</td></tr>
+<tr class="separator:a1e3e78a02fb34be1082f23d3b738007e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Protocolo de realização das funções básicas da aplicação. </p>
@@ -124,6 +130,8 @@ Membros públicos</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Realização da funcionalidade, garantindo a integridade. </p><dl class="section return"><dt>Retorna</dt><dd><a class="el" href="class_resultado.html">Resultado</a> da execução </dd></dl>
+
+<p>Implementado em <a class="el" href="class_a_aut.html#a864add181a0970fcc0457fedec1c0f86">AAut</a>.</p>
 
 </div>
 </div>
@@ -158,10 +166,12 @@ Membros públicos</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd><a class="el" href="class_resultado.html">Resultado</a> da execução. </dd></dl>
 
+<p>Implementado em <a class="el" href="class_a_aut.html#a5b4768fa5b649a00df8a03d9d458afc3">AAut</a>.</p>
+
 </div>
 </div>
-<a id="ac4a8d45bcb168d3e30a007f8d03cd951"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4a8d45bcb168d3e30a007f8d03cd951">&#9670;&nbsp;</a></span>setServico()</h2>
+<a id="ac8734ac8bbc69cdfdb167efe3de03ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8734ac8bbc69cdfdb167efe3de03ea4">&#9670;&nbsp;</a></span>setServico() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +182,7 @@ Membros públicos</h2></td></tr>
         <tr>
           <td class="memname">virtual void InterFunc::setServico </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_inter_serv.html">InterServ</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_inter_s_aut.html">InterSAut</a> *&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -190,6 +200,76 @@ Membros públicos</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implementado em <a class="el" href="class_a_aut.html#ad21392764e60b80b5ef7d90004d2caf7">AAut</a>.</p>
+
+</div>
+</div>
+<a id="ac9bea441f6a4c9b3ed948a6cbeefb07e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9bea441f6a4c9b3ed948a6cbeefb07e">&#9670;&nbsp;</a></span>setServico() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void InterFunc::setServico </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inter_s_usu.html">InterSUsu</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Atribuição da Camada de Serviço que a aplicação irá funcionar, para a dada funcionalidade. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Camada</td><td>de serviço a ser considerada </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado em <a class="el" href="class_a_aut.html#ad8c6d5da90765a3406ef34bd93f4fe1a">AAut</a>.</p>
+
+</div>
+</div>
+<a id="a1e3e78a02fb34be1082f23d3b738007e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3e78a02fb34be1082f23d3b738007e">&#9670;&nbsp;</a></span>setServico() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void InterFunc::setServico </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_inter_s_est.html">InterSEst</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Atribuição da Camada de Serviço que a aplicação irá funcionar, para a dada funcionalidade. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Camada</td><td>de serviço a ser considerada </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado em <a class="el" href="class_a_aut.html#a854520a227d65a86af950525f015e00c">AAut</a>.</p>
+
 </div>
 </div>
 <hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
@@ -201,7 +281,7 @@ Membros públicos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_inter_func.html">InterFunc</a></li>
-    <li class="footer">Gerado em Sábado, 14 de Outubro de 2017 11:08:31 para Trabalho_Disciplina por
+    <li class="footer">Gerado em Sábado, 14 de Outubro de 2017 15:03:35 para Trabalho_Disciplina por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

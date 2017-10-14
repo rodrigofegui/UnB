@@ -23,6 +23,6 @@
             /*  Direcionamento para a funcionalidade */
             Resultado autenticar () override;
             Resultado usuario () override;
-            Resultado estante () override;
+            Resultado estante (const Resultado &) override;
     };
 #endif // APRES_APP_APLICACAO_TST_HPP

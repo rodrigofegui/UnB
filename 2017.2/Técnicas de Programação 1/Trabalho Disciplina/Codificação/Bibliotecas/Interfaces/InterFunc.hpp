@@ -5,7 +5,9 @@
      *  @file   InterFunc.hpp
      *  @author Rodrigo F. Guimarães
      */
-    #include "InterServ.hpp"
+    #include "InterSAut.hpp"
+	#include "InterSUsu.hpp"
+	#include "InterSEst.hpp"
 
     /**
      *  @class  InterFunc
@@ -35,6 +37,22 @@
              *  para a dada funcionalidade.
              *  @param Camada de serviço a ser considerada
              */
-            virtual void setServico (InterServ *) = 0;
+            virtual void setServico (InterSAut *) = 0;
+
+			/**
+             *  Atribuição da Camada de Serviço
+             *  que a aplicação irá funcionar,
+             *  para a dada funcionalidade.
+             *  @param Camada de serviço a ser considerada
+             */
+            virtual void setServico (InterSUsu *) = 0;
+
+			/**
+             *  Atribuição da Camada de Serviço
+             *  que a aplicação irá funcionar,
+             *  para a dada funcionalidade.
+             *  @param Camada de serviço a ser considerada
+             */
+            virtual void setServico (InterSEst *) = 0;
     };
 #endif // INTER_FUNC_HPP

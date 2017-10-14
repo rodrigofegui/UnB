@@ -12,12 +12,15 @@ var hierarchy =
       [ "Texto", "class_texto.html", null ],
       [ "Titulo", "class_titulo.html", null ]
     ] ],
-    [ "InterFunc", "class_inter_func.html", null ],
-    [ "InterServ", "class_inter_serv.html", [
-      [ "InterSAut", "class_inter_s_aut.html", null ],
-      [ "InterSEst", "class_inter_s_est.html", null ],
-      [ "InterSUsu", "class_inter_s_usu.html", null ]
+    [ "InterFunc", "class_inter_func.html", [
+      [ "AAut", "class_a_aut.html", [
+        [ "AAutTst", "class_a_aut_tst.html", null ]
+      ] ]
     ] ],
+    [ "InterSAut", "class_inter_s_aut.html", null ],
+    [ "InterServ", "class_inter_serv.html", null ],
+    [ "InterSEst", "class_inter_s_est.html", null ],
+    [ "InterSUsu", "class_inter_s_usu.html", null ],
     [ "Livro", "class_livro.html", null ],
     [ "Log", "class_log.html", null ],
     [ "Login", "class_login.html", null ],
@@ -42,6 +45,7 @@ var hierarchy =
     ] ],
     [ "TesteUnitario", "class_teste_unitario.html", null ],
     [ "TUI", "class_t_u_i.html", [
+      [ "AAut", "class_a_aut.html", null ],
       [ "Aplicacao", "class_aplicacao.html", [
         [ "AplicacaoTst", "class_aplicacao_tst.html", null ]
       ] ]

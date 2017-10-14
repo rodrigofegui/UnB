@@ -5,7 +5,7 @@
      *  @file   TUI.hpp
      *  @author Rodrigo F. Guimarães
      */
-    #include "../Dominio/Resultado.hpp"
+    #include "../Entidade/Resultado.hpp"
     #include "../Entidade/Log.hpp"
 
     /**

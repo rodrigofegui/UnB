@@ -18,7 +18,6 @@ int main(){
         AplicacaoTst aplicacao;
     #else
         Aplicacao aplicacao;
-        cout << "aplicação real" << endl;
     #endif // TESTE
 
     aplicacao.executar();

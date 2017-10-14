@@ -1,6 +1,7 @@
 #include "../../Bibliotecas/Apresentacao/TUI.hpp"
 
-void TUI::executar (){
+void TUI::executar (){;
+
     if (!this->iniciouLog){
         this->iniciouLog = !this->iniciouLog;
         Log::iniciar();

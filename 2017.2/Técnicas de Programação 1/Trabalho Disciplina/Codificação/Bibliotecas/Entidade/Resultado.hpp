@@ -5,7 +5,8 @@
      *  @file   Resultado.hpp
      *  @author Rodrigo F. Guimarães
      */
-    #include "DominioBase.hpp"
+    #include "../Dominio/DominioBase.hpp"
+	#include "Login.hpp"
 
     /**
      *  @class  Resultado
@@ -13,6 +14,9 @@
      */
     class Resultado : public DominioBase{
         private:
+			/*	Entidades/Domínios como resultado */
+			Login	*login;
+
             void validar (const string &campo) throw (invalid_argument) override;
 
         public:
@@ -33,7 +37,7 @@
             /**
              *  Construtor padrão
              */
-            Resultado (){};
+            Resultado ();
 
             /**
              *  Construtor de um Resultado, conhecendo-se
@@ -42,9 +46,34 @@
              */
             Resultado (const string &);
 
+			/**
+			 *  Construtor de um Resultado, conhecendo-se
+			 *  o mesmo
+			 *  @param Resultado a ser conferido
+			 */
+			Resultado (Login *);
+
+			/**
+             *  Atribuição do login do Resultado
+             *  @param Login a ser atribuído
+             */
+			void setLogin (Login *);
+
+			/**
+             *  Recuperar o valor atribuído ao login do Resultado
+             *  @return Login armazenado na Resenha
+             */
+			Login * getLogin () const;
+
             /**
              *  Destrutor padrão
              */
             void deletar() override;
     };
+
+	/*  Definição dos métodos 'Get' */
+	inline Login * Resultado::getLogin () const {return this->login;}
+
+	/*  Definição dos métodos 'Set' */
+	inline void Resultado::setLogin (Login *login) {this->login = login;}
 #endif // RESULTADO_HPP

@@ -5,7 +5,6 @@
      *  @file   InterSUsu.hpp
      *  @author Rodrigo F. Guimarães
      */
-    #include "InterServ.hpp"
     #include "../Entidade/Usuario.hpp"
 
     /**
@@ -13,7 +12,7 @@
      *  Protocolo de comunicação entre a camada
      *  de Apresentação e de Serviço, para a funcionalidade de Usuário
      */
-    class InterSUsu : public InterServ{
+    class InterSUsu{
         public:
             /**
              *  Cadastramento de um usuário na Base de Dados.

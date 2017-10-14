@@ -1,4 +1,5 @@
 #include "../../../Bibliotecas/Apresentacao/Aplicacao/Aplicacao.hpp"
+#include "../../../Bibliotecas/Apresentacao/CtrlAut/AAut.hpp"
 
 const string Aplicacao::MSG_FINALIZAR   ("Aplicação finalizada.");
 const string Aplicacao::MSG_AGD_LEITURA ("Leitura das opções do usuário na Tela inicial da aplicação.");
@@ -46,14 +47,21 @@ Resultado Aplicacao::leitura(){
 }
 
 Resultado Aplicacao::direcionar (const Resultado &escolha){
+	if (escolha.getCampo() == Resultado::ESC_SAIR)
+		return escolha;
+
+	Resultado preliminar;
+
     if (escolha.getCampo() == Resultado::ESC_AUTENTICAR)
-        return autenticar();
+        preliminar = autenticar();
 
-    if (escolha.getCampo() == Resultado::ESC_CADASTRAR)
-        return usuario();
+    else if (escolha.getCampo() == Resultado::ESC_CADASTRAR)
+        preliminar = usuario();
 
-    if (escolha.getCampo() == Resultado::ESC_SAIR)
-        return escolha;
+	if (preliminar.getCampo() == Resultado::SUCESSO)
+		return estante (preliminar);
+
+	return Resultado(Resultado::ESC_SAIR);
 }
 
 Resultado Aplicacao::autenticar(){
@@ -61,7 +69,8 @@ Resultado Aplicacao::autenticar(){
     cout << "Autenticar..." << endl;
     Manipulacao::pausar();
 
-    return Resultado (Resultado::SUCESSO);
+	this->func = new AAut ();
+	return this->func->executar();
 }
 
 Resultado Aplicacao::usuario(){
@@ -72,7 +81,7 @@ Resultado Aplicacao::usuario(){
     return Resultado (Resultado::SUCESSO);
 }
 
-Resultado Aplicacao::estante(){
+Resultado Aplicacao::estante(const Resultado &apelido){
     Log::escrever(MSG_ESC_EST);
     cout << "Estante..." << endl;
     Manipulacao::pausar();

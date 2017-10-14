@@ -5,7 +5,6 @@
      *  @file   InterSAut.hpp
      *  @author Rodrigo F. Guimarães
      */
-    #include "InterServ.hpp"
     #include "../Entidade/Login.hpp"
 
     /**
@@ -13,7 +12,7 @@
      *  Protocolo de comunicação entre a camada de
      *  Apresentação e de Serviço, para a funcionalidade de Autenticação.
      */
-    class InterSAut : public InterServ{
+    class InterSAut{
         public:
             /**
              *  Autenticar login de usuário, conforme

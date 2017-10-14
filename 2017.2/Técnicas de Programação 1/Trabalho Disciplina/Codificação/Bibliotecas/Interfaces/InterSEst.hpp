@@ -5,8 +5,8 @@
      *  @file   InterSEst.hpp
      *  @author Rodrigo F. Guimarães
      */
-    #include "InterServ.hpp"
-    #include "../Dominio/Titulo.hpp"
+    #include "../Entidade/Livro.hpp"
+    #include "../Entidade/Resenha.hpp"
     #include "../Dominio/Apelido.hpp"
 
     /**
@@ -15,7 +15,7 @@
      *  de Apresentação e de Serviço, para a
      *  funcionalidade da Estante.
      */
-    class InterSEst : public InterServ{
+    class InterSEst{
         public:
             /**
              *  Consulta de um Livro na Estante.

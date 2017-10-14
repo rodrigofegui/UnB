@@ -26,11 +26,6 @@
             const static int CADASTRAR  = 2;
             const static int SAIR       = 0;
 
-            /*  Arquivo de Log */
-            //Log arqLog;
-            /*  Funcionalidade a ser trabalhada */
-            InterFunc *func;
-
             /*  Métodos herdados */
             Resultado direcionar (const Resultado &);
             Resultado leitura ();
@@ -44,10 +39,13 @@
 			const static string MSG_ESC_USU;
 			const static string MSG_ESC_EST;
 
+			/*  Funcionalidade a ser trabalhada */
+            InterFunc *func;
+
             /*  Direcionamento para a funcionalidade */
             virtual Resultado autenticar ();
             virtual Resultado usuario ();
-            virtual Resultado estante ();
+            virtual Resultado estante (const Resultado &);
 
             /*  Métodos herdados */
             void menu ();

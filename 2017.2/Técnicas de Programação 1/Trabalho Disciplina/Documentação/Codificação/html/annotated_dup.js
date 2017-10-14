@@ -1,5 +1,7 @@
 var annotated_dup =
 [
+    [ "AAut", "class_a_aut.html", "class_a_aut" ],
+    [ "AAutTst", "class_a_aut_tst.html", "class_a_aut_tst" ],
     [ "Apelido", "class_apelido.html", "class_apelido" ],
     [ "ApelidoTst", "class_apelido_tst.html", null ],
     [ "Aplicacao", "class_aplicacao.html", "class_aplicacao" ],
