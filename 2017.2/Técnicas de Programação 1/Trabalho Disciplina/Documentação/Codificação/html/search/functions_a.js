@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['remover',['remover',['../class_inter_s_est.html#a429c9c78b9efe591bdb446ec6e4d9e78',1,'InterSEst']]],
-  ['resenha',['Resenha',['../class_resenha.html#a2f5ce867133fc2f3722a763071ee1739',1,'Resenha::Resenha()'],['../class_resenha.html#ab55fd8e9b7b06eb4c74699729cbefbad',1,'Resenha::Resenha(const Texto &amp;txt)'],['../class_resenha.html#a6310707fdecc17173f1f2aae4e55a3c5',1,'Resenha::Resenha(const Titulo &amp;titulo)'],['../class_resenha.html#ab2f8a5978f481a29b6511b6a691c2d21',1,'Resenha::Resenha(const Texto &amp;txt, const Titulo &amp;titulo)']]],
-  ['resultado',['Resultado',['../class_resultado.html#a19f1462f174b83e47de8fe0b8a7e88a1',1,'Resultado::Resultado()'],['../class_resultado.html#a280804d0bacde763202fb71acdcf95ca',1,'Resultado::Resultado(const string &amp;)']]]
+  ['nolimite',['noLimite',['../class_manipulacao.html#a0b8179d52523041c8694d55d9621396c',1,'Manipulacao::noLimite(string src, int lim)'],['../class_manipulacao.html#ae40f3365c9f1fe5579e8ba4d942c5ac0',1,'Manipulacao::noLimite(int alvo, int lim)']]],
+  ['nome',['Nome',['../class_nome.html#a500b022728cd437dd749bfe625a26a4d',1,'Nome::Nome()'],['../class_nome.html#a755c6a07502eaf2e009cfb42a6b4db59',1,'Nome::Nome(const string &amp;campo)']]],
+  ['nomepadrao',['nomePadrao',['../class_log.html#a23f0dd148b60d3bbc1fb23a8168e0b10',1,'Log']]]
 ];

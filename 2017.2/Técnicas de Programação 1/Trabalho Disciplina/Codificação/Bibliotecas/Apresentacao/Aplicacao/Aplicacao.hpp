@@ -16,6 +16,11 @@
      */
     class Aplicacao : public TUI{
         private:
+			/*	Mensagem padrao */
+			const static string MSG_FINALIZAR;
+			const static string MSG_AGD_LEITURA;
+			const static string MSG_ESC_INV;
+
             /*  Constantes de trabalho */
             const static int AUTENTICAR = 1;
             const static int CADASTRAR  = 2;
@@ -31,8 +36,14 @@
             Resultado leitura ();
             Resultado tratarErro ();
             Resultado tratarErro (const Resultado &);
+			void finalizar ();
 
         protected:
+			/**	Mensagem padrão */
+			const static string MSG_ESC_AUT;
+			const static string MSG_ESC_USU;
+			const static string MSG_ESC_EST;
+
             /*  Direcionamento para a funcionalidade */
             virtual Resultado autenticar ();
             virtual Resultado usuario ();

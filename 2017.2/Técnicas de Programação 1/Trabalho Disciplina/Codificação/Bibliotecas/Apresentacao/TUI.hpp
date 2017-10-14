@@ -6,6 +6,7 @@
      *  @author Rodrigo F. Guimarães
      */
     #include "../Dominio/Resultado.hpp"
+    #include "../Entidade/Log.hpp"
 
     /**
      *  @class  TUI
@@ -16,6 +17,9 @@
         private:
             /*  Constante */
             const static int LIM_TENT = 3;
+
+            /*  Inicialização do arquivo de log */
+            bool iniciouLog = false;
 
             /*  Tentativas de operacionalidade */
             Resultado tentar ();
@@ -41,6 +45,12 @@
              *  operacionais.
              */
             virtual void menu () = 0;
+
+            /**
+             *  Finalização das atividades, garantindo a integridade
+             *  do sistema
+             */
+            virtual void finalizar() = 0;
 
             /**
              *  Tratamento adequado para os eventuais

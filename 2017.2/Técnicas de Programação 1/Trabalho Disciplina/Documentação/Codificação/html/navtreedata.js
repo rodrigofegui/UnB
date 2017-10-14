@@ -16,7 +16,6 @@ var NAVTREE =
       [ "Lista de ficheiros", "files.html", "files" ],
       [ "Membros dos Ficheiros", "globals.html", [
         [ "Tudo", "globals.html", null ],
-        [ "Funções", "globals_func.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -26,7 +25,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_apelido_8hpp.html",
-"functions_func.html"
+"class_usuario.html#aadad53ed0f557306c3966b2e94359729"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

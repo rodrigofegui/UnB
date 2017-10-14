@@ -1,5 +1,21 @@
 var searchData=
 [
-  ['hanum',['haNum',['../class_manipulacao.html#af7a8c0f2d7768503e6882dddf8b4a90d',1,'Manipulacao']]],
-  ['harepeticao',['haRepeticao',['../class_manipulacao.html#a427e13f847b2a608b5110429a5d0644f',1,'Manipulacao']]]
+  ['generoliterario',['GeneroLiterario',['../class_genero_literario.html#a89d8c73d37c6cdc8f97656d8de1969ca',1,'GeneroLiterario::GeneroLiterario()'],['../class_genero_literario.html#a519000e1ecc8cfb001c9885df102c558',1,'GeneroLiterario::GeneroLiterario(const string &amp;campo)']]],
+  ['getano',['getAno',['../class_data.html#a986bec10cbca338f08c9096d8e51efb5',1,'Data']]],
+  ['getapelido',['getApelido',['../class_login.html#aa4490df2eb3b35e91e669b381969d9d8',1,'Login::getApelido()'],['../class_usuario.html#a40d3e84b47c695c1fefa48611363684a',1,'Usuario::getApelido()']]],
+  ['getautor',['getAutor',['../class_livro.html#ac8b48645f2d1c21bf0f77d6cbf8d0c6b',1,'Livro']]],
+  ['getcampo',['getCampo',['../class_dominio_base.html#a8168530ac1e3d84cb3b7090ba066d56d',1,'DominioBase']]],
+  ['getcodigo',['getCodigo',['../class_livro.html#a261aab169b551712e987683071d7d5d5',1,'Livro']]],
+  ['getdata',['getData',['../class_log.html#a71f411094c7502d41aa150c1e071e033',1,'Log']]],
+  ['getdatapublicacao',['getDataPublicacao',['../class_livro.html#adfb992a7a7dbb7973b80143d4a773f4f',1,'Livro']]],
+  ['getdia',['getDia',['../class_data.html#aa9b7bdc683d9c493d903184e85f1e6b3',1,'Data']]],
+  ['getdiretorio',['getDiretorio',['../class_log.html#a9a99e776cc7f2a17bf6c115ee16ff884',1,'Log']]],
+  ['getgenero',['getGenero',['../class_livro.html#a10a5aee1a5bd5087a20df85a8344cdcf',1,'Livro']]],
+  ['gethora',['getHora',['../class_log.html#ae134d0b80b324ca2dd6795804f56c9d1',1,'Log']]],
+  ['getmes',['getMes',['../class_data.html#a1df6f5e1695c7cae56b9ee752a6895e8',1,'Data']]],
+  ['getnome',['getNome',['../class_log.html#ad9ddc988b94a0249618f4ae0019a4be9',1,'Log::getNome()'],['../class_usuario.html#a712640c003aa66605846627f2c90db60',1,'Usuario::getNome()']]],
+  ['getsenha',['getSenha',['../class_login.html#ac9bd16f429183decbd17879167feab34',1,'Login::getSenha()'],['../class_usuario.html#a8f78d3949b3a9492d0aa0a197860a972',1,'Usuario::getSenha()']]],
+  ['gettelefone',['getTelefone',['../class_usuario.html#aadad53ed0f557306c3966b2e94359729',1,'Usuario']]],
+  ['gettexto',['getTexto',['../class_resenha.html#a6b4729960f0924cc9ffa96b52d4f76cd',1,'Resenha']]],
+  ['gettitulo',['getTitulo',['../class_resenha.html#a849ee8d52f43d50e7760799763f2158c',1,'Resenha::getTitulo()'],['../class_livro.html#a65b1591cccf64316d3796e3bc825cb8a',1,'Livro::getTitulo()']]]
 ];

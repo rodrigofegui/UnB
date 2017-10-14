@@ -1,5 +1,13 @@
 #include "../../../Bibliotecas/Apresentacao/Aplicacao/Aplicacao.hpp"
 
+const string Aplicacao::MSG_FINALIZAR   ("Aplicação finalizada.");
+const string Aplicacao::MSG_AGD_LEITURA ("Leitura das opções do usuário na Tela inicial da aplicação.");
+const string Aplicacao::MSG_ESC_INV     ("Leitura de um valor fora do intervalo.");
+const string Aplicacao::MSG_ESC_AUT     ("Redirecionando a aplicação para a Autenticação.");
+const string Aplicacao::MSG_ESC_USU     ("Redirecionando a aplicação para o Usuário.");
+const string Aplicacao::MSG_ESC_EST     ("Redirecionando a aplicação para a Estante.");
+
+
 void Aplicacao::menu (){
     Manipulacao::limparTela();
 
@@ -17,6 +25,7 @@ void Aplicacao::menu (){
 Resultado Aplicacao::leitura(){
     int resp = 0;
 
+    Log::escrever(MSG_AGD_LEITURA);
     cout << "Digite a sua escolha: ";
 
     cin >> resp;
@@ -32,6 +41,7 @@ Resultado Aplicacao::leitura(){
         return Resultado(Resultado::ESC_SAIR);
 
     cout << "Fora do intervalo desejável!" << endl << endl;
+    Log::escrever(MSG_ESC_INV);
     return Resultado(Resultado::FALHA);
 }
 
@@ -47,6 +57,7 @@ Resultado Aplicacao::direcionar (const Resultado &escolha){
 }
 
 Resultado Aplicacao::autenticar(){
+    Log::escrever(MSG_ESC_AUT);
     cout << "Autenticar..." << endl;
     Manipulacao::pausar();
 
@@ -54,6 +65,7 @@ Resultado Aplicacao::autenticar(){
 }
 
 Resultado Aplicacao::usuario(){
+    Log::escrever(MSG_ESC_USU);
     cout << "Usuário..." << endl;
     Manipulacao::pausar();
 
@@ -61,10 +73,15 @@ Resultado Aplicacao::usuario(){
 }
 
 Resultado Aplicacao::estante(){
+    Log::escrever(MSG_ESC_EST);
     cout << "Estante..." << endl;
     Manipulacao::pausar();
 
     return Resultado (Resultado::SUCESSO);
+}
+
+void Aplicacao::finalizar(){
+    Log::escrever(MSG_FINALIZAR);
 }
 
 Resultado Aplicacao::tratarErro (){ return Resultado(Resultado::ESC_SAIR);}

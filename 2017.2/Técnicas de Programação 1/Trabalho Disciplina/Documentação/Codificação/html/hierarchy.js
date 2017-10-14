@@ -19,6 +19,7 @@ var hierarchy =
       [ "InterSUsu", "class_inter_s_usu.html", null ]
     ] ],
     [ "Livro", "class_livro.html", null ],
+    [ "Log", "class_log.html", null ],
     [ "Login", "class_login.html", null ],
     [ "Manipulacao", "class_manipulacao.html", null ],
     [ "Resenha", "class_resenha.html", null ],

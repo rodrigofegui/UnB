@@ -10,6 +10,7 @@
  */
 #include "../Bibliotecas_Tst/AtivaTeste.hpp"
 #include "../Bibliotecas/Principal.hpp"
+#define CODEBLOCKS
 
 int main(){
     #ifdef TESTE

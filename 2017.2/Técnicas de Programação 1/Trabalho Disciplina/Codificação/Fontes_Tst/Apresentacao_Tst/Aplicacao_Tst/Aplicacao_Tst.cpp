@@ -28,6 +28,7 @@ void AplicacaoTst::menu(){
 }
 
 Resultado AplicacaoTst::autenticar(){
+    Log::escrever(MSG_ESC_AUT);
     cout << "Autenticar de teste..." << endl;
     Manipulacao::pausar();
 
@@ -35,6 +36,7 @@ Resultado AplicacaoTst::autenticar(){
 }
 
 Resultado AplicacaoTst::usuario(){
+    Log::escrever(MSG_ESC_USU);
     cout << "Usuário de teste..." << endl;
     Manipulacao::pausar();
 
@@ -42,6 +44,7 @@ Resultado AplicacaoTst::usuario(){
 }
 
 Resultado AplicacaoTst::estante(){
+    Log::escrever(MSG_ESC_EST);
     cout << "Estante de teste..." << endl;
     Manipulacao::pausar();
 

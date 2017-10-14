@@ -7,6 +7,8 @@ var searchData=
   ['livro_5ftst_2ehpp',['Livro_Tst.hpp',['../_livro___tst_8hpp.html',1,'']]],
   ['livrotst',['LivroTst',['../class_livro_tst.html',1,'']]],
   ['localizar',['localizar',['../class_manipulacao.html#a58402e83c73e03f97acbc170e1b1ba62',1,'Manipulacao::localizar(vector&lt; int &gt; grupo, int alvo)'],['../class_manipulacao.html#a2710a335fa55b4f4d8bf132f07754817',1,'Manipulacao::localizar(vector&lt; string &gt; grupo, string alvo)']]],
+  ['log',['Log',['../class_log.html',1,'Log'],['../class_log.html#af6071a60aa52b6c1b511f99b4bc1b8fe',1,'Log::Log()'],['../class_log.html#a46203a026055f3a84611befdb2163a5f',1,'Log::Log(string)'],['../class_log.html#a16adc5e36779c647c7afd0d3ef62defd',1,'Log::Log(string, string)']]],
+  ['log_2ehpp',['Log.hpp',['../_log_8hpp.html',1,'']]],
   ['login',['Login',['../class_login.html',1,'Login'],['../class_login.html#a4847f3e07e43b540d3339392346f87ff',1,'Login::Login()'],['../class_login.html#a54a123d68d43402fb90d88ab9e9f265b',1,'Login::Login(const Apelido &amp;apelido, const Senha &amp;senha)']]],
   ['login_2ehpp',['Login.hpp',['../_login_8hpp.html',1,'']]],
   ['login_5ftst_2ehpp',['Login_Tst.hpp',['../_login___tst_8hpp.html',1,'']]],

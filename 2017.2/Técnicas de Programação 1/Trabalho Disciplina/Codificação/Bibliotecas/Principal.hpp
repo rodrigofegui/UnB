@@ -12,6 +12,7 @@
     #include <iostream>
     #include <string>
     #include "Apresentacao/Aplicacao/Aplicacao.hpp"
+	#include "Entidade/Log.hpp"
 
     using namespace std;
 #endif // PRINCIPAL

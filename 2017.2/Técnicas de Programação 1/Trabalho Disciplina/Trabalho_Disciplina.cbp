@@ -47,6 +47,7 @@
 		<Unit filename="Codificação/Bibliotecas/Dominio/Texto.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Titulo.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Entidade/Livro.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Entidade/Log.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Entidade/Login.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Entidade/Resenha.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Entidade/Usuario.hpp" />
@@ -89,6 +90,7 @@
 		<Unit filename="Codificação/Fontes/Dominio/Texto.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Titulo.cpp" />
 		<Unit filename="Codificação/Fontes/Entidade/Livro.cpp" />
+		<Unit filename="Codificação/Fontes/Entidade/Log.cpp" />
 		<Unit filename="Codificação/Fontes/Entidade/Login.cpp" />
 		<Unit filename="Codificação/Fontes/Entidade/Resenha.cpp" />
 		<Unit filename="Codificação/Fontes/Entidade/Usuario.cpp" />

@@ -33,14 +33,11 @@
 
 
     void fullTeste(){
-        AplicacaoTst aplicacaoTst;
         TesteClasse *sobTeste;
 
         testarDominios (sobTeste);
 
         testarEntidades (sobTeste);
-
-        aplicacaoTst.executar();
     }
 
     void testarDominios (TesteClasse *sobTeste){
