@@ -2,7 +2,8 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlAut/AAut.hpp"
 
 const string Aplicacao::MSG_FINALIZAR   ("Aplicação finalizada.");
-const string Aplicacao::MSG_AGD_LEITURA ("Leitura das opções do usuário na Tela inicial da aplicação.");
+const string Aplicacao::MSG_TELA        ("Apresentação da Tela Inicial.");
+const string Aplicacao::MSG_AGD_LEITURA ("Leitura das opções do usuário na Tela Inicial da aplicação.");
 const string Aplicacao::MSG_ESC_INV     ("Leitura de um valor fora do intervalo.");
 const string Aplicacao::MSG_ESC_AUT     ("Redirecionando a aplicação para a Autenticação.");
 const string Aplicacao::MSG_ESC_USU     ("Redirecionando a aplicação para o Usuário.");
@@ -11,6 +12,8 @@ const string Aplicacao::MSG_ESC_EST     ("Redirecionando a aplicação para a Es
 
 void Aplicacao::menu (){
     Manipulacao::limparTela();
+
+    Log::escrever(MSG_TELA);
 
     cout << "****************************************************" << endl;
     cout << "*                     Bem-Vindo                    *" << endl;
@@ -66,10 +69,9 @@ Resultado Aplicacao::direcionar (const Resultado &escolha){
 
 Resultado Aplicacao::autenticar(){
     Log::escrever(MSG_ESC_AUT);
-    cout << "Autenticar..." << endl;
-    Manipulacao::pausar();
 
 	this->func = new AAut ();
+	// FALTA O SERVICO
 	return this->func->executar();
 }
 

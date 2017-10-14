@@ -2,10 +2,14 @@
 #include "../../../Bibliotecas_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_tst.hpp"
 #include "../../../Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp"
 
+const string AplicacaoTst::MSG_TELA        ("Apresentação da Tela Inicial de Teste.");
+
 void AplicacaoTst::menu(){
     if (!this->apresentou){
         this->apresentou = !this->apresentou;
         Manipulacao::limparTela();
+
+        Log::escrever(MSG_TELA);
 
         cout << "****************************************************" << endl;
         cout << "*          Bem-vindo ao teste da Aplicação         *" << endl;

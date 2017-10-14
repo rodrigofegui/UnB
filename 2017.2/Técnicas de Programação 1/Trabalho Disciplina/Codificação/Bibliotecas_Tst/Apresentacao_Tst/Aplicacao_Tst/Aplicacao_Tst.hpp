@@ -16,6 +16,7 @@
         private:
             /*  Controle das telas*/
             bool apresentou = false;
+			const static string MSG_TELA;
 
             /*  Métodos herdados */
             void menu () override;

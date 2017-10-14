@@ -18,6 +18,7 @@
         private:
 			/*	Mensagem padrao */
 			const static string MSG_FINALIZAR;
+			const static string MSG_TELA;
 			const static string MSG_AGD_LEITURA;
 			const static string MSG_ESC_INV;
 
