@@ -33,6 +33,7 @@ var annotated_dup =
     [ "Senha", "class_senha.html", "class_senha" ],
     [ "SenhaTst", "class_senha_tst.html", null ],
     [ "ServAutTst", "class_serv_aut_tst.html", "class_serv_aut_tst" ],
+    [ "ServUsuTst", "class_serv_usu_tst.html", "class_serv_usu_tst" ],
     [ "Telefone", "class_telefone.html", "class_telefone" ],
     [ "TelefoneTst", "class_telefone_tst.html", null ],
     [ "TesteClasse", "class_teste_classe.html", "class_teste_classe" ],

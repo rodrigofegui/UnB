@@ -100,6 +100,9 @@ var files =
     [ "ServAut_Tst.hpp", "_serv_aut___tst_8hpp.html", [
       [ "ServAutTst", "class_serv_aut_tst.html", "class_serv_aut_tst" ]
     ] ],
+    [ "ServUsu_Tst.hpp", "_serv_usu___tst_8hpp.html", [
+      [ "ServUsuTst", "class_serv_usu_tst.html", "class_serv_usu_tst" ]
+    ] ],
     [ "Telefone.hpp", "_telefone_8hpp.html", [
       [ "Telefone", "class_telefone.html", "class_telefone" ]
     ] ],

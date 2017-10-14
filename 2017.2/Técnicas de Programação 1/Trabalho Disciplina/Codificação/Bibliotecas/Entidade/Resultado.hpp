@@ -29,6 +29,8 @@
             const static string FLH_LIM;
 			/** Sinalização de falha de autenticação de usuário */
             const static string FLH_AUT;
+			/**	Sinalização de falha de cadastramento de usuário */
+			const static string FLH_CAD;
 			/**	Sinalização de falha na Base de Dados */
 			const static string FLH_BD;
 

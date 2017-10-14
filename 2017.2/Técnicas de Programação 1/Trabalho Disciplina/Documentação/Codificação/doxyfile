@@ -100,6 +100,7 @@ INPUT                  = \
 	"../../Codificação/Fontes_Tst/Servico_Tst/ServAut_Tst.cpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Nome_Tst.hpp" \
 	"../../Codificação/Fontes/Utilidades/TesteUnitario.cpp" \
+	"../../Codificação/Fontes_Tst/Servico_Tst/ServUsu_Tst.cpp" \
 	"../../Codificação/Fontes/Dominio/Data.cpp" \
 	"../../Codificação/Bibliotecas/Dominio/Texto.hpp" \
 	"../../Codificação/Fontes/Principal.cpp" \
@@ -148,6 +149,7 @@ INPUT                  = \
 	"../../Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp" \
 	"../../Codificação/Bibliotecas/Interfaces/InterServ.hpp" \
 	"../../Codificação/Bibliotecas/Entidade/Resenha.hpp" \
+	"../../Codificação/Bibliotecas_Tst/Servico_Tst/ServUsu_Tst.hpp" \
 	"../../Codificação/Bibliotecas/Entidade/Login.hpp" \
 	"../../Codificação/Fontes/Dominio/Apelido.cpp" \
 	"../../Codificação/Bibliotecas/Apresentacao/TUI.hpp" \

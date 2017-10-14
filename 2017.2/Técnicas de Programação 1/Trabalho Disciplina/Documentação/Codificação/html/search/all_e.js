@@ -6,6 +6,8 @@ var searchData=
   ['senhatst',['SenhaTst',['../class_senha_tst.html',1,'']]],
   ['servaut_5ftst_2ehpp',['ServAut_Tst.hpp',['../_serv_aut___tst_8hpp.html',1,'']]],
   ['servauttst',['ServAutTst',['../class_serv_aut_tst.html',1,'']]],
+  ['servusu_5ftst_2ehpp',['ServUsu_Tst.hpp',['../_serv_usu___tst_8hpp.html',1,'']]],
+  ['servusutst',['ServUsuTst',['../class_serv_usu_tst.html',1,'']]],
   ['setapelido',['setApelido',['../class_usuario.html#af3b1f0f936fa55c41e51f1c22d40c1e2',1,'Usuario::setApelido()'],['../class_login.html#ace0e2e1c01bd0072768a73553a1cc97c',1,'Login::setApelido()'],['../class_resultado.html#a14d4bd65e198c1b4f0e83b67105aec8c',1,'Resultado::setApelido()']]],
   ['setautor',['setAutor',['../class_livro.html#a84c11ec7f3b1f01f21981dc2008090ef',1,'Livro']]],
   ['setcampo',['setCampo',['../class_dominio_base.html#a920e80e85280d435b20063de47eec3ad',1,'DominioBase']]],

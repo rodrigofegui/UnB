@@ -22,7 +22,9 @@ var hierarchy =
     ] ],
     [ "InterServ", "class_inter_serv.html", null ],
     [ "InterSEst", "class_inter_s_est.html", null ],
-    [ "InterSUsu", "class_inter_s_usu.html", null ],
+    [ "InterSUsu", "class_inter_s_usu.html", [
+      [ "ServUsuTst", "class_serv_usu_tst.html", null ]
+    ] ],
     [ "Livro", "class_livro.html", null ],
     [ "Log", "class_log.html", null ],
     [ "Login", "class_login.html", null ],

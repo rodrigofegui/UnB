@@ -78,6 +78,7 @@
 		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp" />
+		<Unit filename="Codificação/Bibliotecas_Tst/Servico_Tst/ServUsu_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/TesteClasse.hpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/Aplicacao/Aplicacao.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlAut/AAut.cpp" />
@@ -118,6 +119,7 @@
 		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Usuario_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Servico_Tst/ServAut_Tst.cpp" />
+		<Unit filename="Codificação/Fontes_Tst/Servico_Tst/ServUsu_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/TesteClasse.cpp" />
 		<Extensions>
 			<code_completion />

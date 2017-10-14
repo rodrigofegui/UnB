@@ -20,6 +20,7 @@
             const static string MSG_EBD;
             const static string MSG_L_INE;
 
+			/*	Mensagem para o inicio da autenticação */
             static string msgInicio (const Login &);
 
         public:

@@ -5,6 +5,8 @@
      *  @file   InterSUsu.hpp
      *  @author Rodrigo F. Guimarães
      */
+	#include "../Entidade/Log.hpp"
+	#include "../Entidade/Resultado.hpp"
     #include "../Entidade/Usuario.hpp"
 
     /**

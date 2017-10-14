@@ -4,7 +4,8 @@ const string Resultado::SUCESSO         ("Operou com sucesso.");
 const string Resultado::FALHA           ("Operou com falha.");
 const string Resultado::FLH_LIM         ("Operou com falha no limite.");
 const string Resultado::FLH_AUT			("Operou com falha de autenticação.");
-const string Resultado::FLH_BD			("Operou com falha na Base de Dados");
+const string Resultado::FLH_BD			("Operou com falha na Base de Dados.");
+const string Resultado::FLH_CAD			("Operou com falha de cadastramento.");
 
 const string Resultado::ESC_AUTENTICAR  ("Escolheu autenticar.");
 const string Resultado::ESC_CADASTRAR   ("Escolheu cadastrar.");
