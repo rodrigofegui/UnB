@@ -12,7 +12,10 @@
 #include "../Bibliotecas/Principal.hpp"
 #define CODEBLOCKS
 
+#include "../Bibliotecas/Entidade/Login.hpp"
+
 int main(){
+    //*
     #ifdef TESTE
         //fullTeste ();
         AplicacaoTst aplicacao;
@@ -21,6 +24,7 @@ int main(){
     #endif // TESTE
 
     aplicacao.executar();
+    //*/
 
     cout << endl << "A execucao da aplicação finalizou!" << endl;
     cout << "Volte sempre!" << endl;

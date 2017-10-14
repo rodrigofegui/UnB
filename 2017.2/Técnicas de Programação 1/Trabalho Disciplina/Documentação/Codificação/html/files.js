@@ -97,7 +97,9 @@ var files =
     [ "Senha_Tst.hpp", "_senha___tst_8hpp.html", [
       [ "SenhaTst", "class_senha_tst.html", null ]
     ] ],
-    [ "ServAut_Tst.hpp", "_serv_aut___tst_8hpp.html", null ],
+    [ "ServAut_Tst.hpp", "_serv_aut___tst_8hpp.html", [
+      [ "ServAutTst", "class_serv_aut_tst.html", "class_serv_aut_tst" ]
+    ] ],
     [ "Telefone.hpp", "_telefone_8hpp.html", [
       [ "Telefone", "class_telefone.html", "class_telefone" ]
     ] ],

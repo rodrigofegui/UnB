@@ -13,7 +13,7 @@ void Aplicacao::menu (){
     Manipulacao::limparTela();
 
     cout << "****************************************************" << endl;
-    cout << "*                 Bem-Vindo à Estante              *" << endl;
+    cout << "*                     Bem-Vindo                    *" << endl;
     cout << "*                                                  *" << endl;
     cout << "* São lhe oferecidas as opções:                    *" << endl;
     printf ("*    %d - Login: Caso já tenha cadastro;            *\n", Aplicacao::AUTENTICAR);
@@ -61,7 +61,7 @@ Resultado Aplicacao::direcionar (const Resultado &escolha){
 	if (preliminar.getCampo() == Resultado::SUCESSO)
 		return estante (preliminar);
 
-	return Resultado(Resultado::ESC_SAIR);
+	return Resultado(Resultado::FALHA);
 }
 
 Resultado Aplicacao::autenticar(){
@@ -93,11 +93,16 @@ void Aplicacao::finalizar(){
     Log::escrever(MSG_FINALIZAR);
 }
 
-Resultado Aplicacao::tratarErro (){ return Resultado(Resultado::ESC_SAIR);}
+Resultado Aplicacao::tratarErro (){ return Resultado(Resultado::FALHA);}
 
 Resultado Aplicacao::tratarErro (const Resultado &evento){
-    if (evento.getCampo() == Resultado::FLH_LIM)
+    if (evento.getCampo() == Resultado::FLH_LIM){
         cout << "Foi atingido o limite de tentativas" << endl;
+        return Resultado(Resultado::ESC_SAIR);
+    }
 
-    return Resultado(Resultado::ESC_SAIR);
+    if (evento.getCampo() == Resultado::ESC_SAIR)
+        return evento;
+
+    return Resultado (Resultado::FALHA);
 }

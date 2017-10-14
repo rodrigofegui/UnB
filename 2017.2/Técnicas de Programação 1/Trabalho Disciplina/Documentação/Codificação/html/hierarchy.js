@@ -17,7 +17,9 @@ var hierarchy =
         [ "AAutTst", "class_a_aut_tst.html", null ]
       ] ]
     ] ],
-    [ "InterSAut", "class_inter_s_aut.html", null ],
+    [ "InterSAut", "class_inter_s_aut.html", [
+      [ "ServAutTst", "class_serv_aut_tst.html", null ]
+    ] ],
     [ "InterServ", "class_inter_serv.html", null ],
     [ "InterSEst", "class_inter_s_est.html", null ],
     [ "InterSUsu", "class_inter_s_usu.html", null ],

@@ -5,7 +5,7 @@ var searchData=
   ['generoliterario_5ftst_2ehpp',['GeneroLiterario_Tst.hpp',['../_genero_literario___tst_8hpp.html',1,'']]],
   ['generoliterariotst',['GeneroLiterarioTst',['../class_genero_literario_tst.html',1,'']]],
   ['getano',['getAno',['../class_data.html#a986bec10cbca338f08c9096d8e51efb5',1,'Data']]],
-  ['getapelido',['getApelido',['../class_usuario.html#a40d3e84b47c695c1fefa48611363684a',1,'Usuario::getApelido()'],['../class_login.html#aa4490df2eb3b35e91e669b381969d9d8',1,'Login::getApelido()']]],
+  ['getapelido',['getApelido',['../class_usuario.html#a40d3e84b47c695c1fefa48611363684a',1,'Usuario::getApelido()'],['../class_login.html#aa4490df2eb3b35e91e669b381969d9d8',1,'Login::getApelido()'],['../class_resultado.html#ae9efd46c542bbcf0fc18489743dfa79c',1,'Resultado::getApelido()']]],
   ['getautor',['getAutor',['../class_livro.html#ac8b48645f2d1c21bf0f77d6cbf8d0c6b',1,'Livro']]],
   ['getcampo',['getCampo',['../class_dominio_base.html#a8168530ac1e3d84cb3b7090ba066d56d',1,'DominioBase']]],
   ['getcodigo',['getCodigo',['../class_livro.html#a261aab169b551712e987683071d7d5d5',1,'Livro']]],

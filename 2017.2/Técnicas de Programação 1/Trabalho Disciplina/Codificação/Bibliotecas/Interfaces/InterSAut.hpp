@@ -5,7 +5,9 @@
      *  @file   InterSAut.hpp
      *  @author Rodrigo F. Guimarães
      */
+    #include "../Entidade/Log.hpp"
     #include "../Entidade/Login.hpp"
+    #include "../Entidade/Resultado.hpp"
 
     /**
      *  @class InterSAut

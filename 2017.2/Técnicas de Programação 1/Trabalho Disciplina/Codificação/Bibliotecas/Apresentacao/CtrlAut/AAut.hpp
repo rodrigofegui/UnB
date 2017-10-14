@@ -17,8 +17,9 @@
      */
     class AAut : public TUI, public InterFunc{
         private:
-            Login     *login;
-            InterSAut *servico;
+            Apelido     apelido;
+            Login       *login = nullptr;
+            InterSAut   *servico = nullptr;
 
             /*  Métodos herdados */
             Resultado direcionar (const Resultado &);
@@ -34,6 +35,7 @@
             const static string MSG_LER_APE;
             const static string MSG_LER_SEN;
             const static string MSG_ERRO;
+            const static string MSG_ERRO_D;
 
             /*  Métodos herdados */
             void menu ();

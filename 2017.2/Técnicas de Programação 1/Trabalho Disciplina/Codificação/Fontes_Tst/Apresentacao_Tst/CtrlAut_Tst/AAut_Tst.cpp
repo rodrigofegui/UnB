@@ -1,4 +1,5 @@
 #include "../../../Bibliotecas_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_tst.hpp"
+#include "../../../Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp"
 
 void AAutTst::menu(){
     if (!this->apresentou){
@@ -10,9 +11,11 @@ void AAutTst::menu(){
         cout << "*                                                  *" << endl;
         cout << "* Gatilhos disponíveis:                            *" << endl;
         cout << "*     - Usuário não cadastrado:                    *" << endl;
-        cout << "*         + Apelido: jose                          *" << endl;
+        cout << "*         + Apelido: " +
+                ServAutTst::LOGIN_INE + "                         *" << endl;
         cout << "*     - Erro conexão Base de Dados:                *" << endl;
-        cout << "*         + Apelido: mart                          *" << endl;
+        cout << "*         + Apelido: " +
+                ServAutTst::LOGIN_EBD + "                         *" << endl;
         cout << "****************************************************" << endl;
 
         Manipulacao::pausar();

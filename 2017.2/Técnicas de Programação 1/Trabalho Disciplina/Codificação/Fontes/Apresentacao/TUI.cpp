@@ -1,6 +1,6 @@
 #include "../../Bibliotecas/Apresentacao/TUI.hpp"
 
-void TUI::executar (){;
+void TUI::executar (){
 
     if (!this->iniciouLog){
         this->iniciouLog = !this->iniciouLog;
@@ -9,7 +9,7 @@ void TUI::executar (){;
 
     do{
         menu ();
-    }while (tentar ().getCampo() != Resultado::ESC_SAIR);
+    }while (tentar().getCampo() != Resultado::ESC_SAIR);
 
     finalizar ();
 }
@@ -29,7 +29,13 @@ Resultado TUI::tentar (){
         if (!tentativas)
             throw Resultado(Resultado::FLH_LIM);
 
-        return direcionar(result);
+    	result = direcionar(result);
+
+		if (result.getCampo() != Resultado::SUCESSO)
+			throw result;
+
+		return result;
+
     }catch(Resultado evento){   return tratarErro(evento);
     }catch(...){                return tratarErro();
     }

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['senha',['Senha',['../class_senha.html#ade5ef5c7f37a1dd7a3bea575fb745a46',1,'Senha::Senha()'],['../class_senha.html#af1480669d27620c340bd658b7fce3ee2',1,'Senha::Senha(const string &amp;campo)']]],
-  ['setapelido',['setApelido',['../class_usuario.html#af3b1f0f936fa55c41e51f1c22d40c1e2',1,'Usuario::setApelido()'],['../class_login.html#ace0e2e1c01bd0072768a73553a1cc97c',1,'Login::setApelido()']]],
+  ['setapelido',['setApelido',['../class_usuario.html#af3b1f0f936fa55c41e51f1c22d40c1e2',1,'Usuario::setApelido()'],['../class_login.html#ace0e2e1c01bd0072768a73553a1cc97c',1,'Login::setApelido()'],['../class_resultado.html#a14d4bd65e198c1b4f0e83b67105aec8c',1,'Resultado::setApelido()']]],
   ['setautor',['setAutor',['../class_livro.html#a84c11ec7f3b1f01f21981dc2008090ef',1,'Livro']]],
   ['setcampo',['setCampo',['../class_dominio_base.html#a920e80e85280d435b20063de47eec3ad',1,'DominioBase']]],
   ['setcodigo',['setCodigo',['../class_livro.html#a1a1310f9fafd3e1c9cb8fecc927f5e32',1,'Livro']]],

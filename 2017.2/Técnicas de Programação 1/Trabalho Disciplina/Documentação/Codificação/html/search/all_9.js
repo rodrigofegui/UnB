@@ -11,6 +11,8 @@ var searchData=
   ['log_2ehpp',['Log.hpp',['../_log_8hpp.html',1,'']]],
   ['login',['Login',['../class_login.html',1,'Login'],['../class_login.html#a4847f3e07e43b540d3339392346f87ff',1,'Login::Login()'],['../class_login.html#a54a123d68d43402fb90d88ab9e9f265b',1,'Login::Login(const Apelido &amp;apelido, const Senha &amp;senha)']]],
   ['login_2ehpp',['Login.hpp',['../_login_8hpp.html',1,'']]],
+  ['login_5febd',['LOGIN_EBD',['../class_serv_aut_tst.html#a774e92c6eb3bc892d34265fd74b50874',1,'ServAutTst']]],
+  ['login_5fine',['LOGIN_INE',['../class_serv_aut_tst.html#a44b6261093896a080eed3c006a911c67',1,'ServAutTst']]],
   ['login_5ftst_2ehpp',['Login_Tst.hpp',['../_login___tst_8hpp.html',1,'']]],
   ['logintst',['LoginTst',['../class_login_tst.html',1,'']]]
 ];
