@@ -13,6 +13,11 @@ const string Resultado::FLH_RMV			("Operou com falha de remoção.");
 
 const string Resultado::ESC_AUTENTICAR  ("Escolheu autenticar.");
 const string Resultado::ESC_CADASTRAR   ("Escolheu cadastrar.");
+const string Resultado::ESC_CONS_LIVRO  ("Escolheu consultar livro.");
+const string Resultado::ESC_CONS_USR    ("Escolheu consultar usuário.");
+const string Resultado::ESC_CRI_RES		("Escolheu criar resenha.");
+const string Resultado::ESC_INC_LIVRO   ("Escolheu inserir livro.");
+const string Resultado::ESC_RMV_LIVRO   ("Escolheu remover livro.");
 const string Resultado::ESC_SAIR        ("Escolheu sair.");
 
 Resultado::Resultado(){ setCampo (Resultado::SUCESSO);}

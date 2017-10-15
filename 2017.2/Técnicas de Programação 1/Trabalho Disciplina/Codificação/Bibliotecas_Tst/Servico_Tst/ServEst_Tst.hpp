@@ -23,7 +23,6 @@
             const static string LIVRO_TIT_RES;
             const static string LIVRO_TXT_RES;
 
-
             const static string USUAR_NOM;
             const static string USUAR_APE;
             const static string USUAR_TEL;
@@ -53,7 +52,6 @@
             const static string MSG_FLH_INC;
             const static string MSG_FLH_RMV;
             const static string MSG_EBD;
-
 
             /*	Mensagem para o início das operações */
             static string msgInicio (const DominioBase &);

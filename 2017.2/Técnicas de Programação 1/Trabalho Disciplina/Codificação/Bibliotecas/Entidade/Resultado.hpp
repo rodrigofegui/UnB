@@ -52,6 +52,16 @@
             const static string ESC_AUTENTICAR;
             /** Selecionada a opção de cadastrar */
             const static string ESC_CADASTRAR;
+			/** Selecionada a opção de consultar livro */
+			const static string ESC_CONS_LIVRO;
+			/** Selecionada a opção de consultar usuário */
+			const static string ESC_CONS_USR;
+			/** Selecionada a opção de criar resenha */
+			const static string ESC_CRI_RES;
+			/** Selecionada a opção de inserir exemplar de livro */
+			const static string ESC_INC_LIVRO;
+			/** Selecionada a opção de remover exemplar de livro */
+			const static string ESC_RMV_LIVRO;
             /** Selecionada a opção de sair */
             const static string ESC_SAIR;
 

@@ -1,5 +1,7 @@
 #include "../../../Bibliotecas/Apresentacao/Aplicacao/Aplicacao.hpp"
 #include "../../../Bibliotecas/Apresentacao/CtrlAut/AAut.hpp"
+#include "../../../Bibliotecas/Apresentacao/CtrlUsu/AUsu.hpp"
+#include "../../../Bibliotecas/Apresentacao/CtrlEst/AEst.hpp"
 
 const string Aplicacao::MSG_FINALIZAR   ("Aplicação finalizada.");
 const string Aplicacao::MSG_TELA        ("Apresentação da Tela Inicial.");
@@ -35,18 +37,18 @@ Resultado Aplicacao::leitura(){
     cin >> resp;
         getchar ();
 
-    if (resp == Aplicacao::AUTENTICAR)
-        return Resultado(Resultado::ESC_AUTENTICAR);
-
-    if (resp == Aplicacao::CADASTRAR)
-        return Resultado(Resultado::ESC_CADASTRAR);
-
-    if (resp == Aplicacao::SAIR)
-        return Resultado(Resultado::ESC_SAIR);
-
-    cout << "Fora do intervalo desejável!" << endl << endl;
-    Log::escrever(MSG_ESC_INV);
-    return Resultado(Resultado::FALHA);
+	switch (resp) {
+		case AUTENTICAR:
+			return Resultado(Resultado::ESC_AUTENTICAR);;
+		case CADASTRAR:
+			return Resultado(Resultado::ESC_CADASTRAR);
+		case SAIR:
+			return Resultado(Resultado::ESC_SAIR);
+		default:
+			cout << MSG_ESC_INV << endl << endl;
+		    Log::escrever(MSG_ESC_INV);
+		    return Resultado(Resultado::FALHA);
+	}
 }
 
 Resultado Aplicacao::direcionar (const Resultado &escolha){
@@ -77,21 +79,27 @@ Resultado Aplicacao::autenticar(){
 
 Resultado Aplicacao::usuario(){
     Log::escrever(MSG_ESC_USU);
-    cout << "Usuário..." << endl;
-    Manipulacao::pausar();
+
+	this->func = new AUsu ();
+	// FALTA O SERVICO
+	return this->func->executar();
 
     return Resultado (Resultado::SUCESSO);
 }
 
 Resultado Aplicacao::estante(const Resultado &apelido){
     Log::escrever(MSG_ESC_EST);
-    cout << "Estante..." << endl;
-    Manipulacao::pausar();
+
+	this->func = new AEst ();
+	// FALTA O SERVICO
+	return this->func->executar();
 
     return Resultado (Resultado::SUCESSO);
 }
 
 void Aplicacao::finalizar(){
+	if (this->func) delete this->func;
+
     Log::escrever(MSG_FINALIZAR);
 }
 

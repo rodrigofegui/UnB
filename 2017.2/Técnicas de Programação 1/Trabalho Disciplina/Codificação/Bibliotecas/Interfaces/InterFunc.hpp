@@ -8,6 +8,7 @@
     #include "InterSAut.hpp"
 	#include "InterSUsu.hpp"
 	#include "InterSEst.hpp"
+	#include "../Entidade/Resultado.hpp"
 
     /**
      *  @class  InterFunc
