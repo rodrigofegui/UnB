@@ -35,6 +35,7 @@
 		</Compiler>
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/Aplicacao/Aplicacao.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlAut/AAut.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlUsu/AUsu.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/TUI.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Apelido.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Dominio/Codigo.hpp" />
@@ -62,6 +63,7 @@
 		<Unit filename="Codificação/Bibliotecas/Utilidades/TesteUnitario.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_tst.hpp" />
+		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlUsu_Tst/AUsu_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/AtivaTeste.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp" />
@@ -82,6 +84,7 @@
 		<Unit filename="Codificação/Bibliotecas_Tst/TesteClasse.hpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/Aplicacao/Aplicacao.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlAut/AAut.cpp" />
+		<Unit filename="Codificação/Fontes/Apresentacao/CtrlUsu/AUsu.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/TUI.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Apelido.cpp" />
 		<Unit filename="Codificação/Fontes/Dominio/Codigo.cpp" />
@@ -104,6 +107,7 @@
 		<Unit filename="Codificação/Fontes/Utilidades/TesteUnitario.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_Tst.cpp" />
+		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlUsu_Tst/AUsu_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Codigo_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Data_Tst.cpp" />

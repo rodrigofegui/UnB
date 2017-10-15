@@ -8,7 +8,6 @@
     #include "../TUI.hpp"
     #include "../../Interfaces/InterFunc.hpp"
     #include "../../Interfaces/InterSAut.hpp"
-    #include "../../Entidade/Login.hpp"
 
     /**
      *  @class  AAut
