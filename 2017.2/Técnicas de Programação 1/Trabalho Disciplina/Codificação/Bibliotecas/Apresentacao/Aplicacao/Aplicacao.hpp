@@ -43,7 +43,7 @@
 			const static string MSG_ESC_EST;
 
 			/** Funcionalidade a ser executada */
-            InterFunc *func;
+            InterFunc *func = nullptr;
 
             /** Direcionamento para a funcionalidade de Autenticação */
             virtual Resultado autenticar ();

@@ -35,7 +35,8 @@
 		</Compiler>
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/Aplicacao/Aplicacao.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlAut/AAut.hpp" />
-		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConsulta.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConLivro.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConUsuario.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp" />
@@ -92,7 +93,8 @@
 		<Unit filename="Codificação/Bibliotecas_Tst/TesteClasse.hpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/Aplicacao/Aplicacao.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlAut/AAut.cpp" />
-		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdConsulta.cpp" />
+		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdConLivro.cpp" />
+		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdConUsuario.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdCriarResenha.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdIncluir.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdRemover.cpp" />

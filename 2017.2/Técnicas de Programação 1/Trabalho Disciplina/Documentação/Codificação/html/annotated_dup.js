@@ -2,6 +2,8 @@ var annotated_dup =
 [
     [ "AAut", "class_a_aut.html", "class_a_aut" ],
     [ "AAutTst", "class_a_aut_tst.html", "class_a_aut_tst" ],
+    [ "AEst", "class_a_est.html", "class_a_est" ],
+    [ "AEstTst", "class_a_est_tst.html", "class_a_est_tst" ],
     [ "Apelido", "class_apelido.html", "class_apelido" ],
     [ "ApelidoTst", "class_apelido_tst.html", null ],
     [ "Aplicacao", "class_aplicacao.html", "class_aplicacao" ],
@@ -16,6 +18,7 @@ var annotated_dup =
     [ "DominioBaseTst", "class_dominio_base_tst.html", "class_dominio_base_tst" ],
     [ "GeneroLiterario", "class_genero_literario.html", "class_genero_literario" ],
     [ "GeneroLiterarioTst", "class_genero_literario_tst.html", null ],
+    [ "InterCmdEst", "class_inter_cmd_est.html", "class_inter_cmd_est" ],
     [ "InterFunc", "class_inter_func.html", "class_inter_func" ],
     [ "InterSAut", "class_inter_s_aut.html", "class_inter_s_aut" ],
     [ "InterServ", "class_inter_serv.html", null ],

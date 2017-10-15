@@ -3,8 +3,6 @@
 const string Apelido::msgErroTam ("Apelido fornecido maior que o limite!");
 const string Apelido::msgErroArg ("Apelido foge à especificação alfabética!");
 
-void Apelido::deletar() {delete this;}
-
 Apelido::Apelido(const string &campo){
     setCampo(campo);
 }

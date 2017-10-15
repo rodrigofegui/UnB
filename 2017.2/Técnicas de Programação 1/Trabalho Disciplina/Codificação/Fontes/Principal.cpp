@@ -12,8 +12,6 @@
 #include "../Bibliotecas/Principal.hpp"
 #define CODEBLOCKS
 
-#include "../Bibliotecas/Entidade/Login.hpp"
-
 int main(){
     //*
     #ifdef TESTE

@@ -83,8 +83,6 @@ Resultado Aplicacao::usuario(){
 	this->func = new AUsu ();
 	// FALTA O SERVICO
 	return this->func->executar();
-
-    return Resultado (Resultado::SUCESSO);
 }
 
 Resultado Aplicacao::estante(const Resultado &apelido){
@@ -93,12 +91,14 @@ Resultado Aplicacao::estante(const Resultado &apelido){
 	this->func = new AEst ();
 	// FALTA O SERVICO
 	return this->func->executar();
-
-    return Resultado (Resultado::SUCESSO);
 }
 
 void Aplicacao::finalizar(){
-	if (this->func) delete this->func;
+	/*if (this->func){
+        delete this->func;
+        this->func = nullptr;
+	}
+	//*/
 
     Log::escrever(MSG_FINALIZAR);
 }

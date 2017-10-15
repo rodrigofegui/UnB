@@ -1,8 +1,10 @@
 #include "../../../Bibliotecas_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.hpp"
 #include "../../../Bibliotecas_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_tst.hpp"
 #include "../../../Bibliotecas_Tst/Apresentacao_Tst/CtrlUsu_Tst/AUsu_Tst.hpp"
+#include "../../../Bibliotecas_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.hpp"
 #include "../../../Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp"
 #include "../../../Bibliotecas_Tst/Servico_Tst/ServUsu_Tst.hpp"
+#include "../../../Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp"
 
 const string AplicacaoTst::MSG_TELA        ("Apresentação da Tela Inicial de Teste.");
 
@@ -53,11 +55,8 @@ Resultado AplicacaoTst::usuario(){
 
 Resultado AplicacaoTst::estante(const Resultado &apelido){
     Log::escrever(MSG_ESC_EST);
-    cout << "Estante de teste..." << endl;
-    cout << "Chegou com: ";
-    cout << apelido.getApelido()->getCampo() << endl;
 
-    Manipulacao::pausar();
-
-    return Resultado (Resultado::SUCESSO);
+	this->func = new AEstTst ();
+	this->func->setServico(new ServEstTst());
+	return this->func->executar(apelido);
 }

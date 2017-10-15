@@ -12,9 +12,13 @@ var hierarchy =
       [ "Texto", "class_texto.html", null ],
       [ "Titulo", "class_titulo.html", null ]
     ] ],
+    [ "InterCmdEst", "class_inter_cmd_est.html", null ],
     [ "InterFunc", "class_inter_func.html", [
       [ "AAut", "class_a_aut.html", [
         [ "AAutTst", "class_a_aut_tst.html", null ]
+      ] ],
+      [ "AEst", "class_a_est.html", [
+        [ "AEstTst", "class_a_est_tst.html", null ]
       ] ],
       [ "AUsu", "class_a_usu.html", [
         [ "AUsuTst", "class_a_usu_tst.html", null ]
@@ -55,6 +59,7 @@ var hierarchy =
     [ "TesteUnitario", "class_teste_unitario.html", null ],
     [ "TUI", "class_t_u_i.html", [
       [ "AAut", "class_a_aut.html", null ],
+      [ "AEst", "class_a_est.html", null ],
       [ "Aplicacao", "class_aplicacao.html", [
         [ "AplicacaoTst", "class_aplicacao_tst.html", null ]
       ] ],

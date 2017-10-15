@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['remover',['remover',['../class_inter_s_est.html#a429c9c78b9efe591bdb446ec6e4d9e78',1,'InterSEst::remover()'],['../class_serv_est_tst.html#af74c8c36b5a2d24a9ed4682e4bb875a2',1,'ServEstTst::remover()']]],
+  ['remover',['remover',['../class_serv_est_tst.html#af74c8c36b5a2d24a9ed4682e4bb875a2',1,'ServEstTst::remover()'],['../class_inter_s_est.html#a429c9c78b9efe591bdb446ec6e4d9e78',1,'InterSEst::remover()']]],
   ['resenha',['Resenha',['../class_resenha.html',1,'Resenha'],['../class_resenha.html#a2f5ce867133fc2f3722a763071ee1739',1,'Resenha::Resenha()'],['../class_resenha.html#ab55fd8e9b7b06eb4c74699729cbefbad',1,'Resenha::Resenha(const Texto &amp;txt)'],['../class_resenha.html#a6310707fdecc17173f1f2aae4e55a3c5',1,'Resenha::Resenha(const Titulo &amp;titulo)'],['../class_resenha.html#ab2f8a5978f481a29b6511b6a691c2d21',1,'Resenha::Resenha(const Texto &amp;txt, const Titulo &amp;titulo)']]],
   ['resenha_2ehpp',['Resenha.hpp',['../_resenha_8hpp.html',1,'']]],
   ['resenha_5ftst_2ehpp',['Resenha_Tst.hpp',['../_resenha___tst_8hpp.html',1,'']]],

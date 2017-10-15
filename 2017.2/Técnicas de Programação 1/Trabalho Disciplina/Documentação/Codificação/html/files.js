@@ -6,6 +6,17 @@ var files =
     [ "AAut_tst.hpp", "_a_aut__tst_8hpp.html", [
       [ "AAutTst", "class_a_aut_tst.html", "class_a_aut_tst" ]
     ] ],
+    [ "ACmdConLivro.hpp", "_a_cmd_con_livro_8hpp_source.html", null ],
+    [ "ACmdConUsuario.hpp", "_a_cmd_con_usuario_8hpp_source.html", null ],
+    [ "ACmdCriarResenha.hpp", "_a_cmd_criar_resenha_8hpp_source.html", null ],
+    [ "ACmdIncluir.hpp", "_a_cmd_incluir_8hpp_source.html", null ],
+    [ "ACmdRemover.hpp", "_a_cmd_remover_8hpp_source.html", null ],
+    [ "AEst.hpp", "_a_est_8hpp.html", [
+      [ "AEst", "class_a_est.html", "class_a_est" ]
+    ] ],
+    [ "AEst_Tst.hpp", "_a_est___tst_8hpp.html", [
+      [ "AEstTst", "class_a_est_tst.html", "class_a_est_tst" ]
+    ] ],
     [ "Apelido.hpp", "_apelido_8hpp.html", [
       [ "Apelido", "class_apelido.html", "class_apelido" ]
     ] ],
@@ -48,6 +59,9 @@ var files =
     ] ],
     [ "GeneroLiterario_Tst.hpp", "_genero_literario___tst_8hpp.html", [
       [ "GeneroLiterarioTst", "class_genero_literario_tst.html", null ]
+    ] ],
+    [ "InterCmdEst.hpp", "_inter_cmd_est_8hpp.html", [
+      [ "InterCmdEst", "class_inter_cmd_est.html", "class_inter_cmd_est" ]
     ] ],
     [ "InterFunc.hpp", "_inter_func_8hpp.html", [
       [ "InterFunc", "class_inter_func.html", "class_inter_func" ]

@@ -44,4 +44,6 @@
              */
             void deletar() override;
     };
+
+    inline void Apelido::deletar() {delete this;}
 #endif // APELIDO_HPP

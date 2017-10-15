@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabalho_Disciplina: Código-Fonte de AEst.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Trabalho_Disciplina
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_a_est_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">AEst.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_a_est_8hpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef APRES_CTRL_EST_HPP</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">    #define APRES_CTRL_EST_HPP</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">    #include &quot;../TUI.hpp&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #include &quot;../../Interfaces/InterFunc.hpp&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #include &quot;../../Interfaces/InterSEst.hpp&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    #include &quot;../../Interfaces/InterCmdEst.hpp&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_a_est.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_a_est.html">AEst</a> : <span class="keyword">public</span> <a class="code" href="class_t_u_i.html">TUI</a>, <span class="keyword">public</span> <a class="code" href="class_inter_func.html">InterFunc</a>{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">private</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <a class="code" href="class_apelido.html">Apelido</a>     *apelido = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="comment">/*  Constantes de trabalho */</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> CON_LIVRO   = 1;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> CON_USUARIO = 2;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> CRIAR_RES   = 3;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> INC_LIVRO   = 4;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> RMV_LIVRO   = 5;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> SAIR        = 0;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="comment">/*  Mensagens padrão */</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">string</span> MSG_INI;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">string</span> MSG_LER;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">string</span> MSG_ESC_INV;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">string</span> MSG_FINALIZAR;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="comment">/*  Métodos herdados */</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="class_resultado.html">Resultado</a> leitura ();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="class_resultado.html">Resultado</a> direcionar (<span class="keyword">const</span> <a class="code" href="class_resultado.html">Resultado</a> &amp;);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="class_resultado.html">Resultado</a> tratarErro ();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="class_resultado.html">Resultado</a> tratarErro (<span class="keyword">const</span> <a class="code" href="class_resultado.html">Resultado</a> &amp;);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        <span class="keywordtype">void</span> finalizar ();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        <span class="keywordtype">void</span> setApelido (<a class="code" href="class_apelido.html">Apelido</a> *);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">protected</span>:</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_a_est.html#ae20e2434b0a5940e2b1284813831f144">   46</a></span>&#160;            <a class="code" href="class_inter_s_est.html">InterSEst</a>   *<a class="code" href="class_a_est.html#ae20e2434b0a5940e2b1284813831f144">servico</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_a_est.html#addbf0b2aab1b4ff356767771bef1841e">   48</a></span>&#160;            <a class="code" href="class_inter_cmd_est.html">InterCmdEst</a> *<a class="code" href="class_a_est.html#addbf0b2aab1b4ff356767771bef1841e">cmd</a>     = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_a_est.html#a633b5e142df56acda8a80a0646382318">   51</a></span>&#160;            <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_a_est.html#a633b5e142df56acda8a80a0646382318">MSG_ERRO_D</a>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_a_est.html#a56222b5e71b011912dd5deaf2e89f1f6">menu</a> ();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">public</span>:</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="class_a_est.html">AEst</a> (){};</div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_a_est.html#a5c02a86ab9385b5c711d997346089320">   59</a></span>&#160;            <a class="code" href="class_resultado.html">Resultado</a> <a class="code" href="class_a_est.html#a5c02a86ab9385b5c711d997346089320">executar</a> (){};</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="class_resultado.html">Resultado</a> <a class="code" href="class_a_est.html#a5c02a86ab9385b5c711d997346089320">executar</a> (<span class="keyword">const</span> <a class="code" href="class_resultado.html">Resultado</a> &amp;);</div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_a_est.html#a6bf4bf020b015bd099a2a001c3047c0f">   61</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_a_est.html#a6bf4bf020b015bd099a2a001c3047c0f">setServico</a> (<a class="code" href="class_inter_s_aut.html">InterSAut</a> *){};</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_a_est.html#af04cc1ecb7dad8a824d5bf32f50615f2">   62</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_a_est.html#af04cc1ecb7dad8a824d5bf32f50615f2">setServico</a> (<a class="code" href="class_inter_s_usu.html">InterSUsu</a> *){};</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_a_est.html#a6bf4bf020b015bd099a2a001c3047c0f">setServico</a> (<a class="code" href="class_inter_s_est.html">InterSEst</a> *);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    };</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">/*  Definição dos métodos &#39;Set&#39; */</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> AEst::setApelido(<a class="code" href="class_apelido.html">Apelido</a> *apelido) {this-&gt;apelido = apelido;}</div><div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_a_est.html#ad91c6365033b487421de9e106506222a">   68</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_a_est.html#a6bf4bf020b015bd099a2a001c3047c0f">AEst::setServico</a> (<a class="code" href="class_inter_s_est.html">InterSEst</a> *<a class="code" href="class_a_est.html#ae20e2434b0a5940e2b1284813831f144">servico</a>) {this-&gt;servico = <a class="code" href="class_a_est.html#ae20e2434b0a5940e2b1284813831f144">servico</a>;}</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // APRES_CTRL_EST_HPP</span></div><div class="ttc" id="class_inter_cmd_est_html"><div class="ttname"><a href="class_inter_cmd_est.html">InterCmdEst</a></div><div class="ttdef"><b>Definition:</b> InterCmdEst.hpp:17</div></div>
+<div class="ttc" id="class_a_est_html_ae20e2434b0a5940e2b1284813831f144"><div class="ttname"><a href="class_a_est.html#ae20e2434b0a5940e2b1284813831f144">AEst::servico</a></div><div class="ttdeci">InterSEst * servico</div><div class="ttdef"><b>Definition:</b> AEst.hpp:46</div></div>
+<div class="ttc" id="class_a_est_html_a6bf4bf020b015bd099a2a001c3047c0f"><div class="ttname"><a href="class_a_est.html#a6bf4bf020b015bd099a2a001c3047c0f">AEst::setServico</a></div><div class="ttdeci">void setServico(InterSAut *)</div><div class="ttdef"><b>Definition:</b> AEst.hpp:61</div></div>
+<div class="ttc" id="class_apelido_html"><div class="ttname"><a href="class_apelido.html">Apelido</a></div><div class="ttdef"><b>Definition:</b> Apelido.hpp:15</div></div>
+<div class="ttc" id="class_t_u_i_html"><div class="ttname"><a href="class_t_u_i.html">TUI</a></div><div class="ttdef"><b>Definition:</b> TUI.hpp:16</div></div>
+<div class="ttc" id="class_a_est_html_a5c02a86ab9385b5c711d997346089320"><div class="ttname"><a href="class_a_est.html#a5c02a86ab9385b5c711d997346089320">AEst::executar</a></div><div class="ttdeci">Resultado executar()</div><div class="ttdef"><b>Definition:</b> AEst.hpp:59</div></div>
+<div class="ttc" id="class_resultado_html"><div class="ttname"><a href="class_resultado.html">Resultado</a></div><div class="ttdef"><b>Definition:</b> Resultado.hpp:18</div></div>
+<div class="ttc" id="class_inter_s_aut_html"><div class="ttname"><a href="class_inter_s_aut.html">InterSAut</a></div><div class="ttdef"><b>Definition:</b> InterSAut.hpp:17</div></div>
+<div class="ttc" id="class_a_est_html"><div class="ttname"><a href="class_a_est.html">AEst</a></div><div class="ttdef"><b>Definition:</b> AEst.hpp:17</div></div>
+<div class="ttc" id="class_inter_func_html"><div class="ttname"><a href="class_inter_func.html">InterFunc</a></div><div class="ttdef"><b>Definition:</b> InterFunc.hpp:17</div></div>
+<div class="ttc" id="class_inter_s_est_html"><div class="ttname"><a href="class_inter_s_est.html">InterSEst</a></div><div class="ttdef"><b>Definition:</b> InterSEst.hpp:20</div></div>
+<div class="ttc" id="class_a_est_html_a56222b5e71b011912dd5deaf2e89f1f6"><div class="ttname"><a href="class_a_est.html#a56222b5e71b011912dd5deaf2e89f1f6">AEst::menu</a></div><div class="ttdeci">void menu()</div><div class="ttdef"><b>Definition:</b> AEst.cpp:21</div></div>
+<div class="ttc" id="class_a_est_html_a633b5e142df56acda8a80a0646382318"><div class="ttname"><a href="class_a_est.html#a633b5e142df56acda8a80a0646382318">AEst::MSG_ERRO_D</a></div><div class="ttdeci">static const string MSG_ERRO_D</div><div class="ttdef"><b>Definition:</b> AEst.hpp:51</div></div>
+<div class="ttc" id="class_inter_s_usu_html"><div class="ttname"><a href="class_inter_s_usu.html">InterSUsu</a></div><div class="ttdef"><b>Definition:</b> InterSUsu.hpp:17</div></div>
+<div class="ttc" id="class_a_est_html_af04cc1ecb7dad8a824d5bf32f50615f2"><div class="ttname"><a href="class_a_est.html#af04cc1ecb7dad8a824d5bf32f50615f2">AEst::setServico</a></div><div class="ttdeci">void setServico(InterSUsu *)</div><div class="ttdef"><b>Definition:</b> AEst.hpp:62</div></div>
+<div class="ttc" id="class_a_est_html_addbf0b2aab1b4ff356767771bef1841e"><div class="ttname"><a href="class_a_est.html#addbf0b2aab1b4ff356767771bef1841e">AEst::cmd</a></div><div class="ttdeci">InterCmdEst * cmd</div><div class="ttdef"><b>Definition:</b> AEst.hpp:48</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c35206b51352dc5c3512eabb53646ff4.html">Codificação</a></li><li class="navelem"><a class="el" href="dir_e9c38ac27817a6934565d6bf1e5568a9.html">Bibliotecas</a></li><li class="navelem"><a class="el" href="dir_fac66c1b9c01736e96c86ac393c306e2.html">Apresentacao</a></li><li class="navelem"><a class="el" href="dir_0b9604c0da5e8988e788dd26c27c20d1.html">CtrlEst</a></li><li class="navelem"><a class="el" href="_a_est_8hpp.html">AEst.hpp</a></li>
+    <li class="footer">Gerado em Domingo, 15 de Outubro de 2017 21:50:51 para Trabalho_Disciplina por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

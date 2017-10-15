@@ -23,7 +23,7 @@ void AEst::menu(){
     cout << "****************************************************" << endl;
     cout << "*                     Estante                      *" << endl;
     cout << "*                                                  *" << endl;
-    cout << "* Olá " + this->apelido->getCampo() + ",                 *" << endl;
+    cout << "* Olá " + this->apelido->getCampo() + ",                                       *" << endl;
     cout << "* São lhe oferecidas as opções:                    *" << endl;
     printf ("*     %d - Consulta de livro;                       *\n", CON_LIVRO);
     printf ("*     %d - Consulta de usuário;                     *\n", CON_USUARIO);
@@ -65,22 +65,22 @@ Resultado AEst::direcionar(const Resultado &escolha){
     if (escolha.getCampo() == Resultado::ESC_SAIR)
         return escolha;
 
-    if (escolha.getCampo() == Resultado::ESC_CONS_LIVRO)
-        //cmd = new ACmdConLivro (servico);
+    /*if (escolha.getCampo() == Resultado::ESC_CONS_LIVRO)
+        cmd = new ACmdConLivro (servico);
 
     else if (escolha.getCampo() == Resultado::ESC_CONS_USR)
-        //cmd = new ACmdConUsuario (servico);
+        cmd = new ACmdConUsuario (servico);
 
     else if (escolha.getCampo() == Resultado::ESC_CRI_RES)
-        //cmd = new ACmdCriarResenha (servico);
+        cmd = new ACmdCriarResenha (servico);
 
     else if (escolha.getCampo() == Resultado::ESC_INC_LIVRO)
-        //cmd = new ACmdIncluir (servico);
+        cmd = new ACmdIncluir (servico);
 
     else if (escolha.getCampo() == Resultado::ESC_RMV_LIVRO)
-        //cmd = new ACmdRemover (servico);
+        cmd = new ACmdRemover (servico);
 
-    else
+    else//*/
         return Resultado (Resultado::FALHA);
 
     return cmd->executar();
@@ -101,11 +101,11 @@ Resultado AEst::tratarErro (const Resultado &evento){
 }
 
 void AEst::finalizar(){
-    if(this->apelido) this->apelido->deletar ();
+    if(this->servico)
+        delete this->servico;
 
-    if(this->servico) delete this->servico;
-
-    if(this->cmd) delete this->cmd;
+    if(this->cmd)
+        delete this->cmd;
 
     Log::escrever(MSG_FINALIZAR);
 }
