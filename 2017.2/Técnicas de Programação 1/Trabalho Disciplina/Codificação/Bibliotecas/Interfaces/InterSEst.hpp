@@ -5,6 +5,8 @@
      *  @file   InterSEst.hpp
      *  @author Rodrigo F. Guimarães
      */
+	#include "../Entidade/Log.hpp"
+    #include "../Entidade/Resultado.hpp"
     #include "../Entidade/Livro.hpp"
     #include "../Entidade/Resenha.hpp"
     #include "../Dominio/Apelido.hpp"
@@ -22,14 +24,14 @@
              *  @param Identificador do livro
              *  @return Resultado da operação
              */
-            virtual Resultado consultar (const Titulo &) = 0;
+            virtual Resultado consultar (const Titulo &)  throw (runtime_error) = 0;
 
             /**
              *  Consulta de um Usuário na Estante.
              *  @param Identificador do usuário
              *  @return Resultado da operação
              */
-            virtual Resultado consultar (const Apelido &) = 0;
+            virtual Resultado consultar (const Apelido &)  throw (runtime_error) = 0;
 
             /**
              *  Criação de uma Resenha sobre um Livro da Estante.
@@ -38,20 +40,20 @@
              *  @return Resultado da operação
              */
             virtual Resultado criarResenha (const Livro &,
-                                            const Resenha &) = 0;
+                                            const Resenha &)  throw (runtime_error) = 0;
 
             /**
              *  Inclusão de um exemplar de um livro à Estante pública.
              *  @param Livro a ser incluído
              *  @return Resultado da operação
              */
-            virtual Resultado incluir (const Livro &) = 0;
+            virtual Resultado incluir (const Livro &)  throw (runtime_error) = 0;
 
             /**
              *  Remoção de um exemplar de um livro da Estante.
              *  @param Exemplar a ser removido
              *  @return Resultado da operação
              */
-            virtual Resultado remover (const Livro &) = 0;
+            virtual Resultado remover (const Livro &)  throw (runtime_error) = 0;
     };
 #endif // INTER_SERV_EST_HPP

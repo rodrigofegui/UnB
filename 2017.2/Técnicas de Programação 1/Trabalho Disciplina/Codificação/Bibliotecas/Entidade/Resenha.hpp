@@ -76,6 +76,11 @@
              *  @return PASSOU ou FALHOU
              */
             bool equals (const Resenha &alvo);
+
+			/**
+             *  Destrutor padrão
+             */
+            void deletar () const;
     };
 
     /*  Definição dos métodos 'Get' */
@@ -85,4 +90,7 @@
     /*  Definição dos métodos 'Set' */
     inline void Resenha::setTexto (const Texto &txt) {this->texto = txt;}
     inline void Resenha::setTitulo (const Titulo &titulo) {this->titulo = titulo;}
+
+	/*  Definição do destrutor padrão */
+   inline void Resenha::deletar() const{delete this;}
 #endif // RESENHA_H

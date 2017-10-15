@@ -46,7 +46,8 @@ var menudata={children:[
 {text:"l",url:"functions_vars.html#index_l"},
 {text:"m",url:"functions_vars.html#index_m"},
 {text:"s",url:"functions_vars.html#index_s"},
-{text:"t",url:"functions_vars.html#index_t"}]},
+{text:"t",url:"functions_vars.html#index_t"},
+{text:"u",url:"functions_vars.html#index_u"}]},
 {text:"Enumerações",url:"functions_enum.html"}]}]},
 {text:"Ficheiros",url:"files.html",children:[
 {text:"Lista de ficheiros",url:"files.html"},

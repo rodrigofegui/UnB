@@ -162,6 +162,7 @@ INPUT                  = \
 	"../../Codificação/Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlUsu_Tst/AUsu_Tst.hpp" \
 	"../../Codificação/Bibliotecas/Entidade/Log.hpp" \
+	"../../Codificação/Fontes_Tst/Servico_Tst/ServEst_Tst.cpp" \
 	"../../Codificação/Bibliotecas/Dominio/DominioBase.hpp" \
 	"../../Codificação/Bibliotecas_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.hpp" \
 	"../../Codificação/Fontes_Tst/Entidade_Tst/Login_Tst.cpp" \
@@ -177,6 +178,7 @@ INPUT                  = \
 	"../../Codificação/Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp" \
 	"../../Codificação/Fontes_Tst/TesteClasse.cpp" \
 	"../../Codificação/Fontes/Dominio/Telefone.cpp" \
+	"../../Codificação/Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp" \
 	"../../Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp" \
 	"../../Codificação/Bibliotecas/Entidade/Livro.hpp" \
 	"../../Codificação/Fontes_Tst/Entidade_Tst/Livro_Tst.cpp" \

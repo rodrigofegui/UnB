@@ -10,7 +10,7 @@ var searchData=
   ['codigo_2ehpp',['Codigo.hpp',['../_codigo_8hpp.html',1,'']]],
   ['codigo_5ftst_2ehpp',['Codigo_Tst.hpp',['../_codigo___tst_8hpp.html',1,'']]],
   ['codigotst',['CodigoTst',['../class_codigo_tst.html',1,'']]],
-  ['consultar',['consultar',['../class_inter_s_est.html#a78e531e0601e01e86647c1568d88bbcf',1,'InterSEst::consultar(const Titulo &amp;)=0'],['../class_inter_s_est.html#ad10e1302f3ca151d4bdc2f54839e8297',1,'InterSEst::consultar(const Apelido &amp;)=0']]],
+  ['consultar',['consultar',['../class_inter_s_est.html#a78e531e0601e01e86647c1568d88bbcf',1,'InterSEst::consultar(const Titulo &amp;)=0'],['../class_inter_s_est.html#ad10e1302f3ca151d4bdc2f54839e8297',1,'InterSEst::consultar(const Apelido &amp;)=0'],['../class_serv_est_tst.html#ac45f05329833d5da86d4a1a8226f1088',1,'ServEstTst::consultar(const Titulo &amp;)'],['../class_serv_est_tst.html#ae1fdb88bbdb9684acbbe1403c32c8cd7',1,'ServEstTst::consultar(const Apelido &amp;)']]],
   ['corpoteste',['corpoTeste',['../class_dominio_base_tst.html#a2a73c41e9903486464a3397cd73e29bb',1,'DominioBaseTst']]],
-  ['criarresenha',['criarResenha',['../class_inter_s_est.html#a574c01ff720c2f7314f9381719d2992e',1,'InterSEst']]]
+  ['criarresenha',['criarResenha',['../class_inter_s_est.html#a574c01ff720c2f7314f9381719d2992e',1,'InterSEst::criarResenha()'],['../class_serv_est_tst.html#a95b038af76044034631eb88cf91e68bb',1,'ServEstTst::criarResenha()']]]
 ];

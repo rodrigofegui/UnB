@@ -6,7 +6,9 @@
      *  @author Rodrigo F. Guimarães
      */
     #include "../Dominio/DominioBase.hpp"
+	#include "Livro.hpp"
 	#include "Login.hpp"
+	#include "Resenha.hpp"
 	#include "Usuario.hpp"
 
     /**
@@ -17,7 +19,9 @@
         private:
 			/*	Entidades/Domínios como resultado */
 			Apelido *apelido = nullptr;
+			Livro	*livro = nullptr;
 			Login	*login = nullptr;
+			Resenha *resenha = nullptr;
 			Usuario *usuario = nullptr;
 
             void validar (const string &campo) throw (invalid_argument) override{};
@@ -31,10 +35,18 @@
             const static string FLH_LIM;
 			/** Sinalização de falha de autenticação de usuário */
             const static string FLH_AUT;
-			/**	Sinalização de falha de cadastramento de usuário */
-			const static string FLH_CAD;
 			/**	Sinalização de falha na Base de Dados */
 			const static string FLH_BD;
+			/**	Sinalização de falha de cadastramento de usuário */
+			const static string FLH_CAD;
+			/**	Sinalização de falha de consulta */
+			const static string FLH_CON;
+			/**	Sinalização de falha de criação */
+			const static string FLH_CRI;
+			/**	Sinalização de falha de inserção */
+			const static string FLH_INC;
+			/**	Sinalização de falha de inserção */
+			const static string FLH_RMV;
 
             /** Selecionada a opção de autenticar */
             const static string ESC_AUTENTICAR;
@@ -60,6 +72,20 @@
 			 *  o mesmo
 			 *  @param Resultado a ser conferido
 			 */
+			Resultado (Livro *);
+
+			/**
+			 *  Construtor de um Resultado, conhecendo-se
+			 *  o mesmo
+			 *  @param Resultado a ser conferido
+			 */
+			Resultado (Livro *, Resenha *);
+
+			/**
+			 *  Construtor de um Resultado, conhecendo-se
+			 *  o mesmo
+			 *  @param Resultado a ser conferido
+			 */
 			Resultado (Login *);
 
 			/**
@@ -77,6 +103,30 @@
 			Resultado (Usuario *);
 
 			/**
+			 *  Atribuição do apelido do Resultado
+			 *  @param Apelido a ser atribuído
+			 */
+			void setApelido (Apelido *);
+
+			/**
+			 *  Recuperar o valor atribuído ao apelido do Resultado
+			 *  @return Login armazenado no Resultado
+			 */
+			Apelido * getApelido () const;
+
+			/**
+             *  Atribuição do livro do Resultado
+             *  @param Livro a ser atribuído
+             */
+			void setLivro (Livro *);
+
+			/**
+             *  Recuperar o valor atribuído ao livro do Resultado
+             *  @return Livro armazenado no Resultado
+             */
+			Livro * getLivro () const;
+
+			/**
              *  Atribuição do login do Resultado
              *  @param Login a ser atribuído
              */
@@ -89,16 +139,16 @@
 			Login * getLogin () const;
 
 			/**
-             *  Atribuição do apelido do Resultado
-             *  @param Apelido a ser atribuído
+             *  Atribuição da resenha do Resultado
+             *  @param Resenha a ser atribuída
              */
-			void setApelido (Apelido *);
+			void setResenha (Resenha *);
 
 			/**
-             *  Recuperar o valor atribuído ao apelido do Resultado
-             *  @return Login armazenado no Resultado
+             *  Recuperar o valor atribuído à resenha do Resultado
+             *  @return Resenha armazenada no Resultado
              */
-			Apelido * getApelido () const;
+			Resenha * getResenha () const;
 
 			/**
 			 *  Atribuição do usuario do Resultado
@@ -126,12 +176,16 @@
     };
 
 	/*  Definição dos métodos 'Get' */
-	inline Login* Resultado::getLogin () const {return this->login;}
 	inline Apelido* Resultado::getApelido () const {return this->apelido;}
+	inline Livro* Resultado::getLivro () const {return this->livro;}
+	inline Login* Resultado::getLogin () const {return this->login;}
+	inline Resenha* Resultado::getResenha () const {return this->resenha;}
 	inline Usuario* Resultado::getUsuario () const {return this->usuario;}
 
 	/*  Definição dos métodos 'Set' */
-	inline void Resultado::setLogin (Login *login) {this->login = login;}
 	inline void Resultado::setApelido (Apelido *apelido) {this->apelido = apelido;}
+	inline void Resultado::setLivro (Livro *livro) {this->livro = livro;}
+	inline void Resultado::setLogin (Login *login) {this->login = login;}
+	inline void Resultado::setResenha (Resenha *resenha) {this->resenha = resenha;}
 	inline void Resultado::setUsuario (Usuario *usuario) {this->usuario = usuario;}
 #endif // RESULTADO_HPP
