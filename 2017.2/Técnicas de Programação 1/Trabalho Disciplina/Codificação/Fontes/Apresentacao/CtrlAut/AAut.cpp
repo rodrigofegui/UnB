@@ -5,20 +5,14 @@ const string AAut::MSG_FINALIZAR    ("Funcionalidade de Autenticação finalizad
 const string AAut::MSG_LER_APE      ("Aquisição do Apelido com êxito.");
 const string AAut::MSG_LER_SEN      ("Aquisição da Senha com êxito.");
 const string AAut::MSG_ERRO         ("Usuário inexistente na Base de Dados.");
-const string AAut::MSG_ERRO_D       ("Erro na entrada de login ou de Base de Dados.");
+const string AAut::MSG_ERRO_D       ("Erro na entrada de login ou na Base de Dados.");
 
 Resultado AAut::executar (){
     Log::escrever(MSG_INICIO);
 
     TUI::executar();
 
-    if(!this->apelido.getCampo().empty()){
-        Resultado res (&this->apelido);
-        res.setCampo(Resultado::SUCESSO);
-        return res;
-    }
-
-    return Resultado (Resultado::FALHA);
+	return avaliarCond();
 }
 
 void AAut::menu(){
@@ -63,7 +57,7 @@ Resultado AAut::direcionar(const Resultado &entrada){
     Resultado result = servico->autenticar(*(entrada.getLogin()));
 
     if(result.getCampo() != Resultado::SUCESSO)
-        this->apelido.setCampo("");
+        this->apelido.clear();
     else
         result.setCampo(Resultado::ESC_SAIR);
 
@@ -71,7 +65,7 @@ Resultado AAut::direcionar(const Resultado &entrada){
 }
 
 Resultado AAut::tratarErro (){
-    this->apelido.setCampo("");
+    this->apelido.clear();
 
     Log::escrever(MSG_ERRO_D);
     cout << MSG_ERRO_D << endl;
@@ -88,6 +82,16 @@ Resultado AAut::tratarErro (const Resultado &evento){
     }
 
     return Resultado(Resultado::ESC_SAIR);
+}
+
+Resultado AAut::avaliarCond (){
+	if(!this->apelido.getCampo().empty()){
+		Resultado res (&this->apelido);
+		res.setCampo(Resultado::SUCESSO);
+		return res;
+	}
+
+	return Resultado (Resultado::FALHA);
 }
 
 void AAut::finalizar(){

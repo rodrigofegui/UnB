@@ -5,7 +5,7 @@ const string ServUsuTst::TERMINACAO ("]");
 
 const string ServUsuTst::MSG_SUC        ("Sucesso ao cadastrar.");
 const string ServUsuTst::MSG_INI        ("Tentativa de cadastro: [");
-const string ServUsuTst::MSG_CADST_EXT  ("Cadastro de usuário já existente.");
+const string ServUsuTst::MSG_CADST_EXT  ("Cadastro falhou: usuário já existe.");
 const string ServUsuTst::MSG_CADST_EBD  ("Falha ao acessar a Base de Dados.");
 
 const string ServUsuTst::CADST_EXT      ("leila");

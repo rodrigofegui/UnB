@@ -5,7 +5,7 @@ var searchData=
   ['resenha_2ehpp',['Resenha.hpp',['../_resenha_8hpp.html',1,'']]],
   ['resenha_5ftst_2ehpp',['Resenha_Tst.hpp',['../_resenha___tst_8hpp.html',1,'']]],
   ['resenhatst',['ResenhaTst',['../class_resenha_tst.html',1,'']]],
-  ['resultado',['Resultado',['../class_resultado.html',1,'Resultado'],['../class_resultado.html#a19f1462f174b83e47de8fe0b8a7e88a1',1,'Resultado::Resultado()'],['../class_resultado.html#a280804d0bacde763202fb71acdcf95ca',1,'Resultado::Resultado(const string &amp;)'],['../class_resultado.html#a5cefc4b1d7717448cdf7871edbf814d0',1,'Resultado::Resultado(Login *)'],['../class_resultado.html#aa57604e1ac0e1c5f23e8c949a493d635',1,'Resultado::Resultado(Apelido *)']]],
+  ['resultado',['Resultado',['../class_resultado.html',1,'Resultado'],['../class_resultado.html#a19f1462f174b83e47de8fe0b8a7e88a1',1,'Resultado::Resultado()'],['../class_resultado.html#a280804d0bacde763202fb71acdcf95ca',1,'Resultado::Resultado(const string &amp;)'],['../class_resultado.html#a5cefc4b1d7717448cdf7871edbf814d0',1,'Resultado::Resultado(Login *)'],['../class_resultado.html#aa57604e1ac0e1c5f23e8c949a493d635',1,'Resultado::Resultado(Apelido *)'],['../class_resultado.html#ac49eef1c50d64a0263f5216c6d15a7f3',1,'Resultado::Resultado(Usuario *)']]],
   ['resultado_2ehpp',['Resultado.hpp',['../_resultado_8hpp.html',1,'']]],
   ['retorno',['retorno',['../class_teste_unitario.html#ae89b4c72005527440433bcb42deaace6',1,'TesteUnitario']]]
 ];

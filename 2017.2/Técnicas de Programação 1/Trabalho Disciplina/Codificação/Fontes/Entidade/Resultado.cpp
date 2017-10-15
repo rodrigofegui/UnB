@@ -19,10 +19,28 @@ Resultado::Resultado(Login *login){setCampo (Resultado::SUCESSO); setLogin(login
 
 Resultado::Resultado(Apelido *apelido){setCampo (Resultado::SUCESSO); setApelido(apelido);}
 
-void Resultado::validar (const string &campo) throw (invalid_argument){}
+Resultado::Resultado(Usuario *usuario){setCampo (Resultado::SUCESSO); setUsuario(usuario);}
+
+bool Resultado::equals (const Resultado &alvo){
+	if(DominioBase::equals(alvo)){
+		if (this->apelido == alvo.getApelido()
+			&& this->login == alvo.getLogin()
+			&& this->usuario == alvo.getUsuario())
+			return TesteUnitario::PASSOU;
+	}
+
+	return TesteUnitario::FALHOU;
+}
 
 void Resultado::deletar(){
-    this->login->deletar();
+	if (this->apelido)
+		this->apelido->deletar ();
+
+	if (this->login)
+		this->login->deletar();
+
+	if (this->usuario)
+		this->usuario->deletar();
 
     delete this;
 }

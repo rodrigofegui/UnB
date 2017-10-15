@@ -23,7 +23,6 @@
             const static string msgErroArg;
 
             /*  Constantes de restrição */
-            const static int TAM_MAX = 15;
             const static string SIMB_N_PERMT;
             const static string DB_SPACE;
             const static string DB_PONTO;
@@ -36,6 +35,9 @@
             bool haInvSimb (const string &campo);
 
         public:
+			/**	Tamanho máximo de um Nome */
+			const static int TAM_MAX = 15;
+
             /**
              *  Construtor padrão
              */

@@ -1,5 +1,7 @@
 #include "../../Bibliotecas/Apresentacao/TUI.hpp"
 
+bool TUI::iniciouLog = TesteUnitario::FALHOU;
+
 void TUI::executar (){
 
     if (!this->iniciouLog){

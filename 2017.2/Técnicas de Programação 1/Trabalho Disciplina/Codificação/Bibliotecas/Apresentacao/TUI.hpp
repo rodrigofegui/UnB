@@ -19,7 +19,7 @@
             const static int LIM_TENT = 3;
 
             /*  Inicialização do arquivo de log */
-            bool iniciouLog = false;
+            static bool iniciouLog;
 
             /*  Tentativas de operacionalidade */
             Resultado tentar ();

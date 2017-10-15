@@ -27,16 +27,25 @@
             Resultado tratarErro (const Resultado &);
 			void finalizar ();
 
+			/*	Avaliação do Resultado */
+			Resultado avaliarCond ();
+
         protected:
-            /*  Mensagens padrão */
+            /** Sinalização do início da Autenticação */
             const static string MSG_INICIO;
+            /** Sinalização do término da Autenticação */
             const static string MSG_FINALIZAR;
+            /** Sinalização do êxito ao ler o Apelido */
             const static string MSG_LER_APE;
+            /** Sinalização do êxito ao ler a Senha */
             const static string MSG_LER_SEN;
+            /** Sinalização de erro na Base de Dados */
             const static string MSG_ERRO;
+            /** Sinalização de erro dúbios */
             const static string MSG_ERRO_D;
 
-            /*  Métodos herdados */
+            /** Apresentação das opções ao usuário
+             *  da aplicação da estante */
             void menu ();
 
         public:

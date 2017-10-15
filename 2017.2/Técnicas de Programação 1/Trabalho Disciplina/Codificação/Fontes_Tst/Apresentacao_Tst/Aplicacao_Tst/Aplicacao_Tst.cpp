@@ -1,6 +1,8 @@
 #include "../../../Bibliotecas_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.hpp"
 #include "../../../Bibliotecas_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_tst.hpp"
+#include "../../../Bibliotecas_Tst/Apresentacao_Tst/CtrlUsu_Tst/AUsu_Tst.hpp"
 #include "../../../Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp"
+#include "../../../Bibliotecas_Tst/Servico_Tst/ServUsu_Tst.hpp"
 
 const string AplicacaoTst::MSG_TELA        ("Apresentação da Tela Inicial de Teste.");
 
@@ -43,10 +45,10 @@ Resultado AplicacaoTst::autenticar(){
 
 Resultado AplicacaoTst::usuario(){
     Log::escrever(MSG_ESC_USU);
-    cout << "Usuário de teste..." << endl;
-    Manipulacao::pausar();
 
-    return Resultado (Resultado::SUCESSO);
+    this->func = new AUsuTst ();
+	this->func->setServico(new ServUsuTst());
+	return this->func->executar();
 }
 
 Resultado AplicacaoTst::estante(const Resultado &apelido){

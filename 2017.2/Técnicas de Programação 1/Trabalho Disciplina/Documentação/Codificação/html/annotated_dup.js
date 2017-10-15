@@ -6,6 +6,8 @@ var annotated_dup =
     [ "ApelidoTst", "class_apelido_tst.html", null ],
     [ "Aplicacao", "class_aplicacao.html", "class_aplicacao" ],
     [ "AplicacaoTst", "class_aplicacao_tst.html", null ],
+    [ "AUsu", "class_a_usu.html", "class_a_usu" ],
+    [ "AUsuTst", "class_a_usu_tst.html", "class_a_usu_tst" ],
     [ "Codigo", "class_codigo.html", "class_codigo" ],
     [ "CodigoTst", "class_codigo_tst.html", null ],
     [ "Data", "class_data.html", "class_data" ],

@@ -14,6 +14,10 @@
      */
     class ServAutTst : public InterSAut{
         private:
+            /*  Constantes de trabalho */
+            const static string DIVISOR;
+            const static string TERMINACAO;
+
             /*  Mensagens padrão */
             const static string MSG_INI;
             const static string MSG_SUC;

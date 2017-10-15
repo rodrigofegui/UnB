@@ -11,3 +11,7 @@ bool DominioBase::equals(const DominioBase &alvo) const{
 
     return TesteUnitario::FALHOU;
 }
+
+void DominioBase::clear(){
+	setCampo("");
+}

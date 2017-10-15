@@ -45,6 +45,12 @@
              */
             bool equals (const DominioBase &alvo) const;
 
+			/**
+			 *	Limpeza do campo do domínio, tornando-o
+			 *	num campo vazio
+			 */
+			void clear ();
+
             /**
              *  Destrutor padrão
              */

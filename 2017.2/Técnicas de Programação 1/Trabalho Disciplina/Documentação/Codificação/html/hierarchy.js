@@ -15,6 +15,9 @@ var hierarchy =
     [ "InterFunc", "class_inter_func.html", [
       [ "AAut", "class_a_aut.html", [
         [ "AAutTst", "class_a_aut_tst.html", null ]
+      ] ],
+      [ "AUsu", "class_a_usu.html", [
+        [ "AUsuTst", "class_a_usu_tst.html", null ]
       ] ]
     ] ],
     [ "InterSAut", "class_inter_s_aut.html", [
@@ -52,7 +55,8 @@ var hierarchy =
       [ "AAut", "class_a_aut.html", null ],
       [ "Aplicacao", "class_aplicacao.html", [
         [ "AplicacaoTst", "class_aplicacao_tst.html", null ]
-      ] ]
+      ] ],
+      [ "AUsu", "class_a_usu.html", null ]
     ] ],
     [ "Usuario", "class_usuario.html", null ]
 ];

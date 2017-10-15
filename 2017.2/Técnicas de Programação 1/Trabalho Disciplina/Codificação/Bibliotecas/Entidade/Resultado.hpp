@@ -7,6 +7,7 @@
      */
     #include "../Dominio/DominioBase.hpp"
 	#include "Login.hpp"
+	#include "Usuario.hpp"
 
     /**
      *  @class  Resultado
@@ -15,10 +16,11 @@
     class Resultado : public DominioBase{
         private:
 			/*	Entidades/Domínios como resultado */
-			Apelido *apelido;
-			Login	*login;
+			Apelido *apelido = nullptr;
+			Login	*login = nullptr;
+			Usuario *usuario = nullptr;
 
-            void validar (const string &campo) throw (invalid_argument) override;
+            void validar (const string &campo) throw (invalid_argument) override{};
 
         public:
             /** Sinalização do sucesso */
@@ -68,6 +70,13 @@
 			Resultado (Apelido *);
 
 			/**
+			 *  Construtor de um Resultado, conhecendo-se
+			 *  o mesmo
+			 *  @param Resultado a ser conferido
+			 */
+			Resultado (Usuario *);
+
+			/**
              *  Atribuição do login do Resultado
              *  @param Login a ser atribuído
              */
@@ -75,7 +84,7 @@
 
 			/**
              *  Recuperar o valor atribuído ao login do Resultado
-             *  @return Login armazenado na Resenha
+             *  @return Login armazenado no Resultado
              */
 			Login * getLogin () const;
 
@@ -87,9 +96,28 @@
 
 			/**
              *  Recuperar o valor atribuído ao apelido do Resultado
-             *  @return Login armazenado na Resenha
+             *  @return Login armazenado no Resultado
              */
 			Apelido * getApelido () const;
+
+			/**
+			 *  Atribuição do usuario do Resultado
+			 *  @param Usuario a ser atribuído
+			 */
+			void setUsuario (Usuario *);
+
+			/**
+			 *  Recuperar o valor atribuído ao usuario do Resultado
+			 *  @return Usuario armazenado no Resultado
+			 */
+			Usuario * getUsuario () const;
+
+			/**
+             *  Verificar se dois resultados são iguais
+             *  @param alvo Resultado alvo de comparação
+             *  @return PASSOU ou FALHOU
+             */
+			bool equals (const Resultado &);
 
             /**
              *  Destrutor padrão
@@ -100,8 +128,10 @@
 	/*  Definição dos métodos 'Get' */
 	inline Login* Resultado::getLogin () const {return this->login;}
 	inline Apelido* Resultado::getApelido () const {return this->apelido;}
+	inline Usuario* Resultado::getUsuario () const {return this->usuario;}
 
 	/*  Definição dos métodos 'Set' */
 	inline void Resultado::setLogin (Login *login) {this->login = login;}
 	inline void Resultado::setApelido (Apelido *apelido) {this->apelido = apelido;}
+	inline void Resultado::setUsuario (Usuario *usuario) {this->usuario = usuario;}
 #endif // RESULTADO_HPP

@@ -1,5 +1,6 @@
 var class_dominio_base =
 [
+    [ "clear", "class_dominio_base.html#a4ea3e324776335e5639034dcd28fe72f", null ],
     [ "deletar", "class_dominio_base.html#a17ef3ed7426ff1e1ab555ce6f25c9e19", null ],
     [ "equals", "class_dominio_base.html#a910de563e63b2c2c417cee1326a72512", null ],
     [ "getCampo", "class_dominio_base.html#a8168530ac1e3d84cb3b7090ba066d56d", null ],

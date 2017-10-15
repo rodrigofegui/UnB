@@ -120,6 +120,11 @@
              *  @return PASSOU ou FALHOU
              */
             bool equals (const Usuario &alvo);
+
+            /**
+             *  Destrutor padrão
+             */
+            void deletar ();
     };
 
     /*  Definição dos métodos 'Get' */
@@ -133,4 +138,7 @@
     inline void Usuario::setNome (const Nome &nome) {this->nome = nome;}
     inline void Usuario::setSenha (const Senha &senha) {this->senha = senha;}
     inline void Usuario::setTelefone (const Telefone &tel) {this->tel = tel;}
+
+    /*  Definição do destrutor */
+    inline void Usuario::deletar() {delete this;}
 #endif // USUARIO_H

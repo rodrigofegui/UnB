@@ -35,20 +35,25 @@
 			void finalizar ();
 
         protected:
-			/**	Mensagem padrão */
+			/** Sinalização do redirecionamento para a Autenticação */
 			const static string MSG_ESC_AUT;
+			/** Sinalização do redirecionamento para o Usuário */
 			const static string MSG_ESC_USU;
+			/** Sinalização do redirecionamento para a Estante Virtual */
 			const static string MSG_ESC_EST;
 
-			/*  Funcionalidade a ser trabalhada */
+			/** Funcionalidade a ser executada */
             InterFunc *func;
 
-            /*  Direcionamento para a funcionalidade */
+            /** Direcionamento para a funcionalidade de Autenticação */
             virtual Resultado autenticar ();
+            /** Direcionamento para a funcionalidade de Usuário */
             virtual Resultado usuario ();
+            /** Direcionamento para a funcionalidade da Estante */
             virtual Resultado estante (const Resultado &);
 
-            /*  Métodos herdados */
+            /** Apresentação das opções ao usuário
+             *  da aplicação da estante */
             void menu ();
     };
 

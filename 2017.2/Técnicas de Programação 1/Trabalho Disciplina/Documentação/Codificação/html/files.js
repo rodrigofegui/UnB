@@ -19,6 +19,12 @@ var files =
       [ "AplicacaoTst", "class_aplicacao_tst.html", null ]
     ] ],
     [ "AtivaTeste.hpp", "_ativa_teste_8hpp_source.html", null ],
+    [ "AUsu.hpp", "_a_usu_8hpp.html", [
+      [ "AUsu", "class_a_usu.html", "class_a_usu" ]
+    ] ],
+    [ "AUsu_Tst.hpp", "_a_usu___tst_8hpp.html", [
+      [ "AUsuTst", "class_a_usu_tst.html", "class_a_usu_tst" ]
+    ] ],
     [ "Codigo.hpp", "_codigo_8hpp.html", [
       [ "Codigo", "class_codigo.html", "class_codigo" ]
     ] ],

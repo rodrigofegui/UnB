@@ -1,9 +1,12 @@
 #include "../../Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp"
 
+const string ServAutTst::DIVISOR    (", ");
+const string ServAutTst::TERMINACAO ("]");
+
 const string ServAutTst::MSG_INI    ("Tentativa de autenticação: [");
 const string ServAutTst::MSG_SUC    ("Sucesso ao autenticar.");
 const string ServAutTst::MSG_EBD    ("Falha ao acessar a Base de Dados.");
-const string ServAutTst::MSG_L_INE  ("Login com registro inexistente.");
+const string ServAutTst::MSG_L_INE  ("Login falhou: registro inexistente.");
 
 const string ServAutTst::LOGIN_INE ("inara");
 const string ServAutTst::LOGIN_EBD ("dayse");
@@ -27,5 +30,5 @@ Resultado ServAutTst::autenticar (const Login &tentativa) throw (runtime_error){
 
 string ServAutTst::msgInicio(const Login &tentativa){
     return MSG_INI + tentativa.getApelido().getCampo()
-            + ", " + tentativa.getSenha().getCampo() + "]";
+            + DIVISOR + tentativa.getSenha().getCampo() + TERMINACAO;
 }

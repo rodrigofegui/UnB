@@ -9,14 +9,14 @@ void AUsuTst::menu(){
     cout << "*                                                  *" << endl;
     cout << "* Gatilhos disponíveis:                            *" << endl;
     cout << "*     - Usuário já cadastrado:                     *" << endl;
-    cout << "*          + Apelido: " +
-            ServUsuTst::CADST_EXT + "                          *" << endl;
+    cout << "*         + Apelido: " +
+            ServUsuTst::CADST_EXT + "                         *" << endl;
     cout << "*     - Erro conexão Base de Dados:                *" << endl;
     cout << "*         + Apelido: " +
-            ServUsuTst::CADST_EBD + "                          *" << endl;
+            ServUsuTst::CADST_EBD + "                         *" << endl;
     cout << "****************************************************" << endl;
 
     Manipulacao::pausar();
 
-    //AUsu::menu();
+    AUsu::menu();
 }
