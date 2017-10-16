@@ -5,6 +5,7 @@ var annotated_dup =
     [ "ACmdConLivro", "class_a_cmd_con_livro.html", "class_a_cmd_con_livro" ],
     [ "ACmdConUsuario", "class_a_cmd_con_usuario.html", "class_a_cmd_con_usuario" ],
     [ "ACmdCriarResenha", "class_a_cmd_criar_resenha.html", "class_a_cmd_criar_resenha" ],
+    [ "ACmdIncluir", "class_a_cmd_incluir.html", "class_a_cmd_incluir" ],
     [ "AEst", "class_a_est.html", "class_a_est" ],
     [ "AEstTst", "class_a_est_tst.html", "class_a_est_tst" ],
     [ "Apelido", "class_apelido.html", "class_apelido" ],

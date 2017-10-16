@@ -100,8 +100,9 @@ Resultado ServEstTst::incluir (const Livro &livro) throw (runtime_error){
     Log::escrever(msgInicio(livro));
 
     if(livro.getTitulo().getCampo() == LIVRO_EXI){
-        Log::escrever(MSG_SUC_INC);
-        return Resultado(Resultado::SUCESSO);
+        Log::escrever(MSG_FLH_INC);
+        cout << MSG_FLH_INC << endl;
+        return Resultado (Resultado::FLH_INC);
     }
 
     if(livro.getTitulo().getCampo() == LIVRO_EBD){
@@ -109,8 +110,9 @@ Resultado ServEstTst::incluir (const Livro &livro) throw (runtime_error){
         throw runtime_error (MSG_EBD);
     }
 
-    Log::escrever(MSG_FLH_INC);
-    return Resultado (Resultado::FLH_INC);
+    Log::escrever(MSG_SUC_INC);
+    cout << MSG_SUC_INC << endl;
+    return Resultado(Resultado::SUCESSO);
 }
 
 Resultado ServEstTst::remover (const Titulo &livro) throw (runtime_error){

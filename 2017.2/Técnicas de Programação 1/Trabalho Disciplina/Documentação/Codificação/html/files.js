@@ -15,7 +15,9 @@ var files =
     [ "ACmdCriarResenha.hpp", "_a_cmd_criar_resenha_8hpp.html", [
       [ "ACmdCriarResenha", "class_a_cmd_criar_resenha.html", "class_a_cmd_criar_resenha" ]
     ] ],
-    [ "ACmdIncluir.hpp", "_a_cmd_incluir_8hpp_source.html", null ],
+    [ "ACmdIncluir.hpp", "_a_cmd_incluir_8hpp.html", [
+      [ "ACmdIncluir", "class_a_cmd_incluir.html", "class_a_cmd_incluir" ]
+    ] ],
     [ "ACmdRemover.hpp", "_a_cmd_remover_8hpp_source.html", null ],
     [ "AEst.hpp", "_a_est_8hpp.html", [
       [ "AEst", "class_a_est.html", "class_a_est" ]
