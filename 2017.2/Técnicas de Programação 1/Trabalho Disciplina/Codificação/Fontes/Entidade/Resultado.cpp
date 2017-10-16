@@ -36,6 +36,8 @@ Resultado::Resultado(Login *login){setCampo (Resultado::SUCESSO); setLogin(login
 
 Resultado::Resultado(Usuario *usuario){setCampo (Resultado::SUCESSO); setUsuario(usuario);}
 
+Resultado::Resultado(Titulo *titulo){setCampo (Resultado::SUCESSO); setTitulo (titulo);}
+
 bool Resultado::equals (const Resultado &alvo){
 	if(DominioBase::equals(alvo)){
 		if (this->apelido == alvo.getApelido()

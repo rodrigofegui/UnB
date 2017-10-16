@@ -11,7 +11,7 @@ const string ServEstTst::LIVRO_TXT_RES  ("Melhor resposta: 42!");
 const string ServEstTst::USUAR_NOM      ("Rodrigo F. G.");
 const string ServEstTst::USUAR_APE      ("rodfg");
 const string ServEstTst::USUAR_TEL      ("(61)-123456789");
-const string ServEstTst::USUAR_PSS      ("");
+const string ServEstTst::USUAR_PSS      ("advc");
 
 const string ServEstTst::DIVISOR        (", ");
 const string ServEstTst::INICIO_P       ("(");
@@ -48,7 +48,7 @@ Resultado ServEstTst::consultar(const Titulo &id) throw (runtime_error){
 
     if(id.getCampo() == LIVRO_EXI){
         Log::escrever(MSG_SUC_CON);
-        return Resultado(criarLivro());
+        return Resultado(criarLivro(), criarResenha());
     }
 
     if(id.getCampo() == LIVRO_EBD){
@@ -167,7 +167,14 @@ Livro * ServEstTst::criarLivro(){
     autor.setCampo(LIVRO_NOM);
     tit.setCampo(LIVRO_TIT);
 
-    return new Livro(codigo, data, gen, autor, tit);
+    Livro *novo = new Livro ();
+    novo->setAutor(autor);
+    novo->setCodigo(codigo);
+    novo->setDataPublicacao(data);
+    novo->setGenero(gen);
+    novo->setTitulo(tit);
+
+    return novo;
 }
 
 Resenha * ServEstTst::criarResenha(){
@@ -177,7 +184,11 @@ Resenha * ServEstTst::criarResenha(){
     tit.setCampo(LIVRO_TIT_RES);
     txt.setCampo(LIVRO_TXT_RES);
 
-    return new Resenha (txt, tit);
+    Resenha *nova = new Resenha ();
+    nova->setTexto(txt);
+    nova->setTitulo(tit);
+
+    return nova;
 }
 
 Usuario* ServEstTst::criarUsuario(){
@@ -191,5 +202,11 @@ Usuario* ServEstTst::criarUsuario(){
     sen.setCampo(USUAR_PSS);
     tel.setCampo(USUAR_TEL);
 
-    return new Usuario (apelido, nome, sen, tel);
+    Usuario *novo = new Usuario();
+    novo->setApelido(apelido);
+    novo->setNome(nome);
+    novo->setSenha(sen);
+    novo->setTelefone(tel);
+
+    return novo;
 }

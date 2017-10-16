@@ -6,8 +6,12 @@ var files =
     [ "AAut_tst.hpp", "_a_aut__tst_8hpp.html", [
       [ "AAutTst", "class_a_aut_tst.html", "class_a_aut_tst" ]
     ] ],
-    [ "ACmdConLivro.hpp", "_a_cmd_con_livro_8hpp_source.html", null ],
-    [ "ACmdConUsuario.hpp", "_a_cmd_con_usuario_8hpp_source.html", null ],
+    [ "ACmdConLivro.hpp", "_a_cmd_con_livro_8hpp.html", [
+      [ "ACmdConLivro", "class_a_cmd_con_livro.html", "class_a_cmd_con_livro" ]
+    ] ],
+    [ "ACmdConUsuario.hpp", "_a_cmd_con_usuario_8hpp.html", [
+      [ "ACmdConUsuario", "class_a_cmd_con_usuario.html", "class_a_cmd_con_usuario" ]
+    ] ],
     [ "ACmdCriarResenha.hpp", "_a_cmd_criar_resenha_8hpp_source.html", null ],
     [ "ACmdIncluir.hpp", "_a_cmd_incluir_8hpp_source.html", null ],
     [ "ACmdRemover.hpp", "_a_cmd_remover_8hpp_source.html", null ],

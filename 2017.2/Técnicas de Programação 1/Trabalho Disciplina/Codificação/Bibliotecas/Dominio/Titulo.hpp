@@ -20,7 +20,6 @@
             const static string msgErroArg;
 
             /*  Constantes de validação */
-            const static int TAM_MAX = 20;
             const static string DB_SPACE;
 
             /*  Validação do texto a ser armazenado */
@@ -29,6 +28,9 @@
             void validarSimbolos (const string &campo) throw (invalid_argument);
 
         public:
+            /** Tamanho máximo de um Título  */
+            const static int TAM_MAX = 20;
+
             /**
              *  Construtor padrão
              */

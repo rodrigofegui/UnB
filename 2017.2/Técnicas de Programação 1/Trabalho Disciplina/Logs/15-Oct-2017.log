@@ -1,10 +1,36 @@
 Arquivo de Log
 Registro: Manipulação da Estante Digital
 Data: 15-Oct-2017
-Inicio da atividade: 21:49:39
+Inicio da atividade: 23:12:06
 
 Atividades:
-[21:49:39] Apresentação da Tela Inicial de Teste.
-[21:49:46] Apresentação da Tela Inicial.
-[21:49:46] Leitura das opções do usuário na Tela Inicial da aplicação.
-[21:49:46] Aplicação finalizada.
+[23:12:06] Apresentação da Tela Inicial de Teste.
+[23:12:07] Apresentação da Tela Inicial.
+[23:12:07] Leitura das opções do usuário na Tela Inicial da aplicação.
+[23:12:08] Redirecionando a aplicação para a Autenticação.
+[23:12:08] Iniciada a funcionalidade de Autenticação.
+[23:12:17] Aquisição do Apelido com êxito.
+[23:12:19] Aquisição da Senha com êxito.
+[23:12:19] Tentativa de autenticação: [avacs, adcv]
+[23:12:19] Sucesso ao autenticar.
+[23:12:19] Funcionalidade de Autenticação finalizada.
+[23:12:19] Redirecionando a aplicação para a Estante.
+[23:12:19] Iniciada a funcionalidade da Estante.
+[23:12:19] Leitura das opções do usuário na tela da Estante.
+[23:12:21] Iniciada o comando de consultar Usuario.
+[23:12:22] Aquisição do Apelido com êxito.
+[23:12:22] Tentativa de consulta: [rodfg]
+[23:12:22] Sucesso na consulta.
+[23:12:26] Comando de consultar Usuário finalizado.
+[23:12:28] Leitura das opções do usuário na tela da Estante.
+[23:12:29] Iniciada o comando de consultar Usuario.
+[23:12:31] Aquisição do Apelido com êxito.
+[23:12:31] Tentativa de consulta: [marta]
+[23:12:31] Falha ao acessar a Base de Dados.
+[23:12:31] Erro na entrada de login ou na Base de Dados.
+[23:12:32] Comando de consultar Usuário finalizado.
+[23:12:34] Leitura das opções do usuário na tela da Estante.
+[23:12:40] Funcionalidade da Estante finalizada.
+[23:12:40] Apresentação da Tela Inicial.
+[23:12:40] Leitura das opções do usuário na Tela Inicial da aplicação.
+[23:12:40] Aplicação finalizada.

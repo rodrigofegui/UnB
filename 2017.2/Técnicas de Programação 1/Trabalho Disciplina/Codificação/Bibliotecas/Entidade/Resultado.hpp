@@ -22,6 +22,7 @@
 			Livro	*livro = nullptr;
 			Login	*login = nullptr;
 			Resenha *resenha = nullptr;
+			Titulo  *titulo = nullptr;
 			Usuario *usuario = nullptr;
 
             void validar (const string &campo) throw (invalid_argument) override{};
@@ -110,6 +111,13 @@
 			 *  o mesmo
 			 *  @param Resultado a ser conferido
 			 */
+			Resultado (Titulo *);
+
+			/**
+			 *  Construtor de um Resultado, conhecendo-se
+			 *  o mesmo
+			 *  @param Resultado a ser conferido
+			 */
 			Resultado (Usuario *);
 
 			/**
@@ -161,6 +169,18 @@
 			Resenha * getResenha () const;
 
 			/**
+             *  Atribuição do título do Resultado
+             *  @param Título a ser atribuído
+             */
+			void setTitulo (Titulo *);
+
+			/**
+             *  Recuperar o valor atribuído ao título do Resultado
+             *  @return Titulo armazenado no Resultado
+             */
+			Titulo * getTitulo () const;
+
+			/**
 			 *  Atribuição do usuario do Resultado
 			 *  @param Usuario a ser atribuído
 			 */
@@ -190,6 +210,7 @@
 	inline Livro* Resultado::getLivro () const {return this->livro;}
 	inline Login* Resultado::getLogin () const {return this->login;}
 	inline Resenha* Resultado::getResenha () const {return this->resenha;}
+	inline Titulo* Resultado::getTitulo () const {return this->titulo;}
 	inline Usuario* Resultado::getUsuario () const {return this->usuario;}
 
 	/*  Definição dos métodos 'Set' */
@@ -197,5 +218,6 @@
 	inline void Resultado::setLivro (Livro *livro) {this->livro = livro;}
 	inline void Resultado::setLogin (Login *login) {this->login = login;}
 	inline void Resultado::setResenha (Resenha *resenha) {this->resenha = resenha;}
+	inline void Resultado::setTitulo (Titulo *titulo) {this->titulo = titulo;}
 	inline void Resultado::setUsuario (Usuario *usuario) {this->usuario = usuario;}
 #endif // RESULTADO_HPP
