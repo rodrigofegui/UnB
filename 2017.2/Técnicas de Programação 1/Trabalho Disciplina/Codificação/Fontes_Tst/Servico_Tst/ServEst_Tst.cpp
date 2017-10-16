@@ -120,6 +120,7 @@ Resultado ServEstTst::remover (const Titulo &livro) throw (runtime_error){
 
     if(livro.getCampo() == LIVRO_EXI){
         Log::escrever(MSG_SUC_RMV);
+        cout << MSG_SUC_RMV << endl;
         return Resultado(Resultado::SUCESSO);
     }
 
@@ -129,6 +130,7 @@ Resultado ServEstTst::remover (const Titulo &livro) throw (runtime_error){
     }
 
     Log::escrever(MSG_FLH_RMV);
+    cout << MSG_FLH_RMV << endl;
     return Resultado (Resultado::FLH_RMV);
 }
 

@@ -1170,13 +1170,14 @@
 
 1508097412 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdConsulta.cpp
 
-1508118255 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdCriarResenha.cpp
+1508120225 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdCriarResenha.cpp
 	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp"
 
-1508119581 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdIncluir.cpp
+1508120311 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdIncluir.cpp
 	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp"
 
-1508097448 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdRemover.cpp
+1508120299 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdRemover.cpp
+	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp"
 
 1508108333 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.cpp
 	"../../../Bibliotecas_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.hpp"
@@ -1229,4 +1230,9 @@
 	"../TUI.hpp"
 	"../../Interfaces/InterCmdEst.hpp"
 	"../../Entidade/Livro.hpp"
+
+1508120115 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp
+	"../TUI.hpp"
+	"../../Interfaces/InterCmdEst.hpp"
+	"../../Dominio/Titulo.hpp"
 

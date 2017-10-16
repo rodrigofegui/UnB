@@ -1,7 +1,7 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp"
 
-const string ACmdIncluir::MSG_INICIO       ("Iniciada o comando de consultar Livro.");
-const string ACmdIncluir::MSG_FINALIZAR    ("Comando de consultar Livro finalizado.");
+const string ACmdIncluir::MSG_INICIO       ("Iniciada o comando de inserir Livro.");
+const string ACmdIncluir::MSG_FINALIZAR    ("Comando de inserir Livro finalizado.");
 const string ACmdIncluir::MSG_LER_TIT      ("Aquisição do Título com êxito.");
 const string ACmdIncluir::MSG_LER_AUT      ("Aquisição do Autor com êxito.");
 const string ACmdIncluir::MSG_LER_GEN      ("Aquisição do Gênero com êxito.");
@@ -78,7 +78,7 @@ Resultado ACmdIncluir::leitura(){
 }
 
 Resultado ACmdIncluir::direcionar(const Resultado &escolha){
-    Resultado result = this->servico->incluir(*(escolha.getLivro()));
+    this->servico->incluir(*(escolha.getLivro()));
 
     Manipulacao::pausar();
 

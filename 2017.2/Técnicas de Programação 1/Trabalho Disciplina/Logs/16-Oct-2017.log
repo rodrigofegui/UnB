@@ -1,32 +1,42 @@
 Arquivo de Log
 Registro: Manipulação da Estante Digital
 Data: 16-Oct-2017
-Inicio da atividade: 00:11:19
+Inicio da atividade: 00:19:14
 
 Atividades:
-[00:11:19] Apresentação da Tela Inicial de Teste.
-[00:11:21] Apresentação da Tela Inicial.
-[00:11:21] Leitura das opções do usuário na Tela Inicial da aplicação.
-[00:11:23] Redirecionando a aplicação para a Autenticação.
-[00:11:23] Iniciada a funcionalidade de Autenticação.
-[00:11:26] Aquisição do Apelido com êxito.
-[00:11:28] Aquisição da Senha com êxito.
-[00:11:28] Tentativa de autenticação: [rodfg, asdc]
-[00:11:28] Sucesso ao autenticar.
-[00:11:28] Funcionalidade de Autenticação finalizada.
-[00:11:28] Redirecionando a aplicação para a Estante.
-[00:11:28] Iniciada a funcionalidade da Estante.
-[00:11:29] Leitura das opções do usuário na tela da Estante.
-[00:11:32] Iniciada o comando de consultar Livro.
-[00:11:35] Aquisição do Título com êxito.
-[00:11:39] Aquisição do Autor com êxito.
-[00:11:43] Aquisição do Gênero com êxito.
-[00:11:49] Aquisição da Data com êxito.
-[00:11:49] Tentativa de inserção: [, 01/01/01, NOVELA, Rodrigo F., teste]
-[00:11:49] Sucesso na inserção.
-[00:11:50] Comando de consultar Livro finalizado.
-[00:11:52] Leitura das opções do usuário na tela da Estante.
-[00:11:54] Funcionalidade da Estante finalizada.
-[00:11:54] Apresentação da Tela Inicial.
-[00:11:54] Leitura das opções do usuário na Tela Inicial da aplicação.
-[00:11:55] Aplicação finalizada.
+[00:19:14] Apresentação da Tela Inicial de Teste.
+[00:19:15] Apresentação da Tela Inicial.
+[00:19:15] Leitura das opções do usuário na Tela Inicial da aplicação.
+[00:19:17] Redirecionando a aplicação para a Autenticação.
+[00:19:17] Iniciada a funcionalidade de Autenticação.
+[00:19:21] Aquisição do Apelido com êxito.
+[00:19:23] Aquisição da Senha com êxito.
+[00:19:23] Tentativa de autenticação: [rodfg, adcv]
+[00:19:23] Sucesso ao autenticar.
+[00:19:23] Funcionalidade de Autenticação finalizada.
+[00:19:23] Redirecionando a aplicação para a Estante.
+[00:19:23] Iniciada a funcionalidade da Estante.
+[00:19:28] Leitura das opções do usuário na tela da Estante.
+[00:19:31] Iniciada o comando de remoção de Livro.
+[00:19:38] Aquisição do Título com êxito.
+[00:19:38] Tentativa de remoção: [Guia do Mochileiro]
+[00:19:38] Sucesso na remoção.
+[00:19:42] Comando de remoção de Livro finalizado.
+[00:19:43] Leitura das opções do usuário na tela da Estante.
+[00:19:45] Iniciada o comando de remoção de Livro.
+[00:19:48] Aquisição do Título com êxito.
+[00:19:48] Tentativa de remoção: [teste]
+[00:19:48] Falha na remoção.
+[00:19:49] Comando de remoção de Livro finalizado.
+[00:19:50] Leitura das opções do usuário na tela da Estante.
+[00:19:53] Iniciada o comando de remoção de Livro.
+[00:19:58] Aquisição do Título com êxito.
+[00:19:58] Tentativa de remoção: [Anjos e Demonios]
+[00:19:58] Falha ao acessar a Base de Dados.
+[00:19:58] Erro na entrada de login ou na Base de Dados.
+[00:19:59] Comando de remoção de Livro finalizado.
+[00:20:03] Leitura das opções do usuário na tela da Estante.
+[00:20:06] Funcionalidade da Estante finalizada.
+[00:20:06] Apresentação da Tela Inicial.
+[00:20:06] Leitura das opções do usuário na Tela Inicial da aplicação.
+[00:20:07] Aplicação finalizada.

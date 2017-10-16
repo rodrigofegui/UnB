@@ -1,7 +1,7 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp"
 
-const string ACmdCriarResenha::MSG_INICIO       ("Iniciada o comando de consultar Livro.");
-const string ACmdCriarResenha::MSG_FINALIZAR    ("Comando de consultar Livro finalizado.");
+const string ACmdCriarResenha::MSG_INICIO       ("Iniciada o comando de criar resenha.");
+const string ACmdCriarResenha::MSG_FINALIZAR    ("Comando de criar resenha finalizado.");
 const string ACmdCriarResenha::MSG_LER_TXT      ("Aquisição do Texto com êxito.");
 const string ACmdCriarResenha::MSG_LER_TIT      ("Aquisição do Título com êxito.");
 const string ACmdCriarResenha::MSG_ERRO_D       ("Erro na entrada de login ou na Base de Dados.");

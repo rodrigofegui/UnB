@@ -3,6 +3,7 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdConUsuario.hpp"
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp"
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp"
+#include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp"
 
 const string AEst::MSG_INI          ("Iniciada a funcionalidade da Estante.");
 const string AEst::MSG_FINALIZAR    ("Funcionalidade da Estante finalizada.");
@@ -80,10 +81,10 @@ Resultado AEst::direcionar(const Resultado &escolha){
 
     else if (escolha.getCampo() == Resultado::ESC_INC_LIVRO)
         cmd = new ACmdIncluir (servico);
-    /*
+
     else if (escolha.getCampo() == Resultado::ESC_RMV_LIVRO)
         cmd = new ACmdRemover (servico);
-    //*/
+
     else
         return Resultado (Resultado::FALHA);
 

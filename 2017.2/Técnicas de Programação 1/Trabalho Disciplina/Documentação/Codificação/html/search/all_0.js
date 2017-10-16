@@ -12,6 +12,8 @@ var searchData=
   ['acmdcriarresenha_2ehpp',['ACmdCriarResenha.hpp',['../_a_cmd_criar_resenha_8hpp.html',1,'']]],
   ['acmdincluir',['ACmdIncluir',['../class_a_cmd_incluir.html',1,'ACmdIncluir'],['../class_a_cmd_incluir.html#a35621cac03893fba86b725d4489050de',1,'ACmdIncluir::ACmdIncluir()']]],
   ['acmdincluir_2ehpp',['ACmdIncluir.hpp',['../_a_cmd_incluir_8hpp.html',1,'']]],
+  ['acmdremover',['ACmdRemover',['../class_a_cmd_remover.html',1,'ACmdRemover'],['../class_a_cmd_remover.html#a1ae7e70151ad0c873c63793e5cd37c7f',1,'ACmdRemover::ACmdRemover()']]],
+  ['acmdremover_2ehpp',['ACmdRemover.hpp',['../_a_cmd_remover_8hpp.html',1,'']]],
   ['aest',['AEst',['../class_a_est.html',1,'']]],
   ['aest_2ehpp',['AEst.hpp',['../_a_est_8hpp.html',1,'']]],
   ['aest_5ftst_2ehpp',['AEst_Tst.hpp',['../_a_est___tst_8hpp.html',1,'']]],

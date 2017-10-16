@@ -25,7 +25,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_aut_8hpp.html",
-"class_log.html#a46203a026055f3a84611befdb2163a5f"
+"class_livro.html#ad05c371674689d1acb6ed056b176e79d"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';
