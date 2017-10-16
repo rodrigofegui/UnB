@@ -37,6 +37,11 @@
              */
             ACmdCriarResenha(){};
 
+			/**
+			 *	Construtor do comando de criar resenha, conhecendo-se
+			 *	a camada de serviço
+			 *	@param Camada de serviço requisitada
+			 */
             ACmdCriarResenha (InterSEst *);
             /*  Herdada de InterCmdEst */
             Resultado executar();

@@ -36,6 +36,11 @@
              */
             ACmdConUsuario(){};
 
+			/**
+			 *	Construtor do comando de consulta de usuário,
+			 *	conhecendo-se a camada de serviço
+			 *	@param Camada de serviço requisitada
+			 */
             ACmdConUsuario (InterSEst *);
             /*  Herdada de InterCmdEst */
             Resultado executar();

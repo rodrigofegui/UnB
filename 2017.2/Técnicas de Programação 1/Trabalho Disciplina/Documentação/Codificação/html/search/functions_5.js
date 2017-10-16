@@ -20,6 +20,6 @@ var searchData=
   ['getsenha',['getSenha',['../class_usuario.html#a8f78d3949b3a9492d0aa0a197860a972',1,'Usuario::getSenha()'],['../class_login.html#ac9bd16f429183decbd17879167feab34',1,'Login::getSenha()']]],
   ['gettelefone',['getTelefone',['../class_usuario.html#aadad53ed0f557306c3966b2e94359729',1,'Usuario']]],
   ['gettexto',['getTexto',['../class_resenha.html#a6b4729960f0924cc9ffa96b52d4f76cd',1,'Resenha']]],
-  ['gettitulo',['getTitulo',['../class_livro.html#a65b1591cccf64316d3796e3bc825cb8a',1,'Livro::getTitulo()'],['../class_resultado.html#a84649863db6d6dc9a711643af02283c2',1,'Resultado::getTitulo()'],['../class_resenha.html#a849ee8d52f43d50e7760799763f2158c',1,'Resenha::getTitulo()']]],
+  ['gettitulo',['getTitulo',['../class_resenha.html#a849ee8d52f43d50e7760799763f2158c',1,'Resenha::getTitulo()'],['../class_livro.html#a65b1591cccf64316d3796e3bc825cb8a',1,'Livro::getTitulo()'],['../class_resultado.html#a84649863db6d6dc9a711643af02283c2',1,'Resultado::getTitulo()']]],
   ['getusuario',['getUsuario',['../class_resultado.html#a5cd6a24408844e26706702abf7bad1b9',1,'Resultado']]]
 ];

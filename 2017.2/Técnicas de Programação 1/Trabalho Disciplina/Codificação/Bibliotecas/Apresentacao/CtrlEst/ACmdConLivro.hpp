@@ -37,6 +37,11 @@
              */
             ACmdConLivro(){};
 
+			/**
+			 *	Construtor do comando de consulta de livro,
+			 *	conhecendo-se a camada de serviço
+			 *	@param Camada de serviço requisitada
+			 */
             ACmdConLivro (InterSEst *);
             /*  Herdada de InterCmdEst */
             Resultado executar();

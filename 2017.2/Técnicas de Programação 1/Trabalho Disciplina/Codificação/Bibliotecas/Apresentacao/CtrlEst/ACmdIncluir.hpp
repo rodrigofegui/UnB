@@ -39,6 +39,11 @@
              */
             ACmdIncluir(){};
 
+			/**
+			 *	Construtor do comando de inserção de livro,
+			 *	conhecendo-se a camada de serviço
+			 *	@param Camada de serviço requisitada
+			 */
             ACmdIncluir (InterSEst *);
             /*  Herdada de InterCmdEst */
             Resultado executar();

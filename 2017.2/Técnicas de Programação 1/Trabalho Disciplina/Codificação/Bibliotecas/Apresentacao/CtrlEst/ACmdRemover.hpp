@@ -36,6 +36,11 @@
              */
             ACmdRemover(){};
 
+			/**
+			 *	Construtor do comando de remoção de livro,
+			 *	conhecendo-se a camada de serviço
+			 *	@param Camada de serviço requisitada
+			 */
             ACmdRemover (InterSEst *);
             /*  Herdada de InterCmdEst */
             Resultado executar();
