@@ -8,6 +8,9 @@ void AAutTst::menu(){
     cout << "*              Teste de Autenticação               *" << endl;
     cout << "*                                                  *" << endl;
     cout << "* Gatilhos disponíveis:                            *" << endl;
+    cout << "*     - Usuário cadastrado:                    *" << endl;
+    cout << "*         + Apelido: " +
+            ServAutTst::LOGIN_EXI + "                         *" << endl;
     cout << "*     - Usuário não cadastrado:                    *" << endl;
     cout << "*         + Apelido: " +
             ServAutTst::LOGIN_INE + "                         *" << endl;

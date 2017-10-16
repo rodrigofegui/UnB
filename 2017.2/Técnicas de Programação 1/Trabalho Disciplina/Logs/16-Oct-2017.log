@@ -1,56 +1,42 @@
 Arquivo de Log
 Registro: Manipulação da Estante Digital
 Data: 16-Oct-2017
-Inicio da atividade: 13:05:06
+Inicio da atividade: 13:30:40
 
 Atividades:
-[13:05:06] Apresentação da Tela Inicial de Teste.
-[13:05:07] Apresentação da Tela Inicial.
-[13:05:07] Leitura das opções do usuário na Tela Inicial da aplicação.
-[13:05:10] Redirecionando a aplicação para a Autenticação.
-[13:05:10] Iniciada a funcionalidade de Autenticação.
-[13:05:20] Aquisição do Apelido com êxito.
-[13:05:21] Aquisição da Senha com êxito.
-[13:05:21] Tentativa de autenticação: [rodfg, adcv]
-[13:05:21] Sucesso ao autenticar.
-[13:05:21] Funcionalidade de Autenticação finalizada.
-[13:05:21] Redirecionando a aplicação para a Estante.
-[13:05:21] Iniciada a funcionalidade da Estante.
-[13:05:22] Leitura das opções do usuário na tela da Estante.
-[13:05:24] Iniciada o comando de sinalizar disponibilidade para troca de  Livro.
-[13:05:28] Aquisição do Título com êxito.
-[13:05:29] Aquisição da Disponibilidade com êxito.
-[13:05:29] Tentativa de sinalizar troca: [Guia do Mochileiro, true]
-[13:05:29] Tentativa de consulta: [rodfg]
-[13:05:29] Sucesso na consulta.
-[13:05:29] Tentativa de sinalizar troca: [Guia do Mochileiro, true]
-[13:05:29] Sucesso na consulta.
-[13:05:29] Sucesso em sinalizar troca.
-[13:05:31] Comando de sinalizar disponibilidade para troca Livro finalizado.
-[13:05:33] Leitura das opções do usuário na tela da Estante.
-[13:05:34] Iniciada o comando de sinalizar disponibilidade para troca de  Livro.
-[13:05:41] Aquisição do Título com êxito.
-[13:05:42] Aquisição da Disponibilidade com êxito.
-[13:05:42] Tentativa de sinalizar troca: [Anjos e Demonios, true]
-[13:05:42] Tentativa de consulta: [rodfg]
-[13:05:42] Sucesso na consulta.
-[13:05:42] Tentativa de sinalizar troca: [Anjos e Demonios, true]
-[13:05:42] Falha ao acessar a Base de Dados.
-[13:05:42] Erro na entrada de login ou na Base de Dados.
-[13:05:43] Comando de sinalizar disponibilidade para troca Livro finalizado.
-[13:05:44] Leitura das opções do usuário na tela da Estante.
-[13:05:46] Iniciada o comando de sinalizar disponibilidade para troca de  Livro.
-[13:05:49] Aquisição do Título com êxito.
-[13:05:50] Aquisição da Disponibilidade com êxito.
-[13:05:50] Tentativa de sinalizar troca: [Teste, false]
-[13:05:50] Tentativa de consulta: [rodfg]
-[13:05:50] Sucesso na consulta.
-[13:05:50] Tentativa de sinalizar troca: [Teste, true]
-[13:05:50] Falha na consulta: livro inexistente.
-[13:05:50] Falha em sinalizar troca.
-[13:05:52] Comando de sinalizar disponibilidade para troca Livro finalizado.
-[13:05:52] Leitura das opções do usuário na tela da Estante.
-[13:05:53] Funcionalidade da Estante finalizada.
-[13:05:53] Apresentação da Tela Inicial.
-[13:05:53] Leitura das opções do usuário na Tela Inicial da aplicação.
-[13:05:54] Aplicação finalizada.
+[13:30:40] Apresentação da Tela Inicial de Teste.
+[13:30:41] Apresentação da Tela Inicial.
+[13:30:41] Leitura das opções do usuário na Tela Inicial da aplicação.
+[13:30:42] Redirecionando a aplicação para a Autenticação.
+[13:30:42] Iniciada a funcionalidade de Autenticação.
+[13:30:48] Aquisição do Apelido com êxito.
+[13:30:51] Aquisição da Senha com êxito.
+[13:30:51] Tentativa de autenticação: [rodfg, dcva]
+[13:30:51] Sucesso ao autenticar.
+[13:30:51] Funcionalidade de Autenticação finalizada.
+[13:30:51] Redirecionando a aplicação para a Estante.
+[13:30:51] Iniciada a funcionalidade da Estante.
+[13:30:52] Leitura das opções do usuário na tela da Estante.
+[13:30:56] Iniciada o comando de procurar por troca de Livro.
+[13:31:01] Aquisição do Título com êxito.
+[13:31:01] Tentativa de procura por troca: [Guia do Mochileiro]
+[13:31:01] Sucesso em procurar troca.
+[13:31:04] Comando de procurar por troca de Livro finalizado.
+[13:31:05] Leitura das opções do usuário na tela da Estante.
+[13:31:07] Iniciada o comando de procurar por troca de Livro.
+[13:31:12] Aquisição do Título com êxito.
+[13:31:12] Tentativa de procura por troca: [Anjos e Demonios]
+[13:31:12] Falha ao acessar a Base de Dados.
+[13:31:12] Erro na entrada de login ou na Base de Dados.
+[13:31:13] Comando de procurar por troca de Livro finalizado.
+[13:31:14] Leitura das opções do usuário na tela da Estante.
+[13:31:15] Iniciada o comando de procurar por troca de Livro.
+[13:31:19] Aquisição do Título com êxito.
+[13:31:19] Tentativa de procura por troca: [teste]
+[13:31:19] Falha em sinalizar troca.
+[13:31:19] Comando de procurar por troca de Livro finalizado.
+[13:31:20] Leitura das opções do usuário na tela da Estante.
+[13:31:21] Funcionalidade da Estante finalizada.
+[13:31:21] Apresentação da Tela Inicial.
+[13:31:21] Leitura das opções do usuário na Tela Inicial da aplicação.
+[13:31:22] Aplicação finalizada.

@@ -8,6 +8,7 @@ const string ServAutTst::MSG_SUC    ("Sucesso ao autenticar.");
 const string ServAutTst::MSG_EBD    ("Falha ao acessar a Base de Dados.");
 const string ServAutTst::MSG_L_INE  ("Login falhou: registro inexistente.");
 
+const string ServAutTst::LOGIN_EXI ("rodfg");
 const string ServAutTst::LOGIN_INE ("inara");
 const string ServAutTst::LOGIN_EBD ("dayse");
 

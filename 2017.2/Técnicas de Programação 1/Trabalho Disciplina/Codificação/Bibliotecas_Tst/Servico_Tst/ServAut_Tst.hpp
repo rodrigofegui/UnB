@@ -28,6 +28,8 @@
             static string msgInicio (const Login &);
 
         public:
+            /** Gatilho de Apelido Exitente */
+            const static string LOGIN_EXI;
             /** Gatilho de Apelido Inexitente */
             const static string LOGIN_INE;
             /** Gatilho de Falha comunicação com a Base de Dados */
