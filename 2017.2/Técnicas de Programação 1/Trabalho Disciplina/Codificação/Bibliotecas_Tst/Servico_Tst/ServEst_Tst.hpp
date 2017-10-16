@@ -40,21 +40,25 @@
             const static string MSG_INI_CRS;
             const static string MSG_INI_INC;
             const static string MSG_INI_RMV;
+			const static string MSG_INI_STC;
 
             const static string MSG_SUC_CRS;
             const static string MSG_SUC_CON;
             const static string MSG_SUC_INC;
             const static string MSG_SUC_RMV;
+			const static string MSG_SUC_STC;
 
             const static string MSG_FLH_CON_L;
             const static string MSG_FLH_CON_U;
             const static string MSG_FLH_CRS;
             const static string MSG_FLH_INC;
             const static string MSG_FLH_RMV;
+			const static string MSG_FLH_STC;
             const static string MSG_EBD;
 
             /*	Mensagem para o início das operações */
             static string msgInicio (const DominioBase &, bool);
+            static string msgInicio (const Titulo &, bool);
             static string msgInicio (const Titulo &, const Resenha &);
             static string msgInicio (const Livro &);
 
@@ -81,5 +85,6 @@
             Resultado criarResenha (const Titulo &, const Resenha &) throw (runtime_error);
             Resultado incluir (const Livro &) throw (runtime_error);
             Resultado remover (const Titulo &) throw (runtime_error);
+            Resultado sinTroca (const Apelido &, const Titulo &, const bool &) throw (runtime_error);
     };
 #endif // SERV_CTRL_EST_TST_HPP

@@ -7,5 +7,6 @@ var searchData=
   ['esc_5fcri_5fres',['ESC_CRI_RES',['../class_resultado.html#aec79404c3148d2f3659178dc18d7567c',1,'Resultado']]],
   ['esc_5finc_5flivro',['ESC_INC_LIVRO',['../class_resultado.html#aa8e74f540e489cf933b4e50a52f5ee07',1,'Resultado']]],
   ['esc_5frmv_5flivro',['ESC_RMV_LIVRO',['../class_resultado.html#a877f6b3fa53207db94ba07e37a1cc899',1,'Resultado']]],
-  ['esc_5fsair',['ESC_SAIR',['../class_resultado.html#a5490f5dd610135296d69afbfb3dcd762',1,'Resultado']]]
+  ['esc_5fsair',['ESC_SAIR',['../class_resultado.html#a5490f5dd610135296d69afbfb3dcd762',1,'Resultado']]],
+  ['esc_5fsin_5ftroca',['ESC_SIN_TROCA',['../class_resultado.html#a70363314616390a6c1dfc737a85b5892',1,'Resultado']]]
 ];

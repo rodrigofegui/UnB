@@ -90,10 +90,14 @@ $(document).ready(function(){initNavTree('class_inter_cmd_est.html','');});
 
 <p><code>#include &lt;<a class="el" href="_inter_cmd_est_8hpp_source.html">InterCmdEst.hpp</a>&gt;</code></p>
 
-<p>Herdado por <a class="el" href="class_a_cmd_con_livro.html">ACmdConLivro</a>, <a class="el" href="class_a_cmd_con_usuario.html">ACmdConUsuario</a>, <a class="el" href="class_a_cmd_criar_resenha.html">ACmdCriarResenha</a>, <a class="el" href="class_a_cmd_incluir.html">ACmdIncluir</a> e <a class="el" href="class_a_cmd_remover.html">ACmdRemover</a>.</p>
+<p>Herdado por <a class="el" href="class_a_cmd_con_livro.html">ACmdConLivro</a>, <a class="el" href="class_a_cmd_con_usuario.html">ACmdConUsuario</a>, <a class="el" href="class_a_cmd_criar_resenha.html">ACmdCriarResenha</a>, <a class="el" href="class_a_cmd_incluir.html">ACmdIncluir</a>, <a class="el" href="class_a_cmd_remover.html">ACmdRemover</a> e <a class="el" href="class_a_cmd_sin_troca.html">ACmdSinTroca</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Membros públicos</h2></td></tr>
+<tr class="memitem:ae733d7651e7f6ee4302d0efc69214d1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_cmd_est.html#ae733d7651e7f6ee4302d0efc69214d1f">setApelido</a> (<a class="el" href="class_apelido.html">Apelido</a> *)</td></tr>
+<tr class="separator:ae733d7651e7f6ee4302d0efc69214d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f71878556db8369f4701f349848f734"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_apelido.html">Apelido</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_cmd_est.html#a3f71878556db8369f4701f349848f734">getApelido</a> () const</td></tr>
+<tr class="separator:a3f71878556db8369f4701f349848f734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2de50e2dd03729ba08e181b0bec7a205"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_cmd_est.html#a2de50e2dd03729ba08e181b0bec7a205">executar</a> ()=0</td></tr>
 <tr class="separator:a2de50e2dd03729ba08e181b0bec7a205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -101,6 +105,9 @@ Membros públicos</h2></td></tr>
 Atributos Protegidos</h2></td></tr>
 <tr class="memitem:a5e4444c18499c7d1b4f06e34ad293260"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_inter_s_est.html">InterSEst</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_cmd_est.html#a5e4444c18499c7d1b4f06e34ad293260">servico</a></td></tr>
 <tr class="separator:a5e4444c18499c7d1b4f06e34ad293260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567135e193955f4847121e2a0a5c7da1"><td class="memItemLeft" align="right" valign="top"><a id="a567135e193955f4847121e2a0a5c7da1"></a>
+<a class="el" href="class_apelido.html">Apelido</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>apelido</b> = nullptr</td></tr>
+<tr class="separator:a567135e193955f4847121e2a0a5c7da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Protocolo de realização dos comandos da funcionalidade da Estante </p>
@@ -129,7 +136,65 @@ Atributos Protegidos</h2></td></tr>
 </div><div class="memdoc">
 <p>Realização do comando, garantindo a integridade da aplicação </p>
 
-<p>Implementado em <a class="el" href="class_a_cmd_incluir.html#a8d0ea8fdd77302a087dc7044833f8d1e">ACmdIncluir</a>, <a class="el" href="class_a_cmd_con_livro.html#a48c972a600bc302bb591be8356c1ad47">ACmdConLivro</a>, <a class="el" href="class_a_cmd_criar_resenha.html#a60774bc9606be252b6847698ae47834a">ACmdCriarResenha</a>, <a class="el" href="class_a_cmd_remover.html#a9900dee0c81fc6f83720d3099439ced7">ACmdRemover</a> e <a class="el" href="class_a_cmd_con_usuario.html#a2136d130cc2d8f593d46515f3335e6bc">ACmdConUsuario</a>.</p>
+<p>Implementado em <a class="el" href="class_a_cmd_sin_troca.html#a263497d5575e6fd98f0c11f0177776bf">ACmdSinTroca</a>, <a class="el" href="class_a_cmd_incluir.html#a8d0ea8fdd77302a087dc7044833f8d1e">ACmdIncluir</a>, <a class="el" href="class_a_cmd_con_livro.html#a48c972a600bc302bb591be8356c1ad47">ACmdConLivro</a>, <a class="el" href="class_a_cmd_criar_resenha.html#a60774bc9606be252b6847698ae47834a">ACmdCriarResenha</a>, <a class="el" href="class_a_cmd_con_usuario.html#a2136d130cc2d8f593d46515f3335e6bc">ACmdConUsuario</a> e <a class="el" href="class_a_cmd_remover.html#a9900dee0c81fc6f83720d3099439ced7">ACmdRemover</a>.</p>
+
+</div>
+</div>
+<a id="a3f71878556db8369f4701f349848f734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f71878556db8369f4701f349848f734">&#9670;&nbsp;</a></span>getApelido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_apelido.html">Apelido</a> * InterCmdEst::getApelido </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Recuperar o valor atribuído ao apelido do Comando </p><dl class="section return"><dt>Retorna</dt><dd><a class="el" href="class_login.html">Login</a> armazenado no <a class="el" href="class_resultado.html">Resultado</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae733d7651e7f6ee4302d0efc69214d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae733d7651e7f6ee4302d0efc69214d1f">&#9670;&nbsp;</a></span>setApelido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InterCmdEst::setApelido </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_apelido.html">Apelido</a> *&#160;</td>
+          <td class="paramname"><em>apelido</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Atribuição do apelido do comando </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_apelido.html">Apelido</a></td><td>a ser atribuído </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -166,7 +231,7 @@ Atributos Protegidos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_inter_cmd_est.html">InterCmdEst</a></li>
-    <li class="footer">Gerado em Segunda, 16 de Outubro de 2017 00:26:26 para Trabalho_Disciplina por
+    <li class="footer">Gerado em Segunda, 16 de Outubro de 2017 13:06:24 para Trabalho_Disciplina por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

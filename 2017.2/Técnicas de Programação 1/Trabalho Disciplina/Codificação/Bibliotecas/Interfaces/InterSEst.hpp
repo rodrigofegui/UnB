@@ -55,5 +55,13 @@
              *  @return Resultado da operação
              */
             virtual Resultado remover (const Titulo &)  throw (runtime_error) = 0;
+
+			/**
+			*	Sinalizar a disponibilidade ou não para troca de livro
+			*	@param Livro que terá disponibilidade alterada
+			*	@param Status da disponibilidade
+			*	@return Resultado da operação
+			*/
+			virtual Resultado sinTroca (const Apelido &, const Titulo &, const bool &) throw (runtime_error) = 0;
     };
 #endif // INTER_SERV_EST_HPP

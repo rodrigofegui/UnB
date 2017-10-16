@@ -10,6 +10,7 @@ const string Resultado::FLH_CON			("Operou com falha de consulta.");
 const string Resultado::FLH_CRI			("Operou com falha de criação.");
 const string Resultado::FLH_INC			("Operou com falha de inserção.");
 const string Resultado::FLH_RMV			("Operou com falha de remoção.");
+const string Resultado::FLH_STC			("Operou com falha de sinalização de troca.");
 
 const string Resultado::ESC_AUTENTICAR  ("Escolheu autenticar.");
 const string Resultado::ESC_CADASTRAR   ("Escolheu cadastrar.");
@@ -18,6 +19,7 @@ const string Resultado::ESC_CONS_USR    ("Escolheu consultar usuário.");
 const string Resultado::ESC_CRI_RES		("Escolheu criar resenha.");
 const string Resultado::ESC_INC_LIVRO   ("Escolheu inserir livro.");
 const string Resultado::ESC_RMV_LIVRO   ("Escolheu remover livro.");
+const string Resultado::ESC_SIN_TROCA   ("Escolheu sinalizar a disponibilidade de troca.");
 const string Resultado::ESC_SAIR        ("Escolheu sair.");
 
 Resultado::Resultado(){ setCampo (Resultado::SUCESSO);}
@@ -36,6 +38,10 @@ Resultado::Resultado(Titulo *livro, Resenha *resenha){
 	setCampo (Resultado::SUCESSO); setTitulo(livro); setResenha(resenha);
 }
 
+Resultado::Resultado(Titulo *livro, const bool &disponibilidade){
+	setCampo (Resultado::SUCESSO); setTitulo(livro); setDisponibilidade(disponibilidade);
+}
+
 Resultado::Resultado(Login *login){setCampo (Resultado::SUCESSO); setLogin(login);}
 
 Resultado::Resultado(Usuario *usuario){setCampo (Resultado::SUCESSO); setUsuario(usuario);}
@@ -44,7 +50,8 @@ Resultado::Resultado(Titulo *titulo){setCampo (Resultado::SUCESSO); setTitulo (t
 
 bool Resultado::equals (const Resultado &alvo){
 	if(DominioBase::equals(alvo)){
-		if (this->apelido == alvo.getApelido()
+		if (this->disponibilidade == alvo.getDisponibilidade ()
+			&& this->apelido == alvo.getApelido()
 			&& this->livro == alvo.getLivro()
 			&& this->login == alvo.getLogin()
 			&& this->resenha == alvo.getResenha()

@@ -1105,14 +1105,14 @@
 	"../../Interfaces/InterFunc.hpp"
 	"../../Interfaces/InterSAut.hpp"
 
-1508117971 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Resultado.hpp
+1508166273 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Resultado.hpp
 	"../Dominio/DominioBase.hpp"
 	"Livro.hpp"
 	"Login.hpp"
 	"Resenha.hpp"
 	"Usuario.hpp"
 
-1508118010 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Entidade/Resultado.cpp
+1508166223 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Entidade/Resultado.cpp
 	"../../Bibliotecas/Entidade/Resultado.hpp"
 
 1508005314 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterSAut.hpp
@@ -1125,7 +1125,7 @@
 	"../Entidade/Resultado.hpp"
 	"../Entidade/Usuario.hpp"
 
-1508116971 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterSEst.hpp
+1508165574 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterSEst.hpp
 	"../Entidade/Log.hpp"
 	"../Entidade/Resultado.hpp"
 	"../Entidade/Livro.hpp"
@@ -1162,10 +1162,10 @@
 	"../../Interfaces/InterFunc.hpp"
 	"../../Interfaces/InterSUsu.hpp"
 
-1508119409 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Servico_Tst/ServEst_Tst.cpp
+1508166237 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Servico_Tst/ServEst_Tst.cpp
 	"../../Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp"
 
-1508118138 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp
+1508165549 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp
 	"../../Bibliotecas/Interfaces/InterSEst.hpp"
 
 1508097412 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdConsulta.cpp
@@ -1176,27 +1176,29 @@
 1508120311 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdIncluir.cpp
 	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp"
 
-1508120299 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdRemover.cpp
+1508120419 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdRemover.cpp
 	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp"
 
 1508108333 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.cpp
 	"../../../Bibliotecas_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.hpp"
 	"../../../Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp"
 
-1508119471 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/AEst.cpp
+1508166142 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/AEst.cpp
 	"../../../Bibliotecas/Apresentacao/CtrlEst/AEst.hpp"
 	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdConLivro.hpp"
 	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdConUsuario.hpp"
 	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp"
 	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp"
+	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp"
+	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdSinTroca.hpp"
 
-1508106483 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/AEst.hpp
+1508162609 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/AEst.hpp
 	"../TUI.hpp"
 	"../../Interfaces/InterFunc.hpp"
 	"../../Interfaces/InterSEst.hpp"
 	"../../Interfaces/InterCmdEst.hpp"
 
-1508099194 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterCmdEst.hpp
+1508165975 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Interfaces/InterCmdEst.hpp
 	"InterSEst.hpp"
 	"../Entidade/Log.hpp"
 	"../Entidade/Resultado.hpp"
@@ -1210,29 +1212,38 @@
 1508107329 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.hpp
 	"../../../Bibliotecas/Apresentacao/CtrlEst/AEst.hpp"
 
-1508114595 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConLivro.hpp
+1508120718 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConLivro.hpp
 	"../TUI.hpp"
 	"../../Interfaces/InterCmdEst.hpp"
 	"../../Dominio/Titulo.hpp"
 	"../../Entidade/Livro.hpp"
 
-1508116654 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConUsuario.hpp
+1508120702 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConUsuario.hpp
 	"../TUI.hpp"
 	"../../Interfaces/InterCmdEst.hpp"
 	"../../Entidade/Usuario.hpp"
 
-1508117935 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp
+1508120667 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp
 	"../TUI.hpp"
 	"../../Interfaces/InterCmdEst.hpp"
 	"../../Entidade/Resenha.hpp"
 
-1508119026 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp
+1508120689 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp
 	"../TUI.hpp"
 	"../../Interfaces/InterCmdEst.hpp"
 	"../../Entidade/Livro.hpp"
 
-1508120115 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp
+1508120741 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp
 	"../TUI.hpp"
 	"../../Interfaces/InterCmdEst.hpp"
 	"../../Dominio/Titulo.hpp"
+
+1508166134 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/ACmdSinTroca.cpp
+	"../../../Bibliotecas/Apresentacao/CtrlEst/ACmdSinTroca.hpp"
+
+1508166064 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdSinTroca.hpp
+	"../TUI.hpp"
+	"../../Interfaces/InterCmdEst.hpp"
+	"../../Dominio/Titulo.hpp"
+	"../../Entidade/Usuario.hpp"
 

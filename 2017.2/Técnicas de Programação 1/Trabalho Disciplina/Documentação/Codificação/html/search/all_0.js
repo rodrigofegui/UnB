@@ -14,6 +14,8 @@ var searchData=
   ['acmdincluir_2ehpp',['ACmdIncluir.hpp',['../_a_cmd_incluir_8hpp.html',1,'']]],
   ['acmdremover',['ACmdRemover',['../class_a_cmd_remover.html',1,'ACmdRemover'],['../class_a_cmd_remover.html#a1ae7e70151ad0c873c63793e5cd37c7f',1,'ACmdRemover::ACmdRemover()'],['../class_a_cmd_remover.html#aec2d525e2b89953a25e27d4f5151b977',1,'ACmdRemover::ACmdRemover(InterSEst *)']]],
   ['acmdremover_2ehpp',['ACmdRemover.hpp',['../_a_cmd_remover_8hpp.html',1,'']]],
+  ['acmdsintroca',['ACmdSinTroca',['../class_a_cmd_sin_troca.html',1,'ACmdSinTroca'],['../class_a_cmd_sin_troca.html#a1d5c73e3a979dcbf60bd87112df2d5a8',1,'ACmdSinTroca::ACmdSinTroca()'],['../class_a_cmd_sin_troca.html#a27dd8ca1e0a25c234fe3603c4b55959e',1,'ACmdSinTroca::ACmdSinTroca(InterSEst *)'],['../class_a_cmd_sin_troca.html#ad7cfaa2a639a187b57db88f121bb91bf',1,'ACmdSinTroca::ACmdSinTroca(InterSEst *, Apelido *)']]],
+  ['acmdsintroca_2ehpp',['ACmdSinTroca.hpp',['../_a_cmd_sin_troca_8hpp.html',1,'']]],
   ['aest',['AEst',['../class_a_est.html',1,'']]],
   ['aest_2ehpp',['AEst.hpp',['../_a_est_8hpp.html',1,'']]],
   ['aest_5ftst_2ehpp',['AEst_Tst.hpp',['../_a_est___tst_8hpp.html',1,'']]],

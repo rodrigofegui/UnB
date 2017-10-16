@@ -24,6 +24,7 @@
 			Resenha *resenha = nullptr;
 			Titulo  *titulo = nullptr;
 			Usuario *usuario = nullptr;
+			bool	disponibilidade = false;
 
             void validar (const string &campo) throw (invalid_argument) override{};
 
@@ -48,6 +49,8 @@
 			const static string FLH_INC;
 			/**	Sinalização de falha de inserção */
 			const static string FLH_RMV;
+			/**	Sinalização de falha de sinalização de troca */
+			const static string FLH_STC;
 
             /** Selecionada a opção de autenticar */
             const static string ESC_AUTENTICAR;
@@ -63,6 +66,9 @@
 			const static string ESC_INC_LIVRO;
 			/** Selecionada a opção de remover exemplar de livro */
 			const static string ESC_RMV_LIVRO;
+			/** Selecionada a opção de sinalizar
+			 *	disponibilidade de troca de livro */
+			const static string ESC_SIN_TROCA;
             /** Selecionada a opção de sair */
             const static string ESC_SAIR;
 
@@ -104,6 +110,13 @@
 			 *  o mesmo
 			 *  @param Resultado a ser conferido
 			 */
+			Resultado (Titulo *, const bool &);
+
+			/**
+			 *  Construtor de um Resultado, conhecendo-se
+			 *  o mesmo
+			 *  @param Resultado a ser conferido
+			 */
 			Resultado (Login *);
 
 			/**
@@ -138,6 +151,18 @@
 			 *  @return Login armazenado no Resultado
 			 */
 			Apelido * getApelido () const;
+
+			/**
+			 *  Atribuição da disponibilidade do Resultado
+			 *  @param disponibilidade a ser atribuída
+			 */
+			void setDisponibilidade (const bool &);
+
+			/**
+			 *  Recuperar o valor atribuído à disponibilidade do Resultado
+			 *  @return disponibilidade armazenada no Resultado
+			 */
+			bool getDisponibilidade () const;
 
 			/**
              *  Atribuição do livro do Resultado
@@ -214,6 +239,7 @@
 
 	/*  Definição dos métodos 'Get' */
 	inline Apelido* Resultado::getApelido () const {return this->apelido;}
+	inline bool Resultado::getDisponibilidade () const {return this->disponibilidade;}
 	inline Livro* Resultado::getLivro () const {return this->livro;}
 	inline Login* Resultado::getLogin () const {return this->login;}
 	inline Resenha* Resultado::getResenha () const {return this->resenha;}
@@ -222,6 +248,7 @@
 
 	/*  Definição dos métodos 'Set' */
 	inline void Resultado::setApelido (Apelido *apelido) {this->apelido = apelido;}
+	inline void Resultado::setDisponibilidade (const bool &disponibilidade) {this->disponibilidade = disponibilidade;}
 	inline void Resultado::setLivro (Livro *livro) {this->livro = livro;}
 	inline void Resultado::setLogin (Login *login) {this->login = login;}
 	inline void Resultado::setResenha (Resenha *resenha) {this->resenha = resenha;}

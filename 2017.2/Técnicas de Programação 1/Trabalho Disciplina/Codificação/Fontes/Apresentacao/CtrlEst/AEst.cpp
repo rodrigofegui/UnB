@@ -4,6 +4,7 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp"
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp"
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp"
+#include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdSinTroca.hpp"
 
 const string AEst::MSG_INI          ("Iniciada a funcionalidade da Estante.");
 const string AEst::MSG_FINALIZAR    ("Funcionalidade da Estante finalizada.");
@@ -35,6 +36,7 @@ void AEst::menu(){
     printf ("*     %d - Criar resenha;                           *\n", CRIAR_RES);
     printf ("*     %d - Incluir exemplar de livro à estante;     *\n", INC_LIVRO);
     printf ("*     %d - Remover exemplar de livro da estante;    *\n", RMV_LIVRO);
+    printf ("*     %d - Sinalizar disponibilidade de troca;      *\n", SIN_TROCA);
     printf ("*     %d - Sair.                                    *\n", SAIR);
     cout << "****************************************************" << endl << endl;
 }
@@ -57,6 +59,8 @@ Resultado AEst::leitura(){
             return Resultado (Resultado::ESC_INC_LIVRO);
         case RMV_LIVRO:
             return Resultado (Resultado::ESC_RMV_LIVRO);
+        case SIN_TROCA:
+            return Resultado (Resultado::ESC_SIN_TROCA);
         case SAIR:
             return Resultado (Resultado::ESC_SAIR);
         default:
@@ -84,6 +88,9 @@ Resultado AEst::direcionar(const Resultado &escolha){
 
     else if (escolha.getCampo() == Resultado::ESC_RMV_LIVRO)
         cmd = new ACmdRemover (servico);
+
+    else if (escolha.getCampo() == Resultado::ESC_SIN_TROCA)
+        cmd = new ACmdSinTroca (servico, this->apelido);
 
     else
         return Resultado (Resultado::FALHA);

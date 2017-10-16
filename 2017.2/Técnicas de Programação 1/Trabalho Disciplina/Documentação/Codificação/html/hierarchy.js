@@ -17,7 +17,8 @@ var hierarchy =
       [ "ACmdConUsuario", "class_a_cmd_con_usuario.html", null ],
       [ "ACmdCriarResenha", "class_a_cmd_criar_resenha.html", null ],
       [ "ACmdIncluir", "class_a_cmd_incluir.html", null ],
-      [ "ACmdRemover", "class_a_cmd_remover.html", null ]
+      [ "ACmdRemover", "class_a_cmd_remover.html", null ],
+      [ "ACmdSinTroca", "class_a_cmd_sin_troca.html", null ]
     ] ],
     [ "InterFunc", "class_inter_func.html", [
       [ "AAut", "class_a_aut.html", [
@@ -70,6 +71,7 @@ var hierarchy =
       [ "ACmdCriarResenha", "class_a_cmd_criar_resenha.html", null ],
       [ "ACmdIncluir", "class_a_cmd_incluir.html", null ],
       [ "ACmdRemover", "class_a_cmd_remover.html", null ],
+      [ "ACmdSinTroca", "class_a_cmd_sin_troca.html", null ],
       [ "AEst", "class_a_est.html", null ],
       [ "Aplicacao", "class_aplicacao.html", [
         [ "AplicacaoTst", "class_aplicacao_tst.html", null ]

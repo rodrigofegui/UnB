@@ -24,6 +24,7 @@
             const static int CRIAR_RES   = 3;
             const static int INC_LIVRO   = 4;
             const static int RMV_LIVRO   = 5;
+            const static int SIN_TROCA   = 6;
             const static int SAIR        = 0;
 
             /*  Mensagens padrão */

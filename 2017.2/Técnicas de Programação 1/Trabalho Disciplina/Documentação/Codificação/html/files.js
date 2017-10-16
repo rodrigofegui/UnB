@@ -21,6 +21,9 @@ var files =
     [ "ACmdRemover.hpp", "_a_cmd_remover_8hpp.html", [
       [ "ACmdRemover", "class_a_cmd_remover.html", "class_a_cmd_remover" ]
     ] ],
+    [ "ACmdSinTroca.hpp", "_a_cmd_sin_troca_8hpp.html", [
+      [ "ACmdSinTroca", "class_a_cmd_sin_troca.html", "class_a_cmd_sin_troca" ]
+    ] ],
     [ "AEst.hpp", "_a_est_8hpp.html", [
       [ "AEst", "class_a_est.html", "class_a_est" ]
     ] ],

@@ -29,17 +29,20 @@ const string ServEstTst::MSG_INI_CON    ("Tentativa de consulta: [");
 const string ServEstTst::MSG_INI_CRS    ("Tentativa de criar resenha: [(");
 const string ServEstTst::MSG_INI_INC    ("Tentativa de inserção: [");
 const string ServEstTst::MSG_INI_RMV    ("Tentativa de remoção: [");
+const string ServEstTst::MSG_INI_STC    ("Tentativa de sinalizar troca: [");
 
 const string ServEstTst::MSG_SUC_CON    ("Sucesso na consulta.");
 const string ServEstTst::MSG_SUC_CRS    ("Sucesso em criar resenha.");
 const string ServEstTst::MSG_SUC_INC    ("Sucesso na inserção.");
 const string ServEstTst::MSG_SUC_RMV    ("Sucesso na remoção.");
+const string ServEstTst::MSG_SUC_STC    ("Sucesso em sinalizar troca.");
 
 const string ServEstTst::MSG_FLH_CON_L  ("Falha na consulta: livro inexistente.");
 const string ServEstTst::MSG_FLH_CON_U  ("Falha na consulta: usuário inexistente.");
 const string ServEstTst::MSG_FLH_CRS    ("Falha em criar resenha.");
 const string ServEstTst::MSG_FLH_INC    ("Falha na inserção.");
 const string ServEstTst::MSG_FLH_RMV    ("Falha na remoção.");
+const string ServEstTst::MSG_FLH_STC    ("Falha em sinalizar troca.");
 const string ServEstTst::MSG_EBD        ("Falha ao acessar a Base de Dados.");
 
 
@@ -134,12 +137,35 @@ Resultado ServEstTst::remover (const Titulo &livro) throw (runtime_error){
     return Resultado (Resultado::FLH_RMV);
 }
 
+Resultado ServEstTst::sinTroca (const Apelido &idUsuario, const Titulo &idLivro, const bool &disp) throw (runtime_error){
+    Log::escrever(msgInicio(idLivro, disp));
+
+    if (consultar(idUsuario).getCampo() == Resultado::SUCESSO
+        && consultar(idLivro).getCampo() == Resultado::SUCESSO){
+        Log::escrever(MSG_SUC_STC);
+        cout << MSG_SUC_STC << endl;
+
+        if (!disp)
+            return Resultado (Resultado::SUCESSO);
+
+        return Resultado(criarUsuario());
+    }
+
+    Log::escrever(MSG_FLH_STC);
+    cout << MSG_FLH_STC << endl;
+    return Resultado (Resultado::FLH_STC);
+}
+
 string ServEstTst::msgInicio (const DominioBase &tentativa, bool ctrl){
     string msgIni;
     if (ctrl) msgIni = MSG_INI_CON;
     else      msgIni = MSG_INI_RMV;
 
     return msgIni + tentativa.getCampo() + TERMINACAO_F;
+}
+
+string ServEstTst::msgInicio (const Titulo &tentativa, bool ctrl){
+    return MSG_INI_STC + tentativa.getCampo() + DIVISOR + bool2str(ctrl) + TERMINACAO_F;
 }
 
 string ServEstTst::msgInicio (const Titulo &livro, const Resenha &resenha){
