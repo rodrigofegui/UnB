@@ -6,6 +6,7 @@ var searchData=
   ['acmdconusuario',['ACmdConUsuario',['../class_a_cmd_con_usuario.html',1,'']]],
   ['acmdcriarresenha',['ACmdCriarResenha',['../class_a_cmd_criar_resenha.html',1,'']]],
   ['acmdincluir',['ACmdIncluir',['../class_a_cmd_incluir.html',1,'']]],
+  ['acmdprocurar',['ACmdProcurar',['../class_a_cmd_procurar.html',1,'']]],
   ['acmdremover',['ACmdRemover',['../class_a_cmd_remover.html',1,'']]],
   ['acmdsintroca',['ACmdSinTroca',['../class_a_cmd_sin_troca.html',1,'']]],
   ['aest',['AEst',['../class_a_est.html',1,'']]],

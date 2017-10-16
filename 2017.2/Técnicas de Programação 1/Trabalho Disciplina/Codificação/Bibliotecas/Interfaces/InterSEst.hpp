@@ -49,6 +49,14 @@
              */
             virtual Resultado incluir (const Livro &)  throw (runtime_error) = 0;
 
+			/**
+             *  Procurar os usuários disponíveis para troca de exemplar
+			 *	de um Livro na Estante.
+             *  @param Identificador do livro
+             *  @return Resultado da operação
+             */
+            virtual Resultado procurar (const Titulo &)  throw (runtime_error) = 0;
+
             /**
              *  Remoção de um exemplar de um livro da Estante.
              *  @param Exemplar a ser removido

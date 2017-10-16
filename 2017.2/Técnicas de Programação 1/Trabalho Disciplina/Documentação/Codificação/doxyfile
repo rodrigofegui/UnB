@@ -100,6 +100,7 @@ INPUT                  = \
 	"../../Codificação/Fontes/Apresentacao/CtrlEst/ACmdConLivro.cpp" \
 	"../../Codificação/Fontes/Dominio/Codigo.cpp" \
 	"../../Codificação/Bibliotecas/Interfaces/InterServ.hpp" \
+	"../../Codificação/Fontes/Apresentacao/CtrlEst/ACmdProcurar.cpp" \
 	"../../Codificação/Fontes_Tst/Dominio_Tst/Codigo_Tst.cpp" \
 	"../../Codificação/Fontes/Apresentacao/CtrlEst/ACmdRemover.cpp" \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp" \
@@ -159,6 +160,7 @@ INPUT                  = \
 	"../../Codificação/Bibliotecas_Tst/Dominio_Tst/Titulo_Tst.hpp" \
 	"../../Codificação/Bibliotecas/Apresentacao/Aplicacao/Aplicacao.hpp" \
 	"../../Codificação/Bibliotecas/Dominio/GeneroLiterario.hpp" \
+	"../../Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdProcurar.hpp" \
 	"../../Codificação/Fontes/Entidade/Usuario.cpp" \
 	"../../Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp" \
 	"../../Codificação/Fontes/Utilidades/Manipulacao.cpp" \

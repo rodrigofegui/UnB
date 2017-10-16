@@ -51,6 +51,8 @@
 			const static string FLH_RMV;
 			/**	Sinalização de falha de sinalização de troca */
 			const static string FLH_STC;
+			/**	Sinalização de falha de procra por troca */
+			const static string FLH_PRO;
 
             /** Selecionada a opção de autenticar */
             const static string ESC_AUTENTICAR;
@@ -60,6 +62,8 @@
 			const static string ESC_CONS_LIVRO;
 			/** Selecionada a opção de consultar usuário */
 			const static string ESC_CONS_USR;
+			/** Selecionada a opção de consultar troca */
+			const static string ESC_CONS_TRC;
 			/** Selecionada a opção de criar resenha */
 			const static string ESC_CRI_RES;
 			/** Selecionada a opção de inserir exemplar de livro */

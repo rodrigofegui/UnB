@@ -39,7 +39,9 @@
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConUsuario.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdProcurar.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdSinTroca.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlEst/AEst.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/CtrlUsu/AUsu.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Apresentacao/TUI.hpp" />
@@ -97,7 +99,9 @@
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdConUsuario.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdCriarResenha.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdIncluir.cpp" />
+		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdProcurar.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdRemover.cpp" />
+		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdSinTroca.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/AEst.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlUsu/AUsu.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/TUI.cpp" />

@@ -4,6 +4,7 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp"
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp"
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp"
+#include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdProcurar.hpp"
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdSinTroca.hpp"
 
 const string AEst::MSG_INI          ("Iniciada a funcionalidade da Estante.");
@@ -33,6 +34,7 @@ void AEst::menu(){
     cout << "* São lhe oferecidas as opções:                    *" << endl;
     printf ("*     %d - Consulta de livro;                       *\n", CON_LIVRO);
     printf ("*     %d - Consulta de usuário;                     *\n", CON_USUARIO);
+    printf ("*     %d - Consulta de troca;                       *\n", CON_TROCA);
     printf ("*     %d - Criar resenha;                           *\n", CRIAR_RES);
     printf ("*     %d - Incluir exemplar de livro à estante;     *\n", INC_LIVRO);
     printf ("*     %d - Remover exemplar de livro da estante;    *\n", RMV_LIVRO);
@@ -53,6 +55,8 @@ Resultado AEst::leitura(){
             return Resultado (Resultado::ESC_CONS_LIVRO);
         case CON_USUARIO:
             return Resultado (Resultado::ESC_CONS_USR);
+        case CON_TROCA:
+            return Resultado (Resultado::ESC_CONS_TRC);
         case CRIAR_RES:
             return Resultado (Resultado::ESC_CRI_RES);
         case INC_LIVRO:
@@ -79,6 +83,9 @@ Resultado AEst::direcionar(const Resultado &escolha){
 
     else if (escolha.getCampo() == Resultado::ESC_CONS_USR)
         cmd = new ACmdConUsuario (servico);
+
+    else if (escolha.getCampo() == Resultado::ESC_CONS_TRC)
+        cmd = new ACmdProcurar (servico);
 
     else if (escolha.getCampo() == Resultado::ESC_CRI_RES)
         cmd = new ACmdCriarResenha (servico);

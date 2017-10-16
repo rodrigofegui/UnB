@@ -18,6 +18,9 @@ var files =
     [ "ACmdIncluir.hpp", "_a_cmd_incluir_8hpp.html", [
       [ "ACmdIncluir", "class_a_cmd_incluir.html", "class_a_cmd_incluir" ]
     ] ],
+    [ "ACmdProcurar.hpp", "_a_cmd_procurar_8hpp.html", [
+      [ "ACmdProcurar", "class_a_cmd_procurar.html", "class_a_cmd_procurar" ]
+    ] ],
     [ "ACmdRemover.hpp", "_a_cmd_remover_8hpp.html", [
       [ "ACmdRemover", "class_a_cmd_remover.html", "class_a_cmd_remover" ]
     ] ],

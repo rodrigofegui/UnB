@@ -30,12 +30,14 @@ const string ServEstTst::MSG_INI_CRS    ("Tentativa de criar resenha: [(");
 const string ServEstTst::MSG_INI_INC    ("Tentativa de inserção: [");
 const string ServEstTst::MSG_INI_RMV    ("Tentativa de remoção: [");
 const string ServEstTst::MSG_INI_STC    ("Tentativa de sinalizar troca: [");
+const string ServEstTst::MSG_INI_PRO    ("Tentativa de procura por troca: [");
 
 const string ServEstTst::MSG_SUC_CON    ("Sucesso na consulta.");
 const string ServEstTst::MSG_SUC_CRS    ("Sucesso em criar resenha.");
 const string ServEstTst::MSG_SUC_INC    ("Sucesso na inserção.");
 const string ServEstTst::MSG_SUC_RMV    ("Sucesso na remoção.");
 const string ServEstTst::MSG_SUC_STC    ("Sucesso em sinalizar troca.");
+const string ServEstTst::MSG_SUC_PRO    ("Sucesso em procurar troca.");
 
 const string ServEstTst::MSG_FLH_CON_L  ("Falha na consulta: livro inexistente.");
 const string ServEstTst::MSG_FLH_CON_U  ("Falha na consulta: usuário inexistente.");
@@ -43,6 +45,7 @@ const string ServEstTst::MSG_FLH_CRS    ("Falha em criar resenha.");
 const string ServEstTst::MSG_FLH_INC    ("Falha na inserção.");
 const string ServEstTst::MSG_FLH_RMV    ("Falha na remoção.");
 const string ServEstTst::MSG_FLH_STC    ("Falha em sinalizar troca.");
+const string ServEstTst::MSG_FLH_PRO    ("Falha em sinalizar troca.");
 const string ServEstTst::MSG_EBD        ("Falha ao acessar a Base de Dados.");
 
 
@@ -51,6 +54,7 @@ Resultado ServEstTst::consultar(const Titulo &id) throw (runtime_error){
 
     if(id.getCampo() == LIVRO_EXI){
         Log::escrever(MSG_SUC_CON);
+		cout << MSG_SUC_CON << endl;
         return Resultado(criarLivro(), criarResenha());
     }
 
@@ -60,6 +64,7 @@ Resultado ServEstTst::consultar(const Titulo &id) throw (runtime_error){
     }
 
     Log::escrever(MSG_FLH_CON_L);
+	cout << MSG_FLH_CON_L << endl;
     return Resultado (Resultado::FLH_CON);
 }
 
@@ -68,6 +73,7 @@ Resultado ServEstTst::consultar (const Apelido &id) throw (runtime_error){
 
     if(id.getCampo() == USUARIO_EXI){
         Log::escrever(MSG_SUC_CON);
+		cout << MSG_SUC_CON << endl;
         return Resultado (criarUsuario());
     }
 
@@ -77,6 +83,7 @@ Resultado ServEstTst::consultar (const Apelido &id) throw (runtime_error){
     }
 
     Log::escrever(MSG_FLH_CON_U);
+	cout << MSG_FLH_CON_U << endl;
     return Resultado (Resultado::FLH_CON);
 }
 
@@ -116,6 +123,25 @@ Resultado ServEstTst::incluir (const Livro &livro) throw (runtime_error){
     Log::escrever(MSG_SUC_INC);
     cout << MSG_SUC_INC << endl;
     return Resultado(Resultado::SUCESSO);
+}
+
+Resultado ServEstTst::procurar(const Titulo &id) throw (runtime_error){
+    Log::escrever(msgInicio(id));
+
+    if(id.getCampo() == LIVRO_EXI){
+        Log::escrever(MSG_SUC_PRO);
+		cout << MSG_SUC_PRO << endl;
+        return Resultado(criarUsuario());
+    }
+
+    if(id.getCampo() == LIVRO_EBD){
+        Log::escrever(MSG_EBD);
+        throw runtime_error (MSG_EBD);
+    }
+
+    Log::escrever(MSG_FLH_PRO);
+	cout << MSG_FLH_PRO << endl;
+    return Resultado (Resultado::FLH_PRO);
 }
 
 Resultado ServEstTst::remover (const Titulo &livro) throw (runtime_error){
@@ -166,6 +192,10 @@ string ServEstTst::msgInicio (const DominioBase &tentativa, bool ctrl){
 
 string ServEstTst::msgInicio (const Titulo &tentativa, bool ctrl){
     return MSG_INI_STC + tentativa.getCampo() + DIVISOR + bool2str(ctrl) + TERMINACAO_F;
+}
+
+string ServEstTst::msgInicio (const Titulo &tentativa){
+    return MSG_INI_PRO + tentativa.getCampo() + TERMINACAO_F;
 }
 
 string ServEstTst::msgInicio (const Titulo &livro, const Resenha &resenha){

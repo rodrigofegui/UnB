@@ -101,6 +101,8 @@ Membros públicos</h2></td></tr>
 <tr class="separator:a17c91a394a7aa8dad9ec00fd456a77c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43e54b33cdf858ea137b8005efb66f81"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_s_est.html#a43e54b33cdf858ea137b8005efb66f81">incluir</a> (const <a class="el" href="class_livro.html">Livro</a> &amp;)=0  throw (runtime_error)</td></tr>
 <tr class="separator:a43e54b33cdf858ea137b8005efb66f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae09a52d6d649980d6432f84bfb4fbd9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_s_est.html#aae09a52d6d649980d6432f84bfb4fbd9">procurar</a> (const <a class="el" href="class_titulo.html">Titulo</a> &amp;)=0  throw (runtime_error)</td></tr>
+<tr class="separator:aae09a52d6d649980d6432f84bfb4fbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7a358e00a5f1a150a3205270aa3c593"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_s_est.html#ad7a358e00a5f1a150a3205270aa3c593">remover</a> (const <a class="el" href="class_titulo.html">Titulo</a> &amp;)=0  throw (runtime_error)</td></tr>
 <tr class="separator:ad7a358e00a5f1a150a3205270aa3c593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa591e3f50b533cc67379e7a9cfdcf3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_s_est.html#afaa591e3f50b533cc67379e7a9cfdcf3">sinTroca</a> (const <a class="el" href="class_apelido.html">Apelido</a> &amp;, const <a class="el" href="class_titulo.html">Titulo</a> &amp;, const bool &amp;)=0  throw (runtime_error)</td></tr>
@@ -284,6 +286,47 @@ Membros públicos</h2></td></tr>
 
 </div>
 </div>
+<a id="aae09a52d6d649980d6432f84bfb4fbd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae09a52d6d649980d6432f84bfb4fbd9">&#9670;&nbsp;</a></span>procurar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_resultado.html">Resultado</a> InterSEst::procurar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_titulo.html">Titulo</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2">runtime_error</td>
+        </tr>
+        <tr>
+          <td align="right"></td><td>)</td><td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Procurar os usuários disponíveis para troca de exemplar de um <a class="el" href="class_livro.html">Livro</a> na Estante. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Identificador</td><td>do livro </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="class_resultado.html">Resultado</a> da operação </dd></dl>
+
+<p>Implementado em <a class="el" href="class_serv_est_tst.html#a588866907b793d1c971a24850f011158">ServEstTst</a>.</p>
+
+</div>
+</div>
 <a id="ad7a358e00a5f1a150a3205270aa3c593"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7a358e00a5f1a150a3205270aa3c593">&#9670;&nbsp;</a></span>remover()</h2>
 
@@ -392,7 +435,7 @@ Membros públicos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_inter_s_est.html">InterSEst</a></li>
-    <li class="footer">Gerado em Segunda, 16 de Outubro de 2017 13:06:24 para Trabalho_Disciplina por
+    <li class="footer">Gerado em Segunda, 16 de Outubro de 2017 13:28:25 para Trabalho_Disciplina por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
