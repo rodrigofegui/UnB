@@ -39,7 +39,7 @@
              *  @param Resenha redigida
              *  @return Resultado da operação
              */
-            virtual Resultado criarResenha (const Livro &,
+            virtual Resultado criarResenha (const Titulo &,
                                             const Resenha &)  throw (runtime_error) = 0;
 
             /**
@@ -54,6 +54,6 @@
              *  @param Exemplar a ser removido
              *  @return Resultado da operação
              */
-            virtual Resultado remover (const Livro &)  throw (runtime_error) = 0;
+            virtual Resultado remover (const Titulo &)  throw (runtime_error) = 0;
     };
 #endif // INTER_SERV_EST_HPP

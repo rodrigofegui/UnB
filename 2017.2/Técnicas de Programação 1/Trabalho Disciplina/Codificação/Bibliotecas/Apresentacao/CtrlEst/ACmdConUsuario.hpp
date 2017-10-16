@@ -40,4 +40,4 @@
             /*  Herdada de InterCmdEst */
             Resultado executar();
     };
-#endif // APRES_CTRL_EST_CMD_CON_L_HPP
+#endif // APRES_CTRL_EST_CMD_CON_U_HPP

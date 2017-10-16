@@ -44,7 +44,7 @@ const string ServEstTst::MSG_EBD        ("Falha ao acessar a Base de Dados.");
 
 
 Resultado ServEstTst::consultar(const Titulo &id) throw (runtime_error){
-    Log::escrever(msgInicio(id));
+    Log::escrever(msgInicio(id, true));
 
     if(id.getCampo() == LIVRO_EXI){
         Log::escrever(MSG_SUC_CON);
@@ -61,7 +61,7 @@ Resultado ServEstTst::consultar(const Titulo &id) throw (runtime_error){
 }
 
 Resultado ServEstTst::consultar (const Apelido &id) throw (runtime_error){
-    Log::escrever(msgInicio(id));
+    Log::escrever(msgInicio(id, true));
 
     if(id.getCampo() == USUARIO_EXI){
         Log::escrever(MSG_SUC_CON);
@@ -77,25 +77,27 @@ Resultado ServEstTst::consultar (const Apelido &id) throw (runtime_error){
     return Resultado (Resultado::FLH_CON);
 }
 
-Resultado ServEstTst::criarResenha (const Livro &livro, const Resenha &resenha) throw (runtime_error){
+Resultado ServEstTst::criarResenha (const Titulo &livro, const Resenha &resenha) throw (runtime_error){
     Log::escrever(msgInicio(livro, resenha));
 
-    if(livro.getTitulo().getCampo() == LIVRO_EXI){
+    if(livro.getCampo() == LIVRO_EXI){
         Log::escrever(MSG_SUC_CRS);
+        cout << MSG_SUC_CRS << endl;
         return Resultado(Resultado::SUCESSO);
     }
 
-    if(livro.getTitulo().getCampo() == LIVRO_EBD){
+    if(livro.getCampo() == LIVRO_EBD){
         Log::escrever(MSG_EBD);
         throw runtime_error (MSG_EBD);
     }
 
     Log::escrever(MSG_FLH_CRS);
+    cout << MSG_FLH_CRS << endl;
     return Resultado (Resultado::FLH_CRI);
 }
 
 Resultado ServEstTst::incluir (const Livro &livro) throw (runtime_error){
-    Log::escrever(msgInicio(livro, INSERCAO));
+    Log::escrever(msgInicio(livro));
 
     if(livro.getTitulo().getCampo() == LIVRO_EXI){
         Log::escrever(MSG_SUC_INC);
@@ -111,15 +113,15 @@ Resultado ServEstTst::incluir (const Livro &livro) throw (runtime_error){
     return Resultado (Resultado::FLH_INC);
 }
 
-Resultado ServEstTst::remover (const Livro &livro) throw (runtime_error){
-    Log::escrever(msgInicio(livro, !INSERCAO));
+Resultado ServEstTst::remover (const Titulo &livro) throw (runtime_error){
+    Log::escrever(msgInicio(livro, false));
 
-    if(livro.getTitulo().getCampo() == LIVRO_EXI){
+    if(livro.getCampo() == LIVRO_EXI){
         Log::escrever(MSG_SUC_RMV);
         return Resultado(Resultado::SUCESSO);
     }
 
-    if(livro.getTitulo().getCampo() == LIVRO_EBD){
+    if(livro.getCampo() == LIVRO_EBD){
         Log::escrever(MSG_EBD);
         throw runtime_error (MSG_EBD);
     }
@@ -128,27 +130,22 @@ Resultado ServEstTst::remover (const Livro &livro) throw (runtime_error){
     return Resultado (Resultado::FLH_RMV);
 }
 
-string ServEstTst::msgInicio (const DominioBase &tentativa){
-    return MSG_INI_CON + tentativa.getCampo() + TERMINACAO_F;
+string ServEstTst::msgInicio (const DominioBase &tentativa, bool ctrl){
+    string msgIni;
+    if (ctrl) msgIni = MSG_INI_CON;
+    else      msgIni = MSG_INI_RMV;
+
+    return msgIni + tentativa.getCampo() + TERMINACAO_F;
 }
 
-string ServEstTst::msgInicio (const Livro &livro, const Resenha &resenha){
-    return MSG_INI_CRS + livro.getCodigo().getCampo()
-                            + DIVISOR + livro.getDataPublicacao().getCampo()
-                            + DIVISOR + livro.getGenero().getCampo()
-                            + DIVISOR + livro.getAutor().getCampo()
-                            + DIVISOR + livro.getTitulo().getCampo() + TERMINACAO_P
+string ServEstTst::msgInicio (const Titulo &livro, const Resenha &resenha){
+    return MSG_INI_CRS + livro.getCampo() + TERMINACAO_P
                         + DIVISOR + INICIO_P + resenha.getTitulo().getCampo()
                             + DIVISOR + resenha.getTexto().getCampo() + TERMINACAO_F;
 }
 
-string ServEstTst::msgInicio (const Livro &livro, bool cond){
-    string msgIni;
-
-    if (cond == INSERCAO)   msgIni = MSG_INI_INC;
-    else                    msgIni = MSG_INI_RMV;
-
-    return msgIni + livro.getCodigo().getCampo()
+string ServEstTst::msgInicio (const Livro &livro){
+    return MSG_INI_INC + livro.getCodigo().getCampo()
                     + DIVISOR + livro.getDataPublicacao().getCampo()
                     + DIVISOR + livro.getGenero().getCampo()
                     + DIVISOR + livro.getAutor().getCampo()

@@ -97,6 +97,13 @@
 			 *  o mesmo
 			 *  @param Resultado a ser conferido
 			 */
+			Resultado (Titulo *, Resenha *);
+
+			/**
+			 *  Construtor de um Resultado, conhecendo-se
+			 *  o mesmo
+			 *  @param Resultado a ser conferido
+			 */
 			Resultado (Login *);
 
 			/**

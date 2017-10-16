@@ -54,9 +54,9 @@
             const static string MSG_EBD;
 
             /*	Mensagem para o início das operações */
-            static string msgInicio (const DominioBase &);
-            static string msgInicio (const Livro &, const Resenha &);
-            static string msgInicio (const Livro &, bool);
+            static string msgInicio (const DominioBase &, bool);
+            static string msgInicio (const Titulo &, const Resenha &);
+            static string msgInicio (const Livro &);
 
             /*  Construção dos resultados */
             Livro*   criarLivro();
@@ -78,8 +78,8 @@
             /*  Métodos da interface */
             Resultado consultar (const Titulo &) throw (runtime_error);
             Resultado consultar (const Apelido &) throw (runtime_error);
-            Resultado criarResenha (const Livro &, const Resenha &) throw (runtime_error);
+            Resultado criarResenha (const Titulo &, const Resenha &) throw (runtime_error);
             Resultado incluir (const Livro &) throw (runtime_error);
-            Resultado remover (const Livro &) throw (runtime_error);
+            Resultado remover (const Titulo &) throw (runtime_error);
     };
 #endif // SERV_CTRL_EST_TST_HPP

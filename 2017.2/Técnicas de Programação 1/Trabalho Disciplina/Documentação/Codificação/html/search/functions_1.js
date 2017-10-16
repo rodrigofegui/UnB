@@ -5,5 +5,5 @@ var searchData=
   ['clear',['clear',['../class_dominio_base.html#a4ea3e324776335e5639034dcd28fe72f',1,'DominioBase']]],
   ['codigo',['Codigo',['../class_codigo.html#ab600451a62d146afd95c1c1a0fc041c3',1,'Codigo::Codigo()'],['../class_codigo.html#a362508a98e7a9701cfde3f10eb2d899f',1,'Codigo::Codigo(const string &amp;campo)']]],
   ['consultar',['consultar',['../class_serv_est_tst.html#ac45f05329833d5da86d4a1a8226f1088',1,'ServEstTst::consultar(const Titulo &amp;)'],['../class_serv_est_tst.html#ae1fdb88bbdb9684acbbe1403c32c8cd7',1,'ServEstTst::consultar(const Apelido &amp;)'],['../class_inter_s_est.html#a78e531e0601e01e86647c1568d88bbcf',1,'InterSEst::consultar(const Titulo &amp;)=0'],['../class_inter_s_est.html#ad10e1302f3ca151d4bdc2f54839e8297',1,'InterSEst::consultar(const Apelido &amp;)=0']]],
-  ['criarresenha',['criarResenha',['../class_serv_est_tst.html#a95b038af76044034631eb88cf91e68bb',1,'ServEstTst::criarResenha()'],['../class_inter_s_est.html#a574c01ff720c2f7314f9381719d2992e',1,'InterSEst::criarResenha()']]]
+  ['criarresenha',['criarResenha',['../class_serv_est_tst.html#a3457793cbff23fca790a6b430ddcb112',1,'ServEstTst::criarResenha()'],['../class_inter_s_est.html#a17c91a394a7aa8dad9ec00fd456a77c8',1,'InterSEst::criarResenha()']]]
 ];

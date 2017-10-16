@@ -12,7 +12,9 @@ var files =
     [ "ACmdConUsuario.hpp", "_a_cmd_con_usuario_8hpp.html", [
       [ "ACmdConUsuario", "class_a_cmd_con_usuario.html", "class_a_cmd_con_usuario" ]
     ] ],
-    [ "ACmdCriarResenha.hpp", "_a_cmd_criar_resenha_8hpp_source.html", null ],
+    [ "ACmdCriarResenha.hpp", "_a_cmd_criar_resenha_8hpp.html", [
+      [ "ACmdCriarResenha", "class_a_cmd_criar_resenha.html", "class_a_cmd_criar_resenha" ]
+    ] ],
     [ "ACmdIncluir.hpp", "_a_cmd_incluir_8hpp_source.html", null ],
     [ "ACmdRemover.hpp", "_a_cmd_remover_8hpp_source.html", null ],
     [ "AEst.hpp", "_a_est_8hpp.html", [

@@ -32,6 +32,10 @@ Resultado::Resultado(Livro *livro, Resenha *resenha){
 	setCampo (Resultado::SUCESSO); setLivro(livro); setResenha(resenha);
 }
 
+Resultado::Resultado(Titulo *livro, Resenha *resenha){
+	setCampo (Resultado::SUCESSO); setTitulo(livro); setResenha(resenha);
+}
+
 Resultado::Resultado(Login *login){setCampo (Resultado::SUCESSO); setLogin(login);}
 
 Resultado::Resultado(Usuario *usuario){setCampo (Resultado::SUCESSO); setUsuario(usuario);}

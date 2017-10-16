@@ -17,14 +17,14 @@
             /*  Mensagens de erro padrão */
             const static string msgErroTam;
 
-            /*  Constantes de validação */
-            const static int TAM_MAX = 40;
-
             /*  Validação do texto a ser armazenado */
             void validar (const string &campo) throw (invalid_argument) override;
             void validarTamanho (const string &campo) throw (invalid_argument);
 
         public:
+            /**  Tamanho máximo do Texto */
+            const static int TAM_MAX = 40;
+
             /**
              *  Construtor padrão
              */

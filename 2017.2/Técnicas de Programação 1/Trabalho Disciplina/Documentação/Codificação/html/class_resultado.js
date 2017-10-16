@@ -4,6 +4,7 @@ var class_resultado =
     [ "Resultado", "class_resultado.html#a280804d0bacde763202fb71acdcf95ca", null ],
     [ "Resultado", "class_resultado.html#a68482752c7c787970cc94930f30e0a3b", null ],
     [ "Resultado", "class_resultado.html#aa71c1b61a7bee0c20ccb55b7bafb6ade", null ],
+    [ "Resultado", "class_resultado.html#a510d27940f685f74641910b1fbc7ff42", null ],
     [ "Resultado", "class_resultado.html#a5cefc4b1d7717448cdf7871edbf814d0", null ],
     [ "Resultado", "class_resultado.html#aa57604e1ac0e1c5f23e8c949a493d635", null ],
     [ "Resultado", "class_resultado.html#acc6e9ea8ccdb20bcbf63bf5b5eebc80b", null ],

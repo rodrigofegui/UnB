@@ -22,7 +22,7 @@ void ACmdConUsuario::menu(){
     cout << "****************************************************" << endl;
     cout << "*               Consulta de Usuário                *" << endl;
     cout << "*                                                  *" << endl;
-    cout << "* Para efetuar a consulta de um livro é preciso    *" << endl;
+    cout << "* Para efetuar a consulta de um usuário é preciso  *" << endl;
     cout << "* fornecer algum apelido; lembrando que:           *" << endl;
     cout << "*     - Apelido deve ter até 5 letras.             *" << endl;
     cout << "****************************************************" << endl << endl;

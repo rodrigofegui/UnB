@@ -14,7 +14,8 @@ var hierarchy =
     ] ],
     [ "InterCmdEst", "class_inter_cmd_est.html", [
       [ "ACmdConLivro", "class_a_cmd_con_livro.html", null ],
-      [ "ACmdConUsuario", "class_a_cmd_con_usuario.html", null ]
+      [ "ACmdConUsuario", "class_a_cmd_con_usuario.html", null ],
+      [ "ACmdCriarResenha", "class_a_cmd_criar_resenha.html", null ]
     ] ],
     [ "InterFunc", "class_inter_func.html", [
       [ "AAut", "class_a_aut.html", [
@@ -64,6 +65,7 @@ var hierarchy =
       [ "AAut", "class_a_aut.html", null ],
       [ "ACmdConLivro", "class_a_cmd_con_livro.html", null ],
       [ "ACmdConUsuario", "class_a_cmd_con_usuario.html", null ],
+      [ "ACmdCriarResenha", "class_a_cmd_criar_resenha.html", null ],
       [ "AEst", "class_a_est.html", null ],
       [ "Aplicacao", "class_aplicacao.html", [
         [ "AplicacaoTst", "class_aplicacao_tst.html", null ]

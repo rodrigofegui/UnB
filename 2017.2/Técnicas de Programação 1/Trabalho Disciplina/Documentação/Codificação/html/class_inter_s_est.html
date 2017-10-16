@@ -97,12 +97,12 @@ Membros públicos</h2></td></tr>
 <tr class="separator:a78e531e0601e01e86647c1568d88bbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad10e1302f3ca151d4bdc2f54839e8297"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_s_est.html#ad10e1302f3ca151d4bdc2f54839e8297">consultar</a> (const <a class="el" href="class_apelido.html">Apelido</a> &amp;)=0  throw (runtime_error)</td></tr>
 <tr class="separator:ad10e1302f3ca151d4bdc2f54839e8297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a574c01ff720c2f7314f9381719d2992e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_s_est.html#a574c01ff720c2f7314f9381719d2992e">criarResenha</a> (const <a class="el" href="class_livro.html">Livro</a> &amp;, const <a class="el" href="class_resenha.html">Resenha</a> &amp;)=0  throw (runtime_error)</td></tr>
-<tr class="separator:a574c01ff720c2f7314f9381719d2992e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c91a394a7aa8dad9ec00fd456a77c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_s_est.html#a17c91a394a7aa8dad9ec00fd456a77c8">criarResenha</a> (const <a class="el" href="class_titulo.html">Titulo</a> &amp;, const <a class="el" href="class_resenha.html">Resenha</a> &amp;)=0  throw (runtime_error)</td></tr>
+<tr class="separator:a17c91a394a7aa8dad9ec00fd456a77c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43e54b33cdf858ea137b8005efb66f81"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_s_est.html#a43e54b33cdf858ea137b8005efb66f81">incluir</a> (const <a class="el" href="class_livro.html">Livro</a> &amp;)=0  throw (runtime_error)</td></tr>
 <tr class="separator:a43e54b33cdf858ea137b8005efb66f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a429c9c78b9efe591bdb446ec6e4d9e78"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_s_est.html#a429c9c78b9efe591bdb446ec6e4d9e78">remover</a> (const <a class="el" href="class_livro.html">Livro</a> &amp;)=0  throw (runtime_error)</td></tr>
-<tr class="separator:a429c9c78b9efe591bdb446ec6e4d9e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a358e00a5f1a150a3205270aa3c593"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_resultado.html">Resultado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inter_s_est.html#ad7a358e00a5f1a150a3205270aa3c593">remover</a> (const <a class="el" href="class_titulo.html">Titulo</a> &amp;)=0  throw (runtime_error)</td></tr>
+<tr class="separator:ad7a358e00a5f1a150a3205270aa3c593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Protocolo de comunicação entre a camada de Apresentação e de Serviço, para a funcionalidade da Estante. </p>
@@ -189,8 +189,8 @@ Membros públicos</h2></td></tr>
 
 </div>
 </div>
-<a id="a574c01ff720c2f7314f9381719d2992e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a574c01ff720c2f7314f9381719d2992e">&#9670;&nbsp;</a></span>criarResenha()</h2>
+<a id="a17c91a394a7aa8dad9ec00fd456a77c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17c91a394a7aa8dad9ec00fd456a77c8">&#9670;&nbsp;</a></span>criarResenha()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,7 +201,7 @@ Membros públicos</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="class_resultado.html">Resultado</a> InterSEst::criarResenha </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_livro.html">Livro</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_titulo.html">Titulo</a> &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -237,7 +237,7 @@ Membros públicos</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd><a class="el" href="class_resultado.html">Resultado</a> da operação </dd></dl>
 
-<p>Implementado em <a class="el" href="class_serv_est_tst.html#a95b038af76044034631eb88cf91e68bb">ServEstTst</a>.</p>
+<p>Implementado em <a class="el" href="class_serv_est_tst.html#a3457793cbff23fca790a6b430ddcb112">ServEstTst</a>.</p>
 
 </div>
 </div>
@@ -282,8 +282,8 @@ Membros públicos</h2></td></tr>
 
 </div>
 </div>
-<a id="a429c9c78b9efe591bdb446ec6e4d9e78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a429c9c78b9efe591bdb446ec6e4d9e78">&#9670;&nbsp;</a></span>remover()</h2>
+<a id="ad7a358e00a5f1a150a3205270aa3c593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a358e00a5f1a150a3205270aa3c593">&#9670;&nbsp;</a></span>remover()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,7 +294,7 @@ Membros públicos</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="class_resultado.html">Resultado</a> InterSEst::remover </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_livro.html">Livro</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_titulo.html">Titulo</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -319,7 +319,7 @@ Membros públicos</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd><a class="el" href="class_resultado.html">Resultado</a> da operação </dd></dl>
 
-<p>Implementado em <a class="el" href="class_serv_est_tst.html#af74c8c36b5a2d24a9ed4682e4bb875a2">ServEstTst</a>.</p>
+<p>Implementado em <a class="el" href="class_serv_est_tst.html#a608c395f49b6a66c5e043de13eb25ce4">ServEstTst</a>.</p>
 
 </div>
 </div>
@@ -332,7 +332,7 @@ Membros públicos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_inter_s_est.html">InterSEst</a></li>
-    <li class="footer">Gerado em Domingo, 15 de Outubro de 2017 23:14:08 para Trabalho_Disciplina por
+    <li class="footer">Gerado em Domingo, 15 de Outubro de 2017 23:46:52 para Trabalho_Disciplina por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
