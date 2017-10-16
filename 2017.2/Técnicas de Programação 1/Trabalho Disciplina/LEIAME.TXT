@@ -5,36 +5,35 @@ Matrícula:
 	14/0170740
 
 GitHub:
-	https://github.com/rodrigofegui/UnB/tree/master/2017.2/T%C3%A9cnicas%20de%20Programa%C3%A7%C3%A3o%201/Trabalho_1
+	https://github.com/rodrigofegui/UnB/tree/master/2017.2/T%C3%A9cnicas%20de%20Programa%C3%A7%C3%A3o%201/Trabalho%20Disciplina
 
 Linguagem Utilizada:
 	C++
 
 Plataforma necessária:
-	Code:Blocks IDE 16.01 ou superior (esta foi a versão utilizada para o desenvolvimento), deve-se configurar para compilar com o C++11.
+	Code:Blocks IDE 16.01 ou superior (esta foi a versão utilizada para o
+desenvolvimento), deve-se configurar para compilar com o C++11.
 
 Descritivo:
-	Desenvolvimento dos Tipos e das Entidades Básicas para o sistema de Estante.
+	- Desenvolvimento dos Tipos e das Entidades Básicas para o sistema de Estante;
+	- Desenvolvimento da camada de apresentação, TUI, para o sistema de Estante;
+	- Desenvolvimento de stubs para o sistema de Estante.
 
 Descritivo do módulo:
-	Sendo desenvolvido em C++, houve o desenvolvimento de duas bibliotecas:
+	Sendo desenvolvido em C++, houve o desenvolvimento das bibliotecas:
+		- Apresentação: que controla o conteúdo a ser exibido ao usuário do
+		sistema de Estante. Houve a divisão em sub-módulos:
+			+ Aplicação: que controla a aplicação como um todo;
+			+ CtrlAut: que controla a funcionalidade de autenticação de
+			usuário;
+			+ CtrlEst: que controla a funcionalidade da estante;
+			+ CtrlUsu: que controla a funcionalidade de usuário.
 		- Domínio: que controla os tipos básicos e suas validações;
 		- Entidades: que controla as entidades que são compostas pela combinação
 		linear dos tipos desenvolvidos no Domínio;
-	Foram catalogados os seguintes tipos básicos:
-		- Apelido;
-		- Código;
-		- Data;
-		- Gênero Literário;
-		- Nome;
-		- Senha;
-		- Telefone;
-		- Texto;
-		- Título.
-	E as seguintes entidades:
-		- Livro;
-		- Resenha;
-		- Usuário.
+		- Interfaces: que controla os protocolos a serem seguidos nos envios de
+		mensagens;
+		- Servico: que controla o sistema de Estante em si.
 
 Descritivo dos diretórios básicos:
 	Como o trabalho será manipulado e compartilhado conforme a IDE utilizada,
@@ -44,13 +43,13 @@ então estarão inclusos os diretórios criados pela mesma; todas descritas sob 
 		por isso não será detalhada;
 		- /Codificação: Códigos desenvolvidos para a realização
 		eficiente da aplicação;
-			* /Bibliotecas: Declarações, arquivos
-			.hpp, das classes criadas, possibilitando, futuramente, o usuário final
-			conhecer apenas os .hpp, os objetos gerados e a documentação;
+			* /Bibliotecas: Declarações, arquivos .hpp, das classes criadas,
+			possibilitando, futuramente, o usuário final conhecer apenas os .hpp,
+			os objetos gerados e a documentação;
 			* /Fontes: Códigos-fonte que geram arquivos objetos;
 			* /Bibliotecas_Tst: Declarações dos arquivos a serem
 			testado;
-			* /Fontes_Tst: Definições dos testes realizados sobre a 
+			* /Fontes_Tst: Definições dos testes realizados sobre a
 			aplicação.
 		- /Diagramação: Arquivos responsável pelo planejamento da
 		estrutura da aplicação, através, pelo menos, da diagramação dos módulos;

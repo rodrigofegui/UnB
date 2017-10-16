@@ -10,16 +10,23 @@ Interfaces. <a href=../Interfaces/uml-InterFunc.html>InterFunc</a>
 </td></tr><tr><td>
 +<a href=../Interfaces/InterFunc.html#executar()>executar</a>() :<a href=../Classes/uml-Resultado.html>Resultado</a><br>
 +<a href=../Interfaces/InterFunc.html#executar(Classes.Resultado)>executar</a>(<a href=../Classes/uml-Resultado.html>Resultado</a> result) :void<br>
-+<a href=../Interfaces/InterFunc.html#setServ(Interfaces.InterServ)>setServ</a>(<a href=../Interfaces/uml-InterServ.html>InterServ</a> servico) :void<br>
++<a href=../Interfaces/InterFunc.html#setServ(Interfaces.InterSAut)>setServ</a>(<a href=../Interfaces/uml-InterSAut.html>InterSAut</a> servico) :void<br>
++<a href=../Interfaces/InterFunc.html#setServ(Interfaces.InterSUsu)>setServ</a>(<a href=../Interfaces/uml-InterSUsu.html>InterSUsu</a> servico) :void<br>
++<a href=../Interfaces/InterFunc.html#setServ(Interfaces.InterSEst)>setServ</a>(<a href=../Interfaces/uml-InterSEst.html>InterSEst</a> servico) :void<br>
 </td></tr></table></td></tr>
 <tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
 Classes. <a href=../Classes/uml-TUI.html>TUI</a>
 </td></tr><tr><td>
+<u>-<a href=../Classes/TUI.html#iniciouLog>iniciouLog</a> :bool</u><br>
+</td></tr><tr><td>
 +<a href=../Classes/TUI.html#executar()>executar</a>() :void<br>
 #<a href=../Classes/TUI.html#menu()>menu</a>() :void<br>
 #<a href=../Classes/TUI.html#leitura()>leitura</a>() :<a href=../Classes/uml-Resultado.html>Resultado</a><br>
-#<a href=../Classes/TUI.html#direcionar(Classes.Resultado)>direcionar</a>(<a href=../Classes/uml-Resultado.html>Resultado</a> escolha) :void<br>
+#<a href=../Classes/TUI.html#direcionar(Classes.Resultado)>direcionar</a>(<a href=../Classes/uml-Resultado.html>Resultado</a> escolha) :<a href=../Classes/uml-Resultado.html>Resultado</a><br>
 #<a href=../Classes/TUI.html#tratarErro()>tratarErro</a>() :void<br>
+#<a href=../Classes/TUI.html#tratarErro(Classes.Resultado)>tratarErro</a>(<a href=../Classes/uml-Resultado.html>Resultado</a> evento) :<a href=../Classes/uml-Resultado.html>Resultado</a><br>
+#<a href=../Classes/TUI.html#finalizar()>finalizar</a>() :void<br>
+-<a href=../Classes/TUI.html#tentar()>tentar</a>() :<a href=../Classes/uml-Resultado.html>Resultado</a><br>
 </td></tr></table></td></tr>
 </table>
 </td><td width=12 align=center valign=top>
@@ -28,7 +35,8 @@ Classes. <a href=../Classes/uml-TUI.html>TUI</a>
 <table border=0 width=100% cellpadding=0 cellspacing=0><tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
 Classes. <a href=../Classes/AAut.html>AAut</a>
 </td></tr><tr><td>
--<a href=../Classes/AAut.html#arqLog>arqLog</a> :<a href=../Classes/uml-Log.html>Log</a><br>
+-<a href=../Classes/AAut.html#apelido>apelido</a> :<a href=../Classes/uml-Apelido.html>Apelido</a><br>
+-<a href=../Classes/AAut.html#login>login</a> :<a href=../Classes/uml-Login.html>Login</a>[]<br>
 -<a href=../Classes/AAut.html#servico>servico</a> :<a href=../Módulos/uml-ServAut.html>ServAut</a>[]<br>
 </td></tr></table></td></tr>
 </table>

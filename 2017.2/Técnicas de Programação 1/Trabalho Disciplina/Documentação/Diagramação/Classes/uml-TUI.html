@@ -3,18 +3,23 @@
 <title>
 TUI</title></head><body bgcolor=#ffffff text=#000000vlink=#330000 alink=#330044 link=#0000aa>
 <h2>TUI</h2>
-<p><a href="../Diagramas/Aplicação.html">Diagramas.Aplicação</a></p><p><a href="../Diagramas/CtrlAut.html">Diagramas.CtrlAut</a></p><p></p><table width=100% cellspacing=0 cellpadding=0>
+<p><a href="../Diagramas/Aplicação.html">Diagramas.Aplicação</a></p><p><a href="../Diagramas/CtrlAut.html">Diagramas.CtrlAut</a></p><p><a href="../Diagramas/CtrlUsu.html">Diagramas.CtrlUsu</a></p><p><a href="../Diagramas/CtrlEst.html">Diagramas.CtrlEst</a></p><p></p><table width=100% cellspacing=0 cellpadding=0>
 <tr><td width=32% valign=top>
 </td><td width=12 align=center valign=top>
 </td><td width=32% valign=top align=center>
 <table border=0 width=100% cellpadding=0 cellspacing=0><tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
 Classes. <a href=../Classes/TUI.html>TUI</a>
 </td></tr><tr><td>
+<u>-<a href=../Classes/TUI.html#iniciouLog>iniciouLog</a> :bool</u><br>
+</td></tr><tr><td>
 +<a href=../Classes/TUI.html#executar()>executar</a>() :void<br>
 #<a href=../Classes/TUI.html#menu()>menu</a>() :void<br>
 #<a href=../Classes/TUI.html#leitura()>leitura</a>() :<a href=../Classes/uml-Resultado.html>Resultado</a><br>
-#<a href=../Classes/TUI.html#direcionar(Classes.Resultado)>direcionar</a>(<a href=../Classes/uml-Resultado.html>Resultado</a> escolha) :void<br>
+#<a href=../Classes/TUI.html#direcionar(Classes.Resultado)>direcionar</a>(<a href=../Classes/uml-Resultado.html>Resultado</a> escolha) :<a href=../Classes/uml-Resultado.html>Resultado</a><br>
 #<a href=../Classes/TUI.html#tratarErro()>tratarErro</a>() :void<br>
+#<a href=../Classes/TUI.html#tratarErro(Classes.Resultado)>tratarErro</a>(<a href=../Classes/uml-Resultado.html>Resultado</a> evento) :<a href=../Classes/uml-Resultado.html>Resultado</a><br>
+#<a href=../Classes/TUI.html#finalizar()>finalizar</a>() :void<br>
+-<a href=../Classes/TUI.html#tentar()>tentar</a>() :<a href=../Classes/uml-Resultado.html>Resultado</a><br>
 </td></tr></table></td></tr>
 </table>
 </td><td width=12 align=center valign=top>
@@ -22,12 +27,22 @@ Classes. <a href=../Classes/TUI.html>TUI</a>
 </td>
 <td width=32% valign=top>
 <table border=1 width=100% cellpadding=0 cellspacing=3><tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
+Classes. <a href=../Classes/uml-AEst.html>AEst</a>
+</td></tr><tr><td>
+-<a href=../Classes/AEst.html#apelido>apelido</a> :<a href=../Classes/uml-Apelido.html>Apelido</a>[]<br>
+-<a href=../Classes/AEst.html#servico>servico</a> :<a href=../Interfaces/uml-InterSEst.html>InterSEst</a>[]<br>
+-<a href=../Classes/AEst.html#cmd>cmd</a> :<a href=../Interfaces/uml-InterCmdEst.html>InterCmdEst</a>[]<br>
+</td></tr></table></td></tr>
+<tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
+Classes. <a href=../Classes/uml-ACmdRemover.html>ACmdRemover</a>
+</td></tr></table></td></tr>
+<tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
 Classes. <a href=../Classes/uml-Aplicacao.html>Aplicacao</a>
 </td></tr><tr><td>
--<a href=../Classes/Aplicacao.html#arqLog>arqLog</a> :<a href=../Classes/uml-Log.html>Log</a><br>
 -<a href=../Classes/Aplicacao.html#func>func</a> :<a href=../Interfaces/uml-InterFunc.html>InterFunc</a><br>
 <u>-<a href=../Classes/Aplicacao.html#AUTENTICAR>AUTENTICAR</a> :int</u><br>
 <u>-<a href=../Classes/Aplicacao.html#CADASTRAR>CADASTRAR</a> :int</u><br>
+<u>-<a href=../Classes/Aplicacao.html#SAIR>SAIR</a> :int</u><br>
 </td></tr><tr><td>
 -<a href=../Classes/Aplicacao.html#autenticar()>autenticar</a>() :<a href=../Classes/uml-Resultado.html>Resultado</a><br>
 -<a href=../Classes/Aplicacao.html#usuario()>usuario</a>() :<a href=../Classes/uml-Resultado.html>Resultado</a><br>
@@ -36,8 +51,34 @@ Classes. <a href=../Classes/uml-Aplicacao.html>Aplicacao</a>
 <tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
 Classes. <a href=../Classes/uml-AAut.html>AAut</a>
 </td></tr><tr><td>
--<a href=../Classes/AAut.html#arqLog>arqLog</a> :<a href=../Classes/uml-Log.html>Log</a><br>
+-<a href=../Classes/AAut.html#apelido>apelido</a> :<a href=../Classes/uml-Apelido.html>Apelido</a><br>
+-<a href=../Classes/AAut.html#login>login</a> :<a href=../Classes/uml-Login.html>Login</a>[]<br>
 -<a href=../Classes/AAut.html#servico>servico</a> :<a href=../Módulos/uml-ServAut.html>ServAut</a>[]<br>
+</td></tr></table></td></tr>
+<tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
+Classes. <a href=../Classes/uml-ACmdConLivro.html>ACmdConLivro</a>
+</td></tr></table></td></tr>
+<tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
+Classes. <a href=../Classes/uml-AUsu.html>AUsu</a>
+</td></tr><tr><td>
+-<a href=../Classes/AUsu.html#apelido>apelido</a> :int<br>
+-<a href=../Classes/AUsu.html#usuario>usuario</a> :<a href=../Classes/uml-Usuario.html>Usuario</a>[]<br>
+-<a href=../Classes/AUsu.html#servico>servico</a> :<a href=../Interfaces/uml-InterSUsu.html>InterSUsu</a><br>
+</td></tr></table></td></tr>
+<tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
+Classes. <a href=../Classes/uml-ACmdSinTroca.html>ACmdSinTroca</a>
+</td></tr></table></td></tr>
+<tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
+Classes. <a href=../Classes/uml-ACmdConUsuario.html>ACmdConUsuario</a>
+</td></tr></table></td></tr>
+<tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
+Classes. <a href=../Classes/uml-ACmdProcurar.html>ACmdProcurar</a>
+</td></tr></table></td></tr>
+<tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
+Classes. <a href=../Classes/uml-ACmdIncluir.html>ACmdIncluir</a>
+</td></tr></table></td></tr>
+<tr><td bgcolor=#7dfff1><table border cellspacing=0 cellpadding=0 width=100%><tr><td>
+Classes. <a href=../Classes/uml-ACmdCriarResenha.html>ACmdCriarResenha</a>
 </td></tr></table></td></tr>
 </table>
 </td></tr>
