@@ -1,19 +1,11 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp"
 
-const string ACmdIncluir::MSG_INICIO       ("Iniciada o comando de inserir Livro.");
-const string ACmdIncluir::MSG_FINALIZAR    ("Comando de inserir Livro finalizado.");
-const string ACmdIncluir::MSG_LER_TIT      ("Aquisição do Título com êxito.");
-const string ACmdIncluir::MSG_LER_AUT      ("Aquisição do Autor com êxito.");
-const string ACmdIncluir::MSG_LER_GEN      ("Aquisição do Gênero com êxito.");
-const string ACmdIncluir::MSG_LER_DAT      ("Aquisição da Data com êxito.");
-const string ACmdIncluir::MSG_ERRO_D       ("Erro na entrada de login ou na Base de Dados.");
-
 ACmdIncluir::ACmdIncluir(InterSEst *servico){
     this->servico = servico;
 }
 
 Resultado ACmdIncluir::executar(){
-    Log::escrever(MSG_INICIO);
+    Log::escrever(Mensagem::INI_EST_INC_LVR);
 
     TUI::executar();
 
@@ -46,33 +38,37 @@ Resultado ACmdIncluir::leitura(){
     char buffer[Titulo::TAM_MAX], buffer2[Nome::TAM_MAX];
     string transf;
 
-    cout << "Digite o título: ";
+	Log::escrever (Mensagem::LEITURA);
+
+    cout << Mensagem::LER_TIT;
         cin.getline(buffer, Titulo::TAM_MAX);
-    transf = buffer;
-    titulo.setCampo(transf);
-    Log::escrever(MSG_LER_TIT);
+    	transf = buffer;
+    		titulo.setCampo(transf);
+    Log::escrever(Mensagem::AQS_TIT);
 
-    cout << "Digite o autor: ";
+    cout << Mensagem::LER_ATR;
         cin.getline(buffer, Titulo::TAM_MAX);
-    transf = buffer;
-    autor.setCampo (transf);
-    Log::escrever(MSG_LER_AUT);
+    	transf = buffer;
+    		autor.setCampo (transf);
+    Log::escrever(Mensagem::AQS_ATR);
 
-    cout << "Digite o gênero: ";
+    cout << Mensagem::LER_GEN;
         cin >> transf; getchar ();
-    gen.setCampo (transf);
-    Log::escrever(MSG_LER_GEN);
+    		gen.setCampo (transf);
+    Log::escrever(Mensagem::AQS_GEN);
 
-    cout << "Digite a data: ";
+    cout << Mensagem::LER_DAT;
         cin >> transf; getchar ();
-    data.setCampo (transf);
-    Log::escrever(MSG_LER_DAT);
+    		data.setCampo (transf);
+    Log::escrever(Mensagem::AQS_DAT);
 
     Livro *novo = new Livro ();
     novo->setTitulo(titulo);
     novo->setAutor (autor);
     novo->setDataPublicacao (data);
     novo->setGenero (gen);
+
+	Log::escrever(Mensagem::CRI_LVR);
 
     return Resultado (novo);
 }
@@ -86,8 +82,8 @@ Resultado ACmdIncluir::direcionar(const Resultado &escolha){
 }
 
 Resultado ACmdIncluir::tratarErro (){
-    Log::escrever(MSG_ERRO_D);
-    cout << MSG_ERRO_D << endl;
+    Log::escrever(Mensagem::ERR_DUB);
+    cout << Mensagem::ERR_DUB << endl;
     Manipulacao::pausar();
 
     return Resultado(Resultado::ESC_SAIR);
@@ -98,5 +94,5 @@ Resultado ACmdIncluir::tratarErro (const Resultado &evento){
 }
 
 void ACmdIncluir::finalizar(){
-    Log::escrever(MSG_FINALIZAR);
+    Log::escrever(Mensagem::FIM_EST_INC_LVR);
 }

@@ -8,11 +8,9 @@
      *  bibliotecas importantes e necessárias para
      *  o desenvolvimento desejável da aplicação
      */
-    #include <stdlib.h>
-    #include <iostream>
-    #include <string>
-    #include "Apresentacao/Aplicacao/Aplicacao.hpp"
 	#include "Entidade/Log.hpp"
+	#include "Utilidades/Mensagem.hpp"
+	#include "Apresentacao/Aplicacao/Aplicacao.hpp"
 
     using namespace std;
 #endif // PRINCIPAL

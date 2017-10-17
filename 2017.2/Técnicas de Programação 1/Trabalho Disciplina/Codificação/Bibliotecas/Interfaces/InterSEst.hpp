@@ -10,6 +10,7 @@
     #include "../Entidade/Livro.hpp"
     #include "../Entidade/Resenha.hpp"
     #include "../Dominio/Apelido.hpp"
+	#include "../Utilidades/Mensagem.hpp"
 
     /**
      *  @class  InterSEst

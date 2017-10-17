@@ -15,7 +15,7 @@
     class AAutTst : public AAut{
         private:
             /*  Controle das telas */
-            bool apresentou = false;
+            static bool apresentou;
 
             /*  Métodos herdados */
             void menu () override;

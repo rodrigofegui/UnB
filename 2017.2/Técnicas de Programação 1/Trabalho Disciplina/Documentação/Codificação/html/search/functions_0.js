@@ -9,5 +9,5 @@ var searchData=
   ['acmdsintroca',['ACmdSinTroca',['../class_a_cmd_sin_troca.html#a1d5c73e3a979dcbf60bd87112df2d5a8',1,'ACmdSinTroca::ACmdSinTroca()'],['../class_a_cmd_sin_troca.html#a27dd8ca1e0a25c234fe3603c4b55959e',1,'ACmdSinTroca::ACmdSinTroca(InterSEst *)'],['../class_a_cmd_sin_troca.html#ad7cfaa2a639a187b57db88f121bb91bf',1,'ACmdSinTroca::ACmdSinTroca(InterSEst *, Apelido *)']]],
   ['aguardarresp',['aguardarResp',['../class_manipulacao.html#aff57da018ae99601f905e9a0fbbdcce5',1,'Manipulacao']]],
   ['apelido',['Apelido',['../class_apelido.html#ae428ec9dfc6690dce5afc27bef5cbb52',1,'Apelido::Apelido()'],['../class_apelido.html#ac460405532ecb52ea80ec7c8b69ce709',1,'Apelido::Apelido(const string &amp;campo)']]],
-  ['autenticar',['autenticar',['../class_inter_s_aut.html#af691c0b0530b6516848de3eaea01a70a',1,'InterSAut::autenticar()'],['../class_aplicacao.html#ae9bc3b3a7d32ac786b8d2d6094b74923',1,'Aplicacao::autenticar()'],['../class_serv_aut_tst.html#ae508159301af4fe705d8aab93624febf',1,'ServAutTst::autenticar()']]]
+  ['autenticar',['autenticar',['../class_serv_aut_tst.html#ae508159301af4fe705d8aab93624febf',1,'ServAutTst::autenticar()'],['../class_aplicacao.html#ae9bc3b3a7d32ac786b8d2d6094b74923',1,'Aplicacao::autenticar()'],['../class_inter_s_aut.html#af691c0b0530b6516848de3eaea01a70a',1,'InterSAut::autenticar()']]]
 ];

@@ -1,6 +1,16 @@
 var searchData=
 [
-  ['remover',['remover',['../class_serv_est_tst.html#a608c395f49b6a66c5e043de13eb25ce4',1,'ServEstTst::remover()'],['../class_inter_s_est.html#ad7a358e00a5f1a150a3205270aa3c593',1,'InterSEst::remover()']]],
+  ['red_5faut',['RED_AUT',['../class_mensagem.html#ae536470cd36e78e8db0a52a070eed7bb',1,'Mensagem']]],
+  ['red_5fest',['RED_EST',['../class_mensagem.html#ad9f757ce0a66a9b31f6a541aeb008d24',1,'Mensagem']]],
+  ['red_5fest_5fcon_5flvr',['RED_EST_CON_LVR',['../class_mensagem.html#a87c524634ca01b17746c6d825387e2ae',1,'Mensagem']]],
+  ['red_5fest_5fcon_5ftrc',['RED_EST_CON_TRC',['../class_mensagem.html#ac6595ccc0bfab9776f5e39002427681b',1,'Mensagem']]],
+  ['red_5fest_5fcon_5fusr',['RED_EST_CON_USR',['../class_mensagem.html#a13310766819a0727ed44bef1dcf11c0d',1,'Mensagem']]],
+  ['red_5fest_5fcrs',['RED_EST_CRS',['../class_mensagem.html#aea75aa9ab21bf5d0c3464352aa246194',1,'Mensagem']]],
+  ['red_5fest_5finc_5flvr',['RED_EST_INC_LVR',['../class_mensagem.html#a400f6774f02b9c05be6b5f272da6ccbc',1,'Mensagem']]],
+  ['red_5fest_5frmv_5flvr',['RED_EST_RMV_LVR',['../class_mensagem.html#a4923d3f45f8311013934e61f0d47476b',1,'Mensagem']]],
+  ['red_5fest_5fstr',['RED_EST_STR',['../class_mensagem.html#a643245098fdf186aeaa4659baf1d87d4',1,'Mensagem']]],
+  ['red_5fusu',['RED_USU',['../class_mensagem.html#a57f60ce5d688250b43b83a7d9bc657af',1,'Mensagem']]],
+  ['remover',['remover',['../class_inter_s_est.html#ad7a358e00a5f1a150a3205270aa3c593',1,'InterSEst::remover()'],['../class_serv_est_tst.html#a608c395f49b6a66c5e043de13eb25ce4',1,'ServEstTst::remover()']]],
   ['resenha',['Resenha',['../class_resenha.html',1,'Resenha'],['../class_resenha.html#a2f5ce867133fc2f3722a763071ee1739',1,'Resenha::Resenha()'],['../class_resenha.html#ab55fd8e9b7b06eb4c74699729cbefbad',1,'Resenha::Resenha(const Texto &amp;txt)'],['../class_resenha.html#a6310707fdecc17173f1f2aae4e55a3c5',1,'Resenha::Resenha(const Titulo &amp;titulo)'],['../class_resenha.html#ab2f8a5978f481a29b6511b6a691c2d21',1,'Resenha::Resenha(const Texto &amp;txt, const Titulo &amp;titulo)']]],
   ['resenha_2ehpp',['Resenha.hpp',['../_resenha_8hpp.html',1,'']]],
   ['resenha_5ftst_2ehpp',['Resenha_Tst.hpp',['../_resenha___tst_8hpp.html',1,'']]],

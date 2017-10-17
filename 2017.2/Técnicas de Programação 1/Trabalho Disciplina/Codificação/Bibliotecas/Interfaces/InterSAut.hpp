@@ -8,6 +8,7 @@
     #include "../Entidade/Log.hpp"
     #include "../Entidade/Login.hpp"
     #include "../Entidade/Resultado.hpp"
+	#include "../Utilidades/Mensagem.hpp"
 
     /**
      *  @class InterSAut

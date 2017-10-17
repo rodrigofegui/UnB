@@ -69,6 +69,7 @@
 		<Unit filename="Codificação/Bibliotecas/Interfaces/InterServ.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Principal.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Utilidades/Manipulacao.hpp" />
+		<Unit filename="Codificação/Bibliotecas/Utilidades/Mensagem.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Utilidades/TesteUnitario.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.hpp" />
 		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_tst.hpp" />
@@ -123,6 +124,7 @@
 		<Unit filename="Codificação/Fontes/Entidade/Usuario.cpp" />
 		<Unit filename="Codificação/Fontes/Principal.cpp" />
 		<Unit filename="Codificação/Fontes/Utilidades/Manipulacao.cpp" />
+		<Unit filename="Codificação/Fontes/Utilidades/Mensagem.cpp" />
 		<Unit filename="Codificação/Fontes/Utilidades/TesteUnitario.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.cpp" />
 		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_Tst.cpp" />

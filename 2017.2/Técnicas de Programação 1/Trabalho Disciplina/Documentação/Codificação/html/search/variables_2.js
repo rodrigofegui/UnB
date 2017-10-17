@@ -1,15 +1,16 @@
 var searchData=
 [
-  ['falha',['FALHA',['../class_resultado.html#a06f058dfb4dfb406faf00c8d36a3dfaa',1,'Resultado']]],
-  ['flh_5faut',['FLH_AUT',['../class_resultado.html#afd91b68fe06e07db820e23d5103a43ae',1,'Resultado']]],
-  ['flh_5fbd',['FLH_BD',['../class_resultado.html#a3fed1cf2afc7bc8dd90c3b4a05d27220',1,'Resultado']]],
-  ['flh_5fcad',['FLH_CAD',['../class_resultado.html#abdfce1a54b4b554fe0197463363da048',1,'Resultado']]],
-  ['flh_5fcon',['FLH_CON',['../class_resultado.html#a71fd24096cc76f6a557207c2ef804bbf',1,'Resultado']]],
-  ['flh_5fcri',['FLH_CRI',['../class_resultado.html#ab72c6bf33c51ee6edb2394706c9c06a2',1,'Resultado']]],
-  ['flh_5finc',['FLH_INC',['../class_resultado.html#ae95a343f6ee930046903adced00c4f03',1,'Resultado']]],
-  ['flh_5flim',['FLH_LIM',['../class_resultado.html#ada95d80a9aadc0211a33e0729cf3caeb',1,'Resultado']]],
-  ['flh_5fpro',['FLH_PRO',['../class_resultado.html#a504f7ada4f515297f9535cfe8858e86f',1,'Resultado']]],
-  ['flh_5frmv',['FLH_RMV',['../class_resultado.html#a7af09466113208b6228d53ed1092f288',1,'Resultado']]],
-  ['flh_5fstc',['FLH_STC',['../class_resultado.html#aae125669a7cbb13f64fa9d61169200c1',1,'Resultado']]],
-  ['func',['func',['../class_aplicacao.html#aa63e03b8e8cc7b36bfeff4f5e1a9dfee',1,'Aplicacao']]]
+  ['err_5fabd',['ERR_ABD',['../class_mensagem.html#a608df88625e53b92649721c2e3a13c8f',1,'Mensagem']]],
+  ['err_5fdub',['ERR_DUB',['../class_mensagem.html#afda99558015ffff9897a97ab5ad53281',1,'Mensagem']]],
+  ['err_5fusu_5fexi',['ERR_USU_EXI',['../class_mensagem.html#a7f0a1a52502cb34075acd112c384a676',1,'Mensagem']]],
+  ['esc_5fautenticar',['ESC_AUTENTICAR',['../class_resultado.html#a2a552e90eb689cc48405299929adf5e0',1,'Resultado']]],
+  ['esc_5fcadastrar',['ESC_CADASTRAR',['../class_resultado.html#ab577e55e781e392ee41b2f8dc5d76b7f',1,'Resultado']]],
+  ['esc_5fcons_5flivro',['ESC_CONS_LIVRO',['../class_resultado.html#a11c282b5953fc455e45c0e2d0027e49a',1,'Resultado']]],
+  ['esc_5fcons_5ftrc',['ESC_CONS_TRC',['../class_resultado.html#afe2664800e94418f26903c6f8bf38b38',1,'Resultado']]],
+  ['esc_5fcons_5fusr',['ESC_CONS_USR',['../class_resultado.html#afb6950b7a0f4d0b8b59fac28397d62fe',1,'Resultado']]],
+  ['esc_5fcri_5fres',['ESC_CRI_RES',['../class_resultado.html#aec79404c3148d2f3659178dc18d7567c',1,'Resultado']]],
+  ['esc_5finc_5flivro',['ESC_INC_LIVRO',['../class_resultado.html#aa8e74f540e489cf933b4e50a52f5ee07',1,'Resultado']]],
+  ['esc_5frmv_5flivro',['ESC_RMV_LIVRO',['../class_resultado.html#a877f6b3fa53207db94ba07e37a1cc899',1,'Resultado']]],
+  ['esc_5fsair',['ESC_SAIR',['../class_resultado.html#a5490f5dd610135296d69afbfb3dcd762',1,'Resultado']]],
+  ['esc_5fsin_5ftroca',['ESC_SIN_TROCA',['../class_resultado.html#a70363314616390a6c1dfc737a85b5892',1,'Resultado']]]
 ];

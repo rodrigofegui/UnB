@@ -6,14 +6,14 @@
 #include "../../../Bibliotecas_Tst/Servico_Tst/ServUsu_Tst.hpp"
 #include "../../../Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp"
 
-const string AplicacaoTst::MSG_TELA        ("Apresentação da Tela Inicial de Teste.");
+bool AplicacaoTst::apresentou = false;
 
 void AplicacaoTst::menu(){
     if (!this->apresentou){
         this->apresentou = !this->apresentou;
         Manipulacao::limparTela();
 
-        Log::escrever(MSG_TELA);
+        Log::escrever(Mensagem::INI_APP_TST);
 
         cout << "****************************************************" << endl;
         cout << "*          Bem-vindo ao teste da Aplicação         *" << endl;
@@ -38,7 +38,7 @@ void AplicacaoTst::menu(){
 }
 
 Resultado AplicacaoTst::autenticar(){
-    Log::escrever(MSG_ESC_AUT);
+    Log::escrever(Mensagem::RED_AUT);
 
 	this->func = new AAutTst ();
 	this->func->setServico(new ServAutTst());
@@ -46,7 +46,7 @@ Resultado AplicacaoTst::autenticar(){
 }
 
 Resultado AplicacaoTst::usuario(){
-    Log::escrever(MSG_ESC_USU);
+    Log::escrever(Mensagem::RED_USU);
 
     this->func = new AUsuTst ();
 	this->func->setServico(new ServUsuTst());
@@ -54,7 +54,7 @@ Resultado AplicacaoTst::usuario(){
 }
 
 Resultado AplicacaoTst::estante(const Resultado &apelido){
-    Log::escrever(MSG_ESC_EST);
+    Log::escrever(Mensagem::RED_EST);
 
 	this->func = new AEstTst ();
 	this->func->setServico(new ServEstTst());

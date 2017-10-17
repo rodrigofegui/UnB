@@ -24,15 +24,6 @@
             void finalizar();
             void menu ();
 
-            /*  Mensagens padrão */
-            const static string MSG_INICIO;
-            const static string MSG_FINALIZAR;
-            const static string MSG_LER_TIT;
-            const static string MSG_LER_AUT;
-            const static string MSG_LER_GEN;
-            const static string MSG_LER_DAT;
-            const static string MSG_ERRO_D;
-
         public:
             /**
              *  Construtor padrão

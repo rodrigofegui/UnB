@@ -1,11 +1,5 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdSinTroca.hpp"
 
-const string ACmdSinTroca::MSG_INICIO       ("Iniciada o comando de sinalizar disponibilidade para troca de  Livro.");
-const string ACmdSinTroca::MSG_FINALIZAR    ("Comando de sinalizar disponibilidade para troca Livro finalizado.");
-const string ACmdSinTroca::MSG_LER_TIT      ("Aquisição do Título com êxito.");
-const string ACmdSinTroca::MSG_LER_DIS      ("Aquisição da Disponibilidade com êxito.");
-const string ACmdSinTroca::MSG_ERRO_D       ("Erro na entrada de login ou na Base de Dados.");
-
 ACmdSinTroca::ACmdSinTroca(InterSEst *servico){
     this->servico = servico;
 }
@@ -16,7 +10,7 @@ ACmdSinTroca::ACmdSinTroca(InterSEst *servico, Apelido *apelido){
 }
 
 Resultado ACmdSinTroca::executar(){
-    Log::escrever(MSG_INICIO);
+    Log::escrever(Mensagem::INI_EST_STR);
 
     TUI::executar();
 
@@ -39,16 +33,18 @@ Resultado ACmdSinTroca::leitura(){
     char buffer[Titulo::TAM_MAX];
     string transf;
 
-    cout << "Digite o título: ";
-        cin.getline(buffer, Titulo::TAM_MAX);
-    Log::escrever(MSG_LER_TIT);
-    transf = buffer;
-    Titulo *novo = new Titulo ();
-    novo->setCampo(transf);
+	Log::escrever (Mensagem::LEITURA);
 
-    cout << "Há disponibilidade? S/N: ";
+    cout << Mensagem::LER_TIT;
+        cin.getline(buffer, Titulo::TAM_MAX);
+    		transf = buffer;
+	    Titulo *novo = new Titulo ();
+	    novo->setCampo(transf);
+	Log::escrever(Mensagem::AQS_TIT);
+
+    cout << Mensagem::LER_DSP;
         cin >> transf; getchar ();
-    Log::escrever(MSG_LER_DIS);
+    Log::escrever(Mensagem::AQS_DSP);
 
     if (transf == "S")
         return Resultado (novo, true);
@@ -60,8 +56,11 @@ Resultado ACmdSinTroca::direcionar(const Resultado &escolha){
     Resultado result = this->servico->sinTroca(*(this->apelido), *(escolha.getTitulo()), escolha.getDisponibilidade());
 
     if (escolha.getDisponibilidade()){
-        cout << "Usuário(s) interessado(s): " << endl;
-        cout << "Apelido: " + result.getUsuario()->getApelido().getCampo() << endl;
+        cout << Mensagem::SUC_EST_CON_TRC << endl;
+        cout << Mensagem::LBL_APE + result.getUsuario()->getApelido().getCampo() << endl;
+
+		Log::escrever(Mensagem::SUC_EST_CON_TRC);
+		Log::escrever(Mensagem::LBL_APE + result.getUsuario()->getApelido().getCampo());
     }
 
     Manipulacao::pausar();
@@ -70,8 +69,8 @@ Resultado ACmdSinTroca::direcionar(const Resultado &escolha){
 }
 
 Resultado ACmdSinTroca::tratarErro (){
-    Log::escrever(MSG_ERRO_D);
-    cout << MSG_ERRO_D << endl;
+    Log::escrever(Mensagem::ERR_DUB);
+    cout << Mensagem::ERR_DUB << endl;
     Manipulacao::pausar();
 
     return Resultado(Resultado::ESC_SAIR);
@@ -82,5 +81,5 @@ Resultado ACmdSinTroca::tratarErro (const Resultado &evento){
 }
 
 void ACmdSinTroca::finalizar(){
-    Log::escrever(MSG_FINALIZAR);
+    Log::escrever(Mensagem::FIM_EST_STR);
 }

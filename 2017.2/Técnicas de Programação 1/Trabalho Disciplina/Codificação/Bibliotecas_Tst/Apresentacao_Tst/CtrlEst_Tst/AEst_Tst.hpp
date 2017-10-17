@@ -14,6 +14,10 @@
      */
     class AEstTst : public AEst{
         private:
+			/*  Controle das telas */
+            static bool apresentou;
+
+            /*  Métodos herdados */
             void menu() override;
 
         public:

@@ -1,16 +1,7 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlUsu/AUsu.hpp"
 
-const string AUsu::MSG_INICIO       ("Iniciada a funcionalidade de Usuário.");
-const string AUsu::MSG_FINALIZAR    ("Funcionalidade de Usuário finalizada.");
-const string AUsu::MSG_LER_APE      ("Aquisição do Apelido com êxito.");
-const string AUsu::MSG_LER_NOM      ("Aquisição do Nome com êxito.");
-const string AUsu::MSG_LER_SEN      ("Aquisição da Senha com êxito.");
-const string AUsu::MSG_LER_TEL      ("Aquisição do Telefone com êxito.");
-const string AUsu::MSG_ERRO         ("Usuário existente na Base de Dados.");
-const string AUsu::MSG_ERRO_D       ("Erro na entrada de login ou de Base de Dados.");
-
 Resultado AUsu::executar(){
-    Log::escrever(MSG_INICIO);
+    Log::escrever(Mensagem::INI_USR);
 
     TUI::executar();
 
@@ -42,30 +33,33 @@ Resultado AUsu::leitura(){
     Senha       respSenha;
     Telefone    respTel;
 
-    cout << "Digite um apelido: ";
+	Log::escrever (Mensagem::LEITURA);
+
+    cout << Mensagem::LER_APE;
         cin >> resp; getchar ();
         this->apelido.setCampo(resp);
-        Log::escrever(MSG_LER_APE);
+    Log::escrever(Mensagem::AQS_APE);
 
-    cout << "Digite um nome: ";
+    cout << Mensagem::LER_NOM;
         cin.getline(buffer, Nome::TAM_MAX);
         respNome.setCampo(buffer);
-        Log::escrever(MSG_LER_NOM);
+    Log::escrever(Mensagem::AQS_NOM);
 
-    cout << "Digite uma senha: ";
+    cout << Mensagem::LER_SEN;
         cin >> resp; getchar ();
         respSenha.setCampo(resp);
-        Log::escrever(MSG_LER_SEN);
+    Log::escrever(Mensagem::AQS_SEN);
 
-    cout << "Digite um telefone: ";
+    cout << Mensagem::LER_TEL;
         cin >> resp; getchar ();
         respTel.setCampo(resp);
-        Log::escrever(MSG_LER_TEL);
+    Log::escrever(Mensagem::AQS_TEL);
 
     if (this->usuario)
         this->usuario->deletar();
 
     this->usuario = new Usuario (this->apelido, respNome, respSenha, respTel);
+	Log::escrever (Mensagem::CRI_USR);
 
     return Resultado (this->usuario);
 }
@@ -84,8 +78,8 @@ Resultado AUsu::direcionar(const Resultado &entrada){
 Resultado AUsu::tratarErro(){
     this->apelido.clear();
 
-    Log::escrever(MSG_ERRO_D);
-    cout << MSG_ERRO_D << endl;
+    Log::escrever(Mensagem::ERR_DUB);
+    cout << Mensagem::ERR_DUB << endl;
     Manipulacao::pausar();
 
     return Resultado (Resultado::ESC_SAIR);
@@ -93,7 +87,8 @@ Resultado AUsu::tratarErro(){
 
 Resultado AUsu::tratarErro(const Resultado &evento){
     if (evento.getCampo() == Resultado::FLH_CAD){
-        cout << MSG_ERRO << endl;
+		Log::escrever (Mensagem::ERR_USU_EXI);
+		cout << Mensagem::ERR_USU_EXI << endl;
         Manipulacao::pausar();
     }
 
@@ -102,11 +97,13 @@ Resultado AUsu::tratarErro(const Resultado &evento){
 
 Resultado AUsu::avaliarCond (){
 	if(!this->apelido.getCampo().empty()){
+		Log::escrever(Mensagem::SUC_USR + this->apelido.getCampo());
 		Resultado res (&this->apelido);
 		res.setCampo(Resultado::SUCESSO);
 		return res;
 	}
 
+	Log::escrever (Resultado::FALHA);
 	return Resultado (Resultado::FALHA);
 }
 
@@ -117,5 +114,5 @@ void AUsu::finalizar(){
     if (this->usuario)
         this->usuario->deletar();
 
-    Log::escrever(MSG_FINALIZAR);
+    Log::escrever(Mensagem::FIM_USR);
 }

@@ -33,31 +33,9 @@
             const static string INICIO_P;
             const static string TERMINACAO_P;
             const static string TERMINACAO_F;
-            const static bool   INSERCAO;
 
             /*  Mensagens padrão */
-            const static string MSG_INI_CON;
-            const static string MSG_INI_CRS;
-            const static string MSG_INI_INC;
-            const static string MSG_INI_RMV;
-			const static string MSG_INI_STC;
-			const static string MSG_INI_PRO;
-
-            const static string MSG_SUC_CRS;
-            const static string MSG_SUC_CON;
-            const static string MSG_SUC_INC;
-            const static string MSG_SUC_RMV;
-			const static string MSG_SUC_STC;
-			const static string MSG_SUC_PRO;
-
-            const static string MSG_FLH_CON_L;
-            const static string MSG_FLH_CON_U;
-            const static string MSG_FLH_CRS;
-            const static string MSG_FLH_INC;
-            const static string MSG_FLH_RMV;
-			const static string MSG_FLH_STC;
-			const static string MSG_FLH_PRO;
-            const static string MSG_EBD;
+            const static string MSG_INI;
 
             /*	Mensagem para o início das operações */
             static string msgInicio (const DominioBase &, bool);

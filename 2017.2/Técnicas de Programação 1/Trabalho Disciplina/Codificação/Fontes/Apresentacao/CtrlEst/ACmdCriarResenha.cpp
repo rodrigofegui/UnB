@@ -1,17 +1,11 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp"
 
-const string ACmdCriarResenha::MSG_INICIO       ("Iniciada o comando de criar resenha.");
-const string ACmdCriarResenha::MSG_FINALIZAR    ("Comando de criar resenha finalizado.");
-const string ACmdCriarResenha::MSG_LER_TXT      ("Aquisição do Texto com êxito.");
-const string ACmdCriarResenha::MSG_LER_TIT      ("Aquisição do Título com êxito.");
-const string ACmdCriarResenha::MSG_ERRO_D       ("Erro na entrada de login ou na Base de Dados.");
-
 ACmdCriarResenha::ACmdCriarResenha(InterSEst *servico){
     this->servico = servico;
 }
 
 Resultado ACmdCriarResenha::executar(){
-    Log::escrever(MSG_INICIO);
+    Log::escrever(Mensagem::INI_EST_CRS);
 
     TUI::executar();
 
@@ -37,36 +31,34 @@ Resultado ACmdCriarResenha::leitura(){
     char buffer[Titulo::TAM_MAX], buffer2[Texto::TAM_MAX];
     string transf;
 
-    cout << "Digite o título do livro: ";
+	Log::escrever (Mensagem::LEITURA);
+
+    cout << Mensagem::LER_TIT_LVR;
         cin.getline(buffer, Titulo::TAM_MAX);
-        Log::escrever(MSG_LER_TIT);
-
         transf = buffer;
+	        Titulo *livro = new Titulo ();
+	        livro->setCampo(transf);
+	Log::escrever(Mensagem::AQS_TIT);
 
-        Titulo *livro = new Titulo ();
-        livro->setCampo(transf);
-
-    cout << "Digite o título da resenha: ";
+    cout << Mensagem::LER_TIT_RES;
         cin.getline(buffer, Titulo::TAM_MAX);
-        Log::escrever(MSG_LER_TIT);
-
         transf = buffer;
+	        Titulo resenha;
+	        resenha.setCampo(transf);
+	Log::escrever(Mensagem::AQS_TIT);
 
-        Titulo resenha;
-        resenha.setCampo(transf);
-
-     cout << "Digite o corpo da resenha: ";
+     cout << Mensagem::LER_TXT;
         cin.getline(buffer2, Texto::TAM_MAX);
-        Log::escrever(MSG_LER_TXT);
-
         transf = buffer2;
-
-        Texto resenhaB;
-        resenhaB.setCampo(transf);
+		    Texto resenhaB;
+		    resenhaB.setCampo(transf);
+	Log::escrever(Mensagem::AQS_TXT);
 
         Resenha *nova = new Resenha ();
         nova->setTitulo (resenha);
         nova->setTexto (resenhaB);
+	Log::escrever(Mensagem::CRI_RES);
+
     return Resultado (livro, nova);
 }
 
@@ -79,8 +71,8 @@ Resultado ACmdCriarResenha::direcionar(const Resultado &escolha){
 }
 
 Resultado ACmdCriarResenha::tratarErro (){
-    Log::escrever(MSG_ERRO_D);
-    cout << MSG_ERRO_D << endl;
+    Log::escrever(Mensagem::ERR_DUB);
+    cout << Mensagem::ERR_DUB << endl;
     Manipulacao::pausar();
 
     return Resultado(Resultado::ESC_SAIR);
@@ -91,5 +83,5 @@ Resultado ACmdCriarResenha::tratarErro (const Resultado &evento){
 }
 
 void ACmdCriarResenha::finalizar(){
-    Log::escrever(MSG_FINALIZAR);
+    Log::escrever(Mensagem::FIM_EST_CRS);
 }

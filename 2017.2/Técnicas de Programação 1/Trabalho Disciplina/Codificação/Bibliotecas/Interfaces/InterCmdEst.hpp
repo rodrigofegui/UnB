@@ -8,6 +8,7 @@
     #include "InterSEst.hpp"
     #include "../Entidade/Log.hpp"
     #include "../Entidade/Resultado.hpp"
+	#include "../Utilidades/Mensagem.hpp"
 
     /**
      *  @class  InterCmdEst

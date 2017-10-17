@@ -1,16 +1,11 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdConLivro.hpp"
 
-const string ACmdConLivro::MSG_INICIO       ("Iniciada o comando de consultar Livro.");
-const string ACmdConLivro::MSG_FINALIZAR    ("Comando de consultar Livro finalizado.");
-const string ACmdConLivro::MSG_LER_TIT      ("Aquisição do Título com êxito.");
-const string ACmdConLivro::MSG_ERRO_D       ("Erro na entrada de login ou na Base de Dados.");
-
 ACmdConLivro::ACmdConLivro(InterSEst *servico){
     this->servico = servico;
 }
 
 Resultado ACmdConLivro::executar(){
-    Log::escrever(MSG_INICIO);
+    Log::escrever(Mensagem::INI_EST_CON_LVR);
 
     TUI::executar();
 
@@ -32,14 +27,14 @@ Resultado ACmdConLivro::leitura(){
     char buffer[Titulo::TAM_MAX];
     string transf;
 
-    cout << "Digite o título: ";
+	Log::escrever (Mensagem::LEITURA);
+
+    cout << Mensagem::LER_TIT;
         cin.getline(buffer, Titulo::TAM_MAX);
-    Log::escrever(MSG_LER_TIT);
-
-    transf = buffer;
-
-    Titulo *novo = new Titulo ();
-    novo->setCampo(transf);
+    	transf = buffer;
+		    Titulo *novo = new Titulo ();
+		    novo->setCampo(transf);
+	Log::escrever(Mensagem::AQS_TIT);
 
     return Resultado (novo);
 }
@@ -47,19 +42,31 @@ Resultado ACmdConLivro::leitura(){
 Resultado ACmdConLivro::direcionar(const Resultado &escolha){
     Resultado result = this->servico->consultar(*(escolha.getTitulo()));
 
-    if (result.getCampo() == Resultado::FLH_CON)
-        cout << "Livro não encontrado." << endl;
-    else{
-        cout << endl << "Livro encontrado: " << endl;
-        cout << "Título: " + result.getLivro()->getTitulo().getCampo() << endl;
-        cout << "Autor: " + result.getLivro()->getAutor().getCampo() << endl;
-        cout << "Data: " + result.getLivro()->getDataPublicacao().getCampo() << endl;
-        cout << "Genero: " + result.getLivro()->getGenero().getCampo() << endl << endl;
+    if (result.getCampo() == Resultado::FLH_CON){
+		Log::escrever (Mensagem::FLH_LVR);
+		cout << Mensagem::FLH_LVR << endl;
+
+    }else{
+        cout << endl << Mensagem::SUC_EST_CON_LVR << endl;
+        cout << Mensagem::LBL_TIT + result.getLivro()->getTitulo().getCampo() << endl;
+        cout << Mensagem::LBL_ATR + result.getLivro()->getAutor().getCampo() << endl;
+        cout << Mensagem::LBL_DAT + result.getLivro()->getDataPublicacao().getCampo() << endl;
+        cout << Mensagem::LBL_GEN + result.getLivro()->getGenero().getCampo() << endl << endl;
+
+		Log::escrever(Mensagem::SUC_EST_CON_LVR);
+		Log::escrever(Mensagem::LBL_TIT + result.getLivro()->getTitulo().getCampo());
+		Log::escrever(Mensagem::LBL_ATR + result.getLivro()->getAutor().getCampo());
+		Log::escrever(Mensagem::LBL_DAT + result.getLivro()->getDataPublicacao().getCampo());
+		Log::escrever(Mensagem::LBL_GEN + result.getLivro()->getGenero().getCampo());
 
         if (result.getResenha()){
-            cout << "Resenha(s) associada(s):" << endl;
+            cout << Mensagem::SUC_EST_CON_LVR_RES << endl;
             cout << "[" + result.getResenha()->getTitulo().getCampo() + "] ";
             cout << result.getResenha()->getTexto().getCampo() << endl;
+
+			Log::escrever(Mensagem::SUC_EST_CON_LVR_RES);
+			Log::escrever("[" + result.getResenha()->getTitulo().getCampo() + "] "
+							+ result.getResenha()->getTexto().getCampo());
         }
     }
 
@@ -69,8 +76,8 @@ Resultado ACmdConLivro::direcionar(const Resultado &escolha){
 }
 
 Resultado ACmdConLivro::tratarErro (){
-    Log::escrever(MSG_ERRO_D);
-    cout << MSG_ERRO_D << endl;
+    Log::escrever(Mensagem::ERR_DUB);
+    cout << Mensagem::ERR_DUB << endl;
     Manipulacao::pausar();
 
     return Resultado(Resultado::ESC_SAIR);
@@ -81,5 +88,5 @@ Resultado ACmdConLivro::tratarErro (const Resultado &evento){
 }
 
 void ACmdConLivro::finalizar(){
-    Log::escrever(MSG_FINALIZAR);
+    Log::escrever(Mensagem::FIM_EST_CON_LVR);
 }

@@ -1,14 +1,7 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlAut/AAut.hpp"
 
-const string AAut::MSG_INICIO       ("Iniciada a funcionalidade de Autenticação.");
-const string AAut::MSG_FINALIZAR    ("Funcionalidade de Autenticação finalizada.");
-const string AAut::MSG_LER_APE      ("Aquisição do Apelido com êxito.");
-const string AAut::MSG_LER_SEN      ("Aquisição da Senha com êxito.");
-const string AAut::MSG_ERRO         ("Usuário inexistente na Base de Dados.");
-const string AAut::MSG_ERRO_D       ("Erro na entrada de login ou na Base de Dados.");
-
 Resultado AAut::executar (){
-    Log::escrever(MSG_INICIO);
+    Log::escrever(Mensagem::INI_AUT);
 
     TUI::executar();
 
@@ -17,6 +10,7 @@ Resultado AAut::executar (){
 
 void AAut::menu(){
     Manipulacao::limparTela();
+
     cout << "****************************************************" << endl;
     cout << "*                   Autenticação                   *" << endl;
     cout << "*                                                  *" << endl;
@@ -31,17 +25,17 @@ Resultado AAut::leitura(){
     string resp;
     Senha respSenha;
 
-    cout << "Digite o apelido: ";
-        cin >> resp;
-        getchar();
-    this->apelido.setCampo(resp);
-    Log::escrever(MSG_LER_APE);
+	Log::escrever(Mensagem::LEITURA);
 
-    cout << "Digite a senha: ";
-        cin >> resp;
-        getchar();
-    respSenha.setCampo(resp);
-    Log::escrever(MSG_LER_SEN);
+    cout << Mensagem::LER_APE;
+        cin >> resp; getchar();
+    		this->apelido.setCampo(resp);
+    	Log::escrever(Mensagem::AQS_APE);
+
+    cout << Mensagem::LER_SEN;
+        cin >> resp; getchar();
+    		respSenha.setCampo(resp);
+    	Log::escrever(Mensagem::AQS_SEN);
 
     if (!this->login)
         this->login = new Login (this->apelido, respSenha);
@@ -49,6 +43,7 @@ Resultado AAut::leitura(){
         this->login->setApelido(this->apelido);
         this->login->setSenha(respSenha);
     }
+	Log::escrever (Mensagem::CRI_LGN);
 
     return Resultado (this->login);
 }
@@ -67,8 +62,8 @@ Resultado AAut::direcionar(const Resultado &entrada){
 Resultado AAut::tratarErro (){
     this->apelido.clear();
 
-    Log::escrever(MSG_ERRO_D);
-    cout << MSG_ERRO_D << endl;
+    Log::escrever(Mensagem::ERR_DUB);
+    cout << Mensagem::ERR_DUB << endl;
     Manipulacao::pausar();
 
     return Resultado(Resultado::ESC_SAIR);
@@ -77,7 +72,8 @@ Resultado AAut::tratarErro (){
 
 Resultado AAut::tratarErro (const Resultado &evento){
     if (evento.getCampo() == Resultado::FLH_AUT){
-        cout << MSG_ERRO << endl;
+		Log::escrever (Mensagem::ERR_USU_EXI);
+        cout << Mensagem::ERR_USU_EXI << endl;
         Manipulacao::pausar();
     }
 
@@ -86,11 +82,12 @@ Resultado AAut::tratarErro (const Resultado &evento){
 
 Resultado AAut::avaliarCond (){
 	if(!this->apelido.getCampo().empty()){
+		Log::escrever(Mensagem::SUC_AUT + this->apelido.getCampo());
 		Resultado res (&this->apelido);
-		res.setCampo(Resultado::SUCESSO);
 		return res;
 	}
 
+	Log::escrever(Resultado::FALHA);
 	return Resultado (Resultado::FALHA);
 }
 
@@ -101,5 +98,5 @@ void AAut::finalizar(){
     if (this->login)
         this->login->deletar();
 
-    Log::escrever(MSG_FINALIZAR);
+    Log::escrever(Mensagem::FIM_AUT);
 }

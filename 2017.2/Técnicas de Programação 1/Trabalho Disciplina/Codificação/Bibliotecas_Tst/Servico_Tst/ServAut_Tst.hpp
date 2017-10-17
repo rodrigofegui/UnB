@@ -20,9 +20,6 @@
 
             /*  Mensagens padrão */
             const static string MSG_INI;
-            const static string MSG_SUC;
-            const static string MSG_EBD;
-            const static string MSG_L_INE;
 
 			/*	Mensagem para o inicio da autenticação */
             static string msgInicio (const Login &);

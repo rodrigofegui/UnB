@@ -13,11 +13,10 @@ const string ServEstTst::USUAR_APE      ("rodfg");
 const string ServEstTst::USUAR_TEL      ("(61)-123456789");
 const string ServEstTst::USUAR_PSS      ("advc");
 
-const string ServEstTst::DIVISOR        (", ");
-const string ServEstTst::INICIO_P       ("(");
-const string ServEstTst::TERMINACAO_P   (")");
-const string ServEstTst::TERMINACAO_F   ("]");
-const bool   ServEstTst::INSERCAO       (TesteUnitario::PASSOU);
+const string ServEstTst::DIVISOR        (Mensagem::FMT_DVS);
+const string ServEstTst::INICIO_P       (Mensagem::FMT_INI_PAR);
+const string ServEstTst::TERMINACAO_P   (Mensagem::FMT_TRM_PAR);
+const string ServEstTst::TERMINACAO_F   (Mensagem::FMT_TRM_GLB);
 
 const string ServEstTst::LIVRO_EXI      (LIVRO_TIT);
 const string ServEstTst::LIVRO_EBD      ("Anjos e Demonios");
@@ -25,46 +24,25 @@ const string ServEstTst::LIVRO_EBD      ("Anjos e Demonios");
 const string ServEstTst::USUARIO_EXI    (USUAR_APE);
 const string ServEstTst::USUARIO_EBD    ("marta");
 
-const string ServEstTst::MSG_INI_CON    ("Tentativa de consulta: [");
-const string ServEstTst::MSG_INI_CRS    ("Tentativa de criar resenha: [(");
-const string ServEstTst::MSG_INI_INC    ("Tentativa de inserção: [");
-const string ServEstTst::MSG_INI_RMV    ("Tentativa de remoção: [");
-const string ServEstTst::MSG_INI_STC    ("Tentativa de sinalizar troca: [");
-const string ServEstTst::MSG_INI_PRO    ("Tentativa de procura por troca: [");
-
-const string ServEstTst::MSG_SUC_CON    ("Sucesso na consulta.");
-const string ServEstTst::MSG_SUC_CRS    ("Sucesso em criar resenha.");
-const string ServEstTst::MSG_SUC_INC    ("Sucesso na inserção.");
-const string ServEstTst::MSG_SUC_RMV    ("Sucesso na remoção.");
-const string ServEstTst::MSG_SUC_STC    ("Sucesso em sinalizar troca.");
-const string ServEstTst::MSG_SUC_PRO    ("Sucesso em procurar troca.");
-
-const string ServEstTst::MSG_FLH_CON_L  ("Falha na consulta: livro inexistente.");
-const string ServEstTst::MSG_FLH_CON_U  ("Falha na consulta: usuário inexistente.");
-const string ServEstTst::MSG_FLH_CRS    ("Falha em criar resenha.");
-const string ServEstTst::MSG_FLH_INC    ("Falha na inserção.");
-const string ServEstTst::MSG_FLH_RMV    ("Falha na remoção.");
-const string ServEstTst::MSG_FLH_STC    ("Falha em sinalizar troca.");
-const string ServEstTst::MSG_FLH_PRO    ("Falha em sinalizar troca.");
-const string ServEstTst::MSG_EBD        ("Falha ao acessar a Base de Dados.");
+const string ServEstTst::MSG_INI		(Mensagem::INI_TST);
 
 
 Resultado ServEstTst::consultar(const Titulo &id) throw (runtime_error){
     Log::escrever(msgInicio(id, true));
 
     if(id.getCampo() == LIVRO_EXI){
-        Log::escrever(MSG_SUC_CON);
-		cout << MSG_SUC_CON << endl;
+        Log::escrever(Resultado::SUCESSO);
+		cout << Resultado::SUCESSO << endl;
         return Resultado(criarLivro(), criarResenha());
     }
 
     if(id.getCampo() == LIVRO_EBD){
-        Log::escrever(MSG_EBD);
-        throw runtime_error (MSG_EBD);
+        Log::escrever(Mensagem::ERR_ABD);
+        throw runtime_error (Mensagem::ERR_ABD);
     }
 
-    Log::escrever(MSG_FLH_CON_L);
-	cout << MSG_FLH_CON_L << endl;
+    Log::escrever(Mensagem::FLH_LVR);
+	cout << Mensagem::FLH_LVR << endl;
     return Resultado (Resultado::FLH_CON);
 }
 
@@ -72,18 +50,18 @@ Resultado ServEstTst::consultar (const Apelido &id) throw (runtime_error){
     Log::escrever(msgInicio(id, true));
 
     if(id.getCampo() == USUARIO_EXI){
-        Log::escrever(MSG_SUC_CON);
-		cout << MSG_SUC_CON << endl;
+        Log::escrever(Resultado::SUCESSO);
+		cout << Resultado::SUCESSO << endl;
         return Resultado (criarUsuario());
     }
 
     if(id.getCampo() == USUARIO_EBD){
-        Log::escrever(MSG_EBD);
-        throw runtime_error (MSG_EBD);
+        Log::escrever(Mensagem::ERR_ABD);
+        throw runtime_error (Mensagem::ERR_ABD);
     }
 
-    Log::escrever(MSG_FLH_CON_U);
-	cout << MSG_FLH_CON_U << endl;
+    Log::escrever(Mensagem::FLH_USR);
+	cout << Mensagem::FLH_USR << endl;
     return Resultado (Resultado::FLH_CON);
 }
 
@@ -91,18 +69,18 @@ Resultado ServEstTst::criarResenha (const Titulo &livro, const Resenha &resenha)
     Log::escrever(msgInicio(livro, resenha));
 
     if(livro.getCampo() == LIVRO_EXI){
-        Log::escrever(MSG_SUC_CRS);
-        cout << MSG_SUC_CRS << endl;
+        Log::escrever(Resultado::SUCESSO);
+        cout << Resultado::SUCESSO << endl;
         return Resultado(Resultado::SUCESSO);
     }
 
     if(livro.getCampo() == LIVRO_EBD){
-        Log::escrever(MSG_EBD);
-        throw runtime_error (MSG_EBD);
+        Log::escrever(Mensagem::ERR_ABD);
+        throw runtime_error (Mensagem::ERR_ABD);
     }
 
-    Log::escrever(MSG_FLH_CRS);
-    cout << MSG_FLH_CRS << endl;
+    Log::escrever(Mensagem::FLH);
+    cout << Mensagem::FLH << endl;
     return Resultado (Resultado::FLH_CRI);
 }
 
@@ -110,18 +88,18 @@ Resultado ServEstTst::incluir (const Livro &livro) throw (runtime_error){
     Log::escrever(msgInicio(livro));
 
     if(livro.getTitulo().getCampo() == LIVRO_EXI){
-        Log::escrever(MSG_FLH_INC);
-        cout << MSG_FLH_INC << endl;
+        Log::escrever(Mensagem::FLH);
+        cout << Mensagem::FLH << endl;
         return Resultado (Resultado::FLH_INC);
     }
 
     if(livro.getTitulo().getCampo() == LIVRO_EBD){
-        Log::escrever(MSG_EBD);
-        throw runtime_error (MSG_EBD);
+        Log::escrever(Mensagem::ERR_ABD);
+        throw runtime_error (Mensagem::ERR_ABD);
     }
 
-    Log::escrever(MSG_SUC_INC);
-    cout << MSG_SUC_INC << endl;
+    Log::escrever(Resultado::SUCESSO);
+    cout << Resultado::SUCESSO << endl;
     return Resultado(Resultado::SUCESSO);
 }
 
@@ -129,18 +107,18 @@ Resultado ServEstTst::procurar(const Titulo &id) throw (runtime_error){
     Log::escrever(msgInicio(id));
 
     if(id.getCampo() == LIVRO_EXI){
-        Log::escrever(MSG_SUC_PRO);
-		cout << MSG_SUC_PRO << endl;
+        Log::escrever(Resultado::SUCESSO);
+		cout << Resultado::SUCESSO << endl;
         return Resultado(criarUsuario());
     }
 
     if(id.getCampo() == LIVRO_EBD){
-        Log::escrever(MSG_EBD);
-        throw runtime_error (MSG_EBD);
+        Log::escrever(Mensagem::ERR_ABD);
+        throw runtime_error (Mensagem::ERR_ABD);
     }
 
-    Log::escrever(MSG_FLH_PRO);
-	cout << MSG_FLH_PRO << endl;
+    Log::escrever(Mensagem::FLH);
+	cout << Mensagem::FLH << endl;
     return Resultado (Resultado::FLH_PRO);
 }
 
@@ -148,18 +126,18 @@ Resultado ServEstTst::remover (const Titulo &livro) throw (runtime_error){
     Log::escrever(msgInicio(livro, false));
 
     if(livro.getCampo() == LIVRO_EXI){
-        Log::escrever(MSG_SUC_RMV);
-        cout << MSG_SUC_RMV << endl;
+        Log::escrever(Resultado::SUCESSO);
+        cout << Resultado::SUCESSO << endl;
         return Resultado(Resultado::SUCESSO);
     }
 
     if(livro.getCampo() == LIVRO_EBD){
-        Log::escrever(MSG_EBD);
-        throw runtime_error (MSG_EBD);
+        Log::escrever(Mensagem::ERR_ABD);
+        throw runtime_error (Mensagem::ERR_ABD);
     }
 
-    Log::escrever(MSG_FLH_RMV);
-    cout << MSG_FLH_RMV << endl;
+    Log::escrever(Mensagem::FLH);
+    cout << Mensagem::FLH << endl;
     return Resultado (Resultado::FLH_RMV);
 }
 
@@ -168,8 +146,8 @@ Resultado ServEstTst::sinTroca (const Apelido &idUsuario, const Titulo &idLivro,
 
     if (consultar(idUsuario).getCampo() == Resultado::SUCESSO
         && consultar(idLivro).getCampo() == Resultado::SUCESSO){
-        Log::escrever(MSG_SUC_STC);
-        cout << MSG_SUC_STC << endl;
+        Log::escrever(Resultado::SUCESSO);
+        cout << Resultado::SUCESSO << endl;
 
         if (!disp)
             return Resultado (Resultado::SUCESSO);
@@ -177,35 +155,35 @@ Resultado ServEstTst::sinTroca (const Apelido &idUsuario, const Titulo &idLivro,
         return Resultado(criarUsuario());
     }
 
-    Log::escrever(MSG_FLH_STC);
-    cout << MSG_FLH_STC << endl;
+    Log::escrever(Mensagem::FLH);
+    cout << Mensagem::FLH << endl;
     return Resultado (Resultado::FLH_STC);
 }
 
 string ServEstTst::msgInicio (const DominioBase &tentativa, bool ctrl){
     string msgIni;
-    if (ctrl) msgIni = MSG_INI_CON;
-    else      msgIni = MSG_INI_RMV;
+    if (ctrl) msgIni = MSG_INI;
+    else      msgIni = MSG_INI;
 
     return msgIni + tentativa.getCampo() + TERMINACAO_F;
 }
 
 string ServEstTst::msgInicio (const Titulo &tentativa, bool ctrl){
-    return MSG_INI_STC + tentativa.getCampo() + DIVISOR + bool2str(ctrl) + TERMINACAO_F;
+    return MSG_INI + tentativa.getCampo() + DIVISOR + bool2str(ctrl) + TERMINACAO_F;
 }
 
 string ServEstTst::msgInicio (const Titulo &tentativa){
-    return MSG_INI_PRO + tentativa.getCampo() + TERMINACAO_F;
+    return MSG_INI + tentativa.getCampo() + TERMINACAO_F;
 }
 
 string ServEstTst::msgInicio (const Titulo &livro, const Resenha &resenha){
-    return MSG_INI_CRS + livro.getCampo() + TERMINACAO_P
+    return MSG_INI + livro.getCampo() + TERMINACAO_P
                         + DIVISOR + INICIO_P + resenha.getTitulo().getCampo()
                             + DIVISOR + resenha.getTexto().getCampo() + TERMINACAO_F;
 }
 
 string ServEstTst::msgInicio (const Livro &livro){
-    return MSG_INI_INC + livro.getCodigo().getCampo()
+    return MSG_INI + livro.getCodigo().getCampo()
                     + DIVISOR + livro.getDataPublicacao().getCampo()
                     + DIVISOR + livro.getGenero().getCampo()
                     + DIVISOR + livro.getAutor().getCampo()
@@ -231,6 +209,8 @@ Livro * ServEstTst::criarLivro(){
     novo->setGenero(gen);
     novo->setTitulo(tit);
 
+	Log::escrever (Mensagem::CRI_LVR);
+
     return novo;
 }
 
@@ -244,6 +224,8 @@ Resenha * ServEstTst::criarResenha(){
     Resenha *nova = new Resenha ();
     nova->setTexto(txt);
     nova->setTitulo(tit);
+
+	Log::escrever (Mensagem::CRI_RES);
 
     return nova;
 }
@@ -264,6 +246,8 @@ Usuario* ServEstTst::criarUsuario(){
     novo->setNome(nome);
     novo->setSenha(sen);
     novo->setTelefone(tel);
+
+	Log::escrever (Mensagem::CRI_USR);
 
     return novo;
 }

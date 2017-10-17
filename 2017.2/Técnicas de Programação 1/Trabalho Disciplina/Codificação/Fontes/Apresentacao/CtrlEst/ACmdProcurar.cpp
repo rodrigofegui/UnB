@@ -1,16 +1,11 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdProcurar.hpp"
 
-const string ACmdProcurar::MSG_INICIO       ("Iniciada o comando de procurar por troca de Livro.");
-const string ACmdProcurar::MSG_FINALIZAR    ("Comando de procurar por troca de Livro finalizado.");
-const string ACmdProcurar::MSG_LER_TIT      ("Aquisição do Título com êxito.");
-const string ACmdProcurar::MSG_ERRO_D       ("Erro na entrada de login ou na Base de Dados.");
-
 ACmdProcurar::ACmdProcurar(InterSEst *servico){
     this->servico = servico;
 }
 
 Resultado ACmdProcurar::executar(){
-    Log::escrever(MSG_INICIO);
+    Log::escrever(Mensagem::INI_EST_CON_TRC);
 
     TUI::executar();
 
@@ -32,14 +27,14 @@ Resultado ACmdProcurar::leitura(){
     char buffer[Titulo::TAM_MAX];
     string transf;
 
-    cout << "Digite o título: ";
+	Log::escrever (Mensagem::LEITURA);
+
+    cout << Mensagem::LER_TIT;
         cin.getline(buffer, Titulo::TAM_MAX);
-    Log::escrever(MSG_LER_TIT);
-
-    transf = buffer;
-
-    Titulo *novo = new Titulo ();
-    novo->setCampo(transf);
+    		transf = buffer;
+	    Titulo *novo = new Titulo ();
+	    novo->setCampo(transf);
+	Log::escrever(Mensagem::AQS_TIT);
 
     return Resultado (novo);
 }
@@ -48,8 +43,11 @@ Resultado ACmdProcurar::direcionar(const Resultado &escolha){
     Resultado result = this->servico->procurar(*(escolha.getTitulo()));
 
     if (result.getCampo() == Resultado::SUCESSO){
-        cout << endl << "Usuário(s) disponível(is): " << endl;
-        cout << "Apelido: " + result.getUsuario()->getApelido().getCampo() << endl;
+        cout << endl << Mensagem::SUC_EST_CON_TRC << endl;
+        cout << Mensagem::LBL_APE + result.getUsuario()->getApelido().getCampo() << endl;
+
+		Log::escrever (Mensagem::SUC_EST_CON_TRC);
+		Log::escrever (Mensagem::LBL_APE + result.getUsuario()->getApelido().getCampo());
     }
 
     Manipulacao::pausar();
@@ -58,8 +56,8 @@ Resultado ACmdProcurar::direcionar(const Resultado &escolha){
 }
 
 Resultado ACmdProcurar::tratarErro (){
-    Log::escrever(MSG_ERRO_D);
-    cout << MSG_ERRO_D << endl;
+    Log::escrever(Mensagem::ERR_DUB);
+    cout << Mensagem::ERR_DUB << endl;
     Manipulacao::pausar();
 
     return Resultado(Resultado::ESC_SAIR);
@@ -70,5 +68,5 @@ Resultado ACmdProcurar::tratarErro (const Resultado &evento){
 }
 
 void ACmdProcurar::finalizar(){
-    Log::escrever(MSG_FINALIZAR);
+    Log::escrever(Mensagem::FIM_EST_CON_TRC);
 }

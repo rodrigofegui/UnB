@@ -14,6 +14,10 @@
      */
     class AUsuTst : public AUsu{
         private:
+			/*  Controle das telas */
+            static bool apresentou;
+
+            /*  Métodos herdados */
             void menu () override;
 
         public:

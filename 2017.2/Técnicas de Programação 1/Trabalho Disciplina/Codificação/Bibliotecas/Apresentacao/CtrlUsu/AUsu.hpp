@@ -8,6 +8,7 @@
     #include "../TUI.hpp"
     #include "../../Interfaces/InterFunc.hpp"
     #include "../../Interfaces/InterSUsu.hpp"
+	#include "../../Utilidades/Mensagem.hpp"
 
     /**
      *  @class  AUsu
@@ -31,23 +32,6 @@
 			Resultado avaliarCond ();
 
         protected:
-            /** Sinalização do início do manuseio do Usuário */
-            const static string MSG_INICIO;
-            /** Sinalização do término da Autenticação */
-            const static string MSG_FINALIZAR;
-            /** Sinalização do êxito ao ler o Apelido */
-            const static string MSG_LER_APE;
-            /** Sinalização do êxito ao ler o Nome */
-            const static string MSG_LER_NOM;
-            /** Sinalização do êxito ao ler a Senha */
-            const static string MSG_LER_SEN;
-            /** Sinalização do êxito ao ler o Telefone */
-            const static string MSG_LER_TEL;
-            /** Sinalização de erro na Base de Dados */
-            const static string MSG_ERRO;
-            /** Sinalização de erro dúbios */
-            const static string MSG_ERRO_D;
-
             /** Apresentação das opções ao usuário
              *  da aplicação da estante */
             void menu ();

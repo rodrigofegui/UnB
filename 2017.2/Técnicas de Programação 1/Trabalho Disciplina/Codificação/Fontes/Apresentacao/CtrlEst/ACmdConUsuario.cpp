@@ -1,16 +1,11 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdConUsuario.hpp"
 
-const string ACmdConUsuario::MSG_INICIO       ("Iniciada o comando de consultar Usuario.");
-const string ACmdConUsuario::MSG_FINALIZAR    ("Comando de consultar Usuário finalizado.");
-const string ACmdConUsuario::MSG_LER_APE      ("Aquisição do Apelido com êxito.");
-const string ACmdConUsuario::MSG_ERRO_D       ("Erro na entrada de login ou na Base de Dados.");
-
 ACmdConUsuario::ACmdConUsuario(InterSEst *servico){
     this->servico = servico;
 }
 
 Resultado ACmdConUsuario::executar(){
-    Log::escrever(MSG_INICIO);
+    Log::escrever(Mensagem::INI_EST_CON_USR);
 
     TUI::executar();
 
@@ -31,12 +26,13 @@ void ACmdConUsuario::menu(){
 Resultado ACmdConUsuario::leitura(){
     string transf;
 
-    cout << "Digite o apelido: ";
-        cin >> transf; getchar ();
-    Log::escrever(MSG_LER_APE);
+	Log::escrever(Mensagem::LEITURA);
 
-    Apelido *novo = new Apelido ();
-    novo->setCampo(transf);
+    cout << Mensagem::LER_APE;
+        cin >> transf; getchar ();
+    		Apelido *novo = new Apelido ();
+    		novo->setCampo(transf);
+	Log::escrever(Mensagem::AQS_APE);
 
     return Resultado (novo);
 }
@@ -44,13 +40,19 @@ Resultado ACmdConUsuario::leitura(){
 Resultado ACmdConUsuario::direcionar(const Resultado &escolha){
     Resultado result = this->servico->consultar(*(escolha.getApelido()));
 
-    if (result.getCampo() == Resultado::FLH_CON)
-        cout << "Usuario não encontrado." << endl;
-    else{
-        cout << endl << "Usurio encontrado: " << endl;
-        cout << "Nome: " + result.getUsuario()->getNome().getCampo() << endl;
-        cout << "Apelido: " + result.getUsuario()->getApelido().getCampo() << endl;
-        cout << "Telefone: " + result.getUsuario()->getTelefone().getCampo() << endl << endl;
+    if (result.getCampo() == Resultado::FLH_CON){
+		Log::escrever(Mensagem::FLH_USR);
+        cout << Mensagem::FLH_USR << endl;
+    }else{
+        cout << endl << Mensagem::SUC_EST_CON_USR << endl;
+        cout << Mensagem::LBL_NOM + result.getUsuario()->getNome().getCampo() << endl;
+        cout << Mensagem::LBL_APE + result.getUsuario()->getApelido().getCampo() << endl;
+        cout << Mensagem::LBL_TEL + result.getUsuario()->getTelefone().getCampo() << endl << endl;
+
+		Log::escrever (Mensagem::SUC_EST_CON_USR);
+		Log::escrever (Mensagem::LBL_NOM + result.getUsuario()->getNome().getCampo());
+		Log::escrever (Mensagem::LBL_APE + result.getUsuario()->getApelido().getCampo());
+		Log::escrever (Mensagem::LBL_TEL + result.getUsuario()->getTelefone().getCampo());
     }
 
     Manipulacao::pausar();
@@ -59,8 +61,8 @@ Resultado ACmdConUsuario::direcionar(const Resultado &escolha){
 }
 
 Resultado ACmdConUsuario::tratarErro (){
-    Log::escrever(MSG_ERRO_D);
-    cout << MSG_ERRO_D << endl;
+    Log::escrever(Mensagem::ERR_DUB);
+    cout << Mensagem::ERR_DUB << endl;
     Manipulacao::pausar();
 
     return Resultado(Resultado::ESC_SAIR);
@@ -71,5 +73,5 @@ Resultado ACmdConUsuario::tratarErro (const Resultado &evento){
 }
 
 void ACmdConUsuario::finalizar(){
-    Log::escrever(MSG_FINALIZAR);
+    Log::escrever(Mensagem::FIM_EST_CON_USR);
 }

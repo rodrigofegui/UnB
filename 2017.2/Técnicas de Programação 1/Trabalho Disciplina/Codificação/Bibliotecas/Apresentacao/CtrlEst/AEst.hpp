@@ -9,6 +9,7 @@
     #include "../../Interfaces/InterFunc.hpp"
     #include "../../Interfaces/InterSEst.hpp"
     #include "../../Interfaces/InterCmdEst.hpp"
+	#include "../../Utilidades/Mensagem.hpp"
 
     /**
      *  @class AEst
@@ -28,12 +29,6 @@
             const static int SIN_TROCA   = 7;
             const static int SAIR        = 0;
 
-            /*  Mensagens padrão */
-            const static string MSG_INI;
-            const static string MSG_LER;
-            const static string MSG_ESC_INV;
-            const static string MSG_FINALIZAR;
-
             /*  Métodos herdados */
             Resultado leitura ();
             Resultado direcionar (const Resultado &);
@@ -48,9 +43,6 @@
             InterSEst   *servico = nullptr;
             /** Comando a ser executado */
             InterCmdEst *cmd     = nullptr;
-
-            /** Sinalização de erro dúbios */
-            const static string MSG_ERRO_D;
 
             /** Apresentação das opções ao usuário
              *  da aplicação da estante */

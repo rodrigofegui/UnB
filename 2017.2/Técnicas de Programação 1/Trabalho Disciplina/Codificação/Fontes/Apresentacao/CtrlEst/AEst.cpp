@@ -7,16 +7,8 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdProcurar.hpp"
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdSinTroca.hpp"
 
-const string AEst::MSG_INI          ("Iniciada a funcionalidade da Estante.");
-const string AEst::MSG_FINALIZAR    ("Funcionalidade da Estante finalizada.");
-const string AEst::MSG_LER          ("Leitura das opções do usuário na tela da Estante.");
-const string AEst::MSG_ESC_INV      ("Leitura de um valor fora do intervalo.");
-
-const string AEst::MSG_ERRO_D       ("Erro na entrada de login ou na Base de Dados.");
-
-
 Resultado AEst::executar(const Resultado &apelido){
-    Log::escrever(MSG_INI);
+    Log::escrever(Mensagem::INI_EST);
 
     setApelido(apelido.getApelido());
 
@@ -46,8 +38,8 @@ void AEst::menu(){
 Resultado AEst::leitura(){
     int resp = 0;
 
-    Log::escrever(MSG_LER);
-    cout << "Digite a sua escolha: ";
+    Log::escrever(Mensagem::LEITURA);
+    cout << Mensagem::LER_ESC;
         cin >> resp; getchar ();
 
     switch(resp){
@@ -68,8 +60,8 @@ Resultado AEst::leitura(){
         case SAIR:
             return Resultado (Resultado::ESC_SAIR);
         default:
-            cout << MSG_ESC_INV << endl << endl;
-            Log::escrever(MSG_ESC_INV);
+            cout << Mensagem::FLH_ESC << endl << endl;
+            Log::escrever(Mensagem::FLH_ESC);
 		    return Resultado(Resultado::FALHA);
     }
 }
@@ -78,28 +70,35 @@ Resultado AEst::direcionar(const Resultado &escolha){
     if (escolha.getCampo() == Resultado::ESC_SAIR)
         return escolha;
 
-    if (escolha.getCampo() == Resultado::ESC_CONS_LIVRO)
+    if (escolha.getCampo() == Resultado::ESC_CONS_LIVRO){
+		Log::escrever (Mensagem::RED_EST_CON_LVR);
         cmd = new ACmdConLivro (servico);
 
-    else if (escolha.getCampo() == Resultado::ESC_CONS_USR)
+    }else if (escolha.getCampo() == Resultado::ESC_CONS_USR){
+		Log::escrever (Mensagem::RED_EST_CON_USR);
         cmd = new ACmdConUsuario (servico);
 
-    else if (escolha.getCampo() == Resultado::ESC_CONS_TRC)
+    }else if (escolha.getCampo() == Resultado::ESC_CONS_TRC){
+		Log::escrever (Mensagem::RED_EST_CON_TRC);
         cmd = new ACmdProcurar (servico);
 
-    else if (escolha.getCampo() == Resultado::ESC_CRI_RES)
+    }else if (escolha.getCampo() == Resultado::ESC_CRI_RES){
+		Log::escrever (Mensagem::RED_EST_CRS);
         cmd = new ACmdCriarResenha (servico);
 
-    else if (escolha.getCampo() == Resultado::ESC_INC_LIVRO)
+    }else if (escolha.getCampo() == Resultado::ESC_INC_LIVRO){
+		Log::escrever (Mensagem::RED_EST_INC_LVR);
         cmd = new ACmdIncluir (servico);
 
-    else if (escolha.getCampo() == Resultado::ESC_RMV_LIVRO)
-        cmd = new ACmdRemover (servico);
+    }else if (escolha.getCampo() == Resultado::ESC_RMV_LIVRO){
+		Log::escrever (Mensagem::RED_EST_RMV_LVR);
+		cmd = new ACmdRemover (servico);
 
-    else if (escolha.getCampo() == Resultado::ESC_SIN_TROCA)
+    }else if (escolha.getCampo() == Resultado::ESC_SIN_TROCA){
+		Log::escrever (Mensagem::RED_EST_STR);
         cmd = new ACmdSinTroca (servico, this->apelido);
 
-    else
+    }else
         return Resultado (Resultado::FALHA);
 
     return cmd->executar();
@@ -108,8 +107,8 @@ Resultado AEst::direcionar(const Resultado &escolha){
 Resultado AEst::tratarErro (){
     this->apelido->clear();
 
-    Log::escrever(MSG_ERRO_D);
-    cout << MSG_ERRO_D << endl;
+    Log::escrever(Mensagem::ERR_DUB);
+    cout << Mensagem::ERR_DUB << endl;
     Manipulacao::pausar();
 
     return Resultado(Resultado::ESC_SAIR);
@@ -127,5 +126,5 @@ void AEst::finalizar(){
         delete this->cmd;
         //*/
 
-    Log::escrever(MSG_FINALIZAR);
+    Log::escrever(Mensagem::FIM_EST);
 }

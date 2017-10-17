@@ -8,6 +8,7 @@
     #include "../TUI.hpp"
     #include "../../Interfaces/InterFunc.hpp"
     #include "../../Interfaces/InterSAut.hpp"
+	#include "../../Utilidades/Mensagem.hpp"
 
     /**
      *  @class  AAut
@@ -31,16 +32,12 @@
 			Resultado avaliarCond ();
 
         protected:
-            /** Sinalização do início da Autenticação */
-            const static string MSG_INICIO;
             /** Sinalização do término da Autenticação */
             const static string MSG_FINALIZAR;
             /** Sinalização do êxito ao ler o Apelido */
             const static string MSG_LER_APE;
             /** Sinalização do êxito ao ler a Senha */
             const static string MSG_LER_SEN;
-            /** Sinalização de erro na Base de Dados */
-            const static string MSG_ERRO;
             /** Sinalização de erro dúbios */
             const static string MSG_ERRO_D;
 

@@ -7,6 +7,7 @@
      */
     #include "../TUI.hpp"
     #include "../../Interfaces/InterFunc.hpp"
+	#include "../../Utilidades/Mensagem.hpp"
 
     /**
      *  @class  Aplicacao
@@ -16,12 +17,6 @@
      */
     class Aplicacao : public TUI{
         private:
-			/*	Mensagem padrao */
-			const static string MSG_FINALIZAR;
-			const static string MSG_TELA;
-			const static string MSG_AGD_LEITURA;
-			const static string MSG_ESC_INV;
-
             /*  Constantes de trabalho */
             const static int AUTENTICAR = 1;
             const static int CADASTRAR  = 2;
@@ -35,13 +30,6 @@
 			void finalizar ();
 
         protected:
-			/** Sinalização do redirecionamento para a Autenticação */
-			const static string MSG_ESC_AUT;
-			/** Sinalização do redirecionamento para o Usuário */
-			const static string MSG_ESC_USU;
-			/** Sinalização do redirecionamento para a Estante Virtual */
-			const static string MSG_ESC_EST;
-
 			/** Funcionalidade a ser executada */
             InterFunc *func = nullptr;
 

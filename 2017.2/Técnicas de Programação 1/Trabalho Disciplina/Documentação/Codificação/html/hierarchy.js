@@ -35,7 +35,6 @@ var hierarchy =
     [ "InterSAut", "class_inter_s_aut.html", [
       [ "ServAutTst", "class_serv_aut_tst.html", null ]
     ] ],
-    [ "InterServ", "class_inter_serv.html", null ],
     [ "InterSEst", "class_inter_s_est.html", [
       [ "ServEstTst", "class_serv_est_tst.html", null ]
     ] ],
@@ -46,6 +45,7 @@ var hierarchy =
     [ "Log", "class_log.html", null ],
     [ "Login", "class_login.html", null ],
     [ "Manipulacao", "class_manipulacao.html", null ],
+    [ "Mensagem", "class_mensagem.html", null ],
     [ "Resenha", "class_resenha.html", null ],
     [ "TesteClasse", "class_teste_classe.html", [
       [ "DominioBaseTst", "class_dominio_base_tst.html", [

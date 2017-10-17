@@ -15,8 +15,7 @@
     class AplicacaoTst : public Aplicacao{
         private:
             /*  Controle das telas*/
-            bool apresentou = false;
-			const static string MSG_TELA;
+            static bool apresentou;
 
             /*  Métodos herdados */
             void menu () override;

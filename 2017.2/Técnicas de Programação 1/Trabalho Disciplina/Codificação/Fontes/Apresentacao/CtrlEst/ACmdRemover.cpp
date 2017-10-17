@@ -1,16 +1,11 @@
 #include "../../../Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp"
 
-const string ACmdRemover::MSG_INICIO       ("Iniciada o comando de remoção de Livro.");
-const string ACmdRemover::MSG_FINALIZAR    ("Comando de remoção de Livro finalizado.");
-const string ACmdRemover::MSG_LER_TIT      ("Aquisição do Título com êxito.");
-const string ACmdRemover::MSG_ERRO_D       ("Erro na entrada de login ou na Base de Dados.");
-
 ACmdRemover::ACmdRemover(InterSEst *servico){
     this->servico = servico;
 }
 
 Resultado ACmdRemover::executar(){
-    Log::escrever(MSG_INICIO);
+    Log::escrever(Mensagem::INI_EST_RMV_LVR);
 
     TUI::executar();
 
@@ -32,14 +27,14 @@ Resultado ACmdRemover::leitura(){
     char buffer[Titulo::TAM_MAX];
     string transf;
 
-    cout << "Digite o título: ";
+	Log::escrever (Mensagem::LEITURA);
+
+    cout << Mensagem::LER_TIT;
         cin.getline(buffer, Titulo::TAM_MAX);
-    Log::escrever(MSG_LER_TIT);
-
-    transf = buffer;
-
-    Titulo *novo = new Titulo ();
-    novo->setCampo(transf);
+    		transf = buffer;
+	    Titulo *novo = new Titulo ();
+	    novo->setCampo(transf);
+	Log::escrever(Mensagem::AQS_TIT);
 
     return Resultado (novo);
 }
@@ -53,8 +48,8 @@ Resultado ACmdRemover::direcionar(const Resultado &escolha){
 }
 
 Resultado ACmdRemover::tratarErro (){
-    Log::escrever(MSG_ERRO_D);
-    cout << MSG_ERRO_D << endl;
+    Log::escrever(Mensagem::ERR_DUB);
+    cout << Mensagem::ERR_DUB << endl;
     Manipulacao::pausar();
 
     return Resultado(Resultado::ESC_SAIR);
@@ -65,5 +60,5 @@ Resultado ACmdRemover::tratarErro (const Resultado &evento){
 }
 
 void ACmdRemover::finalizar(){
-    Log::escrever(MSG_FINALIZAR);
+    Log::escrever(Mensagem::FIM_EST_RMV_LVR);
 }
