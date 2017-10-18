@@ -1,5 +1,12 @@
 #include "../../Bibliotecas/Utilidades/Mensagem.hpp"
 
+/*  Mensagens de Formatação */
+const string Mensagem::FMT_DVS              ("', '");
+const string Mensagem::FMT_INI_GLB          ("['");
+const string Mensagem::FMT_INI_PAR          ("('");
+const string Mensagem::FMT_TRM_GLB          ("'].");
+const string Mensagem::FMT_TRM_PAR          ("')");
+
 /*  Mensagens de início */
 const string Mensagem::INI_APP              ("Iniciada a aplicação.");
 const string Mensagem::INI_APP_TST          ("Iniciada a aplicação de teste.");
@@ -13,7 +20,7 @@ const string Mensagem::INI_EST_CRS          ("Iniciada o comando de criar resenh
 const string Mensagem::INI_EST_INC_LVR      ("Iniciada o comando de inserir livro.");
 const string Mensagem::INI_EST_RMV_LVR      ("Iniciada o comando de remover livro.");
 const string Mensagem::INI_EST_STR          ("Iniciada o comando de sinalizar troca.");
-const string Mensagem::INI_TST              ("Tentativa: " + FMT_INI_GLB);
+const string Mensagem::INI_TST              ("Tentativa: " + Mensagem::FMT_INI_GLB);
 
 /*  Mensagens de identificação */
 const string Mensagem::LBL_APE              ("Apelido: ");
@@ -106,12 +113,5 @@ const string Mensagem::FIM_EST_CRS          ("Finalizado o comando de criar rese
 const string Mensagem::FIM_EST_INC_LVR      ("Finalizado o comando de inserir livro.");
 const string Mensagem::FIM_EST_RMV_LVR      ("Finalizado o comando de remover livro.");
 const string Mensagem::FIM_EST_STR          ("Finalizado o comando de sinalizar troca.");
-
-/*  Mensagens de Formatação */
-const string Mensagem::FMT_DVS              ("', '");
-const string Mensagem::FMT_INI_GLB          ("['");
-const string Mensagem::FMT_INI_PAR          ("('");
-const string Mensagem::FMT_TRM_GLB          ("'].");
-const string Mensagem::FMT_TRM_PAR          ("')");
 
 const string Mensagem::SAUDACAO_FIM         ("Volte sempre!");

@@ -1081,7 +1081,7 @@
 	"../../../Bibliotecas_Tst/Servico_Tst/ServUsu_Tst.hpp"
 	"../../../Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp"
 
-1508019081 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Entidade/Log.cpp
+1508322838 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Entidade/Log.cpp
 	"../../Bibliotecas/Entidade/Log.hpp"
 
 1507988189 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Entidade/Log.hpp
@@ -1092,11 +1092,11 @@
 	<time.h>
 	<iomanip>
 
-1508187930 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_Tst.cpp
+1508322961 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_Tst.cpp
 	"../../../Bibliotecas_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_tst.hpp"
 	"../../../Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp"
 
-1508187749 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlAut/AAut.cpp
+1508323301 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlAut/AAut.cpp
 	"../../../Bibliotecas/Apresentacao/CtrlAut/AAut.hpp"
 
 1508187796 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas/Apresentacao/CtrlAut/AAut.hpp
@@ -1141,7 +1141,7 @@
 1508198837 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp
 	"../../Bibliotecas/Interfaces/InterSAut.hpp"
 
-1508199789 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Servico_Tst/ServAut_Tst.cpp
+1508323280 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Servico_Tst/ServAut_Tst.cpp
 	"../../Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp"
 
 1508077471 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Servico_Tst/ServUsu_Tst.cpp
@@ -1166,7 +1166,7 @@
 	"../../Interfaces/InterSUsu.hpp"
 	"../../Utilidades/Mensagem.hpp"
 
-1508167251 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Servico_Tst/ServEst_Tst.cpp
+1508199822 source:/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes_Tst/Servico_Tst/ServEst_Tst.cpp
 	"../../Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp"
 
 1508199591 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp

@@ -39,7 +39,7 @@ void Log::iniciar (){
 
 
 string Log::nomePadrao (){
-    string nome = getData() + ".log";
+    string nome = getData() + "_" + getHora() + ".log";
 
     return nome;
 }

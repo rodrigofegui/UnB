@@ -7,7 +7,7 @@ var searchData=
   ['lbl_5fnom',['LBL_NOM',['../class_mensagem.html#afbd137eefe826b335733264cd56dacac',1,'Mensagem']]],
   ['lbl_5ftel',['LBL_TEL',['../class_mensagem.html#aa4e808052486a98dfb61ac2790a75686',1,'Mensagem']]],
   ['lbl_5ftit',['LBL_TIT',['../class_mensagem.html#afc35285724f8b24ddac82628d0d74256',1,'Mensagem']]],
-  ['leitura',['leitura',['../class_t_u_i.html#a0eaaafcbb8167ddae68e660b39fc9bb9',1,'TUI::leitura()'],['../class_mensagem.html#a11797d88eff3ba209e14b641eb2f65c8',1,'Mensagem::LEITURA()']]],
+  ['leitura',['LEITURA',['../class_mensagem.html#a11797d88eff3ba209e14b641eb2f65c8',1,'Mensagem::LEITURA()'],['../class_t_u_i.html#a0eaaafcbb8167ddae68e660b39fc9bb9',1,'TUI::leitura()']]],
   ['ler_5fape',['LER_APE',['../class_mensagem.html#ae3ad6f6158eeed582691b07d841b03c8',1,'Mensagem']]],
   ['ler_5fatr',['LER_ATR',['../class_mensagem.html#a148b12254b37a2cbd78ed7adf95e8984',1,'Mensagem']]],
   ['ler_5fdat',['LER_DAT',['../class_mensagem.html#a2de03f2cb38f887016a5a2213a32462c',1,'Mensagem']]],

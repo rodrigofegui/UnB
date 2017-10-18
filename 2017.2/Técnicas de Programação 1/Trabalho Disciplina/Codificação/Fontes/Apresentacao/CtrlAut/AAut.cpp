@@ -72,8 +72,7 @@ Resultado AAut::tratarErro (){
 
 Resultado AAut::tratarErro (const Resultado &evento){
     if (evento.getCampo() == Resultado::FLH_AUT){
-		Log::escrever (Mensagem::ERR_USU_EXI);
-        cout << Mensagem::ERR_USU_EXI << endl;
+        cout << Mensagem::FLH_LGN << endl;
         Manipulacao::pausar();
     }
 

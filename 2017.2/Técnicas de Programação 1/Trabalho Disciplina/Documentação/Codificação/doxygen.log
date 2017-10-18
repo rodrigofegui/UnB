@@ -1,6 +1,6 @@
 warning: source ../../Codificação/Bibliotecas/Interfaces/InterServ.hpp is not a readable file or directory... skipping.
-/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/AEst.cpp:131: warning: Reached end of file while still inside a (nested) comment. Nesting level 2 (probable line reference: 127, 122)
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/Aplicacao/Aplicacao.cpp:109: warning: Reached end of file while still inside a (nested) comment. Nesting level 2 (probable line reference: 90, 86)
+/home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Apresentacao/CtrlEst/AEst.cpp:131: warning: Reached end of file while still inside a (nested) comment. Nesting level 2 (probable line reference: 127, 122)
 /home/rodrigo/Documentos/UnB/2017.2/Técnicas de Programação 1/Trabalho Disciplina/Codificação/Fontes/Utilidades/TesteUnitario.cpp:205: warning: no matching class member found for 
   void TesteUnitario::capturarFalha(bool(*func)(bool condF), bool cond)
 Possible candidates:

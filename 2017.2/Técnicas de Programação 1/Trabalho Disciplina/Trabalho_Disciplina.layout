@@ -2,178 +2,9 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="Codificação/Fontes/Dominio/Apelido.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Codificação/Bibliotecas/Dominio/Titulo.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="271" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdConLivro.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="6" />
-		</Cursor>
-		<Folding>
-			<Collapse line="11" />
-			<Collapse line="19" />
-		</Folding>
-	</File>
-	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdProcurar.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1930" topLine="40" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdRemover.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1072" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes/Apresentacao/CtrlAut/AAut.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="310" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/AEst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="816" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdIncluir.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2961" topLine="57" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConUsuario.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1248" topLine="11" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdSinTroca.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1104" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Interfaces/InterCmdEst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="395" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes/Apresentacao/CtrlEst/AEst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2377" topLine="21" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Interfaces/InterSAut.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="450" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes/Principal.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="263" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Dominio/DominioBase.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1626" topLine="29" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="423" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_Tst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="688" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Utilidades/Manipulacao.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="593" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Apresentacao/CtrlAut/AAut.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1206" topLine="18" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdConUsuario.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1019" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2025" topLine="48" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Interfaces/InterSEst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1980" topLine="27" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes_Tst/Servico_Tst/ServAut_Tst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="530" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConLivro.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="548" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes_Tst/Servico_Tst/ServEst_Tst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2394" topLine="24" />
-		</Cursor>
-		<Folding>
-			<Collapse line="48" />
-			<Collapse line="65" />
-			<Collapse line="82" />
-			<Collapse line="101" />
-			<Collapse line="120" />
-			<Collapse line="139" />
-			<Collapse line="158" />
-			<Collapse line="166" />
-			<Collapse line="170" />
-			<Collapse line="176" />
-			<Collapse line="184" />
-			<Collapse line="206" />
-			<Collapse line="220" />
-		</Folding>
-	</File>
-	<File name="Codificação/Fontes_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2295" topLine="35" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="385" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes/Apresentacao/Aplicacao/Aplicacao.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3174" topLine="80" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Apresentacao/Aplicacao/Aplicacao.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1455" topLine="33" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdProcurar.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="963" topLine="9" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="84" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdCriarResenha.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="239" topLine="0" />
+			<Cursor1 position="998" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Codificação/Bibliotecas/Interfaces/InterFunc.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -181,14 +12,39 @@
 			<Cursor1 position="1835" topLine="10" />
 		</Cursor>
 	</File>
-	<File name="Codificação/Bibliotecas/Dominio/Titulo.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Codificação/Bibliotecas/Interfaces/InterSAut.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="998" topLine="0" />
+			<Cursor1 position="450" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Codificação/Fontes/Apresentacao/TUI.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Codificação/Fontes/Apresentacao/CtrlEst/AEst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="766" topLine="12" />
+			<Cursor1 position="4343" topLine="87" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConLivro.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="548" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Interfaces/InterSEst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1980" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdProcurar.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="963" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="297" topLine="5" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes_Tst/Servico_Tst/ServEst_Tst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4403" topLine="214" />
 		</Cursor>
 	</File>
 	<File name="Codificação/Fontes/Apresentacao/CtrlUsu/AUsu.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -196,9 +52,153 @@
 			<Cursor1 position="2234" topLine="39" />
 		</Cursor>
 	</File>
+	<File name="Codificação/Fontes/Dominio/Apelido.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="271" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdRemover.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1541" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="84" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_tst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="497" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Utilidades/Manipulacao.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="593" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="666" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Entidade/Resultado.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="756" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Utilidades/Mensagem.hpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9614" topLine="174" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdConLivro.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1514" topLine="6" />
+		</Cursor>
+		<Folding>
+			<Collapse line="6" />
+			<Collapse line="14" />
+		</Folding>
+	</File>
+	<File name="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="496" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Utilidades/Mensagem.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5709" topLine="57" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Dominio/Nome.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="672" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Dominio/DominioBase.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1626" topLine="29" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Apresentacao/TUI.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1753" topLine="45" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdConUsuario.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1466" topLine="26" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdIncluir.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2961" topLine="57" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Apresentacao/TUI.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="766" topLine="12" />
+		</Cursor>
+	</File>
 	<File name="Codificação/Bibliotecas/Dominio/Texto.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="751" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Apresentacao/Aplicacao/Aplicacao.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1455" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Apresentacao/CtrlAut/AAut.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="92" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdRemover.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="385" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdIncluir.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="423" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes_Tst/Servico_Tst/ServAut_Tst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="177" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Principal.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="263" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdConUsuario.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1248" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdProcurar.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1930" topLine="40" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdCriarResenha.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="239" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Fontes/Apresentacao/Aplicacao/Aplicacao.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3174" topLine="80" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Apresentacao/CtrlAut/AAut.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1206" topLine="18" />
 		</Cursor>
 	</File>
 	<File name="Codificação/Fontes/Apresentacao/CtrlEst/ACmdSinTroca.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -211,19 +211,24 @@
 			<Cursor1 position="1307" topLine="13" />
 		</Cursor>
 	</File>
-	<File name="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Codificação/Bibliotecas/Entidade/Resultado.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="496" topLine="0" />
+			<Cursor1 position="3106" topLine="198" />
 		</Cursor>
 	</File>
-	<File name="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/AEst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="666" topLine="0" />
+			<Cursor1 position="816" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdCriarResenha.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Codificação/Fontes_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="297" topLine="5" />
+			<Cursor1 position="2087" topLine="28" />
+		</Cursor>
+	</File>
+	<File name="Codificação/Bibliotecas/Interfaces/InterCmdEst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="395" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Codificação/Fontes/Dominio/GeneroLiterario.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -231,24 +236,24 @@
 			<Cursor1 position="231" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Codificação/Bibliotecas/Dominio/Nome.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Codificação/Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="672" topLine="0" />
+			<Cursor1 position="2025" topLine="48" />
 		</Cursor>
 	</File>
-	<File name="Codificação/Bibliotecas/Apresentacao/TUI.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+	<File name="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_Tst.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1753" topLine="45" />
+			<Cursor1 position="688" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Codificação/Bibliotecas/Entidade/Resultado.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Codificação/Bibliotecas/Apresentacao/CtrlEst/ACmdSinTroca.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3106" topLine="198" />
+			<Cursor1 position="1104" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Codificação/Fontes/Entidade/Resultado.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Codificação/Bibliotecas_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="756" topLine="12" />
+			<Cursor1 position="408" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

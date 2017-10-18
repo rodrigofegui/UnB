@@ -23,7 +23,7 @@ var searchData=
   ['flh_5fesc',['FLH_ESC',['../class_mensagem.html#a2bdc2c0e19760a10ffac179bc5bb5fe9',1,'Mensagem']]],
   ['flh_5finc',['FLH_INC',['../class_resultado.html#ae95a343f6ee930046903adced00c4f03',1,'Resultado']]],
   ['flh_5flgn',['FLH_LGN',['../class_mensagem.html#a9e6c07de7932e26610a069b5087f58c0',1,'Mensagem']]],
-  ['flh_5flim',['FLH_LIM',['../class_mensagem.html#abe342a3a7b821ea541999808f269dbdc',1,'Mensagem::FLH_LIM()'],['../class_resultado.html#ada95d80a9aadc0211a33e0729cf3caeb',1,'Resultado::FLH_LIM()']]],
+  ['flh_5flim',['FLH_LIM',['../class_resultado.html#ada95d80a9aadc0211a33e0729cf3caeb',1,'Resultado::FLH_LIM()'],['../class_mensagem.html#abe342a3a7b821ea541999808f269dbdc',1,'Mensagem::FLH_LIM()']]],
   ['flh_5flvr',['FLH_LVR',['../class_mensagem.html#a9e1f1d5a4efb6ac728be99e802da9997',1,'Mensagem']]],
   ['flh_5fpro',['FLH_PRO',['../class_resultado.html#a504f7ada4f515297f9535cfe8858e86f',1,'Resultado']]],
   ['flh_5frmv',['FLH_RMV',['../class_resultado.html#a7af09466113208b6228d53ed1092f288',1,'Resultado']]],
