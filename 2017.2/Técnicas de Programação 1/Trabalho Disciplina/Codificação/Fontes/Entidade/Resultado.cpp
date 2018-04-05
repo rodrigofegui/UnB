@@ -65,8 +65,8 @@ bool Resultado::equals (const Resultado &alvo){
 	return TesteUnitario::FALHOU;
 }
 
-void Resultado::deletar(){
-	if (this->apelido)
+void Resultado::clear(){
+    if (this->apelido)
 		this->apelido->deletar ();
 
 	if (this->livro)
@@ -80,6 +80,10 @@ void Resultado::deletar(){
 
 	if (this->usuario)
 		this->usuario->deletar();
+}
+
+void Resultado::deletar(){
+    clear();
 
     delete this;
 }

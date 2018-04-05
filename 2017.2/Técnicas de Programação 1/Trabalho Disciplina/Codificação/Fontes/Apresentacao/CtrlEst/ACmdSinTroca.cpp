@@ -65,6 +65,7 @@ Resultado ACmdSinTroca::direcionar(const Resultado &escolha){
 
     Manipulacao::pausar();
 
+    escolha.clear();
     return Resultado (Resultado::ESC_SAIR);
 }
 
@@ -77,9 +78,13 @@ Resultado ACmdSinTroca::tratarErro (){
 }
 
 Resultado ACmdSinTroca::tratarErro (const Resultado &evento){
+
+    evento.clear();
     return Resultado(Resultado::ESC_SAIR);
 }
 
 void ACmdSinTroca::finalizar(){
+    delete this;
+
     Log::escrever(Mensagem::FIM_EST_STR);
 }

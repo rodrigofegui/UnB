@@ -78,6 +78,7 @@ Resultado ACmdIncluir::direcionar(const Resultado &escolha){
 
     Manipulacao::pausar();
 
+    escolha.clear();
     return Resultado (Resultado::ESC_SAIR);
 }
 
@@ -90,9 +91,12 @@ Resultado ACmdIncluir::tratarErro (){
 }
 
 Resultado ACmdIncluir::tratarErro (const Resultado &evento){
+    evento.clear();
     return Resultado(Resultado::ESC_SAIR);
 }
 
 void ACmdIncluir::finalizar(){
+    delete this;
+
     Log::escrever(Mensagem::FIM_EST_INC_LVR);
 }

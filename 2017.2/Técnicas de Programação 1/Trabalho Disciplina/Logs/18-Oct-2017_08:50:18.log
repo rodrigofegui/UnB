@@ -1,0 +1,39 @@
+Arquivo de Log
+Registro: Manipulação da Estante Digital
+Data: 18-Oct-2017
+Inicio da atividade: 08:50:18
+
+Atividades:
+[08:50:18] Iniciada a aplicação de teste.
+[08:50:19] Iniciada a aplicação.
+[08:50:19] Leitura dos dados.
+[08:50:21] A redirecionar para Autenticar.
+[08:50:21] Iniciada a função de Autenticar.
+[08:50:23] Leitura dos dados.
+[08:50:24] Apelido adquirido com êxito.
+[08:50:25] Senha adquirida com êxito.
+[08:50:25] Login criado com êxito.
+[08:50:25] Tentativa: ['rodfg', 'adcv'].
+[08:50:25] Autenticação operou com sucesso: 
+[08:50:25] Finalizada a função de Autenticar.
+[08:50:25] Autenticação operou com sucesso: rodfg
+[08:50:25] A redirecionar para Estante.
+[08:50:25] Iniciada a função da Estante.
+[08:50:26] Leitura dos dados.
+[08:50:28] A redirecionar para Consultar Livro.
+[08:50:28] Iniciada o comando de consultar livro.
+[08:50:28] Leitura dos dados.
+[08:50:35] Título adquirido com êxito.
+[08:50:35] Tentativa: ['Guia do Mochileiro', 'true'].
+[08:50:35] Operou com sucesso.
+[08:50:35] Resenha criado com êxito.
+[08:50:35] Livro criado com êxito.
+[08:50:35] Livro encontrado: 
+[08:50:35] Título: Guia do Mochileiro
+[08:50:35] Autor: Douglas Adams
+[08:50:35] Data: 12/10/79
+[08:50:35] Gênero Lit.: NOVELA
+[08:50:35] Resenha(s) associada(s):
+[08:50:35] [Muito bom] Melhor resposta: 42!
+[08:50:40] Finalizado o comando de consultar livro.
+[08:50:40] Leitura dos dados.

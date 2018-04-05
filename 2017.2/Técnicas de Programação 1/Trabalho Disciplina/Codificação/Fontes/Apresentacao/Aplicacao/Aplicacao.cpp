@@ -55,6 +55,8 @@ Resultado Aplicacao::direcionar (const Resultado &escolha){
 	if (preliminar.getCampo() == Resultado::SUCESSO)
 		return estante (preliminar);
 
+    escolha.clear();
+
 	return Resultado(Resultado::FALHA);
 }
 
@@ -82,27 +84,26 @@ Resultado Aplicacao::estante(const Resultado &apelido){
 	return this->func->executar(apelido);
 }
 
-void Aplicacao::finalizar(){
-	/*if (this->func){
-        delete this->func;
-        this->func = nullptr;
-	}
-	//*/
-
-    Log::escrever(Mensagem::FIM_APP);
-}
-
 Resultado Aplicacao::tratarErro (){ return Resultado(Resultado::FALHA);}
 
 Resultado Aplicacao::tratarErro (const Resultado &evento){
     if (evento.getCampo() == Resultado::FLH_LIM){
 		Log::escrever (Mensagem::FLH_LIM);
         cout << Mensagem::FLH_LIM << endl;
+        evento.clear();
         return Resultado(Resultado::ESC_SAIR);
     }
 
     if (evento.getCampo() == Resultado::ESC_SAIR)
+        evento.clear();
         return evento;
 
+    evento.clear();
     return Resultado (Resultado::FALHA);
+}
+
+void Aplicacao::finalizar(){
+    delete this;
+
+    Log::escrever(Mensagem::FIM_APP);
 }

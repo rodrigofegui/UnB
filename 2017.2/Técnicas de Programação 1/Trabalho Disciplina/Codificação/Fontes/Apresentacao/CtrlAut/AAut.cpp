@@ -56,6 +56,8 @@ Resultado AAut::direcionar(const Resultado &entrada){
     else
         result.setCampo(Resultado::ESC_SAIR);
 
+    entrada.clear();
+
     return result;
 }
 
@@ -76,6 +78,7 @@ Resultado AAut::tratarErro (const Resultado &evento){
         Manipulacao::pausar();
     }
 
+    evento.clear();
     return Resultado(Resultado::ESC_SAIR);
 }
 
@@ -96,6 +99,8 @@ void AAut::finalizar(){
 
     if (this->login)
         this->login->deletar();
+
+    delete this;
 
     Log::escrever(Mensagem::FIM_AUT);
 }

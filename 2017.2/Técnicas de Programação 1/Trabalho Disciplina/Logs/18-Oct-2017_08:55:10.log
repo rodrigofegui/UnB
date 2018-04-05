@@ -1,0 +1,21 @@
+Arquivo de Log
+Registro: Manipulação da Estante Digital
+Data: 18-Oct-2017
+Inicio da atividade: 08:55:10
+
+Atividades:
+[08:55:10] Iniciada a aplicação de teste.
+[08:55:11] Iniciada a aplicação.
+[08:55:11] Leitura dos dados.
+[08:55:12] A redirecionar para Autenticar.
+[08:55:12] Iniciada a função de Autenticar.
+[08:55:12] Leitura dos dados.
+[08:55:14] Apelido adquirido com êxito.
+[08:55:16] Senha adquirida com êxito.
+[08:55:16] Login criado com êxito.
+[08:55:16] Tentativa: ['inara', 'adcv'].
+[08:55:16] Falha: Login não encontrado.
+[08:55:16] Finalizada a função de Autenticar.
+[08:55:16] Iniciada a aplicação.
+[08:55:16] Leitura dos dados.
+[08:55:18] Finalizada a aplicação.

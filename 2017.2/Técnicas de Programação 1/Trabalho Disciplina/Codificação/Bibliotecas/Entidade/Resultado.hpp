@@ -235,6 +235,12 @@
              */
 			bool equals (const Resultado &);
 
+			/**
+			 *	Limpeza do Resultado, tornando-o
+			 *	num vazio
+			 */
+			void clear ();
+
             /**
              *  Destrutor padrão
              */

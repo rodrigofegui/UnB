@@ -52,6 +52,7 @@ Resultado ACmdProcurar::direcionar(const Resultado &escolha){
 
     Manipulacao::pausar();
 
+    escolha.evento.clear();
     return Resultado (Resultado::ESC_SAIR);
 }
 
@@ -64,9 +65,12 @@ Resultado ACmdProcurar::tratarErro (){
 }
 
 Resultado ACmdProcurar::tratarErro (const Resultado &evento){
+    evento.clear();
     return Resultado(Resultado::ESC_SAIR);
 }
 
 void ACmdProcurar::finalizar(){
+    delete this;
+
     Log::escrever(Mensagem::FIM_EST_CON_TRC);
 }

@@ -1,0 +1,43 @@
+Arquivo de Log
+Registro: Manipulação da Estante Digital
+Data: 18-Oct-2017
+Inicio da atividade: 08:51:52
+
+Atividades:
+[08:51:52] Iniciada a aplicação de teste.
+[08:51:53] Iniciada a aplicação.
+[08:51:53] Leitura dos dados.
+[08:51:54] A redirecionar para Autenticar.
+[08:51:54] Iniciada a função de Autenticar.
+[08:51:55] Leitura dos dados.
+[08:51:58] Apelido adquirido com êxito.
+[08:51:59] Senha adquirida com êxito.
+[08:51:59] Login criado com êxito.
+[08:51:59] Tentativa: ['rodfg', 'adcv'].
+[08:51:59] Autenticação operou com sucesso: 
+[08:51:59] Finalizada a função de Autenticar.
+[08:51:59] Autenticação operou com sucesso: rodfg
+[08:51:59] A redirecionar para Estante.
+[08:51:59] Iniciada a função da Estante.
+[08:52:00] Leitura dos dados.
+[08:52:01] A redirecionar para Consultar Livro.
+[08:52:01] Iniciada o comando de consultar livro.
+[08:52:01] Leitura dos dados.
+[08:52:06] Título adquirido com êxito.
+[08:52:06] Tentativa: ['Guia do Mochileiro', 'true'].
+[08:52:06] Operou com sucesso.
+[08:52:06] Resenha criado com êxito.
+[08:52:06] Livro criado com êxito.
+[08:52:06] Livro encontrado: 
+[08:52:06] Título: Guia do Mochileiro
+[08:52:06] Autor: Douglas Adams
+[08:52:06] Data: 12/10/79
+[08:52:06] Gênero Lit.: NOVELA
+[08:52:06] Resenha(s) associada(s):
+[08:52:06] [Muito bom] Melhor resposta: 42!
+[08:52:07] Finalizado o comando de consultar livro.
+[08:52:07] Leitura dos dados.
+[08:52:09] Finalizada a função da Estante.
+[08:52:09] Iniciada a aplicação.
+[08:52:09] Leitura dos dados.
+[08:52:10] Finalizada a aplicação.

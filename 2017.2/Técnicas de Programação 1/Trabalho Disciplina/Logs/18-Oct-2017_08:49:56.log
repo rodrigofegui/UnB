@@ -1,0 +1,26 @@
+Arquivo de Log
+Registro: Manipulação da Estante Digital
+Data: 18-Oct-2017
+Inicio da atividade: 08:49:56
+
+Atividades:
+[08:49:56] Iniciada a aplicação de teste.
+[08:49:56] Iniciada a aplicação.
+[08:49:56] Leitura dos dados.
+[08:49:57] A redirecionar para Autenticar.
+[08:49:57] Iniciada a função de Autenticar.
+[08:49:58] Leitura dos dados.
+[08:49:59] Apelido adquirido com êxito.
+[08:50:01] Senha adquirida com êxito.
+[08:50:01] Login criado com êxito.
+[08:50:01] Tentativa: ['rodfg', 'adcv'].
+[08:50:01] Autenticação operou com sucesso: 
+[08:50:01] Finalizada a função de Autenticar.
+[08:50:01] Autenticação operou com sucesso: rodfg
+[08:50:01] A redirecionar para Estante.
+[08:50:01] Iniciada a função da Estante.
+[08:50:02] Leitura dos dados.
+[08:50:05] Finalizada a função da Estante.
+[08:50:05] Iniciada a aplicação.
+[08:50:05] Leitura dos dados.
+[08:50:13] Finalizada a aplicação.

@@ -11,6 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
 				<Compiler>
 					<Add option="-std=c++11" />
 					<Add option="-g" />
@@ -71,29 +72,75 @@
 		<Unit filename="Codificação/Bibliotecas/Utilidades/Manipulacao.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Utilidades/Mensagem.hpp" />
 		<Unit filename="Codificação/Bibliotecas/Utilidades/TesteUnitario.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlUsu_Tst/AUsu_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/AtivaTeste.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Data_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/DominioBase_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/GeneroLiterario_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Nome_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Senha_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Telefone_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Texto_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Titulo_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Login_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/Servico_Tst/ServUsu_Tst.hpp" />
-		<Unit filename="Codificação/Bibliotecas_Tst/TesteClasse.hpp" />
+		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Apresentacao_Tst/CtrlUsu_Tst/AUsu_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/AtivaTeste.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Apelido_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Codigo_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Data_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/DominioBase_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/GeneroLiterario_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Nome_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Senha_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Telefone_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Texto_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Dominio_Tst/Titulo_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Livro_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Login_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Resenha_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Entidade_Tst/Usuario_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Servico_Tst/ServAut_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Servico_Tst/ServEst_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/Servico_Tst/ServUsu_Tst.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Bibliotecas_Tst/TesteClasse.hpp">
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="Codificação/Fontes/Apresentacao/Aplicacao/Aplicacao.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlAut/AAut.cpp" />
 		<Unit filename="Codificação/Fontes/Apresentacao/CtrlEst/ACmdConLivro.cpp" />
@@ -126,28 +173,72 @@
 		<Unit filename="Codificação/Fontes/Utilidades/Manipulacao.cpp" />
 		<Unit filename="Codificação/Fontes/Utilidades/Mensagem.cpp" />
 		<Unit filename="Codificação/Fontes/Utilidades/TesteUnitario.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlUsu_Tst/AUsu_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Codigo_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Data_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/DominioBase_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/GeneroLiterario_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Nome_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Senha_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Telefone_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Texto_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Titulo_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Livro_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Login_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Usuario_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Servico_Tst/ServAut_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Servico_Tst/ServEst_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/Servico_Tst/ServUsu_Tst.cpp" />
-		<Unit filename="Codificação/Fontes_Tst/TesteClasse.cpp" />
+		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/Aplicacao_Tst/Aplicacao_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlAut_Tst/AAut_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlEst_Tst/AEst_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Apresentacao_Tst/CtrlUsu_Tst/AUsu_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Apelido_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Codigo_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Data_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/DominioBase_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/GeneroLiterario_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Nome_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Senha_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Telefone_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Texto_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Dominio_Tst/Titulo_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Livro_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Login_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Resenha_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Entidade_Tst/Usuario_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Servico_Tst/ServAut_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Servico_Tst/ServEst_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/Servico_Tst/ServUsu_Tst.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Codificação/Fontes_Tst/TesteClasse.cpp">
+			<Option target="Debug" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />

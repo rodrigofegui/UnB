@@ -14,6 +14,7 @@ Resultado AEst::executar(const Resultado &apelido){
 
     TUI::executar();
 
+    apelido.clear();
     return Resultado (Resultado::SUCESSO);
 }
 
@@ -98,9 +99,12 @@ Resultado AEst::direcionar(const Resultado &escolha){
 		Log::escrever (Mensagem::RED_EST_STR);
         cmd = new ACmdSinTroca (servico, this->apelido);
 
-    }else
+    }else{
+        escolha.clear();
         return Resultado (Resultado::FALHA);
+    }
 
+    escolha.clear();
     return cmd->executar();
 }
 
@@ -115,16 +119,15 @@ Resultado AEst::tratarErro (){
 }
 
 Resultado AEst::tratarErro (const Resultado &evento){
+    evento.clear();
     return Resultado(Resultado::ESC_SAIR);
 }
 
 void AEst::finalizar(){
-    /*if(this->servico)
+    if(this->servico)
         delete this->servico;
 
-    if(this->cmd)
-        delete this->cmd;
-        //*/
+    delete this;
 
     Log::escrever(Mensagem::FIM_EST);
 }

@@ -72,6 +72,8 @@ Resultado ACmdConLivro::direcionar(const Resultado &escolha){
 
     Manipulacao::pausar();
 
+    escolha.clear();
+
     return Resultado (Resultado::ESC_SAIR);
 }
 
@@ -84,9 +86,11 @@ Resultado ACmdConLivro::tratarErro (){
 }
 
 Resultado ACmdConLivro::tratarErro (const Resultado &evento){
+    evento.clear();
     return Resultado(Resultado::ESC_SAIR);
 }
 
 void ACmdConLivro::finalizar(){
+    delete this;
     Log::escrever(Mensagem::FIM_EST_CON_LVR);
 }

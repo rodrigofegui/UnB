@@ -1,0 +1,28 @@
+Arquivo de Log
+Registro: Manipulação da Estante Digital
+Data: 18-Oct-2017
+Inicio da atividade: 08:49:04
+
+Atividades:
+[08:49:04] Iniciada a aplicação de teste.
+[08:49:05] Iniciada a aplicação.
+[08:49:05] Leitura dos dados.
+[08:49:06] A redirecionar para Usuário.
+[08:49:06] Iniciada a função de Usuário.
+[08:49:09] Leitura dos dados.
+[08:49:12] Apelido adquirido com êxito.
+[08:49:15] Nome adquirido com êxito.
+[08:49:17] Senha adquirida com êxito.
+[08:49:27] Telefone adquirido com êxito.
+[08:49:27] Usuário criado com êxito.
+[08:49:27] Tentativa de cadastro: [rodfg, Rodrigo, (00)-000000000, adcv]
+[08:49:27] Sucesso ao cadastrar.
+[08:49:27] Finalizada a função de Usuário.
+[08:49:27] Usuário operou com sucesso: rodfg
+[08:49:27] A redirecionar para Estante.
+[08:49:27] Iniciada a função da Estante.
+[08:49:30] Leitura dos dados.
+[08:49:36] Finalizada a função da Estante.
+[08:49:36] Iniciada a aplicação.
+[08:49:36] Leitura dos dados.
+[08:49:37] Finalizada a aplicação.

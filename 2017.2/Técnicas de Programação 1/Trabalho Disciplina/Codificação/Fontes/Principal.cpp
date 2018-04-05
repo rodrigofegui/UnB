@@ -13,14 +13,16 @@
 #define CODEBLOCKS
 
 int main(){
+    Aplicacao *aplicacao;
+
     #ifdef TESTE
         //fullTeste ();
-        AplicacaoTst aplicacao;
+        aplicacao = new AplicacaoTst ();
     #else
-        Aplicacao aplicacao;
+        aplicacao = Aplicacao ();
     #endif // TESTE
 
-    aplicacao.executar();
+    aplicacao->executar();
 
     cout << Mensagem::FIM << endl;
     cout << Mensagem::SAUDACAO_FIM << endl;

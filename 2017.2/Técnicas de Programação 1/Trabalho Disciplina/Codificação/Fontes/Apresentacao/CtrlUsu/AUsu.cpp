@@ -72,6 +72,7 @@ Resultado AUsu::direcionar(const Resultado &entrada){
     else
         result.setCampo(Resultado::ESC_SAIR);
 
+    entrada.clear();
     return result;
 }
 
@@ -92,6 +93,7 @@ Resultado AUsu::tratarErro(const Resultado &evento){
         Manipulacao::pausar();
     }
 
+    evento.clear();
     return Resultado (Resultado::ESC_SAIR);
 }
 
@@ -113,6 +115,8 @@ void AUsu::finalizar(){
 
     if (this->usuario)
         this->usuario->deletar();
+
+    delete this;
 
     Log::escrever(Mensagem::FIM_USR);
 }

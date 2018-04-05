@@ -57,6 +57,7 @@ Resultado ACmdConUsuario::direcionar(const Resultado &escolha){
 
     Manipulacao::pausar();
 
+    escolha.clear();
     return Resultado (Resultado::ESC_SAIR);
 }
 
@@ -69,9 +70,12 @@ Resultado ACmdConUsuario::tratarErro (){
 }
 
 Resultado ACmdConUsuario::tratarErro (const Resultado &evento){
+    evento.clear();
     return Resultado(Resultado::ESC_SAIR);
 }
 
 void ACmdConUsuario::finalizar(){
+    delete this;
+
     Log::escrever(Mensagem::FIM_EST_CON_USR);
 }

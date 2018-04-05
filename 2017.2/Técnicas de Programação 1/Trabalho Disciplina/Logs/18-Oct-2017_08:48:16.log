@@ -1,0 +1,25 @@
+Arquivo de Log
+Registro: Manipulação da Estante Digital
+Data: 18-Oct-2017
+Inicio da atividade: 08:48:16
+
+Atividades:
+[08:48:16] Iniciada a aplicação de teste.
+[08:48:17] Iniciada a aplicação.
+[08:48:17] Leitura dos dados.
+[08:48:20] A redirecionar para Usuário.
+[08:48:20] Iniciada a função de Usuário.
+[08:48:24] Leitura dos dados.
+[08:48:26] Apelido adquirido com êxito.
+[08:48:30] Nome adquirido com êxito.
+[08:48:33] Senha adquirida com êxito.
+[08:48:44] Telefone adquirido com êxito.
+[08:48:44] Usuário criado com êxito.
+[08:48:44] Tentativa de cadastro: [leila, Leila S. M., (00)-000000000, adcv]
+[08:48:44] Cadastro falhou: usuário já existe.
+[08:48:44] Erro: Usuário existente.
+[08:48:49] Finalizada a função de Usuário.
+[08:48:49] Operou com falha.
+[08:48:49] Iniciada a aplicação.
+[08:48:49] Leitura dos dados.
+[08:48:53] Finalizada a aplicação.
