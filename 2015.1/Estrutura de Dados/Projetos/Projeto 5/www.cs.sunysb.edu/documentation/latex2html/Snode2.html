@@ -1,0 +1,390 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Requirements</TITLE>
+<META NAME="description" CONTENT="Requirements">
+<META NAME="keywords" CONTENT="support">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="support.css">
+<LINK REL="next" HREF="Snode3.html">
+<LINK REL="previous" HREF="Snode1.html">
+<LINK REL="up" HREF="Snode1.html">
+<LINK REL="next" HREF="Snode3.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html85"
+ HREF="Snode3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html81"
+ HREF="Snode1.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html75"
+ HREF="Snode1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html83"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html84"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html86"
+ HREF="Snode3.html">Installing L<SUP>A</SUP>TEX2HTML</A>
+<B> Up:</B> <A NAME="tex2html82"
+ HREF="Snode1.html">Getting L<SUP>A</SUP>TEX2HTML</A>
+<B> Previous:</B> <A NAME="tex2html76"
+ HREF="Snode1.html">Getting L<SUP>A</SUP>TEX2HTML</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000101100000000000000">
+Requirements</A>
+</H3>
+<A NAME="786">&#160;</A>
+<BR>
+The translator makes use of several utilities all of which 
+are freely available on most platforms. 
+You may use <A HREF="node10.html#GGGArchie"
+ NAME="1661"><I>Archie</I></A>, 
+or other Web-searching tools such as <A HREF="node10.html#GGGFTP_search"
+ NAME="1670"><I>FTP search</I></A>,
+to find the source code of any utilities you might need.
+
+<P>
+
+<P>
+<BR>
+For the best use of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> you want to get the latest
+versions of all the utilities that it uses. (It will still work
+with earlier versions, but some  special effects may not be possible. 
+The specific requirements are discussed below.)
+<UL>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR>
+<LI><A HREF="node10.html#GGGPerl"><I>Perl</I></A> version 5.002, or later (check with <code>perl -v</code>);
+<BR>
+<A HREF="node10.html#GGGPerl"><I>Perl</I></A> should be compiled to use the <A HREF="node10.html#GGGcsh"
+ NAME="1685"><TT>csh</TT></A> or <A HREF="node10.html#GGGtcsh"
+ NAME="1693"><TT>tcsh</TT></A> shell,
+though L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> can also work with the <A HREF="node10.html#GGGbash"
+ NAME="1701"><TT>bash</TT></A> shell
+if <A HREF="node10.html#GGGPerl"><I>Perl</I></A> is recompiled to use it as ``full csh''.
+Don't worry about this; any missing programs should be reported 
+by <A HREF="node10.html#GGGinstall-test"
+ NAME="1712"><TT>install-test</TT></A> upon installation.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+<LI>L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, meaning L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB> dated <TT>&lt;1995/06/01&gt;</TT>, or later;
+<LI><A HREF="node10.html#GGGdvips"
+ NAME="1720"><TT>dvips</TT></A> or <A HREF="node10.html#GGGdvipsk"
+ NAME="1728"><TT>dvipsk</TT></A>, at version 5.58 or later;
+<LI><A HREF="node10.html#GGGGhostscript"
+ NAME="1736"><I>Ghostscript</I></A> at version 4.02 or later;
+<LI><A HREF="node10.html#GGGnetpbm"
+ NAME="1745"><TT>netpbm</TT></A> library of graphics utilities, version 1-<SMALL>MAR-94</SMALL>
+<BR>
+  (check with <A HREF="node10.html#GGGpnmcrop"
+ NAME="1753"><TT>pnmcrop</TT></A>  <TT>-version</TT> ).
+</UL>
+
+<P>
+
+<P>
+<BR>
+<BR CLEAR="ALL">
+<HR>
+
+<P>
+<BR>
+More specific requirements for using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> 
+depend on the kind of translation you would like to perform, as follows:
+<DL COMPACT>
+<DT>1.
+<DD><A NAME="819">&#160;</A>
+<B>L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  commands but without equations, figures, tables, etc.</B> 
+<UL>
+<LI><A NAME="tex2html30"
+ HREF="http://perl.com/">Perl</A>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR><B>Note:</B> L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> <B>requires <A HREF="node10.html#GGGPerl"><I>Perl</I></A> 5 to operate</B>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+<P></P>
+
+<P>
+<B>Warning&nbsp;1: </B>
+You really <EM>do</EM> need <A HREF="node10.html#GGGPerl"><I>Perl</I></A> 5.
+<BR>
+Versions of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> up to <SMALL>V96.1</SMALL>h work 
+both with <A HREF="node10.html#GGGPerl"><I>Perl</I></A> 4 at patch level 36 and <A HREF="node10.html#GGGPerl"><I>Perl</I></A> 5,
+though some of the packages may only work with <A HREF="node10.html#GGGPerl"><I>Perl</I></A> 5.
+<BR>
+
+<P>
+<B>Warning&nbsp;2: </B><A NAME="843">&#160;</A>
+Various aspects of <A HREF="node10.html#GGGPerl"><I>Perl</I></A>, which are used by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, assume 
+certain system commands to be provided by the operating system shell.
+If <A HREF="node10.html#GGGcsh"
+ NAME="1780"><TT>csh</TT></A> or <A HREF="node10.html#GGGtcsh"
+ NAME="1788"><TT>tcsh</TT></A> is used to invoke L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>
+then everything should work properly.
+<BR>
+<A HREF="node10.html#GGGPerl"><I>Perl</I></A> 5 eliminates this requirement on the shell.
+
+<P>
+<A NAME="850">&#160;</A>
+<LI><A HREF="node10.html#GGGDBM"
+ NAME="1799"><I>DBM</I></A> or <A HREF="node10.html#GGGNDBM"
+ NAME="1808"><I>NDBM</I></A>, the Unix DataBase Management system,
+or <A HREF="node10.html#GGGGDBM"
+ NAME="1817"><I>GDBM</I></A>, the GNU database manager.
+
+<P>
+<B>Note: </B>Some systems lack any DBM support.
+<A HREF="node10.html#GGGPerl"><I>Perl</I></A> 5 comes with its own database system SDBM, but it is sometimes
+not part of some Perl distributions.
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR>
+The installation script <A HREF="node10.html#GGGinstall-test"
+ NAME="1829"><TT>install-test</TT></A> will check that for you.
+If no database system is found, you will have to install Perl
+properly.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR></UL>
+
+<P>
+<A NAME="861">&#160;</A>
+<A NAME="862">&#160;</A><A NAME="863">&#160;</A>
+<A NAME="864">&#160;</A><A NAME="865">&#160;</A>
+<DT>2.
+<DD><B>L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  commands with equations, figures, tables, etc.</B> <BR>
+As above plus ...
+<UL>
+<LI><A HREF="node10.html#GGGlatex"
+ NAME="1837"><TT>latex</TT></A> (version 2e recommended but 2.09 will work -- with
+reduced ability to support styles and packages);
+<A NAME="1243">&#160;</A>
+<LI><A NAME="tex2html31"
+ HREF="ftp://ftp.tex.ac.uk/pub/archive/dviware/dvips"><TT>dvips</TT></A>
+(version&nbsp;5.516 or later) or <A HREF="node10.html#GGGdvipsk"
+ NAME="1845"><TT>dvipsk</TT></A>
+<BR>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR>
+Version 5.62 or higher enhances the performance of image creation
+  with a <B>significant</B> speed-up. See latex2html.config for this
+  after you are done with the installation.
+  Do not use the 'dvips -E' feature unless you have 5.62, else you
+  will get broken images.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+<A NAME="1245">&#160;</A>
+<LI>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR><A HREF="node10.html#GGGgs"
+ NAME="1853"><TT>gs</TT></A> <A HREF="node10.html#GGGGhostscript"
+ NAME="1861"><I>Ghostscript</I></A> (version 4.03 or later);
+  with the ppmraw device driver, or even better pnmraw.
+  Upgrade to 5.10 or later if you want to go sure about seldom problems
+  with 4.03 to avoid (yet unclarified).
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+<A NAME="883">&#160;</A>
+<A NAME="884">&#160;</A>
+<LI>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR>
+The <A NAME="tex2html32"
+ HREF="ftp://ftp.x.org/R5contrib/"><TT>netpbm</TT></A>
+library of graphics utilities; <A HREF="node10.html#GGGnetpbm"
+ NAME="1879"><TT>netpbm</TT></A> dated 1 March 1994
+is required, else part of the image creation process will fail.
+<BR>
+Check with: <A HREF="node10.html#GGGpnmcrop"
+ NAME="1887"><TT>pnmcrop</TT></A>  <TT>-version</TT> .
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+Several of the filters in those libraries are used during the <A HREF="#GGGpostscript"
+ NAME="1896">PostScript</A> to
+GIF conversion. 
+<A NAME="893">&#160;</A>
+<A NAME="894">&#160;</A>
+<LI>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR>
+If you want PNG images, you need <A HREF="node10.html#GGGpnmtopng"
+ NAME="1914"><TT>pnmtopng</TT></A> (current version is 2.31).
+It is not part of <A HREF="node10.html#GGGnetpbm"
+ NAME="1922"><TT>netpbm</TT></A> and requires <A HREF="node10.html#GGGlibpng-0.89c.tar.gz"
+ NAME="1930"><TT>libpng-0.89c.tar.gz</TT></A> and
+<A HREF="node10.html#GGGlibz"
+ NAME="1938"><TT>libz</TT></A> (1.0.4) (or later versions).
+<A HREF="node10.html#GGGpnmtopng"
+ NAME="1946"><TT>pnmtopng</TT></A> supports transparency and interlace mode.
+<BR>
+<B>Hooray!!!</B>&nbsp;&nbsp; 
+<A HREF="node10.html#GGGNetscape_Navigator"
+ NAME="1954"><I>Netscape Navigator</I></A> v4.04 has been reported to grok PNG images!
+<BR>
+This means that the PNG option is no longer ahead of its time!
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR></UL>
+
+<P>
+<A NAME="906">&#160;</A>
+<A NAME="907">&#160;</A>
+<DT>3.
+<DD><B><A HREF="Hnode11.html#Segmentation">Segmentation</A> of large documents</B>
+<BR>
+If you wish to use this feature, you will have to upgrade your
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB>. 
+Some other hyperlinking features also require L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB>.
+
+<P>
+<A NAME="911">&#160;</A>
+<A NAME="912">&#160;</A>
+<DT>4.
+<DD><B><A NAME="tex2html27"
+ HREF="http://melmac.corp.harris.com/transparent_images.html">Transparent inlined images</A></B>
+<BR>
+If you dislike the white background color of the
+generated inlined images then you should get either 
+the <A HREF="node10.html#GGGnetpbm"
+ NAME="1963"><TT>netpbm</TT></A> library (instead of the older <A HREF="node10.html#GGGpbmplus"
+ NAME="1971"><TT>pbmplus</TT></A>) 
+or install the <A NAME="tex2html33"
+ HREF="ftp://ftp.uni-stuttgart.de/pub/comm/infosystems/www/tools/imaging/giftrans/giftrans-1.11.1.tar.gz"><TT>giftrans</TT></A>
+filter by Andreas Ley <A NAME="tex2html34"
+ HREF="mailto:ley@rz.uni-karlsruhe.de">&lt;ley@rz.uni-karlsruhe.de&gt;</A>. 
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> now supports the shareware program <A HREF="node10.html#GGGgiftool"
+ NAME="1981"><TT>giftool</TT></A>
+(by Home Pages, Inc., version 1.0), too.
+It can also create interlaced GIFs.
+</DL> 
+
+<P>
+<A NAME="923">&#160;</A>
+
+<P>
+If <A HREF="node10.html#GGGGhostscript"
+ NAME="1989"><I>Ghostscript</I></A> or the <A HREF="node10.html#GGGnetpbm"
+ NAME="1998"><TT>netpbm</TT></A> library are
+not available, it is still possible to use the translator with the
+ <TT>-no_images</TT>  option. 
+
+<P>
+<A NAME="927">&#160;</A><A NAME="928">&#160;</A>
+<A NAME="1250">&#160;</A>
+<BR>
+
+<P>
+If you intend to use any of the <A HREF="hypextra.html#sec:hyp">special features</A>
+of the translator 
+then you have to include the <A HREF="node10.html#GGGhtml.sty"
+ NAME="2007"><TT>html.sty</TT></A> file 
+in any L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  documents that use them. 
+
+<P>
+<A NAME="936">&#160;</A>
+<A NAME="1278">&#160;</A>
+<A NAME="1279">&#160;</A>
+<A NAME="1280">&#160;</A>
+<A NAME="1255">&#160;</A>
+<A NAME="1256">&#160;</A>
+<BR>
+
+<P>
+Since by default the translator makes use of inlined images in the final 
+<TT>HTML</TT> output, it would be better to have a viewer 
+which supports the <TT>&lt;IMG&gt;</TT> tag, such as <A NAME="tex2html35"
+ HREF="http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/Docs/help-about.html"><I>NCSA Mosaic</I></A>
+or <A NAME="tex2html36"
+ HREF="http://home.netscape.com"><I>Netscape Navigator</I></A>.
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Any browser which claims to be compatible with <TT>HTML</TT> 3.2 should meet
+this requirement.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="959">&#160;</A>
+<A NAME="960">&#160;</A><A NAME="1259">&#160;</A>
+<BR>
+
+<P>
+If only a character-based browser, such as <A HREF="node10.html#GGGlynx"
+ NAME="2018"><I>lynx</I></A>, is available, 
+or if you want the generated documents to be more portable, 
+then the translator can be used with the  <TT>-ascii_mode</TT>  
+<A HREF="Mnode5.html#cs_asciimode">option</A>. 
+
+<P>
+<A NAME="969">&#160;</A>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html85"
+ HREF="Snode3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html81"
+ HREF="Snode1.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html75"
+ HREF="Snode1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html83"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html84"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html86"
+ HREF="Snode3.html">Installing L<SUP>A</SUP>TEX2HTML</A>
+<B> Up:</B> <A NAME="tex2html82"
+ HREF="Snode1.html">Getting L<SUP>A</SUP>TEX2HTML</A>
+<B> Previous:</B> <A NAME="tex2html76"
+ HREF="Snode1.html">Getting L<SUP>A</SUP>TEX2HTML</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

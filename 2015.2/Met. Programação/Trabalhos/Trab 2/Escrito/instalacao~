@@ -1,0 +1,16 @@
+cd <pasta_download>
+sudo mv gtest-'ultima_versao'.zip /opt/google/
+cd /opt/google
+sudo unzip gtest-'ultima_versao'.zip
+cd gtest-'ultima_versao'
+sudo ./configure
+sudo make
+sudo cp -a include/gtest /usr/include
+sudo cp -a lib/ .libs
+sudo mkdir 'nome_que_quiser'
+cd 'nome_que_quiser'
+sudo cmake -DBUILD_SHARED_LIBS=ON -Dgtest_build_samples=ON
+-G"Unix Makefiles" ..
+sudo make
+ls
+sudo ./'qualquer_exemplo'_unittest

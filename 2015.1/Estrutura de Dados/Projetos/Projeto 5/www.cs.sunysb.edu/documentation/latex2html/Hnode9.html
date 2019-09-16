@@ -1,0 +1,491 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Miscellaneous commands for HTML effects</TITLE>
+<META NAME="description" CONTENT="Miscellaneous commands for HTML effects">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="next" HREF="Hnode10.html">
+<LINK REL="previous" HREF="Hnode7.html">
+<LINK REL="up" HREF="hypextra.html">
+<LINK REL="next" HREF="Hnode10.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html209"
+ HREF="Hnode10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html205"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html199"
+ HREF="Hnode8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html207"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html208"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html210"
+ HREF="Hnode10.html">Active Image Maps</A>
+<B> Up:</B> <A NAME="tex2html206"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html200"
+ HREF="Hnode8.html">Cross-Referencing Example</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000128000000000000000">&#160;</A><A NAME="misceffects">&#160;</A>
+<BR>
+Miscellaneous commands for <TT>HTML</TT> effects
+</H2>
+<!--Table of Child-Links-->
+<UL>
+<LI><A NAME="tex2html211"
+ HREF="Hnode9.html#SECTION000128010000000000000"><TT>&#92;htmlrule </TT> and 
+ <TT>&#92;htmlrule*</TT></A>
+<LI><A NAME="tex2html212"
+ HREF="Hnode9.html#SECTION000128020000000000000"><TT>&#92;strikeout&#123;
+&lt;<I>text</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html213"
+ HREF="Hnode9.html#SECTION000128030000000000000"><TT>&#92;tableofchildlinks </TT></A>
+<LI><A NAME="tex2html214"
+ HREF="Hnode9.html#SECTION000128040000000000000"><TT>&#92;htmlinfo </TT></A>
+<LI><A NAME="tex2html215"
+ HREF="Hnode9.html#SECTION000128050000000000000"><TT>&#92;bodytext&#123;
+&lt;<I>options</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html216"
+ HREF="Hnode9.html#SECTION000128060000000000000"><TT>&#92;htmlbody&#123;
+&lt;<I>options</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html217"
+ HREF="Hnode9.html#SECTION000128070000000000000"><TT>&#92;htmlbase&#123;
+&lt;<I>URL</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html218"
+ HREF="Hnode9.html#SECTION000128080000000000000"><TT>&#92;HTMLset&#123;
+&lt;<I>which</I>&gt;&#125;&#123;</TT>
+<TT>
+&lt;<I>value</I>&gt;&#125;</TT> and 
+<TT>&#92;HTMLsetenv&#123;
+&lt;<I>which</I>&gt;&#125;&#123;</TT>
+<TT>
+&lt;<I>value</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html219"
+ HREF="Hnode9.html#SECTION000128090000000000000"><TT>&#92;latextohtml</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<A NAME="2572">&#160;</A>
+
+<P>
+The 
+<I>html</I> package, through the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X input file <A HREF="node10.html#GGGhtml.sty"
+ NAME="3494"><TT>html.sty</TT></A>,
+and its <A HREF="node10.html#GGGPerl"><I>Perl</I></A> counterpart <A HREF="node10.html#GGGhtml.perl"
+ NAME="3505"><TT>html.perl</TT></A>, implements several 
+new commands that are intended entirely for effects within the
+produced <TT>HTML</TT> files. In L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X these commands, their arguments,
+and any optional arguments are completely ignored.
+
+<P>
+<A NAME="2573">&#160;</A>
+<A NAME="2574">&#160;</A>
+
+<H4><A NAME="SECTION000128010000000000000">&#160;</A><A NAME="htmlrule">&#160;</A>
+<BR>
+<TT>&#92;htmlrule </TT> and 
+ <TT>&#92;htmlrule*</TT>
+</H4>
+One such device provided by <A HREF="node10.html#GGGhtml.sty"
+ NAME="3517"><TT>html.sty</TT></A>,
+is the <TT>&#92;htmlrule</TT> command. 
+This puts a horizontal rule into the <TT>HTML</TT> file only;
+being ignored in the <TT>.dvi</TT> version. 
+It is useful to provide extra visual separation between paragraphs,
+without creating a new <TT>HTML</TT> page, 
+such as might warrant extra vertical space within the printed version.
+
+<P>
+<A NAME="2576">&#160;</A>
+<A NAME="1882">&#160;</A>
+<A NAME="2577">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Much variation can be obtained in the horizontal rule that is produced,
+using extended forms of the <TT>&#92;htmlrule</TT> command:
+<BLOCKQUOTE>
+<TT>&#92;htmlrule</TT>
+<BR>
+<TT>&#92;htmlrule*</TT>
+<BR>
+<TT>&#92;htmlrule[
+&lt;<I>attribs</I>&gt;]</TT>
+<BR>
+<TT>&#92;htmlrule*[
+&lt;<I>attribs</I>&gt;]</TT>
+</BLOCKQUOTE>
+Whereas a ``break'' tag <TT>&lt;BR&gt;</TT> normally precedes the <TT>&lt;HR&gt;</TT> generated
+by the <TT>&#92;htmlrule</TT> command, 
+this break is omitted when using the <TT>&#92;htmlrule*</TT> variant. 
+
+<P>
+<BR>
+<HR WIDTH="200" ALIGN="center">
+
+<P>
+Furthermore, the optional argument <TT>
+&lt;<I>attribs</I>&gt;</TT> can be used to specify 
+attributes for <EM>both</EM> the <TT>&lt;HR&gt;</TT> and <TT>&lt;BR&gt;</TT> tags. 
+More specifically, <TT>
+&lt;<I>attribs</I>&gt;</TT> should be a list of attribute-names 
+and/or key-value pairs <TT><TT>
+&lt;<I>key</I>&gt;</TT>=<TT>
+&lt;<I>value</I>&gt;</TT></TT> separated by spaces or commas. 
+This list is parsed to extract those attributes applicable to the <TT>&lt;HR&gt;</TT> tag,
+and those applicable to the <TT>&lt;BR&gt;</TT> (with the unstarred variant).
+
+<P>
+
+<P>
+<BR>
+<BR CLEAR="right">
+<HR WIDTH="200" SIZE="5" ALIGN="right">
+
+Using <TT>HTML</TT> 3.2, this allows variations to be specified for:
+<UL>
+<LI>the (vertical) thickness of the horizontal line in pixels: <TT>SIZE=<TT>
+&lt;<I>num</I>&gt;</TT></TT>;
+<LI>the (horizontal) width of the line in pixels or points: <TT>WIDTH=<TT>
+&lt;<I>width</I>&gt;</TT></TT>;
+<LI>alignment: <TT>WIDTH=&#34;...&#34;</TT> 
+taking <TT>left</TT>, <TT>right</TT> or <TT>center</TT>;
+<LI>removal of the shadowed effect <TT>NOSHADE</TT>;
+<LI>positioning of the rule with respect to text-flows: 
+<TT>CLEAR=&#34;...&#34;</TT> 
+taking <TT>left</TT>, <TT>all</TT>, <TT>right</TT> or <TT>none</TT>. 
+<BR CLEAR="right">
+<HR WIDTH="200" SIZE="5" ALIGN="right"></UL>
+Some examples of these effects appear on 
+ this page.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2582">&#160;</A>
+
+<H4><A NAME="SECTION000128020000000000000">&#160;</A><A NAME="strikeout">&#160;</A>
+<BR>
+<TT>&#92;strikeout&#123;
+&lt;<I>text</I>&gt;&#125;</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+With this command the <TT>
+&lt;<I>text</I>&gt;</TT> is processed as normal in the <TT>HTML</TT> version,
+then placed between <TT>&lt;STRIKE&gt;</TT>...<TT>&lt;/STRIKE&gt;</TT> tags.
+Thus a horizontal line should be drawn through the middle of the <TT>
+&lt;<I>text</I>&gt;</TT>.
+<BR>
+Currently the command and the <TT>
+&lt;<I>text</I>&gt;</TT> are ignored in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2584">&#160;</A>
+
+<H4><A NAME="SECTION000128030000000000000">&#160;</A><A NAME="tochlinks">&#160;</A>
+<BR>
+<TT>&#92;tableofchildlinks </TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+As an extra aid to navigation within a long page, 
+containing several (sub)subsections or deeper levels of sectioning,
+there is the <TT>&#92;tableofchildlinks</TT> command.
+This does not generate anything new, for a table of the child links
+on or from a page is generated automatically by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+
+<P>
+However if this command, or its variant <TT>&#92;tableofchildlinks*</TT>,
+occurs within the source code to appear on a particular <TT>HTML</TT> page,
+then the child-links table will be placed at that point
+where the command occurs. 
+Normally a break tag <TT>&lt;BR&gt;</TT> is inserted to separate the table of child-links 
+from the surrounding text. The <TT>&#92;tableofchildlinks*</TT> omits this extra break
+when it would result in too much space above the table.
+
+<P>
+For example throughout this section of the manual, 
+all subsections in which several explicit commands have been discussed
+have their child-links table placed at the top of the page,
+using <TT>&#92;tableofchildlinks*</TT>. 
+This helps to quickly find the description of how the commands are used.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2587">&#160;</A>
+
+<H4><A NAME="SECTION000128040000000000000">&#160;</A><A NAME="htmlinfo">&#160;</A>
+<BR>
+<TT>&#92;htmlinfo </TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Normally an ``About this document...'' page is created at the end
+of the <TT>HTML</TT> document, containing technical information
+about how the document was created, by whom, or any other information
+contained in the <A HREF="node10.html#GGG_INFO"
+ NAME="3580"><TT>$INFO</TT></A> <A HREF="#infostring">variable</A>.
+This information can be made to appear at any other place within the document 
+by specifying <TT>&#92;htmlinfo</TT> at the desired place in the source.
+For example, the information may be best suited for the title-page.
+
+<P>
+The variant <TT>&#92;htmlinfo*</TT> places the information, but leaves out the 
+standard ``About this document...'' header. 
+Instead the <A HREF="Hnode11.html#htmlhead"><TT>&#92;htmlhead</TT></A> command 
+can be used to place an alternative heading, prior to the <TT>&#92;htmlinfo*</TT> command.
+Neither this heading nor the <A HREF="node10.html#GGG_INFO"
+ NAME="3592"><TT>$INFO</TT></A> <A HREF="#infostring">contents</A> appears 
+in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset version.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2590">&#160;</A>
+
+<H4><A NAME="SECTION000128050000000000000">&#160;</A><A NAME="bodytext">&#160;</A>
+<BR>
+<TT>&#92;bodytext&#123;
+&lt;<I>options</I>&gt;&#125;</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1g</SUP>
+<BR>
+The text and background colors, and colors for the text of hypertext links can
+be set on an <TT>HTML</TT> page by giving appropriate attributes 
+with the <TT>&lt;BODY ...&gt;</TT> tag. This is particularly easy to do
+using the <TT>&#92;bodytext</TT> command, 
+which simply inserts the <TT>
+&lt;<I>code</I>&gt;</TT> as the desired list of attributes.
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="2592">&#160;</A>
+<BR>
+
+<B>Warning: </B>Any previous settings for the <TT>&lt;BODY ...&gt;</TT> tag
+are discarded. Furthermore no checking is done to verify whether the given <TT>
+&lt;<I>options</I>&gt;</TT>
+indeed contains a list of attributes and values valid for the <TT>&lt;BODY ...&gt;</TT> tag.
+<BR>
+When using <TT>&#92;bodytext</TT> you are assumed to know precisely what you are doing!
+
+<P>
+
+<P>
+<BR>
+Other packages contain commands which alter the contents of the <TT>&lt;BODY ...&gt;</TT> tag;
+notably the <A HREF="node10.html#GGGcolor.perl"
+ NAME="3615"><TT>color.perl</TT></A> implementation of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X's 
+<I>color</I> package,
+and the (prototype) 
+<I>frames</I> package, by <A NAME="3623">&#160;</A> <A NAME="tex2html20"
+ HREF="http://www.tropos.de/personal/wilck.html">Martin Wilck</A> and <A NAME="3626">&#160;</A> <A NAME="tex2html21"
+ HREF="http://www.mpce.mq.edu.au/~ross/">Ross Moore</A>.
+In both these packages the requested information is checked for
+validity as an attribute within the <TT>&lt;BODY ...&gt;</TT> tag.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1g</SUP>
+<BR>
+
+<P>
+<A NAME="2593">&#160;</A>
+
+<H4><A NAME="SECTION000128060000000000000">&#160;</A><A NAME="htmlbody">&#160;</A>
+<BR>
+<TT>&#92;htmlbody&#123;
+&lt;<I>options</I>&gt;&#125;</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+This is similar to the <TT>&#92;bodytext</TT> command, except that it adds the
+value of an attribute, or allows an existing value to be changed.
+Thus it can be used to alter just a single one of the text and background colors, 
+colors for the text of hypertext links or add a background pattern.
+The <TT>
+&lt;<I>options</I>&gt;</TT> are given as key-value pairs; some checking is done to ensure 
+the validity of the attributes whose values are being set.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2595">&#160;</A>
+
+<H4><A NAME="SECTION000128070000000000000">&#160;</A><A NAME="htmlbase">&#160;</A>
+<BR>
+<TT>&#92;htmlbase&#123;
+&lt;<I>URL</I>&gt;&#125;</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1g</SUP>
+<BR>
+This specifies that the given <TT>
+&lt;<I>URL</I>&gt;</TT> be included in the <TT>&lt;HEAD&gt;</TT> section
+of each <TT>HTML</TT> page via a tag: 
+<TT>&lt;BASE HREF=&#34;<TT>
+&lt;<I>URL</I>&gt;</TT>&#34;</TT>.
+<BR>
+Such a feature is particularly useful...
+<UL>
+<LI>
+when preparing a document whose final location may be different from where it was created; 
+By making all internal references be relative (to the the provided <TT>
+&lt;<I>URL</I>&gt;</TT>),
+a whole directory tree containing the document 
+and all its subparts can be moved to elsewhere.
+A single edit in each <TT>HTML</TT> file produces the complete document intact 
+at the new location.
+<LI>
+by allowing just single page to be copied to another location, but act as if it were
+part of the original document (provided this is accessible across the Web).
+Relative URLs within the copied page are relative to the base <TT>
+&lt;<I>URL</I>&gt;</TT>,
+rather than relative to the new location.
+<LI>
+Other uses for this feature are likely to become apparent.
+</UL>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1g</SUP>
+<BR>
+
+<P>
+<A NAME="2598">&#160;</A>
+<A NAME="2599">&#160;</A>
+
+<H4><A NAME="SECTION000128080000000000000">&#160;</A><A NAME="HTMLset">&#160;</A>
+<BR>
+<TT>&#92;HTMLset&#123;
+&lt;<I>which</I>&gt;&#125;&#123;</TT>
+<TT>
+&lt;<I>value</I>&gt;&#125;</TT> and 
+<TT>&#92;HTMLsetenv&#123;
+&lt;<I>which</I>&gt;&#125;&#123;</TT>
+<TT>
+&lt;<I>value</I>&gt;&#125;</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+The <TT>&#92;HTMLset</TT> command provides a mechanism whereby an arbitrary
+<A HREF="node10.html#GGGPerl"><I>Perl</I></A> variable can be assigned a value dynamically, during the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> processing. 
+A variable having name `<TT>$
+&lt;<I>which</I>&gt;</TT>' is assigned the specified <TT>
+&lt;<I>value</I>&gt;</TT>,
+overwriting any value that may exist already. The <TT>&#92;HTMLsetenv</TT> is for the same purpose,
+but it is expanded in order as if it were an environment, rather than a command.
+
+<P>
+
+<P>
+<BR>
+
+<B>Warning: </B>This is intended for <A HREF="node10.html#GGGPerl"><I>Perl</I></A> programmers only.
+Use this command at your own risk!
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<BR>
+<HR WIDTH="300">
+<A NAME="2601">&#160;</A>
+<A NAME="2055">&#160;</A>
+<A NAME="2602">&#160;</A>
+
+<H4><A NAME="SECTION000128090000000000000">&#160;</A><A NAME="l2hname">&#160;</A>
+<BR>
+<TT>&#92;latextohtml</TT>
+</H4> 
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+expands to the name L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, of this translator.
+Commands for parts of names of important L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X packages are also 
+included with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>: e.g. T<SMALL>E</SMALL>X, L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, A<SUB><BIG>M</BIG></SUB>S, X<SUB><BIG>Y</BIG></SUB>.
+(This is to make it easy to refer to these products, in a consistent way
+within the <TT>HTML</TT> pages; you may still need L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X definitions
+for the typeset version.)
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html209"
+ HREF="Hnode10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html205"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html199"
+ HREF="Hnode8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html207"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html208"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html210"
+ HREF="Hnode10.html">Active Image Maps</A>
+<B> Up:</B> <A NAME="tex2html206"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html200"
+ HREF="Hnode8.html">Cross-Referencing Example</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

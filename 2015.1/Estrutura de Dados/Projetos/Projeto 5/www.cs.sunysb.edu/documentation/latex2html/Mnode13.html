@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Handling ``order-sensitive'' Commands</TITLE>
+<META NAME="description" CONTENT="Handling ``order-sensitive'' Commands">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="previous" HREF="Mnode12.html">
+<LINK REL="up" HREF="Mnode10.html">
+<LINK REL="next" HREF="Mnode14.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html197"
+ HREF="Mnode14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html193"
+ HREF="Mnode10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html187"
+ HREF="Mnode12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html195"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html196"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html198"
+ HREF="Mnode14.html">Customising the Navigation Panels</A>
+<B> Up:</B> <A NAME="tex2html194"
+ HREF="Mnode10.html">Extending the Translator</A>
+<B> Previous:</B> <A NAME="tex2html188"
+ HREF="Mnode12.html">Asking the Translator to L<SUP>A</SUP>TEX</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000133300000000000000">&#160;</A><A NAME="sensit">&#160;</A>
+<BR>
+Handling ``order-sensitive'' Commands
+</H3>
+<A NAME="1952">&#160;</A>
+<A NAME="1953">&#160;</A>
+<A NAME="1954">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Some commands need to be passed to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, but using the 
+<code>&amp;process_commands_in_tex</code> subroutine gives incorrect results. 
+This may occur when the command is ``order-sensitive'',
+using information such as the value of a counter or a boolean expression 
+(or perhaps requiring a box to have been constructed and saved).
+Try using the <code>&amp;process_commands_inline_in_tex</code> subroutine instead.
+Commands declared this way are first ``wrapped'' within a dummy environment,
+which ensures that they are later processed in correct order with other 
+environments and order-sensitive commands.
+
+<P>
+<A NAME="1957">&#160;</A><A NAME="setparam">&#160;</A>
+<BR>
+
+<P>
+Other commands may need to be passed to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, not to create an image
+themselves, but to affect the way subsequent images are created.
+For example a color command such as <code>\color{red}</code> should set the
+text-colour to `red' for all subsequent text and images. This must
+be sent to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X so that it is processed at exactly the right time;
+i.e. before the first image required to be `red' but following any
+images that are not intended to be affected by this colour-change.
+<BR>
+The subroutine <code>process_commands_nowrap_in_tex</code> is designed
+specifically to meet such requirements.
+
+<P>
+<A NAME="1962">&#160;</A><A NAME="wrapdef">&#160;</A>
+<BR>
+
+<P>
+Commands can be order-sensitive without having to be passed to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+Indeed even if a <A HREF="node10.html#GGGPerl"><I>Perl</I></A> subroutine has been carefully written to process
+the command, it may still give wrong results if it is order-sensitive,
+depending on the values of counters, say.
+To handle such cases there is the <code>&amp;process_commands_wrap_deferred</code>
+subroutine. This also ``wraps'' the command within a dummy environment,
+but when that environment is processed the contents are not sent to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X,
+as in the previous case. All of the standard L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands to change, 
+set or read the values of counters are handled in this way.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html197"
+ HREF="Mnode14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html193"
+ HREF="Mnode10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html187"
+ HREF="Mnode12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html195"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html196"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html198"
+ HREF="Mnode14.html">Customising the Navigation Panels</A>
+<B> Up:</B> <A NAME="tex2html194"
+ HREF="Mnode10.html">Extending the Translator</A>
+<B> Previous:</B> <A NAME="tex2html188"
+ HREF="Mnode12.html">Asking the Translator to L<SUP>A</SUP>TEX</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

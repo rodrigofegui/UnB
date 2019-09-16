@@ -1,0 +1,26 @@
+#include"estruturas.hpp"
+#include"imprime.hpp"
+void imprime_El(Elem* inicio){
+    Elem *aux;// percorre as linhas
+    while(inicio != NULL){
+        for(aux = inicio; aux!=NULL; aux = aux->proximo){
+            printf("%c ",aux->tipo_el);
+            if(aux->nome_el!=NULL)// para o programa nao parar  caso a insercao do nome falhar
+                printf("%s ",aux->nome_el);
+
+            printf("(%d,%d) ",aux->lin,aux->col);
+            if(aux->tipo_el!='A'){//adaptadores nao tem nenhum dessas informacoes abaixo
+                printf("%d ",aux->recurso);
+                if( (aux->tipo_el)== 'G')// pois esse numero soh eh valido para geradores
+                    printf("%d  ",aux->custo);
+                else
+                    printf("  ");
+            }
+            if(aux->proximo==NULL){//nova linha
+                printf("\n");
+            }
+
+        }
+        inicio = inicio->ger;
+    }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Internationalisation</TITLE>
+<META NAME="description" CONTENT="Internationalisation">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="next" HREF="Enode5.html">
+<LINK REL="previous" HREF="Enode1.html">
+<LINK REL="up" HREF="features.html">
+<LINK REL="next" HREF="Enode3.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html105"
+ HREF="Enode3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html101"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html95"
+ HREF="Enode1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html103"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html104"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html106"
+ HREF="Enode3.html">Alternate Font Encodings</A>
+<B> Up:</B> <A NAME="tex2html102"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html96"
+ HREF="Enode1.html">Variation with HTML Versions</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000112000000000000000">&#160;</A><A NAME="internat">&#160;</A>
+<BR>
+Internationalisation
+</H2>
+<A NAME="803">&#160;</A><A NAME="804">&#160;</A>
+<BR>
+A special variable <A HREF="node10.html#GGG_LANGUAGE_TITLES"
+ NAME="2477"><TT>$LANGUAGE_TITLES</TT></A> 
+in the initialisation or configuration files determines the language 
+in which some section titles will appear. For example setting it to 
+<BLOCKQUOTE>
+<PRE>
+$LANGUAGE_TITLES = 'french';
+</PRE></BLOCKQUOTE>
+will cause L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> to produce ``Table des mati&#232;res'' instead of
+``Table of Contents''.
+Furthermore, the value of the <TT>&#92;today</TT> command is presented in a format
+customary in that language.
+
+<P>
+<A NAME="814">&#160;</A><A NAME="815">&#160;</A><A NAME="816">&#160;</A>
+<BR>
+The only languages currently supported are 
+
+<I>french</I>, 
+<I>english</I> and 
+<I>german</I>
+but it is trivial to add support for another language in the
+file <A HREF="node10.html#GGGlatex2html.config"
+ NAME="2489"><TT>latex2html.config</TT></A>.
+As a guide here is the entry for the French titles:
+<PRE>
+sub french_titles {
+    $toc_title = "Table des mati\{\`e}res";
+    $lof_title = "Liste des figures";
+    $lot_title = "Liste des tableaux";
+    $idx_title = "Index";
+    $bib_title = "R\{\'e}f\{\'e}rences";
+    $abs_title = "R\{\'e}sum\{\'e}";
+    $pre_title = "Pr\{\'e}face";
+    $app_title = "Annexe";
+    $info_title = "\{\`A}propos de ce document...";
+    @Month = ('', 'janvier', 'f\{\'e}vrier', 'mars', 'avril', 'mai',
+              'juin', 'juillet', 'ao\{\^u}t', 'septembre', 'octobre',
+              'novembre', 'd\{\'e}cembre');
+    $GENERIC_WORDS = "a|au|aux|mais|ou|et|donc|or|ni|car"
+        . "|l|la|le|les|c|ce|ces|un|une|d|de|du|des";
+}
+</PRE>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR>
+The <TT>$GENERIC_WORDS</TT> are a list of short words excluded
+when filenames are specially requested to be created from section-headings.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+In order to provide full support for another language you may also
+replace the navigation buttons which come with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> 
+(by default in English) with your own. 
+As long as the new buttons have the same file-names as the old ones, 
+there should not be a problem.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html107"
+ HREF="Enode3.html">Alternate Font Encodings</A>
+<LI><A NAME="tex2html108"
+ HREF="Enode4.html">Multi-lingual documents, using Images</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html105"
+ HREF="Enode3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html101"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html95"
+ HREF="Enode1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html103"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html104"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html106"
+ HREF="Enode3.html">Alternate Font Encodings</A>
+<B> Up:</B> <A NAME="tex2html102"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html96"
+ HREF="Enode1.html">Variation with HTML Versions</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

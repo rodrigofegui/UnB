@@ -1,0 +1,287 @@
+/*  Inclusão das bibliotecas requisitadas: */
+#include "../Bibliotecas/Grafo.hpp"
+
+
+/*  Definições das funções a serem manipuladas por este arquivo: */
+/*  Função 'vizinhos_cria', inicializa as posicoes para !VERDADE */
+Vizinhos * vizinhos_cria (int tamanho){
+    /*  'vizinhos' armazena a 8-vizinhança a ser criada */
+    Vizinhos *novo = NULL;
+
+    do {
+        novo = (Vizinhos *) malloc (sizeof(Vizinhos));
+    }while (novo == NULL);
+
+    /*  Alocação das linhas de 'vizinhos' */
+    do{
+        novo->vizinhanca = (bool **) malloc ((tamanho + 1) * sizeof(bool *));
+    }while (novo->vizinhanca == NULL);
+
+    /*  Alocação das colunas */
+    for (int ind = 0; ind < tamanho; ind++){
+        novo->vizinhanca[ind] = (bool *) malloc ((tamanho + 1)* sizeof (bool));
+    }
+
+    /*  Configuração dos valores para !VERDADE */
+    for (int linha = 0; linha < tamanho; linha++){
+        for (int coluna = 0; coluna < tamanho; coluna++){
+            novo->vizinhanca[linha][coluna] = !VERDADE;
+        }
+    }
+
+    /*  Configuração final dos vizinhos */
+    novo->tamanho = tamanho;
+
+    return novo;
+}
+
+/*  Função 'vizinhos_busca', busca na 8-vizinhança vizinhos com o mesmo valor do pixel
+**  de referência */
+bool vizinhos_busca (Mat imagem, Vizinhos *vizinhos, Ponto pixel){
+    /*  'imagem' armazena a imagem a ser manipulada; 'vizinhos' armazena a vizinhança
+    **  a ser configurada; 'pixel' armazena as coordenas do pixel a ser avaliada a
+    **  vizinhança; 'vizinhanca' armazena o status sobre a vizinhança do 'pixel' */
+    bool vizinhanca = !VERDADE;
+
+    /*  Buscando em toda a 8-vizinhança do pixel */
+    for (int linha = pixel.lin - 1; linha < pixel.lin + 2; linha++){
+        for (int coluna = pixel.col - 1; coluna < pixel.col + 2; coluna++){
+            /*  Estando dentro da imagem */
+            if ((linha >= 0 && linha <= imagem.rows) && (coluna >= 0 && coluna <= imagem.cols))
+                /*  Tendo o mesmo valor que o pixel de referência, a vizinhança eh configurada
+                **  assim como seus status */
+                if (imagem.at<uchar>(linha, coluna) == imagem.at<uchar>(pixel.lin ,pixel.col)){
+                    vizinhos->vizinhanca[linha -  pixel.lin + 1][coluna - pixel.col + 1] = VERDADE;
+                    vizinhanca = VERDADE;
+                }
+        }
+    }
+    return vizinhanca;
+}
+
+/*  Funçao 'vizinhos_exibe', exibe na tela uma vizinhança formada */
+void vizinhos_exibe (Vizinhos *vizinhos){
+    /*  Configuração dos valores para !VERDADE */
+    printf ("Vizinhanca formada:\n");
+    for (int linha = 0; linha < vizinhos->tamanho; linha++){
+        for (int coluna = 0; coluna < vizinhos->tamanho; coluna++){
+            printf("%d", vizinhos->vizinhanca[linha][coluna]);
+        }
+        printf ("\n");
+    }
+    printf ("\n\n");
+}
+
+/*  Função 'vizinhos_libera', desaloca a memoria para os vizinhos */
+void vizinhos_libera (Vizinhos *vizinhos){
+    /*  'vizinhos' armazena a matriz a ser liberada */
+
+    /*  Havendo matriz */
+    if (vizinhos != NULL){
+
+        /*  Liberação das linhas */
+        for (int ind = 0; ind < vizinhos->tamanho; ind++){
+            free(vizinhos->vizinhanca[ind]);
+        }
+
+        /*  Liberação da matriz em si */
+        free (vizinhos->vizinhanca);
+        free (vizinhos);
+    }
+}
+
+/*  Função 'dados_limpa', configura todos os dados para 0 */
+void dados_limpa (DadosImagem *registro){
+    for (int ind = 0; ind < PLANOS_YCBCR; ind++){
+        for (int ind2 = 0; ind2 < PLANOS_YCBCR; ind2++){
+            registro[ind].media_planos[ind2] = 0;
+            registro[ind].desvio_planos[ind2] = 0;
+        }
+    }
+}
+
+/*  Função 'imagem_carrega_paleta', realiza o levantamento dos dados da paleta de cores */
+void imagem_carrega_paleta (char *dirpaleta, DadosImagem *dados){
+    /*  'dirpaleta' armazena o nome da imagem a ser aberta, incluindo o caminho; 'dados' armazenam os dados
+    **  levantados sobre a paleta de cores; 'paleta' armazena a imagem da paleta de cores */
+    Mat paleta = imread (dirpaleta, CV_LOAD_IMAGE_COLOR);
+
+    /*  Conseguindo abri a imagem */
+    if (!paleta.empty()){
+        /*  'espacodecor' armazena os planos separados da paleta; 'ind' armazena um indice a ser manipulado */
+        Mat espacodecor[IMG_CAMADAS];
+        int ind;
+
+        /*  Conversão de RGB para YCbCr da paleta; e sua separação dos planos */
+        cvtColor (paleta, paleta, CV_BGR2YCrCb);
+        split (paleta, espacodecor);
+
+        /*  Levantamento das médias e desvios padrões dos planos Cb e Cr */
+        for (ind = 0; ind < PLANOS_YCBCR; ind++){
+            dados->media_planos[ind] = imagem_media(&espacodecor[ind + 1]);
+            dados->desvio_planos[ind] = imagem_desvpad (&espacodecor[ind + 1], dados->media_planos[ind]);
+        }
+
+        /*  Liberação da memória */
+        paleta.release ();
+        for (ind = 0; ind < IMG_CAMADAS; ind++)
+            espacodecor[ind].release ();
+    }
+}
+
+/*  Função 'imagem_cria_nomesaida', realiza a criação do nome do arquivo de saída da imagem */
+char * imagem_cria_nomesaida (string *nomesbase, char *dirimagem, int codigo){
+    char *nomeimagem = NULL;
+
+    do{
+        nomeimagem = (char *) calloc ((static_cast<int>(nomesbase[0].size()) + (strlen(dirimagem) - n_ultima_ocorrencia(dirimagem, '/', 1)) +  static_cast<int>(nomesbase[codigo].size()) + 2), sizeof(char));
+    }while (nomeimagem == NULL);
+
+    strcat(nomeimagem, &nomesbase[0][0]);
+    strcat(nomeimagem, &nomesbase[codigo][0]);
+    string_concat_n (nomeimagem, dirimagem, n_ultima_ocorrencia(dirimagem, '/', 1) + 1, strlen(dirimagem));
+
+    return nomeimagem;
+}
+
+/*  Função 'imagem_media', realiza a conta de média de uma dada Matriz */
+int imagem_media (Mat *imagem){
+    /*  'imagem' armazena a matriz a ser calculada a média; 'media' armazena
+    **  a média resultante */
+    int media = 0;
+
+    /*  Percorrendo toda a matriz */
+    for (int linha = 0; linha < imagem->rows; linha++){
+        for (int coluna = 0; coluna < imagem->cols; coluna++){
+            /*  Somatório das intensidades */
+            media += imagem->at<uchar>(linha, coluna);
+        }
+    }
+
+    /*  Média resultante */
+    media /= (imagem->rows * imagem->cols);
+
+    return media;
+}
+
+/*  Função 'imagem_desvpad', realiza a conta do desvio-padrão de uma
+**  dada Matriz */
+int imagem_desvpad (Mat *imagem, int media){
+    /*  'imagem' armazena a matriz a ser calculada a média; 'media' armazena
+    **  a média resultante; 'desvpad' armazena o desvio-padrão */
+    int desvpad = 0;
+
+    /*  Percorrendo toda a matriz */
+    for (int linha = 0; linha < imagem->rows; linha++){
+        for (int coluna = 0; coluna < imagem->cols; coluna++){
+            /*  Somatório das parcelas do desvio */
+            desvpad += pow((imagem->at<uchar>(linha, coluna) - media), 2);
+        }
+    }
+
+    /*  Desvio resultante */
+    desvpad /= ((imagem->rows * imagem->cols) - 1);
+    desvpad = sqrt(desvpad);
+
+    return desvpad;
+}
+
+/*  Função 'imagem_processa', realiza o processamento sobre a imagem */
+void imagem_processa (FILE *arq, Mat imagembase, DadosImagem registro, char * dirimagem, Calibragem *classes){
+    Mat segmentada = Mat::zeros (LIN_ALVO, COL_ALVO, CV_8UC1);
+    Grafo *regioes = grafo_cria ();
+    string nomesbase[] = {"Segmentações/", "seg_"};
+    char *nomesaida_seg = imagem_cria_nomesaida (nomesbase, dirimagem, 1);
+
+    if (strcmp(nomesaida_seg, "Segmentações/seg_comroupa1.jpg") == IGUAL){
+        printf ("chegou...");
+    }
+
+
+    printf ("\nSegmentando: %s\n", nomesaida_seg);
+    imagem_segmen_ycbcr (imagembase, &segmentada, registro);
+
+
+    /*
+    imshow ("imagem base", imagembase);
+    imshow ("segmentada", segmentada);
+    waitKey (0);
+    //*/
+
+    imagem_mapea_regioes (segmentada, regioes);
+
+    destroyAllWindows();
+
+    imwrite (nomesaida_seg, segmentada);
+
+    grafo_calcula_areas (regioes, segmentada);
+
+    //grafo_escreve (regioes);
+    levantamento_escreve (arq, regioes, nomesaida_seg);
+
+    if (classes->status == VERDADE){
+        printf ("Chegou... E com %d\n", classes->classe);
+        /*  Levantamento das areas brancas totais das classes */
+        classes->medias[classes->classe] += regioes->areabranca;
+        printf ("Medias da Classe 1, ate agora: %d\n\n", classes->medias[classes->classe]);
+    }
+
+    segmentada.release ();
+    grafo_libera (regioes);
+    free (nomesaida_seg);
+}
+
+/*  Função 'imagem_segmen_ycbcr', realiza a segmentação em relação ao espaço de cor
+**  YCbCr */
+void imagem_segmen_ycbcr (Mat origem, Mat *segmentada, DadosImagem dados){
+    Mat baseycbcr, planosanalisar[IMG_CAMADAS];
+    Ponto pixel;
+    int linha, coluna;
+
+    cvtColor (origem, baseycbcr, CV_BGR2YCrCb);
+
+    split (baseycbcr, planosanalisar);
+
+    for (linha = 0; linha < IMG_CAMADAS; linha++)
+        resize (planosanalisar[linha], planosanalisar[linha], segmentada->size(), VERDADE, VERDADE, INTER_CUBIC);
+
+    for (linha = 0; linha < segmentada->rows; linha++){
+        for (coluna = 0; coluna < segmentada->cols; coluna++){
+            pixel.lin = linha;
+            pixel.col = coluna;
+            if (imagem_valida_bin(planosanalisar, dados, pixel) == VERDADE)
+                segmentada->at<uchar>(linha, coluna) = BRANCO;
+        }
+    }
+
+    baseycbcr.release ();
+    for (linha = 0; linha < IMG_CAMADAS; linha++)
+        planosanalisar[linha].release ();
+}
+
+/*  Função 'imagem_valida_bin', realiza a verificação da região de aceitação para a segmentação e
+**  posteriori binarização */
+bool imagem_valida_bin (Mat *planos, DadosImagem dados, Ponto coordenada){
+    /*  'planos' armazena os planos a serem analisados; 'dados' armazena as informações da paleta a serem comparados; 'coordenada'
+    **  armazena a localização a ser avaliada */
+
+    /*  Estando dentro de um intervalo (MEDIA +/- DESVIO) para os dois planos de cores é classificada como posição válida */
+    if((planos[PLANO_Cb].at<uchar>(coordenada.lin, coordenada.col) >= (dados.media_planos[PLANO_Cb - 1]*CORRECAO_MED_CB - dados.desvio_planos[PLANO_Cb - 1]*CORRECAO_DES_CB)
+            && planos[PLANO_Cb].at<uchar>(coordenada.lin, coordenada.col) <= (dados.media_planos[PLANO_Cb - 1]*CORRECAO_MED_CB + dados.desvio_planos[PLANO_Cb - 1]*CORRECAO_DES_CB))
+       && (planos[PLANO_Cr].at<uchar>(coordenada.lin, coordenada.col) >= (dados.media_planos[PLANO_Cr - 1]*CORRECAO_MED_CR - dados.desvio_planos[PLANO_Cr - 1]*CORRECAO_DES_CR)
+            && planos[PLANO_Cr].at<uchar>(coordenada.lin, coordenada.col) <= (dados.media_planos[PLANO_Cr - 1]*CORRECAO_MED_CR + dados.desvio_planos[PLANO_Cr - 1]*CORRECAO_DES_CR)))
+            return VERDADE;
+
+    /*  Caso contrário */
+    return !VERDADE;
+}
+
+/*  Função 'dados_exibe', exibe na tela os dados da imagem */
+void dados_exibe (DadosImagem dados){
+    printf ("Media do Cb = %d\n", dados.media_planos[0]);
+    printf ("Desvio do Cb = %d\n\n", dados.desvio_planos[0]);
+    printf ("Media do Cr = %d\n", dados.media_planos[1]);
+    printf ("Desvio do Cr = %d\n\n", dados.desvio_planos[1]);
+}
+
+

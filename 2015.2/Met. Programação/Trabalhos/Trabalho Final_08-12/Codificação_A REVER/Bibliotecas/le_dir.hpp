@@ -1,0 +1,2 @@
+Rede* obtem_dados();
+

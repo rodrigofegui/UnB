@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>A Segmentation Example</TITLE>
+<META NAME="description" CONTENT="A Segmentation Example">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="previous" HREF="Hnode11.html">
+<LINK REL="up" HREF="Hnode11.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html255"
+ HREF="../manual/userman.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html251"
+ HREF="Hnode11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html245"
+ HREF="Hnode11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html253"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html254"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html256"
+ HREF="../manual/userman.html">Customising_the_Layout</A>
+<B> Up:</B> <A NAME="tex2html252"
+ HREF="Hnode11.html">Document Segmentation</SUP></A>
+<B> Previous:</B> <A NAME="tex2html246"
+ HREF="Hnode11.html">Document Segmentation</SUP></A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION0001210100000000000000">&#160;</A><A NAME="2326">&#160;</A>
+<A NAME="sec:segmentexample">&#160;</A>
+<BR>
+A Segmentation Example
+</H3>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+
+The best way to illustrate document segmentation 
+is through a simple example.  
+Suppose that a document is to be segmented into one parent 
+and two child segments.  
+Let the parent segment be <A HREF="node10.html#GGGreport.tex"
+ NAME="3860"><TT>report.tex</TT></A>, 
+and the the two child segments be <A HREF="node10.html#GGGsec1.tex"
+ NAME="3868"><TT>sec1.tex</TT></A> and <A HREF="node10.html#GGGsec2.tex"
+ NAME="3876"><TT>sec2.tex</TT></A>.  
+The latter are translated with filename <A HREF="#prefix">prefixes</A> of 
+<TT>s1</TT> and <TT>s2</TT>, respectively.  
+This example is included with recent distributions of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, 
+having more prolific comments than are shown here.
+
+<P>
+
+<P>
+<BR>
+<BR>
+<HR WIDTH="300">
+<A NAME="2337">&#160;</A>
+<BR>
+The text of <A HREF="node10.html#GGGreport.tex"
+ NAME="3884"><TT>report.tex</TT></A> is as follows:
+<PRE>
+\documentclass{article}          % Must use LaTeX 2e
+\usepackage{html,makeidx,color}
+
+\internal[figure]{s1}            % Include internal information
+\internal[figure]{s2}            % from children
+\internal[sections]{s1}
+\internal[sections]{s2}
+\internal[contents]{s1}
+\internal[contents]{s2}
+\internal[index]{s1}
+\internal[index]{s2}
+
+\begin{document}                 % The start of the document
+\title{A Segmentation Example}
+\date{\today}
+\maketitle
+\tableofcontents
+\listoffigures
+
+% Process the child segments:
+
+\segment{sec1}{section}{Section 1 title}
+\segment{sec2}{section}{Section 2 title}
+\printindex
+\end{document}
+</PRE>
+This file obtains the information necessary to build an
+index, a table of contents and a list of figures from the
+child segments.  It then proceeds to typeset these.
+
+<P>
+
+<P>
+<BR>
+<BR>
+<HR WIDTH="300">
+<A NAME="2342">&#160;</A>
+<BR>
+The first child segment <A HREF="node10.html#GGGsec1.tex"
+ NAME="3892"><TT>sec1.tex</TT></A> is as follows:
+<PRE>
+\documentclass{article}
+\usepackage{html,color,makeidx}
+\input{sec1.ptr}
+\internal{s2}
+\startdocument
+Here is some text.
+\subsection{First subsection}
+Here is subsection 1\label{first}.
+\begin{figure}
+\colorbox{red}{Some red text\index{Color text}}
+\caption[List of figure caption]{Figure 1 caption}
+\end{figure}
+Reference\index{Reference} to \ref{second}.
+</PRE>
+The first thing this child segment does is establish the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X 
+packages it requires, then loads the counter information that
+was written by the <TT>&#92;segment</TT> command that invoked it.
+Since this segment contains a symbolic reference (<TT>second</TT>)
+to the second segment, it must load the internal labels from
+that segment.
+
+<P>
+
+<P>
+<BR>
+<BR>
+<HR WIDTH="300">
+<A NAME="2350">&#160;</A>
+<BR>
+The final segment <A HREF="node10.html#GGGsec2.tex"
+ NAME="3901"><TT>sec2.tex</TT></A> is as follows:
+<PRE>
+\documentclass{article}
+\usepackage{html,makeidx}
+\input{sec2.ptr}
+\internal{s1}
+\startdocument
+Here is another section\label{second}.
+Plus another\index{Reference, another} reference\ref{first}.
+\begin{figure}
+\fbox{The figure}
+\caption{The caption}
+\end{figure}
+</PRE>
+<A NAME="2355">&#160;</A>
+<A NAME="2356">&#160;</A>
+<A NAME="2357">&#160;</A>
+<A NAME="2358">&#160;</A>
+<BR>
+This segment needs to load internal labels from the first one,
+because of the reference to `<TT>first</TT>'.  These circular
+dependencies (two segments referencing each other) are either not
+allowed or handled incorrectly by the Unix utility <A HREF="node10.html#GGGmake"
+ NAME="3909"><TT>make</TT></A>, 
+without resorting to time stamps and some trickery.  
+A <I>time-stamp</I> is a zero-length file whose only purpose is to record
+its creation time.  
+Besides evaluating segment interdependence,
+another function of <A HREF="node10.html#GGGmake"
+ NAME="3917"><TT>make</TT></A> is to provide inter-segment
+navigation information.
+
+<P>
+
+<P>
+<BR>
+<BR>
+<HR WIDTH="300">
+<A NAME="2621">&#160;</A>
+<BR>
+A sample <A HREF="node10.html#GGGMakefile"
+ NAME="3933"><TT>Makefile</TT></A> is included in the distribution.
+This correctly generates the fully-linked document.
+The first time it is invoked, it runs:
+<UL>
+<LI><A HREF="node10.html#GGGlatex"
+ NAME="3941"><TT>latex</TT></A> on <A HREF="node10.html#GGGreport.tex"
+ NAME="3949"><TT>report.tex</TT></A> twice;
+<LI><A HREF="node10.html#GGGdvips"
+ NAME="3957"><TT>dvips</TT></A> to generate <A HREF="node10.html#GGGreport.ps"
+ NAME="3965"><TT>report.ps</TT></A>;
+<LI><A HREF="node10.html#GGGlatex2html"
+ NAME="3973"><TT>latex2html</TT></A> on <A HREF="node10.html#GGGsec1.tex"
+ NAME="3981"><TT>sec1.tex</TT></A>;
+<LI><A HREF="node10.html#GGGlatex2html"
+ NAME="3989"><TT>latex2html</TT></A> on <A HREF="node10.html#GGGsec2.tex"
+ NAME="3997"><TT>sec2.tex</TT></A>.  
+At this point <A HREF="node10.html#GGGsec2.html"
+ NAME="4005"><TT>sec2.html</TT></A> is completely linked, 
+since the labels from the <TT>sec1</TT> were available;
+<LI><A HREF="node10.html#GGGlatex2html"
+ NAME="4013"><TT>latex2html</TT></A> on <A HREF="node10.html#GGGsec1.tex"
+ NAME="4021"><TT>sec1.tex</TT></A> to pick up the labels from <TT>sec2</TT>;
+<LI><A HREF="node10.html#GGGlatex2html"
+ NAME="4029"><TT>latex2html</TT></A> on <A HREF="node10.html#GGGreport.tex"
+ NAME="4037"><TT>report.tex</TT></A>.
+</UL>
+Proper operation of <A HREF="node10.html#GGGmake"
+ NAME="4045"><TT>make</TT></A> depends on the fact that
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> updates
+its own internal label file only if something in its
+current program segment causes the labels to change from the previous run.  
+This ensures that L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> is not run unnecessarily. 
+It is also usual for the information page to be suppressed by specifying 
+ <TT>-info 0</TT>  for all but the top-level document.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+<A NAME="2388">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1f</SUP>
+<BR>
+In the above example, all segments are built within the same sub-directory
+<A HREF="node10.html#GGGreport_"
+ NAME="4054"><TT>report/</TT></A> of the directory containing the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source files.
+This is achieved simply by using the option  <TT>-dir report</TT>  with each.
+All the images and <TT>
+&lt;<I>prefix</I>&gt;
+&lt;<I>type</I>&gt;.pl</TT> files
+are created and stored within this directory.
+
+<P>
+<A NAME="2397">&#160;</A>
+<A NAME="2398">&#160;</A>
+<BR>
+Sometimes it is desirable to build one or more segments within
+separate sub-directories. 
+This is especially so when a segment has a large number of images, 
+or if it is required to be part of more than one combined document. 
+In this case the  <TT>-dir <TT>
+&lt;<I>dir</I>&gt;</TT></TT>  options can be different, 
+or omitted entirely. For inter-segment referencing to work,
+a ``relative path'' must be included as part of the <TT>
+&lt;<I>prefix</I>&gt;</TT>
+with each <A HREF="Hnode11.html#internal"><TT>&#92;internal</TT></A> command; e.g.
+<PRE>
+\internal[figure]{../sect1/s1}
+</PRE>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1f</SUP>
+<BR>
+<A NAME="2407">&#160;</A>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html255"
+ HREF="../manual/userman.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html251"
+ HREF="Hnode11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html245"
+ HREF="Hnode11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html253"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html254"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html256"
+ HREF="../manual/userman.html">Customising_the_Layout</A>
+<B> Up:</B> <A NAME="tex2html252"
+ HREF="Hnode11.html">Document Segmentation</SUP></A>
+<B> Previous:</B> <A NAME="tex2html246"
+ HREF="Hnode11.html">Document Segmentation</SUP></A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

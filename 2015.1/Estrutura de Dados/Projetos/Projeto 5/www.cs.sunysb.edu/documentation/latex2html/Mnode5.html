@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Switches controlling Image Generation</TITLE>
+<META NAME="description" CONTENT="Switches controlling Image Generation">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="next" HREF="Mnode6.html">
+<LINK REL="previous" HREF="Mnode4.html">
+<LINK REL="up" HREF="Mnode2.html">
+<LINK REL="next" HREF="Mnode6.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html98"
+ HREF="Mnode6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html94"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html88"
+ HREF="Mnode4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html96"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html97"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html99"
+ HREF="Mnode6.html">Switches controlling Navigation Panels</A>
+<B> Up:</B> <A NAME="tex2html95"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html89"
+ HREF="Mnode4.html">Options controlling Extensions and</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000132300000000000000">
+Switches controlling Image Generation</A>
+</H3>
+These switches affect whether images are created at all, whether
+old images are reused on subsequent runs or new ones created afresh,
+and whether anti-aliasing effects are used within the images themselves.
+
+<P>
+<DL><DT>
+<A NAME="1276">&#160;</A>
+<A NAME="1277">&#160;</A>
+<DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-ascii_mode <A NAME="cs_asciimode">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_ASCII_MODE"
+ NAME="3080"><TT>$ASCII_MODE</TT></A><TT> = </TT><A HREF="node10.html#GGG_EXTERNAL_IMAGES"
+ NAME="3088"><TT>$EXTERNAL_IMAGES</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Use only <TT>ASCII</TT> characters and do not include any images in the final output.
+With  <TT>-ascii_mode</TT>  the output of the translator can be used on 
+character-based browsers, such as <A HREF="node10.html#GGGlynx"
+ NAME="3097"><I>lynx</I></A>,
+which do not support inlined images (via the <TT>&lt;IMG&gt;</TT> tag).
+
+<P>
+<A NAME="1287">&#160;</A>
+<DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-nolatex <A NAME="cs_nolatex">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_NOLATEX"
+ NAME="3111"><TT>$NOLATEX</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Disable the mechanism for passing unknown environments to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X for processing.
+This can be thought of as ``draft mode'' which allows 
+faster translation of the basic document structure and text, 
+without fancy figures, equations or tables. 
+
+<P>
+(This option has been superseded by the  <TT>-no_images</TT>  option,
+<A HREF="#noimages">see below</A>.)
+
+<P>
+<A NAME="1295">&#160;</A>
+<DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-external_images<A NAME="cs_extimages">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_EXTERNAL_IMAGES"
+ NAME="3124"><TT>$EXTERNAL_IMAGES</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Instead of including any generated images inside the document, 
+leave them outside the document and provide hypertext links to them.
+
+<P>
+<A NAME="1299">&#160;</A>
+<DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-ps_images<A NAME="cs_psimages">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_PS_IMAGES"
+ NAME="3147"><TT>$PS_IMAGES</TT></A><TT> = </TT><A HREF="node10.html#GGG_EXTERNAL_IMAGES"
+ NAME="3155"><TT>$EXTERNAL_IMAGES</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Use links to external <A HREF="#GGGpostscript"
+ NAME="3163">PostScript</A> files rather than inlined images
+in the chosen graphics format.
+
+<P>
+<A NAME="1305">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR><DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-discard<A NAME="cs_discard">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_DISCARD_PS"
+ NAME="3185"><TT>$DISCARD_PS</TT></A><TT> = 1;</TT></FONT>
+<BR>
+The temporary <A HREF="#GGGpostscript"
+ NAME="3193">PostScript</A> files are discarded immediately after they
+have been used to create the image in the desired graphics format.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="1312">&#160;</A>
+<DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-no_images<A NAME="cs_noimages">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_NO_IMAGES"
+ NAME="3206"><TT>$NO_IMAGES</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Do not attempt to produce any inlined images. 
+The missing images can be generated ``off-line'' by restarting L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>
+with the option  <TT>-images_only</TT> .
+
+<P>
+<A NAME="1318">&#160;</A>
+<DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-images_only<A NAME="cs_imagesonly">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_IMAGES_ONLY"
+ NAME="3219"><TT>$IMAGES_ONLY</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Try to convert any inlined images that were left over from previous
+runs of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>. 
+
+<P>
+<A NAME="1322">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR><DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-reuse <TT>
+&lt;<I>reuse_option</I>&gt;</TT><A NAME="cs_reuseoptions">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_REUSE"
+ NAME="3235"><TT>$REUSE</TT></A><TT> = 
+&lt;<I>reuse_option</I>&gt;;</TT></FONT>
+<BR>
+This switch specifies the extent to which image files are to be shared
+or recycled.
+<BR>
+There are three valid options:
+<DL><DT>
+<A NAME="1334">&#160;</A><A NAME="1335">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><TT>0</TT></B>
+<DD>Do not ever share or recycle image files.
+<BR>
+This choice also invokes an interactive session 
+prompting the user about what to do about
+a pre-existing <TT>HTML</TT> directory, if it exists.
+<A NAME="1338">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><TT>1</TT></B>
+<DD>Recycle image files from a previous run if they are available,
+<BR>
+but do not share identical images that must be created in this run.
+<A NAME="1340">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><TT>2</TT></B>
+<DD>Recycle image files from a previous run and share identical
+images from this run.
+<BR>
+This is the default.
+</DL>
+<A HREF="Enode8.html#recycling">A later section</A> provides 
+additional information about image-reuse.
+
+<P>
+<A NAME="1347">&#160;</A><A NAME="1348">&#160;</A>
+<DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-no_reuse<A NAME="cs_noreuse">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_REUSE"
+ NAME="3249"><TT>$REUSE</TT></A><TT> = 0;</TT></FONT>
+<BR>
+Do <EM>not</EM> share or recycle images generated during previous translations.
+This is equivalent to  <TT>-reuse 0</TT> .
+(This will enable the initial interactive session during which the user is
+asked whether to reuse the old directory, delete its contents or quit.)
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+<A NAME="1355">&#160;</A><A NAME="1356">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR><DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-antialias<A NAME="cs_aalias">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_ANTI_ALIAS"
+ NAME="3262"><TT>$ANTI_ALIAS</TT></A><TT> = 1;</TT></FONT> (Default is 0.)
+<BR>
+Generated images of 
+<I>figure</I> environments and external <A HREF="#GGGpostscript"
+ NAME="3271">PostScript</A> files
+should use anti-aliasing. By default anti-aliasing is not
+used with these images, since this may interfere with the contents
+of the images themselves.
+
+<P>
+<A NAME="1363">&#160;</A><A NAME="1364">&#160;</A>
+<DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-antialias_text<A NAME="cs_aaliastext">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_ANTI_ALIAS_TEXT"
+ NAME="3284"><TT>$ANTI_ALIAS_TEXT</TT></A><TT> = 1;</TT></FONT> (Default is 1.)
+<BR>
+Generated images of typeset material such as text, mathematical formulas,
+tables and the content of 
+<I>makeimage</I> <A HREF="Hnode4.html#makeimage">environments</A>,
+should use anti-aliasing effects.
+<BR>
+The default is normally to use anti-aliasing for text, 
+since the resulting images are much clearer on-screen. 
+However the default may have been changed locally.
+
+<P>
+<A NAME="1372">&#160;</A><A NAME="1373">&#160;</A>
+<DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-no_antialias<A NAME="cs_noaalias">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_ANTI_ALIAS"
+ NAME="3297"><TT>$ANTI_ALIAS</TT></A><TT> = 0;</TT></FONT> (Default is 0.)
+<BR>
+Generated images of 
+<I>figure</I> environments and external <A HREF="#GGGpostscript"
+ NAME="3306">PostScript</A> files 
+should not use anti-aliasing with images, 
+though the local default may have been changed to use it.
+
+<P>
+<A NAME="1378">&#160;</A><A NAME="1379">&#160;</A>
+<DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-no_antialias_text<A NAME="cs_noaaliastext">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_ANTI_ALIAS_TEXT"
+ NAME="3319"><TT>$ANTI_ALIAS_TEXT</TT></A><TT> = 0;</TT></FONT> (Default is 1.)
+<BR>
+Generated images of typeset material should <EM>not</EM> use anti-aliasing effects.
+Although on-screen images of text are definitely improved using anti-aliasing,
+printed images can be badly blurred, even at 300dpi. 
+Higher resolution printers do a much better job with the resulting grey-scale images.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR><A NAME="1387">&#160;</A>
+<DT><IMG  SRC="MagentaBall" ALT="*">
+<B>-ldump<A NAME="cs_ldump">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_LATEX_DUMP"
+ NAME="3331"><TT>$LATEX_DUMP</TT></A><TT> = 1;</TT></FONT> (Default is 0.)
+<BR>
+Use this if you want to speed up image processing during the 2nd
+and subsequent runs of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> on the same document.
+The translator now produces a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X format-dump of the preamble to
+<A HREF="node10.html#GGGimages.tex"
+ NAME="3339"><TT>images.tex</TT></A> which is used on subsequent runs.
+This significantly reduces the startup time when
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X reads the <A HREF="node10.html#GGGimages.tex"
+ NAME="3347"><TT>images.tex</TT></A> file for image-generation.
+
+<P>
+This process actually consumes additional time on the first run, 
+since L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X is called twice -- once to create the format-dump,
+then again to load and use it.
+The pay-off comes with the faster loading on subsequent runs. 
+Approximately 1 Meg of disk space is consumed by the dump file.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR></DL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html98"
+ HREF="Mnode6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html94"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html88"
+ HREF="Mnode4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html96"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html97"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html99"
+ HREF="Mnode6.html">Switches controlling Navigation Panels</A>
+<B> Up:</B> <A NAME="tex2html95"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html89"
+ HREF="Mnode4.html">Options controlling Extensions and</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

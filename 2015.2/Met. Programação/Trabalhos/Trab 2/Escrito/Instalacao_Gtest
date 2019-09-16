@@ -1,0 +1,16 @@
+cd Download/
+sudo mv gtest-1.7.0.zip /opt/google/
+cd /opt/google/
+sudo unzip gtest-1.7.0.zip
+cd gtest-1.7.0
+sudo ./configure
+sudo make
+sudo cp -a include/gtest /usr/include
+sudo cp -a lib/ .libs
+sudo mkdir mybuild
+cd mybuild/
+sudo cmake -DBUILD_SHARED_LIBS=ON -Dgtest_build_samples=ON
+"P" -G"Unix Makefiles" ..
+sudo make
+ls
+sudo ./sample2_unittest

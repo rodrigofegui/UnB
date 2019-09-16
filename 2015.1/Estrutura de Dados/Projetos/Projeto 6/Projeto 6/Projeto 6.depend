@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1435523468 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 6/Projeto 6/Funcoes_P6.c
+	<time.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funcoes_P6.h"
+
+1435522084 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 6/Projeto 6/Principal_P6.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funcoes_P6.h"
+
+1435522084 /home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 6/Projeto 6/Funcoes_P6.h
+	"TADs_P6.h"
+
+1435523223 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 6/Projeto 6/TADs_P6.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funcoes_P6.h"
+
+1435519427 /home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 6/Projeto 6/TADs_P6.h
+
+1435523468 source:/home/lucsantos/Dropbox/Projeto 5/Projeto 6/Funcoes_P6.c
+	<time.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funcoes_P6.h"
+
+1435522084 /home/lucsantos/Dropbox/Projeto 5/Projeto 6/Funcoes_P6.h
+	"TADs_P6.h"
+
+1435519427 /home/lucsantos/Dropbox/Projeto 5/Projeto 6/TADs_P6.h
+
+1435523959 source:/home/lucsantos/Dropbox/Projeto 5/Projeto 6/Principal_P6.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funcoes_P6.h"
+
+1435523223 source:/home/lucsantos/Dropbox/Projeto 5/Projeto 6/TADs_P6.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funcoes_P6.h"
+

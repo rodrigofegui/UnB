@@ -1,0 +1,7 @@
+Todas as imagens foram redimensionadas para 400 x 400 pixels, as medições abaixo obedecem esta proporção.
+
+Levantamento das informações sobre:	Segmentações/seg_sasha-grey-62h.jpg
+	Com 0 regioes detectadas, temos:
+	A maior area de pele com 0 pixels;
+	Uma area total de 0 pixels como tons de pele.
+

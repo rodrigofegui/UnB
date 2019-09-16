@@ -1,0 +1,69 @@
+******************************************************************
+					LEGENDA:
+
+	1- Para as páginas:
+		1.1 Identificação de página, 'Pag';
+		1.2 Número da página atual, '[x]';
+		1.3 Número da página pai, '[y]';
+		1.4 Quantidade de chaves na página, '-> z';
+		1.5 Resultado: 'Pag [x][y] -> z'.
+	2- Para as chaves:
+		2.1 Identificação para chave, '-';
+		2.2 Chave em si, 'x';
+		2.3 PRR, 'y';
+		2.4 Resultado: '- [x, y]'.
+******************************************************************
+
+Ordem da Arvore-B = 5
+Quantidade de pag. cadastradas = 13
+
+Pag [8][-] -> 1
+		Pag [2][8] -> 4
+				Pag [0][2] -> 2
+					- [015511Ange,  19]
+					- [024312Leon,  0]
+			- [031147Ande,  20]
+				Pag [9][2] -> 4
+					- [031200Andr,  21]
+					- [031272Andr,  1]
+					- [032725Fell,  22]
+					- [033282Henr,  23]
+			- [035830Roge,  2]
+				Pag [1][2] -> 2
+					- [037396Hugo,  24]
+					- [041881AnaL,  3]
+			- [042290Brun,  4]
+				Pag [10][2] -> 2
+					- [042348Brun,  25]
+					- [042728Dani,  26]
+			- [042780Dani,  5]
+				Pag [3][2] -> 2
+					- [042865Dani,  6]
+					- [043217Erik,  7]
+	- [043341Fabr,  8]
+		Pag [7][8] -> 4
+				Pag [4][7] -> 2
+					- [043648Fran,  27]
+					- [044072Igor,  9]
+			- [044281Jorg,  28]
+				Pag [11][7] -> 2
+					- [044637Leon,  29]
+					- [045058Marc,  10]
+			- [045460Muri,  30]
+				Pag [12][7] -> 4
+					- [045585Otav,  32]
+					- [045927Rafa,  33]
+					- [045934Rafa,  35]
+					- [046245Robe,  36]
+			- [046306Rodr,  11]
+				Pag [5][7] -> 4
+					- [046674Thar,  37]
+					- [046708Thia,  12]
+					- [046713Thia,  13]
+					- [046718Thia,  38]
+			- [046802Tiag,  14]
+				Pag [6][7] -> 4
+					- [046944Vito,  15]
+					- [046946Vito,  16]
+					- [046956Vito,  17]
+					- [046961Vito,  18]

@@ -1,0 +1,443 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Figures and Image Conversion</TITLE>
+<META NAME="description" CONTENT="Figures and Image Conversion">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="next" HREF="Enode10.html">
+<LINK REL="previous" HREF="Enode5.html">
+<LINK REL="up" HREF="features.html">
+<LINK REL="next" HREF="Enode7.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html160"
+ HREF="Enode7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html156"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html150"
+ HREF="Enode5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html158"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html159"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html161"
+ HREF="Enode7.html">An Embedded Image Example</A>
+<B> Up:</B> <A NAME="tex2html157"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html151"
+ HREF="Enode5.html">Mathematics</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000114000000000000000">&#160;</A><A NAME="IIIimages">&#160;</A><A NAME="imgcon">&#160;</A><A NAME="2259">&#160;</A>
+<BR>
+Figures and Image Conversion
+</H2>
+<!--Table of Child-Links-->
+<UL>
+<LI><A NAME="tex2html162"
+ HREF="Enode6.html#SECTION000114010000000000000"><TT>&#92;htmlimage&#123;
+&lt;<I>options</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html163"
+ HREF="Enode7.html">An Embedded Image Example</A>
+<LI><A NAME="tex2html164"
+ HREF="Enode8.html">Image Sharing and Recycling</A>
+<LI><A NAME="tex2html165"
+ HREF="Enode9.html">Quality of Printed Images</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR CLEAR="ALL">
+<HR>
+
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> converts equations, special accents, external <A HREF="#GGGpostscript"
+ NAME="2618">PostScript</A> 
+files, and L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  environments it cannot directly translate into 
+inlined images. This section describes how it is possible to control
+the final appearance of such images. For purposes of discussion ...
+<UL>
+<LI>
+``small images'' <A NAME="1148">&#160;</A>
+<BR>
+refers to inline math expressions, special accents and
+any other L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X command which causes an image to be generated; while ...
+<LI>
+``figures'' <A NAME="1151">&#160;</A>
+<BR>
+applies to image-generating L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X environments 
+(e.g. 
+<I>makeimage</I>, 
+<I>figure</I>, 
+<I>table</I> (with <TT>HTML</TT> 2.0), 
+ and displayed math environments when required to generate images, etc.).
+</UL>
+
+<P>
+<A NAME="1159">&#160;</A>
+<A NAME="1160">&#160;</A>
+<A NAME="1161">&#160;</A>
+<A NAME="1162">&#160;</A>
+<BR>
+
+The size of all ``small images'' depends on a configuration variable
+<A HREF="node10.html#GGG_MATH_SCALE_FACTOR"
+ NAME="2630"><TT>$MATH_SCALE_FACTOR</TT></A> which specifies how much to enlarge or 
+reduce them in relation to their original size in the <A HREF="#GGGpostscript"
+ NAME="2638">PostScript</A>  
+version of the document. 
+For example a scale-factor of 0.5 will make all images half as big, 
+while a scale-factor of 2 will make them twice as big.
+Larger scale-factors result in longer processing times and larger 
+intermediate image files. A scale-factor will only be effective 
+if it is greater than 0. 
+The configuration variable <A HREF="node10.html#GGG_FIGURE_SCALE_FACTOR"
+ NAME="2647"><TT>$FIGURE_SCALE_FACTOR</TT></A> performs
+a similar function for ``figures''. 
+Both of these variables are initially set to have value 1.6.
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+A further variable <A HREF="node10.html#GGG_DISP_SCALE_FACTOR"
+ NAME="2655"><TT>$DISP_SCALE_FACTOR</TT></A> is used with
+`displayed math' equations and formulas;
+this value multiplies the <A HREF="node10.html#GGG_MATH_SCALE_FACTOR"
+ NAME="2663"><TT>$MATH_SCALE_FACTOR</TT></A> 
+to give the actual scaling used.
+With the improved clarity of anti-aliased images, a scaling of 1.6
+may be a little excessive for inline images.
+Accordingly this manual actually uses values of 1.4 and 1.2 respectively,
+for <A HREF="node10.html#GGG_MATH_SCALE_FACTOR"
+ NAME="2671"><TT>$MATH_SCALE_FACTOR</TT></A> and <A HREF="node10.html#GGG_DISP_SCALE_FACTOR"
+ NAME="2679"><TT>$DISP_SCALE_FACTOR</TT></A>.
+These go well with the browser's text-font set at 14pt. 
+The next larger size of 17pt is then used for the <TT>&lt;LARGE&gt;</TT> tags
+in displayed equations.
+
+<P>
+<A NAME="1173">&#160;</A>
+<A NAME="1174">&#160;</A>
+<A NAME="1175">&#160;</A>
+<BR>
+
+<P>
+A further variable <A HREF="node10.html#GGG_EXTRA_IMAGE_SCALE"
+ NAME="2688"><TT>$EXTRA_IMAGE_SCALE</TT></A> allows images to be created
+at a larger size than intended for display. 
+The browser itself scales them down to the intended size, 
+but has the extra information available for a better quality print. 
+This feature is also available with single images. It is discussed, 
+with examples, <A HREF="Enode9.html#printqual">on the next page</A>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2260">&#160;</A>
+<A NAME="2261">&#160;</A>
+<A NAME="1185">&#160;</A>
+
+<H4><A NAME="SECTION000114010000000000000">&#160;</A><A NAME="htmlimage">&#160;</A>
+<BR>
+<TT>&#92;htmlimage&#123;
+&lt;<I>options</I>&gt;&#125;</TT>
+</H4>
+For finer control, several parameters affecting the conversion 
+of a single image can be controlled
+with the command <TT>&#92;htmlimage</TT>, which is defined in <A HREF="node10.html#GGGhtml.sty"
+ NAME="2701"><TT>html.sty</TT></A>.
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+With version <SMALL>V97.1</SMALL> use of this command has been extended to allow
+it to control whether an image is generated or not
+for some environments,
+as well as specifying effects to be used when creating this image.
+
+<P>
+If an <TT>&#92;htmlimage</TT> command appears within any environment
+for which creating an image is a possible strategy (though not usual,
+due to loading of extensions, say), then an image will indeed be
+created. Any effects requested in the <TT>
+&lt;<I>options</I>&gt;</TT> argument will be used.
+Having empty <TT>
+&lt;<I>options</I>&gt;</TT> still causes the image to be generated.
+
+<P>
+This ability has been used within this manual, for example with the
+mathematics images in <A HREF="Enode5.html#eq:pics">the previous section</A>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+
+<P>
+<BR>
+The <TT>
+&lt;<I>options</I>&gt;</TT> argument is a string separated by commas.
+<A NAME="1204">&#160;</A>
+<BR>
+Allowable options are:
+<UL><A NAME="1207">&#160;</A>
+<A NAME="1208">&#160;</A>
+<LI><TT>scale=
+&lt;<I>scale-factor</I>&gt;</TT>
+<BR>
+allows control over the size of the final image.
+
+<P>
+<A NAME="1211">&#160;</A><A NAME="external">&#160;</A><A NAME="1213">&#160;</A>
+<A NAME="1214">&#160;</A>
+<LI><TT>external</TT>
+<BR>
+will cause the image not to be inlined; 
+instead it will be accessible via a hyperlink. 
+
+<P>
+<A NAME="1216">&#160;</A><A NAME="1217">&#160;</A>
+<A NAME="1218">&#160;</A>
+<A NAME="1219">&#160;</A>
+<A NAME="thumbnail">&#160;</A><LI><TT>thumbnail=
+&lt;<I>scale-factor</I>&gt;</TT>
+<BR>
+will cause a small inlined image to be placed in the caption. 
+The size of the thumbnail depends on the <TT>
+&lt;<I>scale-factor</I>&gt;</TT>,
+as a factor of the `natural size' of the image, ignoring
+any <A HREF="node10.html#GGG_FIGURE_SCALE_FACTOR"
+ NAME="2722"><TT>$FIGURE_SCALE_FACTOR</TT></A> or <A HREF="node10.html#GGG_MATH_SCALE_FACTOR"
+ NAME="2730"><TT>$MATH_SCALE_FACTOR</TT></A>, etc.
+which may be applicable to the full-sized version of the image. 
+Use of the `<TT>thumbnail=</TT>' option implies 
+the `<TT>external</TT>' option. 
+
+<P>
+<A NAME="1228">&#160;</A>
+<A NAME="1229">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+<LI><TT>map=
+&lt;<I>server-side image-map URL</I>&gt;</TT>
+<BR>
+specifies that the image is to be made into an 
+<A NAME="tex2html26"
+ HREF="http://wintermute.ncsa.uiuc.edu:8080/map-tutorial/image-maps.html">active image-map</A>.
+(See <A HREF="Hnode10.html#ImageMaps">another section</A> for more information.)
+
+<P>
+<A NAME="1240">&#160;</A>
+<BR>
+
+<P>
+<LI><TT>usemap=
+&lt;<I>client-side image-map URL</I>&gt;</TT>
+same as previous item, but with the image-map processed by the client.
+(See <A HREF="Hnode10.html#ImageMaps">another section</A> for more information.)
+
+<P>
+<A NAME="1248">&#160;</A>
+<A NAME="1249">&#160;</A><A NAME="1250">&#160;</A>
+<BR>
+
+<P>
+<LI><TT>flip=
+&lt;<I>flip_option</I>&gt;</TT>
+<BR>
+specifies a change of orientation of the
+electronic image relative to the printed version.
+The <TT>
+&lt;<I>flip_option</I>&gt;</TT> is any single command recognised by
+the <A HREF="node10.html#GGGpnmflip"
+ NAME="2746"><TT>pnmflip</TT></A> <A NAME="tex2html27"
+ HREF="
+http://s.pi1.physik.uni-stuttgart.de/cgi-bin/man2html.ksh?Name=pnmflip#toc2">graphics utility</A>.
+The most useful of these include:
+<UL>
+<LI>`<TT>rotate90</TT>' or `<TT>r90</TT>'&nbsp;
+This will rotate the image clockwise by 90<SUP><TT>o</TT></SUP>.
+<LI>`<TT>rotate270</TT>' or `<TT>r270</TT>'&nbsp;
+This will rotate the image counterclockwise by 90<SUP><TT>o</TT></SUP>.
+<LI>`<TT>leftright</TT>'&nbsp; 
+This will flip the image around a vertical axis of rotation.
+<LI>`<TT>topbottom</TT>'&nbsp;
+This will flip the image around a horizontal axis of rotation.
+</UL>
+<A NAME="1266">&#160;</A><A NAME="1267">&#160;</A>
+<A NAME="2263">&#160;</A>
+<LI><TT>align=
+&lt;<I>alignment</I>&gt;</TT>
+<BR>
+specifies how the 
+<I>figure</I> will be aligned.  
+The choices are:  
+`<TT>top</TT>', `<TT>bottom</TT>', `<TT>middle</TT>', `<TT>left</TT>', 
+`<TT>right</TT>' and `<TT>center</TT>'.
+
+<P>
+The `<TT>middle</TT>' option specifies that the image is to be
+left-justified in the line, but centered vertically.  
+The `<TT>center</TT>' option specifies that it should also 
+be centered horizontally. 
+This option is valid only if the <TT>HTML</TT> version 
+is <TT>3.0</TT> or higher.
+The default alignment is `<TT>bottom</TT>'.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+<A NAME="1284">&#160;</A>
+<A NAME="1285">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+<LI><TT>transparent</TT>, <TT>no_transparent</TT>
+ or <TT>notransparent</TT>
+<BR>
+specify that a transparent background should (not) be used with this image,
+regardless of the normal behaviour for similar images.
+
+<P>
+<A NAME="1291">&#160;</A>
+<A NAME="1292">&#160;</A>
+<LI><TT>antialias</TT>, <TT>no_antialias</TT>
+ or <TT>noantialias</TT>
+<BR>
+specify that anti-aliasing should (not) be used with this image,
+regardless of the normal behaviour for similar images.
+
+<P>
+<A NAME="1296">&#160;</A>
+<LI><TT>extrascale=
+&lt;<I>scale-factor</I>&gt;</TT>
+<BR>
+is used mainly used with a <TT>
+&lt;<I>scale-factor</I>&gt;</TT> of 1.5 or 2, when it is 
+important to get printed versions of the completed <TT>HTML</TT> pages. 
+The image is created scaled by the amount specified, but it is embedded 
+in the <TT>HTML</TT> page with attributes to the <TT>&lt;IMG&gt;</TT> of
+<TT>HEIGHT=...</TT> and <TT>WIDTH=...</TT>, 
+indicating the <EM>unscaled</EM> size. 
+A browser is supposed to display the image at the requested size
+by scaling the actual image to fit, 
+effectively imposing its own anti-aliasing.
+Some examples of this effect are show 
+<A HREF="Enode9.html#printqual">here</A>.
+This effect can be applied to all images in a document by setting
+the <A HREF="node10.html#GGG_EXTRA_IMAGE_SCALE"
+ NAME="2762"><TT>$EXTRA_IMAGE_SCALE</TT></A> <A HREF="Mnode9.html#ximagescale">variable</A>.
+
+<P>
+<A NAME="1313">&#160;</A>
+<LI><TT>height=
+&lt;<I>dimen</I>&gt;</TT>&nbsp;&nbsp;&nbsp;&nbsp;
+ and&nbsp;&nbsp;&nbsp;&nbsp;<TT>width=
+&lt;<I>dimen</I>&gt;</TT>
+<BR>
+are used to specify exactly the size to be occupied by the image
+on the <TT>HTML</TT> page. The value(s) given this way overrides
+the natural size of the image and forces the browser to shrink or
+stretch the image to fit the specified size.
+The <TT>
+&lt;<I>dimen</I>&gt;</TT> can be given as either (i) a number (of points);
+or (ii) with any of the units of 
+<!-- MATH: $\mathrm{cm, mm, in, pt}$ -->
+cm, mm, in, pt;
+or (iii) fraction of <TT>&#92;hsize</TT> or <TT>&#92;textwidth</TT>,
+to become a percentage of the browser window's width,
+or of <TT>&#92;vsize</TT> or <TT>&#92;textheight</TT> for a percentage height.
+
+<P>
+
+<B>Note:</B> images whose sizes are modified in this way may not 
+be acceptable for 
+<A HREF="Enode8.html#recycling">image-recycling</A>. 
+Instead they may need to be generated afresh on each run of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> 
+through the same source document.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR></UL>
+
+<P>
+
+<P>
+<BR>
+In order to be effective the <TT>&#92;htmlimage</TT> command 
+and its options must be placed <EM>inside the environment</EM> 
+on which it will operate.
+Environments for alignment and changing the font size do not
+generate images of their contents. Any <TT>&#92;htmlimage</TT>
+command may affect the surrounding environment instead;
+e.g. within a 
+<I>table</I> or 
+<I>figure</I> environment,
+but does not apply to a 
+<I>minipage</I>.
+
+<P>
+When the <TT>&#92;htmlimage</TT> command occurs in an inappropriate
+place, the following message is printed among the warnings
+at the end of processing. 
+The actual command is shown, with its argument; 
+also the environment name and identifying number, if there is one.
+<BLOCKQUOTE><PRE>
+The command "\htmlimage" is only effective inside an environment 
+which may generate an image (e.g. "{figure}", "{equation}")
+ center92: \htmlimage{ ... }
+</PRE></BLOCKQUOTE>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html160"
+ HREF="Enode7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html156"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html150"
+ HREF="Enode5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html158"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html159"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html161"
+ HREF="Enode7.html">An Embedded Image Example</A>
+<B> Up:</B> <A NAME="tex2html157"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html151"
+ HREF="Enode5.html">Mathematics</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

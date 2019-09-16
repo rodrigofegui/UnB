@@ -1,0 +1,539 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The LATEX2HTML Translator</TITLE>
+<META NAME="description" CONTENT="The LATEX2HTML Translator">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html131"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif_gr.gif"> 
+<A NAME="tex2html129"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html130"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html132"
+ HREF="node1.html">Credits, 1993-1994</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<A NAME="699">&#160;</A>
+
+<A NAME="348">&#160;</A>
+<H1 ALIGN="CENTER">The L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2HTML Translator</H1>
+<P ALIGN="CENTER"><STRONG>Nikos Drakos
+<BR>
+Computer Based Learning Unit
+<BR>
+University of Leeds.</STRONG></P>
+<P ALIGN="CENTER"><STRONG>January 6, 1999</STRONG></P>
+<P ALIGN="LEFT"></P>
+
+<P>
+<BR CLEAR="ALL">
+<HR>
+<DIV ALIGN="CENTER">
+
+Documentation revised and updated for <SMALL>V97.1</SMALL> and <TT>HTML</TT>&nbsp;3.2;
+<BR>
+and further revisions for <SMALL>V98.1</SMALL> and <TT>HTML</TT>&nbsp;4.0 by:
+</DIV>
+
+<P>
+<BR>
+
+<DIV ALIGN="CENTER">
+<A NAME="704">&#160;</A> <A NAME="tex2html6"
+ HREF="http://www.mpce.mq.edu.au/~ross/">Ross Moore</A>
+<BR>
+Mathematics Department
+<BR>
+<A NAME="tex2html7"
+ HREF="http://www.mq.edu.au/">Macquarie University</A>, Sydney.
+</DIV>
+
+<P><P>
+<BR>
+
+<BR CLEAR="ALL">
+<HR>
+
+<P>
+This document accompanies L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT><A NAME="710">&#160;</A>, version 98.1.
+<A NAME="715">&#160;</A>
+
+<P>
+<B>This is a preliminary document for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> 98.1 with
+revisions in section <A HREF="Snode1.html#sec:sup">``Getting L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>''</A>,
+<A HREF="problems.html#sec:prb">``Known Problems''</A> and
+<A HREF="features.html#sec:fea">``Environments and Special Features''</A>.
+A fully updated manual is underway and will be released soon.</B>
+
+<P>
+The manuscript was updated to version 96.1, as indicated with change-bar icons, 
+by Herbert WSwan <A NAME="tex2html8"
+ HREF="mailto:lanhws@expl.aai.arco.com">&lt;lanhws@expl.aai.arco.com&gt;</A>
+and converted to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB> by <A NAME="722">&#160;</A> <A NAME="tex2html9"
+ HREF="http://wwwcn1.cern.ch/~goossens/">Michel Goossens</A>&nbsp;<A NAME="tex2html10"
+ HREF="mailto:goossens@cern.ch">&lt;goossens@cern.ch&gt;</A>.
+
+<P>
+Updates and extensive revisions to the manuscript for version <SMALL>V96.1</SMALL> <TT>rev-f</TT>,
+were made by <A NAME="728">&#160;</A> <A NAME="tex2html11"
+ HREF="http://www.mpce.mq.edu.au/~ross/">Ross Moore</A>&nbsp;<A NAME="tex2html12"
+ HREF="mailto:ross@mpce.mq.edu.au">&lt;ross@mpce.mq.edu.au&gt;</A>, 
+also incorporating suggestions from <A NAME="734">&#160;</A> <A NAME="tex2html13"
+ HREF="http://wwwcn1.cern.ch/~goossens/">Michel Goossens</A>. 
+
+<P>
+
+<P><P>
+<BR>
+Another major revision was required to adequately describe the new features 
+made possible with <TT>HTML</TT> 3.2,
+and recent developments in image-generation and macro-handling.
+This work was done by <A NAME="738">&#160;</A> <A NAME="tex2html14"
+ HREF="http://www.mpce.mq.edu.au/~ross/">Ross Moore</A>, as were most of the revisions for <SMALL>V98.1</SMALL>. 
+Appropriate change-bar icons indicate where newly added features are described.
+
+<P>
+<BR CLEAR="ALL">
+<HR>
+
+<P>
+<A NAME="379">&#160;</A>
+A <A NAME="tex2html15"
+ HREF="ftp://ftp.mpce.mq.edu.au/pub/maths/l2h/l2hmanual.ps.gz">PostScript version</A>
+is available; also with <A NAME="tex2html16"
+ HREF="ftp://ftp.mpce.mq.edu.au/pub/maths/l2h/manual.nofonts.ps.gz">no included fonts</A>,
+instead with references to PostSript fonts.
+
+<P>
+<BR CLEAR="ALL">
+<HR>
+
+<P>
+Browse the following links for information concerning:
+
+<P>
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>Contributions from others -- <A HREF="node1.html#credits">early development</A></B>
+<DD><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>Contributions from others -- <A HREF="node2.html#recent96">recent developments, 1996</A></B>
+<DD><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>Contributions from others -- <A HREF="node3.html#recent97">recent developments, 1997</A></B>
+<DD><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>Contributions from others -- <A HREF="node4.html#recent98">recent developments, 1998</A></B>
+<DD><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>Proposals for <A HREF="node4.html#future">future development</A></B>
+<DD><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><A HREF="node5.html#licence">Licensing</A></B>
+<DD></DL>
+
+<P>
+<BR CLEAR="ALL">
+<HR>
+
+<P>
+<B>Warning:</B> The contents of this document are likely to change.
+<BR>
+It is advisable not to use links to any pages other than the first page (this page).
+
+<P>
+<BR CLEAR="ALL">
+<HR>
+
+<A NAME="742">&#160;</A>
+<A NAME="747">&#160;</A>
+<A NAME="753">&#160;</A>
+
+<H3>Abstract:</H3>
+<DIV>
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> is a conversion tool that allows documents
+written in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  to become part of the World-Wide Web.
+In addition, it offers an easy migration path towards
+authoring complex hyper-media documents using
+familiar word-processing concepts, including the power of a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X-like
+macro language capable of producing correctly structured <TT>HTML</TT> tags.
+
+<P>
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> replicates the basic structure of a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  document 
+as a set of interconnected <TT>HTML</TT> files which can be explored using
+automatically generated navigation panels. 
+The cross-references, citations, footnotes, the table-of-contents and the lists
+of figures and tables, are also translated into hypertext links. Formatting
+information which has equivalent ``tags'' in <TT>HTML</TT> 
+(lists, quotes, paragraph-breaks, type-styles, etc.) 
+is also converted appropriately. 
+The remaining heavily formatted items
+such as mathematical equations, pictures etc. are converted to images
+which are placed automatically at the correct position in the
+final <TT>HTML</TT> document.
+
+<P>
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> extends L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  by supporting arbitrary hypertext links 
+and symbolic cross-references between evolving 
+remote documents. It also allows the specification
+of <EM>conditional text</EM> and the inclusion of raw <TT>HTML</TT> commands.
+These hyper-media extensions to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  are available as 
+new commands and environments from within a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  document.
+
+<P>
+This document presents the main features of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> and
+describes how to obtain and install it, and how to use it effectively.
+</DIV>
+<P>
+
+<P>
+
+
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html133"
+ HREF="node1.html">Credits, 1993-1994</A>
+<LI><A NAME="tex2html134"
+ HREF="node2.html">Later Developments, 1995-1996</A>
+<LI><A NAME="tex2html135"
+ HREF="node3.html">Developments: late 1996 to mid 1997</A>
+<UL>
+<LI><A NAME="tex2html136"
+ HREF="node3.html#SECTION00031000000000000000">1st L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2HTML Workshop
+<BR>
+Darmstadt, 
+15 February 1997</A>
+<LI><A NAME="tex2html137"
+ HREF="node3.html#SECTION00032000000000000000">TUG'97 -- Workshop on L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2HTML
+<BR>
+University of San Francisco, 28 July 1997</A>
+<LI><A NAME="tex2html138"
+ HREF="node3.html#SECTION00033000000000000000">T<SMALL>E</SMALL>XNortheast TUG Conference, T<SMALL>E</SMALL>X/L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X Now
+<BR>
+March 22-24, 1998, New York City</A>
+<LI><A NAME="tex2html139"
+ HREF="node3.html#SECTION00034000000000000000">Euro-T<SMALL>E</SMALL>X'98, 10th European T<SMALL>E</SMALL>X Conference
+<BR>
+St. Malo, France -- 29-31 March, 1998</A>
+</UL>
+<LI><A NAME="tex2html140"
+ HREF="node4.html">Developments: late 1997 to early 1998</A>
+<UL>
+<LI><A NAME="tex2html141"
+ HREF="node4.html#SECTION00041000000000000000">Proposals for Future Development:</A>
+<LI><A NAME="tex2html142"
+ HREF="node4.html#SECTION00042000000000000000">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>-NG</A>
+<LI><A NAME="tex2html143"
+ HREF="node4.html#SECTION00043000000000000000">Extended Capabilities in Web browsers</A>
+</UL>
+<LI><A NAME="tex2html144"
+ HREF="node5.html">General License Agreement and Lack of Warranty</A>
+<LI><A NAME="tex2html145"
+ HREF="node6.html">Contents</A>
+<LI><A NAME="tex2html146"
+ HREF="node7.html">List of Figures</A>
+<LI><A NAME="tex2html147"
+ HREF="node8.html">List of Tables</A>
+<LI><A NAME="tex2html148"
+ HREF="overview.html">No Title</A>
+<UL>
+<LI><A NAME="tex2html149"
+ HREF="Onode1.html">List of Features</A>
+<LI><A NAME="tex2html150"
+ HREF="Onode2.html">Exemplary Documents</A>
+</UL>
+<LI><A NAME="tex2html151"
+ HREF="support.html">No Title</A>
+<UL>
+<LI><A NAME="tex2html152"
+ HREF="Snode1.html">Getting L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT></A>
+<UL>
+<LI><A NAME="tex2html153"
+ HREF="Snode2.html">Requirements</A>
+<LI><A NAME="tex2html154"
+ HREF="Snode3.html">Installing L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT></A>
+</UL>
+<LI><A NAME="tex2html155"
+ HREF="Snode4.html">Getting Support and More Information</A>
+</UL>
+<LI><A NAME="tex2html156"
+ HREF="features.html">No Title</A>
+<UL>
+<LI><A NAME="tex2html157"
+ HREF="Enode1.html">Variation with HTML Versions</A>
+<LI><A NAME="tex2html158"
+ HREF="Enode2.html">Internationalisation</A>
+<UL>
+<LI><A NAME="tex2html159"
+ HREF="Enode3.html">Alternate Font Encodings</A>
+<LI><A NAME="tex2html160"
+ HREF="Enode4.html">Multi-lingual documents, using Images</A>
+</UL>
+<LI><A NAME="tex2html161"
+ HREF="Enode5.html">Mathematics</A>
+<UL>
+<LI><A NAME="tex2html162"
+ HREF="Enode5.html#SECTION000113010000000000000">Scale-factors for Mathematics.</A>
+<LI><A NAME="tex2html163"
+ HREF="Enode5.html#SECTION000113020000000000000">Anti-aliased Images.</A>
+<LI><A NAME="tex2html164"
+ HREF="Enode5.html#SECTION000113030000000000000">The <TT>&#92;mbox</TT> command.</A>
+<LI><A NAME="tex2html165"
+ HREF="Enode5.html#SECTION000113040000000000000">The <TT>&#92;parbox</TT> command.</A>
+<LI><A NAME="tex2html166"
+ HREF="Enode5.html#SECTION000113050000000000000">The 
+<I>heqn</I> package.</A>
+</UL>
+<LI><A NAME="tex2html167"
+ HREF="Enode6.html">Figures and Image Conversion</A>
+<UL>
+<LI><A NAME="tex2html168"
+ HREF="Enode6.html#SECTION000114010000000000000"><TT>&#92;htmlimage&#123;
+&lt;<I>options</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html169"
+ HREF="Enode7.html">An Embedded Image Example</A>
+<LI><A NAME="tex2html170"
+ HREF="Enode8.html">Image Sharing and Recycling</A>
+<LI><A NAME="tex2html171"
+ HREF="Enode9.html">Quality of Printed Images</A>
+</UL>
+<LI><A NAME="tex2html172"
+ HREF="Enode10.html">Figures, Tables and Arbitrary Images</A>
+<UL>
+<LI><A NAME="tex2html173"
+ HREF="Enode10.html#SECTION000115010000000000000"><I>table</I> and 
+<I>tabular</I> environments.</A>
+<LI><A NAME="tex2html174"
+ HREF="Enode10.html#SECTION000115020000000000000"><I>minipage</I> environments.</A>
+</UL>
+<LI><A NAME="tex2html175"
+ HREF="Enode11.html">Document Classes and Options</A>
+<LI><A NAME="tex2html176"
+ HREF="Enode12.html">Packages and Style-Files</A>
+<UL>
+<LI><A NAME="tex2html177"
+ HREF="Enode13.html">Fancy List-Markers</A>
+<LI><A NAME="tex2html178"
+ HREF="Enode14.html">Support for 
+<I>FoilTeX</I></A>
+<LI><A NAME="tex2html179"
+ HREF="Enode15.html">Indicating Differences between Document Versions</A>
+</UL>
+<LI><A NAME="tex2html180"
+ HREF="Enode16.html">Indexing</A>
+<UL>
+<LI><A NAME="tex2html181"
+ HREF="Enode17.html">Integrated Glossary and Index</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html182"
+ HREF="hypextra.html">No Title</A>
+<UL>
+<LI><A NAME="tex2html183"
+ HREF="Hnode1.html">Hyper-links in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</A>
+<UL>
+<LI><A NAME="tex2html184"
+ HREF="Hnode1.html#SECTION000121010000000000000"><TT>&#92;htmladdnormallink</TT></A>
+<LI><A NAME="tex2html185"
+ HREF="Hnode1.html#SECTION000121020000000000000"><TT>&#92;htmladdimg</TT></A>
+<LI><A NAME="tex2html186"
+ HREF="Hnode1.html#SECTION000121030000000000000"><TT>&#92;htmladdnormallinkfoot</TT></A>
+</UL>
+<LI><A NAME="tex2html187"
+ HREF="Hnode2.html">Including Arbitrary HTML Mark-up and Comments</A>
+<UL>
+<LI><A NAME="tex2html188"
+ HREF="Hnode2.html#SECTION000122010000000000000"><TT>&#92;begin&#123;rawhtml&#125;</TT></A>
+<LI><A NAME="tex2html189"
+ HREF="Hnode2.html#SECTION000122020000000000000"><TT>&#92;rawhtml</TT>...<TT>&#92;endrawhtml</TT></A>
+<LI><A NAME="tex2html190"
+ HREF="Hnode2.html#SECTION000122030000000000000"><TT>&#92;begin&#123;comment&#125;</TT></A>
+<LI><A NAME="tex2html191"
+ HREF="Hnode2.html#SECTION000122040000000000000"><TT>&#92;comment...&#92;endcomment</TT></A>
+</UL>
+<LI><A NAME="tex2html192"
+ HREF="Hnode3.html">Arbitrary Tags and Attributes</A>
+<LI><A NAME="tex2html193"
+ HREF="Hnode4.html">Conditional Text</A>
+<UL>
+<LI><A NAME="tex2html194"
+ HREF="Hnode4.html#SECTION000124010000000000000"><TT>&#92;begin&#123;latexonly&#125;</TT> and 
+<TT>&#92;begin&#123;htmlonly&#125;</TT></A>
+<LI><A NAME="tex2html195"
+ HREF="Hnode4.html#SECTION000124020000000000000"><TT>&#92;htmlonly...&#92;endhtmlonly</TT></A>
+<LI><A NAME="tex2html196"
+ HREF="Hnode4.html#SECTION000124030000000000000"><TT>&#92;latexonly...&#92;endlatexonly</TT></A>
+<LI><A NAME="tex2html197"
+ HREF="Hnode4.html#SECTION000124040000000000000"><TT>&#92;latex</TT>, <TT>&#92;html</TT> and <TT>&#92;latexhtml</TT></A>
+<LI><A NAME="tex2html198"
+ HREF="Hnode4.html#SECTION000124050000000000000"><TT>%begin&#123;latexonly&#125;</TT></A>
+<LI><A NAME="tex2html199"
+ HREF="Hnode4.html#SECTION000124060000000000000"><TT>&#92;begin&#123;imagesonly&#125;</TT></A>
+<LI><A NAME="tex2html200"
+ HREF="Hnode4.html#SECTION000124070000000000000"><TT>&#92;begin&#123;makeimage&#125;</TT></A>
+</UL>
+<LI><A NAME="tex2html201"
+ HREF="Hnode5.html">Symbolic References shown as Hyperized Text</A>
+<UL>
+<LI><A NAME="tex2html202"
+ HREF="Hnode5.html#SECTION000125010000000000000"><TT>&#92;hyperref</TT></A>
+<LI><A NAME="tex2html203"
+ HREF="Hnode5.html#SECTION000125020000000000000"><TT>&#92;htmlref</TT></A>
+</UL>
+<LI><A NAME="tex2html204"
+ HREF="Hnode6.html">Hypertext Links in Bibliographic References (Citations)</A>
+<UL>
+<LI><A NAME="tex2html205"
+ HREF="Hnode6.html#SECTION000126010000000000000"><TT>&#92;hypercite</TT></A>
+<LI><A NAME="tex2html206"
+ HREF="Hnode6.html#SECTION000126020000000000000"><TT>&#92;htmlcite</TT></A>
+</UL>
+<LI><A NAME="tex2html207"
+ HREF="Hnode7.html">Symbolic References between Living Documents</A>
+<UL>
+<LI><A NAME="tex2html208"
+ HREF="Hnode7.html#SECTION000127010000000000000"><TT>&#92;externallabels</TT></A>
+<LI><A NAME="tex2html209"
+ HREF="Hnode7.html#SECTION000127020000000000000"><TT>&#92;externalref</TT></A>
+<LI><A NAME="tex2html210"
+ HREF="Hnode7.html#SECTION000127030000000000000"><TT>&#92;externalcite</TT></A>
+<LI><A NAME="tex2html211"
+ HREF="Hnode8.html">Cross-Referencing Example</A>
+</UL>
+<LI><A NAME="tex2html212"
+ HREF="Hnode9.html">Miscellaneous commands for <TT>HTML</TT> effects</A>
+<UL>
+<LI><A NAME="tex2html213"
+ HREF="Hnode9.html#SECTION000128010000000000000"><TT>&#92;htmlrule </TT> and 
+ <TT>&#92;htmlrule*</TT></A>
+<LI><A NAME="tex2html214"
+ HREF="Hnode9.html#SECTION000128020000000000000"><TT>&#92;strikeout&#123;
+&lt;<I>text</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html215"
+ HREF="Hnode9.html#SECTION000128030000000000000"><TT>&#92;tableofchildlinks </TT></A>
+<LI><A NAME="tex2html216"
+ HREF="Hnode9.html#SECTION000128040000000000000"><TT>&#92;htmlinfo </TT></A>
+<LI><A NAME="tex2html217"
+ HREF="Hnode9.html#SECTION000128050000000000000"><TT>&#92;bodytext&#123;
+&lt;<I>options</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html218"
+ HREF="Hnode9.html#SECTION000128060000000000000"><TT>&#92;htmlbody&#123;
+&lt;<I>options</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html219"
+ HREF="Hnode9.html#SECTION000128070000000000000"><TT>&#92;htmlbase&#123;
+&lt;<I>URL</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html220"
+ HREF="Hnode9.html#SECTION000128080000000000000"><TT>&#92;HTMLset&#123;
+&lt;<I>which</I>&gt;&#125;&#123;</TT>
+<TT>
+&lt;<I>value</I>&gt;&#125;</TT> and 
+<TT>&#92;HTMLsetenv&#123;
+&lt;<I>which</I>&gt;&#125;&#123;</TT>
+<TT>
+&lt;<I>value</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html221"
+ HREF="Hnode9.html#SECTION000128090000000000000"><TT>&#92;latextohtml</TT></A>
+</UL>
+<LI><A NAME="tex2html222"
+ HREF="Hnode10.html">Active Image Maps</A>
+<LI><A NAME="tex2html223"
+ HREF="Hnode11.html">Document Segmentation<SUP>44</SUP></A>
+<UL>
+<LI><A NAME="tex2html224"
+ HREF="Hnode12.html">A Segmentation Example</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html225"
+ HREF="userman.html">No Title</A>
+<UL>
+<LI><A NAME="tex2html226"
+ HREF="Mnode1.html">Developing Documents using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT></A>
+<LI><A NAME="tex2html227"
+ HREF="Mnode2.html">Command-Line Options</A>
+<UL>
+<LI><A NAME="tex2html228"
+ HREF="Mnode3.html">Options controlling Titles, File-Names and Sectioning</A>
+<LI><A NAME="tex2html229"
+ HREF="Mnode4.html">Options controlling Extensions and Special Features</A>
+<LI><A NAME="tex2html230"
+ HREF="Mnode5.html">Switches controlling Image Generation</A>
+<LI><A NAME="tex2html231"
+ HREF="Mnode6.html">Switches controlling Navigation Panels</A>
+<LI><A NAME="tex2html232"
+ HREF="Mnode7.html">Switches for Linking to other documents</A>
+<LI><A NAME="tex2html233"
+ HREF="Mnode8.html">Switches for Help and Tracing</A>
+<LI><A NAME="tex2html234"
+ HREF="Mnode9.html">Other Configuration Variables, without switches</A>
+</UL>
+<LI><A NAME="tex2html235"
+ HREF="Mnode10.html">Extending the Translator</A>
+<UL>
+<LI><A NAME="tex2html236"
+ HREF="Mnode11.html">Asking the Translator to Ignore Commands</A>
+<LI><A NAME="tex2html237"
+ HREF="Mnode12.html">Asking the Translator to Pass Commands to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</A>
+<LI><A NAME="tex2html238"
+ HREF="Mnode13.html">Handling ``order-sensitive'' Commands</A>
+</UL>
+<LI><A NAME="tex2html239"
+ HREF="Mnode14.html">Customising the Navigation Panels</A>
+</UL>
+<LI><A NAME="tex2html240"
+ HREF="problems.html">No Title</A>
+<UL>
+<LI><A NAME="tex2html241"
+ HREF="Pnode1.html">Troubleshooting</A>
+</UL>
+<LI><A NAME="tex2html242"
+ HREF="node9.html">Bibliography</A>
+<LI><A NAME="tex2html243"
+ HREF="node10.html">Glossary of variables and file-names</A>
+<LI><A NAME="tex2html244"
+ HREF="node11.html">Index</A>
+<LI><A NAME="tex2html245"
+ HREF="node12.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html131"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif_gr.gif"> 
+<A NAME="tex2html129"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html130"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html132"
+ HREF="node1.html">Credits, 1993-1994</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Figures, Tables and Arbitrary Images</TITLE>
+<META NAME="description" CONTENT="Figures, Tables and Arbitrary Images">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="next" HREF="Enode11.html">
+<LINK REL="previous" HREF="Enode6.html">
+<LINK REL="up" HREF="features.html">
+<LINK REL="next" HREF="Enode11.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html212"
+ HREF="Enode11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html208"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html202"
+ HREF="Enode9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html210"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html211"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html213"
+ HREF="Enode11.html">Document Classes and Options</A>
+<B> Up:</B> <A NAME="tex2html209"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html203"
+ HREF="Enode9.html">Quality of Printed Images</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000115000000000000000">&#160;</A><A NAME="sec:figs">&#160;</A><A NAME="1506">&#160;</A>
+<BR>
+Figures, Tables and Arbitrary Images
+</H2>
+<A NAME="1507">&#160;</A><A NAME="1508">&#160;</A>
+<BR>
+This section is to explain how the translator handles figures, tables
+and other environments. 
+Compare the paper with the online version.
+
+<P>
+When the common version of <TT>HTML</TT> was only 2.0, then almost all
+complicated environments were represented using images. However with
+<TT>HTML</TT> 3.2, there is scope for sensible layout of tables,
+and proper facilities for associating a caption with a figure or table.
+To take advantage of this, the 
+<I>figure</I> environment now has its
+contents placed within <TT>&lt;TABLE&gt;</TT> tags; any caption is placed
+as its <TT>&lt;CAPTION&gt;</TT>.
+
+<P>
+For consistency with former practice, the contents of the 
+<I>figure</I>
+environment are usually represented by generating an image. 
+This is frequently exactly what is required; but not always.
+<A HREF="Hnode4.html#makeimage">In another section</A> it is 
+described how to use the 
+<I>makeimage</I> environment,
+defined in the <A HREF="node10.html#GGGhtml.sty"
+ NAME="2821"><TT>html.sty</TT></A> package, to determine just which parts (if any)
+of a 
+<I>figure</I> environment's contents should be made into images,
+the remainder being treated as ordinary text, etc.
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="2291">&#160;</A>
+<A NAME="2292">&#160;</A>
+<BR>
+
+<H4><A NAME="SECTION000115010000000000000">
+
+<I>table</I> and 
+<I>tabular</I> environments.</A>
+</H4>
+
+<P>
+Similarly the 
+<I>makeimage</I> environment can be used within
+a 
+<I>table</I>, though usually this is used with a 
+<I>tabular</I>
+or other table-making environment, such as 
+<I>tabbing</I> or
+
+<I>longtable</I> or 
+<I>supertabular</I>.
+Here is a simple example, from the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X <A NAME="lamp:latex"
+ HREF="node9">`blue book'</A>.
+<BR>
+<DIV ALIGN="CENTER"><A NAME="2431">&#160;</A>
+<TABLE>
+<CAPTION><STRONG>Table 4:</STRONG>
+A sample table taken from [<A NAME="lamp:latex"
+ HREF="node9">1</A>]
+<A NAME="2294">&#160;</A>
+<A NAME="2295">&#160;</A></CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<TR><TD ALIGN="LEFT">gnats</TD>
+<TD ALIGN="LEFT">gram</TD>
+<TD ALIGN="RIGHT">$13.65</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">each</TD>
+<TD ALIGN="RIGHT">.01</TD>
+</TR>
+<TR><TD ALIGN="LEFT">gnu</TD>
+<TD ALIGN="LEFT">stuffed</TD>
+<TD ALIGN="RIGHT">92.50</TD>
+</TR>
+<TR><TD ALIGN="LEFT">emur</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="RIGHT">33.33</TD>
+</TR>
+<TR><TD ALIGN="LEFT">armadillo</TD>
+<TD ALIGN="LEFT">frozen</TD>
+<TD ALIGN="RIGHT">8.99</TD>
+</TR>
+</TABLE>
+
+
+<A NAME="tab">&#160;</A></DIV></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+When using <TT> -html_version 2.0</TT> to get code compatible
+with the <TT>HTML</TT> 2.0 standard, an image is made of the
+table, as follows:
+<BR>
+<DIV ALIGN="CENTER"><A NAME="2296">&#160;</A>
+<TABLE>
+<CAPTION><STRONG>Table 5:</STRONG>
+Alternate view of the table from [<A NAME="lamp:latex"
+ HREF="node9">1</A>]</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="221" HEIGHT="105" ALIGN="BOTTOM" BORDER="0"
+ SRC="Eimg27.gif"
+ ALT="\begin{tabular}{\vert\vert l\vert lr\vert\vert} \hline
+gnats & gram & \$13.65 \\...
+...{3-3}
+emur & & 33.33 \\ \hline
+armadillo & frozen & 8.99 \\ \hline
+\end{tabular}">
+<A NAME="tab:alt">&#160;</A></DIV></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="2297">&#160;</A>
+<A NAME="2298">&#160;</A>
+<BR>
+
+<H4><A NAME="SECTION000115020000000000000">
+
+<I>minipage</I> environments.</A>
+</H4>
+
+<P>
+The special feature of 
+<I>minipage</I> environments is in the
+way <TT>&#92;footnote</TT> and <TT>&#92;footnotemark</TT> commands are handled. 
+These are numbered separately from the rest of the footnotes
+throughout the document, and the notes themselves are collected together 
+to be displayed at the end of the 
+<I>minipage</I>'s contents.
+
+<P>
+
+<P>
+<BR>
+
+<BR><HR>
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TH ALIGN="LEFT"><B>Variable</B></TH>
+<TH ALIGN="LEFT"><B>Meaning</B></TH>
+</TR>
+<TR><TD ALIGN="LEFT">none</TD>
+<TD ALIGN="LEFT">none</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Jacobi</TD>
+<TD ALIGN="LEFT"><I>m</I>-step Jacobi iteration<A NAME="tex2html38"
+HREF="#footmp1581"><SUP>1</SUP></A></TD>
+</TR>
+<TR><TD ALIGN="LEFT">SSOR</TD>
+<TD ALIGN="LEFT"><I>m</I>-step SSOR iteration<A NAME="tex2html39"
+HREF="#mp1581"><SUP>1</SUP></A></TD>
+</TR>
+<TR><TD ALIGN="LEFT">IC</TD>
+<TD ALIGN="LEFT">Incomplete Cholesky factorization<A NAME="tex2html40"
+HREF="#footmp1582"><SUP>2</SUP></A></TD>
+</TR>
+<TR><TD ALIGN="LEFT">ILU</TD>
+<TD ALIGN="LEFT">Incomplete LU factorization<A NAME="tex2html41"
+HREF="#mp1582"><SUP>2</SUP></A></TD>
+</TR>
+</TABLE>
+<BR><HR WIDTH="200" ALIGN="LEFT"><DL>
+<DD><A NAME="mp1581"><SUP>1</SUP></A> one footnote
+
+<DD><A NAME="mp1582"><SUP>2</SUP></A> another footnote
+</DL><HR>
+<BR CLEAR="all">
+
+<P>
+
+<P><P>
+<BR>
+The code used for this example was as follows<A NAME="tex2html43"
+ HREF="#foot2300"><SUP>36</SUP></A>
+<PRE>
+\begin{minipage}{.9\textwidth}
+\renewcommand{\thempfootnote}{\alph{mpfootnote}}
+\begin{tabular}{|l|l|} \hline
+\textbf{Variable} &amp; \textbf{Meaning} \\ \hline
+none      &amp; none                   \\
+Jacobi    &amp; $m$-step Jacobi iteration\footnote[1]{one footnote} \\
+SSOR      &amp; $m$-step SSOR iteration\footnotemark[1] \\
+IC        &amp; Incomplete Cholesky factorization\footnote[2]{another footnote} \\
+ILU       &amp; Incomplete LU factorization\footnotemark[2] \\ \hline
+\end{tabular}
+\end{minipage}
+</PRE>
+
+<P>
+<BR><HR><H4>Footnotes</H4>
+<DL>
+<DT><A NAME="foot2300">... follows</A><A NAME="foot2300"
+ HREF="Enode10.html#tex2html43"><SUP>36</SUP></A>
+<DD>
+Thanks to John Turner <A NAME="tex2html42"
+ HREF="mailto:turner@lanl.gov">&lt;turner@lanl.gov&gt;</A>
+for this example, 
+which was used in developing
+code to handle 
+<I>minipage</I> environments correctly.
+
+</DL>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html214"
+ HREF="Enode10.html#SECTION000115010000000000000"><I>table</I> and 
+<I>tabular</I> environments.</A>
+<LI><A NAME="tex2html215"
+ HREF="Enode10.html#SECTION000115020000000000000"><I>minipage</I> environments.</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html212"
+ HREF="Enode11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html208"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html202"
+ HREF="Enode9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html210"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html211"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html213"
+ HREF="Enode11.html">Document Classes and Options</A>
+<B> Up:</B> <A NAME="tex2html209"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html203"
+ HREF="Enode9.html">Quality of Printed Images</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

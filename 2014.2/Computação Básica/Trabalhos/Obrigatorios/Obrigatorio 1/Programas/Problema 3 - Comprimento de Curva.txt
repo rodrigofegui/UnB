@@ -1,0 +1,82 @@
+algoritmo "Problema3 - Comprimento de Curva"
+
+// Responsável / Turma: Rodrigo Guimaães / E
+// Escreva um programa que calcula o comprimento C de uma curva definida por uma função polinomial
+
+var	
+	real: a5, a4, a3, a2, a1, a0, x0, x1, E;
+	real: x0h, funx0, funx, h, funx0h, comp, comp2, compf;
+	inteiro: n = 0, calc = 1, cont, t;
+	
+inicio
+	escreva("Ola! Vamos determinar o comprimento de uma curva de uma funcao de,")
+	escreva("possivel, quinto grau.")
+	escreva("Para isso, digite o coeficiente 'a5': ")
+	leia(a5)
+	escreva("Agora, digite o coeficiente 'a4': ")
+	leia(a4)
+	escreva("Agora, digite o coeficiente 'a3': ")
+	leia(a3)
+	escreva("Agora, digite o coeficiente 'a2': ")
+	leia(a2)
+	escreva("Agora, digite o coeficiente 'a1': ")
+	leia(a1)
+	escreva("Agora, digite o coeficiente 'a0': ")
+	leia(a0)
+	escreva("Agora, digite o ponto inicial, x0, da curva a ser considerada: ")
+	leia(x0)
+	escreva("Agora, digite o ponto final, x1, da curva a ser considerada: ")
+	leia(x1)
+	escreva("Agora, eh preciso determinar a precisao desejada: ")
+	leia(E)
+
+	funx0 <- ((a5 * (pow(x0,5.0))) + (a4 * (pow(x0,4.0))) + (a3 * (pow(x0,3.0))) + (a2 * (pow(x0,2.0))) + (a1 * (x0)) + (a0))
+	funx <- funx0
+	
+	enquanto (calc == 1) faca
+		funx <- funx0
+		h <- (ABS(x1 - x0))/(n + 1)
+		x0h <- x0 + h
+		cont <- 0
+		comp <- 0
+		comp2 <- 0
+		
+		enquanto (cont < (n + 1)) face
+			funx0h <- ((a5 * (pow(x0h,5.0))) + (a4 * (pow(x0h,4.0))) + (a3 * (pow(x0h,3.0))) + (a2 * (pow(x0h,2.0))) + (a1 * (x0h)) + (a0))
+			comp <- comp + (sqrt(pow((ABS(funx0h - funx)),2) + pow(h,2)))
+			funx <- funx0h
+			x0h <- x0h + h
+			//escreva("n: ", n,"; x0: ",x0h," fx0: ",funx," fx0h: ", funx0h," comp: ", comp," .")
+			cont <- cont + 1
+		
+		fimenquanto
+		
+		cont <- 0
+		funx <- funx0
+		h <- (fabs(x1 - x0))/(n + 2)
+		x0h <- x0 + h
+		
+		enquanto (cont < (n + 2)) faca
+			funx0h <- ((a5 * (pow(x0h,5.0))) + (a4 * (pow(x0h,4.0))) + (a3 * (pow(x0h,3.0))) + (a2 * (pow(x0h,2.0))) + (a1 * (x0h)) + (a0))
+			comp2 <- comp2 + (sqrt(pow((ABS(funx0h - funx)),2) + pow(h,2)))
+			funx <- funx0h
+			x0h <- x0h +  h
+			//escreva("n: ", n,"; x0: ",x0h," fx0: ",funx," fx0h: ", funx0h," comp: ", comp2," .")
+			cont <- cont + 1
+		
+		fimenquanto
+				
+		se (ABS(comp2 - comp) < E) entao
+			calc <- 0	
+		senao
+			n <- n +1
+		fimse
+
+	fimenquanto
+	
+	compf <- (comp + comp2)/2.0
+	
+	escreva("Satisfazendo a precisao, foram realizadas ", n, " interacoes")
+	escreva("chegando ao comprimento: ", compf," .")
+
+fimalgoritmo

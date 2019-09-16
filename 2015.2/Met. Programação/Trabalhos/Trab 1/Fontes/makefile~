@@ -1,0 +1,22 @@
+CC = gcc
+IDIR = ../Biblioteca/
+DEP_EN = Principal_enc.o Pilha_enc.o
+DEP_VT = Principal_vet.o Pilha_vet.o
+ENCAD = trab1_enc.out
+VETOR = trab1_vet.out
+
+CFLAGS = -I$(IDIR)
+
+trab1: $(DEP_VT) $(DEP_EN)
+	$(CC) -o $(VETOR) $(DEP_VT) 
+	$(CC) -o $(ENCAD) $(DEP_EN) $(CFLAGS)
+	rm -rf ../Objetos 	
+	rm -rf ../Executaveis
+	mkdir ../Objetos
+	mv *.o ../Objetos
+	mkdir ../Executaveis
+	mv *.out ../Executaveis
+	../Executaveis/$(VETOR)
+	getchar ()
+	../Executaveis/$(ENCAD)
+	

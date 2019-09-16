@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Switches for Help and Tracing</TITLE>
+<META NAME="description" CONTENT="Switches for Help and Tracing">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="next" HREF="Mnode9.html">
+<LINK REL="previous" HREF="Mnode7.html">
+<LINK REL="up" HREF="Mnode2.html">
+<LINK REL="next" HREF="Mnode9.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html134"
+ HREF="Mnode9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html130"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html124"
+ HREF="Mnode7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html132"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html133"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html135"
+ HREF="Mnode9.html">Other Configuration Variables, without</A>
+<B> Up:</B> <A NAME="tex2html131"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html125"
+ HREF="Mnode7.html">Switches for Linking to</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000132600000000000000">
+Switches for Help and Tracing</A>
+</H3>
+The first two of the following switches are self-explanatory.
+When problems arise in processing a document, 
+the switches  <TT>-debug</TT>  and  <TT>-verbosity</TT>  will each
+cause L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> to generate more output to the screen.
+These extra messages should help to locate the cause of the problem.
+
+<P>
+<DL><DT>
+<A NAME="1538">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-tmp <TT>
+&lt;<I>path</I>&gt;</TT><A NAME="cs_tmpdir">&#160;</A></B>
+<DD>Define a temporary directory to use for image generation.
+If <TT>
+&lt;<I>path</I>&gt;</TT> is 0, the standard temporary directory <TT>/tmp</TT>
+is used.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+<A NAME="1546">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-h(elp)<A NAME="cs_optionlist">&#160;</A></B>
+<DD>Print out the list of all command-line options.
+
+<P>
+<A NAME="1548">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-v<A NAME="cs_showversion">&#160;</A></B>
+<DD>Print the current version of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+<A NAME="1553">&#160;</A><A NAME="1554">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1f</SUP>
+<BR>
+
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-debug<A NAME="cs_debugmode">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_DEBUG"
+ NAME="3673"><TT>$DEBUG</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Run in debug-mode, displaying messages and/or diagnostic information 
+about files read, and utilities called by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+Shows any messages produced by these calls.
+
+<P>
+<A NAME="2135">&#160;</A>
+
+<P>
+More extensive diagnostics, from the <A HREF="node10.html#GGGPerl"><I>Perl</I></A> debugger, 
+can be obtained by appending the string `<TT>-w-</TT>' 
+to the 1st line of the <A HREF="node10.html#GGGlatex2html"
+ NAME="3687"><TT>latex2html</TT></A> (and other) <A HREF="node10.html#GGGPerl"><I>Perl</I></A> script(s).
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1f</SUP>
+<BR>
+
+<P>
+<A NAME="1567">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-verbosity <TT>
+&lt;<I>num</I>&gt;</TT><A NAME="cs_verbositylevel">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_VERBOSITY"
+ NAME="3705"><TT>$VERBOSITY</TT></A><TT> = <TT>
+&lt;<I>num</I>&gt;</TT>;</TT></FONT>
+<BR>
+Display messages revealing certain aspects of the processing
+performed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> on the provided input file(s).
+The <TT>
+&lt;<I>num</I>&gt;</TT> parameter can be an integer in the range 0 to 8.
+Each higher value adds to the messages produced.
+
+<P>
+<DL COMPACT>
+<DT>0. 
+<DD>No special tracing; as for versions of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> prior to <SMALL>V97.1</SMALL>.
+<P>
+<DT>1. 
+<DD>(This is the default.)
+Show section-headings and the corresponding <TT>HTML</TT> file names,
+and indicators that major stages in the processing have been completed.
+
+<P>
+<DT>2. 
+<DD>Print environment names and identifier numbers, and new theorem-types.
+Show warnings as they occur, and indicators for more stages of processing.
+Print names of files for storing auxiliary data arrays.
+
+<P>
+<DT>3. 
+<DD>Print command names as they are encountered and processed; also
+any unknown commands encountered while pre-processing.
+Show names of new commands, environments, theorems, counters and
+counter-dependencies, for each document partition.
+
+<P>
+<DT>4. 
+<DD>Indicate command-substitution the pre-process of math-environments.
+Print the contents of unknown environments for processing in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X,
+both before and after reverting to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source.
+Show all operations affecting the values of counters.
+Also show links, labels and sectioning keys, at the stages of processing.
+
+<P>
+<DT>5. 
+<DD>Detail the processing in the document preamble.
+Show substitutions of new environments.
+Show the contents of all recognised environments, both before
+and after processing. Show the cached/encoded information for the image keys,
+allowing two images to be tested for equality.
+
+<P>
+<DT>6. 
+<DD>Show replacements of new commands, accents and wrapped commands.
+
+<P>
+<DT>7. 
+<DD>Trace the processing of commands in math mode; both before and after.
+
+<P>
+<DT>8. 
+<DD>Trace the processing of all commands, both before and after.
+
+<P>
+</DL>
+The command-line option sets an initial value only.
+During processing the value of <A HREF="node10.html#GGG_VERBOSITY"
+ NAME="3717"><TT>$VERBOSITY</TT></A> can be set
+dynamically using the <code>\htmltracing{...}</code> command, 
+whose argument is the desired value, 
+or by using the more general <TT>&#92;HTMLset</TT> command
+as follows: <code>\HTMLset{VERBOSITY}{</code><TT>
+&lt;<I>num</I>&gt;&#125;</TT>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR></DL>
+<A NAME="1588">&#160;</A>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html134"
+ HREF="Mnode9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html130"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html124"
+ HREF="Mnode7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html132"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html133"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html135"
+ HREF="Mnode9.html">Other Configuration Variables, without</A>
+<B> Up:</B> <A NAME="tex2html131"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html125"
+ HREF="Mnode7.html">Switches for Linking to</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

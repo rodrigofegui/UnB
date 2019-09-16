@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="overview">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="overview.css">
+<LINK REL="next" HREF="Onode1.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html92"
+ HREF="Onode1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html88"
+ HREF="manual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html82"
+ HREF="manual.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html90"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html91"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html93"
+ HREF="Onode1.html">List of Features</A>
+<B> Up:</B> <A NAME="tex2html89"
+ HREF="manual.html">LaTeX2HTML</A>
+<B> Previous:</B> <A NAME="tex2html83"
+ HREF="manual.html">LaTeX2HTML</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<P>
+<H2><A NAME="SECTION00090000000000000000">
+Overview</A>
+</H2><A NAME="sec:ovw">&#160;</A><A NAME="645">&#160;</A>
+
+This manual describes the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> translator which is
+used to create Web pages from document source written for
+the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typesetting system, or simply containing L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands.
+
+<P>
+<A HREF="overview.html#quest0"><IMG
+  ALIGN="BOTTOM" BORDER="0" BORDER="0"
+ SRC="../dn.gif"
+ ALT="../dn.gif"></A>
+<P>
+<BR>
+To use L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> to translate a file&nbsp;<TT>
+&lt;<I>file</I>&gt;.tex</TT>
+containing L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands, simply type:
+<BLOCKQUOTE>
+<TT>latex2html</TT> <TT>
+&lt;<I>file</I>&gt;.tex</TT> 
+</BLOCKQUOTE>
+
+This will create a new directory called <TT>
+&lt;<I>file</I>&gt;</TT> which will contain 
+the generated <TT>HTML</TT> files, some log files and possibly some images.
+
+<P>
+
+<P>
+<BR>
+<A HREF="overview.html#quest1"><IMG
+  ALIGN="BOTTOM" BORDER="0" BORDER="0"
+ SRC="../dn.gif"
+ ALT="../dn.gif"></A><A NAME="quest0">&#160;</A><P></P>
+Basically the translator reads the source document and creates a linked
+set of <TT>HTML</TT> pages, displaying the information it contains.
+The L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands and environments that are found are interpreted
+either as ``markup'' instructions, or as macros expanding into more text 
+or markup commands. 
+Where such markup corresponds to the intended use for markup tags
+in the <TT>HTML</TT> language, a direct translation is made.
+If there is no natural way to present the information using simple text
+embellished with <TT>HTML</TT> markup tags, then an image is generated, 
+using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X itself to interpret the portion of code.
+
+<P>
+Of course this is a drastically over-simplified description of what
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> actually does. Many questions spring readily to mind.
+The answers to these and the options available to handle
+particular situations are discussed elsewhere in this manual.
+
+<P>
+<A HREF="overview.html#quest2"><IMG
+  ALIGN="BOTTOM" BORDER="0" BORDER="0"
+ SRC="../dn.gif"
+ ALT="../dn.gif"></A><A NAME="quest1">&#160;</A><UL>
+<LI>
+<FONT SIZE="+1">What does ``natural way to present the information'' really mean? </FONT>
+</UL>
+
+Text and paragraphing clearly should appear as such, whether printed
+or on-screen. Different font sizes and styles such as ``bold-face''
+or ``italic'' are generally rendered accordingly.
+However, whereas L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X has access to appropriate fonts for specialised
+purposes such as mathematical symbols, these cannot be guaranteed to be
+available with all Web-browsers. So for information requiring such things,
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> will generally resort to making an image,
+using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X itself to typeset the material required for that image. 
+
+<P>
+<A HREF="Onode1.html#features:ovw">The next page</A> contains a brief overview
+of how L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X's standard environments are handled within L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+It also mentions some of the extra features that are available. <BR>
+In general L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> attempts to use textual constructions to represent
+the required information. Generation of an image is done only when there is
+no adequate textual construction with the required version of <TT>HTML</TT>,
+or when specifically requested to do so.
+Various extensions, to cope with the different <TT>HTML</TT> versions and
+extra features, are discussed <A HREF="features.html#sec:fea">elsewhere</A>.
+That describes what to expect on the <TT>HTML</TT> pages, with little
+or no changes required to the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source.
+
+<P>
+Just as L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X has various packages which can be used to present specific
+types of information in appropriate ways, 
+so is L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> capable of handling the commands from many of these packages. 
+See <A HREF="Enode12.html#styles">this table</A> for a listing of those 
+packages which currently have special support.
+
+<P>
+<A HREF="overview.html#quest3"><IMG
+  ALIGN="BOTTOM" BORDER="0" BORDER="0"
+ SRC="../dn.gif"
+ ALT="../dn.gif"></A><A NAME="quest2">&#160;</A><UL>
+<LI>
+<FONT SIZE="+1">Some features of <TT>HTML</TT> have no direct counterpart in
+a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset document.
+<BR>
+Can such features be used with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>? </FONT>
+</UL>
+
+Any effect currently available with any version of the <TT>HTML</TT> 
+standard can be specified for a document processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+New L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands are defined in the <A HREF="node10.html#GGGhtml.sty"
+ NAME="1215"><TT>html.sty</TT></A> package;
+the features that these commands allow are the subject of
+<A HREF="hypextra.html#sec:hyp">a whole section of</A> this manual.
+Some of the new commands provide improved strategies for effects 
+already existing in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X; e.g. 
+<A HREF="Hnode5.html#hyperref">cross-references</A> and <A HREF="Hnode6.html#hypercite">citations</A>.
+To use these effectively requires only small changes to the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source.
+
+<P>
+Other commands define new environments which are completely
+ignored when processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X. 
+Indeed the <A HREF="Hnode3.html#HTMLtag">full scope</A> of <TT>HTML</TT> 3.2 is available, 
+using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X-like macros to help structure the source, 
+reduce the tedium of repetitious use of tags, and ensure that
+all appropriate tags are correctly closed.
+
+<P>
+<A HREF="overview.html#quest4"><IMG
+  ALIGN="BOTTOM" BORDER="0" BORDER="0"
+ SRC="../dn.gif"
+ ALT="../dn.gif"></A><A NAME="quest3">&#160;</A><UL>
+<LI>
+<FONT SIZE="+1">What determines the amount of information that goes onto
+a single <TT>HTML</TT> page?
+<BR>
+How are different pages linked? </FONT>
+</UL>
+
+The <TT>HTML</TT> pages can contain whole chapters, sections,
+(sub)subsections or (sub)paragraphs. This is fully customisable
+using the command-line options discussed in detail in
+<A HREF="Mnode2.html#options">a separate section</A> of this manual.
+
+<P>
+<A HREF="overview.html#quest5"><IMG
+  ALIGN="BOTTOM" BORDER="0" BORDER="0"
+ SRC="../dn.gif"
+ ALT="../dn.gif"></A><A NAME="quest4">&#160;</A><UL>
+<LI>
+<FONT SIZE="+1">Does the original document have to be a valid L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X document,
+typesetting without errors? If not, does it help if it is? </FONT>
+</UL>
+
+In fact any document can be fed to the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> processor,
+but it is designed specifically to recognise and sensibly translate
+the intentions expressed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X markup commands. Although sensible
+results can be obtained even when the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source is not valid,
+the most reliable translations are obtained when it is. 
+Relevant issues are discussed 
+<A HREF="Mnode1.html#devel">in a later section</A>.
+
+<P>
+<A HREF="overview.html#quest6"><IMG
+  ALIGN="BOTTOM" BORDER="0" BORDER="0"
+ SRC="../dn.gif"
+ ALT="../dn.gif"></A><A NAME="quest5">&#160;</A><UL>
+<LI>
+<FONT SIZE="+1">When developing a document which contains special <TT>HTML</TT>
+features, is it best to regularly test it in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X or with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>? </FONT>
+</UL>
+
+The answer to such a question changes as the developer gains
+more experience with the available tools.
+Some aspects to be considered are discussed 
+<A HREF="Mnode1.html#devel">in a later section</A> of this manual.
+
+<P>
+
+<P>
+<BR>
+<BR CLEAR="ALL">
+<HR><A HREF="#overview"><IMG
+  ALIGN="BOTTOM" BORDER="0" BORDER="0"
+ SRC="../up.gif"
+ ALT="../up.gif"></A><A NAME="quest6">&#160;</A><P>
+<BR>
+Information relevant to obtaining the latest version of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, 
+installation within the local environment, and where to look for
+help when things do not go as expected, can be found in 
+<A HREF="Snode1.html#sec:sup">the support section</A>.
+
+<P>
+
+<P><P>
+<BR>
+What follows next is a brief summary of the features supported
+within L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>....
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html94"
+ HREF="Onode1.html">List of Features</A>
+<LI><A NAME="tex2html95"
+ HREF="Onode2.html">Exemplary Documents</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html92"
+ HREF="Onode1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html88"
+ HREF="manual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html82"
+ HREF="manual.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html90"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html91"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html93"
+ HREF="Onode1.html">List of Features</A>
+<B> Up:</B> <A NAME="tex2html89"
+ HREF="manual.html">LaTeX2HTML</A>
+<B> Previous:</B> <A NAME="tex2html83"
+ HREF="manual.html">LaTeX2HTML</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

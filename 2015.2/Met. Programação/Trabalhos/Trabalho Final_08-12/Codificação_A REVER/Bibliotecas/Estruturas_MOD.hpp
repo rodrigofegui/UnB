@@ -1,0 +1,248 @@
+/*****************************************************************
+**  Criadores:
+**			Diego Brian Coelho Leite
+**          Pedro Aurélio Coelho Almeida
+**          Rodrigo Ferreira Guimaraes
+**  Nome:
+**          Estruturas.hpp
+**  Finalidade:
+**          Armazenar as funções manipuladoras das estruturas
+**			utilizadas nesta bibliota, como:
+
+*****************************************************************/
+
+/*  Caso não tenha sido declarada na tabela de símbolos */
+#ifndef Estrutura_H
+    #define Estrutura_H
+
+	/*****************************************************************
+    **      Inclusão das bibliotecas auxiliares
+    *****************************************************************/
+		#include<stdio.h>
+		#include<stdlib.h>
+
+	/*****************************************************************
+    **      Constantes Globais e Namespaces
+    *****************************************************************/
+
+
+	/********************************************************
+    **	Estrutura:
+    **		Conexão
+    **	Descrição:
+    **		Estrutura, nomeada como 'Conexão', responsável
+	**		por armazenar as informações em relação as inter-
+	**		conexões.
+    **	Campos:
+    **		'tipo'	- indica que é uma interconexão
+	**		'nome'	- armazena o nome da conexão
+	**		'linha_inicio' + 'coluna_inicio'	- armazenam
+	**				  a coordenada da conexão na malha
+	**		'linha_fim' + 'coluna_fim'	- 
+	**		'capacidade' - 
+	**		'falha'	-
+	**		'ordem'	-
+	**		'tempo_cons'	- armazena o tempo gasto para
+	**						realização de um conserto
+	**		'custo_cons'	- armazena o custo para a reali-
+	**						zação de um conserto
+	**		'linha' + 'coluna'	- armazena a posição na matriz
+	**						de interconexões
+    ********************************************************/
+	typedef struct intercon{
+		char tipo;
+		char *nome;
+		int lin_inicio, col_inicio;
+		int lin_fim, col_fim;
+		int capacidade;
+		float falha;
+		int tempo_cons, custo_cons;
+		struct intercon *proximo;
+	}
+	Conexao;
+
+
+	typedef struct h_inter{
+		Conexao *inicio;
+		int qnt_tot;
+	}
+	Header_conex;
+	
+	typedef struct ger{
+		// oke precisar;
+	}
+	Gerador;
+
+	typedef struct h_ger{
+		Geradores *inicio;
+		int qnt_tot;
+		int energia_tot;
+	}
+	Header_ger;
+
+	typedef struct ct{
+		// oke precisar;
+	}
+	City;
+
+	typedef struct h_ct{
+		City *inicio;
+		int qnt_tot;
+		int energia_tot;
+		int ct_insuf;
+		int t_s_recurso;
+		int menos_30_recurso;
+		int t_m_30_rec;
+	}
+	Header_city;
+
+	/********************************************************
+    **	Estrutura:
+    **		Rede
+    **	Descrição:
+    **		Estrutura, nomeada como 'Rede', responsável por
+	**		armazenar o início de cada conjunto de estruturas
+    **	Campos:
+    **		'comeco'	- armazena o início do conjunto de
+	**					elementos
+	**		'inic'		- armazena o início do conjunto de
+	**					interconexões
+    ********************************************************/
+	typedef struct rede{
+    	Elem *comeco;
+		Conexao *inic;
+	}
+	Rede;
+
+	/*****************************************************************
+    **      Cabeçalho das Funções
+    *****************************************************************/
+		/********************************************************
+		**	Função:
+		**		Criação de um Elemento
+		**	Descrição:
+		**		
+		**	Parâmetros:
+		**		Não exige
+		**	Assertivas de entrada:
+		**		
+		**  Assertivas de controle:
+        **      
+		**	Valor retornado:
+		**		
+		**	Assertivas de saida:
+		**		
+		********************************************************/
+		Elem * cria_elemento ();
+
+
+		/********************************************************
+		**	Função:
+		**		Criação de uma Conexão
+		**	Descrição:
+		**		
+		**	Parâmetros:
+		**		Não exige
+		**	Assertivas de entrada:
+		**		
+		**  Assertivas de controle:
+        **      
+		**	Valor retornado:
+		**		
+		**	Assertivas de saida:
+		**		
+		********************************************************/
+		//Conexao * cria_con();
+
+		/********************************************************
+		**	Função:
+		**		Inserção de um Elemento
+		**	Descrição:
+		**		
+		**	Parâmetros:
+		**		
+		**	Assertivas de entrada:
+		**		
+		**  Assertivas de controle:
+        **      
+		**	Valor retornado:
+		**		
+		**	Assertivas de saida:
+		**		
+		********************************************************/
+		Elem * insere_elemento (Elem *, FILE *, char *, int, int, int, int);
+
+		/********************************************************
+		**	Função:
+		**		Inserção de uma Conexão
+		**	Descrição:
+		**		
+		**	Parâmetros:
+		**		
+		**	Assertivas de entrada:
+		**		
+		**  Assertivas de controle:
+        **      
+		**	Valor retornado:
+		**		
+		**	Assertivas de saida:
+		**		
+		********************************************************/
+		//Conexao* insere_con(Conexao *, FILE *, char *, int, int, int, int, int, int);
+		
+
+		/********************************************************
+		**	Função:
+		**		Liberação de um Elemento
+		**	Descrição:
+		**		
+		**	Parâmetros:
+		**		
+		**	Assertivas de entrada:
+		**		
+		**  Assertivas de controle:
+        **      
+		**	Valor retornado:
+		**		
+		**	Assertivas de saida:
+		**		
+		********************************************************/
+		void libera_elementos (Elem *);
+
+		/********************************************************
+		**	Função:
+		**		Busca por um Elemento
+		**	Descrição:
+		**		
+		**	Parâmetros:
+		**		
+		**	Assertivas de entrada:
+		**		
+		**  Assertivas de controle:
+        **      
+		**	Valor retornado:
+		**		
+		**	Assertivas de saida:
+		**		
+		********************************************************/
+		Elem * busca_elemento (Elem *, Elem **, int, int);
+
+		/********************************************************
+		**	Função:
+		**		Exibição de um Elemento na Tela
+		**	Descrição:
+		**		
+		**	Parâmetros:
+		**		
+		**	Assertivas de entrada:
+		**		
+		**  Assertivas de controle:
+        **      
+		**	Valor retornado:
+		**		
+		**	Assertivas de saida:
+		**		
+		********************************************************/
+		void imprime_El (Elem *);
+
+#endif

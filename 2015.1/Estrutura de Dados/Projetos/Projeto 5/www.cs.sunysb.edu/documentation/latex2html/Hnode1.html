@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Hyper-links in LATEX</TITLE>
+<META NAME="description" CONTENT="Hyper-links in LATEX">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="next" HREF="Hnode2.html">
+<LINK REL="previous" HREF="hypextra.html">
+<LINK REL="up" HREF="hypextra.html">
+<LINK REL="next" HREF="Hnode2.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html91"
+ HREF="Hnode2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html87"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html81"
+ HREF="hypextra.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html89"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html90"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html92"
+ HREF="Hnode2.html">Including Arbitrary HTML Mark-up</A>
+<B> Up:</B> <A NAME="tex2html88"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html82"
+ HREF="hypextra.html">No Title</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000121000000000000000">&#160;</A><A NAME="sec:hyper">&#160;</A>
+<BR>
+Hyper-links in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X
+</H2>
+<!--Table of Child-Links-->
+<UL>
+<LI><A NAME="tex2html93"
+ HREF="Hnode1.html#SECTION000121010000000000000"><TT>&#92;htmladdnormallink</TT></A>
+<LI><A NAME="tex2html94"
+ HREF="Hnode1.html#SECTION000121020000000000000"><TT>&#92;htmladdimg</TT></A>
+<LI><A NAME="tex2html95"
+ HREF="Hnode1.html#SECTION000121030000000000000"><TT>&#92;htmladdnormallinkfoot</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<A NAME="975">&#160;</A><A NAME="976">&#160;</A>
+<BR>
+
+Arbitrary hypertext references are created using 
+the <TT>&#92;htmladdnormallink</TT> and <TT>&#92;htmladdimg</TT> commands.
+These have syntax:
+<BLOCKQUOTE>
+<TT>&#92;htmladdnormallink</TT><code>{</code><TT>
+&lt;<I>text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>URL</I>&gt;</TT><code>}</code>
+<BR>
+<TT>&#92;htmladdnormallink</TT><code>[</code><TT>
+&lt;<I>name</I>&gt;</TT><code>]{</code><TT>
+&lt;<I>text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>URL</I>&gt;</TT><code>}</code>
+
+<P>
+<TT>&#92;htmladdimg</TT><code>{</code><TT>
+&lt;<I>URL</I>&gt;</TT><code>}</code>
+<BR>
+<TT>&#92;htmladdimg</TT><code>[</code><TT>
+&lt;<I>align</I>&gt;</TT><code>]</code><TT>
+&lt;<I>URL</I>&gt;</TT><code>}</code>
+
+<P>
+<TT>&#92;htmladdnormallinkfoot</TT><code>{</code><TT>
+&lt;<I>text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>URL</I>&gt;</TT><code>}</code>
+<BR>
+<TT>&#92;htmladdnormallinkfoot</TT><code>[</code><TT>
+&lt;<I>name</I>&gt;</TT><code>]{</code><TT>
+&lt;<I>text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>URL</I>&gt;</TT><code>}</code>
+</BLOCKQUOTE>
+
+<P>
+<A NAME="1001">&#160;</A>
+<A NAME="2461">&#160;</A>
+
+<H4><A NAME="SECTION000121010000000000000">&#160;</A><A NAME="addnormlink">&#160;</A>
+<BR>
+<TT>&#92;htmladdnormallink</TT>
+</H4>
+The <TT>&#92;htmladdnormallink</TT> command expects some text as the first argument 
+and a URL as the second argument. 
+When processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  (i.e. in the <TT>.dvi</TT> or <TT>.ps</TT> output files), 
+the URL will have no effect. But when processed by the translator, 
+<A NAME="tex2html6"
+ HREF="http://www.ncsa.uiuc.edu/demoweb/url-primer.html">the URL will be used to provide an active hypertext link</A>
+(to another file, picture, sound-file, movie, etc.) e.g.
+<BLOCKQUOTE>
+<TT>&#92;htmladdnormallink</TT><code>{</code><TT>
+&lt;<I>URL</I>&gt;</TT><code>}</code>
+<BR>
+<code>  {http://www.ncsa.uiuc.edu/demoweb/url-primer.html}</code>
+</BLOCKQUOTE>
+
+<P>
+<A NAME="2463">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+The optional argument to <TT>&#92;htmladdnormallink</TT> allows a name to be
+specified for the place in the document where the hyperlink occurs.
+This is done via the <TT>NAME=&#34;
+&lt;<I>name</I>&gt;&#34;</TT> attribute
+for the <TT>&lt;A ...&gt;</TT> anchor tag in <TT>HTML</TT>. 
+Such a name can be used as the target for a hyperlink using the <TT>&#92;htmlref</TT> command, 
+described <A HREF="Hnode5.html#htmlref">later</A>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2464">&#160;</A>
+
+<H4><A NAME="SECTION000121020000000000000">&#160;</A><A NAME="htmladdimg">&#160;</A>
+<BR>
+<TT>&#92;htmladdimg</TT>
+</H4>
+In a similar way, the argument of the <TT>&#92;htmladdimg</TT> command 
+should be a URL pointing to an image. 
+This URL is ignored in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  hard copy output. 
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+The optional argument to <TT>&#92;htmladdimg</TT> allows an alignment
+for the image to be given:  <TT>center</TT>, <TT>right</TT> or <TT>left</TT>.
+In the latter cases, the image is bound to the specified side
+of the browser's window. Subsequent text paragraphs `flow around' the
+other side of the image.
+
+<P>
+<A NAME="2466">&#160;</A>
+<BR>
+In fact any valid set of ``attributes'' for the <TT>&lt;IMG&gt;</TT> tag in <TT>HTML</TT> 
+can be specified as the optional <TT>
+&lt;<I>align</I>&gt;</TT> parameter. In particular
+the <TT>WIDTH</TT>, <TT>HEIGHT</TT> and <TT>BORDER</TT> attributes can be set,
+perhaps overriding the natural size of the image.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="1050">&#160;</A>
+<A NAME="2467">&#160;</A>
+
+<H4><A NAME="SECTION000121030000000000000">&#160;</A><A NAME="addfootlink">&#160;</A>
+<BR>
+<TT>&#92;htmladdnormallinkfoot</TT>
+</H4>
+The <TT>&#92;htmladdnormallinkfoot</TT> command takes the same arguments,
+and when generating <TT>HTML</TT> has the same effect, 
+as <TT>&#92;htmladdnormallink</TT>.
+However when processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X it places the URL as a footnote.
+
+<P>
+
+<P>
+<BR>
+<BR CLEAR="ALL">
+<HR>
+<A NAME="1058">&#160;</A><A NAME="1059">&#160;</A>
+<BR>
+<B>Warning:&nbsp;</B>
+The tilde (<TT>~</TT>) character is commonly used within hyperlink URLs. 
+It is a quirk of T<SMALL>E</SMALL>X and L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X that it must be generated via <code>\~{}</code>,
+else the <TT>~</TT> will be interpreted as an accent on the following character.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html91"
+ HREF="Hnode2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html87"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html81"
+ HREF="hypextra.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html89"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html90"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html92"
+ HREF="Hnode2.html">Including Arbitrary HTML Mark-up</A>
+<B> Up:</B> <A NAME="tex2html88"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html82"
+ HREF="hypextra.html">No Title</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

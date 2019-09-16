@@ -1,0 +1,2936 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="SGML-Tools 1.0.8">
+ <TITLE>Grace User's Guide (v0.6 - for Grace-5.1.0)</TITLE>
+
+
+</HEAD>
+<BODY>
+<H1>Grace User's Guide (v0.6 - for Grace-5.1.0)</H1>
+
+<H2>by the Grace Team</H2>02.04.2000
+<P><HR>
+<EM>  This document explains the usage of
+  <B>Grace</B>, a WYSIWYG 2D plotting tool for scientific data.</EM>
+<HR>
+<H2><A NAME="s1">1. Introduction</A></H2>
+
+<P>
+<P>
+<H2>1.1 What is Grace?  </H2>
+
+<P>Grace is a WYSIWYG tool to make two-dimensional plots of scientific
+data. It runs under various (if not all) flavors of Unix with
+X11 and Motif (LessTif). It also runs under VMS, OS/2, and Windows
+(95/98/NT). Its capabilities are roughly similar to GUI-based
+programs like Sigmaplot or Microcal Origin plus script-based
+tools like Gnuplot or Genplot. Its strength lies in the fact
+that it combines the convenience of a graphical user interface
+with the power of a scripting language which enables it to do
+sophisticated calculations or perform automated tasks.
+<P>Grace is derived from Xmgr (a.k.a. ACE/gr), originally written by
+Paul Turner.
+<P>From version number 4.00, the development was taken over by a
+team of volunteers under the coordination of Evgeny Stambulchik.
+You can get the newest information about Grace and download the
+latest version at the 
+<A HREF="http://plasma-gate.weizmann.ac.il/Grace/">Grace home page</A>.
+<P>When its copyright was changed to GPL, the name was changed to Grace,
+which stands for ``GRaphing, Advanced Computation and Exploration of
+data'' or ``Grace Revamps ACE/gr''. The first version of Grace available
+is named 5.0.0, while the last public version of Xmgr has the version
+number 4.1.2.
+<P>Paul still maintains and develops a non-public version of Xmgr for
+internal use.
+<P>
+<H2>1.2 Copyright statement  </H2>
+
+<P>
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+Copyright (&copy;) 1991-1995 Paul J Turner, Portland, OR
+Copyright (&copy;) 1996-2000 Grace Development Team
+
+Maintained by Evgeny Stambulchik
+
+
+                         All Rights Reserved
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>For certain libraries required to build Grace
+(which are therefore even included in a suitable version)
+there may be different Copyright/License statements. Though their
+License may by chance match the one used for Grace,
+the Grace Copyright holders can not influence or change them.
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Package </TD><TD> License </TD></TR><TR><TD>
+cephes </TD><TD> Free </TD></TR><TR><TD>
+T1lib </TD><TD> LGPL </TD></TR><TR><TD>
+Xbae </TD><TD> BSD-like </TD></TR><TR><TD>
+Tab </TD><TD> BSD-like </TD></TR><TR><TD>
+
+<CAPTION>       Licenses
+     </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<H2>1.3 Comments and bug reports  </H2>
+
+<P>
+<P>
+<P>
+<H2><A NAME="s2">2. Installation guide</A>  </H2>
+
+<P>
+<P>
+<H2>2.1 Installing from sources    </H2>
+
+<P>
+<OL>
+<LI> Configuration 
+<A NAME="configuration"></A> 
+<UL>
+<LI> Requirements.
+Grace usually compiles out of the box in a regular Unix-like
+environment. You need an ANSI C compiler (gcc is just fine),
+the X11R5 or above libraries and headers, and Motif-1.2 or
+above.
+If you want to compile your own changes to certain parts of
+Grace, you will need a parser generator (<CODE>yacc</CODE> or, better,
+<CODE>bison</CODE>).</LI>
+<LI> Extra libraries. Some features will be available only if
+additional libraries are installed. Those are:
+<UL>
+<LI> The JPEG backend needs the IJG's
+(
+<A HREF="ftp://ftp.uu.net/graphics/jpeg/">JPEG library</A>),
+version 6.x.</LI>
+<LI> The PNG backend needs
+the (
+<A HREF="http://www.cdrom.com/pub/png/">libpng</A>)
+library (version 0.96 or above).</LI>
+<LI> The PDF driver requires the PDFlib library of Thomas
+Merz to be installed, which is available
+<A HREF="http://www.pdflib.com/">here</A>, version
+3.00 or above.</LI>
+<LI> If your computer has the FFTW library installed when
+Grace is compiled, Grace will link itself to this, and
+drop all conventional FFT's and DFT's. All transforms
+will be routed through this package. Note that there is
+then no difference between pushing the "FFT" button and
+the "DFT" button, except that FFT will complain if the
+length isn't a power of 2, and DFT will not.
+
+For more information on this package, see the 
+<A HREF="http://www.fftw.org">FFTW Home page</A>.
+In short, this package allows one to do non-power-of-2
+length FFT's along with the normal ones.  It seems to work
+very efficiently for any set length which factors into 2^a
+3^b 5^c 7^d for integer a, b, c, d. The great feature here
+is that set lengths which are powers of 10 (e.g. 1000,
+10000) and integer multiples of these (500, 2000, 2500,
+5000, etc.) can be computed with no significant penalty
+(maybe 20%) over power-of-2 transforms. Very often, real
+datasets come in these sizes, and not in powers of 2.</LI>
+<LI> In order to read/write sets in the NetCDF data format, you
+will also need the 
+<A HREF="http://unidata.ucar.edu/packages/netcdf/index.html">NetCDF libraries</A>.</LI>
+</UL>
+</LI>
+<LI> Decide whether you want to compile in a separate place (thus
+leaving the source tree pristine). You most probably would
+want it if compiling Grace for more than one OS and keeping
+the sources in a central shared (e.g. via NFS) location.
+If you don't need it, skip the rest of this paragraph and go
+right to the next step. Otherwise, assuming the sources are
+in <CODE>/usr/local/src/grace-x.y.z</CODE> and the compilation
+will be performed in <CODE>/tmp/grace-obj</CODE>, do the following:
+<PRE>
+  % mkdir /tmp/grace-obj
+  % cd /tmp/grace-obj
+  % /usr/local/src/grace-x.y.z/ac-tools/shtool mkshadow \
+    /usr/local/src/grace-x.y.z .
+                 
+</PRE>
+</LI>
+<LI> The <CODE>configure</CODE> shell script attempts to guess correct
+values for various system-dependent variables used during
+compilation. It uses those values to create <CODE>Make.conf</CODE> in the
+top directory of the package. It also create <CODE>config.h</CODE> file
+containing system-dependent definitions. Finally, it creates a shell
+script <CODE>config.status</CODE> that you can run in the future to
+recreate the current configuration, a file <CODE>config.cache</CODE> that
+saves the results of its tests to speed up reconfiguring, and a file
+<CODE>config.log</CODE> containing compiler output (useful mainly for
+debugging <CODE>configure</CODE>). If at some point <CODE>config.cache</CODE>
+contains results you don't want to keep, you may remove or edit it.</LI>
+<LI> Run <CODE>./configure --help</CODE>
+to get list of additional switches specific to Grace</LI>
+<LI> Run <CODE>./configure &lt;options&gt;</CODE>. Just an example:
+<PRE>
+  % ./configure --enable-grace-home=/opt/grace 
+    --with-extra-incpath=/usr/local/include:/opt/include \
+    --with-extra-ldpath=/usr/local/lib:/opt/lib --prefix=/usr
+                 
+</PRE>
+
+would use <CODE>/usr/local/include</CODE> and
+<CODE>/opt/include</CODE> in addition to the default include path
+and <CODE>/usr/local/lib</CODE> and <CODE>/opt/lib</CODE> in addition
+to the default ld path. As well, all stuff would be put under
+the /opt/grace directory and soft links made to
+<CODE>/usr/bin</CODE>, <CODE>/usr/lib</CODE> and <CODE>/usr/include</CODE>.
+<P><B>Note</B>: If you change one of the
+<CODE>--with-extra-incpath</CODE> or
+<CODE>--with-extra-ldpath</CODE> options from one run of
+configure to another, remember to delete the
+<CODE>config.cache</CODE> file!!!
+</LI>
+</UL>
+</LI>
+<LI> Compilation
+<UL>
+<LI> Issue <CODE>make</CODE>
+<P>If something goes wrong, try to see if the problem has been
+described already in the <B>Grace FAQ</B> (in the
+<CODE>doc</CODE> directory).
+</LI>
+</UL>
+</LI>
+<LI> Testing
+    
+<UL>
+<LI> <CODE>make tests</CODE>
+<P>This will give you a slide show demonstrating some nice
+features of Grace.
+</LI>
+</UL>
+</LI>
+<LI> Installation
+<UL>
+<LI> <CODE>make install</CODE></LI>
+<LI> <CODE>make links</CODE>
+<P>The later (optional) step will make soft links from some files
+under the Grace home directory to the system-wide default
+locations (can be changed by the <CODE>--prefix</CODE> option
+during the configuration, see above).
+</LI>
+</UL>
+</LI>
+</OL>
+<P>
+<H2>2.2 Binary installation    </H2>
+
+<P>
+<OL>
+<LI> Getting pre-built packages</LI>
+<LI> Installation</LI>
+<LI> Running tests</LI>
+</OL>
+<P>
+<H2>2.3 Alternative packaging schemes (RPM, ...)    </H2>
+
+<P>
+<P>Not written yet...
+<P>
+<P>
+<H2><A NAME="s3">3. Getting started</A>  </H2>
+
+<P>
+<P>For a jump-in start, you can browse the demos ("Help/Examples" menu tree).
+Also, read the 
+<A HREF="Tutorial.html">Tutorial</A>.
+<P>
+<H2>3.1 General concepts    </H2>
+
+<P>
+<P>
+<H3><A NAME="project-file"></A> Project files         </H3>
+
+<P>
+<P>A project file contains all information necessary to restore a plot
+created by Grace, as well as some of preferences. Each plot is
+represented on a single page, but may have an unlimited number of
+graphs.
+<P>
+<H3><A NAME="graph"></A> Graphs         </H3>
+
+<P>
+<P>A graph consists of (every element is optional): a graph frame, axes,
+a title and a subtitle, a number of sets and additional annotative
+objects (time stamp string, text strings, lines, boxes and ellipses).
+<P>The graph type can be any of:
+<UL>
+<LI> XY Graph</LI>
+<LI> XY Chart</LI>
+<LI> Polar Graph</LI>
+<LI> Fixed Graph</LI>
+<LI> Pie chart</LI>
+</UL>
+<P>
+<H3><A NAME="sets"></A> Sets         </H3>
+
+<P>
+<P>A set is a way of representing numerical data (datasets). It consists
+of a pointer to a dataset plus a collection of parameters describing
+the visual appearance of the data (like color, line dash pattern etc).
+<P>The set type can be any of the following:
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Set type </TD><TD> # of num. cols </TD><TD> Description </TD></TR><TR><TD>
+XY </TD><TD> 2 </TD><TD> An X-Y scatter and/or line plot, plus (optionally) an annotated value </TD></TR><TR><TD>
+XYDX </TD><TD> 3 </TD><TD> Same as XY, but with error bars (either one- or two-sided) along X axis </TD></TR><TR><TD>
+XYDY </TD><TD> 3 </TD><TD> Same as XYDX, but error bars are along Y axis </TD></TR><TR><TD>
+XYDXDX </TD><TD> 4 </TD><TD> Same as XYDX, but left and right error bars are defined separately </TD></TR><TR><TD>
+XYDYDY </TD><TD> 4 </TD><TD> Same as XYDXDX, but error bars are along Y axis </TD></TR><TR><TD>
+XYDXDY </TD><TD> 4 </TD><TD> Same as XY, but with X and Y error bars (either one- or two-sided) </TD></TR><TR><TD>
+XYDXDXDYDY </TD><TD> 6 </TD><TD> Same as XYDXDY, but left/right and upper/lower error bars are defined separately </TD></TR><TR><TD>
+BAR </TD><TD> 2 </TD><TD> Same as XY, but vertical bars are used instead of symbols </TD></TR><TR><TD>
+BARDY </TD><TD> 3 </TD><TD> Same as BAR, but with error bars (either one- or two-sided) along Y axis </TD></TR><TR><TD>
+BARDYDY </TD><TD> 4 </TD><TD> Same as BARDY, but lower and upper error bars are defined separately </TD></TR><TR><TD>
+XYHILO </TD><TD> 5 </TD><TD> Hi/Low/Open/Close plot </TD></TR><TR><TD>
+XYZ </TD><TD> 3 </TD><TD> Same as XY; makes no sense unless the annotated value is Z </TD></TR><TR><TD>
+XYR </TD><TD> 3 </TD><TD> X, Y, Radius. Only allowed in Fixed graphs </TD></TR><TR><TD>
+XYSIZE </TD><TD> 3 </TD><TD> Same as XY, but symbol size is variable </TD></TR><TR><TD>
+XYCOLOR </TD><TD> 3 </TD><TD> X, Y, color index (of the symbol fill)</TD></TR><TR><TD>
+XYCOLPAT </TD><TD> 4 </TD><TD> X, Y, color index, pattern index (currently used for Pie charts only) </TD></TR><TR><TD>
+XYVMAP </TD><TD> 4 </TD><TD> Vector map </TD></TR><TR><TD>
+XYBOXPLOT </TD><TD> 6 </TD><TD> Box plot (X, median, upper/lower limit, upper/lower whisker) </TD></TR><TR><TD>
+
+<CAPTION>            Set types
+          </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<P>Not all set types, however, can be plotted on any graph type. The
+following table summarizes it:
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Set type </TD><TD> XY Graph </TD><TD> XY Chart </TD><TD> Fixed </TD><TD> Polar </TD><TD> Pie </TD></TR><TR><TD>
+XY </TD><TD> + </TD><TD> + </TD><TD> + </TD><TD> + </TD><TD> + </TD></TR><TR><TD>
+XYDX </TD><TD> + </TD><TD> - </TD><TD> + </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+XYDY </TD><TD> + </TD><TD> + </TD><TD> + </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+XYDXDX </TD><TD> + </TD><TD> - </TD><TD> + </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+XYDYDY </TD><TD> + </TD><TD> + </TD><TD> + </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+XYDXDY </TD><TD> + </TD><TD> - </TD><TD> + </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+XYDXDXDYDY </TD><TD> + </TD><TD> - </TD><TD> + </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+BAR </TD><TD> + </TD><TD> + </TD><TD> + </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+BARDY </TD><TD> - </TD><TD> + </TD><TD> - </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+BARDYDY </TD><TD> - </TD><TD> + </TD><TD> - </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+XYHILO </TD><TD> + </TD><TD> - </TD><TD> - </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+XYZ </TD><TD> + </TD><TD> - </TD><TD> + </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+XYR </TD><TD> - </TD><TD> - </TD><TD> + </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+XYSIZE </TD><TD> + </TD><TD> + </TD><TD> + </TD><TD> + </TD><TD> - </TD></TR><TR><TD>
+XYCOLOR </TD><TD> + </TD><TD> + </TD><TD> + </TD><TD> + </TD><TD> + </TD></TR><TR><TD>
+XYCOLPAT </TD><TD> - </TD><TD> - </TD><TD> - </TD><TD> - </TD><TD> + </TD></TR><TR><TD>
+XYVMAP </TD><TD> + </TD><TD> - </TD><TD> + </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+XYBOXPLOT </TD><TD> + </TD><TD> - </TD><TD> - </TD><TD> - </TD><TD> - </TD></TR><TR><TD>
+
+<CAPTION>            Graph/Set type connection
+          </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<H3><A NAME="datasets"></A> Datasets         </H3>
+
+<P>A dataset is a collection of points with x and y coordinates, up to
+four optional data values (which, depending on the set type, can be
+displayed as error bars or like) and one optional character string.
+<H3><A NAME="regions"></A> Regions         </H3>
+
+<P>
+<P>Regions are sections of the graph defined by the interior or exterior
+of a polygon, or a half plane defined by a line. Regions are used to
+restrict data transformations to a geometric area occupied by region.
+<P>
+<H3><A NAME="RTI"></A> Real Time Input         </H3>
+
+<P>
+<P>Real Time Input refers to the ability Grace has to be
+fed in real time by an external program. The Grace
+process spawned by the driver program is a full featured
+Grace process: the user can interact using the GUI at the
+same time the program sends data and commands. The process
+will adapt itself to the incoming data rate.
+<P>
+<H3><A NAME="hotlinks"></A> Hotlinks         </H3>
+
+<P>
+<P>Hotlinks are sources containing varying data. Grace can be
+instructed a file or a pipe is a hotlink in which case it
+will provide specific commands to refresh the data on a
+mouse click (a later version will probably allow automatic
+refresh).
+<P>
+<H3><A NAME="files-formats"></A> File formats         </H3>
+
+<P>
+<P>Grace understands several input files formats. The most
+basic one is ASCII text files containing space and comma
+separated columns of data. The data fields can be either
+numeric (Fortran 'd' and 'D' exponent markers are supported)
+or alphanumeric (with or without quotes). Several calendar
+date formats are recognized automatically and you can
+specify your own reference for numeric dates formats. Grace also
+has a command language (see 
+<A HREF="#command-interpreter">command interpreter</A>), you can include commands in
+data files using lines having "@" as their first non-blank
+character. Depending on configuration, Grace can also read
+NetCDF files (see 
+<A HREF="#configuration">configuration</A>).
+<P>
+<H3><A NAME="devices"></A> Devices        </H3>
+
+<P>Grace allows the user to choose between several output
+devices to produce its graphics. The current list of
+supported devices is:
+<P>
+<UL>
+<LI> X11</LI>
+<LI> PostScript (level 1 and level 2)</LI>
+<LI> EPS (encapsulated PostScript)</LI>
+<LI> Metafile (which is Grace format, used at the moment mostly
+for debugging purposes)</LI>
+<LI> MIF (Maker Interchange Format used by FrameMaker)</LI>
+<LI> SVG (Scalable Vector Graphics, a language for describing
+two-dimensional vector and mixed vector/raster graphics
+in XML)</LI>
+<LI> PDF (depends on extra libraries,
+see 
+<A HREF="#configuration">configuration</A>)</LI>
+<LI> PNM (portable anymap file format)</LI>
+<LI> JPEG (depends on extra libraries,
+see 
+<A HREF="#configuration">configuration</A>)</LI>
+<LI> PNG (depends on extra libraries,
+see 
+<A HREF="#configuration">configuration</A>)</LI>
+</UL>
+<P>
+<P>Note that Grace no longer supports GIF due to
+the copyright policy of Unisys. Grace can also be
+instructed to launch conversion programs automatically
+based on file name. As an example you can produce MIF
+(FrameMaker Interchange Format) or Java applets using
+pstoedit, or almost any image format using the netpbm suite
+(see the 
+<A HREF="FAQ.html">FAQ</A>).
+<P>
+<H3><A NAME="magic-path"></A> Magic path        </H3>
+
+<P>In many cases, when Grace needs to access a file given with a
+relative <CODE>pathname</CODE>, it searches for the file along the
+following path:
+<CODE>./pathname:./.grace/pathname:~/.grace/pathname:$GRACE_HOME/pathname</CODE>
+<P>
+<H3><A NAME="dynamic-modules"></A> Dynamic modules        </H3>
+
+<P>Grace can access external functions present in either system
+or third-party shared libraries or modules specially compiled
+for use with it. The term dynamic refers to the possibility
+Grace has to open the library at run time to find the code of
+the external function, there is no need to recompile Grace
+itself (the functions already compiled in Grace are
+"statically linked").
+<P>
+<H3><A NAME="coordinates"></A> Coordinate frames         </H3>
+
+<P>There are two types of coordinates in Grace: the <B>world
+coordinates</B> and the <B>viewport coordinates</B>. Points of
+data sets are defined in the world coordinates. The viewport
+coordinates correspond to the image of the plot drawn on the canvas
+(or printed on, say, PS output page). The transformation converting
+the world coordinates into the viewport ones is determined by both
+the graph type and the axis scaling.
+<P>Actually, there is yet another level in the hierarchy of coordinates
+- the <B>device coordinates</B>. However, you (as a user of Grace)
+should not worry about the latter. The mapping between the viewport
+coordinates and the device coordinates is always set in such a way
+that the origin of the viewport corresponds to the left bottom corner
+of the device page, the smallest of the device dimensions corresponds
+to one unit in the viewport coordinates. Oh, and the most important
+thing about the viewport -&gt; device transformation is that it is
+homotetic, i.e. a square is guaranteed to remain a square, not a
+rectangle, a circle remains a circle (not an ellipse) etc.
+<H2>3.2 Invocation    </H2>
+
+<P>
+<P>
+<H3>Operational mode        </H3>
+
+<P>
+<P>With respect to the user interface, there are three modes of
+operation that Grace can be invoked in. The full-featured GUI-based
+version is called <CODE>xmgrace</CODE>. A batch-printing version is
+called <CODE>gracebat</CODE>. A command-line interface mode is called
+<CODE>grace</CODE>. Usually, a single executable is called in all cases,
+with two of the three files being (symbolic) links to a "real" one.
+<P>
+<H3>Command line options        </H3>
+
+<P>
+<DL>
+<DT><B> -arrange <I>rows</I> <I>cols</I> </B><DD><P>Arrange the graphs in a grid rows by cols
+<P>
+<DT><B> -autoscale <I>x|y|xy</I> </B><DD><P>Override any parameter file settings
+<P>
+<DT><B> -barebones </B><DD><P>Turn off all toolbars
+<P>
+<DT><B> -batch <I>batch_file</I> </B><DD><P>Execute batch_file on start up
+<P>
+<DT><B> -block <I>block_data</I> </B><DD><P>Assume data file is block data
+<P>
+<DT><B> -bxy <I>x:y:etc.</I> </B><DD><P>Form a set from the current block data set using the current set
+type from columns given in the argument
+<P>
+<DT><B> -cols <I>gcols</I> </B><DD><P>Arrange graphs in gcols columns
+<P>
+<DT><B> -datehint <I>iso|european|us|days|seconds|nohint</I> </B><DD><P>Set the hint for dates analysis
+<P>
+<DT><B> -dpipe <I>descriptor</I> </B><DD><P>Read data from descriptor (anonymous pipe) on startup
+<P>
+<DT><B> -fixed <I>width</I> <I>height</I> </B><DD><P>Set canvas size fixed to width*height
+<P>
+<DT><B> -free </B><DD><P>Use free page layout
+<P>
+<DT><B> -graph <I>graph_number</I> </B><DD><P>Set the current graph number
+<P>
+<DT><B> -graphtype <I>graph_type</I> </B><DD><P>Set the type of the current graph
+<P>
+<DT><B> -hardcopy </B><DD><P>No interactive session, just print and quit
+<P>
+<DT><B> -hdevice <I>hardcopy_device_name</I> </B><DD><P>Set default hardcopy device
+<P>
+<DT><B> -install </B><DD><P>Install private colormap
+<P>
+<DT><B> -legend <I>load</I> </B><DD><P>Turn the graph legend on
+<P>
+<DT><B> -log <I>x|y|xy</I> </B><DD><P>Set the axis scaling of the current graph to logarithmic
+<P>
+<DT><B> -logwindow </B><DD><P>Open the log window
+<P>
+<DT><B> -mono </B><DD><P>Run Grace in monochrome mode (affects the display only)
+<P>
+<DT><B> -noask </B><DD><P>Assume the answer is yes to all requests - if the operation would
+overwrite a file, Grace will do so without prompting
+<P>
+<DT><B> -noinstall </B><DD><P>Don't use private colormap
+<P>
+<DT><B> -nologwindow </B><DD><P>No log window, overrides resource setting
+<P>
+<DT><B> -noprint </B><DD><P>In batch mode, do not print
+<P>
+<DT><B> -nosigcatch </B><DD><P>Don't catch signals
+<P>
+<DT><B> -npipe <I>file</I> </B><DD><P>Read data from named pipe on startup
+<P>
+<DT><B> -nxy <I>nxy_file</I> </B><DD><P>Assume data file is in X Y1 Y2 Y3 ... format
+<P>
+<DT><B> -param <I>parameter_file</I> </B><DD><P>Load parameters from parameter_file to the current graph
+<P>
+<DT><B> -pexec <I>parameter_string</I> </B><DD><P>Interpret string as a parameter setting
+<P>
+<DT><B> -pipe </B><DD><P>Read data from stdin on startup
+<P>
+<DT><B> -printfile </B><DD><P><I>file</I>
+Save print output to file
+<P>
+<DT><B> -remove </B><DD><P>Remove data file after read
+<P>
+<DT><B> -results <I>results_file</I> </B><DD><P>Write results of some data manipulations to results_file
+<P>
+<DT><B> -rows <I>grows</I> </B><DD><P>Arrange graphs in grows rows
+<P>
+<DT><B> -rvideo </B><DD><P>Exchange the color indices for black and white
+<P>
+<DT><B> -saveall <I>save_file</I> </B><DD><P>Save all graphs to save_file
+<P>
+<DT><B> -seed <I>seed_value</I> </B><DD><P>Integer seed for random number generator
+<P>
+<DT><B> -source <I>disk|pipe</I> </B><DD><P>Source type of next data file
+<P>
+<DT><B> -timer <I>delay</I> </B><DD><P>Set allowed time slice for real time inputs to delay ms
+<P>
+<DT><B> -timestamp </B><DD><P>Add timestamp to plot
+<P>
+<DT><B> -settype <I>xy|xydx|...</I> </B><DD><P>Set the type of the next data file
+<P>
+<DT><B> -version </B><DD><P>Show the program version
+<P>
+<DT><B> -viewport <I>xmin ymin xmax ymax</I> </B><DD><P>Set the viewport for the current graph
+<P>
+<DT><B> -wd <I>directory</I> </B><DD><P>Set the working directory
+<P>
+<DT><B> -world <I>xmin ymin xmax ymax</I> </B><DD><P>Set the world coordinates for the current graph
+<P>
+<DT><B> -usage|-help </B><DD><P>This message
+<P>
+</DL>
+<P>
+<H2>3.3 Customization    </H2>
+
+<P>
+<H3><A NAME="environment-variables"></A> Environment variables       </H3>
+
+<P>
+<UL>
+<LI> GRACE_HOME
+<P>Set the location of Grace. This will be where help files,
+auxiliary programs, and examples are located. If you are unable
+to find the location of this directory, contact your system
+administrator.
+<P>
+</LI>
+<LI> GRACE_PRINT_CMD
+<P>Print command. If the variable is defined but is an empty
+string, "Print to file" will be selected as default.
+<P>
+</LI>
+<LI> GRACE_EDITOR
+<P>The editor used for manual editing of dataset values.
+<P>
+</LI>
+<LI> GRACE_HELPVIEWER
+<P>The HTML viewer for on-line browsing of help documents
+<P>
+</LI>
+<LI> GRACE_FFTW_WISDOM_FILE and
+GRACE_FFTW_RAM_WISDOM
+<P>These flags control behavior of the FFTW planner (see
+<A HREF="#fftw-tuning">FFTW tuning</A> for detailed info)
+<P>
+</LI>
+</UL>
+<P>
+<H3><A NAME="gracerc"></A> Init file      </H3>
+
+<P>Upon start-up, Grace loads its init file, <CODE>gracerc</CODE>. The file
+is searched for in the magic path (see
+<A HREF="#magic-path">magic path</A>); once found, the rest of the
+path is ignored. It's recommended that in the <CODE>gracerc</CODE> file,
+one doesn't use statements which are part of a project file - such
+defaults, if needed, should be set in the default template (see 
+<A HREF="#default-template">default template</A>).
+<P>
+<H3><A NAME="default-template"></A> Default template      </H3>
+
+<P>Whenever a new project is started, Grace loads the default template,
+<CODE>templates/Default.agr</CODE>. The file is searched for in the magic
+path (see  
+<A HREF="#magic-path">magic path</A>); once found, the
+rest of the path is ignored. It's recommended that in the default
+template, one doesn't use statements which are NOT part of a project
+file - such defaults, if needed, should be set in the
+<CODE>gracerc</CODE> (see 
+<A HREF="#gracerc">init file</A>).
+<P>
+<H3>X resources      </H3>
+
+<P>
+<P>The following Grace-specific X resource settings are supported:
+<P>
+<UL>
+<LI> XMgrace.invertDraw<BR>
+Use GXinvert rather than GXxor for rubber-band lines.
+If the rubber-banding for zooms and lines, etc. doesn't
+appear on the canvas, set this resource to yes.<BR>
+</LI>
+<LI> XMgrace.allowDoubleClick<BR>
+When Yes, allow double clicks on the canvas to bring up various
+popups depending on  the location of the pointer when the double
+click occurs.<BR>
+</LI>
+<LI> XMgrace.toolBar<BR>
+Enables button toolbar<BR>
+</LI>
+<LI> XMgrace.statusBar<BR>
+Enables status bar<BR>
+</LI>
+<LI> XMgrace.locatorBar<BR>
+Enables locator bar<BR>
+</LI>
+</UL>
+<P>
+<P>It is also possible to customize menus by assigning key accelerators to
+any item.
+<P>You'll need to derive the item's X resource name from the respective
+menu label, which is easily done following these rules:
+<UL>
+<LI> All non-alphanumeric characters are skipped</LI>
+<LI> Start with lower case; each new word (if any) continues from
+the capital letter</LI>
+<LI> Add the item's type to the end - "Menu" for pulldown menus,
+"Button" for menu buttons.</LI>
+</UL>
+<P>For example, in order to make Grace popup the Non-linear curve fitting
+by pressing Control+F, you would add the following two lines
+<P><CODE>XMgrace*transformationsMenu.nonLinearCurveFittingButton.acceleratorText: Ctrl+F<BR>
+XMgrace*transformationsMenu.nonLinearCurveFittingButton.accelerator: Ctrl&lt;Key&gt;f</CODE>
+<P>
+<P>to your <CODE>.Xresources</CODE> file (the file which is read when an X
+session starts; it could be <CODE>.Xdefaults</CODE>, <CODE>.Xsession</CODE> or
+some other file - ask your system administrator when in doubt). 
+<P>
+<H2><A NAME="s4">4. Guide to menus and popups</A></H2>
+
+<P>
+<P>(Not finished yet... Read the 
+<A HREF="Tutorial.html">Tutorial</A> as well).
+<P>
+<H2><A NAME="file-menu"></A> 4.1 File menu    </H2>
+
+<P>The file menu contains all entries related to the input/output features of Grace.
+<P>
+<H3><A NAME="new"></A> New       </H3>
+
+<P>Reset the state of Grace as if it had just started (one empty
+graph ranging from 0 to 1 along both axes). If some work has
+been done and not yet saved, a warning popup is displayed to
+allow canceling the operation.
+<P>
+<H3><A NAME="open"></A> Open       </H3>
+
+<P>Open an existing 
+<A HREF="#project-file">project file</A>. A
+popup is displayed that allow to browse the file system.
+<P>
+<H3><A NAME="save"></A> Save       </H3>
+
+<P>Save the current work in a project file, using the name that was
+used for the last open or save. If no name has been set (i.e.,
+if the project has been created from scratch) act as 
+<A HREF="#save-as">save as</A>.
+<P>
+<H3><A NAME="save-as"></A> Save as       </H3>
+
+<P>Save the current work in a project file with a new name. A popup allows
+to browse the file system and set the name, the format to use for saving
+data points (the default value is "%16.8g"), and a textual description of
+the project. A warning is displayed if a file with the same name already
+exists.
+<P>
+<H3><A NAME="revert-to-saved"></A> Revert to saved       </H3>
+
+<P>Abandon all modifications performed on the project since the
+last save. A confirmation popup is fired to allow the user
+canceling the operation.
+<P>
+<H3><A NAME="read-menu"></A> Read menu       </H3>
+
+<P>
+<H3><A NAME="read-sets"></A> Sets          </H3>
+
+<P>Read new sets of data in a graph. A 
+<A HREF="#graph-selector">graph selector</A> is used to specify the graph where the
+data should go (except when reading block data, which are
+copied to graphs later on).
+<P>Reading as "Single set" means that if the source contains
+only one column of numeric data, one set will be created
+using the indices (from 1 to the total number of points) as
+abscissas and read values as ordinates and that if the source
+contains more than one column of data, the first two numeric
+columns will be used. Reading as "NXY" means that the first
+numeric column will provide the abscissas and all remaining
+columns will provide the ordinates of several sets. Reading
+as "Block data" means all column will be read and stored and
+that another popup will allow to select the abscissas and
+ordinates at will. It should be noted that block data are
+stored as long as you do not override them by a new read. You
+can still retrieve data from a block long after having closed
+all popups, using the 
+<A HREF="#set-selector">set          selector</A>.
+<P>The set type can be one of the predefined set presentation types
+(see 
+<A HREF="#sets">sets</A>).
+<P>The data source can be selected as "Disk" or "Pipe". In the
+first case the text in the "Selection" field is considered to
+be a file name (it can be automatically set by the file
+selector at the top of the popup). In the latter case the
+text is considered to be a command which is executed and
+should produce the data on its standard output. On systems
+that allows is, the command can be a complete sequence of
+programs glued together with pipes.
+<P>If the source contains date fields, they should be
+automatically detected. Several formats are recognized (see
+appendix 
+<A HREF="#dates">dates in grace</A>). Calendar
+dates are converted to numerical dates upon reading.
+<P>The "Autoscale on read" menu controls whether, upon reading in new
+sets, which axes of the graph should be autoscaled.
+<P>
+<H3><A NAME="read-netCDF"></A> NetCDF          </H3>
+
+<P>This entry exists only if Grace has been compiled with
+support for the NetCDF data format (see 
+<A HREF="#configuration">configuration</A>).
+<P>
+<H3><A NAME="read-parameters"></A> Parameters          </H3>
+
+<P>Retrieve settings previously saved.
+<P>
+<H3><A NAME="write-menu"></A> Write menu       </H3>
+
+<P>
+<H3><A NAME="write-sets"></A> Sets          </H3>
+
+<P>Save data sets in a file. A 
+<A HREF="#set-selector">set          selector</A> is used to specify the set to be saved. The format
+to use for saving data points can be specified (the default
+value is "%16.8g"). A warning is displayed if a file with the
+same name already exists.
+<P>
+<H3><A NAME="write-parameters"></A> Parameters          </H3>
+
+<P>Save the parameters either for only the current graph or for
+all graphs.
+<P>
+<H3><A NAME="print"></A> Print       </H3>
+
+<P>Print the project using the current printer settings
+<P>
+<H3><A NAME="device-setup"></A> Device setup       </H3>
+
+<P>Set the properties of the printing device. Each device has its
+own set of specific options (see 
+<A HREF="#device-settings">Device-specific       settings</A>). According to the device, the
+output can be sent either directly to a printer or directed to a
+file. The global settings available for all devices are the
+sizing parameters.
+<P>
+<H3><A NAME="exit"></A> Exit       </H3>
+
+<P>Exit from Grace. If some work has been done and not saved, a
+warning popup will be displayed to allow the user to cancel the
+operation.
+<P>
+<H2><A NAME="edit-menu"></A> 4.2 Edit menu    </H2>
+
+<P>
+<H3><A NAME="data-sets"></A> Data sets       </H3>
+
+<P>Using the data set popup, you can view the properties of
+datasets. This include its type, length, associated comment and
+main some statistics (min, max, mean, standard deviation). A
+horizontal scrollbar at the bottom allows to get the two last
+properties, they are not displayed by default. Also note that if
+you find some columns are too narrow to show all significant
+digits, you can drag the vertical rules using Shift+Button 2.
+<P>
+<H3><A NAME="set-operations"></A> Set operations       </H3>
+
+<P>The set operations popup allows you to interact with sets as a
+whole. If you want to operate on the data ordering of the sets,
+you should use the 
+<A HREF="#data-set-operations">data set operations</A> popup from the Data menu. The popup
+allows you to select a source (one set within one graph) and a
+destination and perform some action upon them (copy, move,
+swap). This popup also give you a quick access to several graph
+and set selectors if you want to perform some other operation
+like hiding a graph or creating a new set from block data.
+<P>
+<H3><A NAME="arrange-graphs"></A> Arrange graphs       </H3>
+
+<P>This entry fires up a popup to lay out several graphs in a
+regular grid given rows and columns. The graphs can be packed
+together (either horizontally or vertically). New graphs are
+created if needed. An important note is that reducing the number
+of graphs never delete any graphs! If you select a 6 by 3 grid
+and then reduce it to 5 by 3, you will still have 18 graphs on
+your screen, three of them looking strange in the middle of the
+other ones. This is a security feature that prevent you from
+losing data accepting too quickly a wrong setting. If you really
+want to get rid of some of the graphs, you should hide or kill
+them using any graph selector you can find around (for example
+in the set operations presented above).
+<P>If you don't want the regular layout this arrangement gives you,
+you can change it afterwards using the mouse (select a graph and
+double click on the focus marker, see 
+<A HREF="#clicks">clicks and double clicks</A>).
+<P>
+<H3><A NAME="overlay-graphs"></A> Overlay graphs       </H3>
+
+<P>You can overlay a graph on top of another one. The main use of
+this feature is to plot several curves using different scales on
+the same (apparently) graph. The main difficulty is to be sure
+you operate on the graph you want at all times (you can hide one
+for a moment if this becomes too difficult).
+<P>
+<H3><A NAME="autoscale"></A> Autoscale       </H3>
+
+<P>Using this entry, you can autoscale one graph or all graphs
+according to the specified sets only. This is useful if you need
+either to have truly comparable graphs despite every one
+contains data of different ranges, or if you want to focus your
+attention on one set only while it is displayed with other data
+in a complex graph.
+<P>
+<H3><A NAME="regions-menu"></A> Regions menu       </H3>
+
+<P>
+<H3><A NAME="status"></A> Status          </H3>
+
+<P>This small popup only displays the current state (type and
+whether it is active or not) of the existing regions.
+<P>
+<H3><A NAME="define"></A> Define          </H3>
+
+<P>You can define a new region (or redefine an existing one),
+the allowed region types are:
+<P>
+<UL>
+<LI> Inside polygon</LI>
+<LI> Outside polygon</LI>
+<LI> Above line</LI>
+<LI> Below line</LI>
+<LI> Left of line</LI>
+<LI> Right of line</LI>
+<LI> In horizontal range</LI>
+<LI> In vertical range</LI>
+<LI> Out of horizontal range</LI>
+<LI> Out of vertical range</LI>
+</UL>
+<P>A region can be either linked to the current graph only or to
+all graphs.
+<P>
+<H3><A NAME="clear"></A> Clear          </H3>
+
+<P>This kills a region.
+<P>
+<H3><A NAME="report-on"></A> Report on          </H3>
+
+<P>This popup reports you which sets or points are inside or
+outside of a region.
+<P>
+<H3><A NAME="hot-links"></A> Hot links       </H3>
+
+<P>You can link a set to a file or a pipe using this feature. Once
+a link has been established, you can update it (i.e., read data
+again) by clicking on the update button. If you have specified a
+command (using grace language) in the corresponding text field
+of the popup, it will be executed after each update. Note that
+you can use several commands separated by ';' characters.
+<P>Currently, only simple XY sets can be used for hotlinks.
+<P>
+<H3><A NAME="set-locator-fixed-point"></A> Set locator fixed point       </H3>
+
+<P>After having selected this menu entry, you can select a point on
+a graph that will be used as the origin of the locator display
+(just below the menu bar). The fixed point is taken into account
+only when the display type of the locator is set to [DX,DY].
+<P>
+<H3><A NAME="clear-locator-fixed-point"></A> Clear locator fixed point       </H3>
+
+<P>This entry is provided to remove a fixed point set before and
+use the default again: point [0, 0].
+<P>
+<H3><A NAME="locator-props"></A> Locator props       </H3>
+
+<P>The locator props popup allows you to customize the display of
+the locator, mainly its type and the format and precision of the
+display. You can use all the formats that are allowed in the
+graphs scales.
+<P>
+<H3><A NAME="preferences"></A> Preferences       </H3>
+
+<P>The preferences popup allows you to set miscellaneous properties
+of your grace session, such as GUI behavior, cursor type,
+date reading hint and reference date used for calendar conversions.
+<P>
+<H2><A NAME="data-menu"></A> 4.3 Data menu    </H2>
+
+<P>
+<H3><A NAME="data-set-operations"></A> Data set operations       </H3>
+
+<P>This popup gathers all operations that are related to the
+ordering of data points inside a set or between sets. If you
+want to operate on the sets as a whole, you should use the 
+<A HREF="#set-operations">set operations</A> popup from the Edit
+menu. You can sort according to any coordinate (X, Y, DX, ...)
+in ascending or descending order, reverse the order of the
+points, join several sets into one, split one set into several
+others of equal lengths, or drop a range of points from a
+set. The 
+<A HREF="#set-selector">set selector</A> of the
+popup shows the number of points in each set in square brackets
+like this: G0.S0[63], the points are numbered from 0 to n-1.
+<P>
+<H3><A NAME="transformations-menu"></A> Transformations menu       </H3>
+
+<P>The transformations sub-menu gives you access to all data-mining
+features of Grace.
+<P>
+<H3><A NAME="evaluate-expression"></A> Evaluate expression          </H3>
+
+<P>Using evaluate expression allows you to create a set by
+applying an explicit formula to another set, or to parts of
+another set if you use regions restrictions.
+<P>All the classical mathematical functions are available (cos,
+sin, but also lgamma, j1, erf, ...). As usual all
+trigonometric functions use radians by default but you can
+specify a unit if you prefer to say cos (x rad) or sin (3 * y
+deg). Other predefined names include pi (for the constant)
+and a, b, c and d for scratch arrays you can use to store
+data between evaluations.
+<P>In the formula, you can use X, Y, Y1, ..., Y4 to denote any
+coordinate you like from the source set. An implicit loop
+will be used around your formula so if you say:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+         x = x - 4966.5
+         
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>you will shift all points of your set 4966.5 units to the left.
+<P>You can use more than one set in the same formula, like this:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+         y = y - 0.653 * sin (x deg) + s2.y
+         
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>which means you use both X and Y from the source set but also
+the Y coordinate of set 2. Beware that the loop is a simple
+loop over the indices, all the sets you use in such an hybrid
+expression should therefore have the same number of points
+and point i of one set should really be related to point i of
+the other set. If your sets do not follow these requirements,
+you should first homogenize them using
+<A HREF="#interpolation">interpolation</A>.
+<P>
+<H3><A NAME="histograms"></A> Histograms          </H3>
+
+<P>The histograms popup allows you to compute either standard
+or cumulative histograms from the Y coordinates of
+your data. You can select only a range using the start and
+end fields and you can specify the bin width.
+<P>
+<H3><A NAME="fourier-transforms"></A> Fourier transforms          </H3>
+
+<P>This popup is devoted to direct and inverse Fourier
+transforms. The default is to perform a direct transform on
+unfiltered data and to produce a set with the index as
+abscissa and magnitude as ordinate. You can filter the input
+data window through triangular, Hanning, Welch, Hamming,
+Blackman and Parzen filters. You can load magnitude, phase or
+coefficients and use either index, frequency or period as
+abscissas. You can choose between direct and inverse Fourier
+transforms. If you specify real input data, X is assumed to
+be equally spaced and ignored; if you specify complex input
+data X is taken as the real part and Y as the imaginary part.
+<P>If Grace was configured with the FFTW library (see 
+<A HREF="#configuration">configuration</A>), then the DFT and
+FFT buttons really perform the same transform (so there is no
+speed-up in using FFT in this case). If you want Grace can to
+use FFTW <I>wisdom</I> files, you should set several 
+<A HREF="#environment-variables">environment variables</A> to
+name them.
+<P>
+<H3><A NAME="running-averages"></A> Running averages          </H3>
+
+<P>The running average popup allows you to compute some values
+on a sliding window over your data. You choose both the value
+you need (average, median, minimum, maximum, standard
+deviation) and the length of the window and perform the
+operation. You can restrict the operation to the points
+belonging to (or outside of) a region.
+<P>
+<H3><A NAME="differences"></A> Differences          </H3>
+
+<P>The differences popup is used to compute approximations of
+the first derivative of a function with finite
+differences. The only choice (apart from the source set of
+course) is the type of differences to use: forward, backward
+or centered.
+<P>
+<H3><A NAME="seasonal-differences"></A> Seasonal differences          </H3>
+
+<P>The seasonal differences popup is used to subtract data from
+a period to data of the preceding period (namely y[i] - y[i +
+period]). Beware that the period is entered in terms of index
+in the set and not in terms of abscissa!
+<P>
+<H3><A NAME="integration"></A> Integration          </H3>
+
+<P>The integration popup is used to compute the integral of a
+set and optionally to load it. The numerical value of the
+integral is shown in the text field after
+computation. Selecting "cumulative sum" in the choice item
+will create and load a new set with the integral and compute
+the end value, selecting "sum only" will only compute the end
+value.
+<P>
+<H3><A NAME="interpolation"></A> Interpolation          </H3>
+
+<P>The interpolation popup is used to force the abscissas of one
+set to correspond exactly to the abscissas of another
+set. This is mainly used before performing some complex
+operations between the two sets with the 
+<A HREF="#evaluate-expression">evaluate          expression</A> popup. Several
+interpolation methods can be used: linear, spline or Akima
+splines. Note that if the interpolated set is not wider than
+the reference set, some extremal points will be missing. You
+can check this with the number of points of each set (it
+appears in the set selectors of the popup). In this case you
+can perform a second run interpolating the reference set at
+the abscissas of the newly created set, this will remove the
+extra points.
+<P>
+<H3><A NAME="splines"></A> Splines          </H3>
+
+<P>Using the splines popup you can fit a part of a set with
+cubic or Akima splines. You select which part you want to
+operate on with the start and stop fields, they are both
+expressed in abscissa units. The number of points refer to
+the spline you want to create.
+<P>
+<H3><A NAME="regression"></A> Regression          </H3>
+
+<P>The regression popup can be used to fit a set against
+polynomials or some specific functions (y=A*x^B,
+y=A*exp(B*x), y=A+B*ln(x) and y=1/(A+Bx)) for which a simple
+transformation of input data can be used to apply linear
+regression formulas.
+<P>You can load either the fitted values, the residuals or the
+function itself. Choosing to load fitted values or residuals
+leads to a set of the same length and abscissas as the
+initial set. Choosing to load the function is almost similar
+to load the fitted values except that you choose yourself the
+boundaries and the number of points. This can be used for
+example to draw the curve outside of the data sample range or
+to produce an evenly spaced set from an irregular one.
+<P>
+<H3><A NAME="non-linear-fit"></A> Non-linear fit          </H3>
+
+<P>The non linear fit popup can be used for functions outside of
+the simple regression methods scope. With this popup you
+provide the expression yourself using a0, a1, ..., a9 to
+denote the fit parameters (as an example you can say y = a0 * cos
+(a1 * x + a2)). You specify a tolerance, starting values and
+optional bounds and run several steps before loading the
+results.
+<P>The fit characteristics (number of parameters, formula, ...)
+can be saved in a file and retrieved as needed using the file
+menu of the popup.
+<P>In the "Advanced" tab, you can additionally apply a restriction to the
+set(s) to be fitted (thus ignoring points not satisfying the
+criteria), use one of preset weighting schemes or define your own,
+and choose whether to load the fitted values, the residuals or
+the function itself. Choosing to load fitted values or residuals leads
+to a set of the same length and abscissas as the initial set. Choosing
+to load the function is almost similar to load the fitted values
+except that you choose yourself the boundaries and the number of
+points. This can be used for example to draw the curve outside of the
+data sample range or to produce an evenly spaced set from an irregular
+one.
+<P>
+<H3><A NAME="cross/auto-correlation"></A> Cross/auto correlation          </H3>
+
+<P>The correlation popup can be used to compute autocorrelation
+of one set or cross correlation between two sets. You only
+select the set (or sets) and specify the maximum lag.
+<P>
+<H3><A NAME="digital-filter"></A> Digital filter          </H3>
+
+<P>You can use a set as a weight to filter another set. Only the
+Y part and the length of the weighting set are important, the
+X part is ignored.
+<P>
+<H3><A NAME="linear-convolution"></A> Linear convolution          </H3>
+
+<P>The convolution popup is used to ... convolve two sets. You
+only select the sets and apply.
+<P>
+<H3><A NAME="geometric-transforms"></A> Geometric transforms          </H3>
+
+<P>You can rotate, scale or translate sets using the geometric
+transformations popup. You specify the characteristics of
+each transform and the application order.
+<P>
+<H3><A NAME="sample-points"></A> Sample points          </H3>
+
+<P>This popup provides two sampling methods. The first one is
+to choose a starting point and a step, the second one is to
+select only the points that satisfy a boolean expression you
+specify.
+<P>
+<H3><A NAME="prune-data"></A> Prune data          </H3>
+
+<P>This popup is devoted to reducing huge sets (and then saving
+both computation time and disk space).
+<P>The interpolation method can be applied only to ordered sets:
+it is based on the assumption that if a real point and an
+interpolation based on neighboring points are closer than a
+specified threshold, then the point is redundant and can be
+eliminated.
+<P>The geometric methods (circle, ellipse, rectangle) can be
+applied to any set, they test each point in turn and keep
+only those that are not in the neighborhood of previous
+points.
+<P>
+<P>
+<H3><A NAME="feature-extraction"></A> Feature extraction       </H3>
+
+<P>Given a set of curves in a graph, extract a feature from each
+curve and use the values of the feature to provide the Y values
+for a new curve.
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Feature </TD><TD> Description </TD></TR><TR><TD>
+Y minimum </TD><TD> Minimum Y value of set </TD></TR><TR><TD>
+Y maximum </TD><TD> Maximum Y value of set </TD></TR><TR><TD>
+Y average </TD><TD> Average Y value of set </TD></TR><TR><TD>
+Y std. dev. </TD><TD> Standard deviation of Y values </TD></TR><TR><TD>
+Y median </TD><TD> Median Y value </TD></TR><TR><TD>
+X minimum </TD><TD> Minimum X value of set </TD></TR><TR><TD>
+X maximum </TD><TD> Maximum X value of set </TD></TR><TR><TD>
+X average </TD><TD> Average X value of set </TD></TR><TR><TD>
+X std. dev. </TD><TD> Standard deviation of X values </TD></TR><TR><TD>
+X median </TD><TD> Median X value </TD></TR><TR><TD>
+Frequency </TD><TD> Perform DFT (FFT if set length a power of 2) to find largest frequency component </TD></TR><TR><TD>
+Period </TD><TD> Inverse of above </TD></TR><TR><TD>
+Zero crossing </TD><TD> Time of the first zero crossing, + or - going </TD></TR><TR><TD>
+Rise time </TD><TD> Assume curve starts at the minimum and rises to the maximum, get time to go from 10% to 90% of rise. For single exponential curves, this is 2.2*time constant </TD></TR><TR><TD>
+Fall time </TD><TD> Assume curve starts at the maximum and drops to the minimum, get time to go from 90% to 10% of fall </TD></TR><TR><TD>
+Slope </TD><TD> Perform linear regression to obtain slope </TD></TR><TR><TD>
+Y intercept </TD><TD> Perform linear regression to obtain Y-intercept </TD></TR><TR><TD>
+Set length </TD><TD> Number of data points in set </TD></TR><TR><TD>
+Half maximal width </TD><TD> Assume curve starts from the minimum, rises to the maximum and drops to the minimum again. Determine the time for which the curve is elevated more than 50% of the maximum rise. </TD></TR><TR><TD>
+Barycenter X </TD><TD> Barycenter along X axis </TD></TR><TR><TD>
+Barycenter Y </TD><TD> Barycenter along Y axis </TD></TR><TR><TD>
+X (Y max) </TD><TD> X of Maximum Y </TD></TR><TR><TD>
+Y (X max) </TD><TD> Y of Maximum X </TD></TR><TR><TD>
+integral </TD><TD> cumulative sum </TD></TR><TR><TD>
+
+<CAPTION>              Extractable features
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<H2><A NAME="plot-menu"></A> 4.4 Plot menu    </H2>
+
+<P>
+<H3><A NAME="plot-appearance"></A> Plot appearance       </H3>
+
+<P>The plot appearance popup let you set the time stamp properties
+and the background color of the page. The color is used outside
+of graphs and also on graphs were no specific background color
+is set. The time stamp is updated every time the project is modified.
+<P>
+<H3><A NAME="graph-appearance"></A> Graph appearance       </H3>
+
+<P>The graph appearance popup can be displayed from both the plot
+menu and by double-clicking on a legend, title, or subtitle of a
+graph (see 
+<A HREF="#clicks">Clicks and double clicks</A>). The graph selector at the top allows to choose
+the graph you want to operate on, it also allows certain common
+actions through its popup menu (see 
+<A HREF="#graph-selector">graph selector</A>). The main tab includes the properties you
+will need more often (title for example), and other tabs are
+used to fine tune some less frequently used options (fonts,
+sizes, colors, placements).
+<P>If you need special characters or special formatting in your
+title or subtitle, you can use grace escape sequences (the
+sequence will appear verbatim in the text field but will be
+rendered on the graph), see 
+<A HREF="#typesetting">typesetting</A>. If you don't remember the mapping between
+alphabetic characters and the glyph you need in some specific
+fonts (mainly symbol and zapfdingbats), you can invoke the font
+tool from the text field by hitting CTRL-e. You can change fonts
+and select characters from there, they will be copied back in
+the text field when you press the "Accept" button. Beware of
+the position of the cursor as you enter text or change font in
+the font tool, the character or command will be inserted at this
+position, not at the end of the string!
+<P>
+<H3><A NAME="set-appearance"></A> Set appearance       </H3>
+
+<P>The set appearance popup can be displayed from both the plot
+menu and by double-clicking anywhere in a graph (see 
+<A HREF="#clicks">Clicks and double clicks</A>). The set selector
+at the top allows to choose the set you want to operate on, it
+also allows certain common actions through its popup menu (see
+<A HREF="#set-selector">set selector</A>). The main tab
+gathers the properties you will need more often (line and
+symbol properties or legend string for example), and other tabs
+are used to fine tune some less frequently used options (drop
+lines, fill properties, annotated values and error bars
+properties for example).
+<P>You should note that despite the legend string related to
+<EM>one</EM> set is entered in the set appearance popup, this is not
+sufficient to display it. Displaying <EM>all</EM> legends is a graph
+level decision, so the toggle is in the main tab of the 
+<A HREF="#graph-appearance">graph appearance</A> popup.
+<P>If you need special characters or special formatting in your
+legend, you can use grace escape sequences (the sequence will
+appear verbatim in the text field but will be rendered on the
+graph), see 
+<A HREF="#typesetting">typesetting</A>. If you
+don't remember the mapping between alphabetic characters and the
+glyph you need in some specific fonts (mainly symbol and
+zapfdingbats), you can invoke the font tool from the text
+field by hitting CTRL-e. You can change fonts and select
+characters from there, they will be copied back in the text
+field when you press the "Accept" button. Beware of the
+position of the cursor as you enter text or change font in the
+font tool, the character or command will be inserted at this
+position, not at the end of the string!
+<P>
+<H3><A NAME="axis-properties"></A> Axis properties       </H3>
+
+<P>The axis properties popup can be displayed from both the "Plot"
+menu and by double-clicking exactly on an axis (see 
+<A HREF="#clicks">Clicks and double clicks</A>). The pulldown menu
+at the top allows to select the axis you want to operate on. The
+"Active" toggle globally activates or deactivates the axis (all
+GUI elements are insensitive for deactivated axes). The start
+and stop fields depict the displayed range. Three types of
+scales are available: linear, logarithmic or reciprocal, and
+you can invert the axis (which normally increases from left to
+right and from bottom to top).  The main tab includes the
+properties you will need more often (axis label, tick
+spacing and format for example), and other tabs are used to fine
+tune some less frequently used options (fonts, sizes, colors,
+placements, stagger, grid lines, special ticks, ...).
+<P>If you need special characters or special formatting in your
+label, you can use grace escape sequences (the
+sequence will appear verbatim in the text field but will be
+rendered on the graph), see 
+<A HREF="#typesetting">typesetting</A>. If you don't remember the mapping between
+alphabetic characters and the glyph you need in some specific
+fonts (mainly symbol and zapfdingbats), you can invoke the font
+tool from the text field by hitting CTRL-e. You can change fonts
+and select characters from there, they will be copied back in
+the text field when you press the "Accept" button. Beware of
+the position of the cursor as you enter text or change font in
+the font tool, the character or command will be inserted at this
+position, not at the end of the string!
+<P>Once you have set the options as you want, you can apply
+them. One useful feature is that you can set several axes at
+once with the bottom pulldown menu (current axis, all axes
+current graph, current axis all graphs, all axes all
+graphs). Beware that you always apply the properties of all
+tabs, not only the selected one.
+<P>
+<H2><A NAME="view-menu"></A> 4.5 View menu    </H2>
+
+<P>
+<H3><A NAME="show-locator-bar"></A> Show locator bar       </H3>
+
+<P>This toggle item shows or hides the locator below the menu bar.
+<P>
+<H3><A NAME="show-status-bar"></A> Show status bar       </H3>
+
+<P>This toggle item shows or hides the status string below the
+canvas.
+<P>
+<H3><A NAME="show-tool-bar"></A> Show tool bar       </H3>
+
+<P>This toggle item shows or hides the tool bar at the left of the
+canvas.
+<P>
+<H3><A NAME="redraw"></A> Redraw       </H3>
+
+<P>This menu item triggers a redrawing of the canvas.
+<P>
+<H3><A NAME="update-all"></A> Update all       </H3>
+
+<P>This menu item causes an update of all GUI controls. Usually, everything
+is updated automatically, unless one makes modifications by entering
+commands in the 
+<A HREF="#commands">Command</A> tool.
+<P>
+<P>
+<H2><A NAME="window-menu"></A> 4.6 Window menu    </H2>
+
+<P>
+<H3><A NAME="commands"></A> Commands       </H3>
+
+<P>
+<H3><A NAME="point-tracking"></A> Point tracking       </H3>
+
+<P>
+<H3><A NAME="drawing-objects"></A> Drawing objects       </H3>
+
+<P>
+<H3><A NAME="font-tool"></A> Font tool       </H3>
+
+<P>
+<H3><A NAME="results"></A> Results       </H3>
+
+<P>
+<P>
+<H2><A NAME="help-menu"></A> 4.7 Help menu    </H2>
+
+<P>
+<H3><A NAME="on-context"></A> On context       </H3>
+
+<P>This function is not implemented yet.
+<P>
+<H3><A NAME="users-guide"></A> User's guide       </H3>
+
+<P>Browse the Grace user's guide.
+<P>
+<H3><A NAME="tutorial"></A> Tutorial       </H3>
+
+<P>Browse the Grace tutorial.
+<P>
+<H3><A NAME="faq"></A> FAQ       </H3>
+
+<P>Frequently Asked Questions with answers.
+<P>
+<H3><A NAME="changes"></A> Changes       </H3>
+
+<P>The list of changes during the Grace development.
+<P>
+<H3><A NAME="examples"></A> Examples       </H3>
+
+<P>The whole tree of submenus each loading a sample plot.
+<P>
+<H3><A NAME="comments"></A> Comments       </H3>
+
+<P>Use this to send your suggestions or bug reports.
+<P>
+<H3><A NAME="license-terms"></A> License terms       </H3>
+
+<P>Grace licensing terms will be displayed (GPL version 2).
+<P>
+<H3><A NAME="about"></A> About       </H3>
+
+<P>A popup with basic info on the software, including some
+configuration details. More details can be found when running Grace
+with the "-version" command line flag.
+<P>
+<H2><A NAME="s5">5. GUI controls</A>  </H2>
+
+<P>
+<H2>5.1 List selectors       </H2>
+
+<P>Various selectors are available in several popups. They all display
+lists of objects (graphs, sets, ...) and can be used to perform
+simple operations on these objects (copying, deleting, ...). The
+operations are available from a popup menu that appears when pressing
+mouse button 3 on them. Depending on the required functionality, they
+may allow multiple choices or not. The following
+shortcuts are enabled (if the result of an action would contradict the
+list's selection policy, this would be ignored):
+<UL>
+<LI> Ctrl+a select all</LI>
+<LI> Ctrl+u unselect all</LI>
+<LI> Ctrl+i invert selection</LI>
+</UL>
+<P>
+<H3><A NAME="graph-selector"></A> Graph selector          </H3>
+
+<P>The operations that can be performed on graphs through the graph
+selector's menu popup are:
+<UL>
+<LI> focus to</LI>
+<LI> hide</LI>
+<LI> show</LI>
+<LI> duplicate</LI>
+<LI> kill</LI>
+<LI> swap</LI>
+<LI> create new</LI>
+</UL>
+
+All this operations are not available in every instance of the
+selector. For example in the "read sets" popup only one graph can
+be selected at a time, and the swap operation is disabled.
+<P>Double-clicking on a list entry will switch the focus to that graph.
+<P>
+<H3><A NAME="set-selector"></A> Set selector          </H3>
+
+<P>The operations that can be performed on sets through the set
+selector are:
+<UL>
+<LI> hide</LI>
+<LI> show</LI>
+<LI> bring to front</LI>
+<LI> send to back</LI>
+<LI> duplicate</LI>
+<LI> kill</LI>
+<LI> kill data</LI>
+<LI> swap</LI>
+<LI> edit
+<UL>
+<LI> in spreadsheet</LI>
+<LI> in text editor</LI>
+</UL>
+</LI>
+<LI> create new
+<UL>
+<LI> by formula</LI>
+<LI> in spreadsheet</LI>
+<LI> in text editor</LI>
+<LI> from block data</LI>
+</UL>
+</LI>
+<LI> pack all sets</LI>
+<LI> selector operations
+<UL>
+<LI> view set comments</LI>
+<LI> show data-less</LI>
+<LI> show hidden</LI>
+<LI> select all</LI>
+<LI> unselect all</LI>
+<LI> invert selection</LI>
+<LI> update</LI>
+</UL>
+</LI>
+</UL>
+<P>
+<P>
+<H2><A NAME="s6">6. Canvas actions</A>  </H2>
+
+<P>
+<P>
+<H2>6.1 Hotkeys    </H2>
+
+<P>
+<P>When the pointer focus is on the canvas (where the graph is drawn), there
+are some shortcuts to activate several actions. They are:
+<P>
+<UL>
+<LI> Ctrl &lt;Key&gt;A: Autoscale</LI>
+<LI> Ctrl &lt;Key&gt;D: Delete an object</LI>
+<LI> Ctrl &lt;Key&gt;L: Move current graph legend</LI>
+<LI> Ctrl &lt;Key&gt;M: Move an object</LI>
+<LI> Ctrl &lt;Key&gt;T: Place timestamp</LI>
+<LI> Ctrl &lt;Key&gt;U: Refresh hotlinks</LI>
+<LI> Ctrl &lt;Key&gt;V: Set the viewport with mouse</LI>
+<LI> Ctrl &lt;Key&gt;Z: Zoom</LI>
+<LI> Ctrl Alt &lt;Key&gt;L: Draw a line</LI>
+<LI> Ctrl Alt &lt;Key&gt;B: Draw a box</LI>
+<LI> Ctrl Alt &lt;Key&gt;E: Draw an ellipse</LI>
+<LI> Ctrl Alt &lt;Key&gt;T: Write a text string</LI>
+</UL>
+<P>
+<H2><A NAME="clicks"></A> 6.2 Clicks and double clicks    </H2>
+
+<P>
+<P>A single click inside a graph switches focus to that graph. This is the
+default policy, but it can be changed from the "Edit/Preferences"
+popup.
+<P>
+<P>
+<P>Double clicking on parts of the canvas will invoke certain actions
+or raise some popups:
+<P>
+<UL>
+<LI> on a focus marker: move selected viewport corner </LI>
+<LI> on an axis:  "Axis properties" popup</LI>
+<LI> on a set:    "Set appearance" popup</LI>
+<LI> on a legend: "Graph appearance" popup</LI>
+<LI> on a (sub)title: "Graph appearance" popup</LI>
+<LI> on an object (box, line, ...): a popup for editing properties of that object</LI>
+</UL>
+<P>The double clicking actions can be enabled/disabled from the
+"Edit/Preferences" popup.
+<P>
+<H2><A NAME="command-interpreter"></A> <A NAME="s7">7. Command interpreter </A>  </H2>
+
+<P>
+<P>
+<H2>7.1 General notes    </H2>
+
+<P>The interpreter parses its input in a line-by-line manner. There may
+be several statements per line, separated by semicolon (<CODE>;</CODE>).
+The maximal line length is 4 kbytes (hardcoded). The parser is
+case-insensitive.
+<H2>7.2 Definitions    </H2>
+
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Name </TD><TD> Description </TD><TD> Examples </TD></TR><TR><TD>
+expr </TD><TD>Any numeric expression </TD><TD>1.5 + sin(2) </TD></TR><TR><TD>
+iexpr </TD><TD>Any expression that evaluates to an integer </TD><TD>25, 0.1 + 1.9, PI/asin(1) </TD></TR><TR><TD>
+nexpr </TD><TD>Non-negative iexpr </TD><TD>2 - 1 </TD></TR><TR><TD>
+indx </TD><TD>Non-negative iexpr </TD><TD>&nbsp; </TD></TR><TR><TD>
+qstr </TD><TD>Quoted string </TD><TD>"a string" </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="types"></A> 
+        Basic types
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Expression </TD><TD> Description </TD><TD> Types </TD><TD> Example </TD></TR><TR><TD>
+GRAPH[<I>id</I>] </TD><TD>graph <I>id</I> </TD><TD>indx <I>id</I> </TD><TD>GRAPH[0] </TD></TR><TR><TD>
+G<I>nn</I> </TD><TD>graph <I>nn</I> </TD><TD><I>nn</I>: 0-99 </TD><TD>G0 </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="graph-sel"></A> 
+        Graph selections
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Expression </TD><TD> Description </TD><TD> Types </TD><TD> Example </TD></TR><TR><TD>
+<I>graph</I>.SETS[<I>id</I>] </TD><TD>set <I>id</I> in graph <I>graph</I></TD><TD>indx <I>id</I>, graphsel <I>graph</I> </TD><TD>GRAPH[0].SETS[1] </TD></TR><TR><TD>
+<I>graph</I>.S<I>nn</I> </TD><TD>set <I>nn</I> in graph <I>graph</I></TD><TD><I>nn</I>: 0-99, graphsel <I>graph</I> </TD><TD>G0.S1 </TD></TR><TR><TD>
+SET[<I>id</I>] </TD><TD>set <I>id</I> in the current graph</TD><TD>indx <I>id</I> </TD><TD>SET[1] </TD></TR><TR><TD>
+S<I>nn</I> </TD><TD>set <I>nn</I> in the current graph</TD><TD><I>nn</I>: 0-99 </TD><TD>S1 </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="set-sel"></A> 
+        Set selections
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Expression </TD><TD> Description </TD><TD> Types </TD><TD> Example </TD></TR><TR><TD>
+COLOR <I>"colorname"</I> </TD><TD>a mapped color <I>colorname</I> </TD><TD>- </TD><TD>COLOR "red" </TD></TR><TR><TD>
+COLOR <I>id</I> </TD><TD>a mapped color with ID <I>id</I> </TD><TD>nexpr <I>id</I> </TD><TD>COLOR 2 </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="color-sel"></A> 
+        Color selections
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Expression </TD><TD> Description </TD><TD> Types </TD><TD> Example </TD></TR><TR><TD>
+PATTERN <I>id</I> </TD><TD>pattern with ID <I>id</I> </TD><TD>nexpr <I>id</I> </TD><TD>PATTERN 1 </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="pattern-sel"></A> 
+        Pattern selections
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Expression </TD><TD> Description </TD><TD> Types </TD><TD> Example </TD></TR><TR><TD>
+X </TD><TD>the first column </TD><TD>- </TD><TD>X </TD></TR><TR><TD>
+Y </TD><TD>the second column </TD><TD>- </TD><TD>Y </TD></TR><TR><TD>
+Y<I>n</I> </TD><TD>(<I>n</I> + 2)-th column </TD><TD><I>n</I> = 0 - 4 </TD><TD>Y3 </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="datacol-sel"></A> 
+        Data column selections
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>Not finished yet...
+<H2>7.3 Variables    </H2>
+
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Variable </TD><TD> Description </TD></TR><TR><TD>
+datacolumn </TD><TD> data column of current set </TD></TR><TR><TD>
+set.datacolumn </TD><TD> data column of set </TD></TR><TR><TD>
+vvar </TD><TD> user-defined array </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="vvariables"></A> 
+        Vector variables
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Variable </TD><TD> Description </TD></TR><TR><TD>
+vvariable[i] </TD><TD> i-th element of a vector variable </TD></TR><TR><TD>
+var </TD><TD> user-defined variable </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="svariables"></A> 
+        Scalar variables
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<H2>7.4 Numerical operators and functions    </H2>
+
+<P>
+<P>In numerical expressions, the infix format is used. Arguments of
+both operators and functions can be either scalars or vector arrays.
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Operator </TD><TD> Description </TD></TR><TR><TD>
++ </TD><TD> addition </TD></TR><TR><TD>
+- </TD><TD> substraction </TD></TR><TR><TD>
+* </TD><TD> multiplication </TD></TR><TR><TD>
+/ </TD><TD> division </TD></TR><TR><TD>
+% </TD><TD> modulus </TD></TR><TR><TD>
+^ </TD><TD> raising to power </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="arithmetic-operators"></A> 
+        Arithmetic operators
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Operator </TD><TD> Description </TD></TR><TR><TD>
+AND or &amp;&amp; </TD><TD> logical AND </TD></TR><TR><TD>
+OR or || </TD><TD> logical OR </TD></TR><TR><TD>
+NOT or ! </TD><TD> logical NOT </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="logical-operators"></A> 
+        Logical operators
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Operator </TD><TD> Description </TD></TR><TR><TD>
+EQ or == </TD><TD> equal </TD></TR><TR><TD>
+NE or != </TD><TD> not equal </TD></TR><TR><TD>
+LT or &lt; </TD><TD> less than </TD></TR><TR><TD>
+LE or &lt;= </TD><TD> less than or equal </TD></TR><TR><TD>
+GT or &gt; </TD><TD> greater than </TD></TR><TR><TD>
+GE or &gt;= </TD><TD> greater than or equal </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="comparison-operators"></A> 
+        Comparison operators
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Function </TD><TD> Description </TD></TR><TR><TD>
+abs(x) </TD><TD> absolute value </TD></TR><TR><TD>
+acos(x) </TD><TD> arccosine </TD></TR><TR><TD>
+acosh(x) </TD><TD> hyperbolic arccosine </TD></TR><TR><TD>
+asin(x) </TD><TD> arcsine </TD></TR><TR><TD>
+asinh(x) </TD><TD> hyperbolic arcsine </TD></TR><TR><TD>
+atan(x) </TD><TD> arctangent </TD></TR><TR><TD>
+atan2(y,x) </TD><TD> arc tangent of two variables </TD></TR><TR><TD>
+atanh(x) </TD><TD> hyperbolic arctangent </TD></TR><TR><TD>
+ceil(x) </TD><TD> greatest integer function </TD></TR><TR><TD>
+cos(x) </TD><TD> cosine </TD></TR><TR><TD>
+cosh(x) </TD><TD> hyperbolic cosine </TD></TR><TR><TD>
+exp(x) </TD><TD> e^x </TD></TR><TR><TD>
+fac(n) </TD><TD> factorial function, n! </TD></TR><TR><TD>
+floor(x) </TD><TD> least integer function </TD></TR><TR><TD>
+irand(n) </TD><TD> random integer less than n </TD></TR><TR><TD>
+ln(x) </TD><TD> natural log </TD></TR><TR><TD>
+log10(x) </TD><TD> log base 10 </TD></TR><TR><TD>
+log2(x) </TD><TD> base 2 logarithm of x </TD></TR><TR><TD>
+maxof(x,y) </TD><TD> returns greater of x and y </TD></TR><TR><TD>
+minof(x,y) </TD><TD> returns lesser of x and y </TD></TR><TR><TD>
+mod(x,y) </TD><TD> mod function (also x % y) </TD></TR><TR><TD>
+pi </TD><TD> the PI constant </TD></TR><TR><TD>
+rand </TD><TD> pseudo random number distributed uniformly on (0.0,1.0) </TD></TR><TR><TD>
+rint(x) </TD><TD> round to closest integer </TD></TR><TR><TD>
+sin(x) </TD><TD> sine function </TD></TR><TR><TD>
+sinh(x) </TD><TD> hyperbolic sine </TD></TR><TR><TD>
+sqr(x) </TD><TD> x^2 </TD></TR><TR><TD>
+sqrt(x) </TD><TD> x^0.5 </TD></TR><TR><TD>
+tan(x) </TD><TD> tangent function </TD></TR><TR><TD>
+tanh(x) </TD><TD> hyperbolic tangent </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="functions"></A> 
+        Functions
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Function </TD><TD> Description </TD></TR><TR><TD>
+chdtr(df, x) </TD><TD> chi-square distribution </TD></TR><TR><TD>
+chdtrc(v, x) </TD><TD> complemented Chi-square distribution </TD></TR><TR><TD>
+chdtri(df, y) </TD><TD> inverse of complemented Chi-square distribution </TD></TR><TR><TD>
+erf(x) </TD><TD> error function </TD></TR><TR><TD>
+erfc(x) </TD><TD> complement of error function </TD></TR><TR><TD>
+fdtr(df1, df2, x) </TD><TD> F distribution function </TD></TR><TR><TD>
+fdtrc(x) </TD><TD> complemented F distribution </TD></TR><TR><TD>
+fdtri(x) </TD><TD> inverse of complemented F distribution </TD></TR><TR><TD>
+gdtr(a, b, x) </TD><TD> gamma distribution function </TD></TR><TR><TD>
+gdtrc(a, b, x) </TD><TD> complemented gamma distribution function </TD></TR><TR><TD>
+ndtr(x) </TD><TD> Normal distribution function </TD></TR><TR><TD>
+ndtri(x) </TD><TD> inverse of Normal distribution function </TD></TR><TR><TD>
+norm(x) </TD><TD> gaussian density function </TD></TR><TR><TD>
+pdtr(k, m) </TD><TD> Poisson distribution </TD></TR><TR><TD>
+pdtrc(k, m) </TD><TD> complemented Poisson distribution </TD></TR><TR><TD>
+pdtri(k, y) </TD><TD> inverse Poisson distribution </TD></TR><TR><TD>
+rnorm(xbar,s) </TD><TD> pseudo random number distributed N(xbar,s) </TD></TR><TR><TD>
+stdtr(k, t) </TD><TD> Student's t distribution </TD></TR><TR><TD>
+stdtri(k, p) </TD><TD> functional inverse of Student's t distribution </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="stat-functions"></A> 
+        Statistical functions
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Function </TD><TD> Description </TD></TR><TR><TD>
+ai(x), bi(x) </TD><TD> Airy functions (two independent solutions of the differential equation <CODE>y''(x) = xy</CODE>) </TD></TR><TR><TD>
+beta(x) </TD><TD> beta function </TD></TR><TR><TD>
+chi(x) </TD><TD> hyperbolic cosine integral </TD></TR><TR><TD>
+ci(x) </TD><TD> cosine integral </TD></TR><TR><TD>
+dawsn(x) </TD><TD> Dawson's integral </TD></TR><TR><TD>
+ellie(phi, m) </TD><TD> incomplete elliptic integral of the second kind </TD></TR><TR><TD>
+ellik(phi, m) </TD><TD> incomplete elliptic integral of the first kind </TD></TR><TR><TD>
+ellpe(m) </TD><TD> complete elliptic integral of the second kind </TD></TR><TR><TD>
+ellpk(m) </TD><TD> complete elliptic integral of the first kind </TD></TR><TR><TD>
+expn(x) </TD><TD> exponential integral </TD></TR><TR><TD>
+fresnlc(x) </TD><TD> cosine Fresnel integral </TD></TR><TR><TD>
+fresnls(x) </TD><TD> sine Fresnel integral </TD></TR><TR><TD>
+gamma(x) </TD><TD> gamma function </TD></TR><TR><TD>
+hyp2f1(a, b, c, x) </TD><TD> Gauss hyper-geometric function </TD></TR><TR><TD>
+hyperg(a, b, x) </TD><TD> confluent hyper-geometric function </TD></TR><TR><TD>
+i0e(x) </TD><TD> modified Bessel function of order zero, exponentially scaled </TD></TR><TR><TD>
+i1e(x) </TD><TD> modified Bessel function of order one, exponentially scaled </TD></TR><TR><TD>
+igam(a, x) </TD><TD> incomplete gamma integral </TD></TR><TR><TD>
+igamc(a, x) </TD><TD> complemented incomplete gamma integral </TD></TR><TR><TD>
+igami(a, p) </TD><TD> inverse of complemented incomplete gamma integral </TD></TR><TR><TD>
+incbet(a, b, x) </TD><TD> incomplete beta integral </TD></TR><TR><TD>
+incbi(a, b, y) </TD><TD> Inverse of incomplete beta integral </TD></TR><TR><TD>
+iv(v, x) </TD><TD> modified Bessel function of order v </TD></TR><TR><TD>
+jv(v, x) </TD><TD> Bessel function of order v </TD></TR><TR><TD>
+k0e(x) </TD><TD> modified Bessel function, third kind, order zero, exponentially scaled </TD></TR><TR><TD>
+k1e(x) </TD><TD> modified Bessel function, third kind, order one, exponentially scaled </TD></TR><TR><TD>
+kn(n, x) </TD><TD> modified Bessel function, third kind, integer order </TD></TR><TR><TD>
+lbeta(x) </TD><TD> natural log of |beta(x)| </TD></TR><TR><TD>
+lgamma(x) </TD><TD> log of gamma function </TD></TR><TR><TD>
+psi(x) </TD><TD> psi (digamma) function </TD></TR><TR><TD>
+rgamma(x) </TD><TD> reciprocal gamma function </TD></TR><TR><TD>
+shi(x) </TD><TD> hyperbolic sine integral </TD></TR><TR><TD>
+si(x) </TD><TD> sine integral </TD></TR><TR><TD>
+spence(x) </TD><TD> dilogarithm </TD></TR><TR><TD>
+struve(v, x) </TD><TD> Struve function </TD></TR><TR><TD>
+yv(v, x) </TD><TD> Bessel function of order v </TD></TR><TR><TD>
+zeta(x, q) </TD><TD> Riemann zeta function of two arguments </TD></TR><TR><TD>
+zetac(x) </TD><TD> Riemann zeta function </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="spec-functions"></A> 
+        Special math functions
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<H2>7.5 Procedures    </H2>
+
+<P>
+<P>
+<P>Not written yet...
+<P>
+<P>
+<H2>7.6 Device parameters    </H2>
+
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Command </TD><TD> Description </TD></TR><TR><TD>
+PAGE SIZE xdim, ydim </TD><TD> set page dimensions (in pp) of all devices </TD></TR><TR><TD>
+DEVICE <I>"devname"</I> PAGE SIZE xdim, ydim </TD><TD> set page dimensions (in pp) of device <I>devname</I> </TD></TR><TR><TD>
+DEVICE <I>"devname"</I> DPI dpi </TD><TD> set device's dpi (dots per pixel) </TD></TR><TR><TD>
+DEVICE <I>"devname"</I> FONT onoff </TD><TD> enable/disable usage of built-in fonts for device <I>devname</I> </TD></TR><TR><TD>
+DEVICE <I>"devname"</I> FONT ANTIALIASING onoff </TD><TD> enable/disable font aliasing for device <I>devname</I> </TD></TR><TR><TD>
+DEVICE <I>"devname"</I> OP <I>"options"</I> </TD><TD> set device specific options (see 
+<A HREF="#device-settings">Device-specific settings</A>) </TD></TR><TR><TD>
+HARDCOPY DEVICE <I>"devname"</I> </TD><TD> set device <I>devname</I> as current hardcopy device </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="device-parameters"></A> 
+        Device parameters
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<H2>7.7 Flow control    </H2>
+
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Statement </TD><TD> Description </TD><TD> Types </TD><TD> Example </TD></TR><TR><TD>
+SLEEP <I>n</I> </TD><TD>sleep for <I>n</I> seconds </TD><TD>expr <I>n</I> </TD><TD>SLEEP(3) </TD></TR><TR><TD>
+EXIT(<I>status</I>) </TD><TD>causes normal program termination with exit status <I>status</I> </TD><TD>iexpr <I>status</I> </TD><TD>EXIT(0) </TD></TR><TR><TD>
+EXIT </TD><TD>causes normal program termination; same as EXIT(0) </TD><TD>&nbsp; </TD><TD>EXIT </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="flow-control"></A> 
+        Flow control
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<H2>7.8 Declarations    </H2>
+
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Statement </TD><TD> Description </TD><TD> Types </TD><TD> Example </TD></TR><TR><TD>
+DEFINE <I>var</I> </TD><TD>define new scalar variable <I>var</I> </TD><TD>&nbsp; </TD><TD>DEFINE myvar </TD></TR><TR><TD>
+DEFINE <I>vvar</I>[] </TD><TD>define new vector variable <I>vvar</I> of zero length </TD><TD>&nbsp; </TD><TD>DEFINE myvvar[] </TD></TR><TR><TD>
+DEFINE <I>vvar</I>[<I>n</I>] </TD><TD>define new vector variable <I>vvar</I> of length <I>n</I> </TD><TD>nexpr <I>n</I> </TD><TD>DEFINE myvvar[10] </TD></TR><TR><TD>
+CLEAR <I>var</I> </TD><TD>undefine new variable <I>var</I> and deallocate associated storage </TD><TD>&nbsp; </TD><TD>CLEAR myvar </TD></TR><TR><TD>
+<I>vvar</I> LENGTH <I>n</I> </TD><TD>reallocate vector variable <I>vvar</I> </TD><TD>nexpr <I>n</I> </TD><TD>myvvar LENGTH 25 </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="user-variables"></A> 
+        User variables
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>Not written yet...
+<H2>7.9 Graph properties    </H2>
+
+<P>
+<P>Not written yet...
+<P>
+<H2>7.10 Set properties    </H2>
+
+<P>
+<P>Not written yet...
+<P>
+<H2><A NAME="s8">8. Advanced topics</A>  </H2>
+
+<P>
+<P>
+<H2>8.1 Fonts    </H2>
+
+<P>For all devices, Grace uses Type1 fonts. Both PFA (ASCII) and PFB
+(binary) formats can be used.
+<P>
+<H3>Font configuration      </H3>
+
+<P>The file responsible for the font configurations of Grace is
+<CODE>fonts/FontDataBase</CODE>. The first line contains a positive integer
+specifying the number of fonts declared in that file. All remaining lines
+contain declarations of one font each, composed out of three fields:
+<OL>
+<LI> Font name. The name will appear in the font selector controls.
+Also, backend devices that has built-in fonts, will be given the
+name as a font identifier.</LI>
+<LI> Font fall-back. Grace will try to use this in case the real
+font is not found.</LI>
+<LI> Font filename. The file with the font outline data.</LI>
+</OL>
+<P>Here is the default <CODE>FontDataBase</CODE> file:
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+14
+Times-Roman             Times-Roman             n021003l.pfb
+Times-Italic            Times-Italic            n021023l.pfb
+Times-Bold              Times-Bold              n021004l.pfb
+Times-BoldItalic        Times-BoldItalic        n021024l.pfb
+Helvetica               Helvetica               n019003l.pfb
+Helvetica-Oblique       Helvetica-Oblique       n019023l.pfb
+Helvetica-Bold          Helvetica-Bold          n019004l.pfb
+Helvetica-BoldOblique   Helvetica-BoldOblique   n019024l.pfb
+Courier                 Courier                 n022003l.pfb
+Courier-Oblique         Courier-Oblique         n022023l.pfb
+Courier-Bold            Courier-Bold            n022004l.pfb
+Courier-BoldOblique     Courier-BoldOblique     n022024l.pfb
+Symbol                  Symbol                  s050000l.pfb
+ZapfDingbats            ZapfDingbats            d050000l.pfb
+      
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+<P>
+<P>
+<H3>Font data files    </H3>
+
+<P>For text rastering, three types of files are used.
+<OL>
+<LI> <CODE>.pfa</CODE>-/<CODE>.pfb</CODE>-files: These contain the character
+outline descriptions. The files are assumed to be in the
+<CODE>fonts/type1</CODE> directory; these are the filenames
+specified in the <CODE>FontDataBase</CODE> configuration file.</LI>
+<LI> <CODE>.afm</CODE>-files: These contain high-precision font metric
+descriptions as well as some extra information, such as kerning
+and ligature information for a particular font. It is assumed
+that the filename of a font metric file has same basename as the
+respective font outline file, but with the <CODE>.afm</CODE>
+extension; the metric files are expected to be found in the
+<CODE>fonts/type1</CODE> directory, too.</LI>
+<LI> <CODE>.enc</CODE>-files: These contain encoding arrays in a special
+but simple form. They are only needed if someone wants to load
+a special encoding to re-encode a font. Their place is
+<CODE>fonts/enc</CODE></LI>
+</OL>
+<P>
+<H3>Custom fonts      </H3>
+
+<P>It is possible to use custom fonts with Grace. One mostly needs to use
+extra fonts for the purpose of localization. For many European
+languages, the standard fonts supplied with Grace should contain all the
+characters needed, but encoding may have to be adjusted. This is done by
+putting a <CODE>Default.enc</CODE> file with proper encoding scheme into the
+<CODE>fonts/enc</CODE> directory. Grace comes with a few encoding files in
+the directory; more can be easily found on the Internet. (If the
+<CODE>Default.enc</CODE> file doesn't exist, the IsoLatin1 encoding will be
+used). Notice that for fonts having an encoding scheme in themselves
+(such as the Symbol font, and many nationalized fonts) the default
+encoding is ignored.
+<P>If you do need to use extra fonts, you should modify the
+<CODE>FontDataBase</CODE> file accordingly, obeying its format. However,
+if you are going to exchange Grace project files with other people who
+do not have the extra fonts configured, an important thing is to define
+reasonable fall-back font names.
+<P>For example, let us assume I use Hebrew fonts, and the configuration file
+has lines like these:
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+    ...
+Courier-Hebrew              Courier                 courh___.pfa
+Courier-Hebrew-Oblique      Courier-Oblique         courho__.pfa
+    ...
+      
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+
+My colleague, who lives in Russia, uses Cyrillic fonts with Grace
+configured like this:
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+    ...
+Cronix-Courier              Courier                 croxc.pfb
+Cronix-Courier-Oblique      Courier-Oblique         croxco.pfb
+    ...
+      
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+
+The font mapping information (Font name &lt;-&gt; Font fall-back) is
+stored in the Grace project files. Provided that all the localized fonts
+have English characters in the lower part of the ASCII table unmodified,
+I can send my friend files (with no Hebrew characters, of course) and be
+sure they render correctly on his computer.
+<P>Thus, with properly configured national fonts, you can make localized
+annotations for plots intended for internal use of your institution,
+while being able to exchange files with colleagues from abroad. People
+who ever tried to do this with MS Office applications should appreciate
+the flexibility :-).
+<P>
+<H2>8.2 Interaction with other applications    </H2>
+
+<P>
+<P>
+<H3>Using pipes      </H3>
+
+<P>
+<P>
+<H3>Using grace_np library      </H3>
+
+<P>The grace_np library is a set of compiled functions that
+allows you to launch and drive a Grace subprocess from your C or
+Fortran application. Functions are provided to start the
+subprocess, to send it commands or data, to stop it or detach
+from it.
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Function </TD><TD> Arguments </TD><TD> Description </TD></TR><TR><TD>
+int GraceOpen </TD><TD> (int <I>buf_size</I>)</TD><TD> launch a Grace subprocess and open a communication channel with it </TD></TR><TR><TD>
+int GraceIsOpen </TD><TD> (void) </TD><TD> test if a Grace subprocess is currently connected </TD></TR><TR><TD>
+int GraceClose </TD><TD> (void) </TD><TD> close the communication channel and exit the Grace subprocess </TD></TR><TR><TD>
+int GraceClosePipe </TD><TD> (void) </TD><TD> close the communication channel and leave the Grace subprocess alone </TD></TR><TR><TD>
+int GraceFlush </TD><TD> (void) </TD><TD> flush all the data remaining in the buffer </TD></TR><TR><TD>
+int GracePrintf </TD><TD> (const char* <I>format</I>, ...)</TD><TD> format a command and send it to the Grace subprocess </TD></TR><TR><TD>
+int GraceCommand </TD><TD> (const char* <I>cmd</I>)</TD><TD> send an already formated command to the Grace subprocess </TD></TR><TR><TD>
+GraceErrorFunctionType GraceRegisterErrorFunction</TD><TD> (GraceErrorFunctionType <I>f</I>)</TD><TD> register a user function <I>f</I> to display library errors </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="C functions"></A>  grace_np library C functions.
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Function </TD><TD> Arguments </TD><TD> Description </TD></TR><TR><TD>
+integer GraceOpenF </TD><TD> (integer <I>buf_size</I>)</TD><TD> launch a Grace subprocess and open a communication channel with it </TD></TR><TR><TD>
+integer GraceIsOpenF </TD><TD> (void) </TD><TD> test if a Grace subprocess is currently connected </TD></TR><TR><TD>
+integer GraceCloseF </TD><TD> (void) </TD><TD> close the communication channel and exit the Grace subprocess </TD></TR><TR><TD>
+integer GraceClosePipeF </TD><TD> (void) </TD><TD> close the communication channel and leave the Grace subprocess alone </TD></TR><TR><TD>
+integer GraceFlushF </TD><TD> (void) </TD><TD> flush all the data remaining in the buffer </TD></TR><TR><TD>
+integer GraceCommandF </TD><TD> (character*(*) <I>cmd</I>)</TD><TD> send an already formatted command to the Grace subprocess </TD></TR><TR><TD>
+GraceFortranFunctionType GraceRegisterErrorFunctionF</TD><TD> (GraceFortranFunctionType <I>f</I>)</TD><TD> register a user function <I>f</I> to display library errors </TD></TR><TR><TD>
+
+<CAPTION>        
+<A NAME="fortran functions"></A>  grace_np library F77 functions.
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P> There is no fortran equivalent for the GracePrintf function,
+you should format all the data and commands yourself before
+sending them with GraceCommandF.
+<P>The Grace subprocess listen for the commands you send and
+interpret them as if they were given in a batch file. You can
+send any command you like (redraw, autoscale, ...). If you want
+to send data, you should include them in a command like "g0.s0
+point 3.5, 4.2".
+<P>Apart from the fact it monitors the data sent via an anonymous
+pipe, the Grace subprocess is a normal process. You can interact
+with it through the GUI. Note that no error can be sent back to
+the parent process. If your application send erroneous commands,
+an error popup will be displayed by the subprocess.
+<P>If you exit the subprocess while the parent process is still
+using it, the broken pipe will be detected. An error code will
+be returned to every further call to the library (but you can
+still start a new process if you want to manage this situation).
+<P>Here is an example use of the library, you will find this
+program in the distribution.
+<P>
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+#include &lt;stdlib.h>
+#include &lt;stdio.h>
+#include &lt;unistd.h>
+#include "grace_np.h"
+
+#ifndef EXIT_SUCCESS
+#  define EXIT_SUCCESS 0
+#endif
+
+#ifndef EXIT_FAILURE
+#  define EXIT_FAILURE -1
+#endif
+
+void my_error_function(const char *msg)
+{
+    fprintf(stderr, "library message: \"%s\"\n", msg);
+}
+
+int
+main(int argc, char* argv[])
+{
+    int i;
+
+    GraceRegisterErrorFunction(my_error_function);
+
+    /* Start Grace with a buffer size of 2048 and open the pipe */
+    if (GraceOpen(2048) == -1) {
+        fprintf(stderr, "Can't run Grace. \n");
+        exit(EXIT_FAILURE);
+    }
+    
+    /* Send some initialization commands to Grace */
+    GracePrintf("world xmax 100");
+    GracePrintf("world ymax 10000");
+    GracePrintf("xaxis tick major 20");
+    GracePrintf("xaxis tick minor 10");
+    GracePrintf("yaxis tick major 2000");
+    GracePrintf("yaxis tick minor 1000");
+    GracePrintf("s0 on");
+    GracePrintf("s0 symbol 1");
+    GracePrintf("s0 symbol size 0.3");
+    GracePrintf("s0 symbol fill pattern 1");
+    GracePrintf("s1 on");
+    GracePrintf("s1 symbol 1");
+    GracePrintf("s1 symbol size 0.3");
+    GracePrintf("s1 symbol fill pattern 1");
+
+    /* Display sample data */
+    for (i = 1; i &lt;= 100 &amp;&amp; GraceIsOpen(); i++) {
+        GracePrintf("g0.s0 point %d, %d", i, i);
+        GracePrintf("g0.s1 point %d, %d", i, i * i);
+        /* Update the Grace display after every ten steps */
+        if (i % 10 == 0) {
+            GracePrintf("redraw");
+            /* Wait a second, just to simulate some time needed for
+               calculations. Your real application shouldn't wait. */
+            sleep(1);
+        }
+    }
+
+    if (GraceIsOpen()) {
+        /* Tell Grace to save the data */
+        GracePrintf("saveall \"sample.agr\"");
+
+        /* Flush the output buffer and close Grace */
+        GraceClose();
+
+        /* We are done */
+        exit(EXIT_SUCCESS);
+    } else {
+        exit(EXIT_FAILURE);
+    }
+}
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+<P>
+<H2><A NAME="fftw-tuning"></A> 8.3 FFTW tuning    </H2>
+
+<P>When the FFTW capabilities are compiled in, Grace looks at two environment
+variables to decide what to do with the FFTW 'wisdom' capabilities. 
+First, a quick summary of what this is. The FFTW package is capable of
+adaptively determining the most efficient factorization of a set to give
+the fastest computation.  It can store these factorizations as 'wisdom',
+so that if a transform of a given size is to be repeated, it is does not
+have to re-adapt.  The good news is that this seems to work very well. 
+The bad news is that, the first time a transform of a given size is
+computed, if it is not a sub-multiple of one already known, it takes a LONG
+time (seconds to minutes).
+<P>The first environment variable is GRACE_FFTW_WISDOM_FILE. If this is set
+to the name of a file which can be read and written (e.g.,
+$HOME/.grace_fftw_wisdom) then Grace will automatically create this file
+(if needed) and maintain it. If the file is read-only, it will be read,
+but not updated with new wisdom. If the symbol GRACE_FFTW_WISDOM_FILE
+either doesn't exist, or evaluates to an empty string, Grace will drop the
+use of wisdom, and will use the fftw estimator (FFTW_ESTIMATE flag sent to
+the planner) to guess a good factorization, instead of adaptively
+determining it.
+<P>The second variable is GRACE_FFTW_RAM_WISDOM. If this variable is defined
+to be non-zero, and GRACE_FFTW_WISDOM_FILE variable is not defined (or is
+an empty string), Grace will use wisdom internally, but maintain no
+persistent cache of it. This will result in very slow execution times the
+first time a transform is executed after Grace is started, but very fast
+repeats. I am not sure why anyone would want to use wisdom without
+writing it to disk, but if you do, you can use this flag to enable it.
+<P>
+<P>
+<H2><A NAME="dl-modules"></A> 8.4 DL modules     </H2>
+
+<P>Grace can access external functions present
+in either system or third-party shared libraries or modules
+specially compiled for use with Grace.
+<P>
+<H3>Function types    </H3>
+
+<P>One must make sure, however, that the external function is of one
+of supported by Grace types:
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Grace type </TD><TD> Description </TD></TR><TR><TD>
+f_of_i </TD><TD> a function of 1 <CODE>int</CODE> variable </TD></TR><TR><TD>
+f_of_d </TD><TD> a function of 1 <CODE>double</CODE> variable </TD></TR><TR><TD>
+f_of_nn </TD><TD> a function of 2 <CODE>int</CODE> parameters </TD></TR><TR><TD>
+f_of_nd </TD><TD> a function of 1 <CODE>int</CODE> parameter and 1 <CODE>double</CODE> variable </TD></TR><TR><TD>
+f_of_dd </TD><TD> a function of 2 <CODE>double</CODE> variables </TD></TR><TR><TD>
+f_of_nnd </TD><TD> a function of 2 <CODE>int</CODE> parameters and 1 <CODE>double</CODE> variable </TD></TR><TR><TD>
+f_of_ppd </TD><TD> a function of 2 <CODE>double</CODE> parameters and 1 <CODE>double</CODE> variable </TD></TR><TR><TD>
+f_of_pppd </TD><TD> a function of 3 <CODE>double</CODE> parameters and 1 <CODE>double</CODE> variable </TD></TR><TR><TD>
+
+<CAPTION>              
+<A NAME="grace-types"></A> 
+              Grace types for external functions
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>The return values of functions are assumed to be of the
+<CODE>double</CODE> type.
+<P>Note, that there is no difference from the point of view of
+function prototype between parameters and variables; the
+difference is in the way Grace treats them - an attempt to use
+a vector expression as a parameter argument will result in a
+parse error.
+<P>Let us consider few examples.
+<P>
+<H3>Examples       </H3>
+
+<P>Caution: the examples provided below (paths and compiler flags)
+are valid for Linux/ELF with gcc. On other operating systems,
+you may need to refer to compiler/linker manuals or ask a guru.
+<P>
+<H3>Example 1       </H3>
+
+<P>Suppose I want to use function <CODE>pow(x,y)</CODE> from the Un*x math
+library (libm). Of course, you can use the "^" operator defined
+in the Grace language, but here, for the sake of example, we
+want to access the function directly.
+<P>The command to make it accessible by Grace is
+<BLOCKQUOTE><CODE>
+USE "pow" TYPE f_of_dd FROM "/usr/lib/libm.so"
+</CODE></BLOCKQUOTE>
+<P>Try to plot y = pow(x,2) and y = x^2 graphs (using, for
+example, "create new -&gt; Formula" from any 
+<A HREF="#set-selector">set        selector</A>) and compare.
+<P>
+<H3>Example 2       </H3>
+
+<P>Now, let us try to write a function ourselves. We will define
+function <CODE>my_function</CODE> which simply returns its (second)
+argument multiplied by integer parameter transferred as the
+first argument.
+<P>In a text editor, type in the following C code and save it as
+"my_func.c":
+<P>
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+       double my_function (int n, double x)
+       {
+           double retval;
+           retval = (double) n * x;
+           return (retval);
+       }
+       
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+<P>OK, now compile it:
+<P>
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+       $gcc -c -fPIC my_func.c
+       $gcc -shared my_func.o -o /tmp/my_func.so
+       
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+<P>(You may strip it to save some disk space):
+<P>
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+       $strip /tmp/my_func.so
+       
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+<P>That's all! Ready to make it visible to Grace as "myf" - we are
+too lazy to type the very long string "my_function" many times.
+<P>
+<BLOCKQUOTE><CODE>
+USE "my_function" TYPE f_of_nd FROM "/tmp/my_func.so" ALIAS "myf"
+</CODE></BLOCKQUOTE>
+<P>
+<P>
+<H3>Example 3       </H3>
+
+<P>A more serious example. There is a special third-party library
+available on your system which includes a very important for
+you yet very difficult-to-program from the scratch function
+that you want to use with Grace.  But, the function prototype
+is NOT one of any predefined 
+<A HREF="#grace-types">types</A>.  The solution is to write a simple function
+wrapper. Here is how:
+<P>Suppose, the name of the library is "special_lib" and the
+function you are interested in is called "special_func" and
+according to the library manual, should be accessed as <CODE>void
+special_func(double *input, double *output, int parameter)</CODE>.
+The wrapper would look like this:
+<P>
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+       double my_wrapper(int n, double x)
+       {
+           extern void special_func(double *x, double *y, int n);
+           double retval;
+           (void) special_func(&amp;x, &amp;retval, n);
+           return (retval);
+       }
+       
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+<P>Compile it:
+<P>
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+       $gcc -c -fPIC my_wrap.c
+       $gcc -shared my_wrap.o -o /tmp/my_wrap.so -lspecial_lib -lblas
+       $strip /tmp/my_wrap.so
+       
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+<P>Note that I added <CODE>-lblas</CODE> assuming that the special_lib
+library uses some functions from the BLAS. Generally, you have
+to add <I>all</I> libraries which your module depends on (and
+all libraries those libraries rely upon etc.), as if you wanted
+to compile a plain executable.
+<P>Fine, make Grace aware of the new function
+<P>
+<BLOCKQUOTE><CODE>
+USE "my_wrapper" TYPE f_of_nd FROM "/tmp/my_wrap.so" ALIAS "special_func"
+</CODE></BLOCKQUOTE>
+<P>so we can use it with its original name.
+<P>
+<H3>Example 4       </H3>
+
+<P>An example of using Fortran modules.
+<P>Here we will try to achieve the same functionality as in
+Example 2, but with the help of F77.
+<P>
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+       DOUBLE PRECISION FUNCTION MYFUNC (N, X)
+       IMPLICIT NONE
+       INTEGER N
+       DOUBLE PRECISION X
+C
+       MYFUNC = N * X
+C
+       RETURN
+       END
+       
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+<P>As opposite to C, there is no way to call such a function from
+Grace directly - the problem is that in Fortran all arguments
+to a function (or subroutine) are passed by reference. So, we
+need a wrapper:
+<P>
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+       double myfunc_wrapper(int n, double x)
+       {
+           extern double myfunc_(int *, double *);
+           double retval;
+           retval = myfunc_(&amp;n, &amp;x);
+           return (retval);
+       }
+       
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+<P>Note that most of f77 compilers by default add underscore to
+the function names and convert all names to the lower case,
+hence I refer to the Fortran function <CODE>MYFUNC</CODE> from my C
+wrapper as <CODE>myfunc_</CODE>, but in your case it can be different!
+<P>Let us compile the whole stuff:
+<P>
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+       $g77 -c -fPIC myfunc.f
+       $gcc -c -fPIC myfunc_wrap.c
+       $gcc -shared myfunc.o myfunc_wrap.o -o /tmp/myfunc.so -lf2c -lm
+       $strip /tmp/myfunc.so
+       
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+<P>And finally, inform Grace about this new function:
+<P>
+<BLOCKQUOTE><CODE>
+USE "myfunc_wrapper" TYPE f_of_nd FROM "/tmp/myfunc.so" ALIAS "myfunc"
+</CODE></BLOCKQUOTE>
+<P>
+<H3>Operating system issues         </H3>
+
+<P>
+<H3>OS/2          </H3>
+
+<P>In general the method outlined in the examples above can be
+used on OS/2, too. However you have to create a
+DLL (Dynamic Link Library) which is a bit more tricky on OS/2 than
+on some un*x systems. 
+This document can't explain the whole procedure in detail but roughly
+describes the way to go.
+Since Grace was ported with EMX we also use it to create the examples,
+however other development environments should work as well.
+We refer to Example 2, since Example 1 is showing a problem on OS/2:
+DLLs might have their entry points (i.e. exported functions)
+callable as ordinals only, so you might not know how to access a
+specific function without some research. 
+First compile my_func.c to my_func.obj
+<P>
+<BLOCKQUOTE><CODE>
+gcc -Zomf -Zmt -c my_func.c
+</CODE></BLOCKQUOTE>
+<P>Then you need to create a linker definition file my_func.def which
+gives some basic info about the DLL and declares the exported
+functions.
+<P>
+<BLOCKQUOTE><CODE>
+<HR>
+<PRE>
+         LIBRARY my_func INITINSTANCE TERMINSTANCE
+         CODE LOADONCALL
+         DATA LOADONCALL MULTIPLE NONSHARED
+         DESCRIPTION 'This is a test DLL: my_func.dll'
+         EXPORTS
+         my_function
+         
+</PRE>
+<HR>
+</CODE></BLOCKQUOTE>
+<P>(don't forget about the 8 characters limit on the DLL name!).
+Finally link the DLL:
+<P>
+<BLOCKQUOTE><CODE>
+gcc my_func.obj my_func.def -o my_func.dll -Zdll -Zno-rte -Zmt -Zomf
+</CODE></BLOCKQUOTE>
+<P>(the -Zno-rte flag depends on the content of the library;
+check out the EMX documentation about this as well as 
+the other compiler/linker flags used here!)
+To use these new library function in Grace you may either put the
+DLL in the LIBPATH and use the short form:
+<P>
+<BLOCKQUOTE><CODE>
+USE "my_function" TYPE f_of_nd FROM "my_func" ALIAS "myf"
+</CODE></BLOCKQUOTE>
+<P>or have it in an arbitrary path which you need to specify explicitly
+then:
+<P>
+<BLOCKQUOTE><CODE>
+USE "my_function" TYPE f_of_nd FROM "e:/foo/my_func.dll" ALIAS "myf"
+</CODE></BLOCKQUOTE>
+<P>
+<H2><A NAME="s9">9. References</A>  </H2>
+
+<P>
+<P>
+<H2><A NAME="typesetting"></A> 9.1 Typesetting    </H2>
+
+<P>Grace permits quite complex typesetting on a per string basis.
+Any string displayed (titles, legends, tick marks,...) may contain
+special control codes to display subscripts, change fonts within the
+string etc.
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Control code </TD><TD> Description </TD></TR><TR><TD>
+\f{x} </TD><TD> switch to font named "x" </TD></TR><TR><TD>
+\f{n} </TD><TD> switch to font number n </TD></TR><TR><TD>
+\f{} </TD><TD> return to original font </TD></TR><TR><TD>
+\R{x} </TD><TD> switch to color named "x" </TD></TR><TR><TD>
+\R{n} </TD><TD> switch to color number n </TD></TR><TR><TD>
+\R{} </TD><TD> return to original color </TD></TR><TR><TD>
+\#{x} </TD><TD> treat "x" (must be of even length) as list of hexadecimal char codes </TD></TR><TR><TD>
+\t{xx xy yx yy} </TD><TD> apply transformation matrix </TD></TR><TR><TD>
+\t{} </TD><TD> reset transformation matrix </TD></TR><TR><TD>
+\z{x} </TD><TD> zoom x times </TD></TR><TR><TD>
+\z{} </TD><TD> return to original zoom </TD></TR><TR><TD>
+\r{x} </TD><TD> rotate by x degrees </TD></TR><TR><TD>
+\l{x} </TD><TD> slant by factor x </TD></TR><TR><TD>
+\v{x} </TD><TD> shift vertically by x </TD></TR><TR><TD>
+\v{} </TD><TD> return to unshifted baseline </TD></TR><TR><TD>
+\h{x} </TD><TD> horizontal shift by x </TD></TR><TR><TD>
+\u </TD><TD> begin underline </TD></TR><TR><TD>
+\U </TD><TD> stop underline </TD></TR><TR><TD>
+\o </TD><TD> begin overline </TD></TR><TR><TD>
+\O </TD><TD> stop overline </TD></TR><TR><TD>
+\Fk </TD><TD> enable kerning </TD></TR><TR><TD>
+\FK </TD><TD> disable kerning </TD></TR><TR><TD>
+\Fl </TD><TD> enable ligatures </TD></TR><TR><TD>
+\FL </TD><TD> disable ligatures </TD></TR><TR><TD>
+\m{n} </TD><TD> mark current position as n </TD></TR><TR><TD>
+\M{n} </TD><TD> return to saved position n </TD></TR><TR><TD>
+\dl </TD><TD> LtoR substring direction </TD></TR><TR><TD>
+\dr </TD><TD> RtoL substring direction </TD></TR><TR><TD>
+\dL </TD><TD> LtoR text advancing </TD></TR><TR><TD>
+\dR </TD><TD> RtoL text advancing </TD></TR><TR><TD>
+\x </TD><TD> switch to Symbol font (same as \f{Symbol}) </TD></TR><TR><TD>
+\+ </TD><TD> increase size (same as \z{1.19} ; 1.19 = sqrt(sqrt(2))) </TD></TR><TR><TD>
+\- </TD><TD> decrease size (same as \z{0.84} ; 0.84 = 1/sqrt(sqrt(2))) </TD></TR><TR><TD>
+\s </TD><TD> begin subscripting (same as \v{-0.4}\z{0.71}) </TD></TR><TR><TD>
+\S </TD><TD> begin superscripting (same as \v{0.6}\z{0.71}) </TD></TR><TR><TD>
+\T{xx xy yx yy} </TD><TD> same as \t{}\t{xx xy yx yy} </TD></TR><TR><TD>
+\Z{x} </TD><TD> absolute zoom x times (same as \z{}\z{x}) </TD></TR><TR><TD>
+\q </TD><TD> make font oblique (same as \l{0.25}) </TD></TR><TR><TD>
+\Q </TD><TD> undo oblique (same as \l{-0.25}) </TD></TR><TR><TD>
+\N </TD><TD> return to normal style (same as \v{}\t{}) </TD></TR><TR><TD>
+\\ </TD><TD> print \ </TD></TR><TR><TD>
+\n </TD><TD> switch to font number n (0-9) (deprecated) </TD></TR><TR><TD>
+\c </TD><TD> begin using upper 128 characters of set (deprecated) </TD></TR><TR><TD>
+\C </TD><TD> stop using upper 128 characters of set (deprecated) </TD></TR><TR><TD>
+
+<CAPTION>              
+<A NAME="control-codes"></A> 
+              Control codes.
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>Example:
+<P>F\sX\N(\xe\f{}) =
+sin(\xe\f{})\#{b7}e\S-X\N\#{b7}cos(\xe\f{}) 
+<P>prints roughly
+<BLOCKQUOTE><CODE>
+<PRE>
+                       -x
+       F (e) = sin(e)&middot;e  &middot;cos(e)
+        x
+       
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>using string's initial font and e prints as epsilon from the Symbol font.
+<P>NOTE:
+Characters from the upper half of the char table can be entered directly
+from the keyboard, using appropriate <CODE>xmodmap(1)</CODE> settings, or
+with the help of the font tool ("Window/Font tool").
+<P>
+<P>
+<H2><A NAME="device-limitations"></A> 9.2 Device-specific limitations    </H2>
+
+<P>
+<P>Grace can output plots using several device backends. The list of
+available devices can be seen (among other stuff) by specifying the
+"-version" command line switch.
+<UL>
+<LI> X11, PostScript and EPS are full-featured devices</LI>
+<LI> Raster drivers (PNM/JPEG/PNG):
+<UL>
+<LI> only even-odd fill rule is supported</LI>
+<LI> patterned lines are not implemented</LI>
+</UL>
+</LI>
+<LI> PDF driver:
+<UL>
+<LI> patterned fills are not implemented</LI>
+<LI> bitmapped text strings are not transparent</LI>
+<LI> arcs of angles != 90*n are approximated very roughly</LI>
+</UL>
+</LI>
+<LI> MIF driver:
+the driver is a brand new one and still in beta test
+<UL>
+<LI> some of patterned fills not implemented</LI>
+<LI> bitmapped text strings not implemented</LI>
+</UL>
+</LI>
+<LI> SVG driver:
+the driver is a brand new one and still in beta test, one
+should also be aware that SVG is still a W3C working draft,
+not yet a recommendation (see the 
+<A HREF="http://www.w3.org/TR/1999/12/WD-SVG-19991203/">Scalable Vector Graphics (SVG) 1.0 Specification</A>)
+<UL>
+<LI> patterned fills not implemented</LI>
+<LI> bitmapped text strings not implemented</LI>
+</UL>
+</LI>
+</UL>
+<P>
+<P>
+<P>
+<H2><A NAME="device-settings"></A> 9.3 Device-specific settings    </H2>
+
+<P>
+<P>Some of the output devices accept several configuration options. You can
+set the options by passing a respective string to the interpreter
+using the "DEVICE <I>"devname"</I> OP <I>"options"</I>" command (see
+<A HREF="#device-parameters">Device parameters</A>). A few options
+can be passed in one command, separated by commas.
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Command </TD><TD> Description </TD></TR><TR><TD>
+grayscale </TD><TD> set grayscale output </TD></TR><TR><TD>
+color </TD><TD> set color output </TD></TR><TR><TD>
+level1 </TD><TD> use only PS Level 1 subset of commands </TD></TR><TR><TD>
+level2 </TD><TD> use also PS Level 2 commands if needed </TD></TR><TR><TD>
+xoffset:<I>x</I> </TD><TD> set page offset in X direction <I>x</I> pp </TD></TR><TR><TD>
+yoffset:<I>y</I> </TD><TD> set page offset in Y direction <I>y</I> pp </TD></TR><TR><TD>
+mediafeed:auto </TD><TD> default input tray </TD></TR><TR><TD>
+mediafeed:match </TD><TD> select input with media matching page dimensions </TD></TR><TR><TD>
+mediafeed:manual </TD><TD> manual media feed </TD></TR><TR><TD>
+hwresolution:on </TD><TD> set hardware resolution </TD></TR><TR><TD>
+hwresolution:off </TD><TD> do not set hardware resolution </TD></TR><TR><TD>
+
+<CAPTION>              PostScript driver options
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Command </TD><TD> Description </TD></TR><TR><TD>
+grayscale </TD><TD> set grayscale output </TD></TR><TR><TD>
+color </TD><TD> set color output </TD></TR><TR><TD>
+level1 </TD><TD> use only PS Level 1 subset of commands </TD></TR><TR><TD>
+level2 </TD><TD> use also PS Level 2 commands if needed </TD></TR><TR><TD>
+bbox:tight </TD><TD> enable "tight" bounding box </TD></TR><TR><TD>
+bbox:page </TD><TD> bounding box coincides with page dimensions </TD></TR><TR><TD>
+
+<CAPTION>              EPS driver options
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Command </TD><TD> Description </TD></TR><TR><TD>
+PDF1.2 </TD><TD> set compatibility mode to PDF-1.2 </TD></TR><TR><TD>
+PDF1.3 </TD><TD> set compatibility mode to PDF-1.3 </TD></TR><TR><TD>
+compression:value </TD><TD> set compression level (0 - 9) </TD></TR><TR><TD>
+
+<CAPTION>              PDF driver options
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Command </TD><TD> Description </TD></TR><TR><TD>
+format:pbm </TD><TD> output in PBM format </TD></TR><TR><TD>
+format:pgm </TD><TD> output in PGM format </TD></TR><TR><TD>
+format:ppm </TD><TD> output in PPM format </TD></TR><TR><TD>
+rawbits:on </TD><TD> "rawbits" (binary) output </TD></TR><TR><TD>
+rawbits:off </TD><TD> ASCII output </TD></TR><TR><TD>
+
+<CAPTION>              PNM driver options
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Command </TD><TD> Description </TD></TR><TR><TD>
+grayscale </TD><TD> set grayscale output </TD></TR><TR><TD>
+color </TD><TD> set color output </TD></TR><TR><TD>
+optimize:on/off </TD><TD> enable/disable optimization </TD></TR><TR><TD>
+quality:value </TD><TD> set compression quality (0 - 100) </TD></TR><TR><TD>
+smoothing:value </TD><TD> set smoothing (0 - 100) </TD></TR><TR><TD>
+baseline:on/off </TD><TD> do/don't force baseline output </TD></TR><TR><TD>
+progressive:on/off </TD><TD> do/don't output in progressive format </TD></TR><TR><TD>
+dct:ifast </TD><TD> use fast integer DCT method </TD></TR><TR><TD>
+dct:islow </TD><TD> use slow integer DCT method </TD></TR><TR><TD>
+dct:float </TD><TD> use floating-point DCT method </TD></TR><TR><TD>
+
+<CAPTION>              JPEG driver options
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<P>
+<CENTER><TABLE BORDER><TR><TD>
+<BR>
+Command </TD><TD> Description </TD></TR><TR><TD>
+interlaced:on </TD><TD> make interlaced image </TD></TR><TR><TD>
+interlaced:off </TD><TD> don't make interlaced image </TD></TR><TR><TD>
+transparent:on </TD><TD> produce transparent image </TD></TR><TR><TD>
+transparent:off </TD><TD> don't produce transparent image </TD></TR><TR><TD>
+compression:value </TD><TD> set compression level (0 - 9) </TD></TR><TR><TD>
+
+<CAPTION>              PNG driver options
+      </CAPTION>
+</TD></TR></TABLE></CENTER>
+<P>
+<P>
+<P>
+<P>
+<H2><A NAME="dates"></A> 9.4 Dates in Grace     </H2>
+
+<P>We use two calendars in Grace: the one that was established in
+532 by Denys and lasted until 1582, and the one that was created
+by Luigi Lilio (Alyosius Lilius) and Christoph Klau
+(Christophorus Clavius) for pope Gregorius XIII. Both use the
+same months (they were introduced under emperor Augustus, a few
+years after Julian calendar introduction, both Julius and
+Augustus were honored by a month being named after each one).
+<P>The leap years occurred regularly in Denys's calendar: once
+every four years, there is no year 0 in this calendar (the leap
+year -1 was just before year 1). This calendar was not compliant
+with earth motion and the dates were slowly shifting with regard
+to astronomical events.
+<P>This was corrected in 1582 by introducing Gregorian
+calendar. First a ten days shift was introduced to reset correct
+dates (Thursday October the 4th was followed by Friday October
+the 15th). The rules for leap years were also changed: three
+leap years are removed every four centuries. These years are
+those that are multiple of 100 but not multiple of 400: 1700,
+1800, and 1900 were not leap years, but 1600 and 2000 were (will
+be) leap years.
+<P>We still use Gregorian calendar today, but we now have several
+time scales for increased accuracy. The International Atomic
+Time (TAI) is a linear scale: the best scale to use for
+scientific reference. The Coordinated Universal Time (UTC, often
+confused with Greenwich Mean Time) is a legal time that is
+almost synchronized with earth motion. However, since the earth
+is slightly slowing down, leap seconds are introduced from time
+to time in UTC (about one second every 18 months). UTC is not a
+continuous scale ! When a leap second is introduced by
+International Earth Rotation Service, this is published in
+advance and the legal time sequence is as follows: 23:59:59
+followed one second later by 23:59:60 followed one second later
+by 00:00:00. At the time of this writing (1999-01-05) the
+difference between TAI and UTC was 32 seconds, and the last leap
+second was introduced in 1998-12-31.
+<P>These calendars allow to represent any date from the mist of the
+past to the fog of the future, but they are not convenient for
+computation. Another time scale is possible: counting only the
+days from a reference. Such a time scale was introduced by
+Joseph-Juste Scaliger (Josephus Justus Scaliger) in 1583. He
+decided to use "-4713-01-01T12:00:00" as a reference date
+because it was at the same time a Monday, first of January of a
+leap year, there was an exact number of 19 years Meton cycle
+between this date and year 1 (for Easter computation), and it
+was at the beginning of a 15 years <I>Roman indiction</I>
+cycle. The day number counted from this reference is
+traditionally called <I>Julian day</I>, but it has really
+nothing to do with the Julian calendar.
+<P>Grace stores dates internally as reals numbers counted from a
+reference date. The default reference date is the one chosen by
+Scaliger, it is a classical reference for astronomical
+events. It can modified for a single session using the 
+<A HREF="#preferences">Edit-&gt;Preferences</A> popup of the GUI. If
+you often work with a specific reference date you can set it for
+every sessions with a REFERENCE DATE command in your
+configuration file (see 
+<A HREF="#default-template">Default template</A>).
+<P>The following date formats are supported (hour, minutes and
+seconds are always optional):
+<P>
+<OL>
+<LI>iso8601  : 1999-12-31T23:59:59.999</LI>
+<LI>european : 31/12/1999 23:59:59.999 or 31/12/99 23:59:59.999</LI>
+<LI>us       : 12/31/1999 23:59:59.999 or 12/31/99 23:59:59.999</LI>
+<LI>Julian   : 123456.789</LI>
+</OL>
+<P>One should be aware that Grace does not allow to put a space in
+one data column as spaces are used to separate fields. You
+should always use another separator (:/.- or better T) between
+date and time in data files. The GUI, the batch language and the
+command line flags do not have this limitation, you can use
+spaces there without any problem. The T separator comes from the
+ISO8601 standard. Grace support its use also in european and us
+formats.
+<P>You can also provide a hint about the format ("ISO8601",
+"european", "us") using the -datehint command line flag or the
+ref name="Edit->Preferences" id="preferences"> popup of the GUI.
+The formats are tried in the following order: first the hint
+given by the user, then iso, european and us (there is no
+ambiguity between calendar formats and numerical formats and
+therefore no order is specified for them). The separators
+between various fields can be any characters in the set: " :/.-T"
+(one or more spaces act as one separator, other characters can
+not be repeated, the T separator is allowed only between date and time,
+mainly for iso8601), so the string "1999-12 31:23/59" is allowed
+(but not recommended).  The '-' character is used both as a
+separator (it is traditionally used in iso8601 format) and as
+the unary minus (for dates in the far past or for numerical
+dates). By default years are left untouched, so 99 is a date far
+away in the past. This behavior can be changed with the 
+<A HREF="#preferences">Edit->preferences</A> popup, or with the
+<CODE>DATE WRAP on</CODE> and <CODE>DATE WRAP YEAR year</CODE>
+commands. Suppose for example that the wrap year is chosen as
+1950, if the year is between 0 and 99 and is written with two or
+less digits, it is mapped to the present era as follows:
+<P>range [00 ; 49] is mapped to [2000 ; 2049]
+<P>range [50 ; 99] is mapped to [1950 ; 1999]
+<P>with a wrap year set to 1970, the mapping would have been:
+<P>range [00 ; 69] is mapped to [2000 ; 2069]
+<P>range [70 ; 99] is mapped to [1970 ; 1999]
+<P>this is reasonably Y2K compliant and is consistent with current
+use.  Specifying year 1 is still possible using more than two
+digits as follows: "0001-03-04" is unambiguously March the 4th,
+year 1. The inverse transform is applied for dates written by
+Grace, for example as tick labels. Using two digits only for
+years is not recommended, we introduce a <I>wrap year +
+100</I> bug here so this feature should be removed at some
+point in the future ...
+<P>The date scanner can be used either for Denys's and Gregorian
+calendars. Inexistent dates are detected, they include year 0,
+dates between 1582-10-05 and 1582-10-14, February 29th of non
+leap years, months below 1 or above 12, ...  the scanner does
+not take into account leap seconds: you can think it works only
+in International Atomic Time (TAI) and not in Coordinated
+Unified Time (UTC). If you find yourself in a situation were you
+need UTC, a very precise scale, and should take into account
+leap seconds ... you should convert your data yourself (for
+example using International Atomic Time). But if you bother with
+that you probably already know what to do.
+<P>
+<P>
+<H2>9.5 Xmgr to Grace migration guide    </H2>
+
+<P>
+<P>This is a very brief guide describing problems and workarounds for
+reading in project files saved with Xmgr. You should read the docs or
+just play with Grace to test new features and controls.
+<P>
+<OL>
+<LI> Grace must be explicitly told the version number of the software
+used to create a file. You can manually put "@version VERSIONID"
+string at the beginning of the file. The VERSIONID is built as
+MAJOR_REV*10000 + MINOR_REV*100 + PATCHLEVEL; so 40101 corresponds
+to xmgr-4.1.1. Projects saved with Xmgr-4.1.2 do NOT need the above,
+since they already have the version string in them. If you have no
+idea what version of Xmgr your file was created with, try some.
+In most cases, 40102 would do the trick.
+ </LI>
+<LI> The above relates to the ASCII projects only. The old binary
+projects (saved with xmgr-4.0.*) are not automatically converted
+anymore. An input filter must be defined to make the conversion
+work on-the-fly. Add the following line to &nbsp;/.gracerc or the
+system-wide $GRACE_HOME/gracerc resource file: DEFINE IFILTER
+"grconvert %s -" MAGIC "00000031" See docs for more info on the
+I/O filters.
+ </LI>
+<LI> Documentation on the script language is severely lacking still.
+ </LI>
+<LI> Grace is WYSIWYG. Xmgr was not. Many changes required to achieve the
+WYSIWYG'ness led to the situation when graphs with objects carefully
+aligned under Xmgr may not look so under Grace. Grace tries its best
+to compensate for the differences, but sometimes you may have to
+adjust such graphs manually.
+ </LI>
+<LI> A lot of symbol types (all except *real* symbols) are removed.
+"Location *" types can be replaced (with much higher comfort) by
+A(nnotating)values. "Impulse *", "Histogram *" and "Stair steps *"
+effects can be achieved using the connecting line parameters (Type,
+Drop lines). "Dot" symbol is removed as well; use the filled circle
+symbol of the zero size with no outline to get the same effect.
+ </LI>
+<LI> Default page layout switched from free (allowing to resize canvas
+with mouse) to fixed. For the old behavior, put "PAGE LAYOUT FREE"
+in the Grace resource file or use the "-free" command line switch.
+<B>The use of the "free" page layout is in general deprecated,
+though.</B>
+ </LI>
+<LI> System (shell) variables GR_* renamed to GRACE_*
+ </LI>
+<LI> Smith plots don't work now. They'll be put back soon.
+ </LI>
+</OL>
+<P>
+<P>
+</BODY>
+</HTML>

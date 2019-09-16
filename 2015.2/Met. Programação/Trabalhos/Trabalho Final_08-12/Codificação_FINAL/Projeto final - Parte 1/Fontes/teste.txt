@@ -1,0 +1,4 @@
+C Brasília 15 47 143
+G Usina 10 42 100 1000
+I inter_1 2 2 5 5 100 0.1 15 20
+A adapta_1 2 3

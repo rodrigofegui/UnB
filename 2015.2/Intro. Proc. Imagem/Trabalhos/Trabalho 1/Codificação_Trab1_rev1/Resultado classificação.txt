@@ -1,0 +1,2400 @@
+Segue a classificação da imagem Segmentações/seg_tumblr_nnl5nehJez1r93y9zo1_1280.jpg.
+Possui uma área total, classificada como tom de pele, de 19731 pixels; onde a maior região tem 5871 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_piscina.jpg.
+Possui uma área total, classificada como tom de pele, de 8072 pixels; onde a maior região tem 5475 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_japanese.jpg.
+Possui uma área total, classificada como tom de pele, de 23524 pixels; onde a maior região tem 20869 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Moreno 2 homem sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 55984 pixels; onde a maior região tem 53682 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_margot-robbie.jpg.
+Possui uma área total, classificada como tom de pele, de 21592 pixels; onde a maior região tem 11942 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_priscila-fantin-praia-biquini.jpg.
+Possui uma área total, classificada como tom de pele, de 7567 pixels; onde a maior região tem 1789 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_4980.jpg.
+Possui uma área total, classificada como tom de pele, de 29648 pixels; onde a maior região tem 25788 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Leia Princess Slave 2 Maior parte do corpo revelada Fundo Simples.jpg.
+Possui uma área total, classificada como tom de pele, de 13964 pixels; onde a maior região tem 9303 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_TARZAN.jpg.
+Possui uma área total, classificada como tom de pele, de 29551 pixels; onde a maior região tem 20143 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_donatella-versace.jpg.
+Possui uma área total, classificada como tom de pele, de 16744 pixels; onde a maior região tem 8012 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_2eros-new-victory-01.jpg.
+Possui uma área total, classificada como tom de pele, de 7068 pixels; onde a maior região tem 3149 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_juliana-paes-1.jpg.
+Possui uma área total, classificada como tom de pele, de 27638 pixels; onde a maior região tem 27570 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kate-upton-171.jpg.
+Possui uma área total, classificada como tom de pele, de 42845 pixels; onde a maior região tem 15313 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_lina-posada-besame-lingerie-1878071679.jpg.
+Possui uma área total, classificada como tom de pele, de 37471 pixels; onde a maior região tem 21737 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Chris-Brown-4.jpg.
+Possui uma área total, classificada como tom de pele, de 5008 pixels; onde a maior região tem 1467 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_D79-0159-844_detalhe1.jpg.
+Possui uma área total, classificada como tom de pele, de 34571 pixels; onde a maior região tem 26942 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Jonas.jpg.
+Possui uma área total, classificada como tom de pele, de 18092 pixels; onde a maior região tem 6190 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_img_9438.jpg.
+Possui uma área total, classificada como tom de pele, de 23882 pixels; onde a maior região tem 13070 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_dolce.jpg.
+Possui uma área total, classificada como tom de pele, de 11777 pixels; onde a maior região tem 5363 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Baby in Beach.jpg.
+Possui uma área total, classificada como tom de pele, de 9997 pixels; onde a maior região tem 6655 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Obama-landscape.jpg.
+Possui uma área total, classificada como tom de pele, de 8507 pixels; onde a maior região tem 6641 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha-grey-62h.jpg.
+Possui uma área total, classificada como tom de pele, de 0 pixels; onde a maior região tem 0 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_aussie-bum-scent-torquay-4.jpg.
+Possui uma área total, classificada como tom de pele, de 26612 pixels; onde a maior região tem 21859 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_olaf-wipperfurth-homotography-1.jpg.
+Possui uma área total, classificada como tom de pele, de 592 pixels; onde a maior região tem 139 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_aC0h3GP1DNn.jpg.
+Possui uma área total, classificada como tom de pele, de 25548 pixels; onde a maior região tem 17174 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_10862465_317715931771604_7140978450218151488_o.jpg.
+Possui uma área total, classificada como tom de pele, de 28154 pixels; onde a maior região tem 19655 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Girl in Black Bikini.jpg.
+Possui uma área total, classificada como tom de pele, de 27912 pixels; onde a maior região tem 27084 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_eva2.jpg.
+Possui uma área total, classificada como tom de pele, de 110533 pixels; onde a maior região tem 107370 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_6dez2012-so-de-sunga-reynaldo-gianecchini-grava-cenas-de-guerra-dos-sexos-1354817407494_956x500.jpg.
+Possui uma área total, classificada como tom de pele, de 17938 pixels; onde a maior região tem 15770 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_rosie-huntington.jpg.
+Possui uma área total, classificada como tom de pele, de 80655 pixels; onde a maior região tem 79078 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_2014-09-28_16-03-56_product_id-62727_sunga_Mao_Negra_1.JPG.
+Possui uma área total, classificada como tom de pele, de 12940 pixels; onde a maior região tem 7274 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_stella-maxwell-1.jpg.
+Possui uma área total, classificada como tom de pele, de 27517 pixels; onde a maior região tem 14213 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_semroupa3.jpg.
+Possui uma área total, classificada como tom de pele, de 26601 pixels; onde a maior região tem 16644 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Sungas-Mash-Verão-2015-1.jpg.
+Possui uma área total, classificada como tom de pele, de 17496 pixels; onde a maior região tem 15384 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Mauricio-Tertuliano-Superpride-9.jpg.
+Possui uma área total, classificada como tom de pele, de 51163 pixels; onde a maior região tem 37936 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-4.jpg.
+Possui uma área total, classificada como tom de pele, de 28981 pixels; onde a maior região tem 7567 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-3.jpg.
+Possui uma área total, classificada como tom de pele, de 29782 pixels; onde a maior região tem 19947 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_proxy (1).jpg.
+Possui uma área total, classificada como tom de pele, de 13281 pixels; onde a maior região tem 7480 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_victor-sparapane-by-marcos-serra-lima-02.jpg.
+Possui uma área total, classificada como tom de pele, de 5370 pixels; onde a maior região tem 2683 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_depositphotos_13629733-Naked-Muscular-Man-Covering-with-White-Box-Isolated-on-White.jpg.
+Possui uma área total, classificada como tom de pele, de 29006 pixels; onde a maior região tem 25167 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_14Fergie.jpg.
+Possui uma área total, classificada como tom de pele, de 42032 pixels; onde a maior região tem 37082 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_1383291_243272979155819_1199152255_n.jpg.
+Possui uma área total, classificada como tom de pele, de 31339 pixels; onde a maior região tem 17437 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_fernando-bbb-15_0.jpg.
+Possui uma área total, classificada como tom de pele, de 9719 pixels; onde a maior região tem 2454 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Man in Swimsuit.jpg.
+Possui uma área total, classificada como tom de pele, de 29578 pixels; onde a maior região tem 26976 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_42.jpg.
+Possui uma área total, classificada como tom de pele, de 47237 pixels; onde a maior região tem 38195 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_AASCHICO4830-3000x2000-1.jpg.
+Possui uma área total, classificada como tom de pele, de 5237 pixels; onde a maior região tem 2196 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Leia Princess Slave Maior Parte do corpo Revelado Fundo Difícil.jpg.
+Possui uma área total, classificada como tom de pele, de 40708 pixels; onde a maior região tem 27146 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sunga-larga-2.jpg.
+Possui uma área total, classificada como tom de pele, de 39894 pixels; onde a maior região tem 26345 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Moreno 3 homem sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 20640 pixels; onde a maior região tem 10531 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_biquinis com bojo modelos 2015 2.jpg.
+Possui uma área total, classificada como tom de pele, de 39157 pixels; onde a maior região tem 21658 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_001-3.jpg.
+Possui uma área total, classificada como tom de pele, de 29830 pixels; onde a maior região tem 23766 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_competidor-faz-pose-e-mostra-os-musculos-em-competicao-de-fisiculturismo-no-arnold-classic-2013-no-rio-de-janeiro-1367118647002_615x300.jpg.
+Possui uma área total, classificada como tom de pele, de 12372 pixels; onde a maior região tem 4119 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_4647674_orig.jpg.
+Possui uma área total, classificada como tom de pele, de 4759 pixels; onde a maior região tem 2627 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_semroupa1.jpg.
+Possui uma área total, classificada como tom de pele, de 19528 pixels; onde a maior região tem 9610 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_DSC02975.jpg.
+Possui uma área total, classificada como tom de pele, de 43193 pixels; onde a maior região tem 28236 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_moda-masculina-verao2011.jpg.
+Possui uma área total, classificada como tom de pele, de 37233 pixels; onde a maior região tem 20423 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kate-upton-sexy-swimsuit-wallpaper-wallpaper-6730279.jpg.
+Possui uma área total, classificada como tom de pele, de 69046 pixels; onde a maior região tem 36011 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Babi Rossi.jpg.
+Possui uma área total, classificada como tom de pele, de 20489 pixels; onde a maior região tem 6408 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Claudio Heinrich - Clayton Militão - Fotorio News - www.saradosdobrasil.com.jpg.
+Possui uma área total, classificada como tom de pele, de 18868 pixels; onde a maior região tem 11178 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_beach-bikini-girl.jpg.
+Possui uma área total, classificada como tom de pele, de 4564 pixels; onde a maior região tem 873 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_5028864533_825559aed6.jpg.
+Possui uma área total, classificada como tom de pele, de 19552 pixels; onde a maior região tem 11025 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Blue Bikini.jpg.
+Possui uma área total, classificada como tom de pele, de 42620 pixels; onde a maior região tem 26293 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_biquini-maio-moda-praia-fitness-verao-2015-rj-colecao-211.jpg.
+Possui uma área total, classificada como tom de pele, de 31066 pixels; onde a maior região tem 23617 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sunga2.jpg.
+Possui uma área total, classificada como tom de pele, de 31523 pixels; onde a maior região tem 15560 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_bwear01.jpg.
+Possui uma área total, classificada como tom de pele, de 16966 pixels; onde a maior região tem 7501 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ashlynn_brooke_68064.jpg.
+Possui uma área total, classificada como tom de pele, de 32872 pixels; onde a maior região tem 22239 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_baby.jpg.
+Possui uma área total, classificada como tom de pele, de 11562 pixels; onde a maior região tem 4303 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ashley-graham_0.jpg.
+Possui uma área total, classificada como tom de pele, de 38293 pixels; onde a maior região tem 12597 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_neymarsempelos.jpg.
+Possui uma área total, classificada como tom de pele, de 3085 pixels; onde a maior região tem 747 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_6351963373820437281.jpg.
+Possui uma área total, classificada como tom de pele, de 18103 pixels; onde a maior região tem 4885 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_gordo.jpg.
+Possui uma área total, classificada como tom de pele, de 37111 pixels; onde a maior região tem 17474 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_xuxa_ioga.jpg.
+Possui uma área total, classificada como tom de pele, de 29766 pixels; onde a maior região tem 29323 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Castanho 1 homem sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 38271 pixels; onde a maior região tem 30088 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_semroupa2.jpg.
+Possui uma área total, classificada como tom de pele, de 15223 pixels; onde a maior região tem 13634 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_stoya.jpg.
+Possui uma área total, classificada como tom de pele, de 6639 pixels; onde a maior região tem 2105 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_135077-bruna-marquezine-950x0-2.jpg.
+Possui uma área total, classificada como tom de pele, de 29673 pixels; onde a maior região tem 21481 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_proxy.jpg.
+Possui uma área total, classificada como tom de pele, de 42602 pixels; onde a maior região tem 40670 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha_grey_cfg1.jpg.
+Possui uma área total, classificada como tom de pele, de 38252 pixels; onde a maior região tem 22673 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Henrique-1-700x467.jpg.
+Possui uma área total, classificada como tom de pele, de 21508 pixels; onde a maior região tem 17778 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_10727542_1530980583813393_275032860_n.jpg.
+Possui uma área total, classificada como tom de pele, de 28606 pixels; onde a maior região tem 14986 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_08.jpg.
+Possui uma área total, classificada como tom de pele, de 64562 pixels; onde a maior região tem 64517 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_will-smith-1.jpg.
+Possui uma área total, classificada como tom de pele, de 29698 pixels; onde a maior região tem 21356 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kim-kardashian-instagram.jpg.
+Possui uma área total, classificada como tom de pele, de 43158 pixels; onde a maior região tem 39030 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_dani-bolina.jpg.
+Possui uma área total, classificada como tom de pele, de 8627 pixels; onde a maior região tem 2026 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_walking.jpg.
+Possui uma área total, classificada como tom de pele, de 9932 pixels; onde a maior região tem 8386 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_biquini borboleta com fivela 1.jpg.
+Possui uma área total, classificada como tom de pele, de 26021 pixels; onde a maior região tem 14092 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Karen Gillan Maior Parte Sem Roupas Fundo Simples.jpg.
+Possui uma área total, classificada como tom de pele, de 35148 pixels; onde a maior região tem 19881 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_aussi3.jpg.
+Possui uma área total, classificada como tom de pele, de 9426 pixels; onde a maior região tem 2856 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-5.jpg.
+Possui uma área total, classificada como tom de pele, de 17835 pixels; onde a maior região tem 4919 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Moreno 1 sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 39738 pixels; onde a maior região tem 19003 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Arnold.jpg.
+Possui uma área total, classificada como tom de pele, de 31179 pixels; onde a maior região tem 11781 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_luana_bandeira_bumbum.jpg.
+Possui uma área total, classificada como tom de pele, de 15833 pixels; onde a maior região tem 11691 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_fashion_photography_shoot___full_body_shot_9_by_taiprevail155-d4v6kdh.jpg.
+Possui uma área total, classificada como tom de pele, de 386 pixels; onde a maior região tem 133 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_assombalonga-2.jpg.
+Possui uma área total, classificada como tom de pele, de 4100 pixels; onde a maior região tem 935 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_imagem10.jpg.
+Possui uma área total, classificada como tom de pele, de 10637 pixels; onde a maior região tem 1783 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Amy P Vestida Fundo Dificil.jpg.
+Possui uma área total, classificada como tom de pele, de 129 pixels; onde a maior região tem 28 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Barry_Lyndon.jpg.
+Possui uma área total, classificada como tom de pele, de 2937 pixels; onde a maior região tem 1687 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_p02bnfj3.jpg.
+Possui uma área total, classificada como tom de pele, de 832 pixels; onde a maior região tem 484 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-1.jpg.
+Possui uma área total, classificada como tom de pele, de 6866 pixels; onde a maior região tem 1463 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_article-0-1A50FF2E00000578-530_634x946.jpg.
+Possui uma área total, classificada como tom de pele, de 13312 pixels; onde a maior região tem 3715 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_comroupa1.jpg.
+Possui uma área total, classificada como tom de pele, de 59512 pixels; onde a maior região tem 27310 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_BearGrylls Vestido Fundo Dificil e Sujo.jpg.
+Possui uma área total, classificada como tom de pele, de 4129 pixels; onde a maior região tem 237 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Tendências-de-moda-vestidos-cor-de-pele-dianna-agron.jpg.
+Possui uma área total, classificada como tom de pele, de 14612 pixels; onde a maior região tem 10366 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_west_kanye.jpg.
+Possui uma área total, classificada como tom de pele, de 478 pixels; onde a maior região tem 134 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_emily-addison.jpg.
+Possui uma área total, classificada como tom de pele, de 31265 pixels; onde a maior região tem 6924 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Jesse+Spencer+Jesse+Spencer+West+Hollywood+LwOemLnC5HMl.jpg.
+Possui uma área total, classificada como tom de pele, de 6956 pixels; onde a maior região tem 2730 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_vestidos-de-inverno.jpg.
+Possui uma área total, classificada como tom de pele, de 12875 pixels; onde a maior região tem 1852 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Loira 2 Mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 2443 pixels; onde a maior região tem 1680 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Peônia-cópia-da-flor-curto-estilo-chinês-tradicional-mulheres-vestido-oriental-2015-moda-verão-único-fino.jpg.
+Possui uma área total, classificada como tom de pele, de 13379 pixels; onde a maior região tem 2365 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Sasha+grey+s+cool+wearing+megadeth+shirts+and+all+_d9f7c63b9cf2c927fe9307d97313fe05.jpg.
+Possui uma área total, classificada como tom de pele, de 35554 pixels; onde a maior região tem 13041 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_1094969_335255333274511_1677817135_n.jpg.
+Possui uma área total, classificada como tom de pele, de 10868 pixels; onde a maior região tem 4888 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sb10064385j-001.jpg.
+Possui uma área total, classificada como tom de pele, de 3979 pixels; onde a maior região tem 1688 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_228-10-05_20100315_1348.jpg.
+Possui uma área total, classificada como tom de pele, de 2660 pixels; onde a maior região tem 866 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-2.jpg.
+Possui uma área total, classificada como tom de pele, de 19441 pixels; onde a maior região tem 12581 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_18832210.jpg-r_640_600-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg.
+Possui uma área total, classificada como tom de pele, de 559 pixels; onde a maior região tem 400 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_img-614842-daniel-rocha20140617161403033622.jpg.
+Possui uma área total, classificada como tom de pele, de 9311 pixels; onde a maior região tem 2169 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_notorious-big-banner.jpg.
+Possui uma área total, classificada como tom de pele, de 11794 pixels; onde a maior região tem 964 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha_grey_3.jpg.
+Possui uma área total, classificada como tom de pele, de 31686 pixels; onde a maior região tem 15766 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_image.jpg.
+Possui uma área total, classificada como tom de pele, de 7224 pixels; onde a maior região tem 3928 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_soccer.jpg.
+Possui uma área total, classificada como tom de pele, de 2742 pixels; onde a maior região tem 1912 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_dsc0290.jpg.
+Possui uma área total, classificada como tom de pele, de 9454 pixels; onde a maior região tem 5474 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_calça_jogger_masculina_dicas_para_usar (1).jpg.
+Possui uma área total, classificada como tom de pele, de 8281 pixels; onde a maior região tem 3980 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_maxresdefault.jpg.
+Possui uma área total, classificada como tom de pele, de 1274 pixels; onde a maior região tem 730 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_snow.jpg.
+Possui uma área total, classificada como tom de pele, de 65 pixels; onde a maior região tem 34 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_ava-sparxxx.jpg.
+Possui uma área total, classificada como tom de pele, de 6124 pixels; onde a maior região tem 4727 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_alex-turner-estilo-moda-masculina-blog-de-moda-moda-sem-censura-menswear-fashion-blogger-alex-cursino-style-rocker-rock-2.jpg.
+Possui uma área total, classificada como tom de pele, de 1333 pixels; onde a maior região tem 189 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_031.jpg.
+Possui uma área total, classificada como tom de pele, de 55065 pixels; onde a maior região tem 34398 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_180615-wale-oyejide-01.jpg.
+Possui uma área total, classificada como tom de pele, de 6724 pixels; onde a maior região tem 1055 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_WANGLM00101.jpg.
+Possui uma área total, classificada como tom de pele, de 4256 pixels; onde a maior região tem 2187 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_ROBERT-HOT-robert-sean-leonard-16366754-550-368.jpg.
+Possui uma área total, classificada como tom de pele, de 6198 pixels; onde a maior região tem 2608 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Tom_Cruise_EyesWideShut.jpg.
+Possui uma área total, classificada como tom de pele, de 13264 pixels; onde a maior região tem 4247 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Nova-moda-2015-fino-simples-elegantes-vestidos-de-baile-vestido-boate-oblíqua-manga-única-vestido-temperamento.jpg.
+Possui uma área total, classificada como tom de pele, de 9968 pixels; onde a maior região tem 6480 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_chris-pratt.jpg.
+Possui uma área total, classificada como tom de pele, de 9307 pixels; onde a maior região tem 3682 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_saida-de-praia-2.jpg.
+Possui uma área total, classificada como tom de pele, de 27046 pixels; onde a maior região tem 8051 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kadu9.jpg.
+Possui uma área total, classificada como tom de pele, de 1264 pixels; onde a maior região tem 464 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Scarlett-Johansson-Vanity-Fair-Oscar-Party-2011.jpg.
+Possui uma área total, classificada como tom de pele, de 11868 pixels; onde a maior região tem 4119 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_elle-fanning.jpg.
+Possui uma área total, classificada como tom de pele, de 72 pixels; onde a maior região tem 4 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_93823_ext_arquivo.jpg.
+Possui uma área total, classificada como tom de pele, de 1263 pixels; onde a maior região tem 578 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_running.jpg.
+Possui uma área total, classificada como tom de pele, de 41428 pixels; onde a maior região tem 34462 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_broadchurch-david-tennant.jpg.
+Possui uma área total, classificada como tom de pele, de 8718 pixels; onde a maior região tem 4727 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_camisa-de-capulana-fotos-.jpg.
+Possui uma área total, classificada como tom de pele, de 6035 pixels; onde a maior região tem 994 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_1279345648804_f.jpg.
+Possui uma área total, classificada como tom de pele, de 17180 pixels; onde a maior região tem 2803 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ternos-coreanos-ternos-de-lazer-slim-homens.jpg.
+Possui uma área total, classificada como tom de pele, de 651 pixels; onde a maior região tem 223 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_dani-bolina2.jpg.
+Possui uma área total, classificada como tom de pele, de 20507 pixels; onde a maior região tem 5900 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Asiatica 1 mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 7692 pixels; onde a maior região tem 2566 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_gym-sneaker-660x1066.jpg.
+Possui uma área total, classificada como tom de pele, de 6149 pixels; onde a maior região tem 1316 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_lady.jpg.
+Possui uma área total, classificada como tom de pele, de 49865 pixels; onde a maior região tem 48788 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_emma-stone-2.jpg.
+Possui uma área total, classificada como tom de pele, de 7335 pixels; onde a maior região tem 3366 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Homens-Tênis-Jogging-2.jpg.
+Possui uma área total, classificada como tom de pele, de 22644 pixels; onde a maior região tem 2774 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_comroupa2.jpg.
+Possui uma área total, classificada como tom de pele, de 10884 pixels; onde a maior região tem 4745 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_comroupa3.jpg.
+Possui uma área total, classificada como tom de pele, de 37272 pixels; onde a maior região tem 26155 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Beige Dress in Beach.jpg.
+Possui uma área total, classificada como tom de pele, de 10079 pixels; onde a maior região tem 7072 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Champagne-cor-sólida-única-pequena-jaqueta-outwear-2015-nova-moda-feminina-abrir-blazer-de-manga-haoduoyi.jpg.
+Possui uma área total, classificada como tom de pele, de 19471 pixels; onde a maior região tem 13903 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_vestido-longo-com-renda-bege-miss-masy_230854_600_1.jpg.
+Possui uma área total, classificada como tom de pele, de 28858 pixels; onde a maior região tem 10797 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Asiatica 2 mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 3984 pixels; onde a maior região tem 1556 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_jack-sparrow-2.jpg.
+Possui uma área total, classificada como tom de pele, de 5693 pixels; onde a maior região tem 2636 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Robert-Downey-Jr1.jpg.
+Possui uma área total, classificada como tom de pele, de 17534 pixels; onde a maior região tem 9231 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_lookdasemana_tiger_moletom_2_gdg20141.jpg.
+Possui uma área total, classificada como tom de pele, de 2034 pixels; onde a maior região tem 931 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_ruby.jpg.
+Possui uma área total, classificada como tom de pele, de 805 pixels; onde a maior região tem 266 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_IMG_20150902_174944.jpg.
+Possui uma área total, classificada como tom de pele, de 6147 pixels; onde a maior região tem 3022 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Negra mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 1363 pixels; onde a maior região tem 366 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_karol.jpg.
+Possui uma área total, classificada como tom de pele, de 9906 pixels; onde a maior região tem 3215 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Brunete mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 8715 pixels; onde a maior região tem 1987 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_omar-epps-millennium-dance-complex-presents-the-experience-05.jpg.
+Possui uma área total, classificada como tom de pele, de 2712 pixels; onde a maior região tem 1112 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-6.jpg.
+Possui uma área total, classificada como tom de pele, de 6036 pixels; onde a maior região tem 700 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_arabic.jpg.
+Possui uma área total, classificada como tom de pele, de 3864 pixels; onde a maior região tem 2168 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_normcorenewbalance1.jpg.
+Possui uma área total, classificada como tom de pele, de 14 pixels; onde a maior região tem 10 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_cotton_crepe_beachwear_dress.jpg.
+Possui uma área total, classificada como tom de pele, de 13860 pixels; onde a maior região tem 9269 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Winning.jpg.
+Possui uma área total, classificada como tom de pele, de 32812 pixels; onde a maior região tem 18524 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_10th Doctor Vestido Fundo Difícil.jpg.
+Possui uma área total, classificada como tom de pele, de 16406 pixels; onde a maior região tem 5107 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Loira1 mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 6502 pixels; onde a maior região tem 2377 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_25-Beautiful-South-Indian-Women-by-ilayaraja-20.jpg.
+Possui uma área total, classificada como tom de pele, de 13264 pixels; onde a maior região tem 2140 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_d60mbzw.jpg.
+Possui uma área total, classificada como tom de pele, de 1135 pixels; onde a maior região tem 322 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Men in Swimsuit.jpg.
+Possui uma área total, classificada como tom de pele, de 25530 pixels; onde a maior região tem 13729 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Marina.jpg.
+Possui uma área total, classificada como tom de pele, de 7314 pixels; onde a maior região tem 2581 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_jared.jpg.
+Possui uma área total, classificada como tom de pele, de 8398 pixels; onde a maior região tem 2962 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_depositphotos_32837755-Peaceful-african-american-businessman-in-office.jpg.
+Possui uma área total, classificada como tom de pele, de 13084 pixels; onde a maior região tem 6796 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_homem-considerável-à-moda-do-americano-africano-18614463.jpg.
+Possui uma área total, classificada como tom de pele, de 23 pixels; onde a maior região tem 6 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_mequetrefismos-moda-africana-masculina-sapeur-festa.jpg.
+Possui uma área total, classificada como tom de pele, de 2999 pixels; onde a maior região tem 386 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_mjimage001.jpg.
+Possui uma área total, classificada como tom de pele, de 14218 pixels; onde a maior região tem 4157 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha-grey-62h.jpg.
+Possui uma área total, classificada como tom de pele, de 0 pixels; onde a maior região tem 0 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha-grey-62h.jpg.
+Possui uma área total, classificada como tom de pele, de 0 pixels; onde a maior região tem 0 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_rosie-huntington.jpg.
+Possui uma área total, classificada como tom de pele, de 80655 pixels; onde a maior região tem 79078 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_biquini borboleta com fivela 1.jpg.
+Possui uma área total, classificada como tom de pele, de 26021 pixels; onde a maior região tem 14092 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_proxy (1).jpg.
+Possui uma área total, classificada como tom de pele, de 13281 pixels; onde a maior região tem 7480 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_walking.jpg.
+Possui uma área total, classificada como tom de pele, de 9932 pixels; onde a maior região tem 8386 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_piscina.jpg.
+Possui uma área total, classificada como tom de pele, de 8072 pixels; onde a maior região tem 5475 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Mauricio-Tertuliano-Superpride-9.jpg.
+Possui uma área total, classificada como tom de pele, de 51163 pixels; onde a maior região tem 37936 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_08.jpg.
+Possui uma área total, classificada como tom de pele, de 64562 pixels; onde a maior região tem 64517 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Moreno 1 sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 39738 pixels; onde a maior região tem 19003 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_10862465_317715931771604_7140978450218151488_o.jpg.
+Possui uma área total, classificada como tom de pele, de 28154 pixels; onde a maior região tem 19655 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_fernando-bbb-15_0.jpg.
+Possui uma área total, classificada como tom de pele, de 9719 pixels; onde a maior região tem 2454 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_donatella-versace.jpg.
+Possui uma área total, classificada como tom de pele, de 16744 pixels; onde a maior região tem 8012 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_img_9438.jpg.
+Possui uma área total, classificada como tom de pele, de 23882 pixels; onde a maior região tem 13070 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kate-upton-171.jpg.
+Possui uma área total, classificada como tom de pele, de 42845 pixels; onde a maior região tem 15313 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Leia Princess Slave Maior Parte do corpo Revelado Fundo Difícil.jpg.
+Possui uma área total, classificada como tom de pele, de 40708 pixels; onde a maior região tem 27146 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_135077-bruna-marquezine-950x0-2.jpg.
+Possui uma área total, classificada como tom de pele, de 29673 pixels; onde a maior região tem 21481 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Girl in Black Bikini.jpg.
+Possui uma área total, classificada como tom de pele, de 27912 pixels; onde a maior região tem 27084 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_moda-masculina-verao2011.jpg.
+Possui uma área total, classificada como tom de pele, de 37233 pixels; onde a maior região tem 20423 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Blue Bikini.jpg.
+Possui uma área total, classificada como tom de pele, de 42620 pixels; onde a maior região tem 26293 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_margot-robbie.jpg.
+Possui uma área total, classificada como tom de pele, de 21592 pixels; onde a maior região tem 11942 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_42.jpg.
+Possui uma área total, classificada como tom de pele, de 47237 pixels; onde a maior região tem 38195 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Henrique-1-700x467.jpg.
+Possui uma área total, classificada como tom de pele, de 21508 pixels; onde a maior região tem 17778 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_japanese.jpg.
+Possui uma área total, classificada como tom de pele, de 23524 pixels; onde a maior região tem 20869 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_stella-maxwell-1.jpg.
+Possui uma área total, classificada como tom de pele, de 27517 pixels; onde a maior região tem 14213 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_will-smith-1.jpg.
+Possui uma área total, classificada como tom de pele, de 29698 pixels; onde a maior região tem 21356 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_luana_bandeira_bumbum.jpg.
+Possui uma área total, classificada como tom de pele, de 15833 pixels; onde a maior região tem 11691 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ashley-graham_0.jpg.
+Possui uma área total, classificada como tom de pele, de 38293 pixels; onde a maior região tem 12597 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kim-kardashian-instagram.jpg.
+Possui uma área total, classificada como tom de pele, de 43158 pixels; onde a maior região tem 39030 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_semroupa1.jpg.
+Possui uma área total, classificada como tom de pele, de 19528 pixels; onde a maior região tem 9610 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Chris-Brown-4.jpg.
+Possui uma área total, classificada como tom de pele, de 5008 pixels; onde a maior região tem 1467 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_victor-sparapane-by-marcos-serra-lima-02.jpg.
+Possui uma área total, classificada como tom de pele, de 5370 pixels; onde a maior região tem 2683 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_TARZAN.jpg.
+Possui uma área total, classificada como tom de pele, de 29551 pixels; onde a maior região tem 20143 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_1383291_243272979155819_1199152255_n.jpg.
+Possui uma área total, classificada como tom de pele, de 31339 pixels; onde a maior região tem 17437 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Baby in Beach.jpg.
+Possui uma área total, classificada como tom de pele, de 9997 pixels; onde a maior região tem 6655 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_semroupa2.jpg.
+Possui uma área total, classificada como tom de pele, de 15223 pixels; onde a maior região tem 13634 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_olaf-wipperfurth-homotography-1.jpg.
+Possui uma área total, classificada como tom de pele, de 592 pixels; onde a maior região tem 139 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_sunga2.jpg.
+Possui uma área total, classificada como tom de pele, de 31523 pixels; onde a maior região tem 15560 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_dolce.jpg.
+Possui uma área total, classificada como tom de pele, de 11777 pixels; onde a maior região tem 5363 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Sungas-Mash-Verão-2015-1.jpg.
+Possui uma área total, classificada como tom de pele, de 17496 pixels; onde a maior região tem 15384 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_lina-posada-besame-lingerie-1878071679.jpg.
+Possui uma área total, classificada como tom de pele, de 37471 pixels; onde a maior região tem 21737 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Man in Swimsuit.jpg.
+Possui uma área total, classificada como tom de pele, de 29578 pixels; onde a maior região tem 26976 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_aC0h3GP1DNn.jpg.
+Possui uma área total, classificada como tom de pele, de 25548 pixels; onde a maior região tem 17174 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_aussie-bum-scent-torquay-4.jpg.
+Possui uma área total, classificada como tom de pele, de 26612 pixels; onde a maior região tem 21859 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_biquini-maio-moda-praia-fitness-verao-2015-rj-colecao-211.jpg.
+Possui uma área total, classificada como tom de pele, de 31066 pixels; onde a maior região tem 23617 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kate-upton-sexy-swimsuit-wallpaper-wallpaper-6730279.jpg.
+Possui uma área total, classificada como tom de pele, de 69046 pixels; onde a maior região tem 36011 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Obama-landscape.jpg.
+Possui uma área total, classificada como tom de pele, de 8507 pixels; onde a maior região tem 6641 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_competidor-faz-pose-e-mostra-os-musculos-em-competicao-de-fisiculturismo-no-arnold-classic-2013-no-rio-de-janeiro-1367118647002_615x300.jpg.
+Possui uma área total, classificada como tom de pele, de 12372 pixels; onde a maior região tem 4119 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_juliana-paes-1.jpg.
+Possui uma área total, classificada como tom de pele, de 27638 pixels; onde a maior região tem 27570 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_bwear01.jpg.
+Possui uma área total, classificada como tom de pele, de 16966 pixels; onde a maior região tem 7501 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_tumblr_nnl5nehJez1r93y9zo1_1280.jpg.
+Possui uma área total, classificada como tom de pele, de 19731 pixels; onde a maior região tem 5871 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Jonas.jpg.
+Possui uma área total, classificada como tom de pele, de 18092 pixels; onde a maior região tem 6190 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_10727542_1530980583813393_275032860_n.jpg.
+Possui uma área total, classificada como tom de pele, de 28606 pixels; onde a maior região tem 14986 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_4980.jpg.
+Possui uma área total, classificada como tom de pele, de 29648 pixels; onde a maior região tem 25788 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_neymarsempelos.jpg.
+Possui uma área total, classificada como tom de pele, de 3085 pixels; onde a maior região tem 747 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_4647674_orig.jpg.
+Possui uma área total, classificada como tom de pele, de 4759 pixels; onde a maior região tem 2627 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_dani-bolina.jpg.
+Possui uma área total, classificada como tom de pele, de 8627 pixels; onde a maior região tem 2026 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-3.jpg.
+Possui uma área total, classificada como tom de pele, de 29782 pixels; onde a maior região tem 19947 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha-grey-62h.jpg.
+Possui uma área total, classificada como tom de pele, de 0 pixels; onde a maior região tem 0 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha-grey-62h.jpg.
+Possui uma área total, classificada como tom de pele, de 0 pixels; onde a maior região tem 0 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_rosie-huntington.jpg.
+Possui uma área total, classificada como tom de pele, de 80655 pixels; onde a maior região tem 79078 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_biquini borboleta com fivela 1.jpg.
+Possui uma área total, classificada como tom de pele, de 26021 pixels; onde a maior região tem 14092 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_proxy (1).jpg.
+Possui uma área total, classificada como tom de pele, de 13281 pixels; onde a maior região tem 7480 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_walking.jpg.
+Possui uma área total, classificada como tom de pele, de 9932 pixels; onde a maior região tem 8386 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_piscina.jpg.
+Possui uma área total, classificada como tom de pele, de 8072 pixels; onde a maior região tem 5475 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Mauricio-Tertuliano-Superpride-9.jpg.
+Possui uma área total, classificada como tom de pele, de 51163 pixels; onde a maior região tem 37936 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_08.jpg.
+Possui uma área total, classificada como tom de pele, de 64562 pixels; onde a maior região tem 64517 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Moreno 1 sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 39738 pixels; onde a maior região tem 19003 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_10862465_317715931771604_7140978450218151488_o.jpg.
+Possui uma área total, classificada como tom de pele, de 28154 pixels; onde a maior região tem 19655 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_fernando-bbb-15_0.jpg.
+Possui uma área total, classificada como tom de pele, de 9719 pixels; onde a maior região tem 2454 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_donatella-versace.jpg.
+Possui uma área total, classificada como tom de pele, de 16744 pixels; onde a maior região tem 8012 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_img_9438.jpg.
+Possui uma área total, classificada como tom de pele, de 23882 pixels; onde a maior região tem 13070 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kate-upton-171.jpg.
+Possui uma área total, classificada como tom de pele, de 42845 pixels; onde a maior região tem 15313 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Leia Princess Slave Maior Parte do corpo Revelado Fundo Difícil.jpg.
+Possui uma área total, classificada como tom de pele, de 40708 pixels; onde a maior região tem 27146 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_135077-bruna-marquezine-950x0-2.jpg.
+Possui uma área total, classificada como tom de pele, de 29673 pixels; onde a maior região tem 21481 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Girl in Black Bikini.jpg.
+Possui uma área total, classificada como tom de pele, de 27912 pixels; onde a maior região tem 27084 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_moda-masculina-verao2011.jpg.
+Possui uma área total, classificada como tom de pele, de 37233 pixels; onde a maior região tem 20423 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Blue Bikini.jpg.
+Possui uma área total, classificada como tom de pele, de 42620 pixels; onde a maior região tem 26293 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_margot-robbie.jpg.
+Possui uma área total, classificada como tom de pele, de 21592 pixels; onde a maior região tem 11942 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_42.jpg.
+Possui uma área total, classificada como tom de pele, de 47237 pixels; onde a maior região tem 38195 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Henrique-1-700x467.jpg.
+Possui uma área total, classificada como tom de pele, de 21508 pixels; onde a maior região tem 17778 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_japanese.jpg.
+Possui uma área total, classificada como tom de pele, de 23524 pixels; onde a maior região tem 20869 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_stella-maxwell-1.jpg.
+Possui uma área total, classificada como tom de pele, de 27517 pixels; onde a maior região tem 14213 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_will-smith-1.jpg.
+Possui uma área total, classificada como tom de pele, de 29698 pixels; onde a maior região tem 21356 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_luana_bandeira_bumbum.jpg.
+Possui uma área total, classificada como tom de pele, de 15833 pixels; onde a maior região tem 11691 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ashley-graham_0.jpg.
+Possui uma área total, classificada como tom de pele, de 38293 pixels; onde a maior região tem 12597 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kim-kardashian-instagram.jpg.
+Possui uma área total, classificada como tom de pele, de 43158 pixels; onde a maior região tem 39030 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_semroupa1.jpg.
+Possui uma área total, classificada como tom de pele, de 19528 pixels; onde a maior região tem 9610 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Chris-Brown-4.jpg.
+Possui uma área total, classificada como tom de pele, de 5008 pixels; onde a maior região tem 1467 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_victor-sparapane-by-marcos-serra-lima-02.jpg.
+Possui uma área total, classificada como tom de pele, de 5370 pixels; onde a maior região tem 2683 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_TARZAN.jpg.
+Possui uma área total, classificada como tom de pele, de 29551 pixels; onde a maior região tem 20143 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_1383291_243272979155819_1199152255_n.jpg.
+Possui uma área total, classificada como tom de pele, de 31339 pixels; onde a maior região tem 17437 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Baby in Beach.jpg.
+Possui uma área total, classificada como tom de pele, de 9997 pixels; onde a maior região tem 6655 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_semroupa2.jpg.
+Possui uma área total, classificada como tom de pele, de 15223 pixels; onde a maior região tem 13634 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_olaf-wipperfurth-homotography-1.jpg.
+Possui uma área total, classificada como tom de pele, de 592 pixels; onde a maior região tem 139 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_sunga2.jpg.
+Possui uma área total, classificada como tom de pele, de 31523 pixels; onde a maior região tem 15560 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_dolce.jpg.
+Possui uma área total, classificada como tom de pele, de 11777 pixels; onde a maior região tem 5363 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Sungas-Mash-Verão-2015-1.jpg.
+Possui uma área total, classificada como tom de pele, de 17496 pixels; onde a maior região tem 15384 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_lina-posada-besame-lingerie-1878071679.jpg.
+Possui uma área total, classificada como tom de pele, de 37471 pixels; onde a maior região tem 21737 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Man in Swimsuit.jpg.
+Possui uma área total, classificada como tom de pele, de 29578 pixels; onde a maior região tem 26976 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_aC0h3GP1DNn.jpg.
+Possui uma área total, classificada como tom de pele, de 25548 pixels; onde a maior região tem 17174 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_aussie-bum-scent-torquay-4.jpg.
+Possui uma área total, classificada como tom de pele, de 26612 pixels; onde a maior região tem 21859 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_biquini-maio-moda-praia-fitness-verao-2015-rj-colecao-211.jpg.
+Possui uma área total, classificada como tom de pele, de 31066 pixels; onde a maior região tem 23617 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kate-upton-sexy-swimsuit-wallpaper-wallpaper-6730279.jpg.
+Possui uma área total, classificada como tom de pele, de 69046 pixels; onde a maior região tem 36011 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Obama-landscape.jpg.
+Possui uma área total, classificada como tom de pele, de 8507 pixels; onde a maior região tem 6641 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_competidor-faz-pose-e-mostra-os-musculos-em-competicao-de-fisiculturismo-no-arnold-classic-2013-no-rio-de-janeiro-1367118647002_615x300.jpg.
+Possui uma área total, classificada como tom de pele, de 12372 pixels; onde a maior região tem 4119 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_juliana-paes-1.jpg.
+Possui uma área total, classificada como tom de pele, de 27638 pixels; onde a maior região tem 27570 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_bwear01.jpg.
+Possui uma área total, classificada como tom de pele, de 16966 pixels; onde a maior região tem 7501 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_tumblr_nnl5nehJez1r93y9zo1_1280.jpg.
+Possui uma área total, classificada como tom de pele, de 19731 pixels; onde a maior região tem 5871 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Jonas.jpg.
+Possui uma área total, classificada como tom de pele, de 18092 pixels; onde a maior região tem 6190 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_10727542_1530980583813393_275032860_n.jpg.
+Possui uma área total, classificada como tom de pele, de 28606 pixels; onde a maior região tem 14986 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_4980.jpg.
+Possui uma área total, classificada como tom de pele, de 29648 pixels; onde a maior região tem 25788 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_neymarsempelos.jpg.
+Possui uma área total, classificada como tom de pele, de 3085 pixels; onde a maior região tem 747 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_4647674_orig.jpg.
+Possui uma área total, classificada como tom de pele, de 4759 pixels; onde a maior região tem 2627 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_dani-bolina.jpg.
+Possui uma área total, classificada como tom de pele, de 8627 pixels; onde a maior região tem 2026 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-3.jpg.
+Possui uma área total, classificada como tom de pele, de 29782 pixels; onde a maior região tem 19947 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-4.jpg.
+Possui uma área total, classificada como tom de pele, de 28981 pixels; onde a maior região tem 7567 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_beach-bikini-girl.jpg.
+Possui uma área total, classificada como tom de pele, de 4564 pixels; onde a maior região tem 873 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_xuxa_ioga.jpg.
+Possui uma área total, classificada como tom de pele, de 29766 pixels; onde a maior região tem 29323 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Moreno 3 homem sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 20640 pixels; onde a maior região tem 10531 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Claudio Heinrich - Clayton Militão - Fotorio News - www.saradosdobrasil.com.jpg.
+Possui uma área total, classificada como tom de pele, de 18868 pixels; onde a maior região tem 11178 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Karen Gillan Maior Parte Sem Roupas Fundo Simples.jpg.
+Possui uma área total, classificada como tom de pele, de 35148 pixels; onde a maior região tem 19881 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_001-3.jpg.
+Possui uma área total, classificada como tom de pele, de 29830 pixels; onde a maior região tem 23766 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_eva2.jpg.
+Possui uma área total, classificada como tom de pele, de 110533 pixels; onde a maior região tem 107370 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_14Fergie.jpg.
+Possui uma área total, classificada como tom de pele, de 42032 pixels; onde a maior região tem 37082 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_AASCHICO4830-3000x2000-1.jpg.
+Possui uma área total, classificada como tom de pele, de 5237 pixels; onde a maior região tem 2196 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Moreno 2 homem sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 55984 pixels; onde a maior região tem 53682 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_baby.jpg.
+Possui uma área total, classificada como tom de pele, de 11562 pixels; onde a maior região tem 4303 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha_grey_cfg1.jpg.
+Possui uma área total, classificada como tom de pele, de 38252 pixels; onde a maior região tem 22673 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_5028864533_825559aed6.jpg.
+Possui uma área total, classificada como tom de pele, de 19552 pixels; onde a maior região tem 11025 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_semroupa3.jpg.
+Possui uma área total, classificada como tom de pele, de 26601 pixels; onde a maior região tem 16644 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_biquinis com bojo modelos 2015 2.jpg.
+Possui uma área total, classificada como tom de pele, de 39157 pixels; onde a maior região tem 21658 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_aussi3.jpg.
+Possui uma área total, classificada como tom de pele, de 9426 pixels; onde a maior região tem 2856 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_2014-09-28_16-03-56_product_id-62727_sunga_Mao_Negra_1.JPG.
+Possui uma área total, classificada como tom de pele, de 12940 pixels; onde a maior região tem 7274 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_proxy.jpg.
+Possui uma área total, classificada como tom de pele, de 42602 pixels; onde a maior região tem 40670 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sunga-larga-2.jpg.
+Possui uma área total, classificada como tom de pele, de 39894 pixels; onde a maior região tem 26345 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_priscila-fantin-praia-biquini.jpg.
+Possui uma área total, classificada como tom de pele, de 7567 pixels; onde a maior região tem 1789 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_2eros-new-victory-01.jpg.
+Possui uma área total, classificada como tom de pele, de 7068 pixels; onde a maior região tem 3149 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_6dez2012-so-de-sunga-reynaldo-gianecchini-grava-cenas-de-guerra-dos-sexos-1354817407494_956x500.jpg.
+Possui uma área total, classificada como tom de pele, de 17938 pixels; onde a maior região tem 15770 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Arnold.jpg.
+Possui uma área total, classificada como tom de pele, de 31179 pixels; onde a maior região tem 11781 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-5.jpg.
+Possui uma área total, classificada como tom de pele, de 17835 pixels; onde a maior região tem 4919 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_stoya.jpg.
+Possui uma área total, classificada como tom de pele, de 6639 pixels; onde a maior região tem 2105 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_depositphotos_13629733-Naked-Muscular-Man-Covering-with-White-Box-Isolated-on-White.jpg.
+Possui uma área total, classificada como tom de pele, de 29006 pixels; onde a maior região tem 25167 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Leia Princess Slave 2 Maior parte do corpo revelada Fundo Simples.jpg.
+Possui uma área total, classificada como tom de pele, de 13964 pixels; onde a maior região tem 9303 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Babi Rossi.jpg.
+Possui uma área total, classificada como tom de pele, de 20489 pixels; onde a maior região tem 6408 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_gordo.jpg.
+Possui uma área total, classificada como tom de pele, de 37111 pixels; onde a maior região tem 17474 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_D79-0159-844_detalhe1.jpg.
+Possui uma área total, classificada como tom de pele, de 34571 pixels; onde a maior região tem 26942 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ashlynn_brooke_68064.jpg.
+Possui uma área total, classificada como tom de pele, de 32872 pixels; onde a maior região tem 22239 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_DSC02975.jpg.
+Possui uma área total, classificada como tom de pele, de 43193 pixels; onde a maior região tem 28236 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Castanho 1 homem sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 38271 pixels; onde a maior região tem 30088 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_6351963373820437281.jpg.
+Possui uma área total, classificada como tom de pele, de 18103 pixels; onde a maior região tem 4885 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Marina.jpg.
+Possui uma área total, classificada como tom de pele, de 7314 pixels; onde a maior região tem 2581 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Peônia-cópia-da-flor-curto-estilo-chinês-tradicional-mulheres-vestido-oriental-2015-moda-verão-único-fino.jpg.
+Possui uma área total, classificada como tom de pele, de 13379 pixels; onde a maior região tem 2365 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_jared.jpg.
+Possui uma área total, classificada como tom de pele, de 8398 pixels; onde a maior região tem 2962 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-2.jpg.
+Possui uma área total, classificada como tom de pele, de 19441 pixels; onde a maior região tem 12581 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ROBERT-HOT-robert-sean-leonard-16366754-550-368.jpg.
+Possui uma área total, classificada como tom de pele, de 6198 pixels; onde a maior região tem 2608 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Robert-Downey-Jr1.jpg.
+Possui uma área total, classificada como tom de pele, de 17534 pixels; onde a maior região tem 9231 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_25-Beautiful-South-Indian-Women-by-ilayaraja-20.jpg.
+Possui uma área total, classificada como tom de pele, de 13264 pixels; onde a maior região tem 2140 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_saida-de-praia-2.jpg.
+Possui uma área total, classificada como tom de pele, de 27046 pixels; onde a maior região tem 8051 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_mequetrefismos-moda-africana-masculina-sapeur-festa.jpg.
+Possui uma área total, classificada como tom de pele, de 2999 pixels; onde a maior região tem 386 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_broadchurch-david-tennant.jpg.
+Possui uma área total, classificada como tom de pele, de 8718 pixels; onde a maior região tem 4727 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_ava-sparxxx.jpg.
+Possui uma área total, classificada como tom de pele, de 6124 pixels; onde a maior região tem 4727 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Winning.jpg.
+Possui uma área total, classificada como tom de pele, de 32812 pixels; onde a maior região tem 18524 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_comroupa2.jpg.
+Possui uma área total, classificada como tom de pele, de 10884 pixels; onde a maior região tem 4745 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha_grey_3.jpg.
+Possui uma área total, classificada como tom de pele, de 31686 pixels; onde a maior região tem 15766 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_running.jpg.
+Possui uma área total, classificada como tom de pele, de 41428 pixels; onde a maior região tem 34462 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_image.jpg.
+Possui uma área total, classificada como tom de pele, de 7224 pixels; onde a maior região tem 3928 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_camisa-de-capulana-fotos-.jpg.
+Possui uma área total, classificada como tom de pele, de 6035 pixels; onde a maior região tem 994 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_article-0-1A50FF2E00000578-530_634x946.jpg.
+Possui uma área total, classificada como tom de pele, de 13312 pixels; onde a maior região tem 3715 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_lookdasemana_tiger_moletom_2_gdg20141.jpg.
+Possui uma área total, classificada como tom de pele, de 2034 pixels; onde a maior região tem 931 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Loira1 mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 6502 pixels; onde a maior região tem 2377 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_1279345648804_f.jpg.
+Possui uma área total, classificada como tom de pele, de 17180 pixels; onde a maior região tem 2803 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Brunete mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 8715 pixels; onde a maior região tem 1987 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_180615-wale-oyejide-01.jpg.
+Possui uma área total, classificada como tom de pele, de 6724 pixels; onde a maior região tem 1055 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Amy P Vestida Fundo Dificil.jpg.
+Possui uma área total, classificada como tom de pele, de 129 pixels; onde a maior região tem 28 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_normcorenewbalance1.jpg.
+Possui uma área total, classificada como tom de pele, de 14 pixels; onde a maior região tem 10 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Scarlett-Johansson-Vanity-Fair-Oscar-Party-2011.jpg.
+Possui uma área total, classificada como tom de pele, de 11868 pixels; onde a maior região tem 4119 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_calça_jogger_masculina_dicas_para_usar (1).jpg.
+Possui uma área total, classificada como tom de pele, de 8281 pixels; onde a maior região tem 3980 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_comroupa3.jpg.
+Possui uma área total, classificada como tom de pele, de 37272 pixels; onde a maior região tem 26155 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Men in Swimsuit.jpg.
+Possui uma área total, classificada como tom de pele, de 25530 pixels; onde a maior região tem 13729 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_18832210.jpg-r_640_600-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg.
+Possui uma área total, classificada como tom de pele, de 559 pixels; onde a maior região tem 400 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-6.jpg.
+Possui uma área total, classificada como tom de pele, de 6036 pixels; onde a maior região tem 700 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_d60mbzw.jpg.
+Possui uma área total, classificada como tom de pele, de 1135 pixels; onde a maior região tem 322 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_dani-bolina2.jpg.
+Possui uma área total, classificada como tom de pele, de 20507 pixels; onde a maior região tem 5900 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_depositphotos_32837755-Peaceful-african-american-businessman-in-office.jpg.
+Possui uma área total, classificada como tom de pele, de 13084 pixels; onde a maior região tem 6796 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_mjimage001.jpg.
+Possui uma área total, classificada como tom de pele, de 14218 pixels; onde a maior região tem 4157 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Barry_Lyndon.jpg.
+Possui uma área total, classificada como tom de pele, de 2937 pixels; onde a maior região tem 1687 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Tom_Cruise_EyesWideShut.jpg.
+Possui uma área total, classificada como tom de pele, de 13264 pixels; onde a maior região tem 4247 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_emma-stone-2.jpg.
+Possui uma área total, classificada como tom de pele, de 7335 pixels; onde a maior região tem 3366 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_west_kanye.jpg.
+Possui uma área total, classificada como tom de pele, de 478 pixels; onde a maior região tem 134 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Negra mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 1363 pixels; onde a maior região tem 366 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_dsc0290.jpg.
+Possui uma área total, classificada como tom de pele, de 9454 pixels; onde a maior região tem 5474 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_chris-pratt.jpg.
+Possui uma área total, classificada como tom de pele, de 9307 pixels; onde a maior região tem 3682 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_p02bnfj3.jpg.
+Possui uma área total, classificada como tom de pele, de 832 pixels; onde a maior região tem 484 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_homem-considerável-à-moda-do-americano-africano-18614463.jpg.
+Possui uma área total, classificada como tom de pele, de 23 pixels; onde a maior região tem 6 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_karol.jpg.
+Possui uma área total, classificada como tom de pele, de 9906 pixels; onde a maior região tem 3215 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_BearGrylls Vestido Fundo Dificil e Sujo.jpg.
+Possui uma área total, classificada como tom de pele, de 4129 pixels; onde a maior região tem 237 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_vestidos-de-inverno.jpg.
+Possui uma área total, classificada como tom de pele, de 12875 pixels; onde a maior região tem 1852 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_jack-sparrow-2.jpg.
+Possui uma área total, classificada como tom de pele, de 5693 pixels; onde a maior região tem 2636 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Asiatica 1 mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 7692 pixels; onde a maior região tem 2566 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_1094969_335255333274511_1677817135_n.jpg.
+Possui uma área total, classificada como tom de pele, de 10868 pixels; onde a maior região tem 4888 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sb10064385j-001.jpg.
+Possui uma área total, classificada como tom de pele, de 3979 pixels; onde a maior região tem 1688 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_elle-fanning.jpg.
+Possui uma área total, classificada como tom de pele, de 72 pixels; onde a maior região tem 4 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Tendências-de-moda-vestidos-cor-de-pele-dianna-agron.jpg.
+Possui uma área total, classificada como tom de pele, de 14612 pixels; onde a maior região tem 10366 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_93823_ext_arquivo.jpg.
+Possui uma área total, classificada como tom de pele, de 1263 pixels; onde a maior região tem 578 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_notorious-big-banner.jpg.
+Possui uma área total, classificada como tom de pele, de 11794 pixels; onde a maior região tem 964 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_snow.jpg.
+Possui uma área total, classificada como tom de pele, de 65 pixels; onde a maior região tem 34 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_maxresdefault.jpg.
+Possui uma área total, classificada como tom de pele, de 1274 pixels; onde a maior região tem 730 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_gym-sneaker-660x1066.jpg.
+Possui uma área total, classificada como tom de pele, de 6149 pixels; onde a maior região tem 1316 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Loira 2 Mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 2443 pixels; onde a maior região tem 1680 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_assombalonga-2.jpg.
+Possui uma área total, classificada como tom de pele, de 4100 pixels; onde a maior região tem 935 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_comroupa1.jpg.
+Possui uma área total, classificada como tom de pele, de 59512 pixels; onde a maior região tem 27310 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_WANGLM00101.jpg.
+Possui uma área total, classificada como tom de pele, de 4256 pixels; onde a maior região tem 2187 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_emily-addison.jpg.
+Possui uma área total, classificada como tom de pele, de 31265 pixels; onde a maior região tem 6924 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_imagem10.jpg.
+Possui uma área total, classificada como tom de pele, de 10637 pixels; onde a maior região tem 1783 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ternos-coreanos-ternos-de-lazer-slim-homens.jpg.
+Possui uma área total, classificada como tom de pele, de 651 pixels; onde a maior região tem 223 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_cotton_crepe_beachwear_dress.jpg.
+Possui uma área total, classificada como tom de pele, de 13860 pixels; onde a maior região tem 9269 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_031.jpg.
+Possui uma área total, classificada como tom de pele, de 55065 pixels; onde a maior região tem 34398 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_fashion_photography_shoot___full_body_shot_9_by_taiprevail155-d4v6kdh.jpg.
+Possui uma área total, classificada como tom de pele, de 386 pixels; onde a maior região tem 133 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Champagne-cor-sólida-única-pequena-jaqueta-outwear-2015-nova-moda-feminina-abrir-blazer-de-manga-haoduoyi.jpg.
+Possui uma área total, classificada como tom de pele, de 19471 pixels; onde a maior região tem 13903 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_alex-turner-estilo-moda-masculina-blog-de-moda-moda-sem-censura-menswear-fashion-blogger-alex-cursino-style-rocker-rock-2.jpg.
+Possui uma área total, classificada como tom de pele, de 1333 pixels; onde a maior região tem 189 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_soccer.jpg.
+Possui uma área total, classificada como tom de pele, de 2742 pixels; onde a maior região tem 1912 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_kadu9.jpg.
+Possui uma área total, classificada como tom de pele, de 1264 pixels; onde a maior região tem 464 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_228-10-05_20100315_1348.jpg.
+Possui uma área total, classificada como tom de pele, de 2660 pixels; onde a maior região tem 866 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_arabic.jpg.
+Possui uma área total, classificada como tom de pele, de 3864 pixels; onde a maior região tem 2168 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_omar-epps-millennium-dance-complex-presents-the-experience-05.jpg.
+Possui uma área total, classificada como tom de pele, de 2712 pixels; onde a maior região tem 1112 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Jesse+Spencer+Jesse+Spencer+West+Hollywood+LwOemLnC5HMl.jpg.
+Possui uma área total, classificada como tom de pele, de 6956 pixels; onde a maior região tem 2730 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_lady.jpg.
+Possui uma área total, classificada como tom de pele, de 49865 pixels; onde a maior região tem 48788 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_img-614842-daniel-rocha20140617161403033622.jpg.
+Possui uma área total, classificada como tom de pele, de 9311 pixels; onde a maior região tem 2169 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-1.jpg.
+Possui uma área total, classificada como tom de pele, de 6866 pixels; onde a maior região tem 1463 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Homens-Tênis-Jogging-2.jpg.
+Possui uma área total, classificada como tom de pele, de 22644 pixels; onde a maior região tem 2774 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Sasha+grey+s+cool+wearing+megadeth+shirts+and+all+_d9f7c63b9cf2c927fe9307d97313fe05.jpg.
+Possui uma área total, classificada como tom de pele, de 35554 pixels; onde a maior região tem 13041 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_vestido-longo-com-renda-bege-miss-masy_230854_600_1.jpg.
+Possui uma área total, classificada como tom de pele, de 28858 pixels; onde a maior região tem 10797 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ruby.jpg.
+Possui uma área total, classificada como tom de pele, de 805 pixels; onde a maior região tem 266 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_10th Doctor Vestido Fundo Difícil.jpg.
+Possui uma área total, classificada como tom de pele, de 16406 pixels; onde a maior região tem 5107 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Beige Dress in Beach.jpg.
+Possui uma área total, classificada como tom de pele, de 10079 pixels; onde a maior região tem 7072 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Nova-moda-2015-fino-simples-elegantes-vestidos-de-baile-vestido-boate-oblíqua-manga-única-vestido-temperamento.jpg.
+Possui uma área total, classificada como tom de pele, de 9968 pixels; onde a maior região tem 6480 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Asiatica 2 mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 3984 pixels; onde a maior região tem 1556 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_IMG_20150902_174944.jpg.
+Possui uma área total, classificada como tom de pele, de 6147 pixels; onde a maior região tem 3022 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha-grey-62h.jpg.
+Possui uma área total, classificada como tom de pele, de 0 pixels; onde a maior região tem 0 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_rosie-huntington.jpg.
+Possui uma área total, classificada como tom de pele, de 80655 pixels; onde a maior região tem 79078 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_biquini borboleta com fivela 1.jpg.
+Possui uma área total, classificada como tom de pele, de 26021 pixels; onde a maior região tem 14092 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_proxy (1).jpg.
+Possui uma área total, classificada como tom de pele, de 13281 pixels; onde a maior região tem 7480 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_walking.jpg.
+Possui uma área total, classificada como tom de pele, de 9932 pixels; onde a maior região tem 8386 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_piscina.jpg.
+Possui uma área total, classificada como tom de pele, de 8072 pixels; onde a maior região tem 5475 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Mauricio-Tertuliano-Superpride-9.jpg.
+Possui uma área total, classificada como tom de pele, de 51163 pixels; onde a maior região tem 37936 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_08.jpg.
+Possui uma área total, classificada como tom de pele, de 64562 pixels; onde a maior região tem 64517 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Moreno 1 sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 39738 pixels; onde a maior região tem 19003 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_10862465_317715931771604_7140978450218151488_o.jpg.
+Possui uma área total, classificada como tom de pele, de 28154 pixels; onde a maior região tem 19655 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_fernando-bbb-15_0.jpg.
+Possui uma área total, classificada como tom de pele, de 9719 pixels; onde a maior região tem 2454 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_donatella-versace.jpg.
+Possui uma área total, classificada como tom de pele, de 16744 pixels; onde a maior região tem 8012 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_img_9438.jpg.
+Possui uma área total, classificada como tom de pele, de 23882 pixels; onde a maior região tem 13070 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kate-upton-171.jpg.
+Possui uma área total, classificada como tom de pele, de 42845 pixels; onde a maior região tem 15313 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Leia Princess Slave Maior Parte do corpo Revelado Fundo Difícil.jpg.
+Possui uma área total, classificada como tom de pele, de 40708 pixels; onde a maior região tem 27146 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_135077-bruna-marquezine-950x0-2.jpg.
+Possui uma área total, classificada como tom de pele, de 29673 pixels; onde a maior região tem 21481 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Girl in Black Bikini.jpg.
+Possui uma área total, classificada como tom de pele, de 27912 pixels; onde a maior região tem 27084 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_moda-masculina-verao2011.jpg.
+Possui uma área total, classificada como tom de pele, de 37233 pixels; onde a maior região tem 20423 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Blue Bikini.jpg.
+Possui uma área total, classificada como tom de pele, de 42620 pixels; onde a maior região tem 26293 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_margot-robbie.jpg.
+Possui uma área total, classificada como tom de pele, de 21592 pixels; onde a maior região tem 11942 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_42.jpg.
+Possui uma área total, classificada como tom de pele, de 47237 pixels; onde a maior região tem 38195 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Henrique-1-700x467.jpg.
+Possui uma área total, classificada como tom de pele, de 21508 pixels; onde a maior região tem 17778 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_japanese.jpg.
+Possui uma área total, classificada como tom de pele, de 23524 pixels; onde a maior região tem 20869 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_stella-maxwell-1.jpg.
+Possui uma área total, classificada como tom de pele, de 27517 pixels; onde a maior região tem 14213 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_will-smith-1.jpg.
+Possui uma área total, classificada como tom de pele, de 29698 pixels; onde a maior região tem 21356 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_luana_bandeira_bumbum.jpg.
+Possui uma área total, classificada como tom de pele, de 15833 pixels; onde a maior região tem 11691 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ashley-graham_0.jpg.
+Possui uma área total, classificada como tom de pele, de 38293 pixels; onde a maior região tem 12597 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kim-kardashian-instagram.jpg.
+Possui uma área total, classificada como tom de pele, de 43158 pixels; onde a maior região tem 39030 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_semroupa1.jpg.
+Possui uma área total, classificada como tom de pele, de 19528 pixels; onde a maior região tem 9610 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Chris-Brown-4.jpg.
+Possui uma área total, classificada como tom de pele, de 5008 pixels; onde a maior região tem 1467 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_victor-sparapane-by-marcos-serra-lima-02.jpg.
+Possui uma área total, classificada como tom de pele, de 5370 pixels; onde a maior região tem 2683 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_TARZAN.jpg.
+Possui uma área total, classificada como tom de pele, de 29551 pixels; onde a maior região tem 20143 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_1383291_243272979155819_1199152255_n.jpg.
+Possui uma área total, classificada como tom de pele, de 31339 pixels; onde a maior região tem 17437 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Baby in Beach.jpg.
+Possui uma área total, classificada como tom de pele, de 9997 pixels; onde a maior região tem 6655 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_semroupa2.jpg.
+Possui uma área total, classificada como tom de pele, de 15223 pixels; onde a maior região tem 13634 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_olaf-wipperfurth-homotography-1.jpg.
+Possui uma área total, classificada como tom de pele, de 592 pixels; onde a maior região tem 139 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_sunga2.jpg.
+Possui uma área total, classificada como tom de pele, de 31523 pixels; onde a maior região tem 15560 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_dolce.jpg.
+Possui uma área total, classificada como tom de pele, de 11777 pixels; onde a maior região tem 5363 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Sungas-Mash-Verão-2015-1.jpg.
+Possui uma área total, classificada como tom de pele, de 17496 pixels; onde a maior região tem 15384 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_lina-posada-besame-lingerie-1878071679.jpg.
+Possui uma área total, classificada como tom de pele, de 37471 pixels; onde a maior região tem 21737 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Man in Swimsuit.jpg.
+Possui uma área total, classificada como tom de pele, de 29578 pixels; onde a maior região tem 26976 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_aC0h3GP1DNn.jpg.
+Possui uma área total, classificada como tom de pele, de 25548 pixels; onde a maior região tem 17174 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_aussie-bum-scent-torquay-4.jpg.
+Possui uma área total, classificada como tom de pele, de 26612 pixels; onde a maior região tem 21859 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_biquini-maio-moda-praia-fitness-verao-2015-rj-colecao-211.jpg.
+Possui uma área total, classificada como tom de pele, de 31066 pixels; onde a maior região tem 23617 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_kate-upton-sexy-swimsuit-wallpaper-wallpaper-6730279.jpg.
+Possui uma área total, classificada como tom de pele, de 69046 pixels; onde a maior região tem 36011 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Obama-landscape.jpg.
+Possui uma área total, classificada como tom de pele, de 8507 pixels; onde a maior região tem 6641 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_competidor-faz-pose-e-mostra-os-musculos-em-competicao-de-fisiculturismo-no-arnold-classic-2013-no-rio-de-janeiro-1367118647002_615x300.jpg.
+Possui uma área total, classificada como tom de pele, de 12372 pixels; onde a maior região tem 4119 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_juliana-paes-1.jpg.
+Possui uma área total, classificada como tom de pele, de 27638 pixels; onde a maior região tem 27570 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_bwear01.jpg.
+Possui uma área total, classificada como tom de pele, de 16966 pixels; onde a maior região tem 7501 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_tumblr_nnl5nehJez1r93y9zo1_1280.jpg.
+Possui uma área total, classificada como tom de pele, de 19731 pixels; onde a maior região tem 5871 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Jonas.jpg.
+Possui uma área total, classificada como tom de pele, de 18092 pixels; onde a maior região tem 6190 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_10727542_1530980583813393_275032860_n.jpg.
+Possui uma área total, classificada como tom de pele, de 28606 pixels; onde a maior região tem 14986 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_4980.jpg.
+Possui uma área total, classificada como tom de pele, de 29648 pixels; onde a maior região tem 25788 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_neymarsempelos.jpg.
+Possui uma área total, classificada como tom de pele, de 3085 pixels; onde a maior região tem 747 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_4647674_orig.jpg.
+Possui uma área total, classificada como tom de pele, de 4759 pixels; onde a maior região tem 2627 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_dani-bolina.jpg.
+Possui uma área total, classificada como tom de pele, de 8627 pixels; onde a maior região tem 2026 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-3.jpg.
+Possui uma área total, classificada como tom de pele, de 29782 pixels; onde a maior região tem 19947 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-4.jpg.
+Possui uma área total, classificada como tom de pele, de 28981 pixels; onde a maior região tem 7567 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_beach-bikini-girl.jpg.
+Possui uma área total, classificada como tom de pele, de 4564 pixels; onde a maior região tem 873 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_xuxa_ioga.jpg.
+Possui uma área total, classificada como tom de pele, de 29766 pixels; onde a maior região tem 29323 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Moreno 3 homem sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 20640 pixels; onde a maior região tem 10531 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Claudio Heinrich - Clayton Militão - Fotorio News - www.saradosdobrasil.com.jpg.
+Possui uma área total, classificada como tom de pele, de 18868 pixels; onde a maior região tem 11178 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Karen Gillan Maior Parte Sem Roupas Fundo Simples.jpg.
+Possui uma área total, classificada como tom de pele, de 35148 pixels; onde a maior região tem 19881 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_001-3.jpg.
+Possui uma área total, classificada como tom de pele, de 29830 pixels; onde a maior região tem 23766 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_eva2.jpg.
+Possui uma área total, classificada como tom de pele, de 110533 pixels; onde a maior região tem 107370 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_14Fergie.jpg.
+Possui uma área total, classificada como tom de pele, de 42032 pixels; onde a maior região tem 37082 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_AASCHICO4830-3000x2000-1.jpg.
+Possui uma área total, classificada como tom de pele, de 5237 pixels; onde a maior região tem 2196 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Moreno 2 homem sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 55984 pixels; onde a maior região tem 53682 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_baby.jpg.
+Possui uma área total, classificada como tom de pele, de 11562 pixels; onde a maior região tem 4303 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha_grey_cfg1.jpg.
+Possui uma área total, classificada como tom de pele, de 38252 pixels; onde a maior região tem 22673 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_5028864533_825559aed6.jpg.
+Possui uma área total, classificada como tom de pele, de 19552 pixels; onde a maior região tem 11025 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_semroupa3.jpg.
+Possui uma área total, classificada como tom de pele, de 26601 pixels; onde a maior região tem 16644 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_biquinis com bojo modelos 2015 2.jpg.
+Possui uma área total, classificada como tom de pele, de 39157 pixels; onde a maior região tem 21658 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_aussi3.jpg.
+Possui uma área total, classificada como tom de pele, de 9426 pixels; onde a maior região tem 2856 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_2014-09-28_16-03-56_product_id-62727_sunga_Mao_Negra_1.JPG.
+Possui uma área total, classificada como tom de pele, de 12940 pixels; onde a maior região tem 7274 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_proxy.jpg.
+Possui uma área total, classificada como tom de pele, de 42602 pixels; onde a maior região tem 40670 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sunga-larga-2.jpg.
+Possui uma área total, classificada como tom de pele, de 39894 pixels; onde a maior região tem 26345 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_priscila-fantin-praia-biquini.jpg.
+Possui uma área total, classificada como tom de pele, de 7567 pixels; onde a maior região tem 1789 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_2eros-new-victory-01.jpg.
+Possui uma área total, classificada como tom de pele, de 7068 pixels; onde a maior região tem 3149 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_6dez2012-so-de-sunga-reynaldo-gianecchini-grava-cenas-de-guerra-dos-sexos-1354817407494_956x500.jpg.
+Possui uma área total, classificada como tom de pele, de 17938 pixels; onde a maior região tem 15770 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Arnold.jpg.
+Possui uma área total, classificada como tom de pele, de 31179 pixels; onde a maior região tem 11781 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-5.jpg.
+Possui uma área total, classificada como tom de pele, de 17835 pixels; onde a maior região tem 4919 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_stoya.jpg.
+Possui uma área total, classificada como tom de pele, de 6639 pixels; onde a maior região tem 2105 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_depositphotos_13629733-Naked-Muscular-Man-Covering-with-White-Box-Isolated-on-White.jpg.
+Possui uma área total, classificada como tom de pele, de 29006 pixels; onde a maior região tem 25167 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Leia Princess Slave 2 Maior parte do corpo revelada Fundo Simples.jpg.
+Possui uma área total, classificada como tom de pele, de 13964 pixels; onde a maior região tem 9303 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Babi Rossi.jpg.
+Possui uma área total, classificada como tom de pele, de 20489 pixels; onde a maior região tem 6408 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_gordo.jpg.
+Possui uma área total, classificada como tom de pele, de 37111 pixels; onde a maior região tem 17474 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_D79-0159-844_detalhe1.jpg.
+Possui uma área total, classificada como tom de pele, de 34571 pixels; onde a maior região tem 26942 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ashlynn_brooke_68064.jpg.
+Possui uma área total, classificada como tom de pele, de 32872 pixels; onde a maior região tem 22239 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_DSC02975.jpg.
+Possui uma área total, classificada como tom de pele, de 43193 pixels; onde a maior região tem 28236 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Castanho 1 homem sem roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 38271 pixels; onde a maior região tem 30088 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_6351963373820437281.jpg.
+Possui uma área total, classificada como tom de pele, de 18103 pixels; onde a maior região tem 4885 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Marina.jpg.
+Possui uma área total, classificada como tom de pele, de 7314 pixels; onde a maior região tem 2581 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Peônia-cópia-da-flor-curto-estilo-chinês-tradicional-mulheres-vestido-oriental-2015-moda-verão-único-fino.jpg.
+Possui uma área total, classificada como tom de pele, de 13379 pixels; onde a maior região tem 2365 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_jared.jpg.
+Possui uma área total, classificada como tom de pele, de 8398 pixels; onde a maior região tem 2962 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-2.jpg.
+Possui uma área total, classificada como tom de pele, de 19441 pixels; onde a maior região tem 12581 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ROBERT-HOT-robert-sean-leonard-16366754-550-368.jpg.
+Possui uma área total, classificada como tom de pele, de 6198 pixels; onde a maior região tem 2608 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Robert-Downey-Jr1.jpg.
+Possui uma área total, classificada como tom de pele, de 17534 pixels; onde a maior região tem 9231 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_25-Beautiful-South-Indian-Women-by-ilayaraja-20.jpg.
+Possui uma área total, classificada como tom de pele, de 13264 pixels; onde a maior região tem 2140 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_saida-de-praia-2.jpg.
+Possui uma área total, classificada como tom de pele, de 27046 pixels; onde a maior região tem 8051 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_mequetrefismos-moda-africana-masculina-sapeur-festa.jpg.
+Possui uma área total, classificada como tom de pele, de 2999 pixels; onde a maior região tem 386 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_broadchurch-david-tennant.jpg.
+Possui uma área total, classificada como tom de pele, de 8718 pixels; onde a maior região tem 4727 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_ava-sparxxx.jpg.
+Possui uma área total, classificada como tom de pele, de 6124 pixels; onde a maior região tem 4727 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Winning.jpg.
+Possui uma área total, classificada como tom de pele, de 32812 pixels; onde a maior região tem 18524 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_comroupa2.jpg.
+Possui uma área total, classificada como tom de pele, de 10884 pixels; onde a maior região tem 4745 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha_grey_3.jpg.
+Possui uma área total, classificada como tom de pele, de 31686 pixels; onde a maior região tem 15766 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_running.jpg.
+Possui uma área total, classificada como tom de pele, de 41428 pixels; onde a maior região tem 34462 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_image.jpg.
+Possui uma área total, classificada como tom de pele, de 7224 pixels; onde a maior região tem 3928 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_camisa-de-capulana-fotos-.jpg.
+Possui uma área total, classificada como tom de pele, de 6035 pixels; onde a maior região tem 994 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_article-0-1A50FF2E00000578-530_634x946.jpg.
+Possui uma área total, classificada como tom de pele, de 13312 pixels; onde a maior região tem 3715 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_lookdasemana_tiger_moletom_2_gdg20141.jpg.
+Possui uma área total, classificada como tom de pele, de 2034 pixels; onde a maior região tem 931 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Loira1 mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 6502 pixels; onde a maior região tem 2377 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_1279345648804_f.jpg.
+Possui uma área total, classificada como tom de pele, de 17180 pixels; onde a maior região tem 2803 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Brunete mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 8715 pixels; onde a maior região tem 1987 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_180615-wale-oyejide-01.jpg.
+Possui uma área total, classificada como tom de pele, de 6724 pixels; onde a maior região tem 1055 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Amy P Vestida Fundo Dificil.jpg.
+Possui uma área total, classificada como tom de pele, de 129 pixels; onde a maior região tem 28 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_normcorenewbalance1.jpg.
+Possui uma área total, classificada como tom de pele, de 14 pixels; onde a maior região tem 10 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Scarlett-Johansson-Vanity-Fair-Oscar-Party-2011.jpg.
+Possui uma área total, classificada como tom de pele, de 11868 pixels; onde a maior região tem 4119 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_calça_jogger_masculina_dicas_para_usar (1).jpg.
+Possui uma área total, classificada como tom de pele, de 8281 pixels; onde a maior região tem 3980 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_comroupa3.jpg.
+Possui uma área total, classificada como tom de pele, de 37272 pixels; onde a maior região tem 26155 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Men in Swimsuit.jpg.
+Possui uma área total, classificada como tom de pele, de 25530 pixels; onde a maior região tem 13729 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_18832210.jpg-r_640_600-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg.
+Possui uma área total, classificada como tom de pele, de 559 pixels; onde a maior região tem 400 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-6.jpg.
+Possui uma área total, classificada como tom de pele, de 6036 pixels; onde a maior região tem 700 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_d60mbzw.jpg.
+Possui uma área total, classificada como tom de pele, de 1135 pixels; onde a maior região tem 322 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_dani-bolina2.jpg.
+Possui uma área total, classificada como tom de pele, de 20507 pixels; onde a maior região tem 5900 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_depositphotos_32837755-Peaceful-african-american-businessman-in-office.jpg.
+Possui uma área total, classificada como tom de pele, de 13084 pixels; onde a maior região tem 6796 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_mjimage001.jpg.
+Possui uma área total, classificada como tom de pele, de 14218 pixels; onde a maior região tem 4157 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Barry_Lyndon.jpg.
+Possui uma área total, classificada como tom de pele, de 2937 pixels; onde a maior região tem 1687 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Tom_Cruise_EyesWideShut.jpg.
+Possui uma área total, classificada como tom de pele, de 13264 pixels; onde a maior região tem 4247 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_emma-stone-2.jpg.
+Possui uma área total, classificada como tom de pele, de 7335 pixels; onde a maior região tem 3366 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_west_kanye.jpg.
+Possui uma área total, classificada como tom de pele, de 478 pixels; onde a maior região tem 134 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Negra mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 1363 pixels; onde a maior região tem 366 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_dsc0290.jpg.
+Possui uma área total, classificada como tom de pele, de 9454 pixels; onde a maior região tem 5474 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_chris-pratt.jpg.
+Possui uma área total, classificada como tom de pele, de 9307 pixels; onde a maior região tem 3682 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_p02bnfj3.jpg.
+Possui uma área total, classificada como tom de pele, de 832 pixels; onde a maior região tem 484 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_homem-considerável-à-moda-do-americano-africano-18614463.jpg.
+Possui uma área total, classificada como tom de pele, de 23 pixels; onde a maior região tem 6 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_karol.jpg.
+Possui uma área total, classificada como tom de pele, de 9906 pixels; onde a maior região tem 3215 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_BearGrylls Vestido Fundo Dificil e Sujo.jpg.
+Possui uma área total, classificada como tom de pele, de 4129 pixels; onde a maior região tem 237 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_vestidos-de-inverno.jpg.
+Possui uma área total, classificada como tom de pele, de 12875 pixels; onde a maior região tem 1852 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_jack-sparrow-2.jpg.
+Possui uma área total, classificada como tom de pele, de 5693 pixels; onde a maior região tem 2636 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Asiatica 1 mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 7692 pixels; onde a maior região tem 2566 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_1094969_335255333274511_1677817135_n.jpg.
+Possui uma área total, classificada como tom de pele, de 10868 pixels; onde a maior região tem 4888 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_sb10064385j-001.jpg.
+Possui uma área total, classificada como tom de pele, de 3979 pixels; onde a maior região tem 1688 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_elle-fanning.jpg.
+Possui uma área total, classificada como tom de pele, de 72 pixels; onde a maior região tem 4 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Tendências-de-moda-vestidos-cor-de-pele-dianna-agron.jpg.
+Possui uma área total, classificada como tom de pele, de 14612 pixels; onde a maior região tem 10366 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_93823_ext_arquivo.jpg.
+Possui uma área total, classificada como tom de pele, de 1263 pixels; onde a maior região tem 578 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_notorious-big-banner.jpg.
+Possui uma área total, classificada como tom de pele, de 11794 pixels; onde a maior região tem 964 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_snow.jpg.
+Possui uma área total, classificada como tom de pele, de 65 pixels; onde a maior região tem 34 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_maxresdefault.jpg.
+Possui uma área total, classificada como tom de pele, de 1274 pixels; onde a maior região tem 730 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_gym-sneaker-660x1066.jpg.
+Possui uma área total, classificada como tom de pele, de 6149 pixels; onde a maior região tem 1316 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Loira 2 Mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 2443 pixels; onde a maior região tem 1680 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_assombalonga-2.jpg.
+Possui uma área total, classificada como tom de pele, de 4100 pixels; onde a maior região tem 935 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_comroupa1.jpg.
+Possui uma área total, classificada como tom de pele, de 59512 pixels; onde a maior região tem 27310 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_WANGLM00101.jpg.
+Possui uma área total, classificada como tom de pele, de 4256 pixels; onde a maior região tem 2187 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_emily-addison.jpg.
+Possui uma área total, classificada como tom de pele, de 31265 pixels; onde a maior região tem 6924 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_imagem10.jpg.
+Possui uma área total, classificada como tom de pele, de 10637 pixels; onde a maior região tem 1783 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ternos-coreanos-ternos-de-lazer-slim-homens.jpg.
+Possui uma área total, classificada como tom de pele, de 651 pixels; onde a maior região tem 223 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_cotton_crepe_beachwear_dress.jpg.
+Possui uma área total, classificada como tom de pele, de 13860 pixels; onde a maior região tem 9269 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_031.jpg.
+Possui uma área total, classificada como tom de pele, de 55065 pixels; onde a maior região tem 34398 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_fashion_photography_shoot___full_body_shot_9_by_taiprevail155-d4v6kdh.jpg.
+Possui uma área total, classificada como tom de pele, de 386 pixels; onde a maior região tem 133 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Champagne-cor-sólida-única-pequena-jaqueta-outwear-2015-nova-moda-feminina-abrir-blazer-de-manga-haoduoyi.jpg.
+Possui uma área total, classificada como tom de pele, de 19471 pixels; onde a maior região tem 13903 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_alex-turner-estilo-moda-masculina-blog-de-moda-moda-sem-censura-menswear-fashion-blogger-alex-cursino-style-rocker-rock-2.jpg.
+Possui uma área total, classificada como tom de pele, de 1333 pixels; onde a maior região tem 189 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_soccer.jpg.
+Possui uma área total, classificada como tom de pele, de 2742 pixels; onde a maior região tem 1912 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_kadu9.jpg.
+Possui uma área total, classificada como tom de pele, de 1264 pixels; onde a maior região tem 464 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_228-10-05_20100315_1348.jpg.
+Possui uma área total, classificada como tom de pele, de 2660 pixels; onde a maior região tem 866 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_arabic.jpg.
+Possui uma área total, classificada como tom de pele, de 3864 pixels; onde a maior região tem 2168 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_omar-epps-millennium-dance-complex-presents-the-experience-05.jpg.
+Possui uma área total, classificada como tom de pele, de 2712 pixels; onde a maior região tem 1112 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Jesse+Spencer+Jesse+Spencer+West+Hollywood+LwOemLnC5HMl.jpg.
+Possui uma área total, classificada como tom de pele, de 6956 pixels; onde a maior região tem 2730 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_lady.jpg.
+Possui uma área total, classificada como tom de pele, de 49865 pixels; onde a maior região tem 48788 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_img-614842-daniel-rocha20140617161403033622.jpg.
+Possui uma área total, classificada como tom de pele, de 9311 pixels; onde a maior região tem 2169 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Pietro-1.jpg.
+Possui uma área total, classificada como tom de pele, de 6866 pixels; onde a maior região tem 1463 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Homens-Tênis-Jogging-2.jpg.
+Possui uma área total, classificada como tom de pele, de 22644 pixels; onde a maior região tem 2774 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Sasha+grey+s+cool+wearing+megadeth+shirts+and+all+_d9f7c63b9cf2c927fe9307d97313fe05.jpg.
+Possui uma área total, classificada como tom de pele, de 35554 pixels; onde a maior região tem 13041 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_vestido-longo-com-renda-bege-miss-masy_230854_600_1.jpg.
+Possui uma área total, classificada como tom de pele, de 28858 pixels; onde a maior região tem 10797 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_ruby.jpg.
+Possui uma área total, classificada como tom de pele, de 805 pixels; onde a maior região tem 266 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_10th Doctor Vestido Fundo Difícil.jpg.
+Possui uma área total, classificada como tom de pele, de 16406 pixels; onde a maior região tem 5107 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 1, como um verdadeiro positivo.
+
+Segue a classificação da imagem Segmentações/seg_Beige Dress in Beach.jpg.
+Possui uma área total, classificada como tom de pele, de 10079 pixels; onde a maior região tem 7072 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Nova-moda-2015-fino-simples-elegantes-vestidos-de-baile-vestido-boate-oblíqua-manga-única-vestido-temperamento.jpg.
+Possui uma área total, classificada como tom de pele, de 9968 pixels; onde a maior região tem 6480 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_Asiatica 2 mulher com roupa.jpg.
+Possui uma área total, classificada como tom de pele, de 3984 pixels; onde a maior região tem 1556 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_IMG_20150902_174944.jpg.
+Possui uma área total, classificada como tom de pele, de 6147 pixels; onde a maior região tem 3022 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+
+Segue a classificação da imagem Segmentações/seg_sasha-grey-62h.jpg.
+Possui uma área total, classificada como tom de pele, de 0 pixels; onde a maior região tem 0 pixels.
+Por isso, foi classificada como sendo pertencente a categoria 2, como um falso positivo.
+

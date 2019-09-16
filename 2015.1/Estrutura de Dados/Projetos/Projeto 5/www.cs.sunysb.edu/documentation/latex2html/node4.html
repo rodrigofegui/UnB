@@ -1,0 +1,342 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Developments: late 1997 to early 1998</TITLE>
+<META NAME="description" CONTENT="Developments: late 1997 to early 1998">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="next" HREF="node5.html">
+<LINK REL="previous" HREF="node3.html">
+<LINK REL="up" HREF="manual.html">
+<LINK REL="next" HREF="node5.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html296"
+ HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html292"
+ HREF="manual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html286"
+ HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html294"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html295"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html297"
+ HREF="node5.html">General License Agreement and</A>
+<B> Up:</B> <A NAME="tex2html293"
+ HREF="manual.html">The L<SUP>A</SUP>TEX2HTML Translator</A>
+<B> Previous:</B> <A NAME="tex2html287"
+ HREF="node3.html">Developments: late 1996 to</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><strong>Subsections</strong></A>
+<UL>
+<LI><A NAME="tex2html298"
+ HREF="node4.html#SECTION00041000000000000000">Proposals for Future Development:</A>
+<LI><A NAME="tex2html299"
+ HREF="node4.html#SECTION00042000000000000000">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>-NG</A>
+<LI><A NAME="tex2html300"
+ HREF="node4.html#SECTION00043000000000000000">Extended Capabilities in Web browsers</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00040000000000000000">&#160;</A><A NAME="recent98">&#160;</A>
+<BR>
+Developments: late 1997 to early 1998
+</H1>
+Much of the work contributed to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> during this time was
+related to bug fixing and maintaining the 97.1 release, in order to
+reach a more stable and reliable version which produces <A HREF="node10.html#GGGHTML"
+ NAME="1519"><TT>HTML</TT></A> code
+conforming to the W3C standards/drafts.
+To keep in context with this view, support for <TT>HTML 4</TT> has been
+incorporated into the translator.
+
+<P>
+
+<P></P>
+There have been improvements to the way math code is handled, as well
+as font-changing and numbering commands. These now are expected to
+work much closer to the way that L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X handles them.
+
+<P>
+
+<P></P>
+Furthermore, missing L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X style translations for basic L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X 
+and A<SUB><BIG>M</BIG></SUB>S-T<SMALL>E</SMALL>X document classes were added to the distribution: 
+<TT>book.perl</TT>, <TT>report.perl</TT>, <TT>article.perl</TT>,
+<TT>letter.perl</TT>, <TT>amsbook.perl</TT> and <TT>amsart.perl</TT>.
+New styles implementing L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X packages include <TT>seminar.perl</TT>,
+<TT>inputenc.perl</TT> and <TT>chemsym.perl</TT> naming but a few.
+
+<P>
+The aim is ultimately to support all L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, A<SUB><BIG>M</BIG></SUB>S-T<SMALL>E</SMALL>X etc. packages in the 
+standard L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X distribution, or for which there is published documentation. 
+At the time of writing this aim has not quite been reached.
+To support internationalisation, <A HREF="node10.html#GGGPerl"><I>Perl</I></A> extensions were provided for
+<TT>HTML</TT> output conforming to ISO-Latin 1, 2, 3, 4, 5, 6,
+and Unicode encodings.
+
+<P>
+
+<P></P>
+All of the above work was done by <A NAME="1528">&#160;</A> <A NAME="tex2html93"
+ HREF="http://www.mpce.mq.edu.au/~ross/">Ross Moore</A>.
+
+<P><P>
+<BR>
+
+<P>
+Additional document formats are now supported, these are IndicT<SMALL>E</SMALL>X,
+
+<I>FoilTeX</I>, and <TT>CWEB</TT> documents.
+You may use any of these packages to translate such documents together
+with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, refer to the instructions in the various
+<TT>README</TT> files.
+
+<P>
+
+<P></P>
+Thanks go to <A NAME="1533">&#160;</A> <A NAME="tex2html94"
+ HREF="http://www.mpce.mq.edu.au/~ross/">Ross Moore</A> for <A NAME="tex2html95"
+ HREF="<A NAME="tex2html90"
+ HREF="http://www-texdev.mpce.mq.edu.au//l2h/indic/IndicHTML/">http://www-texdev.mpce.mq.edu.au//l2h/indic/IndicHTML/</A>">IndicT<SMALL>E</SMALL>X/HTML</A>, to <A NAME="1541">&#160;</A> <A NAME="tex2html96"
+ HREF="mailto:boris@plmsc.psu.edu">Boris Veytsman</A> for 
+
+<I>FoilTeX</I>/<TT>HTML</TT> and to <A NAME="1545">&#160;</A> <A NAME="tex2html97"
+ HREF="http://www-jb.cs.uni-sb.de/~www/people/lippmann">Jens Lippmann</A> for the <TT>CWEB</TT> to
+<TT>HTML</TT> translator.
+
+<P>
+
+<P><P>
+<BR>
+Numerous discussions and efforts have been undertaken to get
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> working independent from the underlying operating
+system.
+Yet all obstacles are not quite taken, but it is forseeable that we are
+OS independent very soon.
+This release has been reported to run on OS/2, DOS, and MacOS, besides
+Unix-like operating systems.
+A former version has also been ported to Amiga OS, but that results
+still need to be re-integrated into the source.
+Ports for Windows 95 and Windows NT are also existent but need to be
+integrated.
+
+<P>
+
+<P></P>
+Thanks go to <A NAME="1549">&#160;</A> <A NAME="tex2html98"
+ HREF="http://www.crc.ricoh.com/~marcush/">Marcus Hennecke</A>, <A NAME="1553">&#160;</A> <A NAME="tex2html99"
+ HREF="mailto:axel@ramge.de">Axel Ramge</A>, <A NAME="1556">&#160;</A> <A NAME="tex2html100"
+ HREF="mailto:marek@hl.siemens.de">Marek Rouchal</A> and <A NAME="1559">&#160;</A> <A NAME="tex2html101"
+ HREF="mailto:uli12@bonk.ethz.ch">Uli Wortmann</A> for
+fruitful and refreshening discussions about that <A HREF="node10.html#GGGOverride.pm"
+ NAME="1564"><TT>Override.pm</TT></A>
+loading scheme (which finally made its way after enough chickens and
+eggs chased one another to death 
+<!-- MATH: $\texttt{:\^)}$ -->
+: )) 
+and to <A NAME="1571">&#160;</A> <A NAME="tex2html102"
+ HREF="mailto:taupin@lps.u-psud.fr">Daniel Taupin</A> for his successful efforts to get L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>
+running on DOS.
+
+<P>
+
+<P></P>
+Thanks go also to <A NAME="1574">&#160;</A> <A NAME="tex2html103"
+ HREF="mailto:popineau@esemetz.ese-metz.fr">Fabrice Popineau</A> for his port to Windows NT
+<A NAME="tex2html104"
+ HREF="footnode.html#foot1138"><SUP>6</SUP></A>,
+and <A NAME="1580">&#160;</A> <A NAME="tex2html105"
+ HREF="http://www.cbl.leeds.ac.uk/nikos/personal.html">Nikos Drakos</A> for a Windows 95 port based on <SMALL>V96.1</SMALL>h
+<A NAME="tex2html106"
+ HREF="footnode.html#foot1139"><SUP>7</SUP></A>
+(which is mentioned here at last, but not least).
+
+<P>
+
+<P>
+<BR>
+We want to take the opportunity to thank <A NAME="1585">&#160;</A> <A NAME="tex2html107"
+ HREF="mailto:nelson18@llnl.gov">Scott Nelson</A> and the people at
+Lawrence Livermore National Laboratory who help to keep up the
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> main archive and the mailing list, and to <A NAME="1588">&#160;</A> <A NAME="tex2html108"
+ HREF="mailto:ach@rosat.mpe-garching.mpg.de">Achim Bohnet</A> at
+the Max Planck Institut fuer extraterrestrische Physik, Garching for
+maintaining the list's online archive.
+Finally thanks and greetings to all people that contributed to this
+release and have not been mentioned here...
+
+<P>
+
+<P>
+<BR>
+You all showed spirit and favour. Thank you for your efforts!
+
+<P>
+
+<P>
+<BR>
+
+<DIV ALIGN="RIGHT">
+... and don't forget Jens and the LiPS team at Darmstadt!
+</DIV>
+
+<P>
+
+<H2><A NAME="SECTION00041000000000000000">&#160;</A><A NAME="future">&#160;</A>
+<BR>
+Proposals for Future Development:
+</H2>
+
+<P>
+
+<H2><A NAME="SECTION00042000000000000000">
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>-NG</A>
+</H2>
+Developed by <A NAME="1591">&#160;</A> <A NAME="tex2html109"
+ HREF="http://www.crc.ricoh.com/~marcush/">Marcus Hennecke</A><A NAME="latex2htmlNG">&#160;</A> this is a version of 
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> that addresses various issues,
+not currently handled in the best way by version <SMALL>V97.1</SMALL>.
+These include:
+<UL>
+<LI>validating the <TT>HTML</TT> output,
+so that only correctly nested tags, and their contents,
+can be produced by the translator;
+<LI>more T<SMALL>E</SMALL>X-like order of macro-expansion,
+so that macros and their expansions will produce exactly
+the results expected from the T<SMALL>E</SMALL>X implementation of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X;
+<LI>faster processing,
+by streamlining some of the current <A HREF="node10.html#GGGPerl"><I>Perl</I></A> code, and allowing
+shorter strings to be handled at any given time;
+<LI>customisation issues,
+allowing easier portability to Unix-like environments on
+other platforms.
+</UL>
+Many of these features have been the inspiration for new code
+written for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>&nbsp;<SMALL>V98.1</SMALL>.
+
+<P>
+
+<P>
+<BR>
+The current version of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>-NG can be obtained from
+the developer's <A HREF="Snode1.html#cvsrepos">repository</A>,
+in the directory
+<A NAME="tex2html110"
+ HREF="http://cdc-server.cdc.informatik.tu-darmstadt.de/~latex2html/ng-user">http://cdc-server.cdc.informatik.tu-darmstadt.de/~latex2html/ng-user</A>.
+Beware that the files there are <EM>not</EM> compatible with those of the
+same name that come with the current version of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+
+<P>
+
+<H2><A NAME="SECTION00043000000000000000">
+Extended Capabilities in Web browsers</A>
+</H2>
+The following areas are the subject of active development
+within the Web community. 
+Limited support is available within L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> for some of these features,
+using the <TT>-html_version 4.0</TT> command-line switch.
+<DL>
+<DD><A NAME="1103">&#160;</A>
+<A NAME="1104">&#160;</A>
+<DT><STRONG>style-sheets: </STRONG>
+<DD><A NAME="tex2html111"
+ HREF="http://www.w3.org/pub/WWW/TR/WD-style-970324.html">proposals</A>
+for a flexible mechanism to allow cascading (CSS) and DSSSL, 
+within <A NAME="tex2html112"
+ HREF="http://www.w3.org/pub/Markup/"><TT>HTML</TT> 4.0</A>.
+<A NAME="1109">&#160;</A>
+<A NAME="1110">&#160;</A>
+<DT><STRONG>XML: </STRONG>
+<DD><A NAME="tex2html113"
+ HREF="http://www.w3.org/pub/WWW/TR/WD-xml.html">eXtensible Markup Language</A>.
+<P>
+<A NAME="1113">&#160;</A>
+<A NAME="1114">&#160;</A>
+<DT><STRONG>MathML: </STRONG>
+<DD><A NAME="tex2html114"
+ HREF="http://www.w3.org/pub/WWW/TR/WD-math-970515">Mathematical Markup Language</A>.
+
+<P>
+<A NAME="1117">&#160;</A>
+<A NAME="1118">&#160;</A>
+<DT><STRONG>CML: </STRONG>
+<DD><A NAME="tex2html115"
+ HREF="http://www.venus.co.uk/omf/cml">Chemical Markup Language</A>.
+
+<P>
+<A NAME="1121">&#160;</A>
+<DT><STRONG>Fonts: </STRONG>
+<DD>further support for non-standard font encodings.
+
+<P>
+<A NAME="1122">&#160;</A>
+<DT><STRONG>Icons: </STRONG>
+<DD>Alternative sets of icons for navigation buttons 
+and other purposes.
+</DL>
+For some background on these technologies read
+<A NAME="1602">&#160;</A> <A NAME="tex2html116"
+ HREF="http://wwwcn1.cern.ch/~goossens/">Michel Goossens</A>' survey article ``Hyper-activity in the Web-world''
+in <I>CERN Computer Newsletter</I> 
+<A NAME="tex2html117"
+ HREF="http://wwwinfo.cern.ch/cnls/227/art_xml.html">No. 227</A>,
+and browse <A NAME="1606">&#160;</A> <A NAME="tex2html118"
+ HREF="mailto:axel@ramge.de">Axel Ramge</A>'s 
+<A NAME="tex2html119"
+ HREF="http://www.ramge.de/ax/latex2html/latex2html.html">site</A>
+for ideas on how they could be used with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+
+<P>
+
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html296"
+ HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html292"
+ HREF="manual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html286"
+ HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html294"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html295"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html297"
+ HREF="node5.html">General License Agreement and</A>
+<B> Up:</B> <A NAME="tex2html293"
+ HREF="manual.html">The L<SUP>A</SUP>TEX2HTML Translator</A>
+<B> Previous:</B> <A NAME="tex2html287"
+ HREF="node3.html">Developments: late 1996 to</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,121 @@
+<html><BODY bgcolor="ffffff">
+<PRE>
+SSH-AGENT2(1)                  SSH2                 SSH-AGENT2(1)
+
+
+
+<B>NAME</B>
+       ssh-agent2 - authentication agent
+
+
+<B>SYNOPSIS</B>
+       <B>ssh-agent2 </B><I>command</I>
+
+       <B>eval `ssh-agent2 </B>[<B>-s</B>] [<B>-c</B>] [<B>-1</B>]`
+
+
+<B>DESCRIPTION</B>
+       <B>ssh-agent2  </B>is  a  program  to hold authentication private
+       keys.  The idea is  that  <B>ssh-agent2  </B>is  started  in  the
+       beginning  of  an  X-session  or  a login session, and all
+       other windows or programs are started as children  of  the
+       ssh-agent2  program  (the  <I>command </I>normally starts X or is
+       the user shell).  The programs  started  under  the  agent
+       inherit  a connection to the agent, and the agent is auto­
+       matically used for public key authentication when  logging
+       to other machines using <B>ssh.</B>
+
+       If  the  ssh-agent2  is  started without any arguments (no
+       command) it will fork and start agent as  background  pro­
+       cess.  The agent also prints command that can be evaluated
+       in sh or csh like shells, that will set the <B>SSH2_AUTH_SOCK</B>
+       and    <B>SSH2_AGENT_PID    </B>environment    variables.     The
+       <B>SSH2_AGENT_PID </B>environment variable can be  used  to  kill
+       agent  away  when  it is no longer needed (when you logout
+       from X-session etc). If no options  are  given,  the  ssh-
+       agent2  uses the SHELL environment variable to detect what
+       kind of shell you have (*csh or sh-style  shell).  The  <B>-c</B>
+       option  will  force  csh-style  shell,  and <B>-s </B>option will
+       force sh-style shell.
+
+       Note that in SysV variants (at least IRIX and Solaris) the
+       environment  variable  SHELL  might not contain the actual
+       value of the shell executing the evaluation.  If  ALTSHELL
+       is set to YES in /etc/default/login, the SHELL environment
+       variable is set to the login shell of the user.
+
+       The agent initially does not have any private keys.   Keys
+       are  added  using  <B>ssh-add2.   </B>Several  identities  can be
+       stored in the agent; the agent can automatically  use  any
+       of  these identities.  <B>ssh-add2 -l </B>displays the identities
+       currently held by the agent.
+
+       The idea is that the agent is run in the user's local  PC,
+       laptop, or terminal.  Authentication data does not have to
+       be  stored  on  any  other  machine,  and   authentication
+       passphrases  never go over the network.  However, the con­
+       nection to the agent is forwarded over <B>ssh </B>remote  logins,
+       and  the  user  can  thus  use the privileges given by the
+       identities anywhere in the network in a secure way.
+
+       A connection to the agent is inherited by child  programs.
+       A  unix-domain  socket  is  created (<I>/tmp/ssh-$USER/agent-</I>
+       <I>socket-&lt;pid&gt;</I>), where the &lt;pid&gt; is the process  id  of  the
+       listener  (agent  or sshd proxying the agent). The name of
+       this socket is stored in  the  <B>SSH2_AUTH_SOCK  </B>environment
+       variable.   The socket is made accessible only to the cur­
+       rent user.  This  method  is  easily  abused  by  root  or
+       another  instance  of the same user. Older versions of ssh
+       used inherited file descriptors for contacting  the  agent
+       and used the unix-domain sockets in an incompatible way.
+
+       If  the  command  is  given as argument to ssh-agent2, the
+       agent exits automatically when the command  given  on  the
+       command  line terminates.  The command is executed even if
+       the agent fails to start it's key  storing  and  challenge
+       processing services.
+
+
+<B>COMPATIBILITY</B>
+       With  the  option  <B>-1  </B>ssh-agent2  can also serve old ssh1
+       applications and can also be accessed with ssh-add program
+       in  ssh1  releases.  If the option <B>-1 </B>is given to the ssh-
+       agent2, the program will also set  the  environment  vari­
+       ables  <B>SSH_AUTH_SOCK </B>and <B>SSH_AGENT_PID </B>and share keys with
+       both protocols.
+
+
+<B>FILES</B>
+       <I>$HOME/.ssh2/id</I><B>_</B><I>KEYTYPE</I><B>_</B><I>KEYLEN</I><B>_</B><I>XX</I>
+              Contains the private key authentication identity of
+              the user.  This file should not be readable by any­
+              one but the user.  It  is  possible  to  specify  a
+              passphrase when generating the key; that passphrase
+              will be used to encrypt the private  part  of  this
+              file.   This file is not used by <B>ssh-agent2, </B>but is
+              normally added to the agent using <B>ssh-add2 </B>at login
+              time.
+
+       <I>/tmp/ssh-$USER/agent-socket-&lt;pid&gt;</I>
+              Unix-domain  sockets used to contain the connection
+              to the authentication agent.  These sockets  should
+              only  be readable by the owner.  The sockets should
+              get automatically removed when the agent exits. The
+              parent  directory  of  ssh2-$USER  must  have  it's
+              sticky bit set.
+
+
+<B>AUTHORS</B>
+       SSH Communications Security Corp
+
+       For more information, see http://www.ssh.com.
+
+
+<B>SEE ALSO</B>
+       <B>ssh-add2</B>(1), <B>ssh-keygen2</B>(1), <B>ssh2</B>(1), <B>sshd2</B>(8), <B>sftp</B>(1)
+
+
+
+SSH2                      March 22, 2000            SSH-AGENT2(1)
+</PRE>
+</BODY></html>

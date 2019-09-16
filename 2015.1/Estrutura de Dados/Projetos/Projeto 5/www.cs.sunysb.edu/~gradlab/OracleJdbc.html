@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Graduate Lab Oracle-JDBC Documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<!-- This file contains the site wide Javascript functions and stylesheet -->
+
+<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+  var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+  if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+  d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+  if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+          
+//-->
+</script>
+
+<link rel="STYLESHEET" type="text/css" href="/style/all.css">
+ 
+
+
+<style type="text/css">
+<!--
+.style4 {color: #CC0033}
+-->
+</style>
+</HEAD>
+
+<body bgcolor="#FFFFFF" link="#FFFFFF" vlink="#FFFFFF">
+ 
+
+<table border="0" align="center" width="760">
+
+  <tr> 
+
+    <td valign="top">
+
+              <img src="/menu/images/banners/CStopbanner.gif" width="640" height="30"><br>
+        <img src="/menu/images/banners/CStoppic.jpg" width="640" height="120" vspace="3"><BR>
+ 
+
+      <table border="0" cellpadding="0" cellspacing="0" width="640">
+
+                  <tr>
+          <!-- Shim row, height 1. -->
+          <td colspan="8" bgcolor="FFFFFF" width="640" height="1"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+          <td gcolor="FFFFFF" width="1" height="1" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+ 
+
+                  <tr>
+          <!-- row 1 -->
+          <td ><a href="/admissions/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('admissions','','/menu/images/CSmenu/admissions_f2.gif',1);" ><img name="admissions" src="/menu/images/CSmenu/admissions.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/research/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('research','','/menu/images/CSmenu/research_f2.gif',1);" ><img name="research" src="/menu/images/CSmenu/research.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/facilities/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('facilities','','/menu/images/CSmenu/facilities_f2.gif',1);" ><img name="facilities" src="/menu/images/CSmenu/facilities.gif" width="80" height="30" border="0"></a></td>
+          <td><a href="/people/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('people','','/menu/images/CSmenu/people_f2.gif',1);" ><img name="people" src="/menu/images/CSmenu/people.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/undergrad/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('undergrad','','/menu/images/CSmenu/undergrad_f2.gif',1);" ><img name="undergrad" src="/menu/images/CSmenu/undergrad.gif" width="80" height="30" border="0"></a></td>
+          <td><a href="/graduate/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('graduate','','/menu/images/CSmenu/graduate_f2.gif',1);" ><img name="graduate" src="/menu/images/CSmenu/graduate.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="http://www.cs.sunysb.edu/~news/" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('events','','/menu/images/CSmenu/events_f2.gif',1);" ><img name="events" src="/menu/images/CSmenu/events.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/welcome/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('welcome','','/menu/images/CSmenu/welcome_f2.gif',1);" ><img name="welcome" src="/menu/images/CSmenu/welcome.gif" width="80" height="30" border="0"></a></td>
+          <td bgcolor="#FFFFFF" width="1" heigth="30" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+ 
+
+      </table>
+
+      <p> 
+
+        <!-- Image with table -->
+
+        <!-- Image with table -->
+
+<body>
+<p><strong><u>Instructions for Connecting to the Database Server using </u></strong> <u><strong>JDBC from Home
+</strong></u></p>
+<p>Since a Firewall sits between the Oracle Database Server and the Oracle Client the JDBC connect string has to account for that. The steps below walk a user on using Oracle jdbc drivers to connect to the database. </p>
+
+<ol>
+  <li>Whether you use TYPE-II  JDBC-OCI driver (requires the Oracle-9i Rel2 thick client) or TYPE-IV JDBC-THIN driver   a copy of the oracle client is necessary when connecting from home.<br>
+  </li>
+      <li> A copy of the Oracle 9i Rel2. (Thick client) is available at the following location:<br>
+        <a href="http://www.oracle.com/technology/software/products/oracle9i/index.html%20">http://www.oracle.com/technology/software/products/oracle9i/index.html </a><br>
+      </li>
+      <li> If  JDBC thin client is used to connect to the database then OS specific Oracle InstantClient can be downloaded from the following location: 
+          <a href="http://www.oracle.com/technology/tech/oci/instantclient/instantclient.html">http://www.oracle.com/technology/tech/oci/instantclient/instantclient.html<br>
+          </a></li>
+      <li>To download the client software from the above links may require users to do a free registration on Oracle technet. <br>
+      </li>
+      <li>Copies of  sample programs which have connection information to the database using both  JDBC-THIN and JDBC-OCI drivers can be obtained by downloading the file JDBC.zip. A checklist of common CLASSPATH issues that need to be addressed is also available in the zip. <br>
+        <a href="http://www.cs.sunysb.edu/~gradlab/JDBC.zip">JDBC.zip</a></li>
+</ol>
+<p><strong>NOTE: </strong><span class="style4">When connecting to the database from inside the DEPT/GRADLABS only Oracle Instant Client is available on the machines which is  JDBC-THIN compliant. Running   programs which use JDBC-OCI to establish a connection to the oracle server will thus fail to  make a connection from the GRADLABS because of incompatibilty.</span><br>
+</p>
+<br><br>
+<table width="100%" border="0" align="center"  bgcolor="#006959">
+  <tr>
+    <td><div align="center"><a href="index.html"><font color="#FFFFFF">Graduate Lab</font></a></div></td>
+    <td><div align="center"><a href="Vista.html"><font color="#FFFFFF">Vista</font></a></div></td>
+    <td><div align="center"><a href="software.html"><font color="#FFFFFF">Software Installed</font></a></div></td>
+    <td><div align="center"><a href="sybase.html"><font color="#FFFFFF">Sybase</font></a></div></td>
+<td><div align="center"><a href="oracle.html"><font color="#FFFFFF">Oracle</font></a></div></td>
+<td><div align="center"><a href="MySql.html"><font color="#FFFFFF">MySQL</font></a></div></td>
+  </tr>
+</table>
+  
+		
+   
+    <td valign="top" bordercolor="#FFFFFF"> 
+
+            <div align="center"><a href="http://www.stonybrook.edu"><img src="/menu/images/SBLogo4pmsSM.gif" width="112" height="66" border="0"></a></div>
+      <BR>
+      <div align="center"><a href="http://www.cs.sunysb.edu"><img src="/menu/images/cslogotype_color.gif" width="95" height="95" border="0"></a></div>
+ 
+
+      <div align="center">
+
+         <a href="http://www.cra.org"><img src="/csimages/cralogo100sharp.gif" width="72" height="77" border="0"></a>
+
+      </div>
+
+      <BR>
+   <table width="100%" border=0 cellpadding=2 cellspacing=0>
+    <tr>
+     <td align="center">
+      <form method="get" action="http://www.cs.sunysb.edu/search/search.cgi" name="search" >
+       <input type="text" name="Terms" id="fdse_TermsEx" size=12 value="Search CS" onFocus="document.search.Terms.value='';document.search.Terms.select()"><input type=image src="/csimages/searchsite.gif" width=15 height=14 alt="Search Now" value="Go">
+      </form>
+     </td>
+    </tr>
+   </table>
+
+
+      <hr>
+<div class="navindex">
+              
+  <table border=0 cellpadding=5 cellspacing=0>
+    <tr> 
+      <td><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.cs.sunysb.edu/events/DLseries/index.html">Distinguished 
+        Lecture Series</a></font></td>
+    </tr>
+    <tr> 
+      <td><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.cs.sunysb.edu/welcome/joinus/faculty.html">Open 
+        Faculty Positions </a></font></td>
+    </tr>
+    <tr> 
+      <td> <font face="Arial, Helvetica, sans-serif" size="2"> <a href="/CSbldg.html">New 
+        CS building Plans</a> </font> </td>
+    </tr>
+    <tr> 
+      <td> <font face="Arial, Helvetica, sans-serif" size="2"> <a href="/CEWITbldg.html">New 
+        CEWIT building Plans</a> </font> </td>
+    </tr>
+  </table>
+      </div>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+</body>
+</html>
+

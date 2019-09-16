@@ -1,0 +1,495 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Options controlling Titles, File-Names and Sectioning</TITLE>
+<META NAME="description" CONTENT="Options controlling Titles, File-Names and Sectioning">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="next" HREF="Mnode4.html">
+<LINK REL="previous" HREF="Mnode2.html">
+<LINK REL="up" HREF="Mnode2.html">
+<LINK REL="next" HREF="Mnode4.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html74"
+ HREF="Mnode4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html70"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html64"
+ HREF="Mnode2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html72"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html73"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html75"
+ HREF="Mnode4.html">Options controlling Extensions and</A>
+<B> Up:</B> <A NAME="tex2html71"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html65"
+ HREF="Mnode2.html">Command-Line Options</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000132100000000000000">&#160;</A>
+<A NAME="790">&#160;</A><A NAME="791">&#160;</A><A NAME="792">&#160;</A>
+<BR>
+Options controlling Titles, File-Names and Sectioning
+</H3>
+<A NAME="793">&#160;</A>
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-t <TT>
+&lt;<I>top-page-title</I>&gt;</TT><A NAME="cs_toppagetitle">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_TITLE"
+ NAME="2257"><TT>$TITLE</TT></A><TT> = &#34;
+&lt;<I>top-page-title</I>&gt;&#34;;</TT></FONT>
+<BR>
+Name the document using this title.
+
+<P>
+<A NAME="2057">&#160;</A>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-short_extn<A NAME="cs_shortextn">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_SHORTEXTN"
+ NAME="2271"><TT>$SHORTEXTN</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Use a filename prefix of <TT>.htm </TT> for the produced
+<TT>HTML</TT> files. This is particularly useful for creating pages
+to be stored on CD-ROM or other media, to be used with 
+operating systems that require a 3-character extension.
+
+<P>
+<A NAME="811">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-long_titles <TT>
+&lt;<I>num</I>&gt;</TT><A NAME="cs_longtitles">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_LONG_TITLES"
+ NAME="2287"><TT>$LONG_TITLES</TT></A><TT> = 
+&lt;<I>num</I>&gt;;</TT></FONT>
+<BR>
+Instead of the standard  names: <TT>node1.html</TT>, <TT>node2.html</TT>,... 
+the filenames for each <TT>HTML</TT> page are constructed
+from the first <TT>
+&lt;<I>num</I>&gt;</TT> words of the section heading
+for that page, separated by the `<TT>_</TT>' character.
+<BR>
+Commas and common short words (<TT>a an to by of and for the</TT>)
+are omitted from both title and word-count.
+
+<P>
+
+<P></P>
+
+<B>Warning:</B> Use this switch with great caution.
+Currently there are no checks for uniqueness of names or overall length. 
+Very long names can easily result from using this feature.
+
+<P>
+<A NAME="826">&#160;</A>
+<A NAME="2060">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-custom_titles<A NAME="cs_customtitles">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_CUSTOM_TITLES"
+ NAME="2303"><TT>$CUSTOM_TITLES</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Instead of the standard  names: <TT>node1.html</TT>, <TT>node2.html</TT>, ... 
+the filenames for each <TT>HTML</TT> page are constructed using a <A HREF="node10.html#GGGPerl"><I>Perl</I></A>
+subroutine named <TT> custom_title_hook</TT>&nbsp;. 
+The user may define his/her own version of this subroutine, 
+within a <A HREF="node10.html#GGG.latex2html-init"
+ NAME="2314"><TT>.latex2html-init</TT></A> file say, 
+to override the default (which uses the standard names).
+This subroutine takes the section-heading as a parameter 
+and must return the required name, or the empty string (default).
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="838">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-dir <TT>
+&lt;<I>output-directory</I>&gt;</TT><A NAME="cs_outputdir">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_DESTDIR"
+ NAME="2330"><TT>$DESTDIR</TT></A><TT> = &#34;
+&lt;<I>output-directory</I>&gt;&#34;;</TT></FONT>
+<BR>
+Redirect the output to the specified directory.
+<BR>
+The default behaviour is to create (or reuse) a directory having the same
+name as the prefix of the document being processed.
+
+<P>
+<A NAME="846">&#160;</A>
+<A NAME="847">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-no_subdir<A NAME="cs_nosubdir">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_NO_SUBDIR"
+ NAME="2344"><TT>$NO_SUBDIR</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Place the generated <TT>HTML</TT> files into the current directory.
+This overrides any <A HREF="node10.html#GGG_DESTDIR"
+ NAME="2352"><TT>$DESTDIR</TT></A> setting.
+
+<P>
+<A NAME="853">&#160;</A>
+<A NAME="854">&#160;</A>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-prefix <TT>
+&lt;<I>filename-prefix</I>&gt;</TT><A NAME="cs_prefix">&#160;</A></B>
+<DD>
+<FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_PREFIX"
+ NAME="2368"><TT>$PREFIX</TT></A><TT> = &#34;
+&lt;<I>filename-prefix</I>&gt;&#34;;</TT></FONT>
+<BR>
+The <TT>
+&lt;<I>filename-prefix</I>&gt;</TT> will be prepended to all 
+<TT>.gif</TT>, <TT>.pl</TT> and <TT>.html</TT> files produced, 
+except for the top-level <TT>.html</TT> file;  
+it may include a (relative) directory path. 
+This will enable multiple products of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> to
+peacefully coexist in the same directory.
+However, do <EM>not</EM> attempt to <EM>simultaneously</EM> run multiple 
+instances of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> using the same output directory, 
+else various temporary files will overwrite each other.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+<A NAME="873">&#160;</A>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1h</SUP>
+<BR>
+
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-auto_prefix<A NAME="cs_autoprefix">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_AUTO_PREFIX"
+ NAME="2384"><TT>$AUTO_PREFIX</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Constructs the prefix as `<TT>
+&lt;<I>title</I>&gt;</TT>-'
+to be prepended to all the files produced, 
+where <TT>
+&lt;<I>title</I>&gt;</TT> is the name of the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X file being processed.
+(Note the `-' in this prefix.)
+<BR>
+This overrides any <A HREF="node10.html#GGG_PREFIX"
+ NAME="2396"><TT>$PREFIX</TT></A> setting.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1h</SUP>
+<BR>
+
+<P>
+<A NAME="885">&#160;</A>
+<A NAME="2066">&#160;</A>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-no_auto_link<A NAME="cs_noautolink">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_AUTO_LINK"
+ NAME="2416"><TT>$AUTO_LINK</TT></A><TT> = 0;</TT></FONT>
+<BR>
+If <A HREF="node10.html#GGG_AUTO_LINK"
+ NAME="2424"><TT>$AUTO_LINK</TT></A> is set, along with variables <A HREF="node10.html#GGG_LINKPOINT"
+ NAME="2432"><TT>$LINKPOINT</TT></A> 
+and <A HREF="node10.html#GGG_LINKNAME"
+ NAME="2440"><TT>$LINKNAME</TT></A> (e.g. within the <A HREF="node10.html#GGGlatex2html.config"
+ NAME="2448"><TT>latex2html.config</TT></A> file) 
+then a hard link to the main <TT>HTML</TT> page is produced,
+using the name in <A HREF="node10.html#GGG_LINKNAME"
+ NAME="2456"><TT>$LINKNAME</TT></A>. Typically this is <A HREF="node10.html#GGGindex.html"
+ NAME="2464"><TT>index.html</TT></A>; 
+on many systems a file of this name will be used, if it exists,
+when a browser tries to view a URL which points to a directory.
+On other systems a different value for <A HREF="node10.html#GGG_LINKNAME"
+ NAME="2472"><TT>$LINKNAME</TT></A> may be appropriate.
+Typically <A HREF="node10.html#GGG_LINKPOINT"
+ NAME="2480"><TT>$LINKPOINT</TT></A> has value <TT>$FILE.html</TT>, but
+this may also be changed to match whichever <TT>HTML</TT> page
+is to become the target of the automatic link.
+<BR>
+Use of the  <TT>-no_auto_link</TT>  switch <EM>cancels</EM> 
+this automatic linking facility, 
+when not required for a particular document.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="907">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-split <TT>
+&lt;<I>num</I>&gt;</TT><A NAME="cs_splitdepth">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_MAX_SPLIT_DEPTH"
+ NAME="2497"><TT>$MAX_SPLIT_DEPTH</TT></A><TT> = 
+&lt;<I>num</I>&gt;;</TT></FONT>
+ (default is <TT>8</TT>)
+<BR>
+Stop splitting sections into separate files at this depth.
+Specifying  <TT>-split 0</TT>  will put the entire document into a 
+single <TT>HTML</TT> file. See <A HREF="Mnode3.html#seclevels">below</A> for
+the different levels of sectioning. Also see the next item for
+how to set a ``relative'' depth for splitting.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-split +<TT>
+&lt;<I>num</I>&gt;</TT><A NAME="cs_reldepth">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_MAX_SPLIT_DEPTH"
+ NAME="2517"><TT>$MAX_SPLIT_DEPTH</TT></A><TT> = </TT>-<TT>
+&lt;<I>num</I>&gt;;</TT></FONT>
+ (default is <TT>8</TT>)
+<BR>
+The level at which to stop splitting sections is calculated ``relative to'' 
+the shallowest level of sectioning that occurs within the document.
+For example, if the document contains <TT>&#92;section</TT> commands, but no <TT>&#92;part</TT>
+or <TT>&#92;chapter</TT> commands, then  <TT>-split +1</TT>  will cause splitting at each <TT>&#92;section</TT>
+but not at any deeper level; whereas  <TT>-split +2</TT>  or  <TT>-split +3</TT>  also split down to 
+<TT>&#92;subsection</TT> and <TT>&#92;subsubsection</TT> commands respectively.
+Specifying  <TT>-split +0</TT>  puts the entire document into a single <TT>HTML</TT> file.
+
+<P>
+<A NAME="938">&#160;</A>
+<A NAME="939">&#160;</A>
+
+<P>
+<A NAME="940">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-link <TT>
+&lt;<I>num</I>&gt;</TT><A NAME="cs_linkdepth">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_MAX_LINK_DEPTH"
+ NAME="2545"><TT>$MAX_LINK_DEPTH</TT></A><TT> = 
+&lt;<I>num</I>&gt;;</TT></FONT>
+ (default is <TT>4</TT>)
+<BR>
+For each node, create links to child nodes down to this much 
+deeper than the node's sectioning-level.
+<BR>
+Specifying  <TT>-link 0</TT>  will show no links to child nodes from that page,
+<BR>
+ <TT>-link 1</TT>  will show only the immediate descendents, etc.
+<BR>
+A value at least as big as that of the 
+<A HREF="#splitdepth"> <TT>-split <TT>
+&lt;<I>num</I>&gt;</TT></TT> </A> depth will
+produce a mini table-of-contents (when not empty) on each page,
+for the tree structure rooted at that node.
+
+<P>
+<A NAME="955">&#160;</A>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+When the page has a sectioning-level less than the  <TT>-split</TT>  depth,
+so that the a mini table-of-contents has links to other <TT>HTML</TT> pages, 
+this table is located at the bottom of the page, 
+unless placed elsewhere using the <TT>&#92;tableofchildlinks</TT> command.
+
+<P>
+<A NAME="961">&#160;</A>
+<A NAME="2072">&#160;</A>
+
+<P>
+On pages having a sectioning-level just less than the  <TT>-split</TT>  depth 
+the mini table-of-contents contains links to subsections etc.
+occurring on the <EM>same</EM> <TT>HTML</TT> page. 
+Now the table is located at the <EM>top</EM> of this page, 
+unless placed elsewhere using the <TT>&#92;tableofchildlinks</TT> command.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="969">&#160;</A>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-toc_depth  <TT>
+&lt;<I>num</I>&gt;</TT><A NAME="cs_tocdepth">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_TOC_DEPTH"
+ NAME="2573"><TT>$TOC_DEPTH</TT></A><TT> = 
+&lt;<I>num</I>&gt;;</TT></FONT>
+ (default is <TT>4</TT>)
+<BR>
+Sectioning levels down to <TT>
+&lt;<I>num</I>&gt;</TT> are to be included 
+within the Table-of-Contents tree.
+
+<P>
+<A NAME="980">&#160;</A>
+<A NAME="981">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-toc_stars<A NAME="cs_tocstars">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_TOC_STARS"
+ NAME="2589"><TT>$TOC_STARS</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Sections created using the starred-form of sectioning commands
+are included within the Table-of-Contents.
+As with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, normally such sections are <EM>not</EM> listed.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="987">&#160;</A>
+<A NAME="988">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-show_section_numbers<A NAME="cs_showsecnums">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_SHOW_SECTION_NUMBERS"
+ NAME="2601"><TT>$SHOW_SECTION_NUMBERS</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Show section numbers. By default section numbers are <EM>not</EM> shown, 
+so as to encourage the use of particular sections as stand-alone documents. 
+<I>In order to be shown, 
+section titles must be unique and must not contain inlined graphics.</I>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.2</SUP>
+<BR><A NAME="996">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-unsegment<A NAME="cs_unsegment">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_UNSEGMENT"
+ NAME="2613"><TT>$UNSEGMENT</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Treat a segmented document (see the section about <A HREF="Hnode11.html#Segmentation">document
+  segmentation</A>) like it were not segmented.
+This will cause the translator to concatenate all segments and process
+them as a whole.
+You might find this useful to check a segmented document for
+consistency.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.2</SUP>
+<BR>
+</DL>
+
+<P>
+
+<A NAME="1004">&#160;</A><A NAME="1005">&#160;</A><A NAME="seclevels">&#160;</A>
+<BR>
+For all documents the sectioning levels referred to above are:
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3>
+<TR><TH ALIGN="LEFT"><B>0</B></TH>
+<TD ALIGN="LEFT">document</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>1</B></TH>
+<TD ALIGN="LEFT">part</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>2</B></TH>
+<TD ALIGN="LEFT">chapter</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>3</B></TH>
+<TD ALIGN="LEFT">section</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>4</B></TH>
+<TD ALIGN="LEFT">subsection</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>5</B></TH>
+<TD ALIGN="LEFT">subsubsection</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>6</B></TH>
+<TD ALIGN="LEFT">paragraph</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>7</B></TH>
+<TD ALIGN="LEFT">subparagraph</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>8</B></TH>
+<TD ALIGN="LEFT">subsubparagraph</TD>
+</TR>
+</TABLE></DIV>
+These levels apply even when the document contains no sectioning for
+the shallower levels; e.g. no <TT>&#92;part</TT> or <TT>&#92;chapter</TT> commands is most common,
+especially when using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X's 
+<I>article</I> document-class.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html74"
+ HREF="Mnode4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html70"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html64"
+ HREF="Mnode2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html72"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html73"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html75"
+ HREF="Mnode4.html">Options controlling Extensions and</A>
+<B> Up:</B> <A NAME="tex2html71"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html65"
+ HREF="Mnode2.html">Command-Line Options</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

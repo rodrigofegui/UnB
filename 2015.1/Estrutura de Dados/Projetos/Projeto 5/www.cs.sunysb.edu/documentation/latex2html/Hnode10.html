@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Active Image Maps</TITLE>
+<META NAME="description" CONTENT="Active Image Maps">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="next" HREF="Hnode11.html">
+<LINK REL="previous" HREF="Hnode9.html">
+<LINK REL="up" HREF="hypextra.html">
+<LINK REL="next" HREF="Hnode11.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html230"
+ HREF="Hnode11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html226"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html220"
+ HREF="Hnode9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html228"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html229"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html231"
+ HREF="Hnode11.html">Document Segmentation</SUP></A>
+<B> Up:</B> <A NAME="tex2html227"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html221"
+ HREF="Hnode9.html">Miscellaneous commands for HTML</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000129000000000000000">&#160;</A><A NAME="ImageMaps">&#160;</A>
+<BR>
+Active Image Maps
+</H2>
+<A NAME="2067">&#160;</A><A NAME="2068">&#160;</A>
+<A NAME="2605">&#160;</A>
+<A NAME="2606">&#160;</A>
+<A NAME="2071">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+<EM>Image maps</EM> are images with active regions in which a 
+Web-surfer can click, to send him off to another sector of cyberspace.  
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> can design either inline ``figures'' or external ones 
+(with or without a thumbnail version) to be image-maps.  
+However <TT>HTML</TT> requires a URL of a <TT>HTML</TT> <EM>map-file</EM>, 
+which associates the coordinates of each active region in
+the map with a destination URL.  
+Usually this map file is kept on the server machine, 
+however <TT>HTML</TT> 3.2 also allows it 
+to reside on the <A NAME="tex2html22"
+ HREF="http://ds.internic.net/internet-drafts/draft-seidman-clientsideimagemap-02.txt">client side</A>
+for faster response.  
+Both configurations are supported by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> 
+through the <TT>&#92;htmlimage</TT> options
+`<TT>map=</TT>' and `<TT>usemap=</TT>' respectively.
+
+<P>
+<A NAME="2607">&#160;</A>
+<A NAME="2087">&#160;</A>
+<BR>
+
+<P>
+Keeping such a map file up to date manually can be tedious, 
+especially with dynamic documents under revision.
+An experimental program <A HREF="node10.html#GGGmakemap"
+ NAME="3686"><TT>makemap</TT></A> helps automate this process.  
+This program (which is really a <A HREF="node10.html#GGGPerl"><I>Perl</I></A> script)
+takes one mandatory argument and an optional argument.
+The mandatory argument is the name of a <EM>user-map</EM> file,
+defined below.  The optional argument is the name of the
+directory where the <TT>HTML</TT> map file(s) are to be placed.
+
+<P>
+<A NAME="2093">&#160;</A>
+<BR>
+The best way of describing how this works is by example.
+Suppose a document has two figures designated to
+become active image-maps.  The first
+figure includes a statement like:
+<PRE>
+\begin{figure}
+\htmlimage{map=/cgi-bin/imagemap/BlockDiagram.map,...}
+. . .
+\end{figure}
+</PRE>
+The second figure has a line like:
+
+<P>
+<PRE>
+\begin{figure}
+\htmlimage{map=/cgi-bin/imagemap/FlowChart.map,...}
+. . .
+\end{figure}
+</PRE>
+
+<P>
+
+<P>
+<BR>
+<BR>
+<HR WIDTH="50%" ALIGN="center">
+<A NAME="2099">&#160;</A><A NAME="2100">&#160;</A>
+<A NAME="2101">&#160;</A><A NAME="2102">&#160;</A>
+<A NAME="2103">&#160;</A>
+<BR>
+
+A typical user-map file, named <A HREF="node10.html#GGGreport.map"
+ NAME="3697"><TT>report.map</TT></A>, 
+might contain the following information<A NAME="tex2html23"
+ HREF="#foot2608"><SUP>42</SUP></A>:
+<PRE>
+#
+#  Define the location(s) of the labels.pl file(s):
+#
++report/ &lt;URL&gt;
+#
+#  Define map #1:
+#
+BlockDiagram.map:       
+label1  rect    288,145 397,189
+label2  rect    307,225 377,252
+label2  default
+#
+#  Define map #2
+#
+FlowChart.map:
+label3  circle  150,100 200,100
+label4  default
+</PRE>
+<A NAME="2112">&#160;</A>
+<BR>
+In this file, comments are denoted by a <TT>#</TT>-sign in column&nbsp;1.
+The line beginning with <code>+report</code> states that the symbolic labels
+are to be found in the <A HREF="node10.html#GGGlabels.pl"
+ NAME="3723"><TT>labels.pl</TT></A> contained in the directory
+<TT>report/</TT>, and that its associated URL is as stated.  Any number
+of external <A HREF="node10.html#GGGlabels.pl"
+ NAME="3732"><TT>labels.pl</TT></A> files may be so specified.
+The block diagram image has two active regions.  The first is a rectangle
+bounded by corners (288, 145) and (397, 189), while the second is a rectangle
+bounded by corners (307, 225) and (377, 252).  These coordinates
+can be obtained with the aid of a program such as <A HREF="node10.html#GGGxv"
+ NAME="3740"><TT>xv</TT></A>.
+If the user clicks in the first rectangle, 
+it will cause a branch to the URL associated
+with symbolic label <TT>label1</TT> defined in the <A HREF="node10.html#GGGlabels.pl"
+ NAME="3748"><TT>labels.pl</TT></A> file
+found in directory <TT>report/</TT>.  The single active region in the
+flow chart figure is a circle centred at (150, 100) and passing through
+point (200, 100).  Clicking in this region will cause a branch to
+symbolic label <TT>label3</TT>.  Labels <TT>label2</TT> and <TT>label4</TT>
+will be visited if the user clicks anywhere outside of the explicit
+regions.  If any labels are not defined in any of the <A HREF="node10.html#GGGlabels.pl"
+ NAME="3757"><TT>labels.pl</TT></A>
+files mentioned, they will be interpreted as URLs without translation.
+
+<P>
+The <TT>HTML</TT> image-maps are generated and placed in directory
+<TT>report/</TT> by invoking the command: <code> makemap report.map report </code>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+<P>
+<A NAME="2129">&#160;</A>
+
+<P>
+<BR><HR><H4>Footnotes</H4>
+<DL>
+<DT><A NAME="foot2608">... information</A><A NAME="foot2608"
+ HREF="Hnode10.html#tex2html23"><SUP>42</SUP></A>
+<DD>
+This file is designed for an <A HREF="node10.html#GGGNCSA"
+ NAME="3705"><I>NCSA</I></A> server.  
+<A HREF="node10.html#GGGCERN"
+ NAME="3714"><I>CERN</I></A> servers use ``<TT>rect</TT>''
+instead of ``<TT>rectangle</TT>,'' 
+specify a radius instead of an outer point in the circle, 
+and enclose point coordinates by parentheses.
+
+</DL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html230"
+ HREF="Hnode11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html226"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html220"
+ HREF="Hnode9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html228"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html229"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html231"
+ HREF="Hnode11.html">Document Segmentation</SUP></A>
+<B> Up:</B> <A NAME="tex2html227"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html221"
+ HREF="Hnode9.html">Miscellaneous commands for HTML</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

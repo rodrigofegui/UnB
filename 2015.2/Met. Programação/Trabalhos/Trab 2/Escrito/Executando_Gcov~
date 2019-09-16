@@ -1,0 +1,2 @@
+cd 'nome_de_interesse'/CMakeFiles/'nome_do_executavel_gtest'.dir/Fontes/
+gcov *.gcno

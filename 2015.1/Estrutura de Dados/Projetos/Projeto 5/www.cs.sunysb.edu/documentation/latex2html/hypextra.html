@@ -1,0 +1,651 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="next" HREF="Hnode1.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html37"
+ HREF="Hnode1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html33"
+ HREF="manual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html27"
+ HREF="../manual/features.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html35"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html36"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html38"
+ HREF="Hnode1.html">Hyper-links in L<SUP>A</SUP>TEX</A>
+<B> Up:</B> <A NAME="tex2html34"
+ HREF="manual.html">LaTeX2HTML</A>
+<B> Previous:</B> <A NAME="tex2html28"
+ HREF="../manual/features.html">Environments_and_Special_Features</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<P>
+<H2><A NAME="SECTION000120000000000000000">
+Hypertext Extensions to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</A>
+</H2><A NAME="sec:hyp">&#160;</A><A NAME="645">&#160;</A>
+<A NAME="646">&#160;</A><A NAME="647">&#160;</A>
+
+<P>
+This section describes how you can define hypertext 
+entries in your <TT>HTML</TT> documents from within your L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source,
+as well as other effects available in <TT>HTML</TT> for which
+there need be no direct L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X analog for a printed document.
+These are implemented as new L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands which have special 
+meaning during the translation by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> into <TT>HTML</TT>, 
+but are mostly ignored when processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+
+<P>
+<A NAME="2409">&#160;</A>
+<A NAME="2410">&#160;</A>
+<BR>
+The new commands described in the sections 
+below are defined mainly in the 
+<I>html</I> package,
+with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X definitions in the file <A HREF="node10.html#GGGhtml.sty"
+ NAME="2641"><TT>html.sty</TT></A>,
+which is part of the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> distribution. 
+It <EM>must be included</EM> in any L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X document using these features, 
+by one of the following methods:
+<UL>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+<LI>including <TT>html</TT> as an optional argument 
+to <TT>&#92;documentstyle</TT> in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2.09;
+<LI>including <TT>html</TT> in a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB> <TT>&#92;usepackage</TT> command.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+</UL>
+It is <EM>not sufficient</EM> to load the style file via an <TT>&#92;input</TT> or
+<TT>&#92;include</TT> command, such as <TT>&#92;input</TT><code> html.sty</code>.
+This will load the required definitions for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, but will not load
+the <A HREF="node10.html#GGGhtml.perl"
+ NAME="2654"><TT>html.perl</TT></A> package file for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+
+<P>
+
+<P></P>
+
+<B>Warning: </B> Some of these features, but not all, are also available
+with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2.09.
+<BR>
+Users of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> are strongly advised to upgrade
+their L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X installations to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB>. 
+
+<P>
+
+<P><P>
+<BR>
+
+<BR>
+<HR WIDTH="300">
+<A NAME="2411">&#160;</A>
+<BR>
+
+Several new environments are defined, in particular for specifying
+large (or small) sections of the text which are appropriate to only
+one version of the document--either 
+the <TT>HTML</TT> or the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset version.
+<A NAME="2412">&#160;</A><A NAME="htmlenvs">&#160;</A><DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B><A HREF="Hnode2.html#rawhtml"><TT>&#92;begin&#123;rawhtml&#125;</TT></A></B>
+<DD>for including raw <TT>HTML</TT> tags and <TT>SGML</TT>-like markup.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B><A HREF="Hnode4.html#htmlonly"><TT>&#92;begin&#123;htmlonly&#125;</TT></A></B>
+<DD>for material intended for the <TT>HTML</TT> pages only.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B><A HREF="Hnode4.html#latexonly"><TT>&#92;begin&#123;latexonly&#125;</TT></A></B>
+<DD>for material intended for the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version only.
+<BR>
+Note that any macro-definitions or changes to counter-values are local
+to within this environment.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B><A HREF="Hnode4.html#unlatexonly"><TT>%begin&#123;latexonly&#125;</TT></A></B>
+<DD>for material intended for the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version only.
+<BR>
+Macro-definitions and changes to counter-values are retained
+outside of this (pseudo-)environment.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B><A HREF="Hnode4.html#imagesonly"><TT>&#92;begin&#123;imagesonly&#125;</TT></A></B>
+<DD>for material intended to be used in the <A HREF="node10.html#GGGimages.tex"
+ NAME="2666"><TT>images.tex</TT></A> file  only.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B><A HREF="Hnode2.html#comment"><TT>&#92;begin&#123;comment&#125;</TT></A></B>
+<DD>for user-comments only, currently ignored in both the <TT>HTML</TT> 
+and L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X versions.
+<BR>
+(To put <TT>HTML</TT> comments into the <TT>HTML</TT> files,
+use the 
+<I>rawhtml</I> environment.)
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B><A HREF="Hnode4.html#makeimage"><TT>&#92;begin&#123;makeimage&#125;</TT></A></B>
+<DD>
+creates an image of its contents, as typeset by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<BR>
+This is also used to prevent an image being made of the complete
+contents of a 
+<I>figure</I> environment, allowing more natural processing.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B><A HREF="Enode13.html#htmllist"><TT>&#92;begin&#123;htmllist&#125;</TT></A></B>
+<DD>
+defined in <A HREF="node10.html#GGGhtmllist.sty"
+ NAME="2679"><TT>htmllist.sty</TT></A> and <A HREF="node10.html#GGGhtmllist.perl"
+ NAME="2687"><TT>htmllist.perl</TT></A>, 
+this produces coloured balls tagging the items in a descriptive list, 
+as used throughout this manual.
+</DL>
+
+<P></P>
+
+<B>Warning: <A NAME="env:warn">&#160;</A></B>
+When using these environments it is important
+that the closing delimiter, <TT>&#92;end</TT><code>{htmlonly}</code> say, occurs
+on a line by itself with no preceding spaces, <TT>
+&lt;<I>tab</I>&gt;</TT>s 
+or any other characters. 
+(Otherwise L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X will <EM>not</EM> recognise the intended end 
+of the environment when processing for the <TT>.dvi</TT> version.)
+Similarly there should be nothing on the same line <EM>after</EM>
+the opening environment delimiter, <TT>&#92;begin</TT><code>{htmlonly}</code> say.
+
+<P>
+
+<P>
+<BR>
+
+<BR>
+<HR WIDTH="300">
+
+<P>
+<BR>
+The following commands are defined for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X in <A HREF="node10.html#GGGhtml.sty"
+ NAME="2699"><TT>html.sty</TT></A>.
+<BR>
+Corresponding <A HREF="node10.html#GGGPerl"><I>Perl</I></A> implementations are either in <A HREF="node10.html#GGGhtml.perl"
+ NAME="2710"><TT>html.perl</TT></A> 
+or in the <A HREF="node10.html#GGGlatex2html"
+ NAME="2718"><TT>latex2html</TT></A> script itself.
+<A NAME="744">&#160;</A>
+<A NAME="2423">&#160;</A>
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode9.html#l2hname"><TT>&#92;latextohtml</TT></A></B>
+<DD>expands to the name L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, of this translator;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode1.html#addnormlink"><TT>&#92;htmladdnormallink</TT></A></B>
+<DD>creates a (perhaps named) textual hyperlink to a specified <TT>
+&lt;<I>URL</I>&gt;</TT>;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode1.html#addfootlink"><TT>&#92;htmladdnormallinkfoot</TT></A></B>
+<DD>same as <TT>&#92;htmladdnormallink</TT>, but L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X also prints the <TT>
+&lt;<I>URL</I>&gt;</TT> in a footnote;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode1.html#htmladdimg"><TT>&#92;htmladdimg</TT></A></B>
+<DD>places an image  (perhaps aligned) on the <TT>HTML</TT> page;
+<BR>
+ignored by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode5.html#hyperref"><TT>&#92;hyperref</TT></A></B>
+<DD>creates a textual hyperlink to where a <TT>&#92;label</TT> command 
+occurred within the same document.
+<BR>
+This is the recommended substitute for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X's <TT>&#92;ref</TT> command.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode5.html#htmlref"><TT>&#92;htmlref</TT></A></B>
+<DD>creates a textual hyperlink to the place where a <TT>&#92;label</TT> command 
+occurred; no reference is printed in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode6.html#hypercite"><TT>&#92;hypercite</TT></A></B>
+<DD>creates a textual hyperlink to the bibliography page where citation details
+are shown.
+<BR>
+This is the recommended substitute for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X's <TT>&#92;cite</TT> command.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode6.html#htmlcite"><TT>&#92;htmlcite</TT></A></B>
+<DD>creates a textual hyperlink to the bibliography page where citation details
+are shown; no citation marker is printed in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode7.html#externref"><TT>&#92;externalref</TT></A></B>
+<DD>creates a textual hyperlink to where a <TT>&#92;label</TT> command occurred 
+within a different document that has also been
+processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode7.html#externcite"><TT>&#92;externalcite</TT></A></B>
+<DD>creates a textual hyperlink to where a reference occurs in a 
+bibliography page from a different document that has also been
+processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>; ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="#extlabels"><TT>&#92;externallabels</TT></A></B>
+<DD>allows hypertext links to a different document;
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+</DL>
+
+<P>
+
+<P>
+<BR>
+
+<BR>
+<HR WIDTH="300">
+
+<P>
+<BR>
+The following commands, also defined for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X in <A HREF="node10.html#GGGhtml.sty"
+ NAME="2747"><TT>html.sty</TT></A>,
+are normally used only when creating segmented documents, 
+see <A HREF="Hnode11.html#Segmentation">a later page</A>.
+<A NAME="793">&#160;</A>
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>
+<A HREF="#intsegment"><TT>&#92;segment</TT></A></B>
+<DD>directs that an <TT>&#92;input</TT> file <TT>
+&lt;<I>file</I>&gt;</TT> should be regarded 
+as a separate ``segment'' of a larger L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> document. 
+In L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X the file is input as usual, after counter values
+have first been written to a file, named <TT>
+&lt;<I>file</I>&gt;.ptr</TT>.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode11.html#startdoc"><TT>&#92;startdocument</TT></A></B>
+<DD>tells L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> where the end of the preamble occurs for a document segment;
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<BR>
+(A segment cannot have a <TT>&#92;begin</TT><code>{document}</code> command, unless it is
+shielded from L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X within an 
+<I>htmlonly</I> environment.)
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>
+<A HREF="Hnode11.html#internal"><TT>&#92;internal</TT></A></B>
+<DD>reads internal information from another document, so that symbolic
+references can be treated as if part of the current document; ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode11.html#htmlhead"><TT>&#92;htmlhead</TT></A></B>
+<DD>places a sectional heading on a <TT>HTML</TT> page; 
+used mainly with the <A HREF="Hnode11.html#Segmentation">document segmentation</A> feature.
+<BR>
+It is ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode11.html#htmlnohead"><TT>&#92;htmlnohead</TT></A></B>
+<DD>suppresses the section-heading for a document segment; ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode11.html#segcolor"><TT>&#92;segmentcolor</TT></A></B>
+<DD>read from the <TT>.ptr</TT> file, this sets the text color for a document segment;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode11.html#segpagecolor"><TT>&#92;segmentpagecolor</TT></A></B>
+<DD>read from the <TT>.ptr</TT> file, this sets the background color for a document segment;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+</DL>
+
+<P>
+
+<P>
+<BR>
+
+<BR>
+<HR WIDTH="300">
+
+<P>
+<BR>
+The following commands are shorthand forms for some of the ``conditional'' environments
+<A HREF="hypextra.html#htmlenvs">listed above</A>.
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode4.html#latexhtml"><TT>&#92;html</TT></A> </B>
+<DD>for putting small pieces of text into the <TT>HTML</TT> version only;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode4.html#latexhtml"><TT>&#92;latex</TT></A> </B>
+<DD>for putting small pieces of text into the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version only;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="Hnode4.html#latexhtml"><TT>&#92;latexhtml</TT></A> </B>
+<DD>puts one piece of text into the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version,
+another into the <TT>HTML</TT> version.
+</DL>
+
+<P>
+
+<P>
+<BR>
+
+<BR>
+<HR WIDTH="300">
+
+<P>
+<BR>
+The following commands implement effects on the <TT>HTML</TT> pages for which
+there is no direct L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X counterpart. Most of these commands are discussed
+in detail in <A HREF="Hnode9.html#misceffects">a later section</A>.
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Hnode3.html#HTMLtag"><TT>&#92;HTML</TT></A> </B>
+<DD>a general command for placing raw <TT>HTML</TT> tags,
+with attributes and contents;
+<BR>
+tags and attributes are ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, but not the contents.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Hnode9.html#htmlrule"><TT>&#92;htmlrule</TT></A> </B>
+<DD>places a (perhaps styled) horizontal line on the <TT>HTML</TT> page;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Hnode9.html#strikeout"><TT>&#92;strikeout</TT></A> </B>
+<DD>places text between <TT>&lt;STRIKE&gt;</TT>...<TT>&lt;/STRIKE&gt;</TT> tags;
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Enode6.html#htmlimage"><TT>&#92;htmlimage</TT></A> </B>
+<DD>used for fine control over the size of individual images, 
+and other graphics effects (e.g. making a `thumbnail' version);
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X. 
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="#htmlborder"><TT>&#92;htmlborder</TT></A> </B>
+<DD>places a border around the contents of an environment, but
+placing the environment as a cell inside a <TT>&lt;TABLE&gt;</TT>;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Hnode9.html#tochlinks"><TT>&#92;tableofchildlinks</TT></A> </B>
+<DD>determines where the table of childlinks should be placed on the <TT>HTML</TT> page;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Hnode9.html#htmlinfo"><TT>&#92;htmlinfo</TT></A> </B>
+<DD>determines where the ``About this document...'' information should be placed;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Mnode14.html#sec:navpanel"><TT>&#92;htmladdtonavigation</TT></A> </B>
+<DD>appends a button to the navigation panels;
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Hnode9.html#bodytext"><TT>&#92;bodytext</TT></A> </B>
+<DD>allows the contents of the <TT>&lt;BODY ...&gt;</TT> tag to be set explicitly 
+for the current and subsequent <TT>HTML</TT> pages;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>
+<A HREF="Hnode9.html#htmlbody"><TT>&#92;htmlbody</TT></A> </B>
+<DD>allows an attribute to be added or changed 
+within the <TT>&lt;BODY ...&gt;</TT> tag of <TT>HTML</TT>;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Hnode9.html#htmlbase"><TT>&#92;htmlbase</TT></A> </B>
+<DD>Allows a URL to be specified within the <TT>&lt;BASE ...&gt;</TT> tag
+for all the <TT>HTML</TT> pages produced;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Mnode8.html#cs_verbositylevel"><TT>&#92;htmltracing&#123;
+&lt;<I>level</I>&gt;&#125;</TT></A> </B>
+<DD>specifies that extra tracing messages be generated, according to the <TT>
+&lt;<I>level</I>&gt;</TT>;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Mnode8.html#cs_verbositylevel"><TT>&#92;htmltracenv&#123;
+&lt;<I>level</I>&gt;&#125;</TT></A> </B>
+<DD>same as <TT>&#92;htmltracing</TT> except that this command
+is evaluated in sequence with environments;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Hnode9.html#HTMLset"><TT>&#92;HTMLset</TT></A> </B>
+<DD>programmer's device, allowing an arbitrary <A HREF="node10.html#GGGPerl"><I>Perl</I></A> variable to be set 
+or changed dynamically during the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> processing;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="Hnode9.html#HTMLset"><TT>&#92;HTMLsetenv</TT></A> </B>
+<DD>Same as the preceding <TT>&#92;HTMLset</TT> <A HREF="Hnode9.html#HTMLset">command</A>,
+except that this one is processed in order, 
+as if it were an environment;
+<BR>
+ignored in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+</DL>
+
+<P>
+
+<P>
+<BR>
+<BR>
+<HR WIDTH="300">
+<A NAME="920">&#160;</A>
+<A NAME="921">&#160;</A>
+<BR>
+
+Most of the new environments listed <A HREF="hypextra.html#htmlenvs">above</A> can also be used 
+with delimiter macros 
+<TT>&#92;
+&lt;<I>env-name</I>&gt;...&#92;end
+&lt;<I>env-name</I>&gt;</TT>.
+This alternative style, which is common with A<SUB><BIG>M</BIG></SUB>S-T<SMALL>E</SMALL>X, is discouraged
+for general L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X usage (even by the A<SUB><BIG>M</BIG></SUB>S itself) in favour of the usual 
+<TT>&#92;begin</TT><code>{</code><TT>
+&lt;<I>env-name</I>&gt;</TT><code>}...\end{</code><TT>
+&lt;<I>env-name</I>&gt;</TT><code>}</code>
+markup notation. (Safety features that are available with the usual 
+<TT>&#92;begin...&#92;end</TT> mechanism may not always work in the best way
+with this alternative style of environment delimiter. 
+These comments apply to both the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X and L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> processing.)
+
+<P>
+<A NAME="939">&#160;</A>
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><TT>&#92;rawhtml...&#92;endrawhtml</TT> </B>
+<DD>old A<SUB><BIG>M</BIG></SUB>S-style variant of 
+<I>rawhtml</I> <A HREF="Hnode2.html#rawhtml">environment</A>.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><TT>&#92;htmlonly...&#92;endhtmlonly</TT> </B>
+<DD>old A<SUB><BIG>M</BIG></SUB>S-style variant of 
+<I>htmlonly</I> <A HREF="Hnode4.html#htmlonly">environment</A>.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><TT>&#92;latexonly...&#92;endlatexonly</TT> </B>
+<DD>old A<SUB><BIG>M</BIG></SUB>S-style variant of 
+<I>latexonly</I> <A HREF="Hnode4.html#latexonly">environment</A>.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><TT>&#92;imagesonly...&#92;endimagesonly</TT> </B>
+<DD>old A<SUB><BIG>M</BIG></SUB>S-style variant of 
+<I>imagesonly</I> <A HREF="Hnode4.html#imagesonly">environment</A>.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><TT>&#92;comment...&#92;endcomment</TT> </B>
+<DD>old A<SUB><BIG>M</BIG></SUB>S-style variant of 
+<I>comment</I> <A HREF="Hnode2.html#comment">environment</A>.
+</DL>
+
+<P>
+
+<P></P>
+
+<B>Warning: </B> 
+These `pseudo'-environments are not as reliable as their L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X 
+counterparts. In particular, the <TT>&#92;
+&lt;<I>env-name</I>&gt;</TT> and
+<TT>&#92;end
+&lt;<I>env-name</I>&gt;</TT> commands should appear on lines
+by themselves, preferably with no preceding spaces or <TT>
+&lt;<I>tab</I>&gt;</TT> characters.
+This requirement is analogous to the <A HREF="hypextra.html#env:warn">warning</A> for conditional environments.
+
+<P>
+
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html39"
+ HREF="Hnode1.html">Hyper-links in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</A>
+<UL>
+<LI><A NAME="tex2html40"
+ HREF="Hnode1.html#SECTION000121010000000000000"><TT>&#92;htmladdnormallink</TT></A>
+<LI><A NAME="tex2html41"
+ HREF="Hnode1.html#SECTION000121020000000000000"><TT>&#92;htmladdimg</TT></A>
+<LI><A NAME="tex2html42"
+ HREF="Hnode1.html#SECTION000121030000000000000"><TT>&#92;htmladdnormallinkfoot</TT></A>
+</UL>
+<LI><A NAME="tex2html43"
+ HREF="Hnode2.html">Including Arbitrary HTML Mark-up and Comments</A>
+<UL>
+<LI><A NAME="tex2html44"
+ HREF="Hnode2.html#SECTION000122010000000000000"><TT>&#92;begin&#123;rawhtml&#125;</TT></A>
+<LI><A NAME="tex2html45"
+ HREF="Hnode2.html#SECTION000122020000000000000"><TT>&#92;rawhtml</TT>...<TT>&#92;endrawhtml</TT></A>
+<LI><A NAME="tex2html46"
+ HREF="Hnode2.html#SECTION000122030000000000000"><TT>&#92;begin&#123;comment&#125;</TT></A>
+<LI><A NAME="tex2html47"
+ HREF="Hnode2.html#SECTION000122040000000000000"><TT>&#92;comment...&#92;endcomment</TT></A>
+</UL>
+<LI><A NAME="tex2html48"
+ HREF="Hnode3.html">Arbitrary Tags and Attributes</A>
+<LI><A NAME="tex2html49"
+ HREF="Hnode4.html">Conditional Text</A>
+<UL>
+<LI><A NAME="tex2html50"
+ HREF="Hnode4.html#SECTION000124010000000000000"><TT>&#92;begin&#123;latexonly&#125;</TT> and 
+<TT>&#92;begin&#123;htmlonly&#125;</TT></A>
+<LI><A NAME="tex2html51"
+ HREF="Hnode4.html#SECTION000124020000000000000"><TT>&#92;htmlonly...&#92;endhtmlonly</TT></A>
+<LI><A NAME="tex2html52"
+ HREF="Hnode4.html#SECTION000124030000000000000"><TT>&#92;latexonly...&#92;endlatexonly</TT></A>
+<LI><A NAME="tex2html53"
+ HREF="Hnode4.html#SECTION000124040000000000000"><TT>&#92;latex</TT>, <TT>&#92;html</TT> and <TT>&#92;latexhtml</TT></A>
+<LI><A NAME="tex2html54"
+ HREF="Hnode4.html#SECTION000124050000000000000"><TT>%begin&#123;latexonly&#125;</TT></A>
+<LI><A NAME="tex2html55"
+ HREF="Hnode4.html#SECTION000124060000000000000"><TT>&#92;begin&#123;imagesonly&#125;</TT></A>
+<LI><A NAME="tex2html56"
+ HREF="Hnode4.html#SECTION000124070000000000000"><TT>&#92;begin&#123;makeimage&#125;</TT></A>
+</UL>
+<LI><A NAME="tex2html57"
+ HREF="Hnode5.html">Symbolic References shown as Hyperized Text</A>
+<UL>
+<LI><A NAME="tex2html58"
+ HREF="Hnode5.html#SECTION000125010000000000000"><TT>&#92;hyperref</TT></A>
+<LI><A NAME="tex2html59"
+ HREF="Hnode5.html#SECTION000125020000000000000"><TT>&#92;htmlref</TT></A>
+</UL>
+<LI><A NAME="tex2html60"
+ HREF="Hnode6.html">Hypertext Links in Bibliographic References (Citations)</A>
+<UL>
+<LI><A NAME="tex2html61"
+ HREF="Hnode6.html#SECTION000126010000000000000"><TT>&#92;hypercite</TT></A>
+<LI><A NAME="tex2html62"
+ HREF="Hnode6.html#SECTION000126020000000000000"><TT>&#92;htmlcite</TT></A>
+</UL>
+<LI><A NAME="tex2html63"
+ HREF="Hnode7.html">Symbolic References between Living Documents</A>
+<UL>
+<LI><A NAME="tex2html64"
+ HREF="Hnode7.html#SECTION000127010000000000000"><TT>&#92;externallabels</TT></A>
+<LI><A NAME="tex2html65"
+ HREF="Hnode7.html#SECTION000127020000000000000"><TT>&#92;externalref</TT></A>
+<LI><A NAME="tex2html66"
+ HREF="Hnode7.html#SECTION000127030000000000000"><TT>&#92;externalcite</TT></A>
+<LI><A NAME="tex2html67"
+ HREF="Hnode8.html">Cross-Referencing Example</A>
+</UL>
+<LI><A NAME="tex2html68"
+ HREF="Hnode9.html">Miscellaneous commands for <TT>HTML</TT> effects</A>
+<UL>
+<LI><A NAME="tex2html69"
+ HREF="Hnode9.html#SECTION000128010000000000000"><TT>&#92;htmlrule </TT> and 
+ <TT>&#92;htmlrule*</TT></A>
+<LI><A NAME="tex2html70"
+ HREF="Hnode9.html#SECTION000128020000000000000"><TT>&#92;strikeout&#123;
+&lt;<I>text</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html71"
+ HREF="Hnode9.html#SECTION000128030000000000000"><TT>&#92;tableofchildlinks </TT></A>
+<LI><A NAME="tex2html72"
+ HREF="Hnode9.html#SECTION000128040000000000000"><TT>&#92;htmlinfo </TT></A>
+<LI><A NAME="tex2html73"
+ HREF="Hnode9.html#SECTION000128050000000000000"><TT>&#92;bodytext&#123;
+&lt;<I>options</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html74"
+ HREF="Hnode9.html#SECTION000128060000000000000"><TT>&#92;htmlbody&#123;
+&lt;<I>options</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html75"
+ HREF="Hnode9.html#SECTION000128070000000000000"><TT>&#92;htmlbase&#123;
+&lt;<I>URL</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html76"
+ HREF="Hnode9.html#SECTION000128080000000000000"><TT>&#92;HTMLset&#123;
+&lt;<I>which</I>&gt;&#125;&#123;</TT>
+<TT>
+&lt;<I>value</I>&gt;&#125;</TT> and 
+<TT>&#92;HTMLsetenv&#123;
+&lt;<I>which</I>&gt;&#125;&#123;</TT>
+<TT>
+&lt;<I>value</I>&gt;&#125;</TT></A>
+<LI><A NAME="tex2html77"
+ HREF="Hnode9.html#SECTION000128090000000000000"><TT>&#92;latextohtml</TT></A>
+</UL>
+<LI><A NAME="tex2html78"
+ HREF="Hnode10.html">Active Image Maps</A>
+<LI><A NAME="tex2html79"
+ HREF="Hnode11.html">Document Segmentation<SUP>44</SUP></A>
+<UL>
+<LI><A NAME="tex2html80"
+ HREF="Hnode12.html">A Segmentation Example</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html37"
+ HREF="Hnode1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html33"
+ HREF="manual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html27"
+ HREF="../manual/features.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html35"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html36"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html38"
+ HREF="Hnode1.html">Hyper-links in L<SUP>A</SUP>TEX</A>
+<B> Up:</B> <A NAME="tex2html34"
+ HREF="manual.html">LaTeX2HTML</A>
+<B> Previous:</B> <A NAME="tex2html28"
+ HREF="../manual/features.html">Environments_and_Special_Features</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

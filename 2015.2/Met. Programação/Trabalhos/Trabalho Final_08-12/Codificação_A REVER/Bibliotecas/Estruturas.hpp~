@@ -1,0 +1,104 @@
+/*****************************************************************
+**  Criadores:
+**			Diego Brian Coelho Leite
+**          Pedro Aurélio Coelho Almeida
+**          Rodrigo Ferreira Guimaraes
+**  Nome:
+**          Estruturas.hpp
+**  Finalidade:
+**          Armazenar as funções manipuladoras das estruturas
+**			utilizadas nesta bibliota, como:
+
+*****************************************************************/
+
+/*  Caso não tenha sido declarada na tabela de símbolos */
+#ifndef Estrutura_H
+    #define Estrutura_H
+
+	/*****************************************************************
+    **      Inclusão das bibliotecas auxiliares
+    *****************************************************************/
+		#include<stdio.h>
+		#include<stdlib.h>
+
+		using namespace std;
+
+		typedef struct info{
+			char tipo_info;
+			string nome_info;
+			int lin_i, col_i;
+			int lin_f, col_f;
+			int cpcd;
+			int custo;
+			float falha;
+			int tempo;
+		}
+		Info;
+
+		typedef struct ger{
+			string nome;
+			int lin_i, col_i;
+			int rec, custo;
+			struct ger *ant, *prox;
+		}
+		Gerador;
+
+		typedef struct ct{
+			string nome;
+			int lin_i, col_i;
+			int rec;
+			struct ct *ant, *prox;
+		}
+		City;
+
+		typedef strut adp{
+			string nome;
+			int lin_i, col_i;
+			Conexao *entradas, *saidas;
+			struct adp *ant, *sup;
+		}
+		Adaptador;
+
+		typedef struct intercon{
+			char tipo;
+			char *nome;
+			int lin_i, col_i;
+			int lin_f, col_f;
+			int cpc;
+			float falha;
+			int temp, custo;
+			struct intercon *ant, *prox;
+		}
+		Conexao;
+
+		typedef struct h_ger{
+			Geradores *inicio, *fim;
+			int qnt;
+			int rec, custo;
+		}
+		Header_ger;
+
+		typedef struct h_ct{
+			City *inicio, *fim;
+			int qnt;
+			int rec;
+			int ct_insuf;
+			int t_s_recurso;
+			int menos_30_recurso;
+			int t_m_30_rec;
+		}
+		Header_city;
+
+		typedef struct h_inter{
+			Adaptador *inicio, *fim;
+			int qnt;
+		}
+		Header_adap;
+
+		typedef struct rede{
+			Head_ger *in_ger;
+			Head_adap *in_adap;
+			Head_city *in_city;
+			Head_conex *in_conex;
+		}
+		Rede;

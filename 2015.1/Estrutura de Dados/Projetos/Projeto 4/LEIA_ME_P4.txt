@@ -1,0 +1,6 @@
+1.	Quando for compilar pelo terminal é preciso adicionar o comando -lm ao final da linha,
+para que acesse a biblioteca math.h;
+2.	Há um problema inexplicável ao tentar finalizar o processamento, visto que não há falha em acesso
+a campos da memória, não demonstra uma sequer mensagem de erro ao compilar e/ou executar, mas o
+programa principal não realiza o devido retorno, parecendo estar carregando alguma coisa ou esperando
+algum retorno do usuário, sendo necessário encerrar através do comando 'Ctrl+C', não afetando, entretando, os outros processos, visto que o comando é solicitado após realizar todas as tarefas pendentes.

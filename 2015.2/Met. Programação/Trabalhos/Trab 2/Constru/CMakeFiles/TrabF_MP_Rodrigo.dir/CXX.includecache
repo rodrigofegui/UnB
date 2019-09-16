@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Trabalhos/Trab 2/Bibliotecas/Pilha.hpp
+
+/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Trabalhos/Trab 2/Fontes/Pilha.cpp
+stdio.h
+-
+stdlib.h
+-
+assert.h
+-
+../Bibliotecas/Pilha.hpp
+/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Trabalhos/Trab 2/Bibliotecas/Pilha.hpp
+
+/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Trabalhos/Trab 2/Fontes/Pilha_teste.cpp
+../Bibliotecas/Pilha.hpp
+/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Trabalhos/Trab 2/Bibliotecas/Pilha.hpp
+gtest/gtest.h
+-
+

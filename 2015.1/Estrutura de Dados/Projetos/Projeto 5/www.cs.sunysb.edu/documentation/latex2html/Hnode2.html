@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Including Arbitrary HTML Mark-up and Comments</TITLE>
+<META NAME="description" CONTENT="Including Arbitrary HTML Mark-up and Comments">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="next" HREF="Hnode3.html">
+<LINK REL="previous" HREF="Hnode1.html">
+<LINK REL="up" HREF="hypextra.html">
+<LINK REL="next" HREF="Hnode3.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html106"
+ HREF="Hnode3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html102"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html96"
+ HREF="Hnode1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html104"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html105"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html107"
+ HREF="Hnode3.html">Arbitrary Tags and Attributes</A>
+<B> Up:</B> <A NAME="tex2html103"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html97"
+ HREF="Hnode1.html">Hyper-links in L<SUP>A</SUP>TEX</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000122000000000000000">&#160;</A><A NAME="sec:markup">&#160;</A>
+<BR>
+Including Arbitrary HTML Mark-up and Comments
+</H2>
+<!--Table of Child-Links-->
+<UL>
+<LI><A NAME="tex2html108"
+ HREF="Hnode2.html#SECTION000122010000000000000"><TT>&#92;begin&#123;rawhtml&#125;</TT></A>
+<LI><A NAME="tex2html109"
+ HREF="Hnode2.html#SECTION000122020000000000000"><TT>&#92;rawhtml</TT>...<TT>&#92;endrawhtml</TT></A>
+<LI><A NAME="tex2html110"
+ HREF="Hnode2.html#SECTION000122030000000000000"><TT>&#92;begin&#123;comment&#125;</TT></A>
+<LI><A NAME="tex2html111"
+ HREF="Hnode2.html#SECTION000122040000000000000"><TT>&#92;comment...&#92;endcomment</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<A NAME="2472">&#160;</A>
+<A NAME="2473">&#160;</A>
+<A NAME="2474">&#160;</A>
+<BR>
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> provides the ability to include raw <TT>HTML</TT> tags
+and text within the <TT>HTML</TT> version of a document, without
+requiring corresponding material for the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset version.
+This ability can be used to 
+<UL>
+<LI>
+include <TT>HTML</TT> markup for effects that have no corresponding concept
+within a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset document (see the following <A HREF="Hnode2.html#eform">example</A>)
+<LI>
+take advantage of new <TT>HTML</TT> facilities as soon as they become available,
+and there are browsers capable of displaying them.
+<LI>
+include arbitrary <TT>SGML</TT>-like markup, for use with special browsers 
+that know how to sensibly handle the resulting files.
+</UL>
+
+<P>
+<A NAME="2475">&#160;</A>
+<A NAME="2476">&#160;</A><A NAME="2477">&#160;</A>
+
+<H4><A NAME="SECTION000122010000000000000">&#160;</A><A NAME="rawhtml">&#160;</A>
+<BR>
+<TT>&#92;begin&#123;rawhtml&#125;</TT>
+</H4>
+The simplest way to include raw <TT>HTML</TT> tags and/or text 
+is by using the 
+<I>rawhtml</I> environment.
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>(An alternative way is to use the <TT>&#92;HTML</TT> 
+<A HREF="Hnode3.html#sec:arbtags">command,</A>
+which allows macros to be expanded to give the required tags, attributes
+and contents.)
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+Note the <A HREF="hypextra.html#env:warn">warning</A>
+concerning how the environment delimiters should be used in the
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source code.
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="1106">&#160;</A><A NAME="eform">&#160;</A>
+<BR>
+A&nbsp;particularly good use of the 
+<I>rawhtml</I> environment
+is in the creation of interactive
+<A NAME="tex2html8"
+ HREF="http://south.ncsa.uiuc.edu/forms.html">electronic forms</A>
+from within a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  document. 
+When producing the paper (<TT>.dvi</TT>) version
+of a document the 
+<I>rawhtml</I> environment is ignored.
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="2479">&#160;</A>
+<BR>
+
+Here is an example: 
+<PRE>
+\begin{rawhtml}
+&lt;HR&gt;
+&lt;FORM ACTION="http://cbl.leeds.ac.uk/nikos/doc/error.html"&gt;
+&lt;OL&gt;
+&lt;LI&gt; &lt;INPUT TYPE="checkbox" NAME="wp" VALUE="word"&gt; Word for
+Windows.
+&lt;LI&gt; &lt;INPUT TYPE="checkbox" NAME="wp" VALUE="wp"&gt; Word Perfect.
+</PRE>
+<PRE>
+&lt;LI&gt; &lt;INPUT TYPE="checkbox" NAME="wp" VALUE="latex"&gt; LaTeX.
+&lt;LI&gt; Plain Text Editors (Please Specify): &lt;INPUT TYPE="text" NAME="other_ed"&gt;
+&lt;/OL&gt;
+So, what do think (comments please): &lt;BR&gt;
+&lt;INPUT TYPE="text" SIZE=45,4 NAME="other_wp"&gt;
+
+&lt;INPUT TYPE="submit" VALUE="submit this form but don't expect much!"&gt;
+&lt;/FORM&gt;
+&lt;HR&gt;
+\end{rawhtml}
+</PRE>
+
+The result is shown <A HREF="Hnode2.html#fig_eform">below</A>.
+
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="fig_eform">&#160;</A><A NAME="1128">&#160;</A>
+<TABLE WIDTH="50%">
+<CAPTION><STRONG>Figure 5:</STRONG>
+An electronic form. 
+ In the online version the form would be active.</CAPTION>
+<TR><TD><HR>
+<FORM ACTION="http://cbl.leeds.ac.uk/nikos/doc/error.html">
+<OL>
+<LI> <INPUT TYPE="checkbox" NAME="wp" VALUE="word"> Word for
+Windows.
+<LI> <INPUT TYPE="checkbox" NAME="wp" VALUE="wp"> Word Perfect.
+<LI> <INPUT TYPE="checkbox" NAME="wp" VALUE="latex"> LaTeX.
+<LI> Plain Text Editors (Please Specify): <INPUT TYPE="text" NAME="other_ed">
+</OL>
+So, what do think (comments please): <BR>
+<INPUT TYPE="text" SIZE=45,4 NAME="other_wp">
+
+<INPUT TYPE="submit" VALUE="submit this form but don't expect much!">
+</FORM>
+<HR></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+<A NAME="2480">&#160;</A>
+
+<H4><A NAME="SECTION000122020000000000000">&#160;</A><A NAME="endrawhtml">&#160;</A>
+<BR>
+<TT>&#92;rawhtml</TT>...<TT>&#92;endrawhtml</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+This is an alternative way to specify a chunk of raw <TT>HTML</TT> code,
+using the old A<SUB><BIG>M</BIG></SUB>S-style of delimiting environments.
+Use of this style is discouraged; 
+the 
+<I>rawhtml</I> <A HREF="Hnode2.html#rawhtml">environment</A> is preferred.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2482">&#160;</A>
+<A NAME="2483">&#160;</A>
+
+<H4><A NAME="SECTION000122030000000000000">&#160;</A><A NAME="comment">&#160;</A>
+<BR>
+<TT>&#92;begin&#123;comment&#125;</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+This environment is simple for the convenience of ``commenting-out''
+large sections of source code.
+The contents of this environment is completely ignored,
+both in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X and <TT>HTML</TT> versions.
+Such an environment is already used in A<SUB><BIG>M</BIG></SUB>S-L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X,
+and perhaps with other packages.
+It is defined here for its general utility.
+
+<P>
+To insert <TT>SGML</TT>-style comments into the <TT>HTML</TT> files,
+use the 
+<I>rawhtml</I> environment as follows.
+<PRE>
+\begin{rawhtml}
+&lt;!--  this text is treated as a comment
+      perhaps extending over several lines 
+--&gt;
+\end{rawhtml}
+</PRE>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+Note the <A HREF="hypextra.html#env:warn">warning</A>
+concerning how the environment delimiters should be used in the
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source code.
+
+<P>
+<A NAME="2485">&#160;</A>
+
+<H4><A NAME="SECTION000122040000000000000">&#160;</A><A NAME="endcomment">&#160;</A>
+<BR>
+<TT>&#92;comment...&#92;endcomment</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+This is an alternative way to specify a chunk of material intended
+to be ignored in both the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X and <TT>HTML</TT> versions,
+using the old A<SUB><BIG>M</BIG></SUB>S-style of delimiting environments.
+Use of this style (though convenient for typing) is discouraged,
+since it is not as reliable as using the 
+<I>comment</I> <A HREF="Hnode2.html#comment">environment</A>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html106"
+ HREF="Hnode3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html102"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html96"
+ HREF="Hnode1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html104"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html105"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html107"
+ HREF="Hnode3.html">Arbitrary Tags and Attributes</A>
+<B> Up:</B> <A NAME="tex2html103"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html97"
+ HREF="Hnode1.html">Hyper-links in L<SUP>A</SUP>TEX</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

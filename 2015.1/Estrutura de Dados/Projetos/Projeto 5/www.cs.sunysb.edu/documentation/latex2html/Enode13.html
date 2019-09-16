@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Fancy List-Markers</TITLE>
+<META NAME="description" CONTENT="Fancy List-Markers">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="next" HREF="Enode14.html">
+<LINK REL="previous" HREF="Enode12.html">
+<LINK REL="up" HREF="Enode12.html">
+<LINK REL="next" HREF="Enode14.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html253"
+ HREF="Enode14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html249"
+ HREF="Enode12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html243"
+ HREF="Enode12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html251"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html252"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html254"
+ HREF="Enode14.html">Support for FoilTeX</A>
+<B> Up:</B> <A NAME="tex2html250"
+ HREF="Enode12.html">Packages and Style-Files</A>
+<B> Previous:</B> <A NAME="tex2html244"
+ HREF="Enode12.html">Packages and Style-Files</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000117100000000000000">&#160;</A><A NAME="htmllist">&#160;</A>
+<BR>
+Fancy List-Markers
+</H3>
+<A NAME="2397">&#160;</A>
+<A NAME="2398">&#160;</A>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+An optional style-file <A HREF="node10.html#GGGhtmllist.sty"
+ NAME="3162"><TT>htmllist.sty</TT></A> has been provided which
+produces fancier lists in the electronic version of the document
+<A HREF="#listExample">, such as this</A>.
+This file defines a new L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X environment 
+<I>htmllist</I>,
+which causes a user-defined item-mark to be placed at each new
+item of the list, and which causes the optional description
+to be displayed in bold letters.  
+
+<P>
+<A NAME="2400">&#160;</A>
+<A NAME="2401">&#160;</A>
+<A NAME="2402">&#160;</A>
+<A NAME="2403">&#160;</A>
+<BR>
+The mark is determined
+by the <code>\htmlitemmark{</code><TT>
+&lt;<I>item-mark</I>&gt;</TT><code>}</code> command.  
+This command accepts either a mnemonic name for the <TT>
+&lt;<I>item-mark</I>&gt;</TT>, 
+from a list of icons established at installation, or the URL of a mark
+not in the installation list. 
+The command <TT>&#92;htmlitemmark</TT> must be used <EM>inside</EM> the 
+
+<I>htmllist</I> environment in order to be effective, 
+but it may be used more than once to change the mark within the list.  
+The item-marks supplied with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> are 
+<TT>BlueBall</TT>, <TT>RedBall</TT>, <TT>OrangeBall</TT>, <TT>GreenBall</TT>, 
+<TT>PinkBall</TT>, <TT>PurpleBall</TT>, <TT>WhiteBall</TT> and <TT>YellowBall</TT>.
+The 
+<I>htmllist</I> environment is identical to 
+the 
+<I>description</I> environment in the printed version.
+
+<P>
+<A NAME="2404">&#160;</A>
+
+<P>
+An example of its usage is:
+<PRE>
+\begin{htmllist}
+\htmlitemmark{WhiteBall}%
+\item[Item 1:] This will have a white ball.
+\item[Item 2:] This will also have a white ball.
+\htmlitemmark{RedBall}%
+\item[Item 3:] This will have a red ball.
+\end{htmllist}
+</PRE>
+
+<P>
+This will produce:
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/whiteball.gif" ALT="*">
+<B>Item 1:</B>
+<DD>This will have a white ball.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/whiteball.gif" ALT="*">
+<B>Item 2:</B>
+<DD>This will also have a white ball.
+
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/whiteball.gif" ALT="*">
+<B>Item 3:</B>
+<DD>This will have a red ball.
+</DL>
+
+<P>
+<A NAME="2405">&#160;</A>
+<A NAME="2406">&#160;</A>
+<A NAME="2407">&#160;</A>
+<A NAME="2408">&#160;</A>
+<BR>
+
+One can also obtain L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB> style-files <A HREF="node10.html#GGGfloatfig.sty"
+ NAME="3189"><TT>floatfig.sty</TT></A> and 
+<A HREF="node10.html#GGGwrapfig.sty"
+ NAME="3197"><TT>wrapfig.sty</TT></A>, which provide support for the 
+<I>floatingfigure</I>
+and 
+<I>wrapfigure</I> environments, respectively.  These environments
+allow text to wrap around a figure in the printed version, 
+but are treated exactly as an ordinary 
+<I>figure</I>s in the electronic version.  
+They are described in <A NAME="goossens:latex"
+ HREF="node9">The L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X Companion</A>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html253"
+ HREF="Enode14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html249"
+ HREF="Enode12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html243"
+ HREF="Enode12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html251"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html252"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html254"
+ HREF="Enode14.html">Support for FoilTeX</A>
+<B> Up:</B> <A NAME="tex2html250"
+ HREF="Enode12.html">Packages and Style-Files</A>
+<B> Previous:</B> <A NAME="tex2html244"
+ HREF="Enode12.html">Packages and Style-Files</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

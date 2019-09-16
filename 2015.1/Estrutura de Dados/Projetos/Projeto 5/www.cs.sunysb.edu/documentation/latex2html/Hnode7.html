@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Symbolic References between Living Documents</TITLE>
+<META NAME="description" CONTENT="Symbolic References between Living Documents">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="next" HREF="Hnode9.html">
+<LINK REL="previous" HREF="Hnode6.html">
+<LINK REL="up" HREF="hypextra.html">
+<LINK REL="next" HREF="Hnode8.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html181"
+ HREF="Hnode8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html177"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html171"
+ HREF="Hnode6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html179"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html180"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html182"
+ HREF="Hnode8.html">Cross-Referencing Example</A>
+<B> Up:</B> <A NAME="tex2html178"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html172"
+ HREF="Hnode6.html">Hypertext Links in Bibliographic</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000127000000000000000">&#160;</A><A NAME="external_cross">&#160;</A>
+<BR>
+Symbolic References between Living Documents
+</H2>
+<!--Table of Child-Links-->
+<UL>
+<LI><A NAME="tex2html183"
+ HREF="Hnode7.html#SECTION000127010000000000000"><TT>&#92;externallabels</TT></A>
+<LI><A NAME="tex2html184"
+ HREF="Hnode7.html#SECTION000127020000000000000"><TT>&#92;externalref</TT></A>
+<LI><A NAME="tex2html185"
+ HREF="Hnode7.html#SECTION000127030000000000000"><TT>&#92;externalcite</TT></A>
+<LI><A NAME="tex2html186"
+ HREF="Hnode8.html">Cross-Referencing Example</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<A NAME="1741">&#160;</A>
+<A NAME="1742">&#160;</A>
+<A NAME="1743">&#160;</A>
+<A NAME="2556">&#160;</A>
+<A NAME="1747">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+The method of the previous section to generated
+symbolic <A HREF="Hnode5.html#hyperized">hyperized</A> links can
+easily be extended to <EM>external</EM> documents processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.  
+When L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> processes a document, it generates a <A HREF="node10.html#GGGPerl"><I>Perl</I></A> file 
+named <TT>
+&lt;<I>prefix</I>&gt;</TT><A HREF="node10.html#GGGlabels.pl"
+ NAME="3367"><TT>labels.pl</TT></A>
+which contains a list of all the symbolic labels that were defined, 
+along with their locations.  
+The <A HREF="#prefix"><TT>
+&lt;<I>prefix</I>&gt;</TT></A> is empty unless otherwise specified, 
+to allow different document segments to share the same directory.  
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+<A NAME="2558">&#160;</A>
+<A NAME="2559">&#160;</A>
+
+<H4><A NAME="SECTION000127010000000000000">&#160;</A><A NAME="externlabels">&#160;</A>
+<BR>
+<TT>&#92;externallabels</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+Links to an external document are then possible once a connection 
+is established to that document's <A HREF="node10.html#GGGlabels.pl"
+ NAME="3380"><TT>labels.pl</TT></A> file.  
+This connection is established by the <TT>&#92;externallabels</TT> command:
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+<BLOCKQUOTE>
+<TT>&#92;externallabels</TT><code>{</code><TT>
+&lt;<I>URL to directory of external document</I>&gt;</TT><code>}</code>
+<BR>
+<code>               {</code><TT>
+&lt;<I>local copy of external document labels.pl file</I>&gt;</TT><code>}</code>
+</BLOCKQUOTE>
+<A NAME="1774">&#160;</A>
+<BR>
+The first argument to <TT>&#92;externallabels</TT> should be a URL to 
+the directory containing the external document.  
+The second argument
+should be the full path-name to the <A HREF="node10.html#GGGlabels.pl"
+ NAME="3395"><TT>labels.pl</TT></A> file belonging
+to the external document.  Note that for <EM>remote</EM> external documents
+it is necessary to copy the <A HREF="node10.html#GGGlabels.pl"
+ NAME="3403"><TT>labels.pl</TT></A> file locally so that it
+can be read when processing a local document that uses it.
+The command <TT>&#92;externallabels</TT> can be used once for each external
+document in order to import the <I>external labels</I><A NAME="externallabels">&#160;</A>into the current document.
+A warning is given if <A HREF="node10.html#GGGlabels.pl"
+ NAME="3412"><TT>labels.pl</TT></A> cannot be found.
+
+<P>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+If a symbolic reference made in either of the commands described
+<A HREF="Hnode5.html#hyperized">on the previous page</A> is not 
+defined within the document itself,
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> will look for that reference in one of the external
+files<A NAME="tex2html14"
+ HREF="#foot1790"><SUP>39</SUP></A>.
+After any modifications in an external document 
+(sections added/deleted, segmentation into different physical parts, etc.) 
+a new <A HREF="node10.html#GGGlabels.pl"
+ NAME="3420"><TT>labels.pl</TT></A> will be generated.  
+If the <TT>&#92;externallabels</TT> command in another 
+document contains the correct address to an updated copy of
+the <A HREF="node10.html#GGGlabels.pl"
+ NAME="3429"><TT>labels.pl</TT></A> file, then the cross-references will be re-aligned
+after running the local document through the translator.
+
+<P>
+<A NAME="1794">&#160;</A><A NAME="internallabels">&#160;</A>
+<BR>
+There is also a mechanism analogous to the
+<I>label-ref</I> pairs of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, which can be used only 
+within a single document. 
+These labels are called <I>internal labels</I>,
+as opposed to the <A HREF="Hnode7.html#externallabels">external labels</A> defined above.
+They are used extensively with the document segmentation strategy
+described <A HREF="Hnode11.html#Segmentation">later</A>.
+
+<P>
+Either type of label is defined with a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X <TT>&#92;label</TT> command.  
+Labels can be referenced <I>within</I> a document using a <TT>&#92;ref</TT> command.
+When processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, each <TT>&#92;ref</TT> command is replaced by the 
+section number in which the corresponding <TT>&#92;label</TT> occurred.
+When processed by the translator, each <TT>&#92;ref</TT> is replaced by 
+a hypertext link to the place where the corresponding <TT>&#92;label</TT> occurred.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+<A NAME="1814">&#160;</A>
+<A NAME="2561">&#160;</A>
+
+<H4><A NAME="SECTION000127020000000000000">&#160;</A><A NAME="externref">&#160;</A>
+<BR>
+<TT>&#92;externalref</TT>
+</H4>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+This mechanism can be extended to external documents:
+<BLOCKQUOTE>
+<TT>&#92;externalref</TT><code>{</code><TT>
+&lt;<I>symbolic label in remote document</I>&gt;</TT><code>}</code>
+</BLOCKQUOTE>
+The argument to <TT>&#92;externalref</TT> may be any symbolic label defined 
+in the <A HREF="node10.html#GGGlabels.pl"
+ NAME="3449"><TT>labels.pl</TT></A> file of any of the external documents.
+Such references to external symbolic labels are then translated
+into hyper-links pointing to the external document.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+<A NAME="1826">&#160;</A>
+<A NAME="2563">&#160;</A>
+
+<H4><A NAME="SECTION000127030000000000000">&#160;</A><A NAME="externcite">&#160;</A>
+<BR>
+<TT>&#92;externalcite</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Analogous to <A HREF="Hnode7.html#externref"><TT>&#92;externalref</TT></A>,
+the <TT>&#92;externalcite</TT> command is used to create a citation link,
+where the bibliography page is not part of the current document.
+As with <TT>&#92;externalref</TT> symbolic labels for the bibliography page
+must have been loaded using 
+<A HREF="Hnode7.html#externlabels"><TT>&#92;externallabels</TT></A>.
+
+<P>
+A particularly important use for this is in allowing multiple documents 
+to access information in a common bibliographic listing.
+For example: all of an author's publications; 
+a comprehensive listing of publications in a particular field; 
+the (perhaps yearly) output of publications 
+from a particular organisation or institution.
+
+<P>
+
+<P>
+<BR>
+
+<B>Thanks...</B> to <A NAME="3461">&#160;</A> <A NAME="tex2html15"
+ HREF="http://www.brics.dk/~engberg">Uffe Engberg</A> for suggesting this feature.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="1840">&#160;</A>
+
+<P>
+<BR><HR><H4>Footnotes</H4>
+<DL>
+<DT><A NAME="foot1790">...
+files</A><A NAME="foot1790"
+ HREF="Hnode7.html#tex2html14"><SUP>39</SUP></A>
+<DD>Care must be taken to ensure that critical symbolic
+references are unique across related documents.
+
+</DL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html181"
+ HREF="Hnode8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html177"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html171"
+ HREF="Hnode6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html179"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html180"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html182"
+ HREF="Hnode8.html">Cross-Referencing Example</A>
+<B> Up:</B> <A NAME="tex2html178"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html172"
+ HREF="Hnode6.html">Hypertext Links in Bibliographic</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,408 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Developments: late 1996 to mid 1997</TITLE>
+<META NAME="description" CONTENT="Developments: late 1996 to mid 1997">
+<META NAME="keywords" CONTENT="manual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="manual.css">
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="manual.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html280"
+ HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html276"
+ HREF="manual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html270"
+ HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html278"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html279"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html281"
+ HREF="node4.html">Developments: late 1997 to</A>
+<B> Up:</B> <A NAME="tex2html277"
+ HREF="manual.html">The L<SUP>A</SUP>TEX2HTML Translator</A>
+<B> Previous:</B> <A NAME="tex2html271"
+ HREF="node2.html">Later Developments, 1995-1996</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><strong>Subsections</strong></A>
+<UL>
+<LI><A NAME="tex2html282"
+ HREF="node3.html#SECTION00031000000000000000">1st L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2HTML Workshop
+<BR>
+Darmstadt, 
+15 February 1997</A>
+<LI><A NAME="tex2html283"
+ HREF="node3.html#SECTION00032000000000000000">TUG'97 -- Workshop on L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2HTML
+<BR>
+University of San Francisco, 28 July 1997</A>
+<LI><A NAME="tex2html284"
+ HREF="node3.html#SECTION00033000000000000000">T<SMALL>E</SMALL>XNortheast TUG Conference, T<SMALL>E</SMALL>X/L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X Now
+<BR>
+March 22-24, 1998, New York City</A>
+<LI><A NAME="tex2html285"
+ HREF="node3.html#SECTION00034000000000000000">Euro-T<SMALL>E</SMALL>X'98, 10th European T<SMALL>E</SMALL>X Conference
+<BR>
+St. Malo, France -- 29-31 March, 1998</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00030000000000000000">&#160;</A><A NAME="recent97">&#160;</A>
+<BR>
+Developments: late 1996 to mid 1997
+</H1>
+During the latter part of 1996 there was much work on improving the
+capabilities of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+Some of this was due to the <A NAME="tex2html70"
+ HREF="http://www.w3c.org/">World Wide Web Consortium</A>'s proposals for <TT>HTML</TT> 3.2, 
+becoming a formal recommendation in November 1996,
+and their subsequent acceptance in January 1997. 
+Existing L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X markup for effects such as centering, left- 
+or right-justification of paragraphs,
+flow of text around images, table-layout with formal captions, etc.
+could now be given a safe translation into <TT>HTML</TT> 3.2, compliant with a standard
+that would guarantee that browsers would be available to view such effects.  
+
+<P>
+At the same time developers were exploring ways to enhance the overall
+performance of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+As a result the current <SMALL>V97.1</SMALL> release has significant improvements in
+the following areas:
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>image-generation</B>
+<DD>is much faster, requires less memory
+and inline images are aligned more accurately; 
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>image quality</B>
+<DD>is greatly improved by the use of anti-aliasing effects for on-screen clarity,
+in particular with mathematics, text and line-drawings; 
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>memory-requirements</B>
+<DD>are much reduced, particularly with image-generation;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>mathematics</B>
+<DD>can now be handled using a separate parsing procedure;
+images of sub-parts of expressions can be created, rather
+than using a single image for the whole formula;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>macro definitions</B>
+<DD>having a more complicated structure than previously allowed,
+can now be successfully expanded;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>counters</B>
+<DD>and numbering are no longer entirely dependent on the <TT>.aux</TT>
+file generated by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>decisions</B>
+<DD>about which environments to include or exclude can now be made;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>HTML effects</B>
+<DD>for which there is no direct L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X counterpart
+can be requested in a variety of new ways;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>HTML code</B>
+<DD>produced by the translator is much neater and more easily readable,
+containing more comments and fewer redundant breaks and <TT>&lt;P&gt;</TT> tags.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B>error-detection</B>
+<DD>of simple L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X errors, such as missing or unmatched braces, 
+is now performed -- a warning message shows a line or two
+of the source code where the error has apparently occurred;
+</DL> 
+
+<P>
+
+<P>
+<BR>
+<BR>
+<HR WIDTH="50%" ALIGN="center">
+
+For these developments, thanks goes especially to: 
+<DL><DT>
+<B><A NAME="1332">&#160;</A> <A NAME="tex2html54"
+ HREF="http://www-jb.cs.uni-sb.de/~www/people/lippmann">Jens Lippmann</A></B>
+<DD><A NAME="tex2html55"
+ HREF="mailto:lippmann@cdc.informatik.tu-darmstadt.de">&lt;lippmann@cdc.informatik.tu-darmstadt.de&gt;</A>
+for creating and maintaining the CVS repository at <A NAME="tex2html56"
+ HREF="http://cdc-server.cdc.informatik.tu-darmstadt.de/~latex2html/user/">http://cdc-server.cdc.informatik.tu-darmstadt.de/~latex2html/user/</A>. 
+This has made it much easier for the contributions from different developers
+to be collected and maintained as a ``development version'' which
+is kept up-to-date and available at all times. Together with <A NAME="1342">&#160;</A> <A NAME="tex2html57"
+ HREF="mailto:marek@hl.siemens.de">Marek Rouchal</A> he produced an extensive rewrite of the <A HREF="node10.html#GGGtexexpand"
+ NAME="1347"><TT>texexpand</TT></A> utility.
+
+<P>
+<DT>
+<B><A NAME="1353">&#160;</A> <A NAME="tex2html58"
+ HREF="http://www.mpce.mq.edu.au/~ross/">Ross Moore</A></B>
+<DD><A NAME="tex2html59"
+ HREF="mailto:ross@mpce.mq.edu.au">&lt;ross@mpce.mq.edu.au&gt;</A>
+for extensive work on almost all aspects of the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> source
+and documentation,
+combining code for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, <A HREF="node10.html#GGGPerl"><I>Perl</I></A>, <TT>HTML</TT> and other utilities.
+Most of the coding for the new features based on <TT>HTML</TT> 3.2, 
+many of the new packages, faster image-generation 
+and the improved support for mathematics 
+and other environments, is his work.
+
+<P>
+<DT>
+<B><A NAME="1362">&#160;</A> <A NAME="tex2html60"
+ HREF="mailto:marek@hl.siemens.de">Marek Rouchal</A></B>
+<DD><A NAME="tex2html61"
+ HREF="mailto:marek@hl.siemens.de">&lt;marek@hl.siemens.de&gt;</A>
+for extending the former <A HREF="node10.html#GGGpstogif"
+ NAME="1369"><TT>pstogif</TT></A> utility,
+transforming it into <A HREF="node10.html#GGGpstoimg"
+ NAME="1377"><TT>pstoimg</TT></A> which now allows for 
+alternative image formats, such as <A HREF="node10.html#GGGPNG"
+ NAME="1385"><TT>PNG</TT></A>.
+Also he produced the neat <A HREF="node10.html#GGGconfigure-pstoimg"
+ NAME="1393"><TT>configure-pstoimg</TT></A> script, which eases
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> installation, and a rewrite of <A HREF="node10.html#GGGtexexpand"
+ NAME="1401"><TT>texexpand</TT></A>.
+
+<P>
+<A NAME="986">&#160;</A><A NAME="987">&#160;</A>
+<DT>
+<B><A NAME="1407">&#160;</A> <A NAME="tex2html62"
+ HREF="http://www.crc.ricoh.com/~marcush/">Marcus Hennecke</A></B>
+<DD><A NAME="tex2html63"
+ HREF="mailto:hennecke@dbag.ulm.DaimlerBenz.COM">&lt;hennecke@dbag.ulm.DaimlerBenz.COM&gt;</A>
+who has always been there, up-to-date with developments in <TT>HTML</TT> and
+related matters concerning Web publishing, 
+and tackling the issues involved with portability 
+of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> to Unix systems on various platforms.
+
+<P>
+Furthermore Marcus has produced L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>-NG, a version of
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> which handles expansion of macros in a more ``T<SMALL>E</SMALL>X-like''
+fashion. This should lead to further improvements in speed and efficiency,
+while allowing complicated macro definitions to work as would be expected
+from their expansions under L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+(This requires <A HREF="node10.html#GGGPerl"><I>Perl</I></A> 5, 
+using some programming features not available with <A HREF="node10.html#GGGPerl"><I>Perl</I></A> 4.)
+
+<P>
+<DT>
+<B><A NAME="1419">&#160;</A> <A NAME="tex2html64"
+ HREF="mailto:popineau@esemetz.ese-metz.fr">Fabrice Popineau</A></B>
+<DD><A NAME="tex2html65"
+ HREF="mailto:popineau@esemetz.ese-metz.fr">&lt;popineau@esemetz.ese-metz.fr&gt;</A>
+has produced
+an adaptation for the Windows NT platform, of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> <SMALL>V97.1</SMALL>.
+
+<P>
+<DT>
+<B><A NAME="1424">&#160;</A> <A NAME="tex2html66"
+ HREF="mailto:uli12@bonk.ethz.ch">Uli Wortmann</A></B>
+<DD><A NAME="tex2html67"
+ HREF="mailto:uli12@bonk.ethz.ch">&lt;uli12@bonk.ethz.ch&gt;</A>
+showed how to configure <A HREF="node10.html#GGGGhostscript"
+ NAME="1431"><I>Ghostscript</I></A> to produce
+anti-aliasing effects within images.
+
+<P>
+<DT>
+<B><A NAME="1438">&#160;</A> <A NAME="tex2html68"
+ HREF="mailto:axel@ramge.de">Axel Ramge</A></B>
+<DD><A NAME="tex2html69"
+ HREF="mailto:axel@ramge.de">&lt;axel@ramge.de&gt;</A>
+for various suggestions and examples of enhancements,
+and the code to avoid a problem with <A HREF="node10.html#GGGGhostscript"
+ NAME="1445"><I>Ghostscript</I></A>.
+
+<P>
+</DL>
+
+<P>
+
+<P>
+<BR>
+<BR CLEAR="ALL">
+<HR>
+<P><P>
+<BR>
+Thanks also to all those who have made bug-reports, supplied fixes 
+or offered suggestions as to features that might allow L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> 
+to be used more efficiently in particular circumstances. 
+Most of these have been incorporated into this new version <SMALL>V97.1</SMALL>,
+though perhaps not in the form originally envisaged.
+Such feedback has contributed enormously to helping make L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> the
+easy to use, versatile program that it has now become.
+
+<P>
+
+<P><P>
+<BR>
+
+<DIV ALIGN="CENTER">
+Keep the ideas coming!
+</DIV>
+
+<P><P>
+<BR>
+
+<P>
+
+<H2 ALIGN="center"><A NAME="SECTION00031000000000000000">&#160;</A><A NAME="darmstadt">&#160;</A>
+1st L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2HTML Workshop
+<BR>
+Darmstadt, 
+15 February 1997
+</H2>
+Thanks again to <A NAME="1452">&#160;</A> <A NAME="tex2html71"
+ HREF="http://www-jb.cs.uni-sb.de/~www/people/lippmann">Jens Lippmann</A> and members of the <A NAME="1456">&#160;</A> <A NAME="tex2html72"
+ HREF="http://www-jb.cs.uni-sb.de/LiPS/node2.html">LiPS Design Team</A> for organising this meeting; 
+also to the <A NAME="1459">&#160;</A> <A NAME="tex2html73"
+ HREF="http://www.informatik.tu-darmstadt.de/">Fachbereich Informatik</A> at <A NAME="1462">&#160;</A> <A NAME="tex2html74"
+ HREF="http://www.tu-darmstadt.de/Welcome.de.html">Darmstadt</A> for use of their facilities.
+
+<P>
+This was an opportunity for many of the current L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> developers to
+actually meet for the first time; rather than communication by exchange
+of electronic mail messages.
+<UL>
+<LI>
+<A NAME="1465">&#160;</A> <A NAME="tex2html75"
+ HREF="http://www.cbl.leeds.ac.uk/nikos/personal.html">Nikos Drakos</A> talked about the early development of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, while...
+<LI>...
+<A NAME="1468">&#160;</A> <A NAME="tex2html76"
+ HREF="http://www.mpce.mq.edu.au/~ross/">Ross Moore</A>, <A NAME="1472">&#160;</A> <A NAME="tex2html77"
+ HREF="http://www-jb.cs.uni-sb.de/~www/people/lippmann">Jens Lippmann</A> and <A NAME="1476">&#160;</A> <A NAME="tex2html78"
+ HREF="mailto:marek@hl.siemens.de">Marek Rouchal</A> described recent improvements.
+<LI>
+<A NAME="1479">&#160;</A> <A NAME="tex2html79"
+ HREF="http://wwwcn1.cern.ch/~goossens/">Michel Goossens</A> presented a list of difficulties encountered with earlier
+versions of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, and aspects requiring improvement.
+Almost all of these now have been addressed in the <SMALL>V97.1</SMALL> release,
+so far as is possible within the bounds inherent in the <TT>HTML</TT> 3.2 standard.
+<LI>
+<A NAME="1485">&#160;</A> <A NAME="tex2html80"
+ HREF="http://www.brics.dk/~krisrose/">Kristoffer Rose</A> showed how it is possible to create <TT>GIF89</TT> animations 
+from pictures generated by T<SMALL>E</SMALL>X or L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, using the <A NAME="1489">&#160;</A> <A NAME="1490">&#160;</A> <A NAME="tex2html81"
+ HREF="http://www.brics.dk/~krisrose/Xy-pic.html">Xy-pic</A> graphics 
+package and extensions, developed by himself and <A NAME="1494">&#160;</A> <A NAME="tex2html82"
+ HREF="http://www.mpce.mq.edu.au/~ross/Xy-pic.html">Ross Moore</A>.
+</UL>
+
+<P>
+Also present were representatives from the <A NAME="1498">&#160;</A> <A NAME="tex2html83"
+ HREF="http://www.dante.de/">DANTE e.V.</A> <A NAME="1501">&#160;</A> <A NAME="tex2html84"
+ HREF="http://www.dante.de/dante/Organe.html">Praesidium</A> and 
+members of the <A NAME="1504">&#160;</A> <A NAME="tex2html85"
+ HREF="http://www.tex.ac.uk/CTAN/latex/latex3">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X3</A> development team.
+<BR>
+In all it was a very pleasant and constructive meeting.
+
+<P>
+
+<P>
+
+<H2 ALIGN="center"><A NAME="SECTION00032000000000000000">&#160;</A><A NAME="tug97">&#160;</A>
+TUG'97 -- Workshop on L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2HTML
+<BR>
+University of San Francisco, 28 July 1997
+</H2>
+
+<P>
+On the Sunday afternoon (2.00pm-5.00pm)
+immediately prior to the TUG meeting, there will be a workshop
+on L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, conducted by <A NAME="1509">&#160;</A> <A NAME="tex2html86"
+ HREF="http://www.mpce.mq.edu.au/~ross/">Ross Moore</A><A NAME="tex2html87"
+ HREF="footnode.html#foot1019"><SUP>4</SUP></A>.
+
+<P>
+<DL COMPACT>
+<DT>
+<DD>Admission: $50, includes a printed copy of the latest L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> manual.
+</DL>
+
+<P>
+
+<P><P>
+<BR>
+
+<P>
+
+<H2 ALIGN="center"><A NAME="SECTION00033000000000000000">
+T<SMALL>E</SMALL>XNortheast TUG Conference, T<SMALL>E</SMALL>X/L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X Now
+<BR>
+March 22-24, 1998, New York City</A>
+</H2>
+
+<P>
+Includes a workshop/presentation by <A NAME="1513">&#160;</A> <A NAME="tex2html88"
+ HREF="http://www.mpce.mq.edu.au/~ross/">Ross Moore</A><A NAME="tex2html89"
+ HREF="footnode.html#foot1024"><SUP>5</SUP></A>.
+
+<P>
+
+<H2 ALIGN="center"><A NAME="SECTION00034000000000000000">
+Euro-T<SMALL>E</SMALL>X'98, 10th European T<SMALL>E</SMALL>X Conference
+<BR>
+St. Malo, France -- 29-31 March, 1998</A>
+</H2>
+
+<P>
+Several of the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> developers will be present.
+All European (and other) L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> users are encouraged to attend.
+
+<P>
+
+<P>
+
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html280"
+ HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html276"
+ HREF="manual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html270"
+ HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html278"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html279"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html281"
+ HREF="node4.html">Developments: late 1997 to</A>
+<B> Up:</B> <A NAME="tex2html277"
+ HREF="manual.html">The L<SUP>A</SUP>TEX2HTML Translator</A>
+<B> Previous:</B> <A NAME="tex2html271"
+ HREF="node2.html">Later Developments, 1995-1996</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

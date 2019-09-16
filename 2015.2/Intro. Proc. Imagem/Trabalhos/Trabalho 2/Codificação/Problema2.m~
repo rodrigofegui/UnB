@@ -1,0 +1,121 @@
+%%  Problema 2 Imagem Monalisa + Texto
+    %   Objetivo:
+        %
+function [void] = Problema2 (dir_ref)
+    %%  Inicialização da Execução da Função
+        Limpeza ();
+    
+    %%  Determinação dos Parâmetros
+        %   'nome_imagem_base' armazena o nome da imagem que será realizado
+        %   o processamento
+            nome_imagem_base = 'morf_test.png';
+        %   'nome_arquivo' armazena o nome do arquivo que conterá as
+        %   informações relevantes sobre este problema
+            nome_arq = '../Resultados/Problema 2/Resultados_Problema 2.txt';
+        %   'limite_bin_top' armazena o limiar da binarização da operação de
+        %   TopHat na imagem base
+            limite_bin_top = 55;
+        %   Normalização do 'limite_bin_top' para o intervalo [0, 1]
+            limite_bin_top = limite_bin_top/255;
+        %   'limite_bin_bot' armazena o limiar da binarização da operação de
+        %   BottomHat na imagem base
+            limite_bin_bot = 26;
+        %   Normalização do 'limite_bin_bot' para o intervalo [0, 1]
+            limite_bin_bot = limite_bin_bot/255;
+        %   'ES_tipo' e 'ES_tam' armazenam as configurações do
+        %   elemento estruturante: tipo e tamanho, respec., onde 'ES_tam'
+        %   armazena os tamanhos para o TopHat e o BottomHat, respec.
+            ES_tipo = 'diamond';
+            ES_tam = [90, 80, 10];
+
+    %% Carregando Imagem Base
+        %   Construção final do nome da imagem
+            nome_imagem_base = strcat (dir_ref, nome_imagem_base);
+        %   Carregar a imagem base, cuja identificação é 'nome_imagem_base', e
+        %   armazenar em 'imagem_base'
+            imagem_base = imread (nome_imagem_base);
+        %   Suavisando o ruído na 'imagem_base' com um filtro de média
+            filtro = fspecial ('average');
+            imagem_base = imfilter(imagem_base, filtro);
+        %   Exibição da 'imagem_base' com o título: "Imagem Base"
+            imshow(imagem_base);
+            title ('Imagem Base');
+
+    %% Aplicando Top-Hat na Imagem Base
+        %   Determinação do elemento estruturante a ser utilizado,
+        %   com as configurações de 'ES_*'
+            ES = strel (ES_tipo, ES_tam(1));
+        %   Operação morfológica de TopHat em si, dada uma imagem de base e o
+        %   elemento estruturante
+            imagem_top = imtophat (imagem_base, ES);
+        %   Exibição da 'imagem_top' com o título: "Pós-TopHat"
+            figure, imshow (imagem_top);
+            title ('Pós-TopHat');
+        %   Salvando a 'imagem_top' em disco com o nome: "Pós-TopHat"
+            imwrite (imagem_top, '../Resultados/Problema 2/Pós-TopHat.jpg');
+
+
+    %%  Aplicando Bottom-Hat na Imagem Base
+        %   Determinação do elemento estruturante a ser utilizado,
+        %   com as configurações de 'ES_*'
+            ES = strel (ES_tipo, ES_tam(2));
+        %   Operação morfológica de TopHat em si, dada uma imagem de base e o
+        %   elemento estruturante
+            imagem_bottom = imbothat (imagem_base, ES);
+        %   Exibição da 'imagem_top' com o título: "Pós-BottomHat"
+            figure, imshow (imagem_bottom);
+            title ('Pós-BottomHat');
+        %   Salvando a 'imagem_bottom' em disco com o nome: "Pós-BottomHat"
+            imwrite (imagem_bottom, '../Resultados/Problema 2/Pós-BottomHat.jpg');
+
+    %%  Binarização a partir do TopHat
+        %   Binarização da imagem atráves da função 'im2bw', dado um
+        %   limiar, 'limite_bin_top', de binarização da imagem original
+            imagem_binaria = im2bw (imagem_top, limite_bin_top);
+        %   Exibição da imagem binarizada com o título: "Binária a partir do
+        %   TopHat"
+            %figure, imshow(imagem_binaria);
+            %title ('Binária a partir do TopHat');
+        %   Salvando a 'imagem_binaria' em disco com o nome: "Binária a partir do TopHat"
+            imwrite (imagem_binaria, '../Resultados/Problema 2/Binária a partir do TopHat.jpg');
+
+    %%  Binarização a partir do BottomHat
+        %   Binarização da imagem atráves da função 'im2bw', dado um
+        %   limiar, 'limite_bin_bot', de binarização da imagem original
+            imagem_binaria = im2bw (imagem_bottom, limite_bin_bot);
+        %   Negativo da imagem_binaria, para deixar o fundo branco e os números
+        %   pretos
+            imagem_binaria = ~imagem_binaria (:, :, :);
+        %   Exibição da imagem binarizada com o título: "Binária a partir do
+        %   BottomHat"
+            %figure, imshow(imagem_binaria);
+            %title ('Binária a partir do BottomHat');
+        %   Salvando a 'imagem_binaria' em disco com o nome: "Binária a partir do BottomHat"
+            imwrite (imagem_binaria, '../Resultados/Problema 2/Binária a partir do BottomHat.jpg');
+
+    %%  Realce do Background, por fechamento
+        %   Determinação do elemento estruturante a ser utilizado,
+        %   com as configurações de 'ES_*'
+            ES = strel (ES_tipo, ES_tam(3));
+        %   Operação morfológica de Fechamento em si, dada uma imagem de base
+        %   e o elemento estruturante
+            imagem_erosao = imclose (imagem_base, ES);
+        %   Exibição da 'imagem_erosao' com o título: "Realce do Background"
+            figure, imshow (imagem_erosao);
+            %figure, imshow (imagem_base - imagem_bottom);
+            title ('Realce do Background');
+        %   Salvando a 'imagem_erosao' em disco com o nome: "Realce do Background"
+            imwrite (imagem_binaria, '../Resultados/Problema 2/Realce do Background.jpg');
+
+    %%  Subtração do Background
+        %   Operação que subtrai o background da imagem original
+            imagem_sub = imagem_base - imagem_erosao;
+        %   Exibição da 'imagem_sub' com o título: "Retirado o Background da
+        %   Imagem Base"
+            figure, imshow (imagem_sub);
+            title ('Retirado o Background da Imagem Base');
+        %   Salvando a 'imagem_sub' em disco com o nome: "Retirado o Background da Imagem Base"
+            imwrite (imagem_binaria, '../Resultados/Problema 2/Retirado o Background da Imagem Base.jpg');
+
+    Pausa ();
+end

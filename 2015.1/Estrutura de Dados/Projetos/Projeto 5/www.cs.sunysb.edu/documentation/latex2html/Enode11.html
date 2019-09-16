@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Document Classes and Options</TITLE>
+<META NAME="description" CONTENT="Document Classes and Options">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="next" HREF="Enode12.html">
+<LINK REL="previous" HREF="Enode10.html">
+<LINK REL="up" HREF="features.html">
+<LINK REL="next" HREF="Enode12.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html226"
+ HREF="Enode12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html222"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html216"
+ HREF="Enode10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html224"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html225"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html227"
+ HREF="Enode12.html">Packages and Style-Files</A>
+<B> Up:</B> <A NAME="tex2html223"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html217"
+ HREF="Enode10.html">Figures, Tables and Arbitrary</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000116000000000000000">&#160;</A><A NAME="sec:cls">&#160;</A>
+<BR>
+Document Classes and Options
+</H2>
+
+<A NAME="1590">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1b</SUP>
+<BR>
+In general the standard L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X document-classes: 
+<TT>article</TT>, <TT>report</TT>, <TT>book</TT>, <TT>letter</TT>, <TT>slides</TT>
+are translated by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> in the same way. 
+Currently the only real difference is with the display of section-numbering,
+when the <A HREF="#showsecnums"> <TT>-show_section_numbers</TT> </A> switch is used,
+and when numbering of <A HREF="#theoremenvs">theorem-like environments</A> 
+is linked to section-numbering.
+
+<P>
+<A NAME="2303">&#160;</A>
+<A NAME="1605">&#160;</A>
+
+<P>
+These differences are achieved using a mechanism that automatically loads a file:
+<A HREF="node10.html#GGGarticle.perl"
+ NAME="2853"><TT>article.perl</TT></A>, <A HREF="node10.html#GGGreport.perl"
+ NAME="2861"><TT>report.perl</TT></A>, <A HREF="node10.html#GGGbook.perl"
+ NAME="2869"><TT>book.perl</TT></A>, <A HREF="node10.html#GGGletter.perl"
+ NAME="2877"><TT>letter.perl</TT></A>, <A HREF="node10.html#GGGslides.perl"
+ NAME="2885"><TT>slides.perl</TT></A> 
+according to the requested document-class. 
+These files contain <A HREF="node10.html#GGGPerl"><I>Perl</I></A> code and are located in the <A HREF="node10.html#GGGstyles_"
+ NAME="2896"><TT>styles/</TT></A> directory.
+If a file of the same name exists in the working directory, this will be loaded
+instead.
+
+<P>
+Typically such files <TT><TT>
+&lt;<I>class</I>&gt;</TT>.perl</TT> contain code to define subroutines 
+or sets values for variables that will affect how certain translations are performed. 
+There can be code that is executed only when specific class-options are specified
+along with the chosen document-class.
+For example, the <A HREF="node10.html#GGGfoils.perl"
+ NAME="2906"><TT>foils.perl</TT></A> implementation of 
+<I>FoilTeX</I>'s 
+<I>foils</I> class
+defines code create a new sub-section for each `foil'.
+It also has code which allows L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> to ignore those of 
+<I>FoilTeX</I>'s special 
+formatting commands that have no relevance when constructing an <TT>HTML</TT> page.
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="1618">&#160;</A>
+<A NAME="1619">&#160;</A>
+
+<P>
+Any options given on the <TT>&#92;documentclass</TT> or <TT>&#92;documentstyle</TT> line
+may also cause a file containing <A HREF="node10.html#GGGPerl"><I>Perl</I></A> code to be loaded. 
+Such a file is named <TT><TT>
+&lt;<I>option</I>&gt;</TT>.perl</TT> for the appropriate <TT>
+&lt;<I>option</I>&gt;</TT>.
+When such a file exists, in the local directory or in the <A HREF="node10.html#GGGstyles_"
+ NAME="2926"><TT>styles/</TT></A> directory,
+it typically contains <A HREF="node10.html#GGGPerl"><I>Perl</I></A> code to define subroutines or set values for variables 
+that will affect how certain translations are performed.
+There can be code that is executed only for specific document-classes.
+
+<P>
+Since the files for class-options are loaded after those for the document-class,
+it is possible for the <TT><TT>
+&lt;<I>option</I>&gt;</TT>.perl</TT> file to contain code that overrides
+settings made within the document-class file.
+
+<P>
+
+<P>
+<BR>
+<A NAME="1628">&#160;</A>
+If a file named <TT><TT>
+&lt;<I>class</I>&gt;</TT>_<TT>
+&lt;<I>option</I>&gt;</TT>.perl</TT> happens to exist for
+a given combination of document-class <TT>
+&lt;<I>class</I>&gt;</TT> and class-option <TT>
+&lt;<I>option</I>&gt;</TT>,
+then this will be loaded. 
+When such a file exists, reading and executing its contents is done,
+rather than executing any <TT>
+&lt;<I>class</I>&gt;</TT>_<TT>
+&lt;<I>option</I>&gt;</TT> specific information
+that may be contained in  <TT><TT>
+&lt;<I>class</I>&gt;</TT>.perl</TT> or <TT><TT>
+&lt;<I>option</I>&gt;</TT>.perl</TT>&nbsp;.
+
+<P>
+
+<P>
+<BR>
+Currently there are no special option or class-option files provided with 
+the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> distribution. It is hoped that users will identify ways 
+that specific features can be improved or adapted to specific classes of documents, 
+and will write such files themselves, perhaps submitting them for general distribution.
+
+<P>
+
+<P><P>
+<BR>
+
+<B>Note: </B>
+This mechanism for handling code specific to different document classes
+and class-options is more general than that employed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB>.
+New options can be defined for document-classes generally, or for specific classes,
+without the need to have corresponding <TT>.sty</TT> or <TT>.clo</TT> files.
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X simply notes the existence of unusupported options--processing is not
+interrupted.  
+
+<P>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1b</SUP>
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html226"
+ HREF="Enode12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html222"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html216"
+ HREF="Enode10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html224"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html225"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html227"
+ HREF="Enode12.html">Packages and Style-Files</A>
+<B> Up:</B> <A NAME="tex2html223"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html217"
+ HREF="Enode10.html">Figures, Tables and Arbitrary</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,428 @@
+<html>
+<head>
+<title>Computer Science Department - SSH Under Unix</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- This file contains the site wide Javascript functions and stylesheet -->
+
+<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+  var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+  if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+  d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+  if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+          
+//-->
+</script>
+
+<link rel="STYLESHEET" type="text/css" href="/style/all.css">
+ 
+</head>
+
+<body bgcolor="#FFFFFF" link="#FFFFFF" vlink="#FFFFFF">
+ 
+<table border="0" align="center" width="760">
+  <tr> 
+    <td valign="top">
+              <img src="/menu/images/banners/CSfacilitiesbanner.gif" width="640" height="30"><br>
+        <img src="/menu/images/banners/CSfacilitiespic.jpg" width="640" height="120" vspace="3"><BR>
+ 
+      <table border="0" cellpadding="0" cellspacing="0" width="640">
+
+                  <tr>
+          <!-- Shim row, height 1. -->
+          <td colspan="8" bgcolor="FFFFFF" width="640" height="1"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+          <td gcolor="FFFFFF" width="1" height="1" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+ 
+
+                  <tr>
+          <!-- row 1 -->
+          <td ><a href="/admissions/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('admissions','','/menu/images/CSmenu/admissions_f2.gif',1);" ><img name="admissions" src="/menu/images/CSmenu/admissions.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/research/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('research','','/menu/images/CSmenu/research_f2.gif',1);" ><img name="research" src="/menu/images/CSmenu/research.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/facilities/index.html"><img name="facilities" src="/menu/images/CSmenu/facilities_r1.gif" width="80" height="30" border="0"></a></td>
+          <td><a href="/people/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('people','','/menu/images/CSmenu/people_f2.gif',1);" ><img name="people" src="/menu/images/CSmenu/people.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/undergrad/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('undergrad','','/menu/images/CSmenu/undergrad_f2.gif',1);" ><img name="undergrad" src="/menu/images/CSmenu/undergrad.gif" width="80" height="30" border="0"></a></td>
+          <td><a href="/graduate/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('graduate','','/menu/images/CSmenu/graduate_f2.gif',1);" ><img name="graduate" src="/menu/images/CSmenu/graduate.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="http://www.cs.sunysb.edu/~news/" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('events','','/menu/images/CSmenu/events_f2.gif',1);" ><img name="events" src="/menu/images/CSmenu/events.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/welcome/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('welcome','','/menu/images/CSmenu/welcome_f2.gif',1);" ><img name="welcome" src="/menu/images/CSmenu/welcome.gif" width="80" height="30" border="0"></a></td>
+          <td bgcolor="FFFFFF" width="1" height="30" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+ 
+
+                  <tr>
+          <!-- row 3 -->
+          <td colspan="8">
+           <table border=0 cellpadding=0 cellspacing=0 width="640">
+            <tr>
+              <td width="100" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="3" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="30" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="3" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="61" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="118" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="85" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="80" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="100" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+             </tr>
+            </table>
+           </td>
+           <td bgcolor="FFFFFF" width="1" height="3" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+
+
+
+                  <tr>
+          <!-- row 3 -->
+          <td colspan="8">
+           <table border=0 cellpadding=0 cellspacing=0 width="640">
+            <tr bgcolor="CCCCCC">
+              <td bgcolor="CCCCCC" width="100" height="18" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td><a href="/facilities/FAQ/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('faq2','','/menu/images/facilities/faq2_f2.gif',1);" ><img name="faq2" src="/menu/images/facilities/faq2.gif" width="30" height="18" border="0"></a></td>
+              <td width="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td><img name="row3_dot" src="/menu/images/CSmenu/row3_dot.gif" width="15" height="18" border="0"></td>
+              <td><a href="/facilities/ComputerScienceLibrary.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('library2','','/menu/images/facilities/library2_f2.gif',1);" ><img name="library2" src="/menu/images/facilities/library2.gif" width="61" height="18" border="0"></a></td>
+              <td><img name="row3_dot" src="/menu/images/CSmenu/row3_dot.gif" width="15" height="18" border="0"></td>
+              <td><a href="/facilities/undergrad/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('uglabs2','','/menu/images/facilities/uglabs2_f2.gif',1);" ><img name="uglabs2" src="/menu/images/facilities/uglabs2.gif" width="118" height="18" border="0"></a></td>
+              <td><img name="row3_dot" src="/menu/images/CSmenu/row3_dot.gif" width="15" height="18" border="0"></td>
+              <td><a href="/facilities/graduate/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('gradlabs2','','/menu/images/facilities/gradlabs2_f2.gif',1);" ><img name="gradlabs2" src="/menu/images/facilities/gradlabs2.gif" width="85" height="18" border="0"></a></td>
+              <td><img name="row3_dot" src="/menu/images/CSmenu/row3_dot.gif" width="15" height="18" border="0"></td>
+              <td><a href="/facilities/research/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('researchlabs2','','/menu/images/facilities/researchlabs2_f2.gif',1);" ><img name="researchlabs2" src="/menu/images/facilities/researchlabs2.gif" width="80" height="18" border="0"></a></td>
+              <td bgcolor="CCCCCC" width="100" height="18" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+             </tr>
+            </table>
+           </td>
+           <td bgcolor="FFFFFF" width="1" height="18" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+
+
+
+                  <tr>
+          <!-- row 3 -->
+          <td colspan="8">
+           <table border=0 cellpadding=0 cellspacing=0 width="640">
+            <tr>
+              <td width="100" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="3" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="30" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="3" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="61" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="118" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="85" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="80" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="100" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+             </tr>
+            </table>
+           </td>
+           <td bgcolor="FFFFFF" width="1" height="3" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+
+
+
+      </table>
+
+      <p> 
+        <!-- Image with table -->
+        <!-- Image with table -->
+      </p>
+                
+               <div align="center">
+                  <h1>
+                     SSH Under Unix
+                  </h1>
+               </div>
+      <!-- Enter main content here-->
+      <p><br>
+        <a name="top"></a> <a href="#Q1">Q1. How do I use ssh?</a><br>
+        <a href="#Q2">Q2. Isn't there some way to use ssh without having to enter 
+        my password?</a><br>
+        <a href="#Q3">Q3. How do I use ssh-agent?</a><br>
+        <a href="#Q4">Q4. How do I use scp within the department, say from my 
+        home directory to editwww?</a><br>
+        <a href="#Q5">Q5. How do I use scp from a system with OpenSSH to a department 
+        host?</a><br>
+        <a href="#Q6">Q6. Are there any problems using OpenSSH to connect to the 
+        department? </a><br>
+        <a href="#Q7">Q7. How do I remote display from sparky or the ug lab back 
+        to my desktop with ssh?</a> <br>
+        <a href="#Q8">Q8. Are there any other common problems using SSH under 
+        Unix?<br>
+        </a><br>
+        <br>
+        <br>
+        <br>
+        <strong><a name="Q1"></a>Q1. How do I use ssh?</strong> <br>
+        <br>
+        Use the command "<font face="Courier New, Courier, mono">ssh hostname</font>" 
+        in place of "<font face="Courier New, Courier, mono">rlogin hostname</font>" 
+        or "<font face="Courier New, Courier, mono">telnet hostname</font>", for 
+        example, <br>
+        <br>
+        "<font face="Courier New, Courier, mono">ssh compserv1</font>" or "<font face="Courier New, Courier, mono">ssh 
+        sparky.ic.sunysb.edu -l your_sparky_username</font>" <br>
+        <br>
+        Enter your password at the prompt. Your password and all further traffic 
+        is automatically encrypted by ssh. If you get back "Command not found", 
+        make sure /usr/local/bin is in your path. <br>
+        <br>
+        <br>
+      </p>
+      <p align="right"><a href="#top">Top</a></p>
+			
+      <p><br>
+        <br>
+        <br>
+        <strong><a name="Q2"></a>Q2. Isn't there some way to use ssh without having 
+        to enter my password?</strong> <br>
+        <br>
+        Run the command <font face="Courier New, Courier, mono">ssh-keygen</font>. 
+        You will see a status message as ssh generates an encryption key pair 
+        for you. When you see the prompt <br>
+        <br>
+        <font face="Courier New, Courier, mono">Passphrase:</font> <br>
+        <br>
+        enter an easy to remember string. Ssh will generate public and private 
+        keys for you and save them to ~/.ssh2. <br>
+        <br>
+        Now create an "identification" file in your .ssh2 directory with the following 
+        command: <br>
+        <br>
+        <font face="Courier New, Courier, mono">echo "IdKey id_dsa_1024_a" &gt; 
+        identification</font> <br>
+        <br>
+        Finally create an authorization file in your .ssh2 directory: <br>
+        <br>
+        <font face="Courier New, Courier, mono">echo "Key id_dsa_1024_a.pub" &gt; 
+        authorization</font><br>
+        <br>
+        Now you will be able to use ssh between hosts in the department without 
+        having to enter your password. You will have to enter your passphrase 
+        for each connection, to further simplify your ssh connections please see 
+        Q3 below, how to use ssh-agent. <br>
+        <br>
+        <br>
+      </p>
+      <p align="right"><a href="#top">Top</a></p>
+      <p><br>
+        <br>
+        <br>
+        <strong><a name="Q3"></a>Q3. How do I use ssh-agent?</strong> <br>
+        <br>
+        Ssh-agent is a program that stores your authentication keys, and then 
+        handles the authentication exchange thereafter. To start it use: <br>
+        <br>
+        <font face="Courier New, Courier, mono">ssh-agent csh</font> (or whichever 
+        shell you use) <br>
+        <br>
+        followed by: <br>
+        <br>
+        <font face="Courier New, Courier, mono">ssh-add </font><br>
+        <br>
+        which will load it with your default key. You will need to enter your 
+        passphrase once only (and it is not transmitted over the network in this 
+        case). Hereafter any ssh connections you make from this instance of the 
+        shell will be completely transparent to you, even to multi-hop remote 
+        machines. <br>
+        <br>
+        <br>
+      </p>
+      <p align="right"><a href="#top">Top</a></p>
+      <p><br>
+        <br>
+        <br>
+        <strong><a name="Q4"></a>Q4. How do I use scp within the department, say 
+        from my home directory to editwww?</strong><br>
+        <br>
+        Use scp2 with the department or from the department to any host which 
+        also runs scp2.To transfer files from your local host to a remote host:</p>
+      <p><font face="Courier New, Courier, mono">scp2 &lt;filename&gt; username@hostname:fullfilename</font></p>
+      <p>Ex: <font face="Courier New, Courier, mono">scp2 index.html user@editwww:public_html/index.html</font></p>
+      <p>To transfer files from a remote host to your local host:</p>
+      <p><font face="Courier New, Courier, mono">scp2 username@hostname:fullfilename 
+        &lt;filename&gt;</font><br>
+        <br>
+        <br>
+      </p>
+      <p align="right"><a href="#top">Top</a></p>
+      <p><br>
+        <br>
+        <br>
+        <strong><a name="Q5"></a>Q5. How do I use scp from a system with OpenSSH 
+        to a department host?</strong><br>
+        <br>
+        You must use scp and it must be run from the OpenSSH system.To transfer 
+        files from the OpenSSH system to a department host:</p>
+      <p><font face="Courier New, Courier, mono">scp &lt;filename&gt; username@host:fullfilename</font></p>
+      <p>To transfer files from the department host to the OpenSSH system: (Note: 
+        this command must be run on the OpenSSH system)</p>
+      <p><font face="Courier New, Courier, mono">scp username@host:fullfilename 
+        &lt;filename&gt;</font><br>
+        <br>
+        <br>
+      </p>
+      <p align="right"><a href="#top">Top</a></p>
+      <p><br>
+        <br>
+        <br>
+        <strong><a name="Q6"></a>Q6. Are there any problems using OpenSSH to connect 
+        to the department?</strong></p>
+      <p><strong>OpenSSH v2 and Commercial SSH v2</strong><br>
+        The Commercial (Fsecure) SSH v2.3 has a key retransmission feature which 
+        regularly verifies the client/server connection (the default is every 
+        1 hour). OpenSSH doesn't support or understand this part of the protocol 
+        and a OpenSHH v2 client will be dropped by the Fsecure SSH2 server after 
+        1 hour. Your options are: </p>
+      <p>Get the non-commercial Fsecure client <br>
+      <p>Connecting with a commercial Unix SSH v2 client to a Unix/Linux OpenSSH 
+        v2 server requires </p>
+      <ul>
+        <li>Either put: <font face="Courier New, Courier, mono">RekeyIntervalSeconds 
+          0</font><br>
+          in your $HOME/.ssh2/ssh2_config file (where time=0 is infinity/never 
+          re-exchange keys after the login) </li>
+        <li> On the command line <font face="Courier New, Courier, mono">ssh [-l 
+          login_name] -o 'RekeyIntervalSeconds 0' &lt;host&gt;</font> <br>
+          NOTE: The single quotes are MANDATORY. The command line options will 
+          override ALL other config files (personal/system wide).</li>
+      </ul>
+      <p>Sample ssh2_config file would look like this:</p>
+      <p> <font face="Courier New, Courier, mono">*:<br>
+        RekeyIntervalSeconds 0</font></p>
+      <p>Please see the ssh2_config manpage at <a href="http://www.cs.sunysb.edu/documentation/index.html">http://www.cs.sunysb.edu/documentation/index.html</a> 
+        for more information about this and other options.</p>
+      <p><br>
+        <br>
+      </p>
+      <p align="right"><a href="#top">Top</a></p> 
+      <p><strong><a name="Q7"></a>Q7. How do I remote display from sparky or the 
+        ug lab back to my desktop with ssh?</strong> <br>
+        <br>
+        When you make a connection using ssh it automatically sends any X connections 
+        over the encrypted channel back to your own workstation, i.e. without 
+        doing anything further any X application you launch will display on your 
+        local machine. Do not set the DISPLAY environment variable and do not 
+        use the xhost command, neither is necessary. <br>
+      </p>
+      <p>By default X11 forwarding is enabled in most versions of ssh. If this 
+        is not working for you from your external host try adding the <font face="Courier New, Courier, mono">&quot;+x&quot;</font> 
+        option to force X11 forwarding on. You should not be setting your display 
+        environment variable by hand or in any startup files.</p>
+      <p>If this is not working for you from any host within the department please 
+        send mail to <a href="/cgi-bin/nomail.cgi/wreq/0/2">WREQ</a>.</p>
+      <p>&nbsp; </p>
+      <p><br>
+      </p>
+      <p><strong><a name="Q8"></a>Q8. Are there any other common problems using 
+        SSH under Unix?</strong></p>
+      <p><strong>SCP</strong><br>
+        If you have an alias in your .cshrc for scp on a target (scp to) system 
+        the alias will be executed (and arguments passed to the alias for scp) 
+        when you try to secure copy. We recommend against aliases for scp or sftp 
+        in your .cshrc. </p>
+      <p>&nbsp;</p>
+      <p align="center">[<a href="FAQbyIndex.html">FAQ by Index</a>] [<a href="index.html">FAQ 
+        by Category</a>] 
+      </p>
+        <!-- End main content here-->
+
+    </td>
+    <td valign="top" bordercolor="#FFFFFF">
+            <div align="center"><a href="http://www.stonybrook.edu"><img src="/menu/images/SBLogo4pmsSM.gif" width="112" height="66" border="0"></a></div>
+      <BR>
+      <div align="center"><a href="http://www.cs.sunysb.edu"><img src="/menu/images/cslogotype_color.gif" width="95" height="95" border="0"></a></div>
+
+      <BR>
+   <table width="100%" border=0 cellpadding=2 cellspacing=0>
+    <tr>
+     <td align="center">
+      <form method="get" action="http://www.cs.sunysb.edu/search/search.cgi" name="search" >
+       <input type="text" name="Terms" id="fdse_TermsEx" size=12 value="Search CS" onFocus="document.search.Terms.value='';document.search.Terms.select()"><input type=image src="/csimages/searchsite.gif" width=15 height=14 alt="Search Now" value="Go">
+      </form>
+     </td>
+    </tr>
+   </table>
+
+      <hr>
+<div class="navindex">
+          
+  <table border=0 cellpadding=5 cellspacing=0>
+    <tr>
+     <td width="300">
+      <HR width="100%">
+     </td>
+    </tr>
+    <tr>
+
+    <td> <b><font face="Arial, Helvetica, sans-serif" size="2">
+      <a href="http://www.cs.sunysb.edu/%7Esso">Services via Single Sign-On</a>
+
+      </font></b> </td>
+    </tr>
+     <tr>
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/facilities/FAQ/index.html">Systems 
+        FAQ</a> </font> </td>
+    </tr>
+     <tr>
+	<td> <font face="Arial, Helvetica, sans-serif"> <a href="http://www.cs.sunysb.edu/~csstaff">Technical Staff</a></td>
+     </tr>
+    <tr>
+      <td><font face="Arial, Helvetica, sans-serif"><a href="/events/newsletters/index.html">Monthly 
+        Newsletter</a> </font> </td>
+    </tr>
+    <tr>
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/documentation/index.html">Documentation</a> 
+        </font> </td>
+    </tr>
+    <tr>
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/DepartmentPolicies.html">Department 
+        Policies</a> </font> </td>
+    </tr>
+    <tr>
+      <td><font face="Arial, Helvetica, sans-serif"><a href="/welcome/directions/BuildingMap.html">Computer Science Department Map</a> </font> </td>
+    </tr>
+    <tr>
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/facilities/GradOrientation_SysStaff.pdf">Start 
+        of Semester Information</a> </font> </td>
+    </tr>
+    <tr>
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/facilities/CampusComputingResources.html">Campus 
+        Computing Resources</a> </font> </td>
+    </tr>
+    <tr>
+    <tr> 
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/CSbldg.html">New 
+        CS building Plans</a> </font> </td>
+    </tr>
+  </table>
+</div>
+
+</table>
+</body>
+</html>
+

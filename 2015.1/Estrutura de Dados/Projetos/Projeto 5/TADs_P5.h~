@@ -1,0 +1,195 @@
+/*  Cabecalho das funções relacionadas as TADs; definicoes de constantes globais;
+**  assim como definicoes das estruturas a serem utilizadas na simulacao */
+
+
+/*  Definicoes de constantes utilizadas */
+/*  'MAX' armazena o tamanho maximo para o nome das paginas web; 'MAX2' armazena
+**  o tamanho maximo aceitavel para uma palavra lida nos codigos-fonte, tambem
+**  utilizado para o tamanho dos diretorios; 'FATOR' armazena o fator utilizado
+**  para o calculo do PR; 'LIN_MAX' e 'COL_MAX' armazenam as dimensoes do histograma */
+#define MAX 90
+#define MAX2 500
+#define FATOR 0.85
+#define LIN_MAX 20
+#define COL_MAX 70
+
+
+
+
+/*  Definicao das TADs a serem usadas no projeto:  */
+/*  'Letra' define e simplifica o uso da 'struct letra', fara o armazenamento de cada
+**  letra da nova palavra a ser montada */
+typedef struct letra Letra;
+
+/*  'Palavra' define e simplifica o uso da 'struct word', armazena a palavra montada de forma
+**  dinamica e variante de acordo com a demanda de cada palavra */
+typedef struct word Palavra;
+
+/*  'Referencia' define e simplifica o uso da 'struct referencia', armazena as paginas que
+**  referenciam a pagina corrente */
+typedef struct referencia Referencia;
+
+/*  'Registro' define e simplifica o uso da 'struct reg', armazena as informacoes inerentes
+**  a cada pagina web */
+typedef struct reg Registro;
+
+/*  'Pagina' define e simplifica o uso da 'struct page', armazena a pagina web em si */
+typedef struct page Pagina;
+
+/*  'Grafo' define e simplifica o uso da 'struct grafo', armazena o grafo gerado a partir
+**  das paginas web utilizadas, sendo montado como uma lista de adjacencia */
+typedef struct grafo Grafo;
+
+
+/*  Implementacao das TADs a serem usadas no projeto */
+
+/*  'letra' armazena a letra da palavra; 'prox' aponta para a proxima letra da palavra */
+struct letra{
+    char letra;
+    Letra *prox;
+};
+
+/*  'inicio' armazena o inicio da palavra manipulada; 'quant' armazena o tamanho da palavra */
+struct word{
+    Letra *inicio;
+    int quant;
+};
+
+/*  'pag' armazena a pagina web em si; 'proximo' armazena o proximo elemento da lista */
+struct referencia{
+    Pagina *pag;
+    Referencia *proximo;
+};
+
+/*  'nome' armazena o nome da pagina web; 'entradas' e 'saidas' armazenam os numeros de paginas
+**  que referenciam e que sao referenciadas pela pagina corrente, respectivamente; 'pr' armazena
+**  o pagerank da pagina web corrente; 'inicio' armazena o inicio da lista de paginas que
+**  referenciam a pagina corrente */
+struct reg{
+    char nome[MAX];
+    int entradas, saidas;
+    float pr;
+    Referencia *inicio;
+};
+
+/*  'dados' armazena os dados intrinsecos da pagina corrente; 'anterior' e 'proximo' apontam para
+**  as respectivas posicoes na lista de paginas web */
+struct page{
+    Registro dados;
+    Pagina *anterior, *proximo;
+};
+
+/*  'quant' armazena a quantidade de paginas web registradas no grafo; 'dirbase' armazena o diretorio
+**  base para o desenvolvimento do processamento; 'inicio' e 'fim' apontam para as respectivas posicoes
+**  da lista de adjacencias do grafo */
+struct grafo{
+    int quant, classes;
+    float intervalo;
+    int valores[10], valores2[10];
+    char dirbase[2 * MAX2], **hist;
+    Pagina *inicio, *fim;
+};
+
+
+
+
+/*  Lista de funcoes para manipulacao sobre as TADs: */
+
+/*  1 - Secao de Criacao de Estruturas */
+/*  1.1 - Criacao de uma letra */
+Letra * cria_letra ();
+
+/*  1.2 - Criacao de uma nova palavra */
+Palavra * cria_palavra ();
+
+/*  1.3 - Criacao de uma nova referencia */
+Referencia * cria_referencia ();
+
+/*  1.4 - Criacao de uma nova pagina */
+Pagina * cria_pagina ();
+
+/*  1.5 - Criacao de um novo grafo */
+Grafo * cria_grafo ();
+
+
+
+/*  2 - Secao de Liberacao */
+/*  2.1 - Libera o espaco alocado para uma letra */
+void libera_letra (Letra *);
+
+/*  2.2 - Libera o espaco alocado para uma palavra */
+void libera_palavra (Palavra *);
+
+/*  2.3 - Libera o espaco alocado para uma referencia */
+void libera_referencia (Referencia *);
+
+/*  2.4 - Libera o espaco alocado para uma pagina */
+void libera_pagina (Pagina *);
+
+/*  2.5 - Libera o espaco alocado para o grafo */
+void libera_grafo (Grafo *);
+
+/*  2.6 -Libera o espaco alocado para o histograma */
+void libera_hist (Grafo *);
+
+
+
+/*  3 - Secao de Construcao e Organizacao */
+/*  3.1 - Construcao de uma palavra */
+void constroi_palavra (Palavra *, char);
+
+/*  3.2 - Inicializacao do Grafo em si */
+void inicializa_grafo (Grafo *, char *);
+
+/*  3.3 - Construcao da lista de adjacencias */
+void constroi_adjacencia (Grafo *, Pagina *, char *, int);
+
+/*  3.4 - Construcao da lista de referencias */
+void constroi_referencia (Pagina *, Pagina *);
+
+/*  3.5 - Ordenacao do Grafo */
+void ordena_grafo (Grafo *);
+
+/*  3.6 - Construcao do histograma */
+char ** constroi_hist (Grafo *);
+
+
+
+
+/*  4 - Secao de Remocoes */
+/*  4.1 - Remove a primeira letra da palavra */
+char remove_letra (Palavra *);
+
+
+
+
+/*  5 - Secao de Exibicao na Tela e Escrita em Documentos */
+/*  5.1 - Exibicao de uma Referencia */
+void exibe_referencias (Referencia *);
+
+/*  5.2 - Exibicao de uma Pagina */
+void exibe_pagina (Pagina *);
+
+/*  5.3 - Exibicao do TOP10 */
+void exibe_top10 (Grafo *);
+
+/*  5.4 - Exibicao do Grafo Completo */
+void exibe_grafo (Grafo *);
+
+/*  5.5 - Exibicao do Histograma */
+void exibe_hist (Grafo *);
+
+/*  5.6 - Escrever uma Referencia */
+void escreve_referencias (FILE *, Referencia *);
+
+/*  5.7 - Escrever uma Pagina */
+void escreve_pagina (FILE *, Pagina *);
+
+/*  5.8 - Escrever o top 10 */
+void escreve_top10 (FILE *, Grafo *);
+
+/*  5.9 - Escrever o Grafo Completo */
+void escreve_grafo (Grafo *);
+
+/*  5.10 - Escreve o Histograma */
+void escreve_hist (FILE *, Grafo *);

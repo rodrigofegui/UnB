@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Support for FoilTeX</TITLE>
+<META NAME="description" CONTENT="Support for FoilTeX">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="next" HREF="Enode15.html">
+<LINK REL="previous" HREF="Enode13.html">
+<LINK REL="up" HREF="Enode12.html">
+<LINK REL="next" HREF="Enode15.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html265"
+ HREF="Enode15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html261"
+ HREF="Enode12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html255"
+ HREF="Enode13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html263"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html264"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html266"
+ HREF="Enode15.html">Indicating Differences between Document</A>
+<B> Up:</B> <A NAME="tex2html262"
+ HREF="Enode12.html">Packages and Style-Files</A>
+<B> Previous:</B> <A NAME="tex2html256"
+ HREF="Enode13.html">Fancy List-Markers</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000117200000000000000">&#160;</A><A NAME="sec:foils">&#160;</A>
+<BR>
+Support for 
+<I>FoilTeX</I>
+</H3>
+<A NAME="2412">&#160;</A>
+<A NAME="1941">&#160;</A> The 
+<I>FoilTeX</I> system presents some
+additional problems for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>:
+<UL>
+<LI>It has additional commands like <TT>&#92;foilhead</TT> and
+  <TT>&#92;rotatefoilhead</TT>, that roughly correspond to sectioning commands,
+<LI>The images are produced at the sizes suitable for large screen
+  presentation, but not for the HTML.
+</UL>
+The package <A HREF="node10.html#GGGfoils.perl"
+ NAME="3214"><TT>foils.perl</TT></A> deals with these problems. It treats foils as
+starred subsections and ignores 
+<I>FoilTeX</I>-specific commands that have no
+meaning for HTML, like <TT>&#92;LogoOn</TT>. The header
+<TT>&#92;documentclass[</TT>+<TT><I>options</I></TT><code>]{foils}</code> in the
+<A HREF="node10.html#GGGimages.tex"
+ NAME="3225"><TT>images.tex</TT></A> file is substituted by the header
+<TT>&#92;documentclass[</TT><A HREF="node10.html#GGG_FOILOPTIONS"
+ NAME="3234"><TT>$FOILOPTIONS</TT></A><code>]{</code><A HREF="node10.html#GGG_FOILCLASS"
+ NAME="3242"><TT>$FOILCLASS</TT></A><code>}</code>,
+where the variables <A HREF="node10.html#GGG_FOILOPTIONS"
+ NAME="3250"><TT>$FOILOPTIONS</TT></A> and <A HREF="node10.html#GGG_FOILCLASS"
+ NAME="3258"><TT>$FOILCLASS</TT></A> can be set
+in the configuration file (by default they are <TT>'10pt'</TT> and
+<TT>'article'</TT> correspondingly).
+A further variable <A HREF="node10.html#GGG_FOILHEADLEVEL"
+ NAME="3266"><TT>$FOILHEADLEVEL</TT></A> holds the level of sectioning
+at which a `foil' is to correspond; the default level is 4 (sub-section).
+
+<P>
+The L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X style file <A HREF="node10.html#GGGfoilhtml.sty"
+ NAME="3274"><TT>foilhtml.sty</TT></A> in the <A HREF="node10.html#GGGtexinputs_"
+ NAME="3282"><TT>texinputs/</TT></A>
+directory provides some additional features for 
+<I>FoilTeX</I>. It implements
+structural markup commands like <TT>&#92;section</TT>,
+<TT>&#92;tableofcontents</TT> for foils. See the directory <A HREF="node10.html#GGGdocs_foilhtml_"
+ NAME="3293"><TT>docs/foilhtml/</TT></A> for
+the details.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html265"
+ HREF="Enode15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html261"
+ HREF="Enode12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html255"
+ HREF="Enode13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html263"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html264"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html266"
+ HREF="Enode15.html">Indicating Differences between Document</A>
+<B> Up:</B> <A NAME="tex2html262"
+ HREF="Enode12.html">Packages and Style-Files</A>
+<B> Previous:</B> <A NAME="tex2html256"
+ HREF="Enode13.html">Fancy List-Markers</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

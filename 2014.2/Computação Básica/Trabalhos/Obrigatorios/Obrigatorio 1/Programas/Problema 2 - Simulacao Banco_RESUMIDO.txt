@@ -1,0 +1,185 @@
+algoritmo "Problema 2 - Simulação Banco
+
+// Respons?vel / Turma: Rodrigo Guimar?es / E
+// Escreva um programa em linguagem C que gerencia algumas transa??es banc?rias:
+// a) Criar 03 contas banc?rias; b) Simular opera??es de dep?sito nestas contas.
+ 
+var
+	inteiro: conta, contat, ope = 0;
+	real: sldc1 = 0, sldc2 = 0, sldc3 = 0, sldcb = 0, dep, sac, transf;
+ 
+inicio
+	escreva("***********************************")
+	escreva("PORTAL R.G.'s BANK")
+	escreva("***********************************")
+	escreva("Digite sua conta ou 0-Sair:")
+	leia(conta)
+ 
+	enquanto ((conta < 0) || (conta > 4)) faca
+		escreva("nConta Invalida! Tente Novamente!"
+		escreva("Digite sua conta ou 0-Sair:")
+		leia(conta)
+	fimenquanto
+
+	se (conta == 0) entao
+		escreva("Operacao Finalizada!")
+	fimse
+
+	enquanto ((conta >=1) && (conta <= 4)) faca
+     
+		se ((conta >= 1) && (conta <=3)) entao
+			escreva("BEM-VINDO A CONTA ", conta," !")
+			escreva("***********************************")
+			escreva("     OPERACOES")
+			escreva("***********************************")
+			escreva("1 - Deposito")
+			escreva("2 - Saque")
+			escreva("3 - Transferencia")
+			escreva("4 - Saldo")
+			escreva("0 - Sair")
+			escreva("***********************************")
+			esreva("Digite a operacao:")
+			leia(ope)
+
+			enquanto ((ope < 0) || (ope > 4)) faca
+				escreva("Operacao Invalida! Tente Novamente!")
+				escreva("Digite a operacao:")
+				leia(ope)
+			fimenquanto
+ 
+		escolha (ope)
+			caso 0
+				escreva("Operacao Finalizada!")
+				escreva("***********************************")
+				escreva("PORTAL R.G.'s BANK")
+				escreva("***********************************")
+				escreva("Digite sua conta ou 0-Sair:")
+				leia(conta)
+
+			caso 1
+				escreva("Valor a ser depositado (RS):")
+				leia(dep)
+
+				escolha (conta)
+					caso 1
+						sldc1 = sldc1 + dep
+ 
+					caso 2
+						sldc2 = sldc2 + dep
+
+					caso 3
+						sldc3 = sldc3 + dep
+ 				fimescolha
+ 
+ 				escreva("Deposito realizado com sucesso!")
+
+			caso 2
+				escreva("Valor a ser sacado (RS):")
+				leia(sac)
+
+				se (sac > sldc1) entao
+					escreva("Saldo insuficiente!")
+				senao
+
+				escolha (conta)
+ 					caso 1
+						sldc1 = sldc1 - (sac * 1.038)
+
+					caso 2
+						sldc2 = sldc2 - (sac * 1.038)
+
+					caso 3
+						sldc3 = SLDC3 - (sac * 1.038)
+				fimescolha
+ 
+				sldcb = sldcb + (0.038 * sac)
+				escreva("Saque realizado com sucesso!")
+				fimse
+
+			caso 3
+				escreva("Conta receptora da transferencia: Conta ")
+				leia(contat)
+				escreva("nValor a ser transferido (RS): ")
+				leia(transf)
+
+				se (transf > sldc1) faca
+					escreva("Saldo insuficiente!")
+				senao
+					sldcb += (0.038 * transf)
+
+					escolha (contat)
+						caso 1
+							sldc1 = sldc1 + transf
+
+						caso 2
+							sldc2 = sldc2 + transf
+ 
+						caso 3
+							sldc3 = sldc3 + transf
+					fimenquanto
+
+					escolha (conta)
+						caso 1
+							sldc1 = sldc1 - (1.038 * transf)
+
+						caso 2
+							sldc2 = sldc2 - (1.038 * transf)
+
+						caso 3
+							sldc3 = sldc3 - (1.038 * transf)
+
+					fimenquanto
+
+					escreva("Transferencia realizada com sucesso!")
+				fimse
+
+			caso 4
+				escolha (conta)
+					caso 1
+						escreva("O saldo disponivel (RS) eh: ", sldc1," .")
+
+					caso 2
+						escreva("O saldo disponivel (RS) eh: ", sldc2," .")
+
+					caso 3
+						escreva("O saldo disponivel (RS) eh: ", sldc3," .")
+				fimescolha
+
+		fimescolha
+
+		senao
+			escreva("    BEM-VINDO A CONTA DO BANCO!")
+			escreva("***********************************")
+			escreva("     OPERACOES")
+			escreva("***********************************")
+			escreva("1 - Saldo")
+			escreva("0 - Sair")
+			escreva("***********************************")
+			escreva("Digite a operacao:")
+			leia(ope)
+
+			enquanto ((ope < 0) || (ope > 4)) faca
+				escreva("Operacao Invalida! Tente Novamente!")
+				escreva("Digite a operacao:")
+				leia(ope)
+			fimenquanto
+
+ 			escolha (ope)
+				caso 0
+					escreva("Operacao Finalizada!")
+					escreva("***********************************")
+					escreva("PORTAL R.G.'s BANK")
+					escreva("***********************************")
+					escreva("Digite sua conta ou 0-Sair:")
+					leia(conta)
+
+				caso 1
+					escreva("O saldo disponivel (RS) eh: ", sldcb, " .")
+
+			fimescolha
+
+		fimse
+
+	fimenquanto
+ 
+fimalgoritmo

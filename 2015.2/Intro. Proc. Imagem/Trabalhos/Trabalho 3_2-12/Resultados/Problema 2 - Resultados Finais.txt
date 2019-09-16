@@ -1,0 +1,18 @@
+Imagem base: lena512.bmp
+	Passos:		1			10			20			50			100			
+	PSNR:		10.47		10.49		10.46		10.40		9.85		
+	VAR:		97		1			0			0			0			
+
+
+Imagem base: marv1.bmp
+	Passos:		1			10			20			50			100			
+	PSNR:		32.92		32.51		30.12		23.35		16.97		
+	VAR:		1			0			0			0			0			
+
+
+Imagem base: mona.bmp
+	Passos:		1			10			20			50			100			
+	PSNR:		9.76		9.79		9.77		9.71		9.33		
+	VAR:		108		1			0			0			0			
+
+

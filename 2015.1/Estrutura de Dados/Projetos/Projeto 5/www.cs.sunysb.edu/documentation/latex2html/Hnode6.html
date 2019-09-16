@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Hypertext Links in Bibliographic References (Citations)</TITLE>
+<META NAME="description" CONTENT="Hypertext Links in Bibliographic References (Citations)">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="next" HREF="Hnode7.html">
+<LINK REL="previous" HREF="Hnode5.html">
+<LINK REL="up" HREF="hypextra.html">
+<LINK REL="next" HREF="Hnode7.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html167"
+ HREF="Hnode7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html163"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html157"
+ HREF="Hnode5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html165"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html166"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html168"
+ HREF="Hnode7.html">Symbolic References between Living</A>
+<B> Up:</B> <A NAME="tex2html164"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html158"
+ HREF="Hnode5.html">Symbolic References shown as</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000126000000000000000">
+Hypertext Links in Bibliographic References (Citations)</A>
+</H2>
+<!--Table of Child-Links-->
+<UL>
+<LI><A NAME="tex2html169"
+ HREF="Hnode6.html#SECTION000126010000000000000"><TT>&#92;hypercite</TT></A>
+<LI><A NAME="tex2html170"
+ HREF="Hnode6.html#SECTION000126020000000000000"><TT>&#92;htmlcite</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<A NAME="1581">&#160;</A><A NAME="1582">&#160;</A>
+<A NAME="1583">&#160;</A>
+<A NAME="2535">&#160;</A>
+<BR>
+If a report or a book that is cited (using the <TT>&#92;cite</TT> command) 
+is available (or there is information about it) on the World-Wide
+Web, then it is possible to add the appropriate hypertext links
+in your bibliographic database (the <TT>.bib</TT>) file. 
+
+<P>
+
+<P><P>
+<BR>
+
+<A NAME="1588">&#160;</A>
+<A NAME="2536">&#160;</A>
+<A NAME="2537">&#160;</A>
+<BR>
+
+Here is an example of a bibliographic entry for the original
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X [<A NAME="lamp:latex"
+ HREF="node9">1</A>] blue book:
+<PRE>
+@string{tugURL="\htmladdnormallink
+{http://www.tug.org/}{http://www.tug.org}"}
+
+@string{danteURL="\htmladdnormallink
+{http://www.dante.de/}{http://www.dante.de}"}
+
+@book{lamp:latex,
+title = "LaTeX User's Guide \& Reference Manual, 2nd edition",
+year = 1994 ,
+author = "Leslie Lamport",
+Publisher = "Addison--Wesley Publishing Company, Inc.",
+note = "Online information on {\TeX} and {\LaTeX} is available at "
+ # tugURL # " and " # danteURL }
+</PRE>
+See the <A HREF="#biblio">bibliography</A> for how this will appear.
+<BR>
+No other modifications are required; L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X and BibT<SMALL>E</SMALL>X should work as normal.
+<A NAME="2538">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1f</SUP>
+<BR>
+Note that it would be sensible to put the <TT>@string</TT> commands
+into a separate file, <A HREF="node10.html#GGGurls.bib"
+ NAME="3251"><TT>urls.bib</TT></A> say, 
+loaded with the main file via
+<BR> <code>\bibliography{urls,...}</code>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1f</SUP>
+<BR>
+
+<P>
+
+<P></P>
+<A NAME="1608">&#160;</A>
+<A NAME="1609">&#160;</A><A NAME="harvard">&#160;</A>
+<BR>
+
+For those who use the Harvard style for references
+<A NAME="tex2html10"
+ HREF="http://www.arch.su.edu.au/~peterw/latex/harvard/">there exists a special conversion add-on package</A>.
+
+<P>
+<A NAME="2540">&#160;</A>
+<A NAME="2541">&#160;</A>
+<A NAME="2542">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1g</SUP>
+<BR>
+The 
+<I>natbib</I> package, written for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X by <A NAME="3261">&#160;</A> <A NAME="tex2html11"
+ HREF="mailto:daly@linmpi.dnet.gwdg.de">Patrick Daly</A>,
+provides even more flexibility in the way a reference may be cited. 
+All the features of <A HREF="Enode12.html#natbib">this package</A> are implemented 
+for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> via the <A HREF="node10.html#GGGnatbib.perl"
+ NAME="3266"><TT>natbib.perl</TT></A> file.
+(Indeed there is even a mode whereby 
+<I>natbib</I> handles
+the Harvard style of citation. 
+This requires loading also the 
+<I>nharvard</I> <A HREF="Enode12.html#nharvard">package</A>.)
+
+<P>
+
+<P>
+<BR>
+
+<B>Thanks...</B> to <A NAME="3274">&#160;</A> <A NAME="tex2html12"
+ HREF="http://www.tropos.de/personal/wilck.html">Martin Wilck</A> for the bulk of the work 
+in producing this extension, and to <A NAME="3277">&#160;</A> <A NAME="tex2html13"
+ HREF="http://www.mpce.mq.edu.au/~ross/">Ross Moore</A> for 
+necessary adjustments to allow it to work correctly with the 
+<A HREF="Hnode11.html#Segmentation">document segmentation strategy</A>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1g</SUP>
+<BR>
+
+<P>
+<A NAME="2543">&#160;</A>
+
+<H4><A NAME="SECTION000126010000000000000">&#160;</A><A NAME="hypercite">&#160;</A>
+<BR>
+<TT>&#92;hypercite</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Analogous to <TT>&#92;hyperref</TT> is the <TT>&#92;hypercite</TT> command,
+which allows a free-form textual hyperlink to the bibliography,
+whereas the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset version contains the usual citation code.
+The allowed syntax is as follows.
+<BLOCKQUOTE>
+<TT>&#92;hypercite</TT><code>[int]{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>opt-LaTeX</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+<BR>
+<TT>&#92;hypercite</TT><code>[cite]{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>opt-LaTeX</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+<BR>
+<TT>&#92;hypercite</TT><code>{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>opt-LaTeX</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+<P>
+<BR>
+
+<P>
+<TT>&#92;hypercite</TT><code>[nocite]{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+<BR>
+<TT>&#92;hypercite</TT><code>[no]{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+<BR>
+<TT>&#92;hypercite</TT><code>[ext]{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+</BLOCKQUOTE>
+The first three forms are equivalent; 
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X uses <TT>&#92;cite</TT><code>[</code><TT>
+&lt;<I>opt-LaTeX</I>&gt;</TT><code>]</code><TT>
+&lt;<I>label</I>&gt;</TT>,
+after placing the <TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>.
+Note that <code>{</code><TT>
+&lt;<I>opt-LaTeX</I>&gt;</TT><code>}</code> <EM>must</EM> be specified, 
+even if empty `<code>{}</code>'.
+
+<P>
+Similarly the latter three forms are equivalent, 
+with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X using <TT>&#92;nocite</TT><code>{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>, 
+to force the particular reference to appear on the bibliography page, 
+even though no explicit marker is placed at this point.
+(Thus there is no need for an optional  <TT>
+&lt;<I>opt-LaTeX</I>&gt;</TT> argument.)
+<BR>
+Within the <TT>HTML</TT> version a hyperlink is produced when the <TT>
+&lt;<I>HTML-text</I>&gt;</TT> 
+is not empty. External label files are also searched, 
+in order to match the symbolic <TT>
+&lt;<I>label</I>&gt;</TT>, see also 
+<A HREF="Hnode7.html#externcite"><TT>&#92;externalcite</TT></A>.
+
+<P>
+
+<P></P>
+<A NAME="hyperciteXmpl">&#160;</A><A NAME="2547">&#160;</A>
+<A NAME="2548">&#160;</A>
+<BR>
+<A HREF="Onode1.html#hypcites">Earlier</A> in this manual the following source code was used:
+<PRE>
+commands described in the \LaTeX{} \htmlcite{blue book}{lamp:latex}, 
+...
+as well as many other \LaTeX{} constructions, such as are described in 
+the \LaTeX{} \hypercite{\emph{Companion}}{\emph{Companion}}{}{goossens:latex} 
+and \LaTeX{} \hypercite{\emph{Graphics Companion} (e.g. \Xy-pic)}%
+{\emph{Graphics Companion}}{\Xy-pic}{goossens:latexGraphics};
+</PRE>
+which produces:
+<BLOCKQUOTE>
+commands described in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X <A NAME="lamp:latex"
+ HREF="node9">blue book</A>, 
+<BR>&nbsp;&nbsp;...
+<BR>
+as well as many other L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X constructions, such as are described in 
+the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X <A NAME="goossens:latex"
+ HREF="node9"><EM>Companion</EM></A> 
+and L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X <A NAME="goossens:latexGraphics"
+ HREF="node9"><EM>Graphics Companion</EM> (e.g. X<SUB><BIG>Y</BIG></SUB>-pic)</A>;
+</BLOCKQUOTE>
+whereas in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset version one sees:
+<BLOCKQUOTE>
+commands described in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X blue book,
+<BR>
+&nbsp;&nbsp;...
+<BR>
+as well as many other L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X constructions, such as are described in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X 
+<I>Companion</I>[2] and L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X <I>Graphics Companion</I>[3, X<SUB><BIG>Y</BIG></SUB>-pic];
+</BLOCKQUOTE>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2553">&#160;</A>
+
+<H4><A NAME="SECTION000126020000000000000">&#160;</A><A NAME="htmlcite">&#160;</A>
+<BR>
+<TT>&#92;htmlcite</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Analogous to <TT>&#92;htmlref</TT> is the <TT>&#92;htmlcite</TT> command,
+which creates a textual hyperlink to a place on the document's bibliography page, 
+but without displaying any reference marker in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset version.
+(See <A HREF="Hnode6.html#hyperciteXmpl">above</A> for an example.)
+
+<P>
+The <TT>&#92;externalcite</TT> 
+<A HREF="Hnode7.html#externcite">command</A>
+provides a similar facility when the bibliography page is ``external'';
+that is, not part of the current document.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="1739">&#160;</A>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html167"
+ HREF="Hnode7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html163"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html157"
+ HREF="Hnode5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html165"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html166"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html168"
+ HREF="Hnode7.html">Symbolic References between Living</A>
+<B> Up:</B> <A NAME="tex2html164"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html158"
+ HREF="Hnode5.html">Symbolic References shown as</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

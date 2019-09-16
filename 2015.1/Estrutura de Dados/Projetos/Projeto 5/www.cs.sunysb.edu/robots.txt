@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /secure
+Disallow: /secure/private_data
+Disallow: /wreq-cgi-bin/

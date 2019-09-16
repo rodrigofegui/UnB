@@ -1,0 +1,10 @@
+C Brasília 47 15 143
+C Campinas 42 10 143
+G Usina 1 25 100 1000
+G Itaipu 2 2 100 1000
+I inter_1 2 2 5 5 100 0.1 15 20
+A adapta_1 5 5
+I inter_2 42 10 5 5 100 0.1 15 20
+I inter_3 5 5 47 15 100 0.394383 1 20
+I inter_4 1 25 5 5 100 0.1 15 20
+

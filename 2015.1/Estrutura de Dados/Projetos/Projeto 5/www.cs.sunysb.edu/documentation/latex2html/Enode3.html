@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Alternate Font Encodings</TITLE>
+<META NAME="description" CONTENT="Alternate Font Encodings">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="next" HREF="Enode4.html">
+<LINK REL="previous" HREF="Enode2.html">
+<LINK REL="up" HREF="Enode2.html">
+<LINK REL="next" HREF="Enode4.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html119"
+ HREF="Enode4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html115"
+ HREF="Enode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html109"
+ HREF="Enode2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html117"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html118"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html120"
+ HREF="Enode4.html">Multi-lingual documents, using Images</A>
+<B> Up:</B> <A NAME="tex2html116"
+ HREF="Enode2.html">Internationalisation</A>
+<B> Previous:</B> <A NAME="tex2html110"
+ HREF="Enode2.html">Internationalisation</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000112100000000000000">&#160;</A><A NAME="fontEncodings">&#160;</A>
+<BR>
+Alternate Font Encodings
+</H3>
+<A NAME="830">&#160;</A>
+<BR>
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> can interpret input using 8-bit fonts, 
+provided it is told which font-encoding is being used.
+This can be done by appending an ``extension'' option
+to the  <TT>-html_version</TT>  command-line switch; e.g.
+<PRE>
+ latex2html -html_version 3.2,latin2 ....  myfile.doc
+</PRE>
+declares that any 8-bit characters in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source
+within the file <TT>myfile.doc</TT> are to be interpreted
+according to the ISO-8859-2 (ISO-Latin2) font encoding,
+rather than the default of ISO-8859-1 (ISO-Latin1).
+
+<P>
+Furthermore, ISO-10646 (Unicode) entities can be embedded within
+the output produced by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+For this a further ``extension'' option is appended; viz.
+<PRE>
+ latex2html -html_version 3.2,latin2,unicode ....  myfile.doc
+</PRE>
+declares that the input is ISO-Latin2, but that 8-bit characters
+be output as the corresponding Unicode number.
+For example, e.g. the Polish <IMG
+ WIDTH="10" HEIGHT="11" ALIGN="BOTTOM" BORDER="0"
+ SRC="Eimg1.gif"
+ ALT="\L">
+would become <TT>&amp;#321;</TT>.
+Otherwise the browser might render the character as ,
+which is the character in the corresponding place for ISO-Latin1.
+The input encodings that are recognised are listed in 
+<A HREF="#tab_encodings">the following table</A>.
+
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="2222">&#160;</A>
+<TABLE>
+<CAPTION><STRONG>Table 1:</STRONG>
+Supported Font-encodings</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<TR><TH ALIGN="LEFT"><TT>
+<B>extension</B></TT></TH>
+<TD ALIGN="LEFT">(notes)</TD>
+<TH ALIGN="LEFT"><B>encoding</B></TH>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+unicode </TT></TD>
+<TD ALIGN="LEFT">(partial)</TD>
+<TD ALIGN="LEFT">ISO-10646 (Unicode)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+latin1 </TT></TD>
+<TD ALIGN="LEFT">(default)</TD>
+<TD ALIGN="LEFT">ISO-8859-1 (ISO-Latin1)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+latin2 </TT></TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">ISO-8859-2 (ISO-Latin2)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+latin3 </TT></TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">ISO-8859-3 (ISO-Latin3)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+latin4 </TT></TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">ISO-8859-4 (ISO-Latin4)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+latin5 </TT></TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">ISO-8859-9 (ISO-Latin5)</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT> 
+latin6 </TT></TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">ISO-8859-10 (ISO-Latin6)</TD>
+</TR>
+</TABLE>
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+If multiple extension options are requested, then later ones
+override earlier ones.
+<BR>
+Only in rare circumstances should it be necessary to do this.
+For example, if the latter encoding does not define characters
+in certain places, but an earlier encoding does so, and these
+characters occur within the source. 
+In this case the <TT>unicode</TT> extension ought to be loaded also,
+else browsers may get quite confused about what to render.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html119"
+ HREF="Enode4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html115"
+ HREF="Enode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html109"
+ HREF="Enode2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html117"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html118"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html120"
+ HREF="Enode4.html">Multi-lingual documents, using Images</A>
+<B> Up:</B> <A NAME="tex2html116"
+ HREF="Enode2.html">Internationalisation</A>
+<B> Previous:</B> <A NAME="tex2html110"
+ HREF="Enode2.html">Internationalisation</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

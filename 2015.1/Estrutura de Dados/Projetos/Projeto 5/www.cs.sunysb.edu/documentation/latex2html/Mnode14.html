@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Customising the Navigation Panels</TITLE>
+<META NAME="description" CONTENT="Customising the Navigation Panels">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="previous" HREF="Mnode10.html">
+<LINK REL="up" HREF="userman.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html209"
+ HREF="../manual/problems.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html205"
+ HREF="userman.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html199"
+ HREF="Mnode13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html207"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html208"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html210"
+ HREF="../manual/problems.html">Problems</A>
+<B> Up:</B> <A NAME="tex2html206"
+ HREF="userman.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html200"
+ HREF="Mnode13.html">Handling ``order-sensitive'' Commands</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000134000000000000000">&#160;</A><A NAME="sec:navpanel">&#160;</A>
+<BR>
+Customising the Navigation Panels
+</H2>
+<A NAME="1969">&#160;</A>
+<A NAME="1970">&#160;</A>
+<BR>
+The navigation panels are the strips containing ``buttons'' and text 
+that appears at the top and perhaps at the bottom 
+of each generated page and provides hypertext links 
+to other sections of a document. 
+Some of the options and variables that control whether and 
+where it should appear are presented in <A HREF="Mnode6.html#navoptions">an earlier section</A>. 
+
+<P>
+<A NAME="1976">&#160;</A>
+<A NAME="2152">&#160;</A>
+<BR>
+A simple mechanism for appending customised buttons to the navigation
+panel is provided by the command <TT>&#92;htmladdtonavigation</TT>. 
+This takes one argument which L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> appends to the navigation panel. 
+For example,
+<PRE>
+\htmladdtonavigation{\htmladdnormallink
+   {\htmladdimg{http://server/mybutton.gif}}{http://server/link}}
+</PRE>
+will add an active button <A HREF="node10.html#GGGmybutton.gif"
+ NAME="4798"><TT>mybutton.gif</TT></A> pointing to the specified location.
+
+<P>
+<A NAME="1984">&#160;</A>
+<BR>
+Apart from these facilities it is also 
+possible to specify completely what appears in the navigation panels
+and in what order. As each section is processed, L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>
+assigns relevant information to a number of global variables.
+These variables are used by the
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+subroutines <TT>top_navigation_panel</TT> and
+<TT>bottom_navigation_panel</TT>,
+where the navigation panel is constructed as a string consisting of
+these variables and some formatting information. 
+
+<P>
+<A NAME="2153">&#160;</A>
+<BR>
+These subroutines can be redefined in a system- 
+or user-configuration file (respectively, 
+<A HREF="node10.html#GGG_LATEX2HTMLDIR_latex2html.config"
+ NAME="4809"><TT>$LATEX2HTMLDIR/latex2html.config</TT></A> and <A HREF="node10.html#GGG_HOME_.latex2html-init"
+ NAME="4817"><TT>$HOME/.latex2html-init</TT></A>). 
+Any combination of text, <TT>HTML</TT> tags, 
+and the variables mentioned below is acceptable.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+<P>
+
+<P>
+<BR>
+The control-panel variables are:
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="1997">&#160;</A>
+<A NAME="1998">&#160;</A>
+<BR>
+
+<B>Iconic links (buttons):</B>
+<DL><DT>
+ 
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_UP"
+ NAME="4825"><TT>$UP</TT></A></B>
+<DD>Points up to the ``parent'' section;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_NEXT"
+ NAME="4833"><TT>$NEXT</TT></A></B>
+<DD>Points to the next section;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_NEXT_GROUP"
+ NAME="4841"><TT>$NEXT_GROUP</TT></A></B>
+<DD>Points to the next ``group'' section;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_PREVIOUS"
+ NAME="4849"><TT>$PREVIOUS</TT></A></B>
+<DD>Points to the previous section;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_PREVIOUS_GROUP"
+ NAME="4857"><TT>$PREVIOUS_GROUP</TT></A></B>
+<DD>Points to the previous ``group'' section;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_CONTENTS"
+ NAME="4865"><TT>$CONTENTS</TT></A></B>
+<DD>Points to the contents page if there is one;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_INDEX"
+ NAME="4873"><TT>$INDEX</TT></A></B>
+<DD>Points to the index page if there is one.
+</DL>
+
+<P>
+<A NAME="2013">&#160;</A>
+<A NAME="2014">&#160;</A>
+<BR>
+<B>Textual links (section titles):</B>
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_UP_TITLE"
+ NAME="4881"><TT>$UP_TITLE</TT></A></B>
+<DD>Points up to the ``parent'' section;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_NEXT_TITLE"
+ NAME="4889"><TT>$NEXT_TITLE</TT></A></B>
+<DD>Points to the next section;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_NEXT_GROUP_TITLE"
+ NAME="4897"><TT>$NEXT_GROUP_TITLE</TT></A></B>
+<DD>Points to the next ``group'' section;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_PREVIOUS_TITLE"
+ NAME="4905"><TT>$PREVIOUS_TITLE</TT></A></B>
+<DD>Points to the previous section;
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_PREVIOUS_GROUP_TITLE"
+ NAME="4913"><TT>$PREVIOUS_GROUP_TITLE</TT></A></B>
+<DD>Points to the previous ``group'' section.
+</DL>
+If the corresponding section exists, each iconic button will contain an
+active link to that section. If the corresponding section does
+not exist, the button will be inactive. If the section corresponding
+to a textual link does not exist then the link will be empty.
+
+<P>
+The ``next group'' and ``previous group'' are rarely used, 
+since it is usually possible to determine
+which are the next/previous logical pages in a document.
+However these may be needed occasionally with segmented documents,
+when the segments have been created with different values
+for the <A HREF="node10.html#GGG_MAX_SPLIT_DEPTH"
+ NAME="4921"><TT>$MAX_SPLIT_DEPTH</TT></A> variable. 
+This is quite distinct from the segmented document effect 
+in which the first page of one segment may have its `<EM>PREVIOUS</EM>'
+button artificially linked to the first page of the previous segment, 
+rather than the last page.
+
+<P>
+<A NAME="2029">&#160;</A>
+<BR>
+The number of words that appears in each textual link
+is controlled by the variable <A HREF="node10.html#GGG_WORDS_IN_NAVIGATION_PANEL_TITLES"
+ NAME="4929"><TT>$WORDS_IN_NAVIGATION_PANEL_TITLES</TT></A>
+which may also be changed in the configuration files.
+
+<P>
+<A NAME="2032">&#160;</A>
+<BR>
+Below is an example of a navigation panel for the bottom of <TT>HTML</TT> pages.
+(Note that the ``<TT>.</TT>'' is <A HREF="node10.html#GGGPerl"><I>Perl</I></A>'s string-concatenation operator 
+and ``<TT>#</TT>'' signifies a comment.)
+<PRE>
+sub bot_navigation_panel {
+    #  Start with a horizontal rule and descriptive comment
+    "&lt;HR&gt;\n" . "&lt;!--Navigation Panel--&gt;".
+    # Now add a few buttons, with a space between them
+       "$NEXT $UP $PREVIOUS $CONTENTS $INDEX $CUSTOM_BUTTONS" . 
+    # Line break    
+       "\n&lt;BR&gt;" .       
+    # If ``next'' section exists, add its title to the navigation panel
+       ($NEXT_TITLE ? "\n&lt;B&gt; Next:&lt;/B&gt; $NEXT_TITLE" : undef) .   
+    # Similarly with the ``up'' title ...
+       ($UP_TITLE ? "\n&lt;B&gt;Up:&lt;/B&gt; $UP_TITLE\n" : undef) . 
+    # ... and the ``previous'' title
+       ($PREVIOUS_TITLE ? "\n&lt;B&gt; Previous:&lt;/B&gt; $PREVIOUS_TITLE\n" : undef) . 
+}
+</PRE>
+Note that extra buttons may be included by defining suitable code for the container
+<A HREF="node10.html#GGG_CUSTOM_BUTTONS"
+ NAME="4940"><TT>$CUSTOM_BUTTONS</TT></A>. 
+The use of explicit `newline' (<code>\n</code>) characters is not necessary for the
+on-screen appearance of the navigation panel within a browser window. However 
+it maintains an orderly organisation within the <TT>.html</TT> files themselves,
+which is helpful if any hand-editing is later required, 
+or simply to read their contents.
+The corresponding subroutine for a navigation-panel at the top of a page
+need not use the rule <TT>&lt;HR&gt;</TT>, and would require a break (<TT>&lt;BR&gt;</TT>)
+or two at the end, to give some visual separation from the following material.
+<A NAME="2044">&#160;</A>
+<A NAME="2045">&#160;</A>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html209"
+ HREF="../manual/problems.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html205"
+ HREF="userman.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html199"
+ HREF="Mnode13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html207"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html208"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html210"
+ HREF="../manual/problems.html">Problems</A>
+<B> Up:</B> <A NAME="tex2html206"
+ HREF="userman.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html200"
+ HREF="Mnode13.html">Handling ``order-sensitive'' Commands</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,6 @@
+mkdir Construcoes
+cd Construcoes
+cmake ..
+make
+ls
+./Trab2_MP_Rodrigo

@@ -1,0 +1,430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0044)http://fusshuhn.ourfamily.com/cppincomp.html -->
+<HTML><HEAD><TITLE>Incompatibilities between ANSI C++ and ARM C++ 2nd ed</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2800.1400" name=GENERATOR>
+<META 
+content="C++,incompatibility,DWP,ARM,CD2,ANSI C++,ISO C++,C++ standard,changes" 
+name=keywords>
+<META content="The C++ Incompatibility Page" name=description></HEAD>
+<BODY><!-- '"AWS"' --><!-- Auto Banner Insertion Begin -->
+<DIV id=aws_4111 align=center>
+<STYLE>.awsvsm A {
+	FONT-SIZE: 12px; COLOR: blue; FONT-FAMILY: verdana,sans-serif; TEXT-DECORATION: none
+}
+.awsvsm {
+	FONT-SIZE: 12px; COLOR: blue; FONT-FAMILY: verdana,sans-serif; TEXT-DECORATION: none
+}
+.awsvsm:link {
+	FONT-SIZE: 12px; COLOR: blue; FONT-FAMILY: verdana,sans-serif; TEXT-DECORATION: none
+}
+</STYLE>
+
+<H1><B><FONT size=+3>ANSI/ISO C++ Incompatibility Page</FONT></B></H1></CENTER>
+<CENTER><FONT size=-1><B>Author:&nbsp;</B> <A 
+href="http://www.fusshuhn.de/">Ronald Fischer</A></FONT> <BR><I><FONT 
+face=Arial,Helvetica><FONT size=-2>&nbsp;&nbsp;&nbsp; Most recently modified: 
+2002-07-18</FONT></FONT></I></CENTER>
+<P>The&nbsp; <A href="http://www.fusshuhn.de/c++draft_index.html">ISO C++ 
+Standard</A>&nbsp; (referred to here as <B><I>DWP</I></B>) supersedes the (not 
+always unambiguous) "de-facto" standard based on <I>The Annotated C++ Reference 
+2<SUP>nd</SUP> ed </I>by Ellis/Stroustrup (referred to here as 
+<B><I>ARM</I></B>). While containing mostly extensions,&nbsp;&nbsp; a few 
+incompatibilities also exist: Constructs that used to work under ARM rules now 
+cease to work, or have a different meaning. 
+<P>This page is intended to contain a&nbsp; complete list of <B>all</B> 
+incompatibilities.&nbsp; Nevertheless I fear that this list is far from being 
+complete and probably contains quite a few errors. If anyone encounters an error 
+or omission, please send a message to&nbsp; <A 
+href="mailto:coconut@unladenswallow.de">coconut@unladenswallow.de</A>.&nbsp; If 
+you report a new incompatibility not mentioned here, <B><FONT 
+color=#000000>please include sample code to demonstrate your point</FONT></B>. 
+<P>No suggestions are given on how to <B><I>port</I></B> existing code to 
+ANSI&nbsp; C++. The sole intent of this page is to make experienced C++ 
+programmers aware of what&nbsp; to look for if they are writing new code. New 
+C++ features are not discussed, for the simple reason that&nbsp;&nbsp; excellent 
+sites devoted to this topic already exist - for instance <I>Beyond the ARM 
+</I>(<A 
+href="http://www.corfield.org/cplusplus.phtml">http://www.corfield.org/cplusplus.phtml</A>) 
+and Johannes Weidl's STL tutorial (<A 
+href="http://www.infosys.tuwien.ac.at/Research/Component/tutorial/prwmain.htm">http://www.infosys.tuwien.ac.at/Research/Component/tutorial/prwmain.htm</A>). 
+
+<P>
+<HR width="100%">
+<BR><B><U>Contents:</U></B> 
+<BLOCKQUOTE><A 
+  href="#incompatibilities">Incompatibilities</A> 
+  <BLOCKQUOTE><A href="#type_string_lit">Type 
+    for string literals changed</A> <BR><A 
+    href="#scope_for_var">Variables declared in a 
+    for-loop are local to the loop</A> <BR><A 
+    href="#linkage_inline_func">Inline functions 
+    have external linkage</A> <BR><A 
+    href="#scope_friend_func">Non-injection of 
+    friend functions into containing scope</A> <BR><A 
+    href="#overload">Different rules for overload 
+    resolution</A> <BR><A 
+    href="#conversion_operator">Conversion 
+    operators to const- and non-const type</A> <BR><A 
+    href="#reserved_names">New reserved names</A> 
+    <BR><A href="#lib_header">Access to entities 
+    defined in standard library headers</A> <BR><A 
+    href="#operator_new">Return value of default 
+    operator new</A> <BR><A 
+    href="#operator_delete">Accessability of 
+    operator delete</A> <BR><A 
+    href="#new_in_funcall">Using dynamic memory 
+    allocation expressions as actual parameter on function calls</A> <BR><A 
+    href="#member_pointer">Member pointers to 
+    class instances that are declared, but not defined</A></BLOCKQUOTE><A 
+  href="#be_aware_of">Other things you should be 
+  aware of</A> 
+  <BLOCKQUOTE><A 
+    href="#obsolete_features">Obsolete 
+    features</A> 
+    <BLOCKQUOTE><A href="#file_scope_statics">No 
+      static declarations on file scope</A> <BR><A 
+      href="#old_style_cast">No old-style cast</A> 
+      <BR><A href="#access_decl_adj">No 
+      re-adjusting of access declarations</A></BLOCKQUOTE><A 
+    href="#clarification">Clarifications</A> 
+    <BLOCKQUOTE><A 
+      href="#lib_header_naming">Change in the 
+      naming of library headers</A> <BR><A 
+      href="#template">Changes with respect to 
+      templates</A></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE>
+<HR width="100%">
+
+<P><A name=incompatibilities></A><FONT size=+2>Incompatibilities</FONT> 
+<H4><A name=type_string_lit></A>Type for string literals changed</H4>The type of 
+a string literal is now <FONT face="Courier New,Courier">char const[]</FONT> 
+instead of <FONT face="Courier New,Courier">char[]</FONT>, as it used to 
+be.&nbsp; This makes the following code invalid: 
+<P><TT>template &lt;class T&gt; void g(T* a, T* b)</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+{ cout &lt;&lt; a &lt;&lt; b; }</TT> 
+<P><TT>void g()</TT> <BR><TT>{</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char&nbsp; a[] = "first"; // 
+OK (allowed by <I>DWP 8.5.2</I>)</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; g(a, "second"); // ERROR</TT> 
+<BR><TT>}</TT> 
+<P>Note that 
+<P><TT>extern void f(char*);</TT> <BR><TT>void g()</TT> <BR><TT>{</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f("hello world");</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char* z = "last";</TT> 
+<BR><TT>}</TT> 
+<P>is still allowed due <I>DWP 4.2§2</I>, but is considered a <B>deprecated</B> 
+feature, which may be removed in a future revision of the standard. A list of 
+deprecated features can be found&nbsp; in <I>DWP Annex 0</I>. 
+<P>Example contributed by&nbsp; <A href="mailto:Bonnard.V@wanadoo.fr">Valentin 
+Bonnard</A>. <BR><I>See also DWP 2.13.4</I> 
+<P>
+<HR width="100%">
+
+<H4><A name=scope_for_var></A>Variables declared in a for-loop are local to the 
+loop</H4>A variable declared in a for-loop can only be accessed inside the loop 
+body, acording to the DWP rules. The following program exhibits different 
+behaviour when compiled under DWP ruling, as opposed to ARM ruling: 
+<P><TT>&nbsp;&nbsp;&nbsp; int i;</TT> 
+<P><TT>&nbsp;&nbsp;&nbsp; void f()</TT> <BR><TT>&nbsp;&nbsp;&nbsp; {</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(int i=0; i&lt;10; 
+i++)</TT> <BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(...) 
+break;</TT> <BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(i==10) { ... } /* means 
+local i under ARM, but ::i under DWP */</TT> <BR><TT>&nbsp;&nbsp;&nbsp; }</TT> 
+<P>
+<HR width="100%">
+<BR>&nbsp; 
+<H4><A name=linkage_inline_func></A>Inline functions have external 
+linkage</H4>According to ARM, inline functions at file scope had internal 
+linkage. They have external linkage now. 
+<P>The following example was legal under ARM. It is illegal under DWP (but no 
+diagnostics required): 
+<P><TT>// This is file x.cc</TT> <BR><TT>inline int f() { return 0; }</TT> 
+<P><TT>// This is file y.cc</TT> <BR><TT>inline int f() { return 1; }</TT> 
+<P>Thanks to&nbsp; <A href="mailto:Bonnard.V@wanadoo.fr">Valentin 
+Bonnard</A>&nbsp; for pointing this out. 
+<P>Furthermore (as <B>Sam Saariste</B> vividly remarked), Scott Meyer explains 
+in <I>More Effective C++ (page 134)</I> an interesting consequence for local 
+statics declared within the body of an inline function: In 
+<P><TT>inline T* fetch_T() { static T* the_T = new T; return the_T; }</TT> 
+<P>every translation unit had its own copy of <FONT 
+face="Courier New,Courier">the_T</FONT> under ARM ruling, but under DWP ruling, 
+all translation units share the same copy of <FONT 
+face="Courier New,Courier">the_T</FONT>. 
+<P><I>See DWP 7.1.2</I> 
+<P>
+<HR width="100%">
+<BR>&nbsp; 
+<H4><A name=scope_friend_func></A>Non-injection of friend functions into 
+containing scope</H4>The following example was legal under ARM. It is illegal 
+under DWP. 
+<P><TT>class C { friend void f(); };</TT> <BR><TT>void g() { f(); } // f not 
+declared</TT> 
+<P>Under ARM ruling, the friend declaration would have implied an implicit <FONT 
+face="Courier New,Courier">extern void f();</FONT> on file scope. Under DWP, 
+this applies only when Koenig lookup succeeds (<I>DWP 3.4.2</I>). For example, 
+the following code would be legal under ARM and DWP: 
+<P><TT>class C { friend void f(C const*); };</TT> <BR><TT>void g() { f((C 
+const*)0); } // fine - f is now found</TT> 
+<P>Thanks to&nbsp; <A href="mailto:wmm@fastdial.net">William M. Miller</A>&nbsp; 
+for pointing this out. <BR><I>See DWP 7.3.1.2 § 3</I> 
+<P>
+<HR width="100%">
+<BR>&nbsp; 
+<H4><A name=overload></A>Different rules for overload resolution</H4>The rules 
+for overload resolution changed in several areas. Examples (<FONT size=-1><FONT 
+color=#ff0000>reviewers: please</FONT><FONT color=#ffff00>&nbsp;</FONT></FONT> 
+<A href="mailto:r-pescador@rocketmail.com">contribute </A><FONT size=-1><FONT 
+color=#ff0000>new examples</FONT><FONT color=#ffff00>)</FONT></FONT>: 
+<P>(The following example was suggested by&nbsp; <A 
+href="mailto:Bonnard.V@wanadoo.fr">Valentin Bonnard</A> ) 
+<P><TT>struct MyString {</TT> <BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+char&amp; operator[] (size_t);</TT> <BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+operator char* ();</TT> <BR><TT>};</TT> <BR><TT>MyString s;</TT> 
+<P>Under ARM ruling, the expression <FONT face="Courier New,Courier">s[2]</FONT> 
+was legal and equivalent to <FONT 
+face="Courier New,Courier">s.operator[](2)</FONT>.&nbsp; Under DWP ruling, it is 
+<U>implementation dependent</U> if <FONT face="Courier New,Courier">s[2</FONT>] 
+is legal or not: Selecting <B><FONT 
+face="Courier New,Courier">MyString::operator[]</FONT></B> implies no conversion 
+for <FONT face="Courier New,Courier">s</FONT>, and an integral promotion of its 
+argument, <FONT face="Courier New,Courier">2</FONT>, to <FONT 
+face="Courier New,Courier">2u</FONT> or <FONT 
+face="Courier New,Courier">2ul</FONT>, since <FONT 
+face="Courier New,Courier">size_t</FONT> must be an unsigned integral type. 
+Selecting <B><FONT face="Courier New,Courier">MyString::operator 
+char*</FONT></B> means doing a user-defined conversion on <FONT 
+face="Courier New,Courier">s</FONT> (converting it from <FONT 
+face="Courier New,Courier">MyString</FONT> to <FONT 
+face="Courier New,Courier">char*</FONT>), but&nbsp; possibly also an integral 
+promotion of <FONT face="Courier New,Courier">2</FONT>: The builtin operator[] 
+expects a <FONT face="Courier New,Courier">ptrdiff_t</FONT> as argument, and 
+this must be <I><FONT face="Courier New,Courier">typedef</FONT></I>ed to a 
+signed type. If <FONT face="Courier New,Courier">ptrdiff_t</FONT> happens to be 
+<FONT face="Courier New,Courier">int</FONT>, no promotion is necessary and none 
+of the two alternatives fulfils the requirement <I>over.match.best</I> defined 
+in <I>DWP 13.3.3</I> (being strictly better-or-equal in all arguments and 
+strictly better in at least one), hence the call is <U>ambiguous</U>. If 
+ptrdiff_t is defined to be long, a promotion is necessary from 2 to 2l. In this 
+case, the first alternative (MyString::operator[]) is better in the implied 
+argument, s, and both alternatives are equal in the second argument, 2, hence 
+s[2] is <U>unambiguous</U> and the first alternative is chosen. 
+<P>
+<HR width="100%">
+
+<H4><A name=conversion_operator></A>Conversion operators to const- and non-const 
+type</H4>As <B><I>Hartmut Schäfer </I></B>kindly explained, there is an 
+incompatibility regarding conversion operators.&nbsp; Consider 
+<P><TT>struct Foo;</TT> <BR><TT>void f(Foo const&amp;);</TT> <BR><TT>struct 
+Bar</TT> <BR><TT>{</TT> 
+<BLOCKQUOTE><TT>operator Foo&amp;();</TT> <BR><TT>operator Foo 
+  const&amp;();</TT></BLOCKQUOTE><TT>};</TT> <BR><TT>Bar b;</TT> 
+<P>Given this definitions, a call to <TT>f(b)</TT> used to be equivalent to 
+<TT>f(b.operator Foo const&amp; ())</TT>. This is no longer the case: According 
+to the new rules [<I>see DWP 13.3.1.6</I>], the call is now equivalent to 
+<TT>f(b.operator Foo&amp;())</TT>. <BR>&nbsp; 
+<P>
+<HR width="100%">
+
+<H4><A name=reserved_names></A>New reserved names</H4>There are additional names 
+reserved as keywords, which can no longer be used for naming identifiers: 
+<TT>explicit, bool, mutable, template, typeid, typename, and, or, xor, bitor, 
+compl, bitand, and_eq, or_eq, xor_eq, not, not_eq, const_cast, dynamic_cast, 
+reinterpret_cast, static_cast, true, false, namespace, using, throw, try, 
+catch</TT>. For example, the following program, while legal under ARM, is 
+illegal under DWP: 
+<P><TT>struct typename { int typeid; char name[20]; }; /* illegal: typename, 
+typeid */</TT> <BR><TT>typename const* explicit(char const*); /* illegal: 
+explicit */</TT> <BR><TT>typename const* implicit();</TT> 
+<P><TT>typename* try(char const* template, int mutable) /* illegal: try, 
+template, mutable */</TT> <BR><TT>{</TT> <BR><TT>&nbsp;&nbsp;&nbsp;&nbsp; return 
+mutable ? explicit(template) : implicit();</TT> <BR><TT>}</TT> 
+<P>Note that there is also a flood of "new" names, that are not designated 
+keywords, but nevertheless are likely to be visible in namespace <TT>std</TT> 
+due to the&nbsp; inclusion of standard headers. Examples are <TT>auto_ptr</TT> 
+and <TT>allocator</TT> (defined in <TT>&lt;memory&gt;</TT>), <TT>nothrow</TT> 
+(defined in <TT>&lt;new&gt;</TT>), <TT>type_info </TT>(defined in 
+<TT>&lt;typeinfo&gt;</TT>),&nbsp; or <TT>exception</TT> and <TT>unexpected</TT> 
+(defined in <TT>&lt;exception&gt;</TT>). 
+<P>
+<HR width="100%">
+
+<P><A name=lib_header></A><B>Access to entities defined in standard library 
+headers</B> 
+<P>With the introduction of namespaces, entities defined in standard library 
+headers - with the exception of <FONT face="Courier New,Courier">operator 
+new</FONT>, <FONT face="Courier New,Courier">operator delete</FONT> and 
+everything in the C library headers - belong now to namespace <FONT 
+face="Courier New,Courier">std</FONT>.&nbsp; This means for instance that 
+including&nbsp; iostream&nbsp; is not enough to use it in the way it worked with 
+ARM: 
+<P><TT>#include &lt;iostream&gt;</TT> <BR><TT>#include &lt;cstdlib&gt;</TT> 
+<BR><TT>int main()</TT> <BR><TT>{</TT> <BR><TT>&nbsp;&nbsp;&nbsp; cout &lt;&lt; 
+"hello world\n"; // ERROR: cout not known</TT> <BR><TT>&nbsp;&nbsp;&nbsp; return 
+EXIT_SUCCESS; // OK, comes from cstdlib</TT> <BR><TT>}</TT> 
+<P>Instead one must either <B>qualify</B> the entity, 
+<P><TT>#include &lt;iostream&gt;</TT> <BR><TT>#include &lt;cstdlib&gt;</TT> 
+<BR><TT>int main()</TT> <BR><TT>{</TT> <BR><TT>&nbsp;&nbsp;&nbsp; std::cout 
+&lt;&lt; "hello world\n"; // OK: std::cout comes from iostream</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp; return EXIT_SUCCESS; // OK, comes from cstdlib</TT> 
+<BR><TT>}</TT> 
+<P>or use a <I><FONT face="Courier New,Courier">using</FONT></I> 
+<B>directive</B>: 
+<P><TT>#include &lt;iostream&gt;</TT> <BR><TT>#include &lt;cstdlib&gt;</TT> 
+<BR><TT>using namespace std;</TT> <BR><TT>int main()</TT> <BR><TT>{</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp; cout &lt;&lt; "hello world\n"; // OK: cout comes from 
+iostream</TT> <BR><TT>&nbsp;&nbsp;&nbsp; return EXIT_SUCCESS; // OK, comes from 
+cstdlib</TT> <BR><TT>}</TT> 
+<P><FONT face="Courier New,Courier">or use a <I>using</I> <B>declaration</B>: 
+<I><FONT size=-1>(- Example contributed by <A href="mailto:jthill@telus.net">Jim 
+Hill</A>)</FONT></I></FONT> 
+<P><TT>#include &lt;iostream&gt;</TT> <BR><TT>#include &lt;cstdlib&gt;</TT> 
+<BR><TT>using std::cout;</TT> <BR><TT>int main()</TT> <BR><TT>{</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; "hello world\n"; // OK: we said 
+we mean std::cout</TT> <BR><TT>&nbsp;&nbsp;&nbsp;&nbsp; return EXIT_SUCCESS; // 
+OK, comes from cstdlib</TT> <BR><TT>}</TT> 
+<P>See <I>DWP 17.3.1.1</I> <BR>&nbsp; 
+<P>
+<HR width="100%">
+<BR>&nbsp; 
+<H4><A name=operator_new></A>Return value of default <TT>operator new</TT></H4>
+<P><BR>When operator new is unable to allocate memory, it throws an exception. 
+Under ARM rules, it returned 0, so the following code made sense under ARM, but 
+not under DWP: 
+<P><TT>&nbsp;&nbsp;&nbsp; if((p=new T) == 0) { ... /* never executed&nbsp; with 
+ANSI C++ */ }</TT> 
+<P>
+<HR width="100%">
+
+<H4><A name=operator_delete></A>Accessability of <TT>operator 
+delete</TT></H4>DWP states in 5.3.4 that operator delete must be accessible at 
+the point where operator new is invoked. This is to assure that if an exception 
+is thrown&nbsp; during construction, the object must be properly deallocated. 
+This makes the following legal ARM code illegal under DWP: 
+<P><TT>struct S {</TT> <BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; static 
+void* operator new(size_t, void*);</TT> <BR><TT>&nbsp;&nbsp;&nbsp; private:</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; static operator 
+delete(void*,size_t)</TT> <BR><TT>};</TT> 
+<P><TT>void f(void* p)</TT> <BR><TT>{</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new (p) S; // legal with ARM, 
+illegal with DWP</TT> <BR><TT>}</TT> 
+<P>See&nbsp; <I><A href="http://www.creport.com/">C++ Report</A> </I>, Sep. 
+1998, p. 14. 
+<P>
+<HR width="100%">
+<BR>&nbsp; 
+<H4><A name=new_in_funcall></A>Using dynamic memory allocation expressions as 
+actual parameter on function calls</H4>The expression <FONT 
+face="Courier New,Courier">f(new T1, new T2) </FONT>provides the danger of a 
+memory leak, if either T1 or T2 or operator new throw an exception. One reason 
+is that if the compiler uses the following sequence of steps to evaluate the 
+expression, 
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: allocate memory for T1 
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2: construct T1 
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3: allocate memory for T2 
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4: construct T2 
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5: call f() 
+<P>and if step 3 or 4 fail due to an exception, the standard does not enforce 
+that the work done by steps 1 and 2 are cleaned up. See&nbsp; <A 
+href="http://www.cntc.com/resources/gotw056.html">http://www.cntc.com/resources/gotw056.html</A>&nbsp; 
+for details. 
+<P>
+<HR width="100%">
+<BR>&nbsp; 
+<H4><A name=member_pointer></A>Member pointers to class instances that are 
+declared, but not defined</H4>The effect of taking the address of a non-static 
+member, or of a base class, of a non-POD class that is declared, but not 
+yet&nbsp; defined, is undefined behaviour under DWP rule. AFIK, this issue was 
+not addressed at all in ARM, so you can say it was implicitly undefined in ARM 
+and is explicitly undefined in DWP ;-) 
+<P>The reason I list it here is that is used to be "common sense" that this 
+should work and probably all old compilers and most new ones do make a sensible 
+translation. Note also that this applies only to non-POD classes. 
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <TT>struct 
+B {};</TT> <BR><TT>&nbsp;&nbsp;&nbsp; struct D : public B {</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int m;</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; virtual ~D(); // to make D 
+non-POD</TT> <BR><TT>&nbsp;&nbsp;&nbsp; };</TT> <BR><TT>&nbsp;&nbsp;&nbsp; 
+extern D d; // declaration</TT> <BR><TT>&nbsp;&nbsp;&nbsp; D* pd = &amp;d; // 
+o.k.</TT> <BR><TT>&nbsp;&nbsp;&nbsp; int* pi = &amp;d.m; // undefined</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp; B* pb = &amp;d; // undefined</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp; D d; // definition</TT> 
+<P>See&nbsp; <I><A href="http://www.creport.com/">C++ Report</A> </I>, Apr. 
+1997. 
+<P>
+<HR width="100%">
+<BR>&nbsp; 
+<H2><A name=be_aware_of></A>And be aware of.....</H2>
+<P><BR><A name=obsolete_features></A><FONT size=+1>The DWP contains a few 
+<B>obsolete features</B>, which are carried over from "old" C++, but are not 
+guaranteed to be supported in the next version of the standard, so you better do 
+not use them:</FONT> <BR>&nbsp; 
+<H4><A name=file_scope_statics></A>No static declarations on file 
+scope</H4>Because of the introduction of namespaces, a translation unit should 
+not declare anymore a variable at file scope as <FONT 
+face="Courier New,Courier">static</FONT>, but use an appropirate <FONT 
+face="Courier New,Courier">namespace</FONT> instead. 
+<P>
+<HR width="100%">
+<BR>&nbsp; 
+<H4><A name=old_style_cast></A>No old-style cast</H4>
+<P><BR>C-style casts of the form 
+<P><FONT 
+face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT><TT> 
+(<I>TYPEEXPRESSION</I>)(<I>EXPRESSION</I>)</TT> 
+<P>or C++ functional style casts of the form 
+<P><FONT face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</FONT><TT><I>TYPENAME</I>(<I>EXPRESSION</I>)</TT> 
+<P>should not be used anymore. 
+<P><I>Example contributed by <B>Sam Saariste</B>.</I> 
+<P>
+<HR width="100%">
+
+<P><A name=access_decl_adj></A><B>No re-adjusting of access declarations</B> 
+<P><TT>struct&nbsp; base {</TT> <BR><TT>&nbsp;&nbsp; protected:</TT> 
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void foo();</TT> 
+<BR><TT>};</TT> 
+<P>ARM style (deprecated): 
+<P><TT>struct derived: private base {</TT> <BR><TT>&nbsp;&nbsp;&nbsp; public: 
+base::foo; // adjust access</TT> <BR><TT>};</TT> 
+<P>DWP style: 
+<P><TT>struct derived: private base {</TT> <BR><TT>&nbsp;&nbsp;&nbsp; public: 
+using base::foo; // grant access</TT> <BR><TT>};</TT> 
+<P>
+<HR width="100%">
+
+<P><A name=clarification></A><FONT size=+1>A few items were <B>clarified</B> in 
+the standard in&nbsp; such a way that they, while not contradicting the ARM, are 
+nevertheless&nbsp; different enough to common practice in pre-DWP times that 
+they deserve to be mentioned:</FONT> <BR>&nbsp; 
+<P>
+<HR width="100%">
+
+<H4><A name=lib_header_naming></A>Change in the naming of library 
+headers</H4>The name of those standard library headers, which are not carried 
+over from ANSI C, get the ".h" suffix dropped, so instead of 
+<P><TT>#include &lt;iostream.h&gt; // "Old" style used by many compilers</TT> 
+<P>you should write now 
+<P><TT>#include &lt;iostream&gt; // DWP</TT> 
+<P>to ensure compatibility across different implementations. 
+<P>
+<HR width="100%">
+
+<P><A name=template></A><B>Changes with respect to templates</B> 
+<P>The DWP changed and clarified&nbsp; many rules regarding template definition 
+and instantiation. Since templates where considered an experimental feature in 
+ARM and implementations varied heavily from vendor to vendor anyway, I don't 
+want to spend research effort in this topic.&nbsp; However, if someone sends 
+me&nbsp; a complete coding example, I will be glad to&nbsp; include it here. 
+<P>
+<HR width="100%">
+<BR><FONT size=-2>Author:&nbsp; <A 
+href="http://ourworld.compuserve.com/homepages/ronald_fischer/">Ronald 
+Fischer</A></FONT> <BR><FONT size=-2>If you encounter problems with this&nbsp; 
+page, please contact&nbsp; <A 
+href="mailto:armagnac@gmx.net">armagnac@gmx.net</A></FONT> <BR>&nbsp; 
+<P><FONT size=-2>Submitted with help from ... </FONT><A 
+href="http://www.savvysearch.com/">SavvySearch: search once, find 
+everything.</A> </P></BODY></HTML>

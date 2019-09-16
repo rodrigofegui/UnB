@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Cross-Referencing Example</TITLE>
+<META NAME="description" CONTENT="Cross-Referencing Example">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="previous" HREF="Hnode7.html">
+<LINK REL="up" HREF="Hnode7.html">
+<LINK REL="next" HREF="Hnode9.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html197"
+ HREF="Hnode9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html193"
+ HREF="Hnode7.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html187"
+ HREF="Hnode7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html195"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html196"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html198"
+ HREF="Hnode9.html">Miscellaneous commands for HTML</A>
+<B> Up:</B> <A NAME="tex2html194"
+ HREF="Hnode7.html">Symbolic References between Living</A>
+<B> Previous:</B> <A NAME="tex2html188"
+ HREF="Hnode7.html">Symbolic References between Living</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000127100000000000000">&#160;</A><A NAME="crossrefs">&#160;</A>
+<BR>
+Cross-Referencing Example
+</H3>
+To understand this mechanism better consider 
+how you would maintain a link to this section  
+(of the hypertext version of this document) from one of your documents,
+without using labels.
+Sure enough you can get the name of the physical file that this section is in. 
+This however is quite likely to change, and any links to it would become invalid. 
+<A NAME="1842">&#160;</A>
+To update your link, the name of the new file must be found 
+and your link changed by hand. 
+Also there is no general updating mechanism, so the only way to find
+out if your document is pointing to the right place is by actually
+following the link, then doing a manual update<A NAME="tex2html16"
+ HREF="#foot1843"><SUP>40</SUP></A>.
+
+<P>
+<A NAME="1844">&#160;</A>
+<BR>
+Next consider how it could be done with symbolic labels. 
+First you have to import the labels used in this document 
+by copying the file ,
+saving it in <TT>/tmp/labels.pl</TT> say,
+then adding anywhere in your document:
+<PRE>
+\externallabels{http://cbl.leeds.ac.uk/nikos/tex2html/doc/manual}%
+               {/tmp/labels.pl}
+</PRE>
+After that you can use the label `<TT>crossrefs</TT>' defined at the beginning of this 
+section<A NAME="tex2html18"
+ HREF="#foot2569"><SUP>41</SUP></A> as follows:
+<PRE>
+\externalref{crossrefs}
+</PRE>
+This will be translated into the appropriate hyper-link to this page.
+If there are any changes in this document and you would like to
+bring your document up-to date, you have to copy 
+again
+and rerun the translator on your document. Of course if I move the 
+directory containing the <TT>HTML</TT> files for this document somewhere else, 
+then you would have to make a change in the argument of the 
+<TT>&#92;externallabels</TT> command to reflect this. 
+
+<P>
+<A NAME="1859">&#160;</A>
+It is obvious that some level of collaboration is required between
+authors trying to maintain cross-references between different documents. 
+Using symbolic labels makes this a lot easier 
+(especially for documents written by the same author).
+<A NAME="1860">&#160;</A>
+
+<P>
+<BR><HR><H4>Footnotes</H4>
+<DL>
+<DT><A NAME="foot1843">... update</A><A NAME="foot1843"
+ HREF="Hnode8.html#tex2html16"><SUP>40</SUP></A>
+<DD>
+Link validation can be done automatically but the updating must be done
+manually when filenames have changed (assuming no other symbolic label
+mechanism is available).
+
+<DT><A NAME="foot2569">...
+section</A><A NAME="foot2569"
+ HREF="Hnode8.html#tex2html18"><SUP>41</SUP></A>
+<DD>You either have to guess the role of each label by
+looking at the <A HREF="node10.html#GGGlabels.pl"
+ NAME="3476"><TT>labels.pl</TT></A> file or by asking the author!
+
+</DL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html197"
+ HREF="Hnode9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html193"
+ HREF="Hnode7.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html187"
+ HREF="Hnode7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html195"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html196"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html198"
+ HREF="Hnode9.html">Miscellaneous commands for HTML</A>
+<B> Up:</B> <A NAME="tex2html194"
+ HREF="Hnode7.html">Symbolic References between Living</A>
+<B> Previous:</B> <A NAME="tex2html188"
+ HREF="Hnode7.html">Symbolic References between Living</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

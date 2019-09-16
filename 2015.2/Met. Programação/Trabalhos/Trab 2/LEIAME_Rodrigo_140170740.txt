@@ -1,0 +1,33 @@
+Instruções de manuseio para o correto desenvolvimento do trabalho e, consequentemente,
+da avaliação do programa desenvolvido.
+
+Para tal tarefa, devem ser executados estes comandos:
+	cd Construção
+	cmake ..
+	make
+	./Trab2_MP_Rodrigo
+
+Esta série de comandos realiza as tarefas de entrar na pasta, denominada "Construção";
+execução do CMakeLists.txt, que está situado na pasta raiz à atual, salvando o resultado
+da execução na pasta corrente; criação do executável e de outros arquivos;	execução
+do programa de testes.
+
+Para a execução do gcov, devem ser executados estes comandos:
+	cd CMakeFiles/Trab2_MP_Rodrigo.dir/Fontes/
+	gcov Pilha.gcno
+	gcov Pilha_teste.gcno
+
+Esta série de comando realiza as tarefas de entrar na pasta que contém os arquivos
+a serem testados com o GCov; e os dois últimos realizam os testes com o GCov para cada
+um dos arquivos
+
+Para a execução do cppcheck:
+	cd ../../../../Fontes/
+	cppcheck Pilha.cpp
+	cppcheck Pilha_teste.cpp 
+	cd ../Bibliotecas/
+	cppcheck Pilha.hpp 
+
+Esta série de comandos realiza as tarefas de entrar no diretório que contém os códigos-fonte;
+as duas linhas seguintes, realizam os testes com o CPPCHECK em cada um dos arquivos; entra na
+pasta que contém a biblioteca; e realiza os testes no arquivo inteior a esta pasta.

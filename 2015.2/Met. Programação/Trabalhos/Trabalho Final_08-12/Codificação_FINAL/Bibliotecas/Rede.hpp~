@@ -1,0 +1,44 @@
+/*****************************************************************
+**  Criadores:
+**          Diego Brian COelho Leite
+**          Pedro Aurélio Coelho Almeida
+**          Rodrigo Ferreira Guimaraes
+**  Nome:
+**          Rede.hpp
+**  Finalidade:
+**          Armazenar as funções utilizadas s
+**          outras funções mais especializadas:
+**              - Abertura de arquivo;
+**              - Leitura de resposta binária;
+**              - Leitura de resposta numérica num intervalo;
+**              - Limpa tela;
+**              - Pausas na execução:
+**                  + Por Enter;
+**                  + Por Tempo;
+**              - Tratamento de strings:
+**                  + Comparação de n caracteres;
+**                  + Concatenação de n caracteres;
+**                  + N-última ocorrência de um caractere.
+*****************************************************************/
+
+
+#ifndef Rede_h
+    #define Rede_h
+
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include "Estruturas.hpp"
+
+    Rede * rede_cria (void);
+
+    void rede_libera (Rede *);
+
+    Header_adap* adaptador_inicio (Header_adap*);
+
+    Header_city* cidade_inicio (Header_city*);
+
+    Header_ger* gerador_inicio (Header_ger*);
+
+    Cabecalho_conex* interconex_inicio (Cabecalho_conex*);
+
+#endif

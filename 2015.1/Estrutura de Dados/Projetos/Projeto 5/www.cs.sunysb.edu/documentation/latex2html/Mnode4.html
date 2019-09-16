@@ -1,0 +1,504 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Options controlling Extensions and Special Features</TITLE>
+<META NAME="description" CONTENT="Options controlling Extensions and Special Features">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="next" HREF="Mnode5.html">
+<LINK REL="previous" HREF="Mnode3.html">
+<LINK REL="up" HREF="Mnode2.html">
+<LINK REL="next" HREF="Mnode5.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html86"
+ HREF="Mnode5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html82"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html76"
+ HREF="Mnode3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html84"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html85"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html87"
+ HREF="Mnode5.html">Switches controlling Image Generation</A>
+<B> Up:</B> <A NAME="tex2html83"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html77"
+ HREF="Mnode3.html">Options controlling Titles, File-Names</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000132200000000000000">&#160;</A>
+<A NAME="1026">&#160;</A>
+<BR>
+Options controlling Extensions and Special Features
+</H3>
+<A NAME="1027">&#160;</A><A NAME="1028">&#160;</A>
+<BR>
+The switches described here govern the type of <TT>HTML</TT> code that
+can be generated, and how to choose between the available options 
+when there are alternative strategies for implementing portions of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X code. 
+
+<P>
+<DL><DT>
+<A NAME="2077">&#160;</A>
+<A NAME="2078">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-html_version <TT>(2.0|3.0|3.2)[,(math|i18n|table)]*</TT><A NAME="cs_htmlversion">&#160;</A></B>
+<DD>&nbsp;
+<BR><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_HTML_VERSION"
+ NAME="2628"><TT>$HTML_VERSION</TT></A><TT> = &#34;... &#34;;</TT></FONT>
+<BR>
+This specifies both the <TT>HTML</TT>&nbsp;<A HREF="#version">version</A> to generate, 
+and ...
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+any extra (non-standard) <TT>HTML</TT> features that may be required.
+<BR>
+The version number corresponds to a published DTD for an <TT>HTML</TT> standard
+(although 3.0 was never accepted and subsequently withdrawn).
+A corresponding <A HREF="node10.html#GGGPerl"><I>Perl</I></A> file in the <A HREF="node10.html#GGGversions_"
+ NAME="2639"><TT>versions/</TT></A> subdirectory is loaded;
+these files are named `<TT>html
+&lt;<I>num</I>&gt;.pl</TT>'.
+
+<P>
+Following the version number, a comma-separated list of extensions
+can be given. Each corresponds to a file `<TT>
+&lt;<I>name</I>&gt;.pl</TT>' 
+also located in the <A HREF="node10.html#GGGversions_"
+ NAME="2651"><TT>versions/</TT></A> subdirectory. 
+When such a file is loaded the resulting <TT>HTML</TT> code 
+can no longer be expected to validate with the specified DTD. 
+An exception is <A NAME="2657">&#160;</A><TT>math</TT> when the <A HREF="#nomath"> <TT>-no_math</TT> </A> 
+switch is also used, which should still validate.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+<I>Currently, versions 2.0, 2.1, 2.2, 3.0 and 3.1 are available.</I>
+<BR>
+The extensions <A NAME="2661">&#160;</A><TT>i18n</TT>, <A NAME="2664">&#160;</A><TT>tables</TT>, <A NAME="2667">&#160;</A><TT>math</TT>
+correspond roughly to what used to be called versions `2.1', `2.2', `3.1'
+respectively, in previous releases of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+Now these extensions can be loaded with any of `2.0', `3.0' or `3.2' 
+as the specified standard.
+<BR>
+The default version is usually set to be `3.2', within <A HREF="node10.html#GGGlatex2html.config"
+ NAME="2672"><TT>latex2html.config</TT></A>.
+
+<P>
+<A NAME="1067">&#160;</A>
+<A NAME="1068">&#160;</A>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-no_tex_defs<A NAME="cs_notexdefs">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_TEXDEFS"
+ NAME="2684"><TT>$TEXDEFS</TT></A><TT> = 0;</TT></FONT> (default is 1)
+<BR>
+When <A HREF="node10.html#GGG_TEXDEFS"
+ NAME="2692"><TT>$TEXDEFS</TT></A> is set (default) the file <A HREF="node10.html#GGGtexdefs.perl"
+ NAME="2700"><TT>texdefs.perl</TT></A> will be read.
+This provides code to allow common T<SMALL>E</SMALL>X commands like <TT>&#92;def</TT>, <TT>&#92;newbox</TT>,
+<TT>&#92;newdimen</TT> and others, to be recognised, especially within the document preamble.
+In the case of <TT>&#92;def</TT>, the definition may even be fully interpreted,
+but this requires the pattern-matching to be not too complicated.
+
+<P>
+If <A HREF="node10.html#GGG_TEXDEFS"
+ NAME="2712"><TT>$TEXDEFS</TT></A> is `<TT>0</TT>' or empty, then <A HREF="node10.html#GGGtexdefs.perl"
+ NAME="2720"><TT>texdefs.perl</TT></A> will not be loaded;
+the translator will make no attempt to interpret any raw T<SMALL>E</SMALL>X commands.  
+This feature is intended to enable sophisticated authors the ability to insert 
+arbitrary T<SMALL>E</SMALL>X commands in environments that are destined 
+to be processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X anyway; 
+e.g. 
+<I>figure</I>s, <I>
+<I>theorem</I>s</I>, 
+<I>picture</I>s, etc.
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+However this should rarely be needed, as now there is better support for these
+types of environment. There are now other methods to specify which chunks of code 
+are to be passed to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X for explicit image-generation; 
+see the discussion of the 
+<I>makeimage</I> 
+<A HREF="Hnode4.html#makeimage">environment</A>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="1099">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-external_file <TT>
+&lt;<I>filename</I>&gt;</TT><A NAME="cs_externalfile">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_EXTERNAL_FILE"
+ NAME="2740"><TT>$EXTERNAL_FILE</TT></A><TT> = &#34;
+&lt;<I>filename</I>&gt;&#34;;</TT></FONT>
+<BR>
+Specifies the prefix of the <TT>.aux</TT> file that this document should read.
+The <TT>.aux</TT> extension will be appended to this prefix 
+to get the complete filename, with directory path if needed.
+<BR>
+This file could contain necessary information 
+regarding citations, figure, table and section numbers from L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X 
+and perhaps other information also.
+Use of this switch is vital for <A HREF="Hnode11.html#Segmentation">document segments</A>, 
+processed separately and linked to appear as if generated 
+from a single L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X document.
+
+<P>
+<A NAME="1113">&#160;</A>
+<A NAME="1114">&#160;</A><A NAME="1115">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-font_size <TT>
+&lt;<I>size</I>&gt;</TT><A NAME="cs_fontsize">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_FONT_SIZE"
+ NAME="2758"><TT>$FONT_SIZE</TT></A><TT> = &#34;
+&lt;<I>size</I>&gt;&#34;;</TT></FONT>
+<BR>
+This option provides better control 
+over the font size of environments made into images using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.  
+<TT>
+&lt;<I>size</I>&gt;</TT> must be one of the font sizes that L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X recognizes; 
+i.e. `<TT>10pt</TT>', `<TT>11pt</TT>', `<TT>12pt</TT>', etc.  
+Default is `<TT>10pt</TT>', or whatever option may have been specified on the 
+<TT>&#92;documentclass</TT> or <TT>&#92;documentstyle</TT> line.
+<BR>
+Whatever size is selected, it will be magnified by the installation variables
+<A HREF="node10.html#GGG_MATH_SCALE_FACTOR"
+ NAME="2772"><TT>$MATH_SCALE_FACTOR</TT></A>, <A HREF="node10.html#GGG_FIGURE_SCALE_FACTOR"
+ NAME="2780"><TT>$FIGURE_SCALE_FACTOR</TT></A>
+and <A HREF="node10.html#GGG_DISP_SCALE_FACTOR"
+ NAME="2788"><TT>$DISP_SCALE_FACTOR</TT></A> as appropriate.
+
+<P>
+
+<P></P>
+
+<B>Note: </B>This switch provides no control over the size of text
+on the <TT>HTML</TT> pages. 
+Such control is subject entirely to the user's choices
+of settings for the browser windows.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+<A NAME="1137">&#160;</A>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-scalable_fonts<A NAME="cs_scalefonts">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_SCALABLE_FONTS"
+ NAME="2800"><TT>$SCALABLE_FONTS</TT></A><TT> = 1;</TT></FONT>
+<BR>
+This is used when scalable fonts, such as <A HREF="#GGGpostscript"
+ NAME="2808">PostScript</A> versions
+of the T<SMALL>E</SMALL>X fonts, are available for image-generation.
+<BR>
+It has the effect of setting <A HREF="node10.html#GGG_PK_GENERATION"
+ NAME="2817"><TT>$PK_GENERATION</TT></A> to `<TT>1</TT>',
+and <A HREF="node10.html#GGG_DVIPS_MODE"
+ NAME="2825"><TT>$DVIPS_MODE</TT></A> to be empty, 
+overriding any <A HREF="Mnode9.html#pkgen">previous settings</A> for these variables.
+
+<P>
+<A NAME="1150">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-no_math<A NAME="cs_nomath">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_NO_SIMPLE_MATH"
+ NAME="2837"><TT>$NO_SIMPLE_MATH</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Ordinarily simple mathematical expressions are set using the ordinary text font, 
+but italiced. When part of the expression can not be represented this way,
+an image is made <EM>of the whole formula</EM>. 
+This is called ``simple math''.
+When <A HREF="node10.html#GGG_NO_SIMPLE_MATH"
+ NAME="2845"><TT>$NO_SIMPLE_MATH</TT></A> is set, 
+then <EM>all</EM> mathematics is made into images, whether simple or not.
+
+<P>
+However, if the <A NAME="2851">&#160;</A><TT>math</TT> extension is loaded, 
+using the  <TT>-html_version</TT>  switch described <A HREF="Mnode4.html#cs_htmlversion">earlier</A>,
+then specifying  <TT>-no_math</TT>  produces a quite different effect.
+Now it is the special <TT>&lt;MATH&gt;</TT> tags and entities which are cancelled. 
+In their place a sophisticated scheme for parsing mathematical expressions 
+is used. Images are made of those sub-parts of a formula which cannot be 
+adequately expressed using (italiced) text characters and <SUB> a</SUB>nd
+<TT>&lt;SUP&gt;</TT> tags.
+See <A HREF="Enode5.html#maths">the subsection on mathematics</A> for more details.
+
+<P>
+<A NAME="1169">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-local_icons<A NAME="cs_localicons">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_LOCAL_ICONS"
+ NAME="2864"><TT>$LOCAL_ICONS</TT></A><TT> = 1;</TT></FONT>
+<BR>
+A copy of each of the icons actually used within the document is placed in the
+directory along with the <TT>HTML</TT> files and generated images.
+This allows the whole document to be fully self-contained, within this directory;
+otherwise the icons must be retrieved from a (perhaps remote) server.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="1175">&#160;</A><A NAME="1176">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.2</SUP>
+<BR>
+The icons are normally copied from a subdirectory of the <A HREF="node10.html#GGG_LATEX2HTMLDIR"
+ NAME="2872"><TT>$LATEX2HTMLDIR</TT></A>,
+set within <A HREF="node10.html#GGGlatex2html.config"
+ NAME="2880"><TT>latex2html.config</TT></A>. An alternative set of icons can be used
+by specifying a (relative) directory path in <A HREF="node10.html#GGG_ALTERNATIVE_ICONS"
+ NAME="2888"><TT>$ALTERNATIVE_ICONS</TT></A>
+to where the customised images can be found.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.2</SUP>
+<BR>
+
+<P>
+<A NAME="2088">&#160;</A>
+<A NAME="1184">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-init_file <TT>
+&lt;<I>file</I>&gt;</TT><A NAME="cs_initfile">&#160;</A></B>
+<DD>Load the specified initialisation file. This <A HREF="node10.html#GGGPerl"><I>Perl</I></A> file will be loaded after loading 
+<A HREF="node10.html#GGG_HOME_.latex2html-init"
+ NAME="2901"><TT>$HOME/.latex2html-init</TT></A>, or <A HREF="node10.html#GGG.latex2html-init"
+ NAME="2909"><TT>.latex2html-init</TT></A> in the local
+directory, if either file exists. It is read at the time the switch is processed,
+so the contents of the file may change any of the values of any of the
+variables that were previously established, as well as any default options.
+More than one initialisation file can be read in this way.
+
+<P>
+<A NAME="1190">&#160;</A>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR><A NAME="1193">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-no_fork<A NAME="cs_no_fork">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_NOFORK"
+ NAME="2921"><TT>$NOFORK</TT></A><TT> = 1;</TT></FONT>
+<BR>
+When set this disables a feature in the early part of the processing
+whereby some memory-intensive operations are performed by `forked'
+child processes. Some single-task operating systems, such as <TT>DOS</TT>,
+do not support this feature. Having <A HREF="node10.html#GGG_NOFORK"
+ NAME="2929"><TT>$NOFORK</TT></A> set then ensures
+that unnecessary file-handles that are needed with the forked processes,
+are not consumed unnecessarily, perhaps resulting in a fatal <A HREF="node10.html#GGGPerl"><I>Perl</I></A> error.
+
+<P>
+<A NAME="1200">&#160;</A>
+<A NAME="1201">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-iso_language <TT>
+&lt;<I>type</I>&gt;</TT><A NAME="cs_iso_language">&#160;</A></B>
+<DD>This enables you to specify a different language type than
+<TT>'EN'</TT> to be used in the DTD entries of the <TT>HTML</TT>
+document, e.g. <TT>'EN.US'</TT>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1f</SUP>
+<BR>
+
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-short_index<A NAME="cs_shortindex">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_SHORT_INDEX"
+ NAME="2946"><TT>$SHORT_INDEX</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Creates shorter Index listings, using codified links; 
+this is fully compatible with the 
+<I>makeidx</I> <A HREF="Enode12.html#makeidx">package</A>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1f</SUP>
+<BR>
+
+<P>
+<A NAME="1218">&#160;</A>
+<A NAME="1219">&#160;</A>
+<A NAME="1220">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-no_footnode<A NAME="cs_nofootnode">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_NO_FOOTNODE"
+ NAME="2959"><TT>$NO_FOOTNODE</TT></A><TT> = 1;</TT></FONT>
+<BR>
+Suppresses use of a separate file for footnotes;
+instead these are placed at the bottom of the <TT>HTML</TT> pages 
+where the references occur.
+
+<P>
+When this option is used, it is frequently desirable to change the 
+style of the marker used to indicate the presence of a footnote. 
+This is done as in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, using code such as follows.
+<BLOCKQUOTE>
+<code>\renewcommand{\thefootnote}{\arabic{footnote}}</code>
+</BLOCKQUOTE>
+All the styles <TT>&#92;arabic</TT>, <TT>&#92;alph</TT>, <TT>&#92;roman</TT>, <TT>&#92;Alph</TT> and <TT>&#92;Roman</TT>
+are available.
+
+<P>
+<A NAME="1232">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-numbered_footnotes<A NAME="cs_numbered_footnotes">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_NUMBERED_FOOTNOTES"
+ NAME="2976"><TT>$NUMBERED_FOOTNOTES</TT></A><TT> = 1;</TT></FONT>
+<BR>
+If this is set you will get every footnote applied with a subsequent
+number, to ease readability.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+<A NAME="1239">&#160;</A>
+<A NAME="1240">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-address <TT>
+&lt;<I>author-address</I>&gt;</TT><A NAME="cs_address">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_ADDRESS"
+ NAME="2992"><TT>$ADDRESS</TT></A><TT> = &#34;
+&lt;<I>author-address</I>&gt;&#34;;</TT></FONT>
+<BR>
+Sign each page with this address.
+<BR>
+See <A HREF="node10.html#GGGlatex2html.config"
+ NAME="3002"><TT>latex2html.config</TT></A> for an example using <A HREF="node10.html#GGGPerl"><I>Perl</I></A> code
+to automatically include the date.
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+A user-defined <A HREF="node10.html#GGGPerl"><I>Perl</I></A> subroutine called <TT>&amp;custom_address</TT> 
+can be used instead, if defined; it takes the value of <A HREF="node10.html#GGG_ADDRESS"
+ NAME="3016"><TT>$ADDRESS</TT></A> 
+as a parameter, which may be used or ignored as desired.
+At the time when this subroutine will be called, 
+variables named <A HREF="node10.html#GGG_depth"
+ NAME="3024"><TT>$depth</TT></A>, <A HREF="node10.html#GGG_title"
+ NAME="3032"><TT>$title</TT></A>, <A HREF="node10.html#GGG_file"
+ NAME="3040"><TT>$file</TT></A>
+hold the sectioning-level, title and filename of the <TT>HTML</TT> page
+being produced; <A HREF="node10.html#GGG_FILE"
+ NAME="3048"><TT>$FILE</TT></A> holds the name of the filename for the title-page
+of the whole document.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2094">&#160;</A>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B>-info <TT>
+&lt;<I>string</I>&gt;</TT><A NAME="cs_infostring">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_INFO"
+ NAME="3064"><TT>$INFO</TT></A><TT> = &#34;
+&lt;<I>string</I>&gt;&#34;;</TT></FONT>
+<BR>
+Generate a new section <EM>``About this document'' </EM> containing information
+about the document being translated. The default is to generate such a section 
+with information on the original document, the date, the user and the translator.
+An empty string (or the value `<TT>0</TT>') 
+disables the creation of this extra section.
+<BR>
+If a non-empty string is given, it will be placed as the contents of the 
+<EM>``About this document'' </EM> page instead of the default information.
+</DL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html86"
+ HREF="Mnode5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html82"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html76"
+ HREF="Mnode3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html84"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html85"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html87"
+ HREF="Mnode5.html">Switches controlling Image Generation</A>
+<B> Up:</B> <A NAME="tex2html83"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html77"
+ HREF="Mnode3.html">Options controlling Titles, File-Names</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

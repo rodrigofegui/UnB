@@ -1,0 +1,629 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Mathematics</TITLE>
+<META NAME="description" CONTENT="Mathematics">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="next" HREF="Enode6.html">
+<LINK REL="previous" HREF="Enode2.html">
+<LINK REL="up" HREF="features.html">
+<LINK REL="next" HREF="Enode6.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html143"
+ HREF="Enode6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html139"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html133"
+ HREF="Enode4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html141"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html142"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html144"
+ HREF="Enode6.html">Figures and Image Conversion</A>
+<B> Up:</B> <A NAME="tex2html140"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html134"
+ HREF="Enode4.html">Multi-lingual documents, using Images</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000113000000000000000">&#160;</A><A NAME="maths">&#160;</A>
+<BR>
+Mathematics
+</H2>
+There are various different ways in which L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> can handle
+mathematical expressions and formulas:
+<UL>
+<LI>
+give a textual representation (``simple'' math);
+<LI>
+make an image of the complete formula or expression;
+<LI>
+combination of textual representation and images of
+sub-expressions;
+<LI>
+<TT>SGML</TT>-like representation built using abstract ``entities'';
+<BR>
+e.g. for the <TT>HTML-Math</TT> model, or for <TT>MathML</TT>.
+</UL>
+Which is the most appropriate normally depends on the context,
+or importance of the mathematics within the entire document.
+What L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> will produce depends upon
+<DL COMPACT>
+<DT>1.
+<DD>the version of <TT>HTML</TT> requested;
+<DT>2.
+<DD>whether or not the special `<TT>math</TT>'  has been loaded;
+<DT>3.
+<DD>whether the  <TT>-no_math</TT>  <A HREF="#nomath">command-line option</A>
+has been specified, or (equivalently) the <A HREF="node10.html#GGG_NO_SIMPLE_MATH"
+ NAME="2508"><TT>$NO_SIMPLE_MATH</TT></A> 
+<A HREF="#nomath">variable</A> has been set in an initialisation file.
+</DL>
+The strategies used to translate math expressions are summarised
+in <A HREF="Enode5.html#mathconv3">the table below</A> for <TT>HTML</TT> 3.0+
+and <A HREF="#mathconv2">the subsequent table</A> for <TT>HTML</TT> 2.0.
+
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="2226">&#160;</A>
+<TABLE>
+<CAPTION><STRONG>Table 2:</STRONG>
+Mathematics translation strategies, 
+ for <TT>HTML</TT> versions 3.0 and 3.2,
+<BR>
+using <TT>&lt;SUP&gt;</TT> and <TT>&lt;SUB&gt;</TT> tags
+ and <TT>&lt;TABLE&gt;</TT>s</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<TR><TH ALIGN="CENTER"><B>`math'</B></TH>
+<TH ALIGN="CENTER"><B>switch</B></TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=170><B>strategy adopted&nbsp;</B></TH>
+</TR>
+<TR><TD ALIGN="CENTER">not loaded</TD>
+<TD ALIGN="CENTER">--</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=170>textual representation where possible,
+<BR>
+else image of whole expressions</TD>
+</TR>
+<TR><TD ALIGN="CENTER">not loaded</TD>
+<TD ALIGN="CENTER"><TT>-no_math</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=170>always generates an image of the whole
+<BR>
+expression/environment</TD>
+</TR>
+<TR><TD ALIGN="CENTER">loaded</TD>
+<TD ALIGN="CENTER">--</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=170>uses entities and <TT>&lt;MATH&gt;</TT> tags; e.g. for <TT>HTML-Math</TT>
+(or <TT>MathML</TT> in future)</TD>
+</TR>
+<TR><TD ALIGN="CENTER">loaded</TD>
+<TD ALIGN="CENTER"><TT>-no_math</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=170>textual representation where possible,
+with&nbsp;images&nbsp;of sub-expressions</TD>
+</TR>
+</TABLE>
+
+<A NAME="mathconv3">&#160;</A></DIV></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+Using the  <TT>-no_math</TT>  switch is best for having a consistent
+style used for all mathematical expressions, whether inline or in displays.
+The images are of especially good quality when ``anti-aliasing'' 
+is being used (see <A HREF="Mnode5.html#cs_aaliastext">here</A>),
+provided the browser is set to have a light background colour.
+(When set against a gray or dark background, these images can become
+rather faint and hard to read.)
+
+<P>
+The final strategy <A HREF="Enode5.html#mathconv3">above</A>, 
+using  <TT>-no_math</TT>  is the preferred method for good quality 
+mathematics with <TT>HTML</TT> version 3.2&nbsp;. It combines the browser's 
+built-in fonts with the best quality images, when needed.
+To obtain it use the command-line option switches:
+<BLOCKQUOTE>
+<TT> -no_math -html_version 3.2,math </TT>
+</BLOCKQUOTE>
+This is what was used when creating 
+this manual. For a more detailed discussion of processing mathematics
+using this strategy see the online document by the present author, 
+entitled <A NAME="tex2html24"
+ HREF="http://www-math.mpce.mq.edu.au/texdev/LaTeX2HTML/mathdocs/">``Mathematics with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>''</A>.
+Examples <A HREF="#ex-aalias">below</A> show how to generate an image
+of a whole environment, even with these options in force.
+
+<P><P>
+<BR>
+Since the <TT>HTML</TT> 2.0 standard does not include
+superscripts and subscripts, via the <TT>&lt;SUP&gt;</TT> and <TT>&lt;SUB&gt;</TT> tags,
+the options are more limited. In this case creating images of sub-expressions
+is not so attractive, since virtually the whole expression would
+consist of images in all but the simplest of cases.
+
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="2229">&#160;</A>
+<TABLE>
+<CAPTION><STRONG>Table 3:</STRONG>
+Mathematics translation strategies,
+for <TT>HTML</TT> version 2.0</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<TR><TH ALIGN="CENTER"><B>`math'</B></TH>
+<TH ALIGN="CENTER"><B>switch</B></TH>
+<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=170><B>strategy adopted&nbsp;</B></TH>
+</TR>
+<TR><TD ALIGN="CENTER">not loaded</TD>
+<TD ALIGN="CENTER">--</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=170>textual representation where possible,
+<BR>
+else image of whole expressions</TD>
+</TR>
+<TR><TD ALIGN="CENTER">not loaded</TD>
+<TD ALIGN="CENTER"><TT>-no_math</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=170>always generates an image of
+<BR>
+the whole expression or environment</TD>
+</TR>
+<TR><TD ALIGN="CENTER">loaded</TD>
+<TD ALIGN="CENTER">--</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=170>entities and <TT>&lt;MATH&gt;</TT> tags for&nbsp;<TT>HTML-Math</TT></TD>
+</TR>
+<TR><TD ALIGN="CENTER">loaded</TD>
+<TD ALIGN="CENTER"><TT>-no_math</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=170>always generates an image of the whole
+<BR>
+expression or environment</TD>
+</TR>
+</TABLE>
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+<BR>
+<BR CLEAR="ALL">
+<HR>
+<A NAME="961">&#160;</A><A NAME="962">&#160;</A>
+<A NAME="963">&#160;</A>
+<BR>
+
+<P>
+Here are some examples of mathematical expressions and environments 
+processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> using different strategies. 
+They are automatically numbered ...
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="eq:demo">&#160;</A>
+<!-- MATH: \begin{equation}
+\Phi_{l+1,m,n} = \Bigl(\Phi+h\frac{\partial\Phi}{\partial x} +
+ \frac{1}{2}h^2\frac{\partial^2\Phi}{\partial x^2} +
+ \frac{1}{6}h^3\frac{\partial^3\Phi}{\partial x^3} + \,\ldots\,\Bigr)_{l,m,n}
+\end{equation} -->
+
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<IMG
+ WIDTH="63" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg4.gif"
+ ALT="$\displaystyle \Phi_{l+1,m,n}^{}$">
+= <IMG
+ WIDTH="14" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg5.gif"
+ ALT="$\displaystyle \Bigl($"><IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="Eimg6.gif"
+ ALT="$\displaystyle \Phi$">
++ <I>h</I><IMG
+ WIDTH="29" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg7.gif"
+ ALT="$\displaystyle {\frac{\partial\Phi}{\partial x}}$">
++ <IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg8.gif"
+ ALT="$\displaystyle {\textstyle\frac{1}{2}}$"><I>h</I><SUP>2</SUP><IMG
+ WIDTH="36" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg9.gif"
+ ALT="$\displaystyle {\frac{\partial^2\Phi}{\partial x^2}}$">
++ <IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg10.gif"
+ ALT="$\displaystyle {\textstyle\frac{1}{6}}$"><I>h</I><SUP>3</SUP><IMG
+ WIDTH="36" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg11.gif"
+ ALT="$\displaystyle {\frac{\partial^3\Phi}{\partial x^3}}$">
++ &nbsp;...&nbsp;<IMG
+ WIDTH="45" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg12.gif"
+ ALT="$\displaystyle \Bigr)_{l,m,n}^{}$">
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1)</TD></TR>
+</TABLE></DIV><P></P>
+... with some gratuitously &#225;c&#231;&#235;nted text in-between ...
+<A NAME="984">&#160;</A>
+<A NAME="2230">&#160;</A>
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH: \begin{eqnarray}
+\frac{\Phi_{l+1,m,n}-2\Phi_{l,m,n}+\Phi_{l-1,m,n}}{h^{2}} +
+\frac{\Phi_{l,m+1,n}-2\Phi_{l,m,n}+\Phi_{l,m-1,n}}{h^{2}} \nonumber \\
++ \frac{\Phi_{l,m,n+1}-2\Phi_{l,m,n}+\Phi_{l,m,n-1}}{h^{2}} = -I_{l,m,n}(v)\;.
+\end{eqnarray} -->
+
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="217" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg13.gif"
+ ALT="$\displaystyle {\frac{\Phi_{l+1,m,n}-2\Phi_{l,m,n}+\Phi_{l-1,m,n}}{h^{2}}}$">
++ <IMG
+ WIDTH="217" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg14.gif"
+ ALT="$\displaystyle {\frac{\Phi_{l,m+1,n}-2\Phi_{l,m,n}+\Phi_{l,m-1,n}}{h^{2}}}$"></TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">+ <IMG
+ WIDTH="217" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg15.gif"
+ ALT="$\displaystyle {\frac{\Phi_{l,m,n+1}-2\Phi_{l,m,n}+\Phi_{l,m,n-1}}{h^{2}}}$">
+= - <I>I</I><SUB>l, m, n</SUB>(<I>v</I>) &nbsp;.</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+The latter example uses an 
+<I>eqnarray</I> environment
+and the <TT>&#92;nonumber</TT> command to suppress
+the equation number on the upper line.
+
+<P>
+
+<P>
+<BR>
+Notice how
+simple alphabetic characters that are not part of fractions appear
+in the (italiced) text-font selected using the browser's controls.
+This may appear slightly different from the same symbol being used
+within a fraction, or other mathematical construction requiring an image
+to be generated. This is most apparent with the letter `h' in the
+first equation and the subscripts at the end of the second equation.
+
+<P>
+<A NAME="2237">&#160;</A>
+
+<P>
+By inserting an <code>\htmlimage{}</code> command into a 
+<I>math</I>,
+
+<I>equation</I> or 
+<I>displaymath</I> environment, a single image
+will be created for the whole environment. For an 
+<I>eqnarray</I>
+environment, this will lead to having a single separate image 
+for each of the aligned portions. 
+The argument to <TT>&#92;htmlimage</TT> need not be empty, but may contain
+information which is used to affect characteristics of the resulting
+image. An example of how this is used is given <A HREF="Enode5.html#ex:aalias">below</A>,
+and a fuller discussion of the allowable options is given in
+<A HREF="Enode6.html#imgcon">the next section</A>.
+
+<P>
+<A NAME="1017">&#160;</A>
+
+<H4><A NAME="SECTION000113010000000000000">&#160;</A><A NAME="mathscales">&#160;</A>
+<BR>
+Scale-factors for Mathematics.
+</H4>
+When an image is to be made of a mathematical formula or expression,
+it is generally made at a larger size 
+than is normally required on a printed page.
+This is to compensate for the reduced resolution of a computer screen
+compared with laser-print.  
+The amount of this scaling is given by the
+value of a configuration variable <A HREF="node10.html#GGG_MATH_SCALE_FACTOR"
+ NAME="2538"><TT>$MATH_SCALE_FACTOR</TT></A>,
+by default set to 1.6 in <A HREF="node10.html#GGGlatex2html.config"
+ NAME="2546"><TT>latex2html.config</TT></A>. 
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+A further variable <A HREF="node10.html#GGG_DISP_SCALE_FACTOR"
+ NAME="2554"><TT>$DISP_SCALE_FACTOR</TT></A> is used with
+`displayed math' equations and formulas.
+This value multiplies the <A HREF="node10.html#GGG_MATH_SCALE_FACTOR"
+ NAME="2562"><TT>$MATH_SCALE_FACTOR</TT></A> 
+to give the actual scaling to be used.
+The main purpose of this extra scaling is to allow some clarity in
+super/subscripts etc.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="1026">&#160;</A>
+
+<H4><A NAME="SECTION000113020000000000000">&#160;</A><A NAME="ex:aalias">&#160;</A>
+<BR>
+Anti-aliased Images.
+</H4>
+<A HREF="Enode5.html#eq:pics">Here are</A> the same equations
+as <A HREF="Enode5.html#eq:demo">previously</A>, this time as images of the 
+complete contents of the 
+<I>equation</I> environment, 
+and complete aligned parts of rows in an 
+<I>eqnarray</I>.
+For a comparison, the second group of images use anti-aliasing effects, 
+whereas the first image does not; a 600dpi printing is probably necessary
+to appreciate the difference in quality. Compare these images with those in
+<A HREF="Enode9.html#printqual">a later section</A>.
+<BR>
+<DIV ALIGN="CENTER"><A NAME="eq:pics">&#160;</A><A NAME="1074">&#160;</A>
+<TABLE WIDTH="50%">
+<CAPTION><STRONG>Figure 1:</STRONG>
+Images of equation displays, at normal screen resolution</CAPTION>
+<TR><TD>
+<!-- MATH: \begin{equation}
+\htmlimage{no_antialias}
+\Phi_{l+1,m,n} = \Bigl(\Phi+h\frac{\partial\Phi}{\partial x} +
+\frac{1}{2}h^2\frac{\partial^2\Phi}{\partial x^2} +
+\frac{1}{6}h^3\frac{\partial^3\Phi}{\partial x^3} + \,\ldots\,\Bigr)_{l,m,n}
+\end{equation} -->
+
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="396" HEIGHT="44"
+ SRC="Eimg16.gif"
+ ALT="\begin{displaymath}\Phi_{l+1,m,n} = \Bigl(\Phi+h\frac{\partial\Phi}{\partial x} ...
+...\frac{\partial^3\Phi}{\partial x^3} + \,\ldots\,\Bigr)_{l,m,n}
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(3)</TD></TR>
+</TABLE>
+
+<!-- MATH: \begin{eqnarray}
+\htmlimage{}
+\frac{\Phi_{l+1,m,n}-2\Phi_{l,m,n}+\Phi_{l-1,m,n}}{h^{2}} +
+\frac{\Phi_{l,m+1,n}-2\Phi_{l,m,n}+\Phi_{l,m-1,n}}{h^{2}} \nonumber \\
++ \frac{\Phi_{l,m,n+1}-2\Phi_{l,m,n}+\Phi_{l,m,n-1}}{h^{2}} = -I_{l,m,n}(v)\;.
+\end{eqnarray} -->
+
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="449" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg17.gif"
+ ALT="$\displaystyle \frac{\Phi_{l+1,m,n}-2\Phi_{l,m,n}+\Phi_{l-1,m,n}}{h^{2}} +
+\frac{\Phi_{l,m+1,n}-2\Phi_{l,m,n}+\Phi_{l,m-1,n}}{h^{2}}$"></TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="331" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg18.gif"
+ ALT="$\displaystyle + \frac{\Phi_{l,m,n+1}-2\Phi_{l,m,n}+\Phi_{l,m,n-1}}{h^{2}} = -I_{l,m,n}(v)\;.$"></TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(4)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"><P></P></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+These images of the whole environment were created 
+using the <TT>&#92;htmlimage</TT> command, to suppress the extended parsing 
+that usually occurs when the `<TT>math</TT>' extension is loaded; viz.
+<PRE>
+\begin{equation}
+\htmlimage{no_antialias}
+\Phi_{l+1,m,n} = \Bigl(\Phi+h\frac{\partial\Phi}{\partial x} +
+...
+\end{equation}
+%
+\begin{eqnarray}
+\htmlimage{}
+\frac{\Phi_{l+1,m,n}-2\Phi_{l,m,n}+\Phi_{l-1,m,n}}{h^{2}} +
+...
+\end{eqnarray}
+</PRE>
+Further aspects of the options available when generating images 
+are discussed in <A HREF="Enode6.html#imgcon">the next section</A>, in particular 
+with regard to the quality of <A HREF="Enode9.html#printqual">printed images</A>.
+
+<P>
+<A NAME="2246">&#160;</A>
+
+<H4><A NAME="SECTION000113030000000000000">
+The <TT>&#92;mbox</TT> command.</A>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Another way to force an image to be created of a mathematical expression,
+when global settings are not such as to do this anyway, 
+is via the <TT>&#92;mbox</TT> command having math delimiters within its argument.
+
+<P>
+Normally <TT>&#92;mbox</TT> is used to set a piece of ordinary text within a 
+mathematics environment. It is not usual to have math delimiters 
+<TT>$...$</TT> or <TT>&#92;(</TT>...<TT>&#92;)</TT> within the argument of an <TT>&#92;mbox</TT>. 
+Whereas earlier versions of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> simply ignored the <TT>&#92;mbox</TT> 
+command (treating its argument as normal text), 
+the presence of such delimiters now results in an image being
+generated of the <EM>entire contents</EM> of the <TT>&#92;mbox</TT>.
+It is not necessary for there to be any actual mathematics inside
+the <TT>&#92;mbox</TT>'s contents;
+<BR>
+e.g. <code>\mbox{...some text...${}$}</code>
+will cause an image to be created of the given text.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2248">&#160;</A>
+
+<H4><A NAME="SECTION000113040000000000000">
+The <TT>&#92;parbox</TT> command.</A>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+The <TT>&#92;parbox[
+&lt;<I>align</I>&gt;</TT><code>]{</code><TT>
+&lt;<I>width</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>text</I>&gt;</TT><code>}</code> 
+command also generates an image of its contents,
+except when used within a 
+<I>tabular</I> environment, or other
+similar table-making environment.
+Here the important aspect is the width specified for the given
+piece of text, and any special line-breaks or alignments that
+this may imply. Hence to get the best effect, L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X is used
+to typeset the complete <TT>&#92;parbox</TT>, with its specified width,
+alignment and contents, resulting in an image.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2250">&#160;</A>
+<A NAME="2251">&#160;</A><A NAME="2252">&#160;</A>
+<A NAME="2253">&#160;</A>
+<A NAME="2254">&#160;</A>
+<BR>
+
+<H4><A NAME="SECTION000113050000000000000">
+The 
+<I>heqn</I> package.</A>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+If you need <TT>HTML</TT> 2.0 compatible Web pages,
+and have a document with a great many displayed equations, 
+then you might try using the 
+<I>heqn</I> package.  
+Inclusion of the <A HREF="node10.html#GGGheqn.sty"
+ NAME="2600"><TT>heqn.sty</TT></A> file has absolutely
+no effect on the printed version of the article, 
+but it does change the way in which L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> translates
+displayed equations and equation arrays.  
+It causes the equation numbers of the 
+<I>equation</I>
+environment to be moved outside of the images themselves, 
+so that they become order-independent and hence recyclable.  
+Images that result from the 
+<I>eqnarray</I> environment are also recyclable,
+so long as their equation numbers remain unchanged from the previous run.  
+
+<P>
+<A NAME="2256">&#160;</A>
+<A NAME="2257">&#160;</A>
+<A NAME="2258">&#160;</A>
+<BR>
+The <TT>&#92;nonumber</TT> command is recognised 
+in each line of the equation array, to suppress the equation number.
+A side-effect of this approach is that equation numbers will
+appear on the left side of the page.
+The 
+<I>heqn</I> package requires the 
+<I>html</I> package.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+
+<P></P>
+Using <TT>HTML</TT> Version 3.2 the 
+<I>heqn</I> package is quite redundant,
+since equation numbers are placed in a separate <TT>&lt;TABLE&gt;</TT> cell
+to the mathematical expressions themselves.
+It is <EM>not</EM> required and should <EM>not</EM> be requested, since this will
+override some of the improved functionality already available.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html145"
+ HREF="Enode5.html#SECTION000113010000000000000">Scale-factors for Mathematics.</A>
+<LI><A NAME="tex2html146"
+ HREF="Enode5.html#SECTION000113020000000000000">Anti-aliased Images.</A>
+<LI><A NAME="tex2html147"
+ HREF="Enode5.html#SECTION000113030000000000000">The <TT>&#92;mbox</TT> command.</A>
+<LI><A NAME="tex2html148"
+ HREF="Enode5.html#SECTION000113040000000000000">The <TT>&#92;parbox</TT> command.</A>
+<LI><A NAME="tex2html149"
+ HREF="Enode5.html#SECTION000113050000000000000">The 
+<I>heqn</I> package.</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html143"
+ HREF="Enode6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html139"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html133"
+ HREF="Enode4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html141"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html142"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html144"
+ HREF="Enode6.html">Figures and Image Conversion</A>
+<B> Up:</B> <A NAME="tex2html140"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html134"
+ HREF="Enode4.html">Multi-lingual documents, using Images</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

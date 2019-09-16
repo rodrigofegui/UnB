@@ -1,0 +1,110 @@
+As rotas encontradas foram essas:
+1º Partindo de Brasília, rota de 13172 km:
+Goiânia -> Barra do Garças -> Porto Velho -> Campo Grande -> Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Santos -> Rio de Janeiro -> Petrópolis -> Belo Horizonte -> Rio de Janeiro -> Maceió -> Natal -> Maceió -> Belém;
+
+2º Partindo de Goiânia, rota de 12770 km:
+Brasília -> Belo Horizonte -> Petrópolis -> Rio de Janeiro -> Santos -> Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Campo Grande -> Porto Velho -> Barra do Garças -> Brasília -> Natal -> Maceió -> Belém;
+
+3º Partindo de Natal, rota de 12541 km:
+Maceió -> Belém -> Goiânia -> Brasília -> Belo Horizonte -> Petrópolis -> Rio de Janeiro -> Santos -> Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Campo Grande -> Porto Velho -> Barra do Garças;
+
+4º Partindo de Blumenau, rota de 12167 km:
+Florianópolis -> Curitiba -> Santos -> Rio de Janeiro -> Petrópolis -> Belo Horizonte -> Brasília -> Goiânia -> Barra do Garças -> Porto Velho -> Campo Grande -> Brasília -> Natal -> Maceió -> Belém;
+
+5º Partindo de Belo Horizonte, rota de 13344 km:
+Petrópolis -> Rio de Janeiro -> Santos -> Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Campo Grande -> Goiânia -> Brasília -> Natal -> Maceió -> Belém -> Porto Velho -> Barra do Garças;
+
+6º Partindo de Campo Grande, rota de 11313 km:
+Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Santos -> Rio de Janeiro -> Petrópolis -> Belo Horizonte -> Brasília -> Goiânia -> Barra do Garças -> Porto Velho -> Belém -> Maceió -> Natal;
+
+7º Partindo de Belém, rota de 12735 km:
+Goiânia -> Brasília -> Belo Horizonte -> Petrópolis -> Rio de Janeiro -> Santos -> Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Campo Grande -> Porto Velho -> Barra do Garças -> Brasília -> Natal -> Maceió;
+
+8º Partindo de Barra do Garças, rota de 11500 km:
+Goiânia -> Brasília -> Belo Horizonte -> Petrópolis -> Rio de Janeiro -> Santos -> Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Campo Grande -> Porto Velho -> Belém -> Maceió -> Natal;
+
+9º Partindo de Porto Velho, rota de 11024 km:
+Barra do Garças -> Goiânia -> Brasília -> Belo Horizonte -> Petrópolis -> Rio de Janeiro -> Santos -> Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Campo Grande -> Brasília -> Natal -> Maceió -> Belém;
+
+10º Partindo de Curitiba, rota de 12395 km:
+Blumenau -> Florianópolis -> Curitiba -> Santos -> Rio de Janeiro -> Petrópolis -> Belo Horizonte -> Brasília -> Goiânia -> Barra do Garças -> Porto Velho -> Campo Grande -> Brasília -> Natal -> Maceió -> Belém;
+
+11º Partindo de Florianópolis, rota de 12095 km:
+Blumenau -> Curitiba -> Santos -> Rio de Janeiro -> Petrópolis -> Belo Horizonte -> Brasília -> Goiânia -> Barra do Garças -> Porto Velho -> Campo Grande -> Brasília -> Natal -> Maceió -> Belém;
+
+12º Partindo de Santos, rota de 14272 km:
+Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Campo Grande -> Goiânia -> Brasília -> Belo Horizonte -> Petrópolis -> Rio de Janeiro -> Maceió -> Natal -> Maceió -> Belém -> Porto Velho -> Barra do Garças;
+
+13º Partindo de Rio de Janeiro, rota de 13501 km:
+Petrópolis -> Belo Horizonte -> Santos -> Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Campo Grande -> Goiânia -> Brasília -> Natal -> Maceió -> Belém -> Porto Velho -> Barra do Garças;
+
+14º Partindo de Petrópolis, rota de 14397 km:
+Rio de Janeiro -> Santos -> Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Campo Grande -> Goiânia -> Brasília -> Belo Horizonte -> Rio de Janeiro -> Maceió -> Natal -> Maceió -> Belém -> Porto Velho -> Barra do Garças;
+
+15º Partindo de Maceió, rota de 13298 km:
+Natal -> Brasília -> Goiânia -> Barra do Garças -> Porto Velho -> Campo Grande -> Curitiba -> Blumenau -> Florianópolis -> Curitiba -> Santos -> Rio de Janeiro -> Petrópolis -> Belo Horizonte -> Goiânia -> Belém;
+
+
+
+Temos 15 registradas, apresentando-as e suas ligacoes diretas:
+
+1º Cidade:
+Brasília esta conectada a 4 outras cidades, sendo elas:
+Goiânia (173 km), Belo Horizonte (716 km), Blumenau (1624 km), Natal (2275 km);
+
+2º Cidade:
+Goiânia esta conectada a 5 outras cidades, sendo elas:
+Brasília (173 km), Barra do Garças (405 km), Belo Horizonte (874 km), Campo Grande (877 km), Belém (2046 km);
+
+3º Cidade:
+Natal esta conectada a 2 outras cidades, sendo elas:
+Maceió (540 km), Brasília (2275 km);
+
+4º Cidade:
+Blumenau esta conectada a 3 outras cidades, sendo elas:
+Florianópolis (139 km), Curitiba (228 km), Brasília (1624 km);
+
+5º Cidade:
+Belo Horizonte esta conectada a 4 outras cidades, sendo elas:
+Petrópolis (376 km), Santos (658 km), Brasília (716 km), Goiânia (874 km);
+
+6º Cidade:
+Campo Grande esta conectada a 3 outras cidades, sendo elas:
+Curitiba (780 km), Goiânia (877 km), Porto Velho (2151 km);
+
+7º Cidade:
+Belém esta conectada a 3 outras cidades, sendo elas:
+Goiânia (2046 km), Maceió (2081 km), Porto Velho (2564 km);
+
+8º Cidade:
+Barra do Garças esta conectada a 2 outras cidades, sendo elas:
+Goiânia (405 km), Porto Velho (1964 km);
+
+9º Cidade:
+Porto Velho esta conectada a 3 outras cidades, sendo elas:
+Barra do Garças (1964 km), Campo Grande (2151 km), Belém (2564 km);
+
+10º Cidade:
+Curitiba esta conectada a 4 outras cidades, sendo elas:
+Blumenau (228 km), Florianópolis (300 km), Santos (480 km), Campo Grande (780 km);
+
+11º Cidade:
+Florianópolis esta conectada a 2 outras cidades, sendo elas:
+Blumenau (139 km), Curitiba (300 km);
+
+12º Cidade:
+Santos esta conectada a 3 outras cidades, sendo elas:
+Curitiba (480 km), Rio de Janeiro (501 km), Belo Horizonte (658 km);
+
+13º Cidade:
+Rio de Janeiro esta conectada a 3 outras cidades, sendo elas:
+Petrópolis (66 km), Santos (501 km), Maceió (2448 km);
+
+14º Cidade:
+Petrópolis esta conectada a 2 outras cidades, sendo elas:
+Rio de Janeiro (66 km), Belo Horizonte (376 km);
+
+15º Cidade:
+Maceió esta conectada a 3 outras cidades, sendo elas:
+Natal (540 km), Belém (2081 km), Rio de Janeiro (2448 km);
+
