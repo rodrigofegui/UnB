@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Extending the Translator</TITLE>
+<META NAME="description" CONTENT="Extending the Translator">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="next" HREF="Mnode14.html">
+<LINK REL="previous" HREF="Mnode2.html">
+<LINK REL="up" HREF="userman.html">
+<LINK REL="next" HREF="Mnode11.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html158"
+ HREF="Mnode11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html154"
+ HREF="userman.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html148"
+ HREF="Mnode9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html156"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html157"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html159"
+ HREF="Mnode11.html">Asking the Translator to</A>
+<B> Up:</B> <A NAME="tex2html155"
+ HREF="userman.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html149"
+ HREF="Mnode9.html">Other Configuration Variables, without</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000133000000000000000">&#160;</A><A NAME="sec:ext">&#160;</A>
+<BR>
+Extending the Translator
+</H2>
+<!--Table of Child-Links-->
+<UL>
+<LI><A NAME="tex2html160"
+ HREF="Mnode11.html">Asking the Translator to Ignore Commands</A>
+<LI><A NAME="tex2html161"
+ HREF="Mnode12.html">Asking the Translator to Pass Commands to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</A>
+<LI><A NAME="tex2html162"
+ HREF="Mnode13.html">Handling ``order-sensitive'' Commands</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR CLEAR="ALL">
+<HR>
+In <A HREF="Enode12.html#sec:sty">an earlier section</A> is was seen how
+the capabilities of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> can be extended to cope with
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands defined in packages and style-files.
+This is in addition to defining simple macros and environments,
+using <TT>&#92;newcommand</TT> and <TT>&#92;newenvironment</TT>.
+The problem however, is that writing such extensions for packages 
+requires an understanding of <A HREF="node10.html#GGGPerl"><I>Perl</I></A> programming 
+and of the way the processing in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> is organised. 
+
+<P>
+<A NAME="1891">&#160;</A>
+<A NAME="1892">&#160;</A>
+<A NAME="1893">&#160;</A>
+
+<P></P>
+
+<P>
+The default behaviour for unrecognised commands is 
+for their arguments to remain in the <TT>HTML</TT> text,
+whereas the commands themselves are passed on to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X,
+in an attempt to generate an image. This is far from ideal,
+for it is quite likely to lead to an error in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X
+due to not having appropriate arguments for the command.
+
+<P>
+Currently there are several related mechanisms whereby a user 
+can ask for particular commands and their arguments to be either 
+<UL>
+<LI>
+<A HREF="Mnode11.html#ignore">ignored</A> (via: <TT>&amp;ignore_commands</TT>);
+<LI>
+passed on to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  for processing <A HREF="Mnode12.html#pass">as an image</A>
+<BR>
+(via: <TT>&amp;process_commands_in_tex</TT>);
+<LI>
+passed to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  for processing as an image, 
+<A HREF="Mnode13.html#sensit">as if an environment</A>
+<BR>
+(via: <TT>&amp;process_commands_inline_in_tex</TT>);
+<LI>
+passed on to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, <A HREF="Mnode13.html#setparam">setting parameters</A> 
+to be used in subsequent images
+<BR>
+(via: <TT>&amp;process_commands_nowrap_in_tex</TT>);
+<LI>
+processed as ``order-sensitive'', <A HREF="Mnode13.html#wrapdef">as if an environment</A> 
+rather than a command
+<BR>
+(via: <TT>&amp;process_commands_wrap_deferred</TT>);
+</UL>
+The string beginning <TT>&amp;.... </TT> is the name of the <A HREF="node10.html#GGGPerl"><I>Perl</I></A> subroutine 
+that controls how the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands are to be subsequently treated during
+processing by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+Towards the end of the <A HREF="node10.html#GGGlatex2html"
+ NAME="4745"><TT>latex2html</TT></A> script, one finds a list
+of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands to be handled by each of these subroutines.
+These lists even include some common T<SMALL>E</SMALL>X commands.
+
+<P>
+Analogous lists occur in most of the package extension files.
+In many cases the commands are for fine-tuning the layout on
+a printed page. They should simply be ignored; but any parameters
+must not be allowed to cause unwanted characters to appear on
+the <TT>HTML</TT> pages.
+Customised extensions using these mechanisms may be included in the 
+<A HREF="node10.html#GGG_LATEX2HTMLDIR_latex2html.config"
+ NAME="4753"><TT>$LATEX2HTMLDIR/latex2html.config</TT></A> file, or in a personal 
+<A HREF="node10.html#GGG_HOME_.latex2html-init"
+ NAME="4761"><TT>$HOME/.latex2html-init</TT></A> initialisation file, 
+as described <A HREF="Mnode11.html#ignore">next</A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html158"
+ HREF="Mnode11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html154"
+ HREF="userman.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html148"
+ HREF="Mnode9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html156"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html157"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html159"
+ HREF="Mnode11.html">Asking the Translator to</A>
+<B> Up:</B> <A NAME="tex2html155"
+ HREF="userman.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html149"
+ HREF="Mnode9.html">Other Configuration Variables, without</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

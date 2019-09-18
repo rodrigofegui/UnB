@@ -1,0 +1,162 @@
+# depslib dependency file v1.0
+1431142072 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 3/Reserva - Rod/Funcoes.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	"Funcoes.h"
+
+1431142772 "
+
+1431138964 /home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 3/Reserva - Rod/Funcoes.h
+	"TADs.h"
+	"TADs.h"
+
+1431135712 
+
+1431135712 /home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 3/Reserva - Rod/TADs.h
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+	<string.h>
+
+1431140295 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 3/Reserva - Rod/Principal.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+
+1431180728 source:c:\users\avell g1713 max\dropbox\projeto 3\reserva - rod\funcoes.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	"Funcoes.h"
+
+1431138964 c:\users\avell g1713 max\dropbox\projeto 3\reserva - rod\funcoes.h
+	"TADs.h"
+
+1431135712 c:\users\avell g1713 max\dropbox\projeto 3\reserva - rod\tads.h
+
+1431182690 source:c:\users\avell g1713 max\dropbox\projeto 3\reserva - rod\principal.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+
+1431141661 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 3/Reserva - Rod/TADs.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+
+1431052191 source:/home/lucas-old/Dropbox/Projeto 3/Reserva - Rod/Funcoes.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	"Funcoes.h"
+
+1431044287 /home/lucas-old/Dropbox/Projeto 3/Reserva - Rod/Funcoes.h
+	"TADs.h"
+
+1431052324 /home/lucas-old/Dropbox/Projeto 3/Reserva - Rod/TADs.h
+
+1431098375 source:/home/lucas-old/Dropbox/Projeto 3/Reserva - Rod/Principal.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+
+1431052191 source:/home/lucas-old/Dropbox/Projeto 3/Reserva - Rod/TADs.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+
+1431180728 source:/home/lucsantos/Dropbox/Projeto 3/Reserva - Rod/Funcoes.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	"Funcoes.h"
+
+1431138964 /home/lucsantos/Dropbox/Projeto 3/Reserva - Rod/Funcoes.h
+	"TADs.h"
+
+1431135712 /home/lucsantos/Dropbox/Projeto 3/Reserva - Rod/TADs.h
+
+1431140295 source:/home/lucsantos/Dropbox/Projeto 3/Reserva - Rod/Principal.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+
+1431142772 source:/home/lucsantos/Dropbox/Projeto 3/Reserva - Rod/TADs.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+
+1431142772 source:c:\users\avell g1713 max\dropbox\projeto 3\reserva - rod\tads.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+
+1431304913 source:/home/lucsantos/Dropbox/Projeto 3/Reserva - Rod/Funcoes.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	"Funcoes.h"
+
+1431294658 /home/lucsantos/Dropbox/Projeto 3/Reserva - Rod/Funcoes.h
+	"TADs.h"
+
+1431301646 /home/lucsantos/Dropbox/Projeto 3/Reserva - Rod/TADs.h
+
+1431302622 source:/home/lucsantos/Dropbox/Projeto 3/Reserva - Rod/Principal.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+
+1431293287 source:/home/lucsantos/Dropbox/Projeto 3/Reserva - Rod/TADs.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+
+1431308456 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 3/Reserva - Rod/Funcoes.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	"Funcoes.h"
+
+1431310405 /home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 3/Reserva - Rod/Funcoes.h
+	"TADs.h"
+
+1431301646 /home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 3/Reserva - Rod/TADs.h
+
+1431274281 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 3/Reserva - Rod/Principal.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+
+1431309855 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 3/Reserva - Rod/TADs.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Funcoes.h"
+

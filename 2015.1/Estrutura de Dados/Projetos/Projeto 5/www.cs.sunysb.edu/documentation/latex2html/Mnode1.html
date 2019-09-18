@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Developing Documents using LATEX2HTML</TITLE>
+<META NAME="description" CONTENT="Developing Documents using LATEX2HTML">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="next" HREF="Mnode2.html">
+<LINK REL="previous" HREF="userman.html">
+<LINK REL="up" HREF="userman.html">
+<LINK REL="next" HREF="Mnode2.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html43"
+ HREF="Mnode2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html39"
+ HREF="userman.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html33"
+ HREF="userman.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html41"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html42"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html44"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Up:</B> <A NAME="tex2html40"
+ HREF="userman.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html34"
+ HREF="userman.html">No Title</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000131000000000000000">&#160;</A><A NAME="devel">&#160;</A>
+<BR>
+Developing Documents using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>
+</H2>
+Although any document containing L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands can be translated
+by the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> translator, the best results are obtained when
+that document is itself a valid L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X document.
+Indeed it is generally a good idea to develop documents so that
+they produce good readable results in both the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset
+version as well as a set of <TT>HTML</TT> pages.
+This is not just a nicety; 
+there are several good practical reasons for doing this.
+
+<P>
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X macros: </B>
+<DD>The macro commands that L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> recognises are based upon
+corresponding commands for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X. If one tries to use syntax that is
+incorrect for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X then there is no reason why L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> should
+be able to ``get it right'', by somehow recognising the true intent.
+
+<P>
+<A NAME="716">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>error checking: </B>
+<DD>Processing the document first using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X is the easiest, 
+and quickest, way to check for valid syntax.
+<BR>
+Whereas L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X stops at each error (when run in interactive mode),
+allowing a fix to be made ``on the spot'' or a ``stop-fix-restart'',
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> does not stop when it detects an error in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X syntax.
+Useful messages are given concerning missing or unmatched braces,
+but other apparent anomalies generate only warning messages, 
+which are saved to the end. 
+(Some warnings are also shown immediately when the <A HREF="node10.html#GGG_VERBOSITY"
+ NAME="2192"><TT>$VERBOSITY</TT></A> 
+<A HREF="#verbosity">variable</A> is set to at least 3.)
+<BR>
+In practice it can be much quicker to test for invalid syntax using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X before 
+attempting to use the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> translator.
+
+<P>
+Furthermore, L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X warns of cross-reference labels that have not been defined. 
+This is useful to help avoid having hyperlinks which point to nowhere.
+
+<P>
+<A NAME="729">&#160;</A>
+<A NAME="730">&#160;</A>
+<BR>
+The case of missing braces, or an unmatched opening brace, 
+is an error that L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> actually handles better than L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X 
+(or rather, the underlying T<SMALL>E</SMALL>X processor).
+Whereas T<SMALL>E</SMALL>X only detects an error when something else goes wrong
+later in the processing, L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> shows where the
+unmatched brace itself occurs. 
+
+<P>
+<A NAME="737">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>auxiliary file: </B>
+<DD>Some information that L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> might need is normally
+read from the <TT>.aux</TT> file for the document being processed;
+or perhaps from the <TT>.aux</TT> file of a different document,
+of which the current document is just a portion. 
+Clearly a valid L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X run is required to produce the <TT>.aux</TT> file.
+
+<P>
+<BR>
+Of course if no information in the <TT>.aux</TT> file is actually used,
+then this L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X run can be neglected.
+Also, if the <TT>.aux</TT> file has already been created, and edits
+are made on the source which do not alter the information stored
+within the <TT>.aux</TT> file, then there is no need for a fresh
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X run (except for the purposes of error-checking).
+
+<P>
+<A NAME="749">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>bibliography: </B>
+<DD>Suppose the document requires a bibliography, or list of references,
+which is to be prepared using BibT<SMALL>E</SMALL>X.
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> reads citation information from the <TT>.aux</TT> file,
+and can import the bibliography itself from the <TT>.bbl</TT> file.
+However these must first be created using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+
+<P>
+<A NAME="753">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>document segmentation: </B>
+<DD>With the document segmentation technique, 
+discussed fully in <A HREF="Hnode11.html#Segmentation">a later section</A>,
+it is vitally important that the full document processes correctly
+in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X. The desired effect is that of a single large document,
+whereas the pieces will actually be processed separately.
+To achieve this, L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X writes vital information into special
+<TT>.ptr</TT> files. Like the <TT>.aux</TT> file, these files
+are read by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> to get section-numbering and other
+information to be used while processing each segment.
+
+<P>
+<A NAME="762">&#160;</A>
+<A NAME="763">&#160;</A>
+<BR>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>print quality: </B>
+<DD>When a document contains automatically-generate images, these images
+are usually bitmaps designed for viewing on-screen. In general the 
+resolution of these is too poor to give a good result when printed
+on a high-resolution laser-printer.
+Thus if it is likely that the reader will want to obtain
+a printed version of your document, then it is best to include
+a hyperlink to the typeset <TT>.dvi</TT> version, 
+or to a <A HREF="#GGGpostscript"
+ NAME="2200">PostScript</A> conversion of the <TT>.dvi</TT> file. 
+(In either case, a link to a compressed version is even better.)
+
+<P>
+</DL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html43"
+ HREF="Mnode2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html39"
+ HREF="userman.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html33"
+ HREF="userman.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html41"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html42"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html44"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Up:</B> <A NAME="tex2html40"
+ HREF="userman.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html34"
+ HREF="userman.html">No Title</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

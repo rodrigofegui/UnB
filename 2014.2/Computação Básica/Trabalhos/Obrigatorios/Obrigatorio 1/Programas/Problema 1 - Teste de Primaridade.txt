@@ -1,0 +1,45 @@
+algoritmo "Problema 1 - Teste de Primaridade"
+
+// Responsável / Turma: Rodrigo Guimarães / E
+// Determinar primaridade de um número inteiro positivo
+ 
+var   
+    inteiro: n, div, resto, t;
+
+inicio
+ 
+	escreva("***********************************")
+	escreva("TESTE DE PRIMARIDADE")
+	escreva("***********************************")
+ 
+	faca
+        	escreva("Digite um numero interio positivo ou (-1) para sair:")
+		leia(n)
+     
+		se (n < -1) entao
+			escreva(Numero invalido, apenas numeros inteiros POSITIVOS sao aceitos!")
+		senao
+			se (n >= 0) entao
+				div <- 2
+				resto <- n%div
+			fimse
+		fimse
+             
+		enquanto (div <= sqrt(n) && (resto != 0)) faca
+			resto = n%div
+			div ++
+		fimenquanto
+
+		se ((resto == 0) && (n != 2)) entao
+			escreva("O numero NAO eh primo.")
+		senao
+			escreva("O numero eh primo.")
+		fimse
+
+	enquanto (n != -1)
+ 
+	escreva("***********************************")
+	escreva("      FIM TESTE DE PRIMARIDADE")
+	escreva("***********************************")
+     
+fimalgoritmo

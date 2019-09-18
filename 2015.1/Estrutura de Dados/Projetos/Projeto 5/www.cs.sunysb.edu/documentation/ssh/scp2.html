@@ -1,0 +1,141 @@
+<html><BODY bgcolor="ffffff">
+<PRE>
+SCP2(1)                        SSH2                       SCP2(1)
+
+
+
+<B>NAME</B>
+       scp2 - secure copy client
+
+
+<B>SYNOPSIS</B>
+       <B>scp2 </B>[<B>-D </B><I>debug</I><B>_</B><I>level</I><B>_</B><I>spec</I>] [<B>-d </B>] [<B>-p </B>] [<B>-n </B>] [<B>-u </B>] [<B>-v </B>]
+       [<B>-h </B>] [<B>-c  cipher </B>] [<B>-S </B><I>ssh2-path</I>] [<B>-P </B><I>ssh2-port</I>] [<B>-t </B>]
+       [<B>-f </B>] [<B>-1 </B>] [<B>-r </B>] [<B>-B </B>] [<B>-o </B><I>ssh-option</I>] [<B>-i </B><I>file</I>]
+       [[user@]host[#port]:]file ...
+       [[user@]host[#port]:]file_or_dir
+
+
+
+<B>DESCRIPTION</B>
+       <B>Scp2  </B>(Secure Copy) is used to copy files over the network
+       securely.  It uses <B>ssh2 </B>for data transfer,  and  uses  the
+       same authentication and provides the same security as <B>ssh2</B>
+       <B>.  </B>Unlike <B>rcp</B>, <B>scp2 </B>will ask for passwords or  passphrases
+       if  they  are  needed for authentication. You can also use
+       your public key for authentica- tion  as  well.  See  <B>ssh-</B>
+       <B>agent2 (1) </B>and <B>ssh-add2 (1) .</B>
+
+
+
+
+
+       Any  filename may contain a host, user and port specifica­
+       tion to indicate that the file is  to  be  copied  to/from
+       that host.  Copies between two remote hosts are permitted.
+       ``file'' can contain globbing patterns.  Read  more  about
+       those from <B>sshregex</B>(1).
+
+
+<B>OPTIONS</B>
+       <B>-D </B><I>debug</I><B>_</B><I>level</I><B>_</B><I>spec</I>
+              Print   extensive   debug  information  to  stderr.
+              debug_level_spec is a number, from 0 to  99,  where
+              99  specifies  that all debug information should be
+              displayed.
+
+       <B>-d     </B>With this option, <B>scp2 </B>will make sure that the des­
+              tination  file  is  a  directory. If not, <B>scp2 </B>will
+              exit with an error message.
+
+       <B>-p     </B>Tells <B>scp2 </B>to preserve file attributes  and  times­
+              tamps.
+
+       <B>-n     </B>Makes <B>scp2 </B>show what operations would've been done,
+              without actually copying any files.
+
+       <B>-u     </B>Makes <B>scp2 </B>remove source-files after copying.  This
+              makes scp2 work more like "mv" than "cp."
+
+       <B>-v     </B>Makes  <B>scp2  </B>verbose.  This  is equal to specifying
+              the`-D 2'-option.
+
+       <B>-h     </B>Display a short help.
+
+       <B>-c </B><I>cipher</I>
+              Select the encryption algorithm that <B>ssh2 </B>will use.
+              Multiple  -c  options  are  allowed and a single -c
+
+              flag can have only one cipher.
+
+       <B>-S </B><I>ssh2-path</I>
+              Specifies the path to <B>ssh2 </B>used in connecting.
+
+       <B>-o </B><I>ssh-options</I>
+              Specifies options to give to  <B>ssh2</B>.   Use  as  with
+              <B>ssh2, </B>see <B>ssh2</B>(1).
+
+       <B>-i </B><I>file</I>
+              Specifies the identity file to give <B>ssh2</B>.
+
+       <B>-P </B><I>ssh2-port</I>
+              Specifies the remote port to <B>ssh2 .  </B>Ports can also
+              be defined on file-to-file basis. See <B>SYNOPSIS .</B>
+
+       <B>-t </B>or <B>-f</B>
+              These options are reserved for  <B>scp1  </B>compatibility
+              mode.  If they are used with <B>scp2</B>, it gives them as
+              arguments to <B>scp1 </B>to handle the connection.
+
+
+       <B>-1     </B>This option invokes <B>scp1 </B>with given arguments.  The
+              <B>``-1''  </B>is  removed from the list, however, because
+              scp1 doesn't understand  this  option.  Because  of
+              this,  this  option  has  to  be given as the first
+              argument to <B>scp2 </B>and  separated  from  other  argu­
+              ments.
+
+
+       <B>-r     </B>This  option specifies that <B>scp2 </B>should copy direc­
+              tories recursively. Does not follow symbolic links.
+
+
+<B>EXAMPLES</B>
+       There  are a couple of ways to use scp2. You can use it to
+       copy files from your local system to a remote system:
+
+       $ scp localfile user@remotehost:/dest/dir/for/file/
+
+       Or you can use it to  copy  files  from  a  remote  system
+       locally:
+
+       $       scp       user@remotehost:/dir/for/file/remotefile
+       /dest/dir/for/file
+
+
+       <B>-B     </B>With  this  option,  <B>scp2 </B>invokes, if need be, <B>ssh2</B>
+              with "<B>BatchMode yes</B>".
+
+
+<B>INSTALLATION</B>
+       <B>Scp2 </B>uses <B>ssh2 </B>in network connections.   Therefore  it  is
+       not  installed  suid-root.   Notice  that subsystem `sftp-
+       server' must be defined in <B>sshd2</B>(8)'s  configuration  file
+       in the remote end for <B>scp2 </B>to work.
+
+
+<B>AUTHORS</B>
+       SSH Communications Security Corp
+
+       For more information, see http://www.ssh.com.
+
+
+<B>SEE ALSO</B>
+       <B>ssh2</B>(1),  <B>sshd2</B>(8),  <B>ssh-keygen2</B>(1),  <B>ssh-agent2</B>(1),  <B>ssh-</B>
+       <B>add2</B>(1), <B>sftp</B>(1) <B>rlogin</B>(1), <B>rsh</B>(1), <B>telnet</B>(1)
+
+
+
+SSH2                      March 22, 2000                  SCP2(1)
+</PRE>
+</BODY></html>

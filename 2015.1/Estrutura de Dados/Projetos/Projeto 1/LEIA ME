@@ -1,0 +1,4 @@
+Quando for compilar pelo terminal é preciso adicionar o comando -lm ao final da linha,
+para que acesse a biblioteca math.h
+Não sabemos o motivo ao certo, mas é uma busca que estamos realizando para ampliar
+nosso conhecimento sobre o assunto.

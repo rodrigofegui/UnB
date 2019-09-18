@@ -1,0 +1,614 @@
+<html><BODY bgcolor="ffffff">
+<PRE>
+SSH2(1)                        SSH2                       SSH2(1)
+
+
+
+<B>NAME</B>
+       ssh2 - secure shell client (remote login program)
+
+
+<B>SYNOPSIS</B>
+       <B>ssh2 </B>[<B>-l </B><I>login</I><B>_</B><I>name</I>] <B>hostname </B>[<I>command</I>]
+
+       <B>ssh2  </B>[<B>-l </B><I>login</I><B>_</B><I>name</I>]  [<B>-n</B>]  [<B>+a</B>] [<B>-a</B>] [<B>+x</B>] [<B>-x</B>] [<B>-i </B><I>file</I>]
+       [<B>-F </B><I>file</I>] [<B>-t</B>] [<B>-v</B>]  [<B>-d </B><I>debug</I><B>_</B><I>level</I>]  [<B>-V</B>]  [<B>-q</B>]  [<B>-f</B>[<I>o</I>]]
+       [<B>-e </B><I>char</I>]     [<B>-c </B><I>cipher</I>]    [<B>-m </B><I>MAC</I>]    [<B>-p </B><I>port</I>]    [<B>-S</B>]
+       [<B>-L </B><I>port</I><B>:</B><I>host</I><B>:</B><I>hostport</I>] [<B>-R </B><I>port</I><B>:</B><I>host</I><B>:</B><I>hostport</I>] [<B>+C</B>]  [<B>-C</B>]
+       [<B>-o </B><I>`option'</I>] [<B>-h</B>] <I>[login</I><B>_</B><I>name@]hostname[#port] </I>[<I>command</I>]
+
+<B>DESCRIPTION</B>
+       <B>Ssh2 </B>(Secure Shell) is a program for logging into a remote
+       machine and executing commands in a remote machine.  It is
+       intended  to  replace  rlogin and rsh, and provide secure,
+       encrypted communications between two untrusted hosts  over
+       an insecure network.  X11 connections and arbitrary TCP/IP
+       ports can also be forwarded over the secure channel.
+
+       <B>Ssh2 </B>connects and logs into the specified  <I>hostname</I>.   The
+       user  must  prove his identity to the remote machine using
+       some authentication method.
+
+       Public key authentication is based on the use  of  digital
+       signatures.  Each user creates a public / private key pair
+       for authentication purposes. The server knows  the  user's
+       public  key,  and  only  the user has the private key. The
+       filenames of private keys that are used in  authentication
+       are  set  in  <I>$HOME/.ssh2/identification.   </I>When  the user
+       tries  to  authenticate   himself,   the   server   checks
+       <I>$HOME/.ssh2/authorization </I>for filenames of matching public
+       keys and sends a challenge to the user end.  The  user  is
+       authenticated  by  signing the challenge using the private
+       key. See the <B>FILES </B>section below for more  information  on
+       identification and authorization files.
+
+       Private  /  public  key pairs can be created with <B>ssh-key­</B>
+       <B>gen2</B>(1).  See <B>ssh-agent2</B>(1) for information on how to  use
+       public key authentication in conjunction with an authenti­
+       cation agent.
+
+       If other authentication methods fail, <B>ssh2 </B>will prompt for
+       a  password.  Since  all communications are encrypted, the
+       password will not be available for eavesdroppers.
+
+       When the user's identity has been accepted by the  server,
+       the server either executes the given command, or logs into
+       the machine and gives the  user  a  normal  shell  on  the
+       remote machine.  All communication with the remote command
+       or shell will be automatically encrypted.
+
+       If no pseudo tty has been allocated, the session is trans­
+       parent and can be used to reliably transfer binary data.
+
+       The session terminates when the command or shell in on the
+       remote machine exits and all X11  and  TCP/IP  connections
+       have  been  closed.  The exit status of the remote program
+       is returned as the exit status of <B>ssh2.</B>
+
+       If the user is using X11 (the <B>DISPLAY </B>environment variable
+       is  set),  the  connection to the X11 display is automati­
+       cally forwarded to the remote side in such a way that  any
+       X11  programs  started from the shell (or command) will go
+       through the encrypted channel, and the connection  to  the
+       real  X  server  will be made from the local machine.  The
+       user should not manually set <B>DISPLAY</B>.  Forwarding  of  X11
+       connections  can  be  configured on the command line or in
+       configuration files.
+
+       The <B>DISPLAY </B>value set by <B>ssh2 </B>will  point  to  the  server
+       machine,  but  with  a  display  number greater than zero.
+       This is normal, and happens because <B>ssh2 </B>creates a "proxy"
+       X  server on the server machine for forwarding the connec­
+       tions over the encrypted channel.
+
+       <B>Ssh2 </B>will also automatically set up the Xauthority data on
+       the  server machine.  For this purpose, it will generate a
+       random authorization cookie, store it  in  the  Xauthority
+       data  on the server, and verify that any forwarded connec­
+       tions carry this cookie  and  replace  it  with  the  real
+       cookie  when the connection is opened.  The real authenti­
+       cation cookie is never sent to the server machine (and  no
+       cookies are sent in the plain).
+
+       If  the user is using an authentication agent, the connec­
+       tion to the agent is automatically forwarded to the remote
+       side  unless disabled on the command line or in a configu­
+       ration file.
+
+       Forwarding of arbitrary TCP/IP connections over the secure
+       channel  can be specified either on the command line or in
+       a configuration file.  TCP/IP forwarding can be  used  for
+       secure  connections  to  electronic  purses  or  for going
+       through firewalls.
+
+       <B>Ssh2 </B>automatically maintains and checks  a  database  con­
+       taining  the  host  public keys. When logging on to a host
+       for the first time, the host's public key is stored  in  a
+       file  <I>.ssh2/hostkey</I><B>_</B><I>PORTNUMBER</I><B>_</B><I>HOSTNAME.pub  </I>in the user's
+       home directory.  If a host's identification changes,  <B>ssh2</B>
+       issues  a warning and disables the password authentication
+       in order to prevent a Trojan horse from getting the user's
+       password.  Another purpose of this mechanism is to prevent
+       man-in-the-middle attacks which could otherwise be used to
+       circumvent the encryption.
+
+       <B>Ssh2 </B>has built-in support for SOCKS version 4 for travers­
+       ing firewalls.  See <B>ENVIRONMENT</B>.
+
+<B>OPTIONS</B>
+       <B>-l </B><I>login</I><B>_</B><I>name</I>
+              Specifies the user for login to the remote machine.
+
+       <B>-n     </B>Redirect  input  from  /dev/null,  ie.  don't  read
+              stdin. This option can also  be  specified  in  the
+              configuration file.
+
+       <B>+a     </B>Enable authentication agent forwarding. (default)
+
+       <B>-a     </B>Disable authentication agent forwarding.
+
+       <B>+x     </B>Enable X11 connection forwarding. (default)
+
+       <B>-x     </B>Disable X11 connection forwarding.
+
+       <B>-i </B><I>file</I>
+              Specifies  the identity file for public key authen­
+              tication. This option can also be specified in  the
+              configuration file.
+
+       <B>-F </B><I>file</I>
+              Specifies an alternative configuration file to use.
+              NOTE:  <I>$HOME/.ssh2/ssh2</I><B>_</B><I>config   </I>is   still   read,
+              options  specified here will be used in addition to
+              those.
+
+       <B>-t     </B>For tty allocation, ie. allocate a tty  even  if  a
+              command is given. This option can also be specified
+              in the configuration file.
+
+       <B>-v     </B>Enable verbose mode. Display verbose debugging mes­
+              sages.  Equal  to  `-d  2'. This option can also be
+              specified in the configuration file.
+
+       <B>-d </B><I>debug</I><B>_</B><I>level</I>
+              Print  extensive  debug  information   to   stderr.
+              debug_level is either a number, from 0 to 99, where
+              99 specifies that all debug information  should  be
+              displayed, or a comma-separated list of assignments
+              "<B>ModulePattern=debug_level</B>".
+
+       <B>-V     </B>Display version string.
+
+       <B>-q     </B>Make <B>ssh2 </B>quiet, so that  it  doesn't  display  any
+              warning messages. This option can also be specified
+              in the configuration file.
+
+       <B>-f </B>[<I>o</I>] Fork into  background  after  authentication.  This
+              option  can  also be specified in the configuration
+              file. Implies '-S' and '-n'. With this option, <B>ssh2</B>
+              stays  in  the  background, waiting for connections
+              indefinitely (it has to be killed for  it  to  stop
+              listening).  With an optional `o' argument, it goes
+              to ``one-shot'' mode, which  means  that  once  all
+              channels are closed, <B>ssh2 </B>exits.
+
+       <B>-e </B><I>char</I>
+              Set  the escape character. Use ``none'' to disable.
+              This option can also be specified in the configura­
+              tion file. (default; ~)
+
+       <B>-c </B><I>cipher</I>
+              Select   the   encryption  algorithm.  Multiple  -c
+              options are allowed and a single -c flag  can  have
+              only  one cipher. This option can also be specified
+              in the configuration file. You  can  use  blowfish,
+              twofish, cast, arcfour, and 3des.
+
+       <B>-m </B><I>MAC </I>Select  the MAC (Message Authentication Code) algo­
+              rithm. Multiple -m options are allowed and a single
+              -m flag can have only one MAC. This option can also
+              be specified in the configuration file.
+
+       <B>-p </B><I>port</I>
+              Port to connect to on the remote host. This  option
+              can also be specified in the configuration file.
+
+       <B>-S     </B>Don't  request  a session channel. This can be used
+              with port-forwarding requests if a session  channel
+              (and  tty) isn't needed, or the server doesn't give
+
+
+              one.
+
+       <B>-L </B><I>port:host:hostport</I>
+              Specifies that the given port on the local (client)
+              host  is to be forwarded to the given host and port
+              on the remote side.  This  works  by  allocating  a
+              socket to be listened <B>port </B>on the local side. When­
+              ever a connection is made to this port, the connec­
+              tion  is  forwarded  over  the secure channel and a
+              connection is made to <B>host:hostport </B>from the remote
+              machine.  Port forwardings can also be specified in
+              the configuration  file.   Only  root  can  forward
+              privileged ports.
+
+       <B>-R </B><I>port:host:hostport</I>
+              Specifies   that  the  given  port  on  the  remote
+              (server) host is to be forwarded to the given  host
+              and port on the local side.  This works by allocat­
+              ing a socket to listen to <B>port </B>on the remote  side,
+              and whenever a connection is made to this port, the
+              connection is forwarded over  the  secure  channel,
+              and  a connection is made to <B>host:hostport </B>from the
+              local machine.  Privileged ports can  be  forwarded
+              only when logging in as root on the remote machine.
+
+       <B>+C     </B>Enable compression.
+
+       <B>-C     </B>Disable compression. (default)
+
+       <B>-o </B><I>'option'</I>
+              Can be used to specify options in the  format  used
+              in  the  configuration  files.   This is useful for
+              specifying options for which there are no  separate
+              command-line flags.  The option has the same format
+              as a line in the configuration file.  Comment lines
+              are not currently accepted via this option.
+
+       <B>-h     </B>Display a short help on command-line options.
+
+
+<B>CONFIGURATION FILES</B>
+       <B>Ssh2 </B>obtains configuration data from the following sources
+       (in this order): system's global configuration file (typi­
+       cally  <I>/etc/ssh2/ssh2</I><B>_</B><I>config</I>),  user's  configuration file
+       (<I>$HOME/.ssh2/ssh2</I><B>_</B><I>config</I>) and the  command  line  options.
+       For each parameter, the last obtained value will be effec­
+       tive.
+
+       For format of <I>ssh2</I><B>_</B><I>config</I>, see <B>ssh2_config</B>(5).
+
+
+
+       <B>ESCAPE SEQUENCES</B>
+
+
+       <B>Ssh2 </B>supports escape sequeneces that enable  you  to  have
+       some  managability  with  the  session.  In  order for any
+       escape sequences to take effect, you  will  need  to  have
+       entered  a  newline  character  (read: press return before
+       actually doing any of these). What you need  to  do  after
+       that is manually enter the characters (for example, a new­
+       line, a tidle ~, and the  appropriate  character  for  the
+       appropriate task).
+
+
+
+       <B>~.     </B>Terminate the connection.
+
+       <B>~^Z    </B>Suspend the session (press control-Z, not ^ and Z).
+
+       <B>~~     </B>Send the escape character.
+
+       <B>~#     </B>List forwarded connections (Not yet implemented).
+
+       <B>~-     </B>Disable the escape character's ability to cancel.
+
+       <B>~&amp;     </B>Backgroun ssh (when waiting for connections to ter­
+              minate).
+
+       <B>~?     </B>See a summary of escape sequences.
+
+       <B>~r     </B>Initialiates rekeying manually.
+
+       <B>~s     </B>Give  all  sorts  of  statistics on the connection,
+              including server and client  version,  compression,
+              PIPO (packets in, packets out), compression, public
+              key exchange  algorithms,  and  symmetric  ciphers.
+              Much more useful for troubleshooting.
+
+       <B>~V     </B>Dump  the  client  version number to stderr (useful
+              for troubleshooting).
+
+
+
+       <B>ENVIRONMENT</B>
+
+       <B>Ssh2 </B>will normally set  the  following  environment  vari­
+       ables:
+
+       <B>DISPLAY</B>
+              The  <B>DISPLAY </B>variable indicates the location of the
+              X11 server.  It is automatically  set  by  <B>ssh2  </B>to
+              point  to  a  value  of the form "<B>hostname:n</B>" where
+              hostname indicates the host where the  shell  runs,
+              and  n  is an integer &gt;= 1.  <B>Ssh2 </B>uses this special
+              value to forward X11 connections  over  the  secure
+              channel.   The user should normally not set <B>DISPLAY</B>
+              explicitly, as that will render the X11  connection
+              insecure  (and  will  require  the user to manually
+              copy any required authorization cookies).
+
+
+       <B>HOME   </B>Set to the path of the user's home directory.
+
+       <B>LOGNAME</B>
+              Synonym for <B>USER</B>; set for compatibility  with  sys­
+              tems using this variable.
+
+       <B>MAIL   </B>Set to point the user's mailbox.
+
+       <B>PATH   </B>Set  to the default PATH, as specified when compil­
+              ing <B>ssh2 </B>or, on some systems,  <I>/etc/environment  </I>or
+              <I>/etc/default/login</I>.
+
+       <B>SSH_SOCKS_SERVER</B>
+              If  SOCKS is used, it is configured with this vari­
+              able.  The format of the variable is  <I>socks://user­</I>
+              <I>name@socks</I><B>_</B><I>server:port/network/netmask,network/net­</I>
+              <I>mask ...  </I>for example by setting environment  vari­
+              able      <B>SSH_SOCKS_SERVER     </B>to     <I>socks://mylo­</I>
+              <I>gin@socks.ssh.com:1080/203.123.0.0/16,198.74.23.0/24</I>
+              uses  host  <I>socks.ssh.com  </I>port  <I>1080 </I>as your SOCKS
+              server if connection is attempted outside  of  net­
+              works  <I>203.123.0.0  </I>(16 bit domain) and <I>198.74.23.0</I>
+              (8 bit domain) which are connected directly.
+
+              A default value for <B>SSH_SOCKS_SERVER  </B>variable  can
+              be  specified at compile time by specifying <B>--with-</B>
+              <B>socks-server=VALUE </B>on the  configure  command  line
+              when compiling <B>ssh2</B>.  The default value can be can­
+              celled by  setting  <B>SSH_SOCKS_SERVER  </B>to  an  empty
+              string,  and overridden by setting <B>SSH_SOCKS_SERVER</B>
+              to a new value.  If the  <B>SSH_SOCKS_SERVER  </B>variable
+              is set, it should almost always contain local loop­
+              back network (127.0.0.0/8) as network that is  con­
+              nected directly.
+
+       <B>SSH2_AUTH_SOCK</B>
+              If  this exists, it is used to indicate the path of
+              a unix-domain socket used to communicate  with  the
+              authentication agent (or its local representative).
+
+       <B>SSH2_CLIENT</B>
+              Identifies the client end of the  connection.   The
+              variable  contains  three  space-separated  values:
+              client ip-address, client port number,  and  server
+              port number.
+
+       <B>SSH2_ORIGINAL_COMMAND</B>
+              This  will be the original command given to <B>ssh2 </B>if
+              a forced command is run. It can be  used  to  fetch
+              arguments  etc.   from the other end. This does not
+              have to be a real command, it can be a  name  of  a
+              file, device, parameters or anything else.
+
+       <B>SSH2_TTY</B>
+              This  is  set  to  the name of the tty (path to the
+              device) associated with the current shell  or  com­
+              mand.   If  the  current  session  has no tty, this
+              variable is not set.
+
+       <B>TZ     </B>The timezone variable is set to indicate  the  pre­
+              sent  timezone  if  it  was set when the daemon was
+              started (the daemon passes the value to new connec­
+              tions).
+
+       <B>USER   </B>Set to the name of the user logging in.
+
+       Additionally,     <B>ssh2    </B>reads    <I>/etc/environment    </I>and
+       <I>$HOME/.ssh2/environment</I>, and adds lines of the format <I>VAR­</I>
+       <I>NAME=value  </I>to  the  environment.   Some  systems may have
+       still additional mechanisms for setting  up  the  environ­
+       ment, such as <I>/etc/default/login </I>on Solaris.
+
+
+<B>FILES</B>
+       <I>$HOME/.ssh2/random</I><B>_</B><I>seed</I>
+              Used for seeding the random number generator.  This
+              file contains sensitive data  and  its  permissions
+              should be 'read/write' for the user and 'not acces­
+              sible' for others.  This file is created the  first
+              time the program is run and it is updated automati­
+              cally.  The user should never need to read or  mod­
+              ify this file.
+
+       <I>$HOME/.ssh2/ssh2</I><B>_</B><I>config</I>
+              This  is the per-user configuration file.  The for­
+              mat of this file is described above.  This file  is
+              used  by  the <B>ssh2 </B>client.  This file does not usu­
+              ally contain any  sensitive  information,  but  the
+              recommended  permissions  are  'read/write' for the
+              user, and
+
+       <I>$HOME/.ssh2/identification</I>
+              contains information on  how  the  user  wishes  to
+              authenticate  himself  when  contacting  a specific
+              host.
+
+              The identification file has the same general syntax
+              as  the configuration files. The following keywords
+              may be used:
+
+       <B>IdKey  </B>This is followed by the filename of a  private  key
+              in  the  <I>$HOME/.ssh2 </I>directory used for identifica­
+              tion when contacting a host.   If  there  are  more
+              than  one <B>IdKeys </B>, they are tried in the order that
+              they appear in the identification file.
+
+       <B>PgpSecretKeyFile</B>
+              This is followed by  the  filename  of  the  user's
+              OpenPGP  private  keyring in the <I>$HOME/.ssh2 </I>direc­
+              tory.  OpenPGP keys  listed  after  this  line  are
+              expected  to be found from this file.  Keys identi­
+              fied with "<B>IdPgpKey*</B>"-keywords are used  like  ones
+              identified with "<B>IdKey</B>"-keyword.
+
+       <B>IdPgpKeyName</B>
+              This is followed by the OpenPGP key name of the key
+              in <B>PgpSecretKeyFile </B>file.
+
+       <B>IdPgpKeyFingerprint</B>
+              This is followed by the OpenPGP key fingerprint  of
+              the key in <B>PgpSecretKeyFile </B>file.
+
+       <B>IdPgpKeyFingerprint</B>
+              This  is  followed by the OpenPGP key id of the key
+              in <B>PgpSecretKeyFile </B>file.
+
+
+       <I>$HOME/.ssh2/authorization</I>
+              contains information on how the server will  verify
+              the identity of an user.
+
+              The  authorization file has the same general syntax
+              as the configuration files. The following  keywords
+              may be used:
+
+       <B>Key    </B>This is followed by the filename of a public key in
+              the <I>$HOME/.ssh2 </I>directory that is used for  identi­
+              fication  when  contacting  the host.  If there are
+              more than one key,  they  are  all  acceptable  for
+              login.
+
+       <B>PgpPublicKeyFile</B>
+              This  is  followed  by  the  filename of the user's
+              OpenPGP public keyring  in  <I>$HOME/.ssh2  </I>directory.
+              OpenPGP keys listed after this line are expected to
+              be found from  this  file.   Keys  identified  with
+              "<B>PgpKey*</B>"-keywords  are  used  like ones identified
+              with "<B>Key</B>"-keyword.
+
+       <B>PgpKeyName</B>
+              This is followed by the OpenPGP key name.
+
+       <B>PgpKeyFingerprint</B>
+              This is followed by the OpenPGP key fingerprint.
+
+       <B>PgpKeyId</B>
+              This is followed by the OpenPGP key id.
+
+       <B>Command</B>
+              This keyword, if used, must  follow  the  "<B>Key</B>"  or
+              "<B>PgpKey*</B>"  keyword above. This is used to specify a
+              "forced command"  that  will  be  executed  on  the
+              server  side instead of anything else when the user
+              is authenticated. The command supplied by the  user
+              (if   any)  is  put  in  the  environment  variable
+              "<B>SSH2_ORIGINAL_COMMAND</B>". The command is  run  on  a
+              pty  if the connection requests a pty; otherwise it
+              is run without a tty. A quote may  be  included  in
+              the  command  by  quoting it with a backslash. This
+              option might be useful for restricting certain pub­
+              lic  keys  to perform just a specific operation. An
+              example might be a key that permits remote  backups
+              but  nothing else. Notice that the client may spec­
+              ify TCP/IP and/or X11 forwardings, unless they  are
+              explicitly prohibited.
+
+
+       <I>$HOME/.ssh2/hostkeys/key</I><B>_</B><I>xxxx</I><B>_</B><I>yyyy.pub</I>
+              These  files  are  the public keys of the hosts you
+              connect to. These are updated automatically, unless
+              you  have  set <B>StrictHostKeyChecking </B>to "<B>yes</B>". If a
+              host's key changes, you should  put  here  the  new
+              key. (But don't do that, unless you can be sure the
+              key is valid, ie. that no man-in-the-middle  attack
+              has  occurred!)   The  "<I>xxxx</I>"  is  the  port on the
+              server, where <B>sshd2 </B>runs, and  the  "<I>yyyy</I>"  is  the
+              host (specified on command-line).
+
+
+       <I>/etc/ssh2/hostkeys/key</I><B>_</B><I>xxxx</I><B>_</B><I>yyyy.pub</I>
+              If   a  host  key  is  not  found  from  the  users
+              "<I>$HOME/.ssh2/hostkeys</I>" directory, this is the  next
+              location  to  be  checked.  These  files have to be
+              updated manually; no files are put  here  automati­
+              cally.
+
+
+       <I>$HOME/.rhosts</I>
+              This  file  contains host-username pairs, separated
+              by a space, one per line.  The given  user  on  the
+              corresponding  host  is permitted to log in without
+              password.  The same file is  used  by  rlogind  and
+              rshd.   <B>sshd2 </B>differs from rlogind and rshd in that
+              it requires public host key authentication in addi­
+              tion  to  validating  the  host name retrieved from
+              domain name servers. The file must be writable only
+              by  the  user;  it  is  recommended  that it not be
+              accessible by others.
+
+              It is also possible to use netgroups in  the  file.
+              Either  host  or  user  name  may  be  of  the form
+              +@groupname to specify all hosts or  all  users  in
+              the group.
+
+       <I>$HOME/.shosts</I>
+              For  <B>ssh2,  </B>this  file  is  exactly the same as for
+              .rhosts.  However, this file is not used by  rlogin
+              and  rshd,  so using this permits access using <B>ssh2</B>
+              only.
+
+       <I>/etc/hosts.equiv</I>
+              This file is used  during  .rhosts  authentication.
+              In  its  simplest  form,  this  file  contains host
+              names, one per line.  Users on those hosts are per­
+              mitted  to log in without a password, provided that
+              they have the same user name on both machines.  The
+              host name may also be followed by a user name; such
+              users are permitted to log in as <B>any </B>user  on  this
+              machine  (except  root).   Additionally, the syntax
+              +@group can be used to specify netgroups.   Negated
+              entries start with ´-´.
+
+              If  the client host/user is successfully matched in
+              this file, login is automatically  permitted,  pro­
+              vided that the client and server user names are the
+              same.  Additionally,  successful  public  key  host
+              authentication  is  normally  required.   This file
+              must be writable only by root;  it  is  recommended
+              that it be world-readable.
+
+              <B>Warning: It is almost never a good idea to use user</B>
+              <B>names in hosts.equiv.  </B>Note that this really  means
+              that  the  named  user(s)  can  log  in as <B>anybody</B>,
+              including bin, daemon, adm, and other accounts that
+              own  critical  binaries  and  directories.  Using a
+              user name practically grants the user root  access.
+              The only valid use for user names should be in neg­
+              ative entries.  <B>Note that this warning also applies</B>
+              <B>to rsh/rlogin.</B>
+
+       <I>/etc/shosts.equiv</I>
+              This  is  processed  exactly  as  <I>/etc/hosts.equiv.</I>
+              However, this file may be  useful  in  environments
+              that want to run both rsh/rlogin and <B>ssh2.</B>
+
+
+       <I>$HOME/.ssh2/knownhosts/xxxxyyyy.pub</I>
+              These  are the public hostkeys of hosts that a user
+              wants to log from using  "<B>hostbased</B>"-authentication
+              (equivalent  with  ssh1's <B>RhostsRSAAuthentication</B>).
+              Also, a user has to set  up  her/his  <I>$HOME/.shosts</I>
+              (which only ssh uses) or <I>$HOME/.rhosts </I>file.  (This
+              is insecure, as  the  file  is  used  also  by  the
+              r*-commands.)   If  username  is  the  same in both
+              hosts, it is adequate to put the public hostkey  to
+              <I>/etc/ssh2/knownhosts  </I>and  add  the  host's name to
+              <I>/etc/shosts.equiv </I>(or <I>/etc/hosts.equiv</I>).
+
+              xxxx denotes the hostname (FQDN) and yyyy the  pub­
+              lickey algorithm of the key.
+
+              For  example,  zappa.foo.fi's  hostkey algorithm is
+              ssh-dss.    The    hostkey    would    be     named
+              "<I>zappa.foo.fi.ssh-dss.pub</I>" in the knownhosts-direc­
+              tory.
+
+              Possible names for publickey-algorithms  are  "<B>ssh-</B>
+              <B>dss</B>" and "<B>ssh-rsa</B>" (without the quotes).
+
+
+       <I>/etc/ssh2/knownhosts/xxxxyyyy.pub</I>
+              As  above,  but  system-wide. These settings can be
+              overridden by the user by putting a file  with  the
+              same   name   to   her/his   <I>$HOME/.ssh2/knownhosts</I>
+              directory.
+
+
+<B>AUTHORS</B>
+       SSH Communications Security Corp
+
+       For more information, see http://www.ssh.com.
+
+
+<B>SEE ALSO</B>
+       <B>ssh2_config</B>(5), <B>sshd2</B>(8),  <B>ssh-keygen2</B>(1),  <B>ssh-agent2</B>(1),
+       <B>ssh-add2</B>(1), <B>scp2</B>(1), <B>sftp</B>(1) <B>rlogin</B>(1), <B>rsh</B>(1), <B>telnet</B>(1)
+
+
+
+SSH2                       May 23, 2000                   SSH2(1)
+</PRE>
+</BODY></html>

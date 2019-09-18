@@ -1,0 +1,1 @@
+A PARTE I do projeto nao contem o makefile pois nenhuma simulcao será realizada nela. Por favor, use o projeto no code blocks (ou IDE semelhante) para testar os arquivos .cpp e .hpp

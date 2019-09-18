@@ -1,0 +1,6 @@
+mkdir 'nome_de_interesse'
+cd 'nome_de_interesse'
+cmake ..
+make
+ls
+./'executavel_gerado'

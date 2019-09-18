@@ -1,0 +1,194 @@
+/*  Inclusão das bibliotecas requisitadas: */
+#include "../Bibliotecas/Comum.hpp"
+
+
+/*  Definições da funções a serem manipuladas por este arquivo */
+/*  Função 'arq_abre', realiza a abertura e teste de alocacao de um arquivo */
+FILE * arq_abre (char *nome, char *modo, char extra){
+    /*  'nome' armazena o nome do arquivo a ser manipulado; 'modo' armazena o modo
+    **  de abertura do mesmo; 'extra' armazena a condicao extra, se for para
+    **  leitura ou escrita; 'auxiliar' armazena o arquivo lógico a ser manipulado */
+    FILE *auxiliar;
+
+    /* Abertura do arquivo lógico */
+	auxiliar = fopen (nome, modo);
+
+    /* Teste de abertura do arquivo */
+    if (auxiliar == NULL && extra == 'l')
+        printf ("\nERRO ABERTURA ARQUIVO %s\n", nome);
+
+    return auxiliar;
+}
+
+/*  Função 'inicio_geral', realiza a apresentação do projeto, questionando sobre
+**  o progresso do mesmo */
+bool inicio_geral (){
+    /*  Questionamento sobre inicio do projeto */
+    limpa_tela();
+    printf ("Bem-vindo ao processamento de imagens!\n");
+    printf ("Este projeto tem o nome de:\n\n");
+    printf ("\tDeteccao de Componentes Conectados e Classificacao de Imagens\n\n");
+    printf ("Este projeto tem por objetivos:\n");
+    printf ("\t1. Binarizacao de imagens, em relacao a cor de pele;\n");
+    printf ("\t2. Detectar as regioes, pelos elementos conectados;\n");
+    printf ("\t3. Determinar a maior regiao, dentre as detectadas;\n");
+    printf ("\t4. Classificar as imagens de analise em duas classes:\n");
+    printf ("\t\tClasse 1: maior parte do corpo descoberta;\n");
+    printf ("\t\tClasse 2: maior parte do corpo coberta.\n");
+    printf ("\t5. Calculo da F-Measure para esta classificacao.\n");
+
+    temporizador(1.2);
+
+    printf ("\n\nDadas as caracteristicas do projeto, deseja inicia-lo? S/N ou s/n\n");
+        return ler_simounao ();
+}
+
+/*  Funcao 'ler_simounao', verifica a validade da resposta para uma pergunta de "sim ou nao"
+**  ao longo do progresso do jogo */
+bool ler_simounao (){
+    /*  'resp' armazena a resposta do usuario para a pergunta */
+    char resp;
+
+    /*  Enquanto for invalida */
+    do{
+        scanf ("%c", &resp);
+        getchar ();
+
+        /*  Sendo invalido, mensagem correspondente */
+        if ((resp != 's') && (resp != 'S') && (resp != 'n') && (resp != 'N'))
+            printf ("Resposta invalida, digite novamente!\n");
+
+    }while ((resp != 's') && (resp != 'S') && (resp != 'n') && (resp != 'N'));
+
+    if ((resp == 's') ||(resp == 'S'))
+        return VERDADE;
+
+    return !VERDADE;
+}
+
+/*  Funcao 'limpa_tela', realiza a limpeza da tela durante a execucao */
+void limpa_tela(){
+    #ifdef LINUX
+        printf ("\e[H\e[2J");
+    #elif defined WIN32
+        system ("cls");
+    #else
+        printf ("\e[H\e[2J");
+    #endif
+        return;
+}
+
+/*  Função 'n_ultima_ocorrencia', descobre a n-última ocorrencia de um caracter numa string */
+int n_ultima_ocorrencia (char *avaliar, char alvo, int quant){
+    /*  'avaliar' armazena a string a ser avaliada; 'alvo' armazena o caracter buscado
+    **  na string; 'quant' armazena o minimo de vezes que o 'alvo' deve ser encontrado */
+
+    /*  Tendo uma quantidade válida */
+    if (quant > 0){
+        /*  'ind' armazena indices a serem manipulados; 'ocorrencia' armazena a posição em
+        **  que ocorre o 'alvo'; 'vezes' armazena a quantidade de vezes que o 'alvo' aparece
+        **  até atingir a 'quant' pré-estabelecida */
+        int ind, ocorrencia = 0, vezes = 0;
+
+        /*  Procurando do final para o início da string */
+        for (ind = strlen(avaliar); ind > -1; ind--){
+            /*  Encontrando um caracter desejado */
+            if (avaliar[ind] == alvo){
+                ocorrencia = ind;
+                vezes++;
+            }
+            /*  Atingindo a quantidade desejada */
+            if (vezes >= quant) return ocorrencia;
+        }
+
+        /*  Caso não tenha sido encontrado */
+        return ind;
+    }
+
+    /*  Caso contrário */
+    return -2;
+}
+
+/*  Funçao 'pausa', realiza a pausa do programa ate pressionar o ENTER */
+void pausa (){
+    printf ("\nPressione ENTER para continuar.\n");
+	getchar ();
+}
+
+/*	Função 'stringcompara_n', realiza a comparação entre duas strings, com inicios ajustaveis
+**	e quantidade de caracteres a serem comparados */
+int string_compara_n (char *palavra1, std::string palavra2, int inicio1, int inicio2, int quant){
+	/*	'palavra1' e 'palavra2' armazenam as palavras a serem comparadas; 'inicio1' e 'inicio2'
+	**	armazenam os respectivos inicios das strings; 'quant' armazena a quantide de caracteres
+	**	a serem comparados; 'ind1' e 'ind2' armazenam indices a serem manipulados pelas respectivas
+	**	strings */
+    int ind2 = inicio2;
+
+	/*	Percorrendo as strings pela quantidade de caracteres desejados */
+    for (int ind1 = inicio1; ind1 < (inicio1 + quant); ind1++){
+		/*	'letra1' e 'letra2' armazenam os caracteres corrente da duas strings */
+        char letra1 = palavra1[ind1], letra2 = palavra2[ind2];
+
+		/*	Estando como minuscula, transforma em maiuscula */
+        if (letra1 > 'a')   letra1 -= 32;
+        if (letra2 > 'a')   letra2 -= 32;
+
+		/*	Sendo diferente, retorna a diferença */
+        if (letra1 != letra2){
+            return palavra1[ind1] - palavra2[ind2];
+        }
+        /*  Terminando uma das strings */
+        if (letra1 == '\0' || letra2 == '\0')
+            break;
+        ind2++;
+    }
+
+	/*	Estando tudo IGUAL */
+    return VERDADE;
+}
+
+/*  Funcao 'string_concat_n', realiza a juncao de duas strings */
+void string_concat_n (char *destino, char *fonte, int iniciof, int fimf){
+    /*  'destino' armazena a string resultado da juncao; 'fonte' armazena o trecho a ser juntado;
+    **  'ind' e 'ind2' armazenam indices a serem manipulados */
+    int ind = strlen (destino), ind2 = 0;
+
+    /*  Juncao das strings */
+    for (ind2 = iniciof; ind2 < fimf; ind2++, ind++)
+        destino[ind] = fonte[ind2];
+
+    destino[ind] = '\0';
+}
+
+/*  Funcao 'string_zera', anula os caracteres da string */
+void string_zera (char *alvo, int inicio, int fim){
+    /*  'alvo' armazena a string a ser zerada; 'maximo' armazena o limite da operacao;
+    **  'ind' armazena o indice a ser manipulado */
+    int ind;
+
+    /*  Percorrendo toda a string */
+    for (ind = inicio; ind < fim; ind++)  alvo[ind] = '\0';
+}
+
+/*  Funcao 'temporizador', realiza a pausa do programa por um periodo de tempo
+**  definido pelo usuario */
+void temporizador (float pausa){
+    /*  'pausa' armazena o tempo de espera escolhido pelo usuario; 'tempoin' e
+    **  'tempofim' armazenam os tempos inicial e final do temporizador, respec. */
+    if (pausa < 0.0) return;
+
+	/*	Inicialização do temporizador */
+    float tempoin = 0.0, tempofim = 0.0;
+
+	/*	Conversão para segundos */
+    tempoin = ((float) clock()) / ((float) CLOCKS_PER_SEC);
+
+    /*  Enquanto nao der o tempo desejado */
+    while ((tempofim - tempoin) < pausa){
+        tempofim = ((float) clock()) / ((float) CLOCKS_PER_SEC);
+    };
+
+   return;
+}
+
+

@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Arbitrary Tags and Attributes</TITLE>
+<META NAME="description" CONTENT="Arbitrary Tags and Attributes">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="next" HREF="Hnode4.html">
+<LINK REL="previous" HREF="Hnode2.html">
+<LINK REL="up" HREF="hypextra.html">
+<LINK REL="next" HREF="Hnode4.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html122"
+ HREF="Hnode4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html118"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html112"
+ HREF="Hnode2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html120"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html121"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html123"
+ HREF="Hnode4.html">Conditional Text</A>
+<B> Up:</B> <A NAME="tex2html119"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html113"
+ HREF="Hnode2.html">Including Arbitrary HTML Mark-up</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000123000000000000000">&#160;</A><A NAME="sec:arbtags">&#160;</A>
+<BR>
+Arbitrary Tags and Attributes
+</H2>
+For version 97.1 of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> there is a new command which provides 
+an extremely flexible way to include <TT>HTML</TT> 3.2 tags, along with
+any values for the ``attributes'' of that tag, if desired.
+<BLOCKQUOTE>
+<TT>&#92;HTML</TT><code>[</code><TT>
+&lt;<I>attribs</I>&gt;</TT><code>]{</code><TT>
+&lt;<I>tag</I>&gt;</TT><code>}</code><A NAME="HTMLtag">&#160;</A>
+<BR>
+<TT>&#92;HTML</TT><code>[</code><TT>
+&lt;<I>attribs</I>&gt;</TT><code>]{</code><TT>
+&lt;<I>tag</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>contents</I>&gt;</TT><code>}</code>
+</BLOCKQUOTE>
+When the <TT>
+&lt;<I>tag</I>&gt;</TT> also needs a closing tag (e.g <TT>&lt;I&gt;...&lt;/I&gt;</TT>)
+the <TT>
+&lt;<I>contents</I>&gt;</TT> <EM>must</EM> be given, enclosed in braces.
+Both the opening and closing tags then will be placed correctly.
+
+<P>
+An important aspect of this is that any of the <TT>
+&lt;<I>tag</I>&gt;</TT>,
+<TT>
+&lt;<I>attribs</I>&gt;</TT> and <TT>
+&lt;<I>contents</I>&gt;</TT> may be given wholly
+by expanding a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X macro, or may contain arbitrary macros, 
+perhaps including other <TT>&#92;HTML</TT> commands.
+<A HREF="Hnode3.html#ex:HTML">The following table</A> 
+was constructed using this feature; its L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source follows.
+
+<P>
+<HR WIDTH="50%" SIZE="3" NOSHADE ALIGN="center">
+
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="ex:HTML">&#160;</A><A NAME="2495">&#160;</A>
+<TABLE WIDTH="50%">
+<CAPTION><STRONG>Figure 6:</STRONG>
+Example use of macros for raw <TT>HTML</TT> code.</CAPTION>
+<TR><TD><P>
+<P>
+<DIV ALIGN="center">
+<TABLE BORDER="5" CELLPADDING="10">
+<CAPTION ALIGN="bottom">
+
+<B>A listing of the different text styles available in HTML 3.2</B>
+</CAPTION><TR><TD>
+<UL>
+
+<LI TYPE="disc"> <B> a simple test of ``bold-face'',</B> using <CODE>&lt;B&gt;</CODE> .</LI>
+<LI TYPE="disc"> <I> a simple test of ``italics'',</I> using <CODE>&lt;I&gt;</CODE> .</LI>
+<LI TYPE="disc"> <TT> a simple test of ``teletype-text'',</TT> using <CODE>&lt;TT&gt;</CODE> .</LI>
+<LI TYPE="disc"> <U> a simple test of ``underlining'',</U> using <CODE>&lt;U&gt;</CODE> .</LI>
+<LI TYPE="circle"> <STRIKE> a simple test of ``strikeout'',</STRIKE> using <CODE>&lt;STRIKE&gt;</CODE> .</LI>
+<LI TYPE="disc"> <EM> a simple test of ``emphasis style'',</EM> using <CODE>&lt;EM&gt;</CODE> .</LI>
+<LI TYPE="disc"> <STRONG> a simple test of ``strong style'',</STRONG> using <CODE>&lt;STRONG&gt;</CODE> .</LI>
+<LI TYPE="disc"> <CODE> a simple test of ``code style'',</CODE> using <CODE>&lt;CODE&gt;</CODE> .</LI>
+<LI TYPE="disc"> <CITE> a simple test of ``citation style'',</CITE> using <CODE>&lt;CITE&gt;</CODE> .</LI>
+<LI TYPE="disc"> <DFN> a simple test of ``definition style'',</DFN> using <CODE>&lt;DFN&gt;</CODE> .</LI>
+<LI TYPE="square"> <SAMP> a simple test of ``sample style'',</SAMP> using <CODE>&lt;SAMP&gt;</CODE> .</LI>
+<LI TYPE="square"> <KBD> a simple test of ``keyboard style'',</KBD> using <CODE>&lt;KBD&gt;</CODE> .</LI>
+<LI TYPE="disc"> <VAR> a simple test of ``variable style'',</VAR> using <CODE>&lt;VAR&gt;</CODE> .</LI>
+</UL></TD></TR>
+</TABLE></DIV>
+<BR CLEAR="all"></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+<HR WIDTH="50%" SIZE="3" NOSHADE ALIGN="center">
+
+<P>
+<PRE>
+\newcommand{\myalign}{center}
+\newcommand{\mylist}{UL}
+\newcommand{\myitem}[2]{\HTML[disc]{LI}{\simpletest{#1}{#2}}}
+\newcommand{\simpletest}[2]{%
+ \HTML{#1}{ a simple test of ``#2'',} using \HTML{CODE}{&lt;#1&gt;} .}
+\newcommand{\tableopts}{10,border=5}
+
+\newcommand{\tablelist}[4][left]{\HTML[#1]{DIV}{
+\HTML[\tableopts]{TABLE}{
+\HTML[bottom]{CAPTION}{
+#3
+}\HTML{TR}{\HTML{TD}{
+\HTML{#2}{
+#4
+}}}
+}}\HTML[all]{BR}}
+
+\tablelist[\myalign]{\mylist}{%
+\textbf{A listing of the different text styles available in HTML 3.2}}{%
+\myitem{B}{bold-face}
+\myitem{I}{italics}
+\myitem{TT}{teletype-text}
+\myitem{U}{underlining}
+\HTML[circle]{LI}{\simpletest{STRIKE}{strikeout}}
+\myitem{EM}{emphasis style}
+\myitem{STRONG}{strong style}
+\myitem{CODE}{code style}
+\myitem{CITE}{citation style}
+\myitem{DFN}{definition style}
+\HTML[square]{LI}{\simpletest{SAMP}{sample style}}
+\HTML[square]{LI}{\simpletest{KBD}{keyboard style}}
+\myitem{VAR}{variable style}}
+</PRE>
+
+<P>
+<HR WIDTH="50%" SIZE="3" NOSHADE ALIGN="center">
+
+<P>
+The above code demonstrates many aspects of the way <TT>&#92;HTML</TT>
+commands can be used.
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B>nesting: </B>
+<DD><TT>&#92;HTML</TT> commands can be nested to arbitrary depth.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B>macros: </B>
+<DD>Macros can be used to specify all or part of each argument.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B>within macros: </B>
+<DD><TT>&#92;HTML</TT> commands work correctly within the expansions of other macros.
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B>attribute values: </B>
+<DD>Information within <TT>
+&lt;<I>attribs</I>&gt;</TT> can be specified in a very
+loose way, as a comma-separated list of key/value pairs
+or as single values. <BR>
+Not even the commas are necessary: space(s), <TT>
+&lt;<I>tab</I>&gt;</TT>s 
+or newlines are equally effective.
+Indeed the horizontal rules preceding and following the table were 
+specified by:
+<BLOCKQUOTE>
+<PRE>
+\HTML[50\% 3 noshade center]{HR}
+</PRE></BLOCKQUOTE>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B>attribute names: </B>
+<DD>Usually it is <EM>not necessary</EM> to know the names of the
+attributes to the tags that are to be used. It is sufficient
+just to give the values; these will be matched to the
+appropriate attribute, according to the type of data required.
+(If names are given, these are case-insensitive.)
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/greenball.gif" ALT="*">
+<B>newlines: </B>
+<DD>Although L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X ignores linebreaks within the source code,
+this is not so with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>. 
+The strange spreading-out of the definition of the
+<TT>&#92;tablelist</TT> command above was done with the purpose
+solely of making the code in the resulting <TT>HTML</TT> files 
+more easily readable, to a human.
+(As most browsers ignore those newlines anyway, 
+more compact code would have rendered the same on-screen.)
+</DL>
+
+<P>
+
+<P>
+<BR>
+Some further aspects of the use of this <TT>&#92;HTML</TT>
+command are not apparent from the above example. 
+
+<P>
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>invalid <TT>
+&lt;<I>tag</I>&gt;</TT>: </B>
+<DD>If a <TT>
+&lt;<I>tag</I>&gt;</TT> is specified that is not part of the 
+<TT>HTML</TT> 3.2 specifications, then it and its attributes are 
+not placed into the <TT>HTML</TT> document created by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+Any <TT>
+&lt;<I>contents</I>&gt;</TT> <EM>is</EM> included as ordinary data; 
+i.e. as text in paragraphs, etc.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>required attributes: </B>
+<DD>Some tags have attributes which are required to have values,
+if that tag is to be included in an <TT>HTML</TT> document.
+Using the <TT>&#92;HTML</TT> command, if any such attribute
+is not given an appropriate value then the tag is ignored.
+Any <TT>
+&lt;<I>contents</I>&gt;</TT> are included in the document, 
+as ordinary character data.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>valid HTML: </B>
+<DD>Currently there is <EM>no</EM> checking that the <TT>
+&lt;<I>contents</I>&gt;</TT>
+of a <TT>
+&lt;<I>tag</I>&gt;</TT> contains only data (perhaps including other tags)
+allowed by the DTD for <TT>HTML</TT> 3.2.
+<BLOCKQUOTE>
+<I>The requirement to produce valid <TT>
+HTML</TT> 
+currently rests with the user.</I>
+</BLOCKQUOTE>
+This issue will be addressed in forthcoming revisions of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>extra attributes and values: </B>
+<DD>The list of attributes for a <TT>
+&lt;<I>tag</I>&gt;</TT> can include
+key-value pairs whose keys do not match any valid
+attribute for the <TT>
+&lt;<I>tag</I>&gt;</TT>.
+Such key-value pairs are simply ignored.
+Similarly extra data values are ignored, 
+as are values that do not match the
+requirements for any valid attribute.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>attributes with similar data-types: </B>
+<DD>Several attributes to a <TT>
+&lt;<I>tag</I>&gt;</TT> may use values having 
+the same or similar data-types. First any key-value pairs
+are processed. Remaining values are allocated 
+to those attributes which do not already have a value.
+An ordering of the attributes is used, based on a perceived likelihood 
+of each attribute being required to be changed from its default setting.
+
+<P>
+</DL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html122"
+ HREF="Hnode4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html118"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html112"
+ HREF="Hnode2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html120"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html121"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html123"
+ HREF="Hnode4.html">Conditional Text</A>
+<B> Up:</B> <A NAME="tex2html119"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html113"
+ HREF="Hnode2.html">Including Arbitrary HTML Mark-up</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

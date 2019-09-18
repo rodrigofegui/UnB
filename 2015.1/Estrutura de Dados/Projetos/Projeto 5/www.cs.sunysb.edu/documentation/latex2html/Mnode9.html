@@ -1,0 +1,669 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Other Configuration Variables, without switches</TITLE>
+<META NAME="description" CONTENT="Other Configuration Variables, without switches">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="previous" HREF="Mnode8.html">
+<LINK REL="up" HREF="Mnode2.html">
+<LINK REL="next" HREF="Mnode10.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html146"
+ HREF="Mnode10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html142"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html136"
+ HREF="Mnode8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html144"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html145"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html147"
+ HREF="Mnode10.html">Extending the Translator</A>
+<B> Up:</B> <A NAME="tex2html143"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html137"
+ HREF="Mnode8.html">Switches for Help and</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000132700000000000000">
+Other Configuration Variables, without switches</A>
+</H3>
+The configuration variables described here do not warrant having
+a command-line switch to assign values.
+Either they represent aspects of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> that are specific to the local site,
+or they govern properties that should apply to <EM>all</EM> documents,
+rather than something that typically would change
+for the different documents within a particular sub-directory.
+
+<P>
+Normally these variables have their value set within the <A HREF="node10.html#GGGlatex2html.config"
+ NAME="3728"><TT>latex2html.config</TT></A> file.
+In the following listing the defaults are shown, as the lines of <A HREF="node10.html#GGGPerl"><I>Perl</I></A> code
+used to establish these values.
+If a different value is required, then these can be assigned from
+a local <A HREF="node10.html#GGG.latex2html-init"
+ NAME="3739"><TT>.latex2html-init</TT></A> initialisation file, 
+without affecting the defaults for other users, 
+or documents processed from other directories.
+
+<P>
+<DL><DT>
+<A NAME="1596">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_dd"
+ NAME="3747"><TT>$dd</TT></A> </B>
+<DD>&nbsp;holds the string to be used in file-names to delimit directories;
+it is set internally to `<TT>/</TT>', unless the variable has already been given
+a value within <A HREF="node10.html#GGGlatex2html.config"
+ NAME="3755"><TT>latex2html.config</TT></A>&nbsp;.
+
+<P>
+
+<B>Note:</B> This value <EM>cannot</EM> be set within a <A HREF="node10.html#GGG.latex2html-init"
+ NAME="3763"><TT>.latex2html-init</TT></A> 
+initialisation file, since its value <EM>needs to be known</EM> 
+in order to find such a file.
+
+<P>
+<A NAME="2137">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_LATEX2HTMLDIR"
+ NAME="3779"><TT>$LATEX2HTMLDIR</TT></A></B>
+<DD>
+Read by the <A HREF="node10.html#GGGinstall-test"
+ NAME="3787"><TT>install-test</TT></A> script from <A HREF="node10.html#GGGlatex2html.config"
+ NAME="3795"><TT>latex2html.config</TT></A>, 
+its value is inserted into the <A HREF="node10.html#GGGlatex2html"
+ NAME="3803"><TT>latex2html</TT></A> <A HREF="node10.html#GGGPerl"><I>Perl</I></A> script as part
+of the installation process.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_LATEX2HTMLSTYLES"
+ NAME="3814"><TT>$LATEX2HTMLSTYLES</TT></A><TT> = &#34;$LATEX2HTMLDIR/styles&#34;;</TT></B>
+<DD>Read from the <A HREF="node10.html#GGGlatex2html.config"
+ NAME="3822"><TT>latex2html.config</TT></A> file by <A HREF="node10.html#GGGinstall-test"
+ NAME="3830"><TT>install-test</TT></A>,
+its value is checked to locate the <A HREF="node10.html#GGGstyles_"
+ NAME="3838"><TT>styles/</TT></A> directory.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_LATEX2HTMLVERSIONS"
+ NAME="3846"><TT>$LATEX2HTMLVERSIONS</TT></A><TT> = &#34;$LATEX2HTMLDIR/versions&#34;;</TT></B>
+<DD>The value of this variable should be set within <A HREF="node10.html#GGGlatex2html.config"
+ NAME="3854"><TT>latex2html.config</TT></A> 
+to specify the directory path where the version and extension files can be found.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_ALTERNATIVE_ICONS"
+ NAME="3862"><TT>$ALTERNATIVE_ICONS</TT></A><TT> = '';</TT><A NAME="alticons">&#160;</A></B>
+<DD>This may contain the (relative) directory path to a set of customised icons
+to be used in conjunction with the <A HREF="Mnode4.html#cs_localicons"> <TT>-local_icons</TT> </A> switch.
+
+<P>
+<A NAME="2139">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_TEXEXPAND"
+ NAME="3879"><TT>$TEXEXPAND</TT></A><TT>  = &#34;$LATEX2HTMLDIR/texexpand&#34;;</TT></B>
+<DD>Read by the <A HREF="node10.html#GGGinstall-test"
+ NAME="3887"><TT>install-test</TT></A> <A HREF="node10.html#GGGPerl"><I>Perl</I></A> script from <A HREF="node10.html#GGGlatex2html.config"
+ NAME="3898"><TT>latex2html.config</TT></A>, 
+its value is used to locate the <A HREF="node10.html#GGGtexexpand"
+ NAME="3906"><TT>texexpand</TT></A> <A HREF="node10.html#GGGPerl"><I>Perl</I></A> script.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_PSTOIMG"
+ NAME="3917"><TT>$PSTOIMG</TT></A><TT> = &#34;$LATEX2HTMLDIR/pstoimg&#34;;</TT></B>
+<DD>Read by the <A HREF="node10.html#GGGinstall-test"
+ NAME="3925"><TT>install-test</TT></A> <A HREF="node10.html#GGGPerl"><I>Perl</I></A> script from <A HREF="node10.html#GGGlatex2html.config"
+ NAME="3936"><TT>latex2html.config</TT></A>, 
+its value is used to locate the <A HREF="node10.html#GGGpstoimg"
+ NAME="3944"><TT>pstoimg</TT></A> <A HREF="node10.html#GGGPerl"><I>Perl</I></A> script.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_IMAGE_TYPE"
+ NAME="3955"><TT>$IMAGE_TYPE</TT></A><TT> = '<TT>
+&lt;<I>image-type</I>&gt;</TT>';</TT></B>
+<DD>Set in <A HREF="node10.html#GGGlatex2html.config"
+ NAME="3965"><TT>latex2html.config</TT></A>, the currently supported <TT>
+&lt;<I>image-type</I>&gt;</TT>s
+are: <TT>gif</TT> and <TT>png</TT>.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_DVIPS"
+ NAME="3975"><TT>$DVIPS</TT></A><TT> = 'dvips';</TT></B>
+<DD>Read from <A HREF="node10.html#GGGlatex2html.config"
+ NAME="3983"><TT>latex2html.config</TT></A> by <A HREF="node10.html#GGGinstall-test"
+ NAME="3991"><TT>install-test</TT></A>, 
+its value is checked to locate the <A HREF="node10.html#GGGdvips"
+ NAME="3999"><TT>dvips</TT></A> program or script.
+
+<P>
+
+<P></P>
+There could be several reasons to change the value here:
+<UL>
+<LI>
+add a switch <TT>-P
+&lt;<I>printer</I>&gt;</TT> to load a specific configuration-file;
+<BR>
+e.g. to use a specific set of <A HREF="#GGGpostscript"
+ NAME="4009">PostScript</A> fonts, for improved image-generation.
+<LI>
+to prepend a path to a different version of <A HREF="node10.html#GGGdvips"
+ NAME="4018"><TT>dvips</TT></A> than normally
+available as the system default (e.g. the printing requirements are different).
+<LI>
+to append debugging switches, in case of poor quality images;
+<BR>
+one can see which paths are being searched for fonts and other resources.
+<LI>
+to prepend commands for setting path variables that <A HREF="node10.html#GGGdvips"
+ NAME="4026"><TT>dvips</TT></A> may need
+in order to locate fonts or other resources.
+</UL>
+
+<P>
+If automatic generation of fonts is required, using <A HREF="node10.html#GGGMetafont"
+ NAME="4034"><I>Metafont</I></A>, the following
+configuration variables are important.
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_PK_GENERATION"
+ NAME="4044"><TT>$PK_GENERATION</TT></A><TT> = 1;</TT><A NAME="pkgen">&#160;</A></B>
+<DD>This variable must be set, to initiate font-generation; otherwise fonts
+will be scaled from existing resources on the local system.
+<BR>
+In particular this variable must <EM>not</EM> be set, if one wishes to use
+<A HREF="#GGGpostscript"
+ NAME="4052">PostScript</A> fonts or other scalable font resources 
+(see the  <TT>-scalable_fonts</TT>  <A HREF="#scalefonts">switch</A>).
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_DVIPS_MODE"
+ NAME="4062"><TT>$DVIPS_MODE</TT></A><TT> = 'toshiba';</TT></B>
+<DD>The mode given here must be available in the <A HREF="node10.html#GGGmodes.mf"
+ NAME="4070"><TT>modes.mf</TT></A> file,
+located with the <A HREF="node10.html#GGGMetafont"
+ NAME="4078"><I>Metafont</I></A> resource files, perhaps in the <A HREF="node10.html#GGGmisc_"
+ NAME="4088"><TT>misc/</TT></A> subdirectory.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_METAFONT_DPI"
+ NAME="4096"><TT>$METAFONT_DPI</TT></A><TT> = 180;</TT></B>
+<DD>The required resolution, in dots-per-inch, should be listed specifically
+within the <A HREF="node10.html#GGGMakeTeXPK"
+ NAME="4104"><TT>MakeTeXPK</TT></A> script, called by <A HREF="node10.html#GGGdvips"
+ NAME="4112"><TT>dvips</TT></A> to invoke <A HREF="node10.html#GGGMetafont"
+ NAME="4120"><I>Metafont</I></A> with
+the correct parameters for the required fonts.
+</DL>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_LATEX"
+ NAME="4130"><TT>$LATEX</TT></A><TT> = 'latex';</TT></B>
+<DD>Read from <A HREF="node10.html#GGGlatex2html.config"
+ NAME="4138"><TT>latex2html.config</TT></A> by <A HREF="node10.html#GGGinstall-test"
+ NAME="4146"><TT>install-test</TT></A>, 
+its value is checked to locate the <A HREF="node10.html#GGGlatex"
+ NAME="4154"><TT>latex</TT></A> program or script.
+
+<P>
+
+<P></P>
+If L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X is having trouble finding style-files and/or packages, then
+the default command can be prepended with other commands 
+to set environment variables intended to resolve these difficulties;
+<BR>
+e.g. 
+<code>$LATEX = 'setenv TEXINPUTS </code><TT>
+&lt;<I>path to search</I>&gt;</TT><code> ; latex' </code>.
+
+<P>
+There are several variables to help control exactly which files are
+read by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> and by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X when processing images:
+
+<P>
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_TEXINPUTS"
+ NAME="4164"><TT>$TEXINPUTS</TT></A></B>
+<DD>This is normally set from the environment variable of the same name.
+If difficulties occur so that styles and packages are not being found, 
+then extra paths can be specified here, to resolve these difficulties.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_DONT_INCLUDE"
+ NAME="4172"><TT>$DONT_INCLUDE</TT></A></B>
+<DD>This provides a list of filenames and extensions to <EM>not</EM> include, 
+even if requested to do so by an <TT>&#92;input</TT> or <TT>&#92;include</TT> command.
+<BR>
+(Consult <A HREF="node10.html#GGGlatex2html.config"
+ NAME="4182"><TT>latex2html.config</TT></A> for the default list.)
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_DO_INCLUDE"
+ NAME="4190"><TT>$DO_INCLUDE</TT></A><TT> = '';</TT></B>
+<DD>List of exceptions within the <A HREF="node10.html#GGG_DONT_INCLUDE"
+ NAME="4198"><TT>$DONT_INCLUDE</TT></A> list.
+These files <EM>are</EM> to be read if requested by an <TT>&#92;input</TT>
+or <TT>&#92;include</TT> command.
+</DL>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_ICONSERVER"
+ NAME="4208"><TT>$ICONSERVER</TT></A><TT> = '<TT>
+&lt;<I>URL</I>&gt;</TT>';</TT></B>
+<DD>This is used to specify a URL to find the standard icons, as used for the
+navigation buttons.
+<BR>
+Names for the specific images size, as well as size information, 
+can be found in <A HREF="node10.html#GGGlatex2html.config"
+ NAME="4218"><TT>latex2html.config</TT></A>. The icons themselves can be replaced
+by customised versions, provided this information is correctly updated
+and the location of the customised images specified as the value
+of <A HREF="node10.html#GGG_ICONSERVER"
+ NAME="4226"><TT>$ICONSERVER</TT></A>.
+<BR>
+When the <A HREF="Mnode4.html#cs_localicons"> <TT>-local_icons</TT> </A> switch is used,
+so that a copy of the icons is placed with the <TT>HTML</TT> files and other
+generated images, the value of <A HREF="node10.html#GGG_ICONSERVER"
+ NAME="4235"><TT>$ICONSERVER</TT></A> is not needed within
+the <TT>HTML</TT> files themselves. However it <EM>is</EM> needed to find
+the original icons to be copied to the local directory.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_NAV_BORDER"
+ NAME="4243"><TT>$NAV_BORDER</TT></A><TT> = 
+&lt;<I>num</I>&gt;;</TT></B>
+<DD>The value given here results in a border, measured in points, around each icon.
+<BR>
+A value of `<TT>0</TT>' is common, to maintain strict
+alignment of inactive and active buttons in the control panels.
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_LINKNAME"
+ NAME="4253"><TT>$LINKNAME</TT></A><TT> = '&#34;index.$EXTN&#34;';</TT></B>
+<DD>This is used with the <A HREF="node10.html#GGG_AUTO_LINK"
+ NAME="4261"><TT>$AUTO_LINK</TT></A> <A HREF="#noautolink">variable</A>, 
+to allow a URL to the working directory to be sufficient to reach the main page 
+of the completed document. 
+It specifies the name of the <TT>HTML</TT> file which will be automatically
+linked to the directory name.
+<BR>
+The value of <A HREF="node10.html#GGG_EXTN"
+ NAME="4269"><TT>$EXTN</TT></A> is <TT>.html</TT> unless <A HREF="node10.html#GGG_SHORTEXTN"
+ NAME="4277"><TT>$SHORTEXTN</TT></A> is set, 
+in which case it is <TT>.htm</TT>&nbsp;. 
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_LINKPOINT"
+ NAME="4285"><TT>$LINKPOINT</TT></A><TT> = '&#34;$FILE$EXTN&#34;';</TT></B>
+<DD>This specifies the name of the <TT>HTML</TT> file to be duplicated, or symbolically
+linked, with the name specified in <A HREF="node10.html#GGG_LINKNAME"
+ NAME="4293"><TT>$LINKNAME</TT></A>.
+<BR>
+At the appropriate time the value of <A HREF="node10.html#GGG_FILE"
+ NAME="4301"><TT>$FILE</TT></A> is the document name, 
+which usually coincides with the name of the working directory.
+
+<P>
+<A NAME="1733">&#160;</A>
+<A NAME="2143">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_CHARSET"
+ NAME="4309"><TT>$CHARSET</TT></A><TT> = 'iso_8859_1';</TT><A NAME="charset">&#160;</A></B>
+<DD>This specifies the character set used within the <TT>HTML</TT> pages
+produced by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>. If no value is set in a configuration
+or initialisation file, the default value will be assumed.
+The lowercase form <TT>$charset</TT> is also recognised, but
+this is overridden by the uppercase form.
+
+<P>
+<A NAME="1740">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_ACCENT_IMAGES"
+ NAME="4317"><TT>$ACCENT_IMAGES</TT></A><TT> = 'large'</TT>;</B>
+<DD>Accented characters that are not part of the ISO-Latin fonts
+can be generated by making an image using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+This variable contains a (comma-separated) list of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands
+for setting the style to be used when these images are made. 
+If the value of this variable is empty then the accent is simply
+ignored, using an un-accented font character (not an image) instead.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR></DL>
+
+<P>
+
+<P><P>
+<BR>
+Within the <A HREF="node10.html#GGGcolor.perl"
+ NAME="4325"><TT>color.perl</TT></A> package, the following variables are used to
+identify the names of files containing specifications for named colors.
+Files having these names are provided, in the <A HREF="node10.html#GGG_LATEX2HTMLSTYLES"
+ NAME="4333"><TT>$LATEX2HTMLSTYLES</TT></A>
+directory, but they could be moved elsewhere, 
+or replaced by alternative files having different names.
+In such a case the values of these variables should be altered accordingly.
+<DL COMPACT>
+<DT>
+<DD><A HREF="node10.html#GGG_RGBCOLORFILE"
+ NAME="4341"><TT>$RGBCOLORFILE</TT></A><TT> = 'rgb.txt';</TT>
+<DT>
+<DD><A HREF="node10.html#GGG_CRAYOLAFILE"
+ NAME="4349"><TT>$CRAYOLAFILE</TT></A><TT> = 'crayola.txt';</TT>
+</DL>
+
+<P>
+
+<P><P>
+<BR>
+The following variables may well be altered from the system defaults,
+but this is best done using a local <A HREF="node10.html#GGG.latex2html-init"
+ NAME="4357"><TT>.latex2html-init</TT></A> initialisation file,
+for overall consistency of style within documents located at the same site,
+or sites in close proximity.
+
+<P>
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_default_language"
+ NAME="4365"><TT>$default_language</TT></A><TT> = 'english';</TT><A NAME="isolanguage">&#160;</A></B>
+<DD>This establishes which language code is to be placed within
+the <TT>&lt;!DOCTYPE ... &gt;</TT> tag that may appear at the beginning
+of the <TT>HTML</TT> pages produced. Loading a package for
+an alternative language can be expected to change the value of this variable.
+<BR>
+See also the <A HREF="node10.html#GGG_TITLES_LANGUAGE"
+ NAME="4374"><TT>$TITLES_LANGUAGE</TT></A> variable, described <A HREF="Mnode9.html#doclanguage">next</A>.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_TITLES_LANGUAGE"
+ NAME="4382"><TT>$TITLES_LANGUAGE</TT></A><TT> = 'english';</TT><A NAME="doclanguage">&#160;</A></B>
+<DD>This variable is used to specify the actual strings used for standard document
+sections, such as ``Contents'', ``References'', ``Table of Contents'', etc.
+<BR>
+Support for French and German titles is available in corresponding packages.
+Loading such a package will normally alter the value of this variable, as well as 
+the <A HREF="node10.html#GGG_default_language"
+ NAME="4390"><TT>$default_language</TT></A> variable described <A HREF="Mnode9.html#isolanguage">above</A>.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_WORDS_IN_NAVIGATION_PANEL_TITLES"
+ NAME="4398"><TT>$WORDS_IN_NAVIGATION_PANEL_TITLES</TT></A><TT> = 4;</TT></B>
+<DD>Specifies how many words to use from section titles,
+within the textual hyperlinks which accompany the navigation buttons.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_WORDS_IN_PAGE"
+ NAME="4406"><TT>$WORDS_IN_PAGE</TT></A><TT> = 450;</TT></B>
+<DD>Specifies the minimum page length required before a navigation panel
+is placed at the bottom of a page,
+when the <A HREF="node10.html#GGG_AUTO_NAVIGATION"
+ NAME="4414"><TT>$AUTO_NAVIGATION</TT></A> variable is set.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_CHILDLINE"
+ NAME="4422"><TT>$CHILDLINE</TT></A><TT> = &#34;&lt;BR&gt;&lt;HR&gt;&#92;n&#34;;</TT></B>
+<DD>This gives the <TT>HTML</TT> code to be placed between the child-links
+table and the ordinary contents of the page on which it occurs.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_NETSCAPE_HTML"
+ NAME="4430"><TT>$NETSCAPE_HTML</TT></A><TT> = 0;</TT></B>
+<DD>When set, this variable specifies that <TT>HTML</TT> code may be present which
+does not conform to any official standard. 
+This restricts the contents of any <TT>&lt;!DOCTYPE ... &gt;</TT> tag which may be placed
+at the beginning of the <TT>HTML</TT> pages produced.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_BODYTEXT"
+ NAME="4439"><TT>$BODYTEXT</TT></A><TT> = '';</TT></B>
+<DD>The value of this variable is used within the <TT>&lt;BODY ... &gt;</TT> tag;
+e.g. to set text and/or background colors.
+<BR>
+It's value is overridden by the <code>\bodytext</code> command, 
+and can be added-to or parts changed using the <TT>&#92;htmlbody</TT> command
+or <TT>&#92;color</TT> and <TT>&#92;pagecolor</TT> from the 
+<I>color</I> package.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_INTERLACE"
+ NAME="4452"><TT>$INTERLACE</TT></A><TT> = 1;</TT><A NAME="interlace">&#160;</A></B>
+<DD>When set, interlaced images should be produced.
+<BR>
+This requires <A HREF="Mnode9.html#graphicsutils">graphics utilities</A> to be available 
+to perform the interlacing operation.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_TRANSPARENT_FIGURES"
+ NAME="4460"><TT>$TRANSPARENT_FIGURES</TT></A><TT> = 1;</TT><A NAME="transfigs">&#160;</A></B>
+<DD>When set, the background of images should be made transparent;
+otherwise it is white.
+<BR>
+This requires <A HREF="Mnode9.html#graphicsutils">graphics utilities</A> 
+to be available which can specify the color to be made transparent.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_FIGURE_SCALE_FACTOR"
+ NAME="4468"><TT>$FIGURE_SCALE_FACTOR</TT></A><TT> = 1.6;</TT><A NAME="figscale">&#160;</A></B>
+<DD>Scale factor applied to all images of 
+<I>figure</I> and other environments, 
+when being made into an image.
+
+<P>
+
+<P></P>
+Note that this does not apply to recognised mathematics environments, 
+which instead use the contents of <A HREF="node10.html#GGG_MATH_SCALE_FACTOR"
+ NAME="4477"><TT>$MATH_SCALE_FACTOR</TT></A> 
+and <A HREF="node10.html#GGG_DISP_SCALE_FACTOR"
+ NAME="4485"><TT>$DISP_SCALE_FACTOR</TT></A> to specify scaling.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_MATH_SCALE_FACTOR"
+ NAME="4493"><TT>$MATH_SCALE_FACTOR</TT></A><TT> = 1.6;</TT><A NAME="mathscale">&#160;</A></B>
+<DD>Scale factor applied to all images of mathematics, both inline
+and displayed. 
+A value of 1.4 is a good alternative, with anti-aliased images.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_DISP_SCALE_FACTOR"
+ NAME="4501"><TT>$DISP_SCALE_FACTOR</TT></A><TT> = 1;</TT><A NAME="dispscale">&#160;</A></B>
+<DD>Extra scale factor applied to images of displayed math environments.
+<BR>
+When set, this value multiplies <A HREF="node10.html#GGG_MATH_SCALE_FACTOR"
+ NAME="4509"><TT>$MATH_SCALE_FACTOR</TT></A>
+to give the total scaling. 
+A value of `1.2' is a good choice to accompany <code>$MATH_SCALE_FACTOR = 1.4;</code>.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_EXTRA_IMAGE_SCALE"
+ NAME="4517"><TT>$EXTRA_IMAGE_SCALE</TT></A><A NAME="ximagescale">&#160;</A></B>
+<DD>This may hold an extra scale factor that can be applied to all generated images.
+<BR>
+When set, it specifies that a scaling of <A HREF="node10.html#GGG_EXTRA_IMAGE_SCALE"
+ NAME="4525"><TT>$EXTRA_IMAGE_SCALE</TT></A> be applied 
+when images are created, but to have their height and width recorded 
+as the un-scaled size. This is to coax browsers into scaling the (usually larger) 
+images to fit the desired size; when printed a better quality can be obtained.
+Values of `1.5' and `2' give good print quality at 600dpi.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_PAPERSIZE"
+ NAME="4533"><TT>$PAPERSIZE</TT></A><TT> = 'a5';</TT><A NAME="papersize">&#160;</A></B>
+<DD>Specifies the size of a page for typesetting figures
+or displayed math, when an image is to be generated.
+<BR>
+This affects the lengths of lines of text within images.
+Since images of text or mathematics should use larger sizes than
+when printed, else clarity is lost at screen resolutions,
+then a smaller paper-size is generally advisable.
+This is especially so if both the <A HREF="node10.html#GGG_MATH_SCALE_FACTOR"
+ NAME="4541"><TT>$MATH_SCALE_FACTOR</TT></A>
+and <A HREF="node10.html#GGG_DISP_SCALE_FACTOR"
+ NAME="4549"><TT>$DISP_SCALE_FACTOR</TT></A> scaling factors are being used,
+else some images may become excessively large, including a lot
+of blank space.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/purpleball.gif" ALT="*">
+<B><A HREF="node10.html#GGG_LINE_WIDTH"
+ NAME="4557"><TT>$LINE_WIDTH</TT></A><TT> = 500;</TT><A NAME="linewidth">&#160;</A></B>
+<DD>Formerly specified the width of an image, when the contents were
+to be right- or center-justified. (No longer used.)
+
+<P>
+</DL>
+
+<P>
+
+<P><P>
+<BR>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+
+The following variables are used to access the utilities required during image-generation. 
+File and program locations on the local system are established by the <A HREF="node10.html#GGGconfigure-pstoimg"
+ NAME="4565"><TT>configure-pstoimg</TT></A> 
+<A HREF="node10.html#GGGPerl"><I>Perl</I></A> script and stored within <A HREF="node10.html#GGG_LATEX2HTMLDIR_local.pm"
+ NAME="4576"><TT>$LATEX2HTMLDIR/local.pm</TT></A> as <A HREF="node10.html#GGGPerl"><I>Perl</I></A> code, 
+to be read by <A HREF="node10.html#GGGpstoimg"
+ NAME="4587"><TT>pstoimg</TT></A> when required.
+
+<P>
+After running the <A HREF="node10.html#GGGconfigure-pstoimg"
+ NAME="4595"><TT>configure-pstoimg</TT></A> <A HREF="node10.html#GGGPerl"><I>Perl</I></A> script it should not be necessary 
+to alter the values obtained. Those shown below are what happens on the author's system;
+they are for illustration only and do <EM>not</EM> represent default values.
+<UL><A NAME="graphicsutils">&#160;</A><LI><A HREF="node10.html#GGG_GS_LIB"
+ NAME="4606"><TT>$GS_LIB</TT></A><TT> = '/usr/local/share/ghostscript/4.02';</TT>
+<LI><A HREF="node10.html#GGG_PNMCAT"
+ NAME="4614"><TT>$PNMCAT</TT></A><TT> = '/usr/local/bin/pnmcat';</TT>
+<LI><A HREF="node10.html#GGG_PPMQUANT"
+ NAME="4622"><TT>$PPMQUANT</TT></A><TT> = '/usr/local/bin/ppmquant';</TT>
+<LI><A HREF="node10.html#GGG_PNMFLIP"
+ NAME="4630"><TT>$PNMFLIP</TT></A><TT> = '/usr/local/bin/pnmflip';</TT>
+<LI><A HREF="node10.html#GGG_PPMTOGIF"
+ NAME="4638"><TT>$PPMTOGIF</TT></A><TT> = '/usr/local/bin/ppmtogif';</TT>
+<LI><A HREF="node10.html#GGG_HOWTO_TRANSPARENT_GIF"
+ NAME="4646"><TT>$HOWTO_TRANSPARENT_GIF</TT></A><TT> = 'netpbm';</TT>
+<LI><A HREF="node10.html#GGG_GS_DEVICE"
+ NAME="4654"><TT>$GS_DEVICE</TT></A><TT> = 'pnmraw';</TT>
+<LI><A HREF="node10.html#GGG_GS"
+ NAME="4662"><TT>$GS</TT></A><TT> = '/usr/local/bin/gs';</TT>
+<LI><A HREF="node10.html#GGG_PNMFILE"
+ NAME="4670"><TT>$PNMFILE</TT></A><TT> = '/usr/local/bin/pnmfile';</TT>
+<LI><A HREF="node10.html#GGG_HOWTO_INTERLACE_GIF"
+ NAME="4678"><TT>$HOWTO_INTERLACE_GIF</TT></A><TT> = 'netpbm';</TT>
+<LI><A HREF="node10.html#GGG_PBMMAKE"
+ NAME="4686"><TT>$PBMMAKE</TT></A><TT> = '/usr/local/bin/pbmmake';</TT>
+<LI><A HREF="node10.html#GGG_PNMCROP"
+ NAME="4694"><TT>$PNMCROP</TT></A><TT> = '/usr/local/bin/pnmcrop';</TT>
+<LI><A HREF="node10.html#GGG_TMP"
+ NAME="4702"><TT>$TMP</TT></A><TT> = '/usr/var/tmp';</TT>
+</UL>
+
+<P>
+The following variables are no longer needed, having been replaced by the
+more specific information obtained using the <A HREF="node10.html#GGGPerl"><I>Perl</I></A> script <A HREF="node10.html#GGGconfigure-pstoimg"
+ NAME="4713"><TT>configure-pstoimg</TT></A>.
+<DL COMPACT>
+<DT>
+<DD><A HREF="node10.html#GGG_USENETPBM"
+ NAME="4721"><TT>$USENETPBM</TT></A><TT> = 1;</TT>
+<DT>
+<DD><A HREF="node10.html#GGG_PBMPLUSDIR"
+ NAME="4729"><TT>$PBMPLUSDIR</TT></A><TT> = '/usr/local/bin';</TT>
+</DL>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html146"
+ HREF="Mnode10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html142"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html136"
+ HREF="Mnode8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html144"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html145"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html147"
+ HREF="Mnode10.html">Extending the Translator</A>
+<B> Up:</B> <A NAME="tex2html143"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html137"
+ HREF="Mnode8.html">Switches for Help and</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

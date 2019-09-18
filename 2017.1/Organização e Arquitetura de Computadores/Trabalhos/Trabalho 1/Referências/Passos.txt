@@ -1,0 +1,12 @@
+﻿As etapas a serem compridas (x = a fazer; / = já feito):
+	Check		Responsável		Tarefa
+	/			R				get_point (int x, int y);
+	/			R				draw_point (int	x, int y, int val);
+	x			L				draw_empty_rectangle (int xi, int xf, int yi, int yf, int val);
+	x			L				convert_negative();
+	/			Marcelo			load_image(string image_name, int address, int buffer, int size);
+	/			R				Strings das mensagens
+	x			D				CvtString 2 HEX
+	x			D				Validação dos dados (Retorna a mOpInv):
+									* [lin][col] fora dos limites da imagem;
+									* RGB fora dos limites do espaço.

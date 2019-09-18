@@ -1,0 +1,2 @@
+cd ../../../../Fontes/
+cppcheck *.cpp

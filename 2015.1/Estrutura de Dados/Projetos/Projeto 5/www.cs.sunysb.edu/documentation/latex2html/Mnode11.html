@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Asking the Translator to Ignore Commands</TITLE>
+<META NAME="description" CONTENT="Asking the Translator to Ignore Commands">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="next" HREF="Mnode12.html">
+<LINK REL="previous" HREF="Mnode10.html">
+<LINK REL="up" HREF="Mnode10.html">
+<LINK REL="next" HREF="Mnode12.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html173"
+ HREF="Mnode12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html169"
+ HREF="Mnode10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html163"
+ HREF="Mnode10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html171"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html172"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html174"
+ HREF="Mnode12.html">Asking the Translator to L<SUP>A</SUP>TEX</A>
+<B> Up:</B> <A NAME="tex2html170"
+ HREF="Mnode10.html">Extending the Translator</A>
+<B> Previous:</B> <A NAME="tex2html164"
+ HREF="Mnode10.html">Extending the Translator</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000133100000000000000">&#160;</A><A NAME="ignore">&#160;</A><A NAME="1927">&#160;</A>
+<BR>
+Asking the Translator to Ignore Commands
+</H3>
+<BR>
+Commands that should be ignored may be specified in the <A HREF="node10.html#GGG.latex2html-init"
+ NAME="4769"><TT>.latex2html-init</TT></A>
+file as input to the <code>&amp;ignore_commands</code> subroutine. 
+Each command which is to be ignored should be on a separate line 
+followed by compulsory or optional argument markers separated by 
+<code>#</code>'s e.g.<A NAME="tex2html6"
+ HREF="#foot2146"><SUP>46</SUP></A>:
+<BLOCKQUOTE>
+<code>&lt;cmd_name1&gt; # {} # [] # {} # [] ...</code>
+<BR>
+<code>&lt;cmd_name2&gt; # </code><TT>&lt;&lt;<EM>pattern</EM>&gt;&gt;</TT><code> # [] ...</code>
+</BLOCKQUOTE>
+<code>{}</code>'s mark compulsory arguments and <code>[]</code>'s optional ones,
+while <TT>&lt;&lt;<EM>pattern</EM>&gt;&gt;</TT> denotes matching everything up to the
+indicated string-pattern, given literally (e.g. <code>\\endarray</code>);
+spaces are ignored. Special characters
+such as <code>$</code>, <code>&amp;</code>, <code>\</code> itself and perhaps some others,
+need to be ``escaped'' with a preceding <code>\</code>.
+
+<P>
+<A NAME="1937">&#160;</A>
+<BR>
+
+<P>
+Some commands may have arguments which should be left as text even
+though the command should be ignored 
+(e.g. <TT>&#92;hbox</TT>, <TT>&#92;center</TT>, etc.). 
+In these cases arguments should be left unspecified.
+Here is an example of how this mechanism may be used:
+<PRE>
+&amp;ignore_commands( &lt;&lt;_IGNORED_CMDS_);
+documentstyle # [] # {}
+linebreak # []
+mbox
+&lt;add your commands here&gt;
+_IGNORED_CMDS_
+</PRE>
+
+<P>
+<BR><HR><H4>Footnotes</H4>
+<DL>
+<DT><A NAME="foot2146">... e.g.</A><A NAME="foot2146"
+ HREF="Mnode11.html#tex2html6"><SUP>46</SUP></A>
+<DD>It is possible to add arbitrary(?) <A HREF="node10.html#GGGPerl"><I>Perl</I></A> code
+between any of the argument markers which will be executed when 
+the command is processed. For this however a basic understanding of
+how the translator works and of course <A HREF="node10.html#GGGPerl"><I>Perl</I></A> is required.
+
+</DL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html173"
+ HREF="Mnode12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html169"
+ HREF="Mnode10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html163"
+ HREF="Mnode10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html171"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html172"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html174"
+ HREF="Mnode12.html">Asking the Translator to L<SUP>A</SUP>TEX</A>
+<B> Up:</B> <A NAME="tex2html170"
+ HREF="Mnode10.html">Extending the Translator</A>
+<B> Previous:</B> <A NAME="tex2html164"
+ HREF="Mnode10.html">Extending the Translator</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

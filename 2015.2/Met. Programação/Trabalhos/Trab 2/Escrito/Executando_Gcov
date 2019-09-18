@@ -1,0 +1,2 @@
+cd Construcoes/CMakeFiles/Trab2_MP_Rodrigo.dir/Fontes/
+gcov *.gcno

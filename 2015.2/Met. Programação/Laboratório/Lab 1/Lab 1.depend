@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1439997451 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 1/Principal.c
+	<stdio.h>
+	<stdlib.h>
+	"Pilha.h"
+
+1439997006 /home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 1/Pilha.h
+	<stdio.h>
+	<stdlib.h>
+
+1439997492 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 1/Pilha.c
+	"Pilha.h"
+
+1440619381 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 1/fontes/Pilha_Encadeada.c
+	"../include/Pilha.h"
+
+1440619671 /home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 1/include/Pilha.h
+	<stdio.h>
+	<stdlib.h>
+
+1440619171 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 1/fontes/Pilha_Vetor.c
+	"../include/Pilha.h"
+
+1440618165 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 1/fontes/Principal.c
+	<stdio.h>
+	<stdlib.h>
+	"../include/Pilha.h"
+

@@ -1,0 +1,4353 @@
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:18:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 27
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = L
+	Sem Voos
+Pista 1:
+	Status da Pista = L
+	Sem Voos
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = AG4763
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = EE4952
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = RP3690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = MT7390
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = GQ0194
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = BP0519
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = KX5221
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = VN8237
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = CF6138
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = RZ6385
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = NX1034
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = RJ9663
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = TR1576
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = ZN6101
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = DR8899
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = XC8601
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = GJ7383
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = DH0037
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = UG8690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = LF3894
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 26
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 27
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Inicio do ciclo 1
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:23:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 25
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = AG4763
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = EE4952
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = RP3690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = MT7390
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = GQ0194
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = BP0519
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = KX5221
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = VN8237
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = CF6138
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = RZ6385
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = NX1034
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = RJ9663
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = TR1576
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = ZN6101
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = DR8899
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = XC8601
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = GJ7383
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = DH0037
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = UG8690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = LF3894
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 1
+Inicio do ciclo 2
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:28:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 23
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = RP3690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = MT7390
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = GQ0194
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = BP0519
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = KX5221
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = VN8237
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = CF6138
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = RZ6385
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = NX1034
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = RJ9663
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = TR1576
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = ZN6101
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = DR8899
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = XC8601
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = GJ7383
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = DH0037
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = UG8690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = LF3894
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 2
+Inicio do ciclo 3
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:33:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 21
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = GQ0194
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = BP0519
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = KX5221
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = VN8237
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = CF6138
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = RZ6385
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = NX1034
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = RJ9663
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = TR1576
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = ZN6101
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = DR8899
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = XC8601
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = GJ7383
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = DH0037
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = UG8690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = LF3894
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 3
+Inicio do ciclo 4
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:38:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 19
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = KX5221
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = VN8237
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = CF6138
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = RZ6385
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = NX1034
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = RJ9663
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = TR1576
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = ZN6101
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = DR8899
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = XC8601
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = GJ7383
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = DH0037
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = UG8690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = LF3894
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 4
+Inicio do ciclo 5
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:43:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 17
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = CF6138
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = RZ6385
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = NX1034
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = RJ9663
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = TR1576
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = ZN6101
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = DR8899
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = XC8601
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = GJ7383
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = DH0037
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = UG8690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = LF3894
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 5
+Inicio do ciclo 6
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:48:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 15
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = NX1034
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = RJ9663
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = TR1576
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = ZN6101
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = DR8899
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = XC8601
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = GJ7383
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = DH0037
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = UG8690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = LF3894
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 6
+Inicio do ciclo 7
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:53:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 13
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = TR1576
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = ZN6101
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = DR8899
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = XC8601
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = GJ7383
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = DH0037
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = UG8690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = LF3894
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 7
+Inicio do ciclo 8
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:58:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 11
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = DR8899
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = XC8601
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = GJ7383
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = DH0037
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = UG8690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = LF3894
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 8
+Inicio do ciclo 9
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 14:03:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 09
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = GJ7383
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = DH0037
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = UG8690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = LF3894
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 9
+Inicio do ciclo 10
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 14:08:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 07
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = UG8690
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = LF3894
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 10
+Inicio do ciclo 11
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 14:13:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 05
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = ZK5535
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = HX9617
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 11
+Inicio do ciclo 12
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 14:18:00
+Numero de Voos, aconselhado = 28
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 03
+Porcentagem de lotacao, para proxima hora = 96.43%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = DK4107
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = QS5857
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = QM0321
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = SH7372
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = KU0943
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 12
+
+Acabou hora de simulacao
+
+Fim da Simulacao! Volte Sempre!
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:23:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 24
+Numero de Voos, decolagens = 22
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = L
+	Sem Voos
+Pista 1:
+	Status da Pista = L
+	Sem Voos
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = FR0109
+	Status do Voo = A
+	Combustivel do Voo = 2
+
+Voo 2
+	Identificacao do Voo = PX7144
+	Status do Voo = A
+	Combustivel do Voo = 2
+
+Voo 3
+	Identificacao do Voo = YZ3631
+	Status do Voo = A
+	Combustivel do Voo = 2
+
+Voo 4
+	Identificacao do Voo = RW0264
+	Status do Voo = A
+	Combustivel do Voo = 2
+
+Voo 5
+	Identificacao do Voo = HX4680
+	Status do Voo = A
+	Combustivel do Voo = 2
+
+Voo 6
+	Identificacao do Voo = SM5270
+	Status do Voo = A
+	Combustivel do Voo = 2
+
+Voo 7
+	Identificacao do Voo = XG5610
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 8
+	Identificacao do Voo = RN4911
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 9
+	Identificacao do Voo = HO4671
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 10
+	Identificacao do Voo = PJ2288
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 11
+	Identificacao do Voo = ZA0232
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 12
+	Identificacao do Voo = MD7860
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 13
+	Identificacao do Voo = JS8874
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 14
+	Identificacao do Voo = XP7624
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 15
+	Identificacao do Voo = WK6106
+	Status do Voo = A
+	Combustivel do Voo = 7
+
+Voo 16
+	Identificacao do Voo = PP5249
+	Status do Voo = A
+	Combustivel do Voo = 8
+
+Voo 17
+	Identificacao do Voo = MG4113
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+Voo 18
+	Identificacao do Voo = AB3328
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+Voo 19
+	Identificacao do Voo = XV3247
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+Voo 20
+	Identificacao do Voo = SX8312
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+Voo 21
+	Identificacao do Voo = ZZ4056
+	Status do Voo = A
+	Combustivel do Voo = 12
+
+Voo 22
+	Identificacao do Voo = AR7984
+	Status do Voo = A
+	Combustivel do Voo = 12
+
+Voo 23
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 13
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = JW2750
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = US2971
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = OS1244
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = SE7263
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = TY0350
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = FT2500
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = JT8745
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = YR5551
+	Status do Voo = 
+ALERTA!!!!
+Nao ha pistas disponiveis, e o voo RW0264 esta em emergencia!
+Logo foi redirecionado para outro aeroporto!
+
+
+ALERTA!!!!
+Nao ha pistas disponiveis, e o voo HX4680 esta em emergencia!
+Logo foi redirecionado para outro aeroporto!
+
+
+ALERTA!!!!
+Nao ha pistas disponiveis, e o voo SM5270 esta em emergencia!
+Logo foi redirecionado para outro aeroporto!
+
+D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Inicio do ciclo 1
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:28:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 18
+Numero de Voos, decolagens = 22
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = FR0109
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = PX7144
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 2:
+	Status da Pista = O
+	Identificacao do Voo = YZ3631
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = XG5610
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 2
+	Identificacao do Voo = RN4911
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 3
+	Identificacao do Voo = HO4671
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 4
+	Identificacao do Voo = PJ2288
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 5
+	Identificacao do Voo = ZA0232
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 6
+	Identificacao do Voo = MD7860
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 7
+	Identificacao do Voo = JS8874
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 8
+	Identificacao do Voo = XP7624
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 9
+	Identificacao do Voo = WK6106
+	Status do Voo = A
+	Combustivel do Voo = 7
+
+Voo 10
+	Identificacao do Voo = PP5249
+	Status do Voo = A
+	Combustivel do Voo = 8
+
+Voo 11
+	Identificacao do Voo = MG4113
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+Voo 12
+	Identificacao do Voo = AB3328
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+Voo 13
+	Identificacao do Voo = XV3247
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+Voo 14
+	Identificacao do Voo = SX8312
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+Voo 15
+	Identificacao do Voo = ZZ4056
+	Status do Voo = A
+	Combustivel do Voo = 12
+
+Voo 16
+	Identificacao do Voo = AR7984
+	Status do Voo = A
+	Combustivel do Voo = 12
+
+Voo 17
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 13
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = JW2750
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = US2971
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = OS1244
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = SE7263
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = TY0350
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = FT2500
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = JT8745
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 1
+Inicio do ciclo 2
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:33:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 17
+Numero de Voos, decolagens = 24
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = XG5610
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = JW2750
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = RN4911
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 2
+	Identificacao do Voo = HO4671
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 3
+	Identificacao do Voo = PJ2288
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 4
+	Identificacao do Voo = ZA0232
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 5
+	Identificacao do Voo = MD7860
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 6
+	Identificacao do Voo = JS8874
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 7
+	Identificacao do Voo = XP7624
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 8
+	Identificacao do Voo = WK6106
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 9
+	Identificacao do Voo = PP5249
+	Status do Voo = A
+	Combustivel do Voo = 7
+
+Voo 10
+	Identificacao do Voo = MG4113
+	Status do Voo = A
+	Combustivel do Voo = 10
+
+Voo 11
+	Identificacao do Voo = AB3328
+	Status do Voo = A
+	Combustivel do Voo = 10
+
+Voo 12
+	Identificacao do Voo = XV3247
+	Status do Voo = A
+	Combustivel do Voo = 10
+
+Voo 13
+	Identificacao do Voo = SX8312
+	Status do Voo = A
+	Combustivel do Voo = 10
+
+Voo 14
+	Identificacao do Voo = ZZ4056
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+Voo 15
+	Identificacao do Voo = AR7984
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+Voo 16
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 12
+
+Voo 17
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 12
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = US2971
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = OS1244
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = SE7263
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = TY0350
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = FT2500
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = JT8745
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = FR0109
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = PX7144
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = YZ3631
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 2
+Inicio do ciclo 3
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:38:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 15
+Numero de Voos, decolagens = 25
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = RN4911
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = HO4671
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = PJ2288
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 2
+	Identificacao do Voo = ZA0232
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 3
+	Identificacao do Voo = MD7860
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 4
+	Identificacao do Voo = JS8874
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 5
+	Identificacao do Voo = XP7624
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 6
+	Identificacao do Voo = WK6106
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 7
+	Identificacao do Voo = PP5249
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 8
+	Identificacao do Voo = MG4113
+	Status do Voo = A
+	Combustivel do Voo = 9
+
+Voo 9
+	Identificacao do Voo = AB3328
+	Status do Voo = A
+	Combustivel do Voo = 9
+
+Voo 10
+	Identificacao do Voo = XV3247
+	Status do Voo = A
+	Combustivel do Voo = 9
+
+Voo 11
+	Identificacao do Voo = SX8312
+	Status do Voo = A
+	Combustivel do Voo = 9
+
+Voo 12
+	Identificacao do Voo = ZZ4056
+	Status do Voo = A
+	Combustivel do Voo = 10
+
+Voo 13
+	Identificacao do Voo = AR7984
+	Status do Voo = A
+	Combustivel do Voo = 10
+
+Voo 14
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+Voo 15
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 11
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = US2971
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = OS1244
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = SE7263
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = TY0350
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = FT2500
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = JT8745
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = FR0109
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = PX7144
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = YZ3631
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = XG5610
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 3
+Inicio do ciclo 4
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:43:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 13
+Numero de Voos, decolagens = 27
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = PJ2288
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = ZA0232
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = MD7860
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 2
+	Identificacao do Voo = JS8874
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 3
+	Identificacao do Voo = XP7624
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 4
+	Identificacao do Voo = WK6106
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 5
+	Identificacao do Voo = PP5249
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 6
+	Identificacao do Voo = MG4113
+	Status do Voo = A
+	Combustivel do Voo = 8
+
+Voo 7
+	Identificacao do Voo = AB3328
+	Status do Voo = A
+	Combustivel do Voo = 8
+
+Voo 8
+	Identificacao do Voo = XV3247
+	Status do Voo = A
+	Combustivel do Voo = 8
+
+Voo 9
+	Identificacao do Voo = SX8312
+	Status do Voo = A
+	Combustivel do Voo = 8
+
+Voo 10
+	Identificacao do Voo = ZZ4056
+	Status do Voo = A
+	Combustivel do Voo = 9
+
+Voo 11
+	Identificacao do Voo = AR7984
+	Status do Voo = A
+	Combustivel do Voo = 9
+
+Voo 12
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 10
+
+Voo 13
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 10
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = US2971
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = OS1244
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = SE7263
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = TY0350
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = FT2500
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = JT8745
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = FR0109
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = PX7144
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = YZ3631
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = XG5610
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 26
+	Identificacao do Voo = RN4911
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 27
+	Identificacao do Voo = HO4671
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 4
+Inicio do ciclo 5
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:48:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 10
+Numero de Voos, decolagens = 29
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = MD7860
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = JS8874
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 2:
+	Status da Pista = O
+	Identificacao do Voo = XP7624
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = WK6106
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 2
+	Identificacao do Voo = PP5249
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 3
+	Identificacao do Voo = MG4113
+	Status do Voo = A
+	Combustivel do Voo = 7
+
+Voo 4
+	Identificacao do Voo = AB3328
+	Status do Voo = A
+	Combustivel do Voo = 7
+
+Voo 5
+	Identificacao do Voo = XV3247
+	Status do Voo = A
+	Combustivel do Voo = 7
+
+Voo 6
+	Identificacao do Voo = SX8312
+	Status do Voo = A
+	Combustivel do Voo = 7
+
+Voo 7
+	Identificacao do Voo = ZZ4056
+	Status do Voo = A
+	Combustivel do Voo = 8
+
+Voo 8
+	Identificacao do Voo = AR7984
+	Status do Voo = A
+	Combustivel do Voo = 8
+
+Voo 9
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 9
+
+Voo 10
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 9
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = US2971
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = OS1244
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = SE7263
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = TY0350
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = FT2500
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = JT8745
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = FR0109
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = PX7144
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = YZ3631
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = XG5610
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 26
+	Identificacao do Voo = RN4911
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 27
+	Identificacao do Voo = HO4671
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 28
+	Identificacao do Voo = PJ2288
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 29
+	Identificacao do Voo = ZA0232
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 5
+Inicio do ciclo 6
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:53:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 09
+Numero de Voos, decolagens = 31
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = WK6106
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = US2971
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = PP5249
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 2
+	Identificacao do Voo = MG4113
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 3
+	Identificacao do Voo = AB3328
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 4
+	Identificacao do Voo = XV3247
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 5
+	Identificacao do Voo = SX8312
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 6
+	Identificacao do Voo = ZZ4056
+	Status do Voo = A
+	Combustivel do Voo = 7
+
+Voo 7
+	Identificacao do Voo = AR7984
+	Status do Voo = A
+	Combustivel do Voo = 7
+
+Voo 8
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 8
+
+Voo 9
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 8
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = OS1244
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = SE7263
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = TY0350
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = FT2500
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = JT8745
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = FR0109
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = PX7144
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = YZ3631
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = XG5610
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = RN4911
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 26
+	Identificacao do Voo = HO4671
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 27
+	Identificacao do Voo = PJ2288
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 28
+	Identificacao do Voo = ZA0232
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 29
+	Identificacao do Voo = MD7860
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 30
+	Identificacao do Voo = JS8874
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 31
+	Identificacao do Voo = XP7624
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 6
+Inicio do ciclo 7
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 13:58:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 08
+Numero de Voos, decolagens = 31
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = PP5249
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = OS1244
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = MG4113
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 2
+	Identificacao do Voo = AB3328
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 3
+	Identificacao do Voo = XV3247
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 4
+	Identificacao do Voo = SX8312
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 5
+	Identificacao do Voo = ZZ4056
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 6
+	Identificacao do Voo = AR7984
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 7
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 7
+
+Voo 8
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 7
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = SE7263
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = TY0350
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = FT2500
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = JT8745
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = FR0109
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = PX7144
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = YZ3631
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = XG5610
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = RN4911
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = HO4671
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 26
+	Identificacao do Voo = PJ2288
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 27
+	Identificacao do Voo = ZA0232
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 28
+	Identificacao do Voo = MD7860
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 29
+	Identificacao do Voo = JS8874
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 30
+	Identificacao do Voo = XP7624
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 31
+	Identificacao do Voo = WK6106
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 7
+Inicio do ciclo 8
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 14:03:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 08
+Numero de Voos, decolagens = 30
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = SE7263
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = TY0350
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = MG4113
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 2
+	Identificacao do Voo = AB3328
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 3
+	Identificacao do Voo = XV3247
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 4
+	Identificacao do Voo = SX8312
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 5
+	Identificacao do Voo = ZZ4056
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 6
+	Identificacao do Voo = AR7984
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 7
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+Voo 8
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 6
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = FT2500
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = JT8745
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = FR0109
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = PX7144
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = YZ3631
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = XG5610
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = RN4911
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = HO4671
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = PJ2288
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = ZA0232
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 26
+	Identificacao do Voo = MD7860
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 27
+	Identificacao do Voo = JS8874
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 28
+	Identificacao do Voo = XP7624
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 29
+	Identificacao do Voo = WK6106
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 30
+	Identificacao do Voo = PP5249
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 8
+Inicio do ciclo 9
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 14:08:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 08
+Numero de Voos, decolagens = 28
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = FT2500
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = JT8745
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = MG4113
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 2
+	Identificacao do Voo = AB3328
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 3
+	Identificacao do Voo = XV3247
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 4
+	Identificacao do Voo = SX8312
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 5
+	Identificacao do Voo = ZZ4056
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 6
+	Identificacao do Voo = AR7984
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 7
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+Voo 8
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 5
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificaca
+ALERTA!!!!
+Nao ha pistas disponiveis, e o voo SX8312 esta em emergencia!
+Logo foi redirecionado para outro aeroporto!
+
+o do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = FR0109
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = PX7144
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = YZ3631
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = XG5610
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = RN4911
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = HO4671
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = PJ2288
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = ZA0232
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = MD7860
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = JS8874
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 26
+	Identificacao do Voo = XP7624
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 27
+	Identificacao do Voo = WK6106
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 28
+	Identificacao do Voo = PP5249
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 9
+Inicio do ciclo 10
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 14:13:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 04
+Numero de Voos, decolagens = 28
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = MG4113
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = AB3328
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 2:
+	Status da Pista = O
+	Identificacao do Voo = XV3247
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = ZZ4056
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 2
+	Identificacao do Voo = AR7984
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 3
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+Voo 4
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 4
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = FR0109
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = PX7144
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = YZ3631
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = XG5610
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = RN4911
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = HO4671
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = PJ2288
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = ZA0232
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = MD7860
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = JS8874
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 26
+	Identificacao do Voo = XP7624
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 27
+	Identificacao do Voo = WK6106
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 28
+	Identificacao do Voo = PP5249
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 10
+Inicio do ciclo 11
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 14:18:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 02
+Numero de Voos, decolagens = 31
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = ZZ4056
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = AR7984
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+Voo 1
+	Identificacao do Voo = YA6962
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+Voo 2
+	Identificacao do Voo = ML6890
+	Status do Voo = A
+	Combustivel do Voo = 3
+
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = FR0109
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = PX7144
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = YZ3631
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = XG5610
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = RN4911
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = HO4671
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = PJ2288
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = ZA0232
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = MD7860
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = JS8874
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 26
+	Identificacao do Voo = XP7624
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 27
+	Identificacao do Voo = WK6106
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 28
+	Identificacao do Voo = PP5249
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 29
+	Identificacao do Voo = MG4113
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 30
+	Identificacao do Voo = AB3328
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 31
+	Identificacao do Voo = XV3247
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 11
+Inicio do ciclo 12
+Aeroporto Internacional Stairway to Heaven \m/ 
+Data: 19/04/2015
+Hora na simulacao: 14:23:09
+Numero de Voos, aconselhado = 39
+Numero de Voos, aproximacoes = 00
+Numero de Voos, decolagens = 33
+Porcentagem de lotacao, para proxima hora = 117.95%
+
+Fila das Pistas
+Pista 0:
+	Status da Pista = O
+	Identificacao do Voo = YA6962
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 1:
+	Status da Pista = O
+	Identificacao do Voo = ML6890
+	Status do Voo = P
+	Combustivel do Voo = 1
+
+Pista 2:
+	Status da Pista = L
+	Sem Voos
+
+
+Fila de Aproximacao
+	Sem Voos
+
+
+Fila de Decolagem
+Voo 1
+	Identificacao do Voo = PZ4458
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 2
+	Identificacao do Voo = AY9807
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 3
+	Identificacao do Voo = ZT6363
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 4
+	Identificacao do Voo = EV4047
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 5
+	Identificacao do Voo = EN4990
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 6
+	Identificacao do Voo = KU3881
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 7
+	Identificacao do Voo = HT1893
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 8
+	Identificacao do Voo = BO5371
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 9
+	Identificacao do Voo = TT3367
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 10
+	Identificacao do Voo = IG9670
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 11
+	Identificacao do Voo = VQ4424
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 12
+	Identificacao do Voo = ZP3814
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 13
+	Identificacao do Voo = IT0928
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 14
+	Identificacao do Voo = YR5551
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 15
+	Identificacao do Voo = BD2669
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 16
+	Identificacao do Voo = FR0109
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 17
+	Identificacao do Voo = PX7144
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 18
+	Identificacao do Voo = YZ3631
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 19
+	Identificacao do Voo = XG5610
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 20
+	Identificacao do Voo = RN4911
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 21
+	Identificacao do Voo = HO4671
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 22
+	Identificacao do Voo = PJ2288
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 23
+	Identificacao do Voo = ZA0232
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 24
+	Identificacao do Voo = MD7860
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 25
+	Identificacao do Voo = JS8874
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 26
+	Identificacao do Voo = XP7624
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 27
+	Identificacao do Voo = WK6106
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 28
+	Identificacao do Voo = PP5249
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 29
+	Identificacao do Voo = MG4113
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 30
+	Identificacao do Voo = AB3328
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 31
+	Identificacao do Voo = XV3247
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 32
+	Identificacao do Voo = ZZ4056
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+Voo 33
+	Identificacao do Voo = AR7984
+	Status do Voo = D
+	Combustivel do Voo = 13
+
+
+Fim do ciclo 12
+
+Acabou hora de simulacao
+
+Fim da Simulacao! Volte Sempre!

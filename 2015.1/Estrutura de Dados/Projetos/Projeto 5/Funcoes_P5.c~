@@ -1,0 +1,724 @@
+/*  Descritivo das funções para andamento do Projeto */
+
+/*  Bibliotecas requisitada */
+#include <time.h>
+#include <math.h>
+#include <stdio.h>
+#include <dirent.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include "Funcoes_P5.h"
+
+
+/*  Lista das funcoes de manipulacao */
+
+/*  Funcao 'hello', da as boas vindas */
+void hello (){
+	limpa_tela ();
+
+	printf ("Hello World!\n");
+    temporizador (1.5);
+
+    printf ("Bem-vindo!\n");
+    pausa();
+}
+
+/*  Funcao 'inicio_geral', realiza a apresentacao do projeto e questiona sobre
+**  o inicio ou nao do mesmo */
+char inicio_geral (){
+    limpa_tela ();
+
+    /*  Apresentacao das caracteristicas do projeto */
+    printf ("Bem-vindo ao Ranqueamento de Paginas Web!\n");
+    printf ("\nO ranqueamento a ser realizado por este projeto visa:");
+    printf ("\n\t1. Ranquear uma certa quantidade de paginas web, disponibilizadas no\n");
+        printf ("arquivo 'allpages.txt' na pasta 'www.cs.sunysb.edu', a partir do calculo\n");
+        printf ("desenvolvido pela Google para sua Maquina de Busca;");
+    printf ("\n\t2. O algoritmo de ranqueamento das paginas web, PageRank (PR), utiliza\n");
+        printf ("como principio de popularidade de uma pagina (A) o numero de paginas que\n");
+        printf ("direcionam visitas a esta, como na fórmula:\n");
+        printf ("\n\tPR(A) = (1-d) + [d * {(PR(T1)/C(T1)) + ... + (PR(Tn)/C(Tn))}],\n");
+        printf ("\nonde 'T' sao as paginas que apontam para pagina A; 'C' eh o numero de páginas\n");
+        printf ("que sao direcionadas pela página 'T'; 'd' eh o fator de ajuste entre 0 e 1.0;");
+    printf ("\n\t3. Um rank total e um top 10, serao gerados a partir do ranqueamento feito\n");
+        printf ("sobre as paginas web;");
+    printf ("\n\t4. Sera gerado um arquivo resultado contendo:");
+        printf ("\n\t\t4.1 O rank top 10 construido, a partir do PR calculado;");
+        printf ("\n\t\t4.2 Todas as paginas web utilizadas no processamento e suas\nestatisticas:");
+        printf ("\n\t\t\t4.2.1 PageRank final;");
+        printf ("\n\t\t\t4.2.2 Numero total de paginas referenciadas pela\npagina corrente;");
+        printf ("\n\t\t\t4.2.3 Numero total de paginas que referenciam a\npagina corrente;");
+        printf ("\n\t\t\t4.2.4 Lista das paginas que referenciam a pagina\ncorrente.");
+    printf ("\n\t5. Os dados existentes no documento resultado, tambem serao exibidos na tela;");
+    printf ("\n\t6. Os dados vao ficar extensos, mas basta usar o scroll do mouse para ver os dados.");
+
+    /*  Questionamento sobre inicio do projeto */
+     printf ("\n\nDadas as caracteristicas do projeto, deseja inicia-lo? S/N ou s/n\n");
+        return ler_simounao ();
+}
+
+/*  Funcao 'limpa_tela', realiza a limpeza da tela durante a execucao */
+void limpa_tela(){
+    #ifdef LINUX
+        printf ("\e[H\e[2J");
+    #elif defined WIN32
+        system ("cls");
+    #else
+        printf ("\e[H\e[2J");
+    #endif
+        return;
+}
+
+/*  Funcao 'ler_simounao', verifica a validade da resposta para uma pergunta de "sim ou nao"
+**  ao longo do progresso do jogo */
+char ler_simounao (){
+    /*  'resp' armazena a resposta do usuario para a pergunta */
+    char resp;
+
+    /*  Enquanto for invalida */
+    do{
+        scanf ("%c", &resp);
+        getchar ();
+
+        /*  Sendo invalido, mensagem correspondente */
+        if ((resp != 's') && (resp != 'S') && (resp != 'n') && (resp != 'N'))
+            printf ("Resposta invalida, digite novamente!\n");
+
+    }while ((resp != 's') && (resp != 'S') && (resp != 'n') && (resp != 'N'));
+
+    return resp;
+}
+
+/*  Funcao 'ler_intervalo', verifica a validade de um numero inteiro dentre de um intervalo aceitavel */
+int ler_intervalo (int min, int max){
+    /*  'max' armazena o valor maximo para o intervalo de validade; 'num' armazena a coordenada
+    **  a ser lida */
+    int num;
+
+    /*  Enquanto for invalido */
+    do{
+        scanf ("%d", &num);
+        getchar ();
+
+        /*  Sendo invalido, mensagem correspondente */
+        if (num < min || num > max)
+            printf ("\nO valor fornecido eh invalido! Digite novamente!\n");
+
+    }while (num < min || num > max);
+
+    return num;
+}
+
+/*  Funcao 'ler_palavra', realiza a leitura de uma palavra ate o ENTER */
+char * ler_palavra (){
+    /* 'palavra' armazena o nome do documento a ser lido dinamicamente; 'int' armazena o indice do
+    **  a ser manipulado; 'tam' armazena o tamanho da palavra para a alocacao do necessario; 'ler'
+    **  armazena a leitura do teclado; 'nome' armazena a palavra digitada na forma estatica */
+    Palavra *word = cria_palavra ();
+    int ind, tamanho;
+    char *nome, ler;
+
+    /*  Enquanto nao for ENTER */
+    do{
+        scanf ("%c", &ler);
+        constroi_palavra (word, ler);
+    }while (ler != 10);
+
+    /*  Configuracao estatica da palavra lida */
+    tamanho = word->quant;
+    nome = (char *) calloc (tamanho,sizeof(char));
+    for (ind = 0; ind < tamanho; ind++)
+        nome[ind] = remove_letra(word);
+    nome[ind] = '\0';
+
+    libera_palavra (word);
+
+    return nome;
+}
+
+/*  Funcao 'ler_nome_doc', realiza a leitura dos nomes dos documentos a serem analisados */
+char * ler_nome_doc (){
+    /*  'alocacao' armazena o ponteiro do documento a ser avaliado como valido ou nao;
+    **  nome' armazena o nome do arquivo a ser analisado; 'resp' armazena a resposta do usuario sobre
+    **  a condicao de sobrescrita, no caso da previa existencia do arquivo para escrita; 'existe'
+    **  informa se o arquivo ja existe ou nao */
+    FILE *alocacao;
+    char *nome, resp = 'S';
+    int existe;
+
+    /*  Enquanto existir arquivo, mas o usuario nao querendo sobrescrever */
+    do{
+        printf ("\nDigite o nome do documento a ser armazenados os dados, com a extensao .txt:\n");
+
+        /*  Enquanto for diferente de ENTER, apenas */
+        do{
+            nome = ler_palavra();
+
+            if (nome[0] == 0)
+                printf("\nNome invalido! Apenas ENTER foi recolhido! Digite novamente!\n");
+        }while (nome[0] == 0);
+
+
+        /*  Verificacao da validade do arquivo */
+        alocacao = abre_arquivo (nome, 'r', 'e');
+
+        /*  O arquivo nao deve existir, caso contrario pode ser sobrecrito,
+        **  a vontade do usuario */
+        if (alocacao != NULL){
+            existe = 1;
+            printf ("\nO arquivo ja existe! Deseja sobrescrever? S/N ou s/n\n");
+            resp = ler_simounao ();
+            if (resp == 'N' || resp == 'n')
+                printf ("\nEntao digite um nome novamente!\n");
+            else
+                printf ("\nEntao, prosseguindo...\n");
+        }
+
+
+    }while ((resp != 'S' && resp != 's'));
+
+    /*  Se o arquivo existe, ele eh fechado, se nao, o seu ponteiro eh liberado */
+    if (existe == 1)
+        fclose (alocacao);
+    else
+        free (alocacao);
+
+    return nome;
+}
+
+/*  Funcao 'ler_allpages', realiza a leitura do arquivo base para o grafo */
+void ler_allpages (Grafo *grafo){
+    /*  'grafo' armazena o grafo a ser manipulado na leitura do arquivo base; 'objetivo' armazena o caminho
+    **  completo para chegar ao arquivo base; 'chave' armazena o nome do arquivo base; 'palavraauxiliar'
+    **  armazena a palavra lida; 'caracter' armazena o caracter lido no arquivo; 'indice' eh o indice a
+    **  ser manipulado; 'arq' aponta para o arquivo base */
+    char *objetivo, chave[] = "/allpages.txt";
+    char palavraauxiliar[MAX], dirteste[2 * MAX2], caracter;
+    int indice;
+    FILE *arq;
+
+    /*  Construcao do 'objetivo' */
+    objetivo = (char *) calloc (strlen(grafo->dirbase) + strlen(chave), sizeof(char));
+    memcpy (objetivo, grafo->dirbase, strlen(grafo->dirbase));
+    concat_string (objetivo, chave, 0, strlen(chave));
+
+    /*  Abertura do arquivo base */
+    arq = abre_arquivo (objetivo, 'r', 'l');
+
+    /* Leitura do Arquivo .txt */
+	do{
+        zera_string (palavraauxiliar, 0, MAX);
+        indice = 0;
+
+        /* Formação das Palavras */
+		do{
+			caracter = fgetc (arq);
+
+			/* Captura de caracteres validos */
+			if (caracter != 10){
+                palavraauxiliar[indice] = caracter;
+                indice++;
+			}
+
+		}while ((caracter != 10) && !feof(arq));
+
+        palavraauxiliar[indice] = '\0';
+        zera_string (palavraauxiliar, strlen(palavraauxiliar), MAX);
+
+        zera_string (dirteste, 0, 2 * MAX2);
+        strcpy (dirteste, grafo->dirbase);
+        concat_string (dirteste, palavraauxiliar, 17, strlen(palavraauxiliar));
+		//printf ("leu isso: %s\n", palavraauxiliar);
+		//printf ("diretorio %s\n", dirteste);
+
+        if (abre_arquivo (dirteste, 'r', 'e') != NULL){
+        /*  Inicializacao do grafo */
+            inicializa_grafo (grafo, palavraauxiliar);
+        }
+
+	}while (!feof(arq));
+
+    free (objetivo);
+    fclose (arq);
+}
+
+/*  Funcao 'ler_codfontes', realiza a leitura dos codigos fonte para construcao das ligacoes entre as
+**  paginas web */
+void ler_codfontes (Grafo *grafo, Pagina *pag){
+    /*  'grafo' armazena o grafo a ser manipulado; 'pag' armazena a pagina que servira de base para
+    **  a leitura do codigo fonte;  'hinweis' armazena as referencias de pesquisa no codigo fonte;
+    **  'dircorrente' armazena o diretorio algo do codigo fonte de 'pag'; 'avaliar' armazena a leitura
+    **  do codigo fonte a ser analisada; 'caracter' armazena o caracter lido do codigo fonte; 'ind' e
+    **  'ind2' armazenam indices para manipulacao; 'arq' aponta para o arquivo alvo */
+    char *hinweis[] = {"href=","HREF=","http:/",".html"};
+    char dircorrente[2 * MAX2], avaliar[MAX2], caracter;
+    int ind, ind2;
+    FILE *arq = NULL;
+
+    /*  Configuracao do diretorio corrente */
+    zera_string (dircorrente, 0, 2 * MAX2);
+    strcpy (dircorrente, grafo->dirbase);
+    concat_string (dircorrente, pag->dados.nome, 17, strlen(pag->dados.nome));
+	printf ("abrindo %s\n", dircorrente);
+	pausa ();
+
+    /*  Abertura do arquivo */
+    arq = abre_arquivo (dircorrente, 'r', 'l');
+
+    /*  Enquanto houver arquivo */
+    do{
+        zera_string (avaliar, 0, MAX2);
+        ind2 = 0;
+        ind = 0;
+
+        /*  Enquanto for valido */
+        do{
+            caracter = fgetc (arq);
+
+            if (caracter != 0 && caracter != 10 && caracter != 32){
+                avaliar[ind] = caracter;
+                ind++;
+                if (caracter == 34) ind2++;
+            }
+        }while ((caracter != 0 && caracter != 10 && caracter != 32) && (ind2 < 2) && !feof(arq));
+
+        /*  Tendo tamanho suficiente */
+        if (strlen(avaliar) > 15){
+
+            /*  Comprova importancia com 'hinweis' */
+            for (ind = 0; ind < 3; ind++){
+                if (memcmp (avaliar, hinweis[ind], strlen(hinweis[ind])) == 0){
+                    caracter = 65;
+
+                    /*  Passando no primeiro refino */
+                    for (ind2 = strlen(avaliar) - (strlen(hinweis[3]) + 1); ind2 < strlen(avaliar) - 1; ind2++){
+                        if (avaliar[ind2] != hinweis[3][caracter-65]) break;
+                        else caracter++;
+                    }
+
+                    /*  Sendo validacao total, ate o momento */
+                    if (ind2 == (strlen(avaliar) - 1 )){
+                        constroi_adjacencia (grafo, pag, avaliar, ind);
+                    }
+                }
+            }
+        }
+
+    }while (!feof(arq));
+
+    fclose (arq);
+}
+
+/*  Funcao 'questiona_diretorio', questiona sobre o diretorio a ser analisado */
+void questiona_diretorio (char *diretorio){
+    /*  'diretorio' armazena o diretorio de trabalho; 'temp' armazena o diretorio escolhido
+    **  pelo usuario, de forma direta ou indireta; 'chave' armazena a pasta de interesse dentro
+    **  do diretorio de trabalho; 'opcao' armazena a escolha sobre o local da pasta de interesse;
+    **  'teste' armazena a validacao ou nao do diretorio formado */
+    char *temp = NULL, chave[] = "/www.cs.sunysb.edu";
+    char buff[PATH_MAX + 1];
+    int opcao = 0;
+    DIR *teste = NULL;
+
+    zera_string (buff, 0, PATH_MAX + 1);
+
+    /*  Questionamento sobre o diretorio de trabalho */
+    limpa_tela ();
+    printf ("Visto que desejou comecar o projeto, eh preciso determinar o diretorio\n");
+    printf ("que contem a pconcluidosasta com os documentos requisitados, tendo duas opcoes:\n");
+
+    printf ("\n\t1. A pasta com os documentos esta no mesmo diretorio que este\n");
+    printf ("executavel;");
+    printf ("\n\t2. A pasta com os documentos esta em outro diretorio.\n");
+
+    printf ("\nDada as opcoes, qual eh a nossa realidade? (1~2)\n");
+
+    /*  Enquanto for invalido */
+    do{
+            /*  Leitura da escolha do usuario */
+            opcao = ler_intervalo (1, 2);
+
+        switch (opcao){
+            /*  Estando no diretorio atual, o mesmo eh definido */
+            case 1:
+                printf ("\nO diretorio atual sera armazenado...\n");
+                //temporizador (0.2);
+                temp = getcwd (buff, PATH_MAX + 1);
+                break;
+
+            /*  Não estando, o usuario fornece o caminho necessario para a pasta destino */
+            case 2:
+                printf ("\nVisto que escolheu a segunda opcao, digite o diretorio que contem a pasta\n'www.cs.sunysb.edu':\n");
+                temp = ler_palavra ();
+        }
+
+        /*  Montagem final do diretorio de trabalho */
+        memcpy (diretorio, temp, strlen(temp));
+        concat_string (diretorio, chave, 0, strlen(chave));
+
+        teste = opendir (diretorio);
+
+        /*  Verificacao da validade do diretorio fornecido */
+        if (teste == NULL){
+            printf ("\nO DIRETORIO '%s' EH INVALIDO!!\nVERIFIQUE O LOCAL DA PASTA 'www.cs.sunysb.edu'!\n", diretorio);
+            printf ("\nDigite sua escolha novamente:\n");
+            zera_string (diretorio, 0, 2 * MAX2);
+            temp = NULL;
+            closedir(teste);
+            teste = NULL;
+        }
+
+    }while (teste == NULL);
+
+    if (teste != NULL)
+        closedir(teste);
+
+    return;
+}
+
+/*  Funcao 'questiona_rank', questiona a forma de ranqueamento */
+int questiona_rank (){
+    limpa_tela ();
+    printf ("O levantamento dos dados foi realizado com sucesso!\n");
+    printf ("Agora, sera feito a segunda parte, ranqueamento das paginas,\n");
+    printf ("para tal ha duas maneiras:\n");
+    printf ("\t1. Metodo de iterativo completo, realiza 'n' iteracoes,\n");
+    printf ("sendo 'n' o numero de elementos a serem avaliados;\n");
+    printf ("\t2. Metodo da diferenca, realiza 'm' iteracoes, ate que\n");
+    printf ("a diferenca entre os valores nao seja maior que um delta.\n\n");
+
+    printf ("Vale ressaltar que o metodo 2 eh mais rapido que o metodo 1.\n");
+
+    printf ("Dadas as opcoes, qual deseja? (1~2)\n");
+    return ler_intervalo (1, 2);
+}
+
+/*  Funcao 'pausa', realiza a pausa do programa ate pressionar o ENTER */
+void pausa (){
+    printf ("\nPressione ENTER para continuar.\n");
+	getchar ();
+}
+
+/*  Funcao 'temporizador', realiza a pausa do programa por um periodo de tempo
+**  definido pelo usuario */
+void temporizador (float pausa){
+    /*  'pausa' armazena o tempo de espera escolhido pelo usuario; 'tempoin' e
+    **  'tempofim' armazenam os tempos inicial e final do temporizador, respec. */
+    if (pausa < 0.0) return;
+
+    float tempoin = 0.0, tempofim = 0.0;
+
+    tempoin = ((float) clock()) / ((float) CLOCKS_PER_SEC);
+
+    /*  Enquanto nao der o tempo desejado */
+    while ((tempofim - tempoin) < pausa){
+        tempofim = ((float) clock()) / ((float) CLOCKS_PER_SEC);
+    };
+
+   return;
+}
+
+/*  Função abre_arquivo, realiza a abertura e teste de alocacao de um arquivo */
+FILE * abre_arquivo (char *nome, char modo, char extra){
+    /*  'nome' armazena o nome do arquivo a ser manipulado; 'modo' armazena o modo
+    **  de abertura do mesmo; 'extra' armazena a condicao extra, se for para
+    **  leitura ou escrita; 'auxiliar' armazena o ponteiro para o documento a ser
+    **  manipulado */
+    FILE *auxiliar;
+
+    /* Verificacao do status de abertura */
+    /* 'r' significa somente leitura; 'w' somente escrita; 'a' caso especial de escrita,
+    ** por ser a parir do final */
+    if (modo == 'r')    auxiliar = fopen (nome, "r");
+    else if (modo == 'w')    auxiliar = fopen (nome, "w");
+    else auxiliar = fopen (nome, "a+");
+
+    /* Teste de abertura do arquivo */
+    if (auxiliar == NULL && extra == 'l')
+        printf ("\nERRO ABERTURA ARQUIVO %s\n", nome);
+
+    return auxiliar;
+}
+
+/*  Funcao 'concat_string', realiza a juncao de duas strings */
+void concat_string (char *destino, char *fonte, int iniciof, int fimf){
+    /*  'destino' armazena a string resultado da juncao; 'fonte' armazena o trecho a ser juntado;
+    **  'ind' e 'ind2' armazenam indices a serem manipulados */
+    int ind = strlen (destino), ind2 = 0;
+
+    /*  Juncao das strings */
+    for (ind2 = iniciof; ind2 < fimf; ind2++, ind++)
+        destino[ind] = fonte[ind2];
+
+    destino[ind] = '\0';
+}
+
+/*  Compara duas strings, n bytes e a partir de m byte */
+int compara_string_n (char *primeiro, char *segundo, int iniciop, int inicios, int quant){
+    int ind, ind1 = iniciop;
+
+    for (ind = inicios; ind < (inicios + quant); ind++, ind1++){
+        if (primeiro[ind1] != segundo[ind])  return (primeiro[ind1] - segundo[ind]);
+    }
+
+    return 0;
+}
+
+/*  Funcao 'zera_string', anula os caracteres da string */
+void zera_string (char *alvo, int inicio, int fim){
+    /*  'alvo' armazena a string a ser zerada; 'maximo' armazena o limite da operacao;
+    **  'ind' armazena o indice a ser manipulado */
+    int ind;
+
+    for (ind = inicio; ind < fim; ind++)  alvo[ind] = '\0';
+}
+
+/*  Descobrir a n-ultima ocorrencia de um caracter numa string */
+int n_ultima_ocorrencia (char *avaliar, char alvo, int n){
+    if (n > 0){
+        int ind, ocorrencia = 0, quant = 0;
+
+        for (ind = strlen(avaliar); ind > -1; ind--){
+            if (avaliar[ind] == alvo){
+                ocorrencia = ind;
+                quant++;
+            }
+            if (quant >= n) return ocorrencia;
+        }
+    }
+
+    return -1;
+}
+
+/*  Funcao 'ranquea_grafo', ranqueia as paginas */
+void ranqueia_grafo (Grafo *grafo){
+    /*  'grafo' armazena o grafo a ser ranqueado; 'erro' armazena o erro aceitavel no calculo
+    **  do PR no metodo por erro; 'resp' armazena a resposta da pertunta realizada */
+    float erro = 0.000001;
+    char resp = 'n';
+
+    /*  Procedimentos para calculo do PR */
+    switch (questiona_rank ()){
+
+        /*  Metodo de Interacoes */
+        case 1:
+            printf ("\nO metodo de iteracoes foi escolhido!\n");
+            temporizador (0.8);
+            pr_iterativo (grafo);
+            break;
+
+        /*  Metodo por Erro */
+        case 2:
+            printf ("\nO metodo por erro foi escolhido!\n");
+            printf ("O erro padrao equivale a %.6f, deseja altera-lo? S/N ou s/n\n", erro);
+                resp = ler_simounao ();
+                if (resp == 's' || resp == 'S'){
+                    printf ("\nJa que quis modificar, digite o valor escolhido,\n");
+                    printf ("sendo o separador decimal o ponto:\n");
+                    scanf ("%f", &erro);
+                }
+            printf ("Aguarde...\n\n");
+            temporizador (0.5);
+            pr_diferenca (grafo, erro);
+            break;
+    }
+
+    return;
+}
+
+/*  Funcao 'pr_iterativo', realiza o calculo do PageRank pelo metodo interativo */
+void pr_iterativo (Grafo *grafo){
+    /*  'grafo' armazena o grafo a ser ranqueado; 'iteracao' armazena a quantidade de iteracoes
+    **  realizadas; 'soma' armazena o somatorio da parcela [PR(Ti)/C(Ti)] no calculo do PR; 'percent'
+    **  armazena a porcentagem do calculo realizado; 'aux' auxilia a percorrer as paginas do grafo */
+    int iteracao;
+    float soma, percent = 0.0;
+    Pagina *aux;
+
+    /*  Calculo por iteracoes, ate a quantidade de paginas web registradas */
+    for (iteracao = 0; iteracao < grafo->quant; iteracao++){
+
+        /*  Enquanto houver pagina */
+        for (aux = grafo->inicio; aux != NULL; aux = aux->proximo){
+            soma = 0.0;
+
+            /*  Havendo lista de referencias */
+            if (aux->dados.inicio != NULL){
+                /*  'aux1' auxilia a percorrer a lista de referencias */
+                Referencia *aux1;
+
+                /*  Calculo da parcela [PR(Ti)/C(Ti)] */
+                for (aux1 = aux->dados.inicio; aux1 != NULL; aux1 = aux1->proximo){
+                    soma += (aux1->pag->dados.pr / aux1->pag->dados.saidas);
+                }
+            }
+
+            /*  Determinacao do PR da pagina */
+            aux->dados.pr = (FATOR * soma) + (1 - FATOR);
+        }
+
+        limpa_tela ();
+        percent += (100.0/grafo->quant);
+        printf ("Calculando PageRank, metodo iterativo\n");
+        printf ("%.2f%% concluidos\n", percent);
+        printf ("Aguarde...\n");
+        temporizador (0.001);
+    }
+}
+
+/*  Funcao 'pr_diferenca', realiza o calculo do PageRank pelo metodo da diferenca */
+void pr_diferenca (Grafo *grafo, float erro){
+    /*  'grafo' armazena o grafo a ser ranqueado; 'erro' armazena a diferenca aceitacel entres os PR,
+    **  antigo e atual; 'aux' auxilia a percorrer os nos do grafo; 'anterior' armazena o PR antigo da
+    **  pagina web a ser avaliada; 'soma' armazena o somatorio da parcela [PR(Ti)/C(Ti)] no calculo do
+    **  PR; 'condicao' armazena a condicao para continuacao do calculo do PR */
+    Pagina *aux;
+    float anterior, soma;
+    char condicao = 'n';
+
+    /*  Calculo por erro, ate que a diferenca entre os termos calculados seja menor
+    **  ao erro esperado */
+    for (aux = grafo->inicio; aux != NULL; aux = aux->proximo){
+        /*  Configuracao inicial para o calculo */
+        anterior = aux->dados.pr;
+        soma = 0;
+
+        /*  Havendo lista de referencias */
+        if (aux->dados.inicio != NULL){
+            /*  'aux1' auxilia a percorrer a lista de referencias */
+            Referencia *aux1;
+
+            /*  Calculo da parcela [PR(Ti)/C(Ti)] */
+            for (aux1 = aux->dados.inicio; aux1 != NULL; aux1 = aux1->proximo){
+                soma += (aux1->pag->dados.pr / aux1->pag->dados.saidas);
+            }
+        }
+
+        /*  Determinacao do PR atual da pagina */
+        aux->dados.pr = (FATOR * soma) + (1 - FATOR);
+
+        /*  Verificacao da diferenca sobre o erro */
+        if (fabs(anterior - aux->dados.pr) > erro)  condicao = 's';
+    }
+
+    /*  Nao ocorrencia diferenca maior e/ou igual do que o erro esperado */
+    if (condicao == 'n')    return;
+
+    /*  Havendo, realiza novamente o calculo */
+    if (condicao == 's')    pr_diferenca (grafo, erro);
+}
+
+/*  Apresentacao grafica dos resultados */
+void histograma (Grafo *grafo){
+    char hist[LIN_MAX][COL_MAX];
+    int *posicoes, *valores, *valoresreais;
+    int lin, col, classes = 0;
+    float intervalo = 0.0, extremo = 0.0;
+    Pagina *aux;
+
+    pausa();
+
+    classes = 1 + (3.32 * (log10(grafo->quant)));
+
+    for (lin = 0; lin < LIN_MAX; lin++){
+        for (col = 0; col < COL_MAX; col++){
+            hist[lin][col] = 32;
+        }
+	}
+
+	posicoes = (int *) calloc (classes, sizeof(int));
+	lin = 0;
+    for (col = 1; col < COL_MAX; col++){
+        if (col%(COL_MAX/classes) == 0){
+            posicoes[lin] = col;
+            lin++;
+        }
+    }
+
+    valoresreais = (int *) calloc (classes, sizeof(int));
+
+    intervalo = (grafo->inicio->dados.pr - grafo->fim->dados.pr) / classes;
+
+    extremo = intervalo;
+    aux = grafo->fim;
+    lin = 0;
+    col = 0;
+    while (aux != NULL){
+        if (lin < 9){
+            while (aux->dados.pr < extremo){
+               valoresreais[lin]++;
+               aux = aux->anterior;
+            }
+        }
+        else if (lin == 9){
+            while ((aux != NULL) && (aux->dados.pr >= extremo)){
+               valoresreais[lin]++;
+               aux = aux->anterior;
+            }
+        }
+        if (valoresreais[lin] > col) col = valoresreais[lin];
+        lin++;
+        extremo += intervalo;
+    }
+
+    valores = (int *) calloc (classes, sizeof(int));
+    valores[0] = valoresreais[0] / 15;
+    for (lin = 1; lin < classes; lin++) valores[lin] = valoresreais[lin];
+    for (lin = 0; lin < classes; lin++) printf ("valores carregidos[%d] -> %d\n", lin, valores[lin]);
+    for (lin = 0; lin < classes; lin++)
+        valores[lin] = (valores[lin]/valores[0]) * LIN_MAX;
+
+    for (lin = 0; lin < LIN_MAX; lin++){
+        extremo = 0;
+        for (col = 0; col < COL_MAX; col++){
+            if ((col != 0) && (col == posicoes[(int)extremo])){
+                extremo += 1;
+            }
+            if (lin <= valores[(int)extremo]){
+                hist[lin][col] = 45;
+            }
+            else
+                hist[lin][col] = 32;
+        }
+	}
+
+	limpa_tela ();
+    printf("\nHistograma com base nos dados obtidos:\n\n");
+
+    for (lin = 0; lin < classes; lin++) printf ("posicao[%d] -> %d\n", lin, posicoes[lin]);
+    printf ("\n");
+    //for (lin = 0; lin < classes; lin++) printf ("valores[%d] -> %d -> %d\n", lin, valores[lin], valoresreais[lin]);
+
+    for (lin = LIN_MAX - 1; lin >= 0; lin--){
+        for (extremo = 0; (int) extremo < classes; extremo++){
+            if (lin == valores[(int) extremo]){
+                printf ("%.2d ", lin);
+                break;
+            }
+        }
+        if ((int) extremo == classes) printf ("   ");
+        for (col = 0; col < COL_MAX; col++){
+            printf ("%c", hist[lin][col]);
+        }
+        printf ("\n");
+	}
+	printf ("   ");
+	for(lin = 1; lin < classes + 1; lin++) printf ("   %d   ", lin);
+
+	printf ("\n\nA escala do histograma teve que ser ajustada, por causa do maior valor,\n");
+	printf ("por ser %d, enquanto que o segundo maior %d.\n", valoresreais[0], valoresreais[1]);
+	printf ("\nAs classes corresponde aos trechos, com tais valores reais:\n");
+	extremo = 0.0;
+	for (lin = 0; lin < classes; lin++){
+        printf ("Classe %d corresponde ao intervalo [%.5f;%.5f)\n", lin + 1, extremo, extremo + intervalo);
+        printf ("Valor real = %d\n", valoresreais[lin]);
+        extremo += intervalo;
+	}
+
+    printf ("\n");
+
+    free (posicoes);
+    free (valores);
+    return;
+}

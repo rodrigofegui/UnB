@@ -1,0 +1,9 @@
+DIRCMAKE = CMake
+
+trabf:
+	clear	
+	rm -rf $(DIRCMAKE)
+	mkdir $(DIRCMAKE)
+	cp *.txt $(DIRCMAKE)
+	$(DIRCMAKE)/cmake CMakeList.txt
+	$(DIRCMAKE)/make

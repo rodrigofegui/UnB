@@ -1,0 +1,271 @@
+<html><BODY bgcolor="ffffff">
+<PRE>
+SFTP2(1)                       SSH2                      SFTP2(1)
+
+
+
+<B>NAME</B>
+       sftp2 - secure ftp client
+
+
+<B>SYNOPSIS</B>
+       <B>sftp2 </B>[<B>-D </B><I>debug</I><B>_</B><I>level</I><B>_</B><I>spec</I>] [<B>-b </B><I>batchfile</I>] [<B>-S </B><I>path</I>] [<B>-h</B>]
+       [<B>-V</B>] host
+
+
+<B>DESCRIPTION</B>
+       <B>Sftp </B>(Secure File Transfer) is a ftp-like client that can
+       be used in file transfer over the network.  Sftp uses <B>ssh2</B>
+       in data connections, so the file transport is secure. Even
+       though <B>sftp </B>functions like <B>ftp </B>, it does not use the FTP
+       daemon ( <B>ftpd </B>or <B>wu-ftpd </B>) for connections.
+
+       In order to connect using <B>sftp </B>, you need to make sure
+       that <B>sshd2 </B>is running on the remote machine you're con­
+       necting to.  <B>Sftp </B>uses a "sub-system" from <B>sshd2 </B>to trans­
+       fer files securely.
+
+
+<B>OPTIONS</B>
+       <B>-D </B><I>debug</I><B>_</B><I>level</I><B>_</B><I>spec</I>
+              Debug mode.  Makes <B>sftp </B>send verbose debug output
+              to stderr. The debugging level is either a number
+              (0-99), or a comma-separated list of assignments
+              <I>ModulePattern</I>=<I>debug</I><B>_</B><I>level</I>.  <I>ModulePattern </I>is <B>Sftp2</B>
+              for the main <B>sftp2 </B>application.
+
+       <B>-b </B><I>batchfile</I>
+              Batch mode. Reads commands from a file instead of
+              standard input. Passwords and other user interac­
+              tion with <B>ssh2 </B>is still done with the standard
+              input/output. In batchmode, a failure to change the
+              current working directory will cause the <B>sftp2 </B>to
+              abort. Other errors are ignored.
+
+       <B>-S </B><I>path</I>
+              Specifies the path to the <B>ssh2 </B>binary.
+
+       <B>-h     </B>Prints the usage and exits.
+
+       <B>-V     </B>Prints the version and exits.
+
+        <B>host  </B>Specify the host to connect to.
+
+
+<B>COMMANDS</B>
+       When the <B>sftp2 </B>is ready to accept commands, it will dis­
+       play a prompt: <B>'sftp&gt; '</B>.  The user can then enter any of
+       the following commands.
+
+       <B>open </B><I>hostname</I>
+              Tries to connect to a host specified in <I>hostname</I>.
+
+       <B>localopen</B>
+              Opens a local connection (the connection is created
+              without connecting to an <B>sshd2 </B>daemon). This is
+              mostly useful for debugging and testing.
+
+       <B>close  </B>Closes the current session.
+
+       <B>quit   </B>Quits from the application.
+
+       <B>cd </B><I>directory</I>
+              Changes the current remote working directory.
+
+       <B>lcd </B><I>directory</I>
+              Changes the current local working directory.
+
+       <B>pwd    </B>Prints the name of the current remote working
+              directory.
+
+       <B>lpwd   </B>Prints the name of the current local working direc­
+              tory.
+
+       <B>ls </B>[ <B>-R </B>] [ <B>-l </B>] [ <I>file </I>... ]
+              Lists the names of the files on the remote server.
+              For directories, the contents of the directory are
+              listed. When the <B>-R </B>option is specified, the direc­
+              tory trees are listed recursively.  (By default,
+              the subdirectories of the argument directories are
+              not visited.) When the <B>-l </B>option is specified, per­
+              missions, owners, sizes and modification times are
+              also shown.  When no arguments are given, it is
+              assumed that the contents of <B>.  </B>are being listed.
+              Currently the options <B>-R </B>and <B>-l </B>are mutually incom­
+              patible.
+
+       <B>lls </B>[ <B>-R </B>] [ <B>-l </B>] [ <I>file </I>... ]
+              Same as <B>ls</B>, but operates on the local files.
+
+       <B>get </B>[ <I>file </I>... ]
+              Transfers the specified files from the remote end
+              to the local end. Directories are recursively
+              copied with their contents.
+
+       <B>mget </B>[ <I>file </I>... ]
+              Synonymous to <B>get</B>.
+
+       <B>put </B>[ <I>file </I>... ]
+              Transfers the specified files from the local end to
+              the remote end. Directories are recursively copied
+              with their contents.
+
+       <B>mput </B>[ <I>file </I>... ]
+              Synonymous to <B>put</B>.
+
+       <B>rm </B><I>file</I>
+              Tries to delete the file specified in <I>file</I>.
+
+       <B>lrm </B><I>file</I>
+              Same as <B>rm</B>, but operates on local files.
+
+       <B>mkdir </B><I>directory</I>
+              Tries to create the directory specified in <I>direc­</I>
+              <I>tory</I>.
+
+       <B>lmkdir </B><I>directory</I>
+              Same as <B>mkdir</B>, but operates on local files.
+
+       <B>rmdir </B><I>directory</I>
+              Tries to delete the directory specified in <I>direc­</I>
+              <I>tory</I>.
+
+       <B>lrmdir </B><I>directory</I>
+              Same as <B>rmdir</B>, but operates on local files.
+
+       <B>help </B>[ <I>topic </I>]
+              If <I>topic </I>is not given, lists the available topics.
+              If <I>topic </I>is given, outputs the available online
+              help about the topic.
+
+
+<B>COMMAND INTERPRETATION</B>
+       <B>sftp2 </B>understands both backslashes and quotation marks on
+       the command line.  Backslashes can be used for ignoring
+       the special meaning of spaces, quotation marks and back­
+       slashes themselves. Quotation marks can be used for speci­
+       fying filenames with spaces.
+
+
+<B>GLOB PATTERNS</B>
+       <B>sftp2 </B>supports glob patterns (wildcards) given to commands
+       <B>ls</B>, <B>lls</B>, <B>get</B>, and <B>put</B>. The format is described in the man
+       page <B>sshregex</B>(1).
+
+
+<B>COMMAND LINE EDITING</B>
+       The following key sequences can be used for command line
+       editing:
+
+       <B>Ctrl-Space</B>
+              Set the mark.
+
+       <B>Ctrl-A </B>Go to the beginning of the line.
+
+       <B>Ctrl-B </B>Move the cursor one character left.
+
+       <B>Ctrl-D </B>Erase the character on the right of the cursor, or
+              exit the program if the command line is empty.
+
+       <B>Ctrl-E </B>Go to the end of the line.
+
+       <B>Ctrl-F </B>Move the cursor one character right.
+
+       <B>Ctrl-H </B>Same as Backspace.
+
+       <B>Ctrl-I </B>Same as Tab.
+
+       <B>Ctrl-J </B>Same as Enter.
+
+       <B>Ctrl-K </B>Delete to the end of the line.
+
+       <B>Ctrl-L </B>Redraw the line.
+
+       <B>Ctrl-M </B>Same as Enter.
+
+       <B>Ctrl-N </B>Move to the next line.
+
+       <B>Ctrl-P </B>Move to the previous line.
+
+       <B>Ctrl-T </B>Toggle two characters.
+
+       <B>Ctrl-U </B>Deletes the line.
+
+       <B>Ctrl-W </B>Deletes a region (the region's other end is marked
+              with Ctrl-Space).
+
+       <B>Ctrl-X </B>Begins an extended command.
+
+       <B>Ctrl-Y </B>Yanks the deleted line.
+
+       <B>Ctrl-_ </B>Undo.
+
+       <B>Ctrl-X Ctrl-L</B>
+              Downcase the region.
+
+       <B>Ctrl-X Ctrl-U</B>
+              Upcase the region.
+
+       <B>Ctrl-X Ctrl-X</B>
+              Exchange the cursor and the mark.
+
+       <B>Ctrl-X H</B>
+              Mark the whole buffer.
+
+       <B>Ctrl-X U</B>
+              Undo.
+
+       <B>Esc Ctrl-H</B>
+              Backwards word-delete.
+
+       <B>Esc Delete</B>
+              Backwards word-delete.
+
+       <B>Esc Space</B>
+              Delete extra spaces (leaves only one space).
+
+       <B>Esc Delete extra spaces (leaves only one space).</B>
+
+       <B>Esc &lt;  </B>Go to the beginning of the line.
+
+       <B>Esc &gt;  </B>Go to the end of the line.
+
+       <B>Esc @  </B>Mark the current word.
+
+       <B>Esc A  </B>Go one sentence backward.
+
+       <B>Esc B  </B>Go one word backwards.
+
+       <B>Esc C  </B>Capitalize the current word.
+
+       <B>Esc D  </B>Delete the current word.
+
+       <B>Esc E  </B>Go one sentence forward.
+
+       <B>Esc F  </B>Go one word forward.
+
+       <B>Esc K  </B>Delete the current sentence.
+
+       <B>Esc L  </B>Lowercase the current word.
+
+       <B>Esc T  </B>Transpose words.
+
+       <B>Esc U  </B>Upcase the current word.
+
+       <B>Delete </B>Same as Backspace.
+
+
+<B>AUTHORS</B>
+       SSH Communications Security Corp
+
+       For more information, see http://www.ssh.com.
+
+
+<B>SEE ALSO</B>
+       <B>sshregex</B>(1), <B>ssh2</B>(1), <B>sshd2</B>(8), <B>ssh-keygen2</B>(1), <B>ssh-</B>
+       <B>agent2</B>(1), <B>ssh-add2</B>(1), <B>scp2</B>(1)
+
+
+
+</PRE>
+</BODY></html>

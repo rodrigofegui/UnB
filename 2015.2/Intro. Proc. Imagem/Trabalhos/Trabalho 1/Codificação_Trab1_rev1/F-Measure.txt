@@ -1,0 +1,2 @@
+O F-Measure calculado eh -> 0.745645
+Com 107 verdadeiros positivos e 73 falsos positivos

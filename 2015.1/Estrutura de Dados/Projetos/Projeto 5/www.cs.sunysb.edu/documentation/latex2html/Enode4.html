@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Multi-lingual documents, using Images</TITLE>
+<META NAME="description" CONTENT="Multi-lingual documents, using Images">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="previous" HREF="Enode3.html">
+<LINK REL="up" HREF="Enode2.html">
+<LINK REL="next" HREF="Enode5.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html131"
+ HREF="Enode5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html127"
+ HREF="Enode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html121"
+ HREF="Enode3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html129"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html130"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html132"
+ HREF="Enode5.html">Mathematics</A>
+<B> Up:</B> <A NAME="tex2html128"
+ HREF="Enode2.html">Internationalisation</A>
+<B> Previous:</B> <A NAME="tex2html122"
+ HREF="Enode3.html">Alternate Font Encodings</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000112200000000000000">&#160;</A><A NAME="multilang">&#160;</A>
+<BR>
+Multi-lingual documents, using Images
+</H3>
+Some multi-lingual documents can be constructed, when all the languages
+can be presented using characters from a single font-encoding,
+as discussed in the <A HREF="Enode3.html#fontEncodings">previous section</A>.
+
+<P>
+Another way to present multiple languages within a Web document is to
+create images of individual letters, words, sentences, paragraphs
+or even larger portions of text, which cannot be displayed within
+the chosen font-encoding.
+This is a technique that is used with <A NAME="tex2html20"
+ HREF="<A NAME="tex2html18"
+ HREF="http://www-texdev.mpce.mq.edu.au//l2h/indic/IndicHTML/">http://www-texdev.mpce.mq.edu.au//l2h/indic/IndicHTML/</A>">IndicT<SMALL>E</SMALL>X/HTML</A>, for presenting
+traditional Indic language scripts within Web pages.
+For these the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source that is to be presented as an image
+needs special treatment using a ``pre-processor''. 
+For the special styles defined in <A NAME="tex2html21"
+ HREF="<A NAME="tex2html19"
+ HREF="http://www-texdev.mpce.mq.edu.au//l2h/indic/IndicHTML/">http://www-texdev.mpce.mq.edu.au//l2h/indic/IndicHTML/</A>">IndicT<SMALL>E</SMALL>X/HTML</A>, running the preprocessor
+is fully automated, so that it ibecomes just another step 
+within the entire image-generation process.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+The technique of using images, can be used with <EM>any</EM> font 
+whose glyphs can be typeset using T<SMALL>E</SMALL>X or L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X. 
+Using T<SMALL>E</SMALL>X's 
+<TT>&#92;font</TT> command, a macro is defined to declare
+the special font required; 
+e.g. for Cyrillic characters, using the Univ. of Washington font:
+<PRE>
+ \font\wncyr = wncyr10
+</PRE>
+
+<P>
+Now use this font switch immediately surrounded by braces:
+<PRE>
+ published by {\wncyr Rus\-ski\char26\ \char23zyk}.
+</PRE>
+to get:
+<DIV ALIGN="CENTER">
+published by <IMG
+ WIDTH="109" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="Eimg2.gif"
+ ALT="{\wncyr Rus\-ski\char26\ \char23zyk}">.
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html131"
+ HREF="Enode5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html127"
+ HREF="Enode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html121"
+ HREF="Enode3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html129"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html130"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html132"
+ HREF="Enode5.html">Mathematics</A>
+<B> Up:</B> <A NAME="tex2html128"
+ HREF="Enode2.html">Internationalisation</A>
+<B> Previous:</B> <A NAME="tex2html122"
+ HREF="Enode3.html">Alternate Font Encodings</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

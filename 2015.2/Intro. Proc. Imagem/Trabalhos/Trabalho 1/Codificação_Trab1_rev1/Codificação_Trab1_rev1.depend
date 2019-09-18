@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1441915982 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Fontes/Basico.cpp
+	"../Bibliotecas/Basico.hpp"
+
+1441915982 /home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Bibliotecas/Basico.hpp
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	<dirent.h>
+	<string.h>
+	<math.h>
+	<opencv2/core/core.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<opencv2/highgui/highgui.hpp>
+
+1442336030 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Fontes/Principal_Trab1_IPI.cpp
+	"../Bibliotecas/Principal.hpp"
+
+1442336043 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Fontes/Comum.cpp
+	"../Bibliotecas/Comum.hpp"
+
+1442330750 /home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Bibliotecas/Comum.hpp
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	<dirent.h>
+	<string.h>
+	<math.h>
+	<opencv2/core/core.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<opencv2/highgui/highgui.hpp>
+
+1442278901 /home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Bibliotecas/Diretorios.hpp
+	"Imagens.hpp"
+
+1442334739 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Fontes/Diretorios.cpp
+	"../Bibliotecas/Diretorios.hpp"
+
+1442335563 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Fontes/Imagens.cpp
+	"../Bibliotecas/Grafo.hpp"
+
+1442333197 /home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Bibliotecas/Imagens.hpp
+	"Comum.hpp"
+
+1442335865 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Fontes/Grafo.cpp
+	"../Bibliotecas/Grafo.hpp"
+
+1442335563 /home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Bibliotecas/Grafo.hpp
+	"Diretorios.hpp"
+
+1442085597 /home/rodrigo/Dropbox/UnB/UnB 2015.2/Intro. Proc. Imagem/Trabalho 1/Codificação_Trab1_rev1/Bibliotecas/Principal.hpp
+	"Grafo.hpp"
+

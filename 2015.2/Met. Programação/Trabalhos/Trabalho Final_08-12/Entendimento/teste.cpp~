@@ -1,0 +1,146 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ncurses.h>
+#include <math.h>
+
+#define DEGTORAD(deg) (deg * (180.0f/M_PI))
+#define DOT 46
+
+//usiossng namespace cv;
+//using namespace std;
+
+void circulo (int, int, int, char);
+void triangulo (int, int, int, char);
+void retangulo (int, int, int, int, char);
+void texto (int, int, char *);
+
+int main(int argc, char *argv[]) {
+    /*
+    Mat imagem = imread ("../Lenna.png", CV_LOAD_IMAGE_COLOR);
+
+    if (!imagem.empty()){
+        imshow ("lena", imagem);
+
+        waitKey ();
+
+        imagem.release ();
+        destroyAllWindows ();
+    }
+    //*/
+
+    //*
+    initscr();
+    start_color();
+    init_pair(0,0,0);
+    init_pair(1,3,1);
+    init_pair(2,1,3);
+
+    attrset(COLOR_PAIR(1));
+	triangulo (0, 20, 20, '*');
+
+	circulo (20, 14, 6, '*');
+
+	retangulo (0, 20, 20, 0, '*');
+
+    attrset(COLOR_PAIR(2));
+	texto (21, 10, " As Relíquias da Morte ");
+    //*/
+	return(EXIT_SUCCESS);
+}
+
+void circulo (int pos_x, int pos_y, int raio, char letra){
+    float angulo, comp;
+	int y, x;
+
+	/* Convert to int */
+	comp = raio * 2;
+
+	/* Initialize ncurses */
+	initscr();
+
+	/* Disable mouse pointer */
+	curs_set(0);
+
+	/* Draw circle */
+	for (angulo = 0; angulo < 360.0f; angulo += 1.0f){
+		x = pos_x + (int)(comp * cos(DEGTORAD(angulo)));
+		y = pos_y + (int)(raio * sin(DEGTORAD(angulo)));
+
+        mvaddch (y, x, letra);
+	}
+
+	/* Refresh screen */
+	refresh();
+
+	/* Wait for user input before exiting program */
+	getch();
+
+	/* Escape from ncurses mode */
+	endwin();
+}
+
+void triangulo (int pos_x, int pos_y, int larg, char letra){
+    int y = pos_y;
+
+    /* Initialize ncurses */
+	initscr();
+
+    for(int lin = pos_x; lin <= (pos_x + larg); lin++){
+        for(int col = pos_y; col <= y; col++){
+            move (lin, col);
+            if ((col == pos_y) || (col == y) || (lin == (pos_x + larg)))
+                printw("%c", letra);
+        }
+        y++;
+        pos_y--;
+    }
+
+    /* Refresh screen */
+	refresh();
+
+	/* Wait for user input before exiting program */
+	getch();
+
+	/* Escape from ncurses mode */
+	endwin();
+}
+
+void retangulo (int pos_x, int pos_y, int comp, int larg, char letra){
+    /* Initialize ncurses */
+	initscr();
+
+    for(int lin = pos_x; lin <= (pos_x + comp); lin++){
+        for(int col = pos_y; col <= (pos_y + larg); col++){
+            move(lin, col);
+            if ((col == pos_y) || (col == (pos_y + larg))
+                || (lin == pos_x) || (lin == (pos_x + comp)))
+                printw("%c", letra);
+        }
+    }
+
+    /* Refresh screen */
+	refresh();
+
+	/* Wait for user input before exiting program */
+	getch();
+
+	/* Escape from ncurses mode */
+	endwin();
+}
+
+void texto (int pos_x, int pos_y, char *frase){
+    /* Initialize ncurses */
+	initscr();
+
+    move (pos_x, pos_y);
+    printw ("%s", frase);
+
+    /* Refresh screen */
+	refresh();
+
+	/* Wait for user input before exiting program */
+	getch();
+
+	/* Escape from ncurses mode */
+	endwin();
+}

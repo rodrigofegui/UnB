@@ -1,0 +1,26 @@
+Antes de tudo:
+	-Percorre a lista de interconexões(enquanto não for NULL)
+		Para cada interconexão, avalia se tem defeito, se tiver atribui 0 ao valor que ela está transmitindo
+		Contabiliza o numero de defeitos
+
+Parte 1:
+	-Percorre a lista de interconexões(enquanto não for NULL)
+		se a interconexão estiver ligada a um gerador
+			adicionar o quanto o gerador trasmite a ela(se ela não estiver com defeito)
+
+Parte 2: -Percorre a lista de interconexões(enquanto não for NULL)
+		se a interconexão está ligada ao gerador estiver ligada a um adaptador
+			adiciona interconexão à lista de interconexões de entrada do adaptador
+			contabiliza numa variável o valor total que está chegando ao adaptador(A)
+		se a interconexão está ligada a um adapatador, mas não vem de um gerador
+			adiciona a interconexão à lista de interconexões de saída do adaptador
+			contabiliza o valor maximo que pode sair do adaptador(B)(considerando como 0 o valor maixmo das linhas que estiverem com defeito)
+
+	 -Percorre a lista de interconexões de saída cada adaptador
+		cada interconexão da lista vai receber ((valor maximo que ela suporta)/B)*A(se ela não estiver com defeito)
+
+Parte 3:
+	-Percorre a lista de cidades(enquanto não for NULL)
+		se a cidade está ligada a uma interconexão
+			contabiliza o tanto que a interconexão dá a cidade
+

@@ -1,0 +1,494 @@
+/** Inclusão das bibliotecas requisitadas: **/
+    #include "../Bibliotecas/Lista.h"
+    #include "../Bibliotecas/Arquivos.h"
+
+/**  Definições da funções da biblioteca **/
+    /*  Função 'lista_cria', realiza a alocação de memória para a lista
+    **  a ser manipulada */
+    Lista * lista_cria (){
+        /*  'nova' armazena a nova lista a ser criada */
+        Lista *nova = NULL;
+
+        /*  Alocação da memória para o cabeçalho da lista */
+        do{
+            nova = (Lista *) malloc (sizeof(Lista));
+        }while (nova == NULL);
+
+        /*  Inicialização das variáveis de controle */
+        nova->quant = 0;
+        nova->primeiro = nova->ultimo = NULL;
+
+        return nova;
+    }
+
+    /*  Função 'aluno_cria', realiza a alocação de memória para os dados
+    **  de um novo aluno */
+    Aluno * aluno_cria (Registros lido, int deslocamento){
+        /*  'lido' armazena as informações lidas no arquivo, a serem
+        **  cadastradas para o novo aluno; 'novo' armazena o novo aluno
+        **  a ser adicionado */
+        Aluno *novo = NULL;
+
+        /*  Alocação da memoria para o aluno */
+        do{
+            novo = (Aluno *) malloc (sizeof(Aluno));
+        }while (novo == NULL);
+
+        /*  Inicialização das variáveis de controle */
+        novo->docseek = deslocamento;
+        novo->anterior = novo->proximo = NULL;
+
+        /*  Configuração dos Dados pessoais */
+        novo->Dados.Matricula = lido.Matricula;
+        novo->Dados.OP = lido.OP;
+        string_zera (novo->Dados.Nome, 0, TAM_MAX);
+        strcpy (novo->Dados.Nome, lido.Nome);
+        strcpy (novo->Dados.Curso, lido.Curso);
+        novo->Dados.Turma = lido.Turma;
+
+        return novo;
+    }
+
+    /*  Função 'indpri_cria', realiza a alocação de memória para o indice
+    **  primario */
+    IndicePrimario * indpri_cria (Lista *lista){
+        IndicePrimario *novo = NULL;
+
+        do{
+            novo = (IndicePrimario *) malloc (sizeof(IndicePrimario));
+        }while (novo == NULL);
+
+        novo->quant = 0;
+        novo->inicio = novo->fim = NULL;
+
+        indpri_monta (novo, lista);
+
+        return novo;
+    }
+
+    /*  Função 'elempri_cria', realiza a alocação de memria para um elemento
+    **  do elemento do indice primario */
+    Elempri * elempri_cria (Aluno *aluno){
+        Elempri *novo = NULL;
+
+        do {
+            novo = (Elempri *) malloc (sizeof(Elempri));
+        }while (novo == NULL);
+
+        novo->docseek = aluno->docseek;
+        novo->infos = &aluno->Dados;
+        sprintf (novo->chave, "%d", aluno->Dados.Matricula);
+        string_concat_n (novo->chave, aluno->Dados.Nome, 0, TAM_CHAVE_PRI - strlen(novo->chave));
+
+        if ((aluno->Dados.Matricula == 0) && strlen(aluno->Dados.Nome) > 0)
+            novo->status = '*';
+        else
+            novo->status = 'D';
+        novo->chave[TAM_CHAVE_PRI] = '\0';
+        return novo;
+    }
+
+    /*  Funçao 'indsec_cria', realiza a alocação de memoria para o indice
+    **  secundario */
+    IndiceSecundario * indsec_cria (IndicePrimario *indpri){
+        IndiceSecundario *novo = NULL;
+
+        do{
+            novo = (IndiceSecundario *) malloc (sizeof (IndiceSecundario));
+        }while (novo == NULL);
+
+        novo->inicio = NULL;
+        novo->quant = 0;
+
+        indsec_monta (novo, indpri);
+
+        return novo;
+    }
+
+    Elemsec * elemsec_cria (){
+        Elemsec *novo = NULL;
+
+        do{
+            novo = (Elemsec *) malloc (sizeof (Elemsec));
+        }while (novo == NULL);
+
+        novo->inicio = inter_cria ();
+        string_zera(novo->curso, 0, TAM_SIGLA_CURSO);
+        novo->inicio->chave = NULL;
+        novo->inicio->proximo = NULL;
+        novo->proximo = NULL;
+
+        return novo;
+    }
+
+    Intermediario * inter_cria (){
+        Intermediario *novo = NULL;
+
+        do{
+            novo = (Intermediario *) malloc (sizeof(Intermediario));
+        }while (novo == NULL);
+
+        novo->chave = NULL;
+        novo->proximo = NULL;
+
+        return novo;
+    }
+
+    /*  Função 'lista_libera', realiza a liberação da memória alocada para
+    **  a lista */
+    void lista_libera (Lista *lista){
+        if (lista != NULL){
+            while (lista->quant > 0){
+                Aluno *auxiliar;
+
+                auxiliar = lista->primeiro;
+                lista->primeiro = auxiliar->proximo;
+                aluno_libera (auxiliar);
+                lista->quant--;
+            }
+
+            free (lista);
+        }
+    }
+
+    /*  Função 'aluno_libera', realiza a liberação da memória alocada para
+    **  um aluno */
+    void aluno_libera (Aluno *aluno){
+        free (aluno);
+    }
+
+    /*  Função 'indpri_libera', realiza a liberação da memória alocada para
+    **  o indice primario */
+    void indpri_libera (IndicePrimario *indicepri){
+        if (indicepri != NULL){
+            Elempri *aux;
+            while (indicepri->inicio != NULL){
+                aux = indicepri->inicio;
+                indicepri->inicio = aux->proximo;
+                free (aux);
+            }
+            free (indicepri);
+        }
+    }
+
+    void indsec_libera (IndiceSecundario *indicesec){
+        if (indicesec != NULL){
+            while (indicesec->inicio != NULL){
+                Elemsec *aux = indicesec->inicio;
+                indicesec->inicio = aux->proximo;
+                while (aux->inicio != NULL){
+                    Intermediario *auxinter = aux->inicio;
+                    aux->inicio = auxinter->proximo;
+                    free (auxinter);
+                }
+                free(aux);
+            }
+            free (indicesec);
+        }
+    }
+
+    /*  Funçao 'lista_insere', realiza a inserção de um novo registro na lista
+    **  de alunos */
+    void lista_insere (Lista *lista, Registros dados, int deslocamento){
+        /*  'lista' armazena a lista ser manipulada com a inserção; 'dados'
+        **  armazena as informações referente a um dado aluno; 'deslocamento'
+        **  armazena o seek que deve ser feito do início do arquivo para que
+        **  se possa chegar a tal registro */
+
+        /*  Tendo informações */
+        if (reg_vazio(dados) == RETORNO_OK){
+            /*  Criação de um novo aluno com tais informações */
+            Aluno *novo = aluno_cria (dados, deslocamento);
+
+            /*  Inserindo-o numa lista vazia */
+            if (lista->primeiro == NULL){
+                lista->primeiro = lista->ultimo = novo;
+            /*  Inserindo-o no final */
+            }else{
+                novo->anterior = lista->ultimo;
+                lista->ultimo->proximo = novo;
+                lista->ultimo = novo;
+            }
+            /*  Incrementando o número de alunos registrados */
+            lista->quant++;
+        }
+    }
+
+    void lista_manipula (Lista *lista, Registros dados, char opcao){
+        Aluno *abuscar = NULL;
+
+        for (abuscar = lista->primeiro; abuscar != NULL; abuscar = abuscar->proximo){
+            if (abuscar->Dados.Matricula == dados.Matricula){
+                if (opcao == 'R'){
+                    abuscar->Dados.Matricula = 0;
+
+                }else{
+                    abuscar->Dados.Matricula = dados.Matricula;
+                    string_zera (abuscar->Dados.Nome, 0, TAM_MAX);
+                    strcpy (abuscar->Dados.Nome, dados.Nome);
+                    abuscar->Dados.OP = dados.OP;
+                    abuscar->Dados.Turma = dados.Turma;
+                    strcpy (abuscar->Dados.Curso, dados.Curso);
+                }
+            }
+        }
+    }
+
+    /*  Função 'indpri_monta', realiza a montagem do indice primario */
+    void indpri_monta (IndicePrimario *indicepri, Lista *lista){
+        Aluno *aux = NULL;
+
+        for (aux = lista->primeiro; aux != NULL; aux = aux->proximo){
+            if (indicepri->inicio == NULL){
+                Elempri *novo = elempri_cria (aux);
+                if (novo->status == 'D')
+                    indicepri->inicio = indicepri->fim = novo;
+                else
+                    free (novo);
+
+            }else{
+                Elempri *auxpri = NULL;
+                char teste[TAM_CHAVE_PRI];
+
+                string_zera (teste, 0, 7);
+                sprintf (teste, "%d", aux->Dados.Matricula);
+                string_concat_n (teste, aux->Dados.Nome, 0, TAM_CHAVE_PRI - strlen(teste));
+
+                for (auxpri = indicepri->inicio; auxpri->proximo != NULL; auxpri = auxpri->proximo){
+                    if (strcmp(auxpri->chave, teste) == 0){
+                        break;
+                    }
+                }
+
+                if ((auxpri->proximo == NULL)
+                    && (string_compara_n(teste, auxpri->chave, 0, 0, strlen(teste)) != 0)){
+                    Elempri *novo = elempri_cria (aux);
+                    if (novo->status == 'D')
+                        auxpri->proximo = novo;
+                    else
+                        free (novo);
+                }
+            }
+        }
+    }
+
+    /*  Função 'indsec_monta', realiza a montagem do indice secundario */
+    void indsec_monta (IndiceSecundario *indsec, IndicePrimario *indpri){
+        Elempri *auxpri;
+
+        for (auxpri = indpri->inicio; auxpri != NULL; auxpri = auxpri->proximo){
+            if (indsec->inicio == NULL){
+                Elemsec *novo = elemsec_cria ();
+                strcpy (novo->curso, auxpri->infos->Curso);
+                novo->inicio->chave = auxpri;
+                indsec->inicio = novo;
+                indsec->quant++;
+
+            }else{
+                Elemsec *auxsec = indsec->inicio;
+
+                while ((auxsec->proximo != NULL) && (strcmp(auxsec->curso, auxpri->infos->Curso) != 0)){
+                    auxsec = auxsec->proximo;
+                };
+
+                if (strcmp(auxsec->curso, auxpri->infos->Curso) == 0){
+                    if (auxsec->inicio == NULL){
+                        Intermediario *novo = inter_cria ();
+
+                        novo->proximo = auxsec->inicio;
+                        novo->chave = auxpri;
+                        auxsec->inicio = novo;
+
+                    }else{
+                        Intermediario *auxinter = NULL;
+
+                        for (auxinter = auxsec->inicio; auxinter->proximo != NULL; auxinter = auxinter->proximo){
+                            if (strcmp(auxinter->chave->chave, auxpri->chave) == 0)
+                                break;
+                        }
+                        if ((auxinter->proximo == NULL) && (strcmp(auxinter->chave->chave, auxpri->chave) != 0)){
+
+                            Intermediario *novo = inter_cria();
+
+                            novo->chave = auxpri;
+                            auxinter->proximo = novo;
+                        }
+                    }
+                }else if ((auxsec->proximo == NULL) && (strcmp(auxsec->curso, auxpri->infos->Curso) != 0)){
+                    Elemsec *novo = elemsec_cria ();
+
+                    strcpy (novo->curso, auxpri->infos->Curso);
+                    novo->inicio->chave = auxpri;
+
+                    auxsec->proximo = novo;
+                    indsec->quant++;
+                }
+            }
+        }
+
+    }
+
+    /*  Função 'indpri_ordena', realiza a ordenação do indice primario */
+    void indpri_ordena (IndicePrimario *indicepri){
+        Elempri *aux = indicepri->inicio, *aux1 = aux->proximo;
+        char troca = 'n';
+
+        while (aux1 != NULL){
+            if (strcmp(aux->chave, aux1->chave) > 0){
+                Elempri *aux2 = aux->anterior, *aux3 = aux1->proximo;
+
+                if (aux2 != NULL)   aux2->proximo = aux1;
+                else    indicepri->inicio = aux1;
+
+                if (aux3 != NULL)   aux3->anterior = aux;
+                else    indicepri->fim = aux;
+
+                aux1->anterior = aux2;
+                aux->proximo = aux3;
+
+                aux1->proximo = aux;
+                aux->anterior = aux1;
+
+                troca = 's';
+            }
+
+            aux = aux->proximo;
+            if (aux != NULL)
+                aux1 = aux->proximo;
+            else
+                aux1 = aux;
+        }
+
+        if (troca != 'n') indpri_ordena (indicepri);
+
+    }
+
+
+    /*  Função 'lista_exibe', realiza a exibição da lista formada */
+    void lista_exibe (Lista *lista){
+        /*  'lista' armazena a lista a ser exibida; 'aux' auxilia a percorrer a lista */
+        Aluno *aux = NULL;
+
+        /*  Percorrendo toda a lista */
+        for (aux = lista->primeiro; aux != NULL; aux = aux->proximo){
+            printf ("Com seek de %d bytes:\n", aux->docseek);
+            printf ("\tMatricula = %d\n", aux->Dados.Matricula);
+            printf ("\tNome = %s\n", aux->Dados.Nome);
+            printf ("\tOperador = %d\n", aux->Dados.OP);
+            printf ("\tCurso = %s\n", aux->Dados.Curso);
+            printf ("\tTurma = %c\n\n", aux->Dados.Turma);
+        }
+    }
+
+    /*  Função 'indpri_exibe', realiza a exibiçao do indice primario */
+    void indpri_exibe (IndicePrimario *indicepri){
+        Elempri *aux = NULL;
+
+        for (aux = indicepri->inicio; aux != NULL; aux = aux->proximo){
+            printf ("Chave = %s\n", aux->chave);
+            printf ("Seek = %d\n\n", aux->docseek);
+        }
+    }
+
+    void indsec_exibe (IndiceSecundario *indicesec){
+        Elemsec *aux = NULL;
+        printf ("Tem-se %d cursos:\n", indicesec->quant);
+
+        for (aux = indicesec->inicio; aux != NULL; aux = aux->proximo){
+            printf ("\t- Curso %s\n", aux->curso);
+        }
+    }
+
+    /*  Função 'indpri_escreve', realiza a escrita do indice primario num arquivo */
+    void indpri_escreve (IndicePrimario *indicepri, char lista){
+        char *bases[] = {"../Resultados/indice_pri_lista", ".txt"};
+        char *nome = (char *) calloc (strlen(bases[0]) + strlen(bases[1]) + 1, sizeof(char));
+        FILE *arq = NULL;
+        Elempri *aux = NULL;
+
+        strcat (nome, bases[0]);
+        nome[strlen(nome)] = lista;
+        strcat (nome, bases[1]);
+
+        arq = arq_abre (nome, "w", 'e');
+
+        for (aux = indicepri->inicio; aux != NULL; aux = aux->proximo){
+            fprintf (arq, "Chave = %s\n", aux->chave);
+            fprintf (arq, "Seek = %d\n\n", aux->docseek);
+        }
+
+        free (nome);
+        fclose (arq);
+    }
+
+    void indsec_escreve (IndiceSecundario *indicesec, char lista){
+        char *bases[] = {"../Resultados/indice_sec_lista", ".txt"};
+        char *nome = (char *) calloc (strlen(bases[0]) + strlen(bases[1]) + 1, sizeof(char));
+        FILE *arq = NULL;
+        Elemsec *aux = NULL;
+
+        strcat (nome, bases[0]);
+        nome[strlen(nome)] = lista;
+        strcat (nome, bases[1]);
+
+        arq = arq_abre (nome, "w", 'e');
+
+        fprintf (arq, "Tem-se %d cursos:\n", indicesec->quant);
+
+        for (aux = indicesec->inicio; aux != NULL; aux = aux->proximo){
+            Intermediario *auxinter = NULL;
+            fprintf (arq, "\t- Curso = %s\n", aux->curso);
+            for (auxinter = aux->inicio; auxinter != NULL; auxinter = auxinter->proximo){
+                fprintf (arq, "\t\t* Chave = %s\n", auxinter->chave->chave);
+            }
+        }
+
+        free (nome);
+        fclose (arq);
+    }
+
+    void reg_escreve (FILE *arq, Registros reg){
+        if (reg.Matricula != 0){
+            int ind;
+            fprintf (arq, "0%d ", reg.Matricula);
+            fprintf (arq, "%s", reg.Nome);
+            for (ind = 0; ind < (41 - strlen(reg.Nome)); ind++)
+                fprintf (arq, " ");
+            fprintf (arq, "%d  ", reg.OP);
+            fprintf (arq, "%s       ", reg.Curso);
+            fprintf (arq, "%c\n", reg.Turma);
+        }
+    }
+
+    void lista_escreve (FILE *arq, Lista *lista){
+        Aluno *aux = NULL;
+
+        rewind (arq);
+
+        for (aux = lista->primeiro; aux != NULL; aux = aux->proximo){
+            reg_escreve (arq, aux->Dados);
+        }
+
+    }
+
+    /*  Função 'reg_zera', realiza a limpeza dos dados de um dado aluno */
+    void reg_zera (Registros *info){
+        /*  'info' armazena as informações a serem inicializadas */
+
+        /*  Configuração de todas as informações */
+        info->Matricula = info->OP = 0;
+        string_zera (info->Curso, 0, TAM_SIGLA_CURSO);
+        info->Turma = '\0';
+        string_zera (info->Nome, 0, TAM_MAX);
+    }
+
+    /*  Função 'reg_vazio', verifica se o registro está vazio */
+    int reg_vazio (Registros dados){
+        /*  'dados' armazena as informaçoes a serem verificadas */
+
+        /*  Tendo Nome e Matricula registrados, então existe dados */
+        if ((strlen(dados.Nome) < 1) && dados.Matricula == 0)
+            return 0;
+
+        return RETORNO_OK;
+    }

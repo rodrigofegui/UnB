@@ -1,0 +1,902 @@
+/*****************************************************************
+**      Inclusão das bibliotecas
+*****************************************************************/
+#include "../Bibliotecas/Arvore_A.hpp"
+
+/*****************************************************************
+**      Definição das Funções
+*****************************************************************/
+    /*  Função 'dados_limpa', realiza a limpeza dos dados de um aluno
+    **  para que possa armazenar novos dados sem erros */
+    void dados_limpa (Dados *registro){
+        /*  'registro' armazena a estrutura a ser limpa */
+
+        /*  Limpeza das informações em si */
+        string_zera (registro->Mat, 0, TAM_MAT);
+        string_zera (registro->Nome, 0, TAM_NOME);
+        string_zera (registro->OP, 0, TAM_OP);
+        string_zera (registro->Curso, 0, TAM_CURSO);
+        registro->Turma = '\0';
+    }
+
+    /*  Função 'dados_questiona', realiza o levantamento das informações necessárias
+    **  para a escolha da operação, anteriormente feita */
+    void dados_questiona (Dados *registro, Info *nova_ch, int codigo){
+        /*  'registro' armazena as informações brutas a serem questionadas; 'nova_ch'
+        **  armazena a codificação dos registros; 'codigo' armazena o código da operação
+        **  escolhida */
+
+        /*  Não tendo sido escolhido SAIR ou EXIBIR, levanta-se as informações necessárias */
+        if (codigo != SAIR && codigo != EXIBIR){
+            /*  Limpeza do registro para o novo levantamento */
+            dados_limpa (registro);
+
+            /*  Limpeza da Saída Padrão */
+            limpa_tela();
+
+            /*  Tendo sido escolhido a busca na árvore, questiona-se apenas a matrícula
+            **  e o nome */
+            if (codigo == BUSCA){
+                printf ("Visto que deseja buscar um registro, digite a matrícula:\n");
+                    scanf ("%[^\n]", registro->Mat);
+                    getchar ();
+                printf ("\nAgora digite o nome do aluno ou pelo menos o primeiro nome:\n");
+                    scanf ("%[^\n]", registro->Nome);
+
+            /*  Caso seja a inserção, todas as informações são requisitadas */
+            }else{
+                printf ("Visto que deseja inserir um novo registro eh preciso de todos os dados.\n");
+                printf ("Por isso, digite a matricula:\n");
+                    scanf ("%[^\n]", registro->Mat);
+                    getchar ();
+                printf ("\nAgora, digite o nome do aluno: (Lembrando que sao %d caracter no maximo)\n", TAM_NOME);
+                    scanf ("%[^\n]", registro->Nome);
+                    getchar ();
+                printf ("\nAgora, digite a opcao:\n");
+                    scanf ("%[^\n]", registro->OP);
+                    getchar ();
+                printf ("\nAgora, digite o curso do aluno:\n");
+                    scanf ("%[^\n]", registro->Curso);
+                    getchar ();
+                printf ("\nAgora, digite a turma do aluno:\n");
+                    scanf ("%c", &registro->Turma);
+                    getchar ();
+
+                /*  Complemento dos espaços em branco */
+                dados_completa (registro);
+            }
+
+            /*  Codificação do registro */
+            chave_monta (nova_ch, registro);
+        }
+    }
+
+    /*  Função 'dados_completa', realiza o preenchimento dos espaços em branco
+    **  do registro */
+    void dados_completa (Dados *registro){
+        /*  'registro' armazena as informações a serem preenchidas */
+
+        /*  Preenchimento em si */
+        string_completa (registro->Mat, ESPACO, strlen(registro->Mat), TAM_MAT);
+        string_completa (registro->Nome, ESPACO, strlen(registro->Nome), TAM_NOME);
+        string_completa (registro->OP, ESPACO, strlen(registro->OP), TAM_OP);
+        string_completa (registro->Curso, ESPACO, strlen(registro->Curso), TAM_CURSO);
+    }
+
+    /*  Função 'dados_escreve', escreve no arquivo de manipulação um novo registro */
+    void dados_escreve (Dados *registro){
+        /*  'registro' armazena as informações a serem escritas; 'modo' armazena o modo
+        **  de abertura do arquivo; 'nome' armazena o nome do arquivo */
+        string modo = "a+";
+        char nome[] = "../Referências/Lista_manipulada.txt";
+
+        /*  Abertura do arquivo */
+        FILE *arq = arq_abre(nome, modo, 'e');
+
+        /*  Conseguindo abrir o arquivo, as informações so escritas */
+        if (arq){
+            fprintf (arq, "%s", registro->Mat);
+            fprintf (arq, "%s", registro->Nome);
+            fprintf (arq, "%s", registro->OP);
+            fprintf (arq, "%s", registro->Curso);
+            fprintf (arq, "%c\n", registro->Turma);
+
+            /*  Fechamento do arquivo lógico */
+            fclose(arq);
+        }
+    }
+
+    /*  Função 'chave_monta', realiza a contrução da chave para um dado registro */
+    void chave_monta (Info *destino, Dados *origem){
+        /*  'destino' armazena a chave de saída; 'origem' armazena os dados originais a serem codificados */
+
+        /*  Construção da chave do registro */
+        strncpy (destino->ID, origem->Mat, TAM_MAT - 2);
+        strncat (destino->ID, origem->Nome, TAM_CHAVE - strlen(destino->ID));
+    }
+
+    /*  Função  'chave_compara', realiza a comparação entre duas chaves
+    **  dadas */
+    int chave_compara (char *ch1, char *ch2){
+        /*  'ch1' armazena a primeira chave; enquanto que 'ch2' armazena
+        **  a segunda */
+
+        /*  Retorna o valor da comparação entre strings */
+        return strcmp(ch1, ch2);
+    }
+
+    /*  Função 'chave_compara_meio', realiza a comparação entre três chaves
+    **  dadas */
+    int chave_compara_meio (char *anterior, char *posterior, char *nova){
+        /*  'anterior' armazena a primeira chave da trinca; 'posterior'
+        **  armazena a terceira; 'nova' armazena a chave a ser avaliada
+        **  sobre as demais */
+
+        /*  Caso já exista a chave na trinca */
+        if ((strcmp (anterior, nova) == 0) || (strcmp (posterior, nova) == 0))
+            return 0;
+
+        /*  Não existindo e 'nova' estando as entre as demais */
+        if (strcmp (anterior, nova) < 0 && strcmp (nova, posterior) < 0)
+            return -1;
+
+        /*  Caso contrário */
+            return 1;
+    }
+
+
+
+    /*  Função 'criar', inicializa a árvore-B */
+    void ArvB::criar (int ord, string nome_arq_base){
+        /*  'ord' armazena a ordem a ser considerada na construção da
+        **  árvore */
+
+        /*	Inicialização das variáveis de controle */
+        raiz() = NULL;
+        qnt_pg() = 0;
+        ordem() = ord;
+        ult_reg () = 0;
+        arq_base() = (char *) malloc (nome_arq_base.length() * sizeof(char));
+        strcpy (arq_base(), nome_arq_base.c_str());
+    }
+
+    /*  Função 'libera', desaloca a memória para a árvore-B */
+    void ArvB::libera (){
+        /*  Liberação de todas as páginas, a partir da 'raiz()' */
+        pag_libera (raiz(), 0);
+
+        free (arq_base());
+    }
+
+    /*  Função 'inicializa', realiza a inicialização da árvore-B */
+    void ArvB::inicializa(){
+        system ("cp ../Referências/Lista_base.txt ../Referências/Lista_manipulada.txt");
+
+        FILE *arq = arq_abre (arq_base(), "r", 'l');
+        if (arq){
+            /*  'linha' armazena a leitura de uma linha inteiro do 'arq_base'
+            **  'dados' armazena o registro lido */
+            char linha[TAM_REG];
+            Info dados;
+
+            /*  Inicialização das PRRs dos registros lidos, assim como o reposicionamento
+            **  do arq_base */
+            dados.seek = 0;
+
+            while (!feof(arq)){
+                /*  Limpando a memória da chave a ser lida do arquivo */
+                string_zera(dados.ID, 0, TAM_CHAVE);
+
+                /*  Leitura da linha de dados do arquivo-base */
+                fgets (linha, TAM_REG, arq);
+
+                /*  Construção da chave do registro */
+                strncpy (dados.ID, linha, TAM_MAT - 2);
+                string_concat_n(dados.ID, linha, TAM_MAT - 1, TAM_CHAVE - strlen(dados.ID));
+
+                /*  Inserção do registro na árvore */
+                insere (&dados);
+
+                /*  Configurando o seek para o próximo registro */
+                ult_reg() = dados.seek;
+                dados.seek++;
+            }
+
+            fclose (arq);
+        }
+    }
+
+    /*  Função 'insere', realiza a inserção de uma nova chave na árvore */
+    void ArvB::insere (Info *nova_ch){
+        /*  'nova_ch' armazena a chave a ser avaliada para inserção */
+
+        /*  Não existindo páginas cadastradas, deve ser criada uma nova,
+        **  além de cadastrá-la como a 'raiz()' */
+        if (!raiz()){
+            /*  Criação de uma nova célula, para armazenar a chave */
+            Celula *nova_cel = cel_criar ();
+
+            /*  Criação de uma nova página, para armazenar a célula */
+            Pagina *nova_pg = pag_criar ();
+
+            /*  Copia das informações da chave */
+            info_copia (&Info(nova_cel), nova_ch);
+
+            /*  Configuração Página <-> Célula */
+            Inicio (nova_pg) = nova_cel;
+            Qnt_cel (nova_pg)++;
+
+            /*  Configuração da árvore */
+            raiz() = nova_pg;
+
+        /*  Caso já exista, procurar a melhor página para a inserção da
+        **  chave */
+        }else{
+            pag_insere (raiz(), nova_ch);
+        }
+    }
+
+    /*  Função 'insere_dupla', realiza a inserção de uma nova chave na árvore,
+    **  assim como de um novo registro no arquivo */
+    void ArvB::insere_dupla (Dados registro, Info *nova_ch){
+        /*  'registro' armazena as informações brutas a serem inseridas no arquivo;
+        **  'nova_ch' armazena a chave a ser inserida na árvore */
+
+        /*  Configuração da PRR do novo registro */
+        Deslocamento(nova_ch) = ult_reg();
+        ult_reg()++;
+
+        /*  Escrita do novo registro no arquivo-base */
+        dados_escreve (&registro);
+
+        /*  Inserção da chave na árvore */
+        insere (nova_ch);
+
+        printf ("\nRegistro inserido com sucesso!!\n");
+
+        escreve_busca ();
+        temporizador (1.0);
+    }
+
+    int ArvB::busca(Info *alvo){
+        int contador = 0;
+        Celula *resultado = pag_busca (raiz(), alvo, &contador);
+
+		//printf ("\nContador final -> %d\n", contador);
+        if (resultado)
+            printf ("O registro %s esta na linha %d do arquivo base\n", ID(resultado), Seek(resultado) + 1);
+        else
+            printf ("O registro %s nao foi encontrado\n", ID(resultado));
+
+		pausa ();
+
+        return contador;
+    }
+
+    /*  Função 'exibe', exibe na saída padrão, monitor, a árvore-B */
+    void ArvB::exibe (){
+        /*  Limpeza da saída padrão */
+        limpa_tela ();
+
+        /*  Exibindo as informações básicas da árvore */
+        printf ("Ordem da Arvore-B = %d\n", ArvB::ordem);
+        printf ("Quantidade de pag. cadastradas = %d\n", ArvB::qntpag);
+
+        /*  Exibição de todas as páginas registradas */
+        pag_exibe (raiz(), 0);
+    }
+
+    /*  Função 'escreve', escreve num arquivo .txt a árvore na configuração
+    **  atual */
+    void ArvB::escreve (char *nome_arq){
+        /*  'nome_arq' armazena o nome do arquivo que armazenará a árvore
+        **  escrita; 'arq' armazena o arquivo lógico da operação; 'ind'
+        **  armazena um índice a ser manipulado */
+        FILE *arq = arq_abre (nome_arq, "w", 'e');
+        int ind;
+
+        /*  Impressão da legenda, para melhor entendimento da organização
+        **  para a escrita */
+        for (ind = 0; ind < TAM_REG; ind++)
+            fprintf (arq, "*");
+        fprintf (arq, "\n\t\t\t\t\tLEGENDA:\n\n");
+
+        fprintf (arq, "\t1- Para as páginas:\n");
+            fprintf (arq, "\t\t1.1 Identificação de página, 'Pag';\n");
+            fprintf (arq, "\t\t1.2 Número da página atual, '[x]';\n");
+            fprintf (arq, "\t\t1.3 Número da página pai, '[y]';\n");
+            fprintf (arq, "\t\t1.4 Quantidade de chaves na página, '-> z';\n");
+            fprintf (arq, "\t\t1.5 Resultado: 'Pag [x][y] -> z'.\n");
+
+        fprintf (arq, "\t2- Para as chaves:\n");
+            fprintf (arq, "\t\t2.1 Identificação para chave, '-';\n");
+            fprintf (arq, "\t\t2.2 Chave em si, 'x';\n");
+            fprintf (arq, "\t\t2.3 PRR, 'y';\n");
+            fprintf (arq, "\t\t2.4 Resultado: '- [x, y]'.\n");
+
+        for (ind = 0; ind < TAM_REG; ind++)
+            fprintf (arq, "*");
+
+        /*  Escrita das informações básicas da árvore */
+        fprintf (arq, "\n\nOrdem da Arvore-B = %d\n", ArvB::ordem);
+        fprintf (arq, "Quantidade de pag. cadastradas = %d\n\n", ArvB::qntpag);
+
+        /*  Escrita das páginas registradas */
+        pag_escreve (arq, raiz(), 0);
+
+        /*  Liberação do arquivo lógico */
+        fclose (arq);
+    }
+
+    /*  Função 'escreve_busca', escreve um arquivo .txt para a realização da busca */
+    void ArvB::escreve_busca (){
+        /*  'modo' armazena o modo de abertura do arquivo; 'nome' armazena o nome do arquivo */
+        string modo = "w";
+        char nome[] = "../Referências/Arvore_busca.txt";
+
+        /*  Abertura do arquivo */
+        FILE *arq = arq_abre(nome, modo, 'e');
+
+        /*  Escrita da árvore no arquivo */
+        if (arq){
+            pag_escreve_busca (arq, raiz());
+
+            fclose (arq);
+        }
+    }
+
+    /*  Função 'pag_criar', aloca a memória para uma página de ArvB */
+    Pagina * ArvB::pag_criar (){
+        /*  'novo' armazena a nova página a ser alocada */
+        Pagina *novo;
+
+        /*  Alocação da memória */
+        do{
+            novo = (Pagina *) malloc (sizeof (Pagina));
+        }while (novo == NULL);
+
+        /*	Inicialização das variáveis de controle, através da alocação de memória */
+        Inicio (novo) = NULL;
+        Pai (novo) = NULL;
+        Num (novo) = qnt_pg();
+        Qnt_cel (novo) = 0;
+
+        /*  Configurando a Árvore */
+        qnt_pg()++;
+
+        return novo;
+    }
+
+    /*  Função 'cel_criar', aloca a memória para uma célula de uma página de ArvB */
+    Celula * ArvB::cel_criar (){
+        /*  'novo' armazena a nova célula a ser alocada */
+        Celula *nova = NULL;
+
+        /*  Alocação da memória */
+        do{
+            nova = (Celula *) malloc (sizeof (Celula));
+        }while (nova == NULL);
+
+        /*	Inicialização das variáveis de controle, através da alocação de memória */
+        string_zera (ID(nova), 0, TAM_CHAVE);
+        Proximo(nova) = NULL;
+        Menores(nova) = Maiores(nova) = NULL;
+
+        return nova;
+    }
+
+    /*  Função 'pag_libera', desaloca a memória para uma página de ArvB */
+    void ArvB::pag_libera (Pagina *pg_atual, int cont){
+        /*  'pg_atual' armazena a página atual a ser liberada; 'cont' armazena
+        **  a contagem para a identação no momento de exibição */
+
+        /*  Existindo a página */
+        if (pg_atual){
+            /*  'vz' armazena a quantidade de vezes que a tabulação deve ser
+            **  exibida */
+            int vz;
+
+            /*  Exibindo a informação da página a ser liberada */
+            for (vz = 0; vz < cont;vz++)
+                printf ("\t");
+            printf ("Liberando a pag [%d]\n", Num (pg_atual));
+
+            /*  Liberando todas as células registradas na página */
+            for (Celula *aux_cel = Inicio(pg_atual); aux_cel; aux_cel = Proximo (aux_cel)){
+                /*  'aux_cel' e 'aux2_cel' auxiliam a percorre e a liberar a lista de células
+                **  registradas, respectivamente */
+                Celula *aux2_cel = aux_cel;
+
+                /*  Exibindo a informação da célula a ser liberada */
+                for (vz = 0; vz < cont + 1;vz++)
+                    printf ("\t");
+                printf ("Liberando a cel (%s)\n", ID (aux2_cel));
+
+                /*  Liberação das páginas com chaves menores que a corrente */
+                pag_libera (Menores (aux_cel), cont + 1);
+
+                /*  Sendo a última célula da lista, libera as páginas com chaves
+                **  maiores que a corrente */
+                if (!Proximo (aux_cel))
+                    pag_libera (Maiores (aux_cel), cont + 1);
+
+                /*  Liberação, em si, da célula e configuração da referência da célula
+                **  excluída */
+                free (aux2_cel);
+                aux2_cel = NULL;
+            }
+
+            /*  Liberação, em si, da página e configuração da referência da página
+            **  excluída */
+            free (pg_atual);
+            pg_atual = NULL;
+        }
+    }
+
+    /*  Função 'pag_insere', realiza a inserção de uma nova chave na árvore,
+    **  procurando o lugar correto para tal operação, caso seja efetuada */
+    void ArvB::pag_insere (Pagina *pg_at, Info *nova_ch){
+        /*  'pg_at' armazena a página para a análise da inserção; 'nova_ch' armazena
+        **  a nova chave a ser inserida */
+
+        /*  Já existindo células registradas na página */
+        if (Inicio(pg_at)){
+            /*  'aux_cel' auxilia na análise sobre a 'nova_ch' */
+            Celula *aux_cel = Inicio(pg_at);
+
+            /*  Verificação se a nova chave é menor que a primeira chave da página;
+            **  caso seja a mesma é adiciona no início */
+            if (chave_compara (Chave(nova_ch), ID(aux_cel)) < 0){
+                cel_insere_menores (pg_at, aux_cel, nova_ch);
+
+            /*  Caso contrário, os demais casos são analisados */
+            }else{
+                /*  Percorrendo toda a lista de células */
+                for (; aux_cel; aux_cel = Proximo(aux_cel)){
+                    /*  Estando na última célula da lista e não sendo igual a esta, então
+                    **  é adiciona como sendo uma chave maior que a última */
+                    if (!Proximo(aux_cel) && chave_compara (Chave(nova_ch), ID(aux_cel)) != 0){
+                        cel_insere_maiores (pg_at, aux_cel, nova_ch);
+                        break;
+
+                    /*  Caso contrário, os demais casos são avaliados */
+                    }else{
+                        /*  'compara' armazena o resultado da comparação tripla entre as chaves */
+                        int compara = chave_compara_meio (ID(aux_cel), ID(Proximo(aux_cel)), Chave(nova_ch));
+
+                        /*  Caso onde a 'nova_ch' esteja entre a célula corrente e sua sucessora, esta é
+                        **  inserida sobre as duas, com sendo maior que a célula corrente */
+                        if(compara < 0){
+                            cel_insere_maiores (pg_at, aux_cel, nova_ch);
+                            break;
+
+                        /*  Caso onde a 'nova_ch' já é igual a alguma chave já registrada */
+                        }else if (compara == 0){
+                            break;
+                        }
+                    }
+                }
+            }
+
+            /*  Avaliação da página corrente */
+            pag_avalia (pg_at);
+
+        /*  Caso contrário, uma nova célula é criada para a chave */
+        }else{
+            /*  Criação de uma nóva célula */
+            Celula *nova_cel = cel_criar ();
+
+            /*  Configuração da mesma */
+            info_copia (&Info (nova_cel), nova_ch);
+
+            /*  Configuração da página corrente */
+            Inicio (pg_at) = nova_cel;
+            Qnt_cel (pg_at)++;
+        }
+
+        return;
+    }
+
+    /*  Função 'cel_insere_menores', realiza a inserção de uma nova chave na
+    **  árvore, considerando ser menor que uma chave de referência */
+    void ArvB::cel_insere_menores (Pagina *pg_pai, Celula *cel_at, Info *nova_ch){
+        /*  'pg_pai' armazena a página corrente para a análise da inserção;
+        **  'cel_at' armazena a célula corrente para a análise da inserção;
+        **  'nova_ch' armazena a nova chave a ser inserida */
+
+        /*  Caso haja página com chaves menores que a 'cel_at', buscar o melhor lugar
+        **  entre elas */
+        if (Menores(cel_at)){
+            pag_insere (Menores (cel_at), nova_ch);
+
+        /*  Caso contrário, é a menor chave possível a ser inserida */
+        }else{
+            /*  Criação de uma célula */
+            Celula *nova = cel_criar ();
+
+            /*  Copia das informações do registro */
+            info_copia (&Info(nova), nova_ch);
+
+            /*  Configuração da página */
+            Proximo (nova) = Inicio (pg_pai);
+            Inicio (pg_pai) = nova;
+            Qnt_cel(pg_pai)++;
+        }
+        return;
+    }
+
+    /*  Função 'cel_insere_maiores', realiza a inserção de uma nova chave na
+    **  árvore, considerando ser maior que uma chave de referência */
+    void ArvB::cel_insere_maiores (Pagina *pg_pai, Celula *cel_at, Info *nova_ch){
+        /*  'pg_pai' armazena a página corrente para a análise da inserção;
+        **  'cel_at' armazena a célula corrente para a análise da inserção;
+        **  'nova_ch' armazena a nova chave a ser inserida */
+
+        /*  Caso haja página com chaves maiores que a 'cel_at', buscar o melhor lugar
+        **  entre elas */
+        if (Maiores(cel_at)){
+            pag_insere (Maiores (cel_at), nova_ch);
+
+        /*  Caso contrário, é inserida entre duas, possivelmente */
+        }else{
+            /*  Criação de uma célula */
+            Celula *nova = cel_criar ();
+
+            /*  Copia das informações do registro */
+            info_copia (&Info(nova), nova_ch);
+
+            /*  Configuração da página */
+            Proximo (nova) = Proximo (cel_at);
+            Proximo (cel_at) = nova;
+            Qnt_cel(pg_pai)++;
+        }
+        return;
+    }
+
+    /*  Função 'pag_insere_pai', realiza a promoção de uma chave */
+    void ArvB::pag_insere_pai (Pagina *pg_at, Celula *cel_at){
+        /*  'pg_at' armazena a página corrente para a promoção da chave;
+        **  'cel_ar' armazena a célula a ser promovida */
+
+        /*  Caso não exista uma página-pai para a 'pg_at', a mesma é criada */
+        if(!Pai(pg_at)){
+            /*  Criação de uma nova página-pai */
+            Pagina *nova_pai = pag_criar();
+
+            /*  Configuração do parentento entre as páginas da chave promovida */
+            Pai (pg_at) = Pai (Maiores (cel_at)) = nova_pai;
+
+            /*  Configuração da página-pai */
+            Inicio (nova_pai) = cel_at;
+            Qnt_cel (nova_pai)++;
+
+            /*  A nova página-pai, torna-se a raiz da árvore */
+            raiz () = nova_pai;
+
+        /*  Caso contrário, os demais casos são analisados */
+        }else{
+            /*  'pai' armazena a página-pai da 'pg_at', facilitando na manipulação
+            **  de dados futuros; 'aux_cel' auxiliar a manipular células */
+            Pagina *pai = Pai(pg_at);
+            Celula *aux_cel = NULL;
+
+            /*  Configuração do parentento entre as páginas da chave promovida */
+            Pai (Maiores (cel_at)) = pai;
+
+            /*  Percorrendo toda a lista de chaves da página-pai, encontrando o melhor
+            **  lugar para a inserção da chave promovida */
+            for (aux_cel = Inicio (pai); aux_cel; aux_cel = Proximo (aux_cel)){
+                /*  Estando no início da lista e a chave promovida é menor que a primeira
+                **  da lista, a mesma torna-se a primeira */
+                if (aux_cel == Inicio(pai) && chave_compara (ID(cel_at), ID(aux_cel)) < 0){
+                    /*  Configuração da lista de células */
+                    Menores (Inicio (pai)) = Maiores (cel_at);
+                    Proximo (cel_at) = Inicio (pai);
+
+                    /*  Configuração da página */
+                    Inicio (pai) = cel_at;
+                    Qnt_cel(pai)++;
+
+                    break;
+
+                /*  Ou ainda, sendo a última */
+                }else if(!Proximo(aux_cel)){
+                    /*  Configuração da lista de células */
+                    Proximo (aux_cel) = cel_at;
+                    Maiores (aux_cel) = Menores (cel_at);
+
+                    /*  Configuração da página */
+                    Qnt_cel(pai)++;
+
+                    break;
+
+                /*  Caso contrário, os demais casos são analisados */
+                }else{
+                    /*  'compara' armazena o resultado da comparação tripla entre as chaves */
+                    int compara = chave_compara_meio (ID(aux_cel), ID(Proximo(aux_cel)), ID(cel_at));
+
+                    /*  Estando entre duas chaves */
+                    if(compara < 0){
+                        /*  Configuração da lista de células */
+                        Maiores (aux_cel) = Menores (cel_at);
+                        Menores (Proximo (aux_cel)) = Maiores (cel_at);
+
+                        /*  Configuração da página */
+                        Proximo (cel_at) = Proximo (aux_cel);
+                        Proximo (aux_cel) = cel_at;
+                        Qnt_cel(pai)++;
+
+                        break;
+                    }
+                }
+            }
+
+            /*  Avaliação da página corrente */
+            return pag_avalia (Pai (pg_at));
+        }
+    }
+
+    Celula * ArvB::pag_busca (Pagina *pg_at, Info *alvo, int *contador){
+        Celula *aux_cel = Inicio (pg_at);
+        *(contador) = (*(contador)) + 1;
+        printf ("Contador atual -> %d\n", *(contador));
+
+        if (chave_compara (Chave(alvo), ID(aux_cel)) == 0){
+            return aux_cel;
+
+        }else{
+            for (; aux_cel; aux_cel = Proximo(aux_cel)){
+                /*  Estando na última célula da lista e não sendo igual a esta, então
+                **  é adiciona como sendo uma chave maior que a última */
+                if (!Proximo(aux_cel)){
+                    if (chave_compara (Chave(alvo), ID(aux_cel)) == 0){
+                        return aux_cel;
+                    }else if ((chave_compara (Chave(alvo), ID(aux_cel)) < 0) && Menores(aux_cel)){
+                        return pag_busca (Menores(aux_cel), alvo,contador);
+                    }else if ((chave_compara (Chave(alvo), ID(aux_cel)) > 0) && Maiores(aux_cel)){
+                        return pag_busca (Maiores(aux_cel), alvo,contador);
+                    }else
+                        return NULL;
+
+                /*  Caso contrário, os demais casos são avaliados */
+                }else{
+                    /*  'compara' armazena o resultado da comparação tripla entre as chaves */
+                    int compara = chave_compara_meio (ID(aux_cel), ID(Proximo(aux_cel)), Chave(alvo));
+
+                    /*  Caso onde a 'nova_ch' esteja entre a célula corrente e sua sucessora, esta é
+                    **  inserida sobre as duas, com sendo maior que a célula corrente */
+                    if(compara < 0){
+                        return pag_busca (Maiores(aux_cel), alvo,contador);
+
+                    /*  Caso onde a 'nova_ch' já é igual a alguma chave já registrada */
+                    }else if (compara == 0){
+                        if (chave_compara (Chave(alvo), ID(aux_cel)) == 0)
+                            return aux_cel;
+
+                        return Proximo (aux_cel);
+                    }
+                }
+            }
+        }
+    }
+
+    /*  Função 'pag_avalia', verifica a necessidade de promoção de células para uma página */
+    void ArvB::pag_avalia (Pagina *pg_at){
+        /*  'pg_at' armazena a página corrente para a promoção da chave */
+
+        /*  Tenho uma quantidade igual ou superior a ordem da árvore, uma promoção
+        **  é requisitada */
+        if (Qnt_cel(pg_at) >= ordem()){
+            /*  'cel_ant' e 'cel_at' auxiliar a percorrer as células, armazenado
+            **  uma anterior e uma atual, respectivamente; 'cont' armazena um contador
+            **  de interações */
+            Celula *cel_ant = Inicio(pg_at), *cel_at = Proximo(cel_ant);
+            int cont;
+
+            /*  Chegando a chave a ser promovida */
+            for (cont = 0; cont < (ordem() / 2) - 1; cont++){
+                cel_ant = Proximo (cel_ant);
+                cel_at = Proximo (cel_at);
+            }
+
+            /*  Divisão da página em duas menores, com 'cel_at' sendo o meio termo */
+            cel_divide (pg_at, cel_at, cont + 1);
+
+            /*  Configuraço da lista de células de 'pg_at' */
+            Proximo (cel_ant) = NULL;
+
+            /*  Inserindo a chave promovida à página-pai da 'pg_at' */
+            pag_insere_pai (pg_at, cel_at);
+
+            /*  Confere se todos os filhos possuem os pais corretamente */
+            return pag_confere_pai (Pai (pg_at));
+        }
+        return;
+    }
+
+    /*  Função 'pag_confere_pai', se todos os filhos, a partir de uma página-pai, referenciam
+    **  os pais corretos */
+    void ArvB::pag_confere_pai (Pagina *pg_pai){
+        /*  'pg_pai' armazena a página-pai correta */
+
+        /*  Percorrendo todas as células da 'pg_pai', através da 'aux_cel' */
+        for (Celula *aux_cel = Inicio (pg_pai); aux_cel; aux_cel = Proximo(aux_cel)){
+            /*  Tendo chaves menores que a chave corrente */
+            if (Menores (aux_cel)){
+                /*  A referência é reconfigurada, assim como para os descendentes */
+                Pai (Menores (aux_cel)) = pg_pai;
+                pag_confere_pai (Menores (aux_cel));
+            }
+
+            /*  Tendo chaves maiores que a chave corrente */
+            if (Maiores (aux_cel)){
+                /*  A referência é reconfigurada, assim como para os descendentes */
+                Pai (Maiores (aux_cel)) = pg_pai;
+                pag_confere_pai (Maiores (aux_cel));
+            }
+        }
+    }
+
+    /*  Função 'cel_divide', realiza a divisão uma página em duas, visto que a original
+    **  excedeu o limite */
+    void ArvB::cel_divide (Pagina *pg_at, Celula *cel_at, int cont){
+        /*  'pg_at' armazena a página original a ser dividida; 'cel_at' armazena a chave
+        **  pivô da separação; 'cont' armazena a quantidade de chaves que permanecerão na
+        **  'pg_at'; 'nova_pg' armazena a nova página criada */
+        Pagina *nova_pg = pag_criar ();
+
+        /*  Configuração da nova página */
+        Inicio (nova_pg) = Proximo (cel_at);
+        Qnt_cel (nova_pg) = Qnt_cel(pg_at) - (cont + 1);
+
+        /*  Configuração da página  original */
+        Qnt_cel (pg_at) = cont;
+
+        /*  Configuração da célula-pivô */
+        Proximo (cel_at) = NULL;
+        Menores (cel_at) = pg_at;
+        Maiores (cel_at) = nova_pg;
+    }
+
+    /*  Função 'pag_exibe', realiza a exibição de uma página na saída padrão */
+    void ArvB::pag_exibe (Pagina *pg_atual, int cont){
+        /*  'pg_atual' armazena a página a ser exibida; 'cont' armazena o contador da
+        **  identação; 'ind' armazena um índice a ser manipulado; 'aux_cel' auxilia a
+        **  percorrer a lista de células */
+        int ind;
+        Celula *aux_cel;
+
+        /*  Exibindo descrição da página */
+        for (ind = 0; ind < cont; ind++)
+            printf ("\t");
+
+        if (Pai(pg_atual)){
+            printf ("Pag [%d][%d] -> %d\n", Num (pg_atual), Num (Pai (pg_atual)), Qnt_cel (pg_atual));
+
+        }else{
+            printf ("Pag [%d][-] -> %d\n", Num (pg_atual), Qnt_cel (pg_atual));
+        }
+        /*  Exibindo todas as células */
+        for (aux_cel = Inicio(pg_atual); aux_cel != NULL; aux_cel = Proximo(aux_cel)){
+            /*  Havendo chaves menores, as mesmas são escritas */
+            if (Menores (aux_cel)){
+                pag_exibe (Menores (aux_cel), cont + 2);
+            }
+
+            /*  Identificação da célula */
+            for (ind = 0; ind < cont + 1; ind++)
+                printf ("\t");
+            printf ("- [%s,  %d]\n", ID (aux_cel), Seek(aux_cel));
+
+            /*  Sendo a última chave e havendo chaves maiores,
+            **  as mesmas são exibidas */
+            if (!Proximo (aux_cel) && Maiores (aux_cel)){
+                pag_exibe (Maiores (aux_cel), cont + 2);
+            }
+        }
+    }
+
+    /*  Função 'pag_escreve', realiza a impressão de uma página num arquivo de texto */
+    void ArvB::pag_escreve (FILE *arq, Pagina *pg_atual, int cont){
+        /*  'arq' armazena o arquivo lógico a ser manipulado; 'pg_atual' armazena a
+        **  página a ser exibida; 'cont' armazena o contador da identação; 'ind'
+        **  'ind' armazena um índice a ser manipulado; 'aux_cel' auxilia a percorrer a
+        **  lista de células */
+        int ind;
+        Celula *aux_cel;
+
+        /*  Escrevendo descrição da página */
+        for (ind = 0; ind < cont; ind++)
+            fprintf (arq, "\t");
+
+        if (Pai(pg_atual)){
+            fprintf (arq, "Pag [%d][%d] -> %d\n", Num (pg_atual), Num (Pai (pg_atual)), Qnt_cel (pg_atual));
+
+        }else{
+            fprintf (arq, "Pag [%d][-] -> %d\n", Num (pg_atual), Qnt_cel (pg_atual));
+        }
+
+        /*  Escrevendo todas as células */
+        for (aux_cel = Inicio(pg_atual); aux_cel != NULL; aux_cel = Proximo(aux_cel)){
+            /*  Havendo chaves menores, as mesmas são escritas */
+            if (Menores (aux_cel)){
+                pag_escreve (arq, Menores (aux_cel), cont + 2);
+            }
+
+            /*  Identificação da célula */
+            for (ind = 0; ind < cont + 1; ind++)
+                fprintf (arq, "\t");
+            fprintf (arq, "- [%s,  %d]\n", ID (aux_cel), Seek(aux_cel));
+
+            /*  Sendo a última chave e havendo chaves maiores,
+            **  as mesmas são exibidas */
+            if (!Proximo (aux_cel) && Maiores (aux_cel)){
+                pag_escreve (arq, Maiores (aux_cel), cont + 2);
+            }
+        }
+    }
+
+    /*  Função 'pag_escreve_busca', realiza a impressão de uma página no arquivo de busca */
+    void ArvB::pag_escreve_busca (FILE *arq, Pagina *pg_at){
+        /*  'arq' armazena o arquivo a ser escrito; 'pg_at' armazena a página atual a ser
+        **  escrita */
+
+        /*  Se a página atual não for a raiz, escrever uma quebra de linha */
+        if (pg_at != raiz())
+            fprintf(arq, "\n");
+
+        /*  Identificando a página */
+        fprintf(arq, "%.2d (%.2d) - ", Num(pg_at), Qnt_cel(pg_at));
+
+        /*  'aux_cel' auxilia na impressão na página */
+        Celula *aux_cel;
+
+        /*  Impressão de todas as células armazenadas */
+        for (aux_cel = Inicio(pg_at); aux_cel; aux_cel = Proximo (aux_cel)){
+            /*  Identificação da célula corrente */
+            fprintf (arq, "[%s, %d]", ID (aux_cel), Seek(aux_cel));
+
+            /*  Formatação seguinte */
+            if (Proximo(aux_cel))
+                fprintf (arq, ", ");
+            else
+                fprintf (arq, " - ");
+        }
+
+        /*  Impressão das páginas filhas */
+        for (aux_cel = Inicio(pg_at); aux_cel; aux_cel = Proximo (aux_cel)){
+            /*  As com chaves menores que a chave corrente */
+            if (Menores(aux_cel))
+                fprintf (arq, "%.2d (%.2d)", Num (Menores (aux_cel)), Qnt_cel (Menores (aux_cel)));
+
+            /*  Formatação para a seguinte */
+            if (Menores(aux_cel) && Proximo(aux_cel))
+                fprintf (arq, ", ");
+            /*  Considerando a existência de uma com chaves maiores */
+            else if (Maiores(aux_cel))
+                fprintf (arq, ", %.2d (%.2d)", Num (Maiores (aux_cel)), Qnt_cel (Maiores (aux_cel)));
+        }
+
+        /*  Impressão das páginas filhas, em si */
+        for (aux_cel = Inicio(pg_at); aux_cel; aux_cel = Proximo (aux_cel)){
+            /*  As de chaves menores que a corrente */
+            if (Menores(aux_cel))
+                pag_escreve_busca (arq, Menores(aux_cel));
+
+            /*  Aa de chaves maiores */
+            if (!Proximo(aux_cel) && Maiores(aux_cel))
+                pag_escreve_busca (arq, Maiores (aux_cel));
+        }
+    }
+
+    /*  Função 'info_copia', realiza a copia de informações de uma chave para outra */
+    void ArvB::info_copia (Info *destino, Info *fonte){
+        /*  'destino' armazena a chave que receberá os dados; 'fonte' armazena a chave
+        **  que fornecerá os dados */
+
+        /*  Copia das chaves */
+        strcpy (Chave(destino), Chave(fonte));
+
+        /*  Copia dos deslocamentos */
+        Deslocamento (destino) = Deslocamento (fonte);
+    }

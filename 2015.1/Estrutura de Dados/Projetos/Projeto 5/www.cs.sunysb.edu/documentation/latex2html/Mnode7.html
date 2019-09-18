@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Switches for Linking to other documents</TITLE>
+<META NAME="description" CONTENT="Switches for Linking to other documents">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="next" HREF="Mnode8.html">
+<LINK REL="previous" HREF="Mnode6.html">
+<LINK REL="up" HREF="Mnode2.html">
+<LINK REL="next" HREF="Mnode8.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html122"
+ HREF="Mnode8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html118"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html112"
+ HREF="Mnode6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html120"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html121"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html123"
+ HREF="Mnode8.html">Switches for Help and</A>
+<B> Up:</B> <A NAME="tex2html119"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html113"
+ HREF="Mnode6.html">Switches controlling Navigation Panels</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000132500000000000000">&#160;</A><A NAME="otherdocs">&#160;</A>
+<BR>
+Switches for Linking to other documents
+</H3>
+When processing a single stand-alone document, the switches described in this
+section should not be needed at all, since the automatically generated navigation panels, 
+described <A HREF="Mnode6.html#navoptions">on the previous page</A>
+should generate all the required navigation links.
+However if a document is to be regarded as part of a much larger document,
+then links from its first and final pages, to locations in other parts
+of the larger (virtual) document, 
+need to be provided explicitly for some of the buttons in the navigation panel.
+
+<P>
+The following switches allow for such links to other documents,
+by providing the title and URL for navigation panel hyperlinks.
+In particular, the ``Document Segmentation''
+<A HREF="Hnode11.html#Segmentation">feature</A> 
+necessarily makes great use of these switches.
+It is usual for the text and targets of these navigation hyperlinks
+to be recorded in a <A HREF="node10.html#GGGMakefile"
+ NAME="3483"><TT>Makefile</TT></A>, 
+to avoid tedious typing of long command-lines having many switches.
+
+<P>
+<DL><DT>
+<A NAME="1456">&#160;</A><A NAME="2120">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-up_url <TT>
+&lt;<I>URL</I>&gt;</TT><A NAME="cs_upURL">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_EXTERNAL_UP_LINK"
+ NAME="3499"><TT>$EXTERNAL_UP_LINK</TT></A><TT> = &#34;
+&lt;<I>URL</I>&gt;&#34;;</TT></FONT>
+<BR>
+Specifies a universal resource locator (URL) to associate
+with the <I>``UP''</I> button in the navigation panel(s).
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-up_title <TT>
+&lt;<I>string</I>&gt;</TT><A NAME="cs_uptitle">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_EXTERNAL_UP_TITLE"
+ NAME="3517"><TT>$EXTERNAL_UP_TITLE</TT></A><TT> = &#34;
+&lt;<I>string</I>&gt;&#34;;</TT></FONT>
+<BR>
+Specifies a title associated with this URL.
+
+<P>
+<A NAME="2123">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-prev_url <TT>
+&lt;<I>URL</I>&gt;</TT><A NAME="cs_prevURL">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_EXTERNAL_PREV_LINK"
+ NAME="3535"><TT>$EXTERNAL_PREV_LINK</TT></A><TT> = &#34;
+&lt;<I>URL</I>&gt;&#34;;</TT></FONT>
+<BR>
+Specifies a URL to associate
+with the <I>``PREVIOUS''</I> button in the navigation panel(s).
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-prev_title <TT>
+&lt;<I>string</I>&gt;</TT><A NAME="cs_prevtitle">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_EXTERNAL_PREV_TITLE"
+ NAME="3553"><TT>$EXTERNAL_PREV_TITLE</TT></A><TT> = &#34;
+&lt;<I>string</I>&gt;&#34;;</TT></FONT>
+<BR>
+Specifies a title associated with this URL.
+
+<P>
+<A NAME="2126">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-down_url <TT>
+&lt;<I>URL</I>&gt;</TT><A NAME="cs_downURL">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_EXTERNAL_DOWN_LINK"
+ NAME="3571"><TT>$EXTERNAL_DOWN_LINK</TT></A><TT> = &#34;
+&lt;<I>URL</I>&gt;&#34;;</TT></FONT>
+<BR>
+Specifies a URL for the <I>``NEXT''</I> button in the navigation panel(s).
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-down_title <TT>
+&lt;<I>string</I>&gt;</TT><A NAME="cs_downtitle">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_EXTERNAL_DOWN_TITLE"
+ NAME="3589"><TT>$EXTERNAL_DOWN_TITLE</TT></A><TT> = &#34;
+&lt;<I>string</I>&gt;&#34;;</TT></FONT>
+<BR>
+Specifies a title associated with this URL.
+
+<P>
+<A NAME="2129">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-contents <TT>
+&lt;<I>URL</I>&gt;</TT><A NAME="cs_contentsURL">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_EXTERNAL_CONTENTS"
+ NAME="3607"><TT>$EXTERNAL_CONTENTS</TT></A><TT> = &#34;
+&lt;<I>URL</I>&gt;&#34;;</TT></FONT>
+<BR>
+Specifies a URL for the <I>``CONTENTS''</I> button,
+for document segments that would not otherwise have one.
+
+<P>
+<A NAME="2131">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-index <TT>
+&lt;<I>URL</I>&gt;</TT><A NAME="cs_indexURL">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_EXTERNAL_INDEX"
+ NAME="3625"><TT>$EXTERNAL_INDEX</TT></A><TT> = &#34;
+&lt;<I>URL</I>&gt;&#34;;</TT></FONT>
+<BR>
+Specifies a URL for the <I>``INDEX''</I> button, 
+for document segments that otherwise would not have an index.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR><A NAME="1520">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/pinkball.gif" ALT="*">
+<B>-biblio <TT>
+&lt;<I>URL</I>&gt;</TT><A NAME="cs_biblioURL">&#160;</A></B>
+<DD><FONT COLOR="#ff0000">Same as setting: <A HREF="node10.html#GGG_EXTERNAL_BIBLIO"
+ NAME="3643"><TT>$EXTERNAL_BIBLIO</TT></A><TT> = &#34;
+&lt;<I>URL</I>&gt;&#34;;</TT></FONT>
+<BR>
+Specifies the URL for the bibliography page to be used,
+when not explicitly part of the document itself.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR></DL>
+
+<P></P>
+
+<B>Warning: </B>
+On some systems it is difficult to give text-strings <TT>
+&lt;<I>string</I>&gt;</TT> containing
+space characters, on the command-line or via a <A HREF="node10.html#GGGMakefile"
+ NAME="3655"><TT>Makefile</TT></A>.
+One way to overcome this is to use the corresponding variable.
+Another way is to replace the spaces with underscores (<code>_</code>).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html122"
+ HREF="Mnode8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html118"
+ HREF="Mnode2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html112"
+ HREF="Mnode6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html120"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html121"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html123"
+ HREF="Mnode8.html">Switches for Help and</A>
+<B> Up:</B> <A NAME="tex2html119"
+ HREF="Mnode2.html">Command-Line Options</A>
+<B> Previous:</B> <A NAME="tex2html113"
+ HREF="Mnode6.html">Switches controlling Navigation Panels</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

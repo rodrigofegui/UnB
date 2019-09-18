@@ -1,0 +1,90 @@
+/*  Inclusão das bibliotecas requisitadas: */
+#include "Diretorios.hpp"
+
+/*  Definição para simplificação na manipulação das mesmas */
+typedef struct conect Conectado;
+typedef struct reg Regiao;
+typedef struct grafo Grafo;
+
+/*  Especificações de estruturas utilizadas */
+/*  Struct grafo: 'quantreg' armazena quantidade de regioes na imagem;
+**  'areamaior' armazena a área da maior regiao cadastrada; 'areatotal'
+**  armazena a área total das regioes; 'inicio' armazena a lista de regioes */
+struct grafo{
+    int quantreg;
+    int areamaior;
+    int areabranca;
+    Regiao *inicio;
+};
+
+/*  Struct reg: 'quantconec' armazena a quantidade de pixels conectados nessa região;
+**  'pivo' armazena o pixel que originou a região; 'proximo' armazena a próxima região da imagem */
+struct reg{
+    int quantconec;
+    Ponto pivo;
+    Regiao *proximo;
+};
+
+/*  Struct conect: 'pixel' armazena o pixel; 'proximo' armazena o proximo pixel da regiao */
+struct conect{
+    Ponto pixel;
+    Conectado *proximo;
+};
+
+
+/*  Protótipos das funções manipuladas por este arquivo: */
+/*  Função 'conectado_cria', aloca memoria para um novo elemento
+**  da regiao */
+Conectado * conectado_cria (Ponto);
+
+/*  Função 'regiao_cria', aloca memoria para uma nova regiao */
+Regiao * regiao_cria (Ponto);
+
+/*  Função 'grafo_cria', aloca memória para um novo grafo */
+Grafo * grafo_cria ();
+
+/*  Função 'conectado_libera', desaloca a memoria para um elemento */
+void conectado_libera (Conectado *);
+
+/*  Função 'regiao_libera', desaloca a memoria para uma regiao */
+void regiao_libera (Regiao *);
+
+/*  Função 'grafo_libera', desaloca a memoria para um grafo */
+void grafo_libera (Grafo *);
+
+/*  Função 'grafo_constroi', constroi as regioes */
+void grafo_constroi (Grafo *, Ponto, Ponto);
+
+/*  Função 'conectado_escreve', escreve num arquivo um dado elemento de uma regiao */
+void conectado_escreve (FILE *, Conectado *);
+
+/*  Função 'regiao_escreve', escreve num arquivo uma dada regiao */
+void regiao_escreve (FILE *, Regiao *);
+
+/*  Função 'grafo_escreve', escreve num arquivo o grafo formado */
+void grafo_escreve (Grafo *);
+
+/*  Função 'grafo_escreve_resumo', escreve num arquivo o cabeçalho de um grafo formado */
+void grafo_escreve_resumo (FILE *, Grafo *);
+
+/*  Função 'ponto_compara', compara dois pontos */
+bool ponto_compara (Ponto, Ponto);
+
+/*  Função 'grafo_calcula_areas', determina a informação das áreas */
+void grafo_calcula_areas (Grafo *);
+
+
+
+/*  ESTAM NO ARQUIVO 'IMAGENS.CPP' */
+/*  Função 'imagem_mapea_regioes', mapeamento a imagem por regiões */
+void imagem_mapea_regioes (Mat, Grafo *);
+
+/*  Função 'imagem_percorre_regioes', percorre uma região encontrada */
+void imagem_percorre_regioes (Grafo *, Mat, Mat *, Ponto, Ponto);
+
+/*  Função 'levantamento_escreve', escreve num documento as informações importantes sobre
+**  as imagens */
+void levantamento_escreve (FILE *, Grafo *, char *);
+
+/*  Funçao 'imagem_classifica', classifica a imagem de acordo como uma classe ou outra */
+void imagem_classifica (Grafo *, FMeasure *, char *);

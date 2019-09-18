@@ -1,0 +1,97 @@
+<html><BODY bgcolor="ffffff">
+<PRE>
+SSH-ADD(1)                     SSH                     SSH-ADD(1)
+
+
+
+<B>NAME</B>
+       ssh-add - adds identities for the authentication agent
+
+
+<B>SYNOPSIS</B>
+       <B>ssh-add </B>[<B>-p</B>] [<B>-l</B>] [<B>-d</B>] [<B>-D</B>] [<B>file</B>...]
+
+
+<B>DESCRIPTION</B>
+       <B>Ssh-add  </B>adds identities to the authentication agent, <B>ssh-</B>
+       <B>agent.  </B>When run  without  arguments,  it  adds  the  file
+       <I>$HOME/.ssh/identity</I>.   Alternative file names can be given
+       on the command line.  If any file requires  a  passphrase,
+       <B>ssh-add  </B>asks for the passphrase from the user.  If the -p
+       option is given then the passphrase is  read  from  stdin,
+       otherwise  if  the  user  is  using X11, the passphrase is
+       requested using a small X11 program; otherwise it is  read
+       from  the user's tty.  (Note: it may be necessary to redi­
+       rect stdin from /dev/null to get the passphrase  requested
+       using X11.)
+
+       The  authentication  agent  must be running and must be an
+       ancestor of the current process for <B>ssh-add </B>to work.
+
+
+<B>OPTIONS</B>
+       <B>-p   </B>Read passphrase from stdin (or pipe).
+
+       <B>-l   </B>Lists all identities  currently  represented  by  the
+            agent.
+
+       <B>-d   </B>Instead  of adding the identity, removes the identity
+            from the agent.
+
+       <B>-D   </B>Deletes all identities from the agent.
+
+
+<B>RETURN STATUS</B>
+       <B>Ssh-add </B>returns one of the following exit statuses.  These
+       may be useful in scripts.
+
+       0      The requested operation was performed successfully.
+
+       1      No connection could be made to  the  authentication
+              agent.  Presumably there is no authentication agent
+              active in the execution environment of <B>ssh-add.</B>
+
+       2      The user did not supply a required passphrase.
+
+       3      An identify file could not be found, was not  read­
+              able, or was in bad format.
+
+       4      The agent does not have the requested identity.
+
+       5      An unspecified error has occurred; this is a catch-
+              all for errors not listed above.
+
+
+<B>FILES</B>
+       <I>$HOME/.ssh/identity</I>
+              Contains the RSA  authentication  identity  of  the
+              user.   This  file should not be readable by anyone
+              but  the  user.   It  is  possible  to  specify   a
+              passphrase when generating the key; that passphrase
+              will be used to encrypt the private  part  of  this
+              file.   This  is  the default file added by <B>ssh-add</B>
+              when no other files have been specified.
+
+              If <B>ssh-add </B>needs a passphrase,  it  will  read  the
+              passphrase  from the current terminal if it was run
+              from a terminal.  If <B>ssh-add </B>does not have a termi­
+              nal  associated with it but DISPLAY is set, it will
+              open an X11 window to read the passphrase.  This is
+              particularly  useful  when  calling  <B>ssh-add </B>from a
+              .Xsession or related script.  (Note  that  on  some
+              machines  it may be necessary to redirect the input
+              from /dev/null to make this work.)
+
+
+<B>AUTHOR</B>
+       Tatu Ylonen &lt;ylo@ssh.fi&gt;
+
+
+<B>SEE ALSO</B>
+       <B>ssh-agent</B>(1), <B>ssh-keygen</B>(1), <B>ssh</B>(1), <B>sshd</B>(8)
+
+
+
+SSH                      November 8, 1995              SSH-ADD(1)
+</PRE>
+</BODY></html>

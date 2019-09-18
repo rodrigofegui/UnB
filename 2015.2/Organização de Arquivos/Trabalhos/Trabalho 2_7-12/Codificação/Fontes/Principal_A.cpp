@@ -1,0 +1,149 @@
+/*****************************************************************
+**  Organização de Arquivos - Turma C - 116327
+**  Professor:
+**              Camilo Chang Dórea
+**  Responsável:
+**              Pedro Aurélio Coelho Almeida - 140158103
+**              Rodrigo Ferreira Guimarães - 140170740
+**  Finalidades:
+**              Dado um arquivo base deve ser comprido os
+**              aspectos:
+**              -   Criação de um índice primário, sobre a forma
+**                  de uma Árvore-B;
+**              -   Disponibilizar o índice formado via arquivo
+**                  como via monitor;
+**              -   Possibilidade de busca de registro;
+**              -   Assim como, a inclusão de registros;
+*****************************************************************/
+
+/*****************************************************************
+**      Inclusão das bibliotecas auxiliares
+*****************************************************************/
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+    #include "../Bibliotecas/Arvore_A.hpp"
+    #include "../Bibliotecas/Basica_A.hpp"
+
+
+/*****************************************************************
+**      Namespaces utilizados
+*****************************************************************/
+    using namespace std;
+
+/*****************************************************************
+**      Cabeçalho das Funções
+*****************************************************************/
+    bool inicio ();
+    int questiona_tarefa ();
+
+
+/*****************************************************************
+**      Programa principal
+*****************************************************************/
+int main (){
+    /*  Questionando sobre o início do projeto, apresentando as principais características */
+    if(inicio()){
+        /*  'arvore' armazena a arvore a ser manipulada; 'nome_arqs' armazena os nomes dos
+        **  principais arquivos de manipulação; 'resp' armazena a resposta sobre futuros
+        **  questionários */
+        ArvB arvore;
+        string nome_arqs[] = {"../Referências/Lista_base.txt",
+                             "../Referências/Arvore_Pronta.txt"};
+        int resp;
+        //int ordem = 5;
+
+        limpa_tela ();
+        printf ("Dado qu escolheu começar, informe a ordem da Arvore-B a ser considerada.\n");
+        printf ("Lembrando que deve estar entre 2 e 15.\n");
+            arvore.criar (ler_intervalo (2, 15), nome_arqs[0]);
+            //arvore.criar (ordem, nome_arqs[0]);
+
+        /*  Inicialização da Árvore, baseada na leitura do arquivo-base */
+        arvore.inicializa ();
+
+        /*  Processamento principal, enquanto houver interesse */
+        do{
+            /*  'registro' armazena os dados brutos dos registros; 'chave' armazena a codificação do
+            **  'registro' em chave; 'busca' armazena o retorno da busca */
+            Dados registro;
+            Info chave;
+            int seeks = 0;
+            /*  Questionamento sobre como proceder: Inserir, Buscar, Exibir ou Sair */
+            resp = questiona_tarefa ();
+
+			printf ("Foi armazena a escolha %d\n", resp);
+			pausa ();
+
+            /*  Levantamento das informações dos registros */
+            dados_questiona (&registro, &chave, resp);
+
+            /*  Analisando qual operação deve ser realizada */
+            switch (resp){
+                /*  Sendo escolhido a Exibição em Tela */
+                case 1:
+                    arvore.exibe ();
+                    break;
+
+                /*  Sendo escolhido a Busca */
+                case 2 :
+                    /*  Escrita da árvore, na configuração atual, para a busca no .txt */
+                    arvore.escreve_busca ();
+                    seeks = arvore.busca (&chave);
+                    /* se retorna 0 eh PK não funcionou */
+                    printf ("Foram necessários %d seeks para encontrar o registro \n", seeks);
+                    pausa ();
+                    break;
+
+                /*  Sendo escolhido a Inserção */
+                case 3:
+                    /*  Inserção do registro no arquivo-base e da chave na árvore */
+                    arvore.insere_dupla (registro, &chave);
+                    break;
+            }
+        }while (resp);
+
+        /*  Escrita da árvore, após todas as manipulações, num arquivo com nome pré-definido */
+        arvore.escreve (&nome_arqs[1][0]);
+
+        /*  Liberação de todas a memória restante alocada */
+        arvore.libera();
+    }
+    return 0;
+}
+
+/*****************************************************************
+**      Definição das Funções
+*****************************************************************/
+    bool inicio (){
+        /*  Questionamento sobre inicio do projeto */
+        limpa_tela ();
+        printf ("Bem-vindo ao gerenciamento de arquivos!\n");
+        printf ("O presente trabalho irah utilizar o arquivo 'Lista_base.txt' como base do\n");
+        printf ("processamento. Realizando as seguintes tarefas:\n");
+            printf ("\t1 - Criar um indice primario, implementado como uma Arvore-B;\n");
+            printf ("\t2 - Disponibilizar o indice formado via arquivo como via monitor;\n");
+            printf ("\t3 - Possibilitar ao usuario:\n");
+                printf ("\t\t* Busca de registros no banco de dados;\n");
+                printf ("\t\t* Inclusão de novos registros.\n");
+            printf ("\t4 - Todas as manipulações sobre o arquivo-base serão salvas no\n");
+            printf ("arquivo '../Referências/Lista_manipulada.txt', de forma a manter\n");
+            printf ("o original livre de erros futuros.\n");
+        temporizador (0.8);
+
+        printf ("\n\nDadas as caracteristicas do projeto, deseja inicia-lo? S/N ou s/n\n");
+            return ler_simounao ();
+    }
+
+    int questiona_tarefa (){
+        limpa_tela ();
+        printf ("Temos as seguintes opcoes de tarefas:\n");
+            printf ("\t3 - Inserção;\n");
+            printf ("\t2 - Busca;\n");
+            printf ("\t1 - Exibição no Monitor;\n");
+            printf ("\t0 - Sair.\n");
+        temporizador (0.8);
+
+        printf ("\n\nDadas as caracteristicas das opcoes, qual sua escolha? (0-2)\n");
+            return (ler_intervalo (0, 3));
+    }

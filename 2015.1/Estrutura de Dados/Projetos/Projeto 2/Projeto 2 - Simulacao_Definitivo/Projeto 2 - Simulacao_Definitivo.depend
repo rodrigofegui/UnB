@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1429459969 source:/home/lucsantos/Dropbox/Projeto 2/Projeto 2 - Simulacao_Definitivo/Simulacao.c
+	<stdio.h>
+	<stdlib.h>
+	"Eventos.h"
+
+1429394462 /home/lucsantos/Dropbox/Projeto 2/Projeto 2 - Simulacao_Definitivo/Eventos.h
+	"Filas.h"
+
+1429393073 /home/lucsantos/Dropbox/Projeto 2/Projeto 2 - Simulacao_Definitivo/Filas.h
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+	<string.h>
+
+1429460212 source:/home/lucsantos/Dropbox/Projeto 2/Projeto 2 - Simulacao_Definitivo/Eventos.c
+	"Eventos.h"
+
+1429455851 source:/home/lucsantos/Dropbox/Projeto 2/Projeto 2 - Simulacao_Definitivo/Filas.c
+	"Eventos.h"
+
+1429459812 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 2/Projeto 2 - Simulacao_Definitivo/Eventos.c
+	"Eventos.h"
+
+1429394462 /home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 2/Projeto 2 - Simulacao_Definitivo/Eventos.h
+	"Filas.h"
+
+1429393073 /home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 2/Projeto 2 - Simulacao_Definitivo/Filas.h
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+	<string.h>
+
+1429455851 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 2/Projeto 2 - Simulacao_Definitivo/Filas.c
+	"Eventos.h"
+
+1429393838 source:/home/rodrigo/Dropbox/UnB/UnB 2015.1/Estrutura de Dados/Projetos/Projeto 2/Projeto 2 - Simulacao_Definitivo/Simulacao.c
+	<stdio.h>
+	<stdlib.h>
+	"Eventos.h"
+
+1429394661 source:/home/lucas-old/Dropbox/Projeto 2/Projeto 2 - Simulacao_Definitivo/Eventos.c
+	"Eventos.h"
+
+1429394462 /home/lucas-old/Dropbox/Projeto 2/Projeto 2 - Simulacao_Definitivo/Eventos.h
+	"Filas.h"
+
+1429393073 /home/lucas-old/Dropbox/Projeto 2/Projeto 2 - Simulacao_Definitivo/Filas.h
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+	<string.h>
+
+1429396267 source:/home/lucas-old/Dropbox/Projeto 2/Projeto 2 - Simulacao_Definitivo/Filas.c
+	"Eventos.h"
+
+1429395283 source:/home/lucas-old/Dropbox/Projeto 2/Projeto 2 - Simulacao_Definitivo/Simulacao.c
+	<stdio.h>
+	<stdlib.h>
+	"Eventos.h"
+
+1429460212 source:c:\users\avell g1713 max\dropbox\unb\ed\projeto 2\projeto 2 - simulacao_definitivo\eventos.c
+	"Eventos.h"
+
+1429394462 c:\users\avell g1713 max\dropbox\unb\ed\projeto 2\projeto 2 - simulacao_definitivo\eventos.h
+	"Filas.h"
+
+1429393073 c:\users\avell g1713 max\dropbox\unb\ed\projeto 2\projeto 2 - simulacao_definitivo\filas.h
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+	<string.h>
+
+1429455851 source:c:\users\avell g1713 max\dropbox\unb\ed\projeto 2\projeto 2 - simulacao_definitivo\filas.c
+	"Eventos.h"
+
+1429459969 source:c:\users\avell g1713 max\dropbox\unb\ed\projeto 2\projeto 2 - simulacao_definitivo\simulacao.c
+	<stdio.h>
+	<stdlib.h>
+	"Eventos.h"
+

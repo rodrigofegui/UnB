@@ -1,0 +1,21 @@
+Funcionamento do simulador – 80% da nota
+
+	I - Testes Simples de Instruções – 20% da nota
+	I.I - Instruções Tipo-R geral – 2% da nota
+	I.II - Instruções Tipo-I Lógico-Aritméticas – 3% da nota
+	I.III - Instruções de Loads e Stores – 5% da nota
+	I.IV - Instruções de Desvios, Jumps e Syscall – 10% da nota
+	
+	II - Testes com Programas prontos (Fibonacci, primos e outros – 45% da nota
+	II.I - Teste dos primos – 10% da nota
+	II.II - Teste de Fibonacci – 20% da nota
+	II.III - Outros – 15% da nota
+	III - Testes de Dumps (memória e registradores) – 10% da nota
+	III.I - Memória – 5% da nota
+	III.II - Registradores – 5% da nota
+	IV – Execução do simulador (interface com usuário/geração arquivos) – 5% da nota
+
+Relatório – 20% da nota
+
+	I - Explicação do código – 10% da nota
+	II - Testes e resultados – 10% da nota

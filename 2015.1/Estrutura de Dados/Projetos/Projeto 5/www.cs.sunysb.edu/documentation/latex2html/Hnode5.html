@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Symbolic References shown as Hyperized Text</TITLE>
+<META NAME="description" CONTENT="Symbolic References shown as Hyperized Text">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="next" HREF="Hnode6.html">
+<LINK REL="previous" HREF="Hnode4.html">
+<LINK REL="up" HREF="hypextra.html">
+<LINK REL="next" HREF="Hnode6.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html153"
+ HREF="Hnode6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html149"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html143"
+ HREF="Hnode4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html151"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html152"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html154"
+ HREF="Hnode6.html">Hypertext Links in Bibliographic</A>
+<B> Up:</B> <A NAME="tex2html150"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html144"
+ HREF="Hnode4.html">Conditional Text</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000125000000000000000">&#160;</A><A NAME="IIIrefs">&#160;</A><A NAME="hyperized">&#160;</A><A NAME="2523">&#160;</A>
+<BR>
+Symbolic References shown as Hyperized Text
+</H2>
+<!--Table of Child-Links-->
+<UL>
+<LI><A NAME="tex2html155"
+ HREF="Hnode5.html#SECTION000125010000000000000"><TT>&#92;hyperref</TT></A>
+<LI><A NAME="tex2html156"
+ HREF="Hnode5.html#SECTION000125020000000000000"><TT>&#92;htmlref</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<A NAME="2630">&#160;</A>
+<A NAME="2525">&#160;</A><A NAME="1464">&#160;</A>
+<A NAME="1465">&#160;</A>
+<A NAME="1466">&#160;</A>
+<BR>
+In printed documents cross-references are shown 
+through a <EM>numeric or symbolic indirection</EM> 
+e.g. ``see Figure 1'' (numeric indirection), 
+or ``see section `Changes'&nbsp;'' (symbolic indirection).  
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> can mirror this mechanism using the same numeric 
+or symbolic references,
+or when these are not appropriate by using iconic references.
+
+<P>
+<A NAME="1470">&#160;</A>
+<A NAME="1471">&#160;</A>
+<BR>
+In a hypertext document however, cross-references can be shown 
+without any indirection, just by highlighting a relevant piece of text. 
+This can make a document more readable as it removes unnecessary
+information. 
+
+<P>
+<A NAME="2526">&#160;</A>
+
+<H4><A NAME="SECTION000125010000000000000">&#160;</A><A NAME="hyperref">&#160;</A>
+<BR>
+<TT>&#92;hyperref</TT>
+</H4>
+A single new L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X command <TT>&#92;hyperref</TT> can be used for
+specifying how a cross-reference should appear, 
+both in the printed document and in the hypertext version.
+For example, assuming that the label <code>{sec:cond}</code><A NAME="sec:cond">&#160;</A> 
+is defined somewhere within a document, 
+the command <TT>&#92;hyperref</TT>, taking 4 arguments,
+can be used in that document as follows:
+<A NAME="2528">&#160;</A>
+<A NAME="1481">&#160;</A>
+<PRE>
+\emph{Is the concept of
+\hyperref
+               % This will be highlighted in the hypertext version
+{conditional text}                      % argument #1
+               % This will be shown in the printed version 
+               % followed by a numeric reference ...      
+{conditional text (see Section }        % argument #2
+               % ... followed by this text
+{ for more information)}                % argument #3
+               % This is the common label 
+{sec:cond}                              % argument #4
+a good idea? }
+</PRE>
+
+<P>
+Here is how it will be shown:
+<BLOCKQUOTE>
+<EM>Is the concept of
+<A HREF="Hnode5.html#sec:cond">conditional text</A>
+a good idea? </EM>
+</BLOCKQUOTE>
+
+<P>
+In the printed version what would appear is:
+<BLOCKQUOTE>
+<EM>Is the concept of conditional text (see Section 4.2 for more information) 
+a good idea?</EM>
+</BLOCKQUOTE>
+
+<P><P>
+<BR>
+<BR>
+<HR WIDTH="50%" ALIGN="center">
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+
+An extended syntax for <TT>&#92;hyperref</TT> uses an optional argument, 
+which determines what information is to be placed in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version
+of the document. The value of this optional argument can also affect 
+the number of required arguments. 
+These forms are recognised:
+
+<P>
+<BLOCKQUOTE>
+<A NAME="hypernoref">&#160;</A><TT>&#92;hyperref</TT><code>[ref]{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>post-LaTeX</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+<BR>
+<TT>&#92;hyperref</TT><code>{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>post-LaTeX</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+<P>
+<BR>
+
+<P>
+<TT>&#92;hyperref</TT><code>[pageref]{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>post-LaTeX</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+<BR>
+<TT>&#92;hyperref</TT><code>[page]{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>post-LaTeX</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+<P>
+<BR>
+
+<P>
+<TT>&#92;hyperref</TT><code>[noref]{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+<BR>
+<TT>&#92;hyperref</TT><code>[no]{</code><TT>
+&lt;<I>HTML-text</I>&gt;</TT><code>}{</code><TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>
+<code>}{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>
+</BLOCKQUOTE>
+
+<P>
+The first two are the defaults, where L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X 
+uses <TT>&#92;ref</TT><code>{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>.
+With the next two L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X uses <TT>&#92;pageref</TT><code>{</code><TT>
+&lt;<I>label</I>&gt;</TT><code>}</code>,
+while with the final two L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X completely ignores the <TT>
+&lt;<I>label</I>&gt;</TT>,
+setting just the <TT>
+&lt;<I>LaTeX-text</I>&gt;</TT>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="2530">&#160;</A>
+<BR>
+For creating hyperlinks to other documents
+using symbolic reference <TT>
+&lt;<I>label</I>&gt;</TT>s, 
+see also the <TT>&#92;externalref</TT> 
+<A HREF="Hnode7.html#externref">command</A>.
+
+<P>
+
+<P>
+<BR>
+The preceding paragraph is an example of the use of the <TT>&#92;hyperref[page]</TT> option.
+Its source code is:
+<PRE>
+For creating hyperlinks to other documents
+using symbolic reference \Meta{label}s, 
+see also the \Lc{externalref} 
+\hyperref[page]{command}{command, described on page~}{}{externref}.
+</PRE>
+which appears in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset version as:
+<BLOCKQUOTE>
+For creating hyperlinks to other documents
+using symbolic reference <TT>
+&lt;<I>label</I>&gt;</TT>s, see also the
+<TT>&#92;externalref</TT> command, described on page&nbsp;31.
+</BLOCKQUOTE>
+
+<P></P>
+In fact both <TT>&#92;hyperref</TT> and the <TT>&#92;htmlref</TT> command, to be described next,
+permit textual hyperlinks based on symbolic <TT>
+&lt;<I>label</I>&gt;</TT>s from external files.
+
+<P>
+<A NAME="2531">&#160;</A>
+<A NAME="2532">&#160;</A>
+
+<H4><A NAME="SECTION000125020000000000000">&#160;</A><A NAME="htmlref">&#160;</A>
+<BR>
+<TT>&#92;htmlref</TT>
+</H4>
+Another command also defined in <A HREF="node10.html#GGGhtml.sty"
+ NAME="3237"><TT>html.sty</TT></A> is <TT>&#92;htmlref</TT> 
+which has the same effect as <TT>&#92;hyperref</TT>
+during the conversion to <TT>HTML</TT>.
+It takes two arguments, some text and a label. 
+In the <TT>HTML</TT> version the
+text will be ``hyperized'', pointing to the label. 
+In the paper version the text will be shown as it is 
+and the label will be ignored; e.g.
+<A NAME="2534">&#160;</A>
+<PRE>
+With \verb|\htmlref| \htmlref{it's easy to make links}{fig:example}.
+</PRE>
+which produces:
+<BLOCKQUOTE>
+With <TT>&#92;htmlref</TT> <A HREF="Enode7.html#fig:example">it's easy to make links</A>.
+</BLOCKQUOTE>
+In the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset version it will appear simply as:
+<BLOCKQUOTE>
+With <TT>&#92;htmlref</TT> it's easy to make links.
+</BLOCKQUOTE>
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html153"
+ HREF="Hnode6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html149"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html143"
+ HREF="Hnode4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html151"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html152"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html154"
+ HREF="Hnode6.html">Hypertext Links in Bibliographic</A>
+<B> Up:</B> <A NAME="tex2html150"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html144"
+ HREF="Hnode4.html">Conditional Text</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

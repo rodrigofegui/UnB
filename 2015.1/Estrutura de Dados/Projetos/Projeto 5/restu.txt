@@ -1,0 +1,6485 @@
+Foram analisadas 939 paginas web
+
+O TOP10, no PageRank, sao esses:
+1º Pagina, com PR = 7.711036:
+www.cs.sunysb.edu/documentation/BerkeleyDB/sleepycat/legal.html
+
+2º Pagina, com PR = 2.307938:
+www.cs.sunysb.edu/documentation/jdk/index.html
+
+3º Pagina, com PR = 2.190000:
+www.cs.sunysb.edu/welcome/quicktour/index.html
+
+4º Pagina, com PR = 2.062500:
+www.cs.sunysb.edu/undergrad/honors/honorspics/index.html
+
+5º Pagina, com PR = 1.935001:
+www.cs.sunysb.edu/documentation/jdk/relnotes/SMICopyright.html
+
+6º Pagina, com PR = 1.425000:
+www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/index.html
+
+7º Pagina, com PR = 0.801064:
+www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/index.html
+
+8º Pagina, com PR = 0.801064:
+www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html
+
+9º Pagina, com PR = 0.801064:
+www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html
+
+10º Pagina, com PR = 0.801064:
+www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html
+
+
+Continuando, segue todas as paginas e seus respectivos dados...
+
+1º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/sleepycat/legal.html', tem:
+	PageRank: 7.711036;
+	Nº Saidas: 1;
+	Nº Entradas: 12, sendo ela(s):
+'www.cs.sunysb.edu/documentation/BerkeleyDB/api_c/api_index.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/api_cxx/api_index.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/api_tcl/tcl_index.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/build_unix/intro.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/build_vxworks/intro.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/build_win/intro.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/debug/common.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/intro/products.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/upgrade.4.2/toc.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/sleepycat/legal.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/sleepycat/license.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/utility/index.html';
+
+
+
+2º Pagina
+'www.cs.sunysb.edu/documentation/jdk/index.html', tem:
+	PageRank: 2.307938;
+	Nº Saidas: 0;
+	Nº Entradas: 31, sendo ela(s):
+'www.cs.sunysb.edu/documentation/jdk/guide/2d/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/access/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/awt/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/beans/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/collections/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/dragndrop/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/extensions/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/idl/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/intl/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/io/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/jar/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/jdbc/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/jni/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/jvmpi/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/math/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/misc/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/net/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/reflection/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/refobs/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/resources/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/rmi/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/security/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/serialization/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/sound/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/swing/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/versioning/index.html', 'www.cs.sunysb.edu/documentation/jdk/relnotes/contacts.html', 'www.cs.sunysb.edu/documentation/jdk/relnotes/demos.html', 'www.cs.sunysb.edu/documentation/jdk/relnotes/features.html', 'www.cs.sunysb.edu/documentation/jdk/tooldocs/javadoc/index.html', 'www.cs.sunysb.edu/documentation/jdk/tooldocs/tools.html';
+
+
+
+3º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/index.html', tem:
+	PageRank: 2.190000;
+	Nº Saidas: 0;
+	Nº Entradas: 16, sendo ela(s):
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image1.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image10.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image11.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image12.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image13.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image14.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image15.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image16.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image2.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image3.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image4.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image5.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image6.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image7.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image8.html', 'www.cs.sunysb.edu/welcome/quicktour/imagepages/image9.html';
+
+
+
+4º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/index.html', tem:
+	PageRank: 2.062500;
+	Nº Saidas: 0;
+	Nº Entradas: 15, sendo ela(s):
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image1.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image10.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image11.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image12.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image13.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image14.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image15.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image2.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image3.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image4.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image5.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image6.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image7.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image8.html', 'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image9.html';
+
+
+
+5º Pagina
+'www.cs.sunysb.edu/documentation/jdk/relnotes/SMICopyright.html', tem:
+	PageRank: 1.935001;
+	Nº Saidas: 0;
+	Nº Entradas: 28, sendo ela(s):
+'www.cs.sunysb.edu/documentation/jdk/guide/2d/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/access/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/awt/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/beans/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/collections/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/dragndrop/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/extensions/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/idl/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/intl/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/io/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/jar/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/jdbc/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/jni/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/jvmpi/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/math/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/misc/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/net/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/reflection/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/refobs/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/resources/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/rmi/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/security/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/serialization/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/sound/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/swing/index.html', 'www.cs.sunysb.edu/documentation/jdk/guide/versioning/index.html', 'www.cs.sunysb.edu/documentation/jdk/relnotes/contacts.html', 'www.cs.sunysb.edu/documentation/jdk/tooldocs/javadoc/index.html';
+
+
+
+6º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/index.html', tem:
+	PageRank: 1.425000;
+	Nº Saidas: 0;
+	Nº Entradas: 10, sendo ela(s):
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/api/api.html', 'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/dist/dist.html', 'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/doc/doc.html', 'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/ext/ext.html', 'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/inst/inst.html', 'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/lib/lib.html', 'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/mac/mac.html', 'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/ref/ref.html', 'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/tut/tut.html', 'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/whatsnew/whatsnew24.html';
+
+
+
+7º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/index.html', tem:
+	PageRank: 0.801064;
+	Nº Saidas: 0;
+	Nº Entradas: 12, sendo ela(s):
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/download.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/examples.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/formats.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/install-source.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/license.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/links.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/mailing-list.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/resources.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/sponsors.html';
+
+
+
+8º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html', tem:
+	PageRank: 0.801064;
+	Nº Saidas: 10;
+	Nº Entradas: 12, sendo ela(s):
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/download.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/examples.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/formats.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/install-source.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/license.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/links.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/mailing-list.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/resources.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/sponsors.html';
+
+
+
+9º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html', tem:
+	PageRank: 0.801064;
+	Nº Saidas: 10;
+	Nº Entradas: 12, sendo ela(s):
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/download.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/examples.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/formats.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/install-source.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/license.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/links.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/mailing-list.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/resources.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/sponsors.html';
+
+
+
+10º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html', tem:
+	PageRank: 0.801064;
+	Nº Saidas: 10;
+	Nº Entradas: 12, sendo ela(s):
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/download.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/examples.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/formats.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/install-source.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/license.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/links.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/mailing-list.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/resources.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/sponsors.html';
+
+
+
+11º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/download.html', tem:
+	PageRank: 0.801064;
+	Nº Saidas: 10;
+	Nº Entradas: 12, sendo ela(s):
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/download.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/examples.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/formats.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/install-source.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/license.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/links.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/mailing-list.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/resources.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/sponsors.html';
+
+
+
+12º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/install-source.html', tem:
+	PageRank: 0.801064;
+	Nº Saidas: 10;
+	Nº Entradas: 12, sendo ela(s):
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/download.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/examples.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/formats.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/install-source.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/license.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/links.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/mailing-list.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/resources.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/sponsors.html';
+
+
+
+13º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/links.html', tem:
+	PageRank: 0.801064;
+	Nº Saidas: 10;
+	Nº Entradas: 12, sendo ela(s):
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/download.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/examples.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/formats.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/install-source.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/license.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/links.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/mailing-list.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/resources.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/sponsors.html';
+
+
+
+14º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/mailing-list.html', tem:
+	PageRank: 0.801064;
+	Nº Saidas: 10;
+	Nº Entradas: 12, sendo ela(s):
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/download.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/examples.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/formats.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/install-source.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/license.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/links.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/mailing-list.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/resources.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/sponsors.html';
+
+
+
+15º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/resources.html', tem:
+	PageRank: 0.801064;
+	Nº Saidas: 10;
+	Nº Entradas: 12, sendo ela(s):
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/download.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/examples.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/formats.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/install-source.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/license.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/links.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/mailing-list.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/resources.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/sponsors.html';
+
+
+
+16º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/sponsors.html', tem:
+	PageRank: 0.801064;
+	Nº Saidas: 10;
+	Nº Entradas: 12, sendo ela(s):
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/api.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/binary-releases.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/command-line-tools.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/download.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/examples.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/formats.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/install-source.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/license.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/links.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/mailing-list.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/resources.html', 'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/sponsors.html';
+
+
+
+17º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/toc.html', tem:
+	PageRank: 0.519157;
+	Nº Saidas: 0;
+	Nº Entradas: 6, sendo ela(s):
+'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/build_unix/intro.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/build_vxworks/intro.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/build_win/intro.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/debug/common.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/intro/products.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/upgrade.4.2/toc.html';
+
+
+
+18º Pagina
+'www.cs.sunysb.edu/documentation/freetype-2.1.9/docs/reference/ft2-index.html', tem:
+	PageRank: 0.277500;
+	Nº Saidas: 0;
+	Nº Entradas: 1, sendo ela(s):
+'www.cs.sunysb.edu/documentation/freetype-2.1.9/docs/tutorial/step1.html';
+
+
+
+19º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/build_unix/intro.html', tem:
+	PageRank: 0.255512;
+	Nº Saidas: 3;
+	Nº Entradas: 2, sendo ela(s):
+'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/build_win/intro.html', 'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/debug/common.html';
+
+
+
+20º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/debug/common.html', tem:
+	PageRank: 0.222395;
+	Nº Saidas: 3;
+	Nº Entradas: 1, sendo ela(s):
+'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/build_unix/intro.html';
+
+
+
+21º Pagina
+'www.cs.sunysb.edu/documentation/jdk/tooldocs/tools.html', tem:
+	PageRank: 0.213750;
+	Nº Saidas: 1;
+	Nº Entradas: 1, sendo ela(s):
+'www.cs.sunysb.edu/documentation/jdk/relnotes/demos.html';
+
+
+
+22º Pagina
+'www.cs.sunysb.edu/admissions/AdmissionsCareer.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+23º Pagina
+'www.cs.sunysb.edu/admissions/AdmissionsScholarship.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+24º Pagina
+'www.cs.sunysb.edu/admissions/graduate/applyTObsms.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+25º Pagina
+'www.cs.sunysb.edu/admissions/graduate/deadlines.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+26º Pagina
+'www.cs.sunysb.edu/admissions/graduate/finAid.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+27º Pagina
+'www.cs.sunysb.edu/admissions/graduate/howToApply.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+28º Pagina
+'www.cs.sunysb.edu/admissions/graduate/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+29º Pagina
+'www.cs.sunysb.edu/admissions/graduate/msORphd.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+30º Pagina
+'www.cs.sunysb.edu/admissions/graduate/transfers.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+31º Pagina
+'www.cs.sunysb.edu/admissions/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+32º Pagina
+'www.cs.sunysb.edu/admissions/Objectives.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+33º Pagina
+'www.cs.sunysb.edu/admissions/ObjectivesMapping.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+34º Pagina
+'www.cs.sunysb.edu/admissions/undergraduate/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+35º Pagina
+'www.cs.sunysb.edu/admissions/undergraduate/prospectiveFAQ.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+36º Pagina
+'www.cs.sunysb.edu/careerinfo/careers.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+37º Pagina
+'www.cs.sunysb.edu/careerinfo/scholarships.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+38º Pagina
+'www.cs.sunysb.edu/CEWITbldg.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+39º Pagina
+'www.cs.sunysb.edu/cs@35/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+40º Pagina
+'www.cs.sunysb.edu/CSbldg.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+41º Pagina
+'www.cs.sunysb.edu/DepartmentPolicies.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+42º Pagina
+'www.cs.sunysb.edu/documentation/bash/bash.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+43º Pagina
+'www.cs.sunysb.edu/documentation/bash/bashref.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+44º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/api_c/api_index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+45º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/api_c/c_pindex.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+46º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/api_cxx/api_index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+47º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/api_cxx/cxx_pindex.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+48º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/api_tcl/tcl_index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+49º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+50º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/java/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+51º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/build_vxworks/intro.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+52º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/build_win/intro.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 3;
+	Nº Entradas: 0;
+
+
+53º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/intro/products.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+54º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/ref/upgrade.4.2/toc.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+55º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/sleepycat/contact.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+56º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/sleepycat/license.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+57º Pagina
+'www.cs.sunysb.edu/documentation/BerkeleyDB/utility/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+58º Pagina
+'www.cs.sunysb.edu/documentation/curl/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+59º Pagina
+'www.cs.sunysb.edu/documentation/freetype-2.1.9/docs/design/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+60º Pagina
+'www.cs.sunysb.edu/documentation/freetype-2.1.9/docs/ft2faq.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+61º Pagina
+'www.cs.sunysb.edu/documentation/freetype-2.1.9/docs/reference/ft2-toc.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+62º Pagina
+'www.cs.sunysb.edu/documentation/freetype-2.1.9/docs/tutorial/step1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+63º Pagina
+'www.cs.sunysb.edu/documentation/freetype-2.1.9/docs/tutorial/step2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+64º Pagina
+'www.cs.sunysb.edu/documentation/freetype-2.1.9/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+65º Pagina
+'www.cs.sunysb.edu/documentation/gd/entities.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+66º Pagina
+'www.cs.sunysb.edu/documentation/gd/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+67º Pagina
+'www.cs.sunysb.edu/documentation/grace/FAQ.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+68º Pagina
+'www.cs.sunysb.edu/documentation/grace/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+69º Pagina
+'www.cs.sunysb.edu/documentation/grace/Tutorial.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+70º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+71º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-10.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+72º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-11.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+73º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-12.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+74º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-13.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+75º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+76º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-3.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+77º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-4.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+78º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-5.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+79º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-6.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+80º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-7.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+81º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-8.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+82º Pagina
+'www.cs.sunysb.edu/documentation/gv/gv-9.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+83º Pagina
+'www.cs.sunysb.edu/documentation/gv/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+84º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/examples.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 10;
+	Nº Entradas: 0;
+
+
+85º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/formats.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 10;
+	Nº Entradas: 0;
+
+
+86º Pagina
+'www.cs.sunysb.edu/documentation/ImageMagick-6.2.3/www/license.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 10;
+	Nº Entradas: 0;
+
+
+87º Pagina
+'www.cs.sunysb.edu/documentation/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+88º Pagina
+'www.cs.sunysb.edu/documentation/jdk/api/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+89º Pagina
+'www.cs.sunysb.edu/documentation/jdk/api/overview-summary.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+90º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/2d/api-jpeg/overview-summary.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+91º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/2d/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+92º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/access/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+93º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/awt/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+94º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/beans/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+95º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/collections/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+96º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/dragndrop/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+97º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/extensions/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+98º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/idl/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+99º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/intl/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+100º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/io/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+101º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/jar/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+102º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/jdbc/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+103º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/jni/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+104º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/jvmpi/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+105º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/math/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+106º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/misc/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+107º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/net/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+108º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/reflection/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+109º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/refobs/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+110º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/resources/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+111º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/rmi/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+112º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/security/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+113º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/serialization/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+114º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/sound/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+115º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/swing/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+116º Pagina
+'www.cs.sunysb.edu/documentation/jdk/guide/versioning/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+117º Pagina
+'www.cs.sunysb.edu/documentation/jdk/relnotes/contacts.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+118º Pagina
+'www.cs.sunysb.edu/documentation/jdk/relnotes/demos.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+119º Pagina
+'www.cs.sunysb.edu/documentation/jdk/relnotes/features.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+120º Pagina
+'www.cs.sunysb.edu/documentation/jdk/tooldocs/javadoc/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 2;
+	Nº Entradas: 0;
+
+
+121º Pagina
+'www.cs.sunysb.edu/documentation/jsse/api_users_guide.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+122º Pagina
+'www.cs.sunysb.edu/documentation/jsse/apidoc/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+123º Pagina
+'www.cs.sunysb.edu/documentation/jsse/jssefaq.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+124º Pagina
+'www.cs.sunysb.edu/documentation/jsse.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+125º Pagina
+'www.cs.sunysb.edu/documentation/latex/help/Catalogue/catalogue.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+126º Pagina
+'www.cs.sunysb.edu/documentation/latex/help/faq/uktug-faq/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+127º Pagina
+'www.cs.sunysb.edu/documentation/latex/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+128º Pagina
+'www.cs.sunysb.edu/documentation/latex/latex/latex2e-html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+129º Pagina
+'www.cs.sunysb.edu/documentation/latex/latex/seminar/Seminar-Bugs.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+130º Pagina
+'www.cs.sunysb.edu/documentation/latex/latex/seminar/Seminar-FAQ.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+131º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+132º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode10.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+133º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode11.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+134º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode12.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+135º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode13.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+136º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode14.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+137º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode15.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+138º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode16.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+139º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode17.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+140º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+141º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode3.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+142º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode4.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+143º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode5.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+144º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode6.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+145º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode7.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+146º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode8.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+147º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Enode9.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+148º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/features.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+149º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+150º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode10.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+151º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode11.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+152º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode12.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+153º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+154º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode3.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+155º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode4.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+156º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode5.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+157º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode6.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+158º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode7.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+159º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode8.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+160º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Hnode9.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+161º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/hypextra.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+162º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+163º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+164º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode10.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+165º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode11.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+166º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode12.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+167º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode13.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+168º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode14.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+169º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+170º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode3.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+171º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode4.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+172º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode5.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+173º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode6.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+174º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode7.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+175º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode8.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+176º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Mnode9.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+177º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+178º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node10.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+179º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node11.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+180º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node12.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+181º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+182º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node3.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+183º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node4.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+184º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node5.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+185º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node6.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+186º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node7.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+187º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node8.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+188º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/node9.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+189º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Onode1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+190º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Onode2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+191º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/overview.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+192º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Pnode1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+193º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/problems.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+194º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Snode1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+195º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Snode2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+196º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Snode3.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+197º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/Snode4.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+198º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/support.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+199º Pagina
+'www.cs.sunysb.edu/documentation/latex2html/userman.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+200º Pagina
+'www.cs.sunysb.edu/documentation/pgp/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+201º Pagina
+'www.cs.sunysb.edu/documentation/pgplot/pgplot.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+202º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/about.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+203º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/acks.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+204º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/api/api.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+205º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/dist/dist.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+206º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/doc/doc.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+207º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/ext/ext.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+208º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/inst/inst.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+209º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/lib/lib.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+210º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/mac/mac.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+211º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/modindex.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+212º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/ref/ref.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+213º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/tut/tut.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+214º Pagina
+'www.cs.sunysb.edu/documentation/python_2.4/Python-Docs-2.4/whatsnew/whatsnew24.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+215º Pagina
+'www.cs.sunysb.edu/documentation/ssh/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+216º Pagina
+'www.cs.sunysb.edu/documentation/ssh/scp.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+217º Pagina
+'www.cs.sunysb.edu/documentation/ssh/scp2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+218º Pagina
+'www.cs.sunysb.edu/documentation/ssh/sftp2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+219º Pagina
+'www.cs.sunysb.edu/documentation/ssh/ssh-add.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+220º Pagina
+'www.cs.sunysb.edu/documentation/ssh/ssh-add2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+221º Pagina
+'www.cs.sunysb.edu/documentation/ssh/ssh-agent.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+222º Pagina
+'www.cs.sunysb.edu/documentation/ssh/ssh-agent2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+223º Pagina
+'www.cs.sunysb.edu/documentation/ssh/ssh-keygen2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+224º Pagina
+'www.cs.sunysb.edu/documentation/ssh/ssh.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+225º Pagina
+'www.cs.sunysb.edu/documentation/ssh/ssh2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+226º Pagina
+'www.cs.sunysb.edu/documentation/ssh/ssh2_config.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+227º Pagina
+'www.cs.sunysb.edu/documentation/xfig/html/but_frm_introduction.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+228º Pagina
+'www.cs.sunysb.edu/documentation/xfig/html/contents.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+229º Pagina
+'www.cs.sunysb.edu/documentation/xfig/html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+230º Pagina
+'www.cs.sunysb.edu/documentation/xfig/html/introduction.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+231º Pagina
+'www.cs.sunysb.edu/events/DLseries/.index.html.swp', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+232º Pagina
+'www.cs.sunysb.edu/events/DLseries/abstract20031003.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+233º Pagina
+'www.cs.sunysb.edu/events/DLseries/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+234º Pagina
+'www.cs.sunysb.edu/events/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+235º Pagina
+'www.cs.sunysb.edu/events/newsletters/apr2003.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+236º Pagina
+'www.cs.sunysb.edu/events/newsletters/apr2005.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+237º Pagina
+'www.cs.sunysb.edu/events/newsletters/apr2007.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+238º Pagina
+'www.cs.sunysb.edu/events/newsletters/aug2003.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+239º Pagina
+'www.cs.sunysb.edu/events/newsletters/aug2005.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+240º Pagina
+'www.cs.sunysb.edu/events/newsletters/dec2002.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+241º Pagina
+'www.cs.sunysb.edu/events/newsletters/dec2004.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+242º Pagina
+'www.cs.sunysb.edu/events/newsletters/dec2005.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+243º Pagina
+'www.cs.sunysb.edu/events/newsletters/dec2006.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+244º Pagina
+'www.cs.sunysb.edu/events/newsletters/feb2003.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+245º Pagina
+'www.cs.sunysb.edu/events/newsletters/feb2004.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+246º Pagina
+'www.cs.sunysb.edu/events/newsletters/feb2005.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+247º Pagina
+'www.cs.sunysb.edu/events/newsletters/feb2006.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+248º Pagina
+'www.cs.sunysb.edu/events/newsletters/feb2007.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+249º Pagina
+'www.cs.sunysb.edu/events/newsletters/index.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+250º Pagina
+'www.cs.sunysb.edu/events/newsletters/jan2003.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+251º Pagina
+'www.cs.sunysb.edu/events/newsletters/jan2004.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+252º Pagina
+'www.cs.sunysb.edu/events/newsletters/jan2005.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+253º Pagina
+'www.cs.sunysb.edu/events/newsletters/jan2006.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+254º Pagina
+'www.cs.sunysb.edu/events/newsletters/jan2008.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+255º Pagina
+'www.cs.sunysb.edu/events/newsletters/jul2003.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+256º Pagina
+'www.cs.sunysb.edu/events/newsletters/jul2005.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+257º Pagina
+'www.cs.sunysb.edu/events/newsletters/jun2003.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+258º Pagina
+'www.cs.sunysb.edu/events/newsletters/jun2005.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+259º Pagina
+'www.cs.sunysb.edu/events/newsletters/mar2003.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+260º Pagina
+'www.cs.sunysb.edu/events/newsletters/mar2004.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+261º Pagina
+'www.cs.sunysb.edu/events/newsletters/mar2005.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+262º Pagina
+'www.cs.sunysb.edu/events/newsletters/mar2006.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+263º Pagina
+'www.cs.sunysb.edu/events/newsletters/mar2007.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+264º Pagina
+'www.cs.sunysb.edu/events/newsletters/mar2008.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+265º Pagina
+'www.cs.sunysb.edu/events/newsletters/may2003.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+266º Pagina
+'www.cs.sunysb.edu/events/newsletters/may2004.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+267º Pagina
+'www.cs.sunysb.edu/events/newsletters/may2005.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+268º Pagina
+'www.cs.sunysb.edu/events/newsletters/nov2002.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+269º Pagina
+'www.cs.sunysb.edu/events/newsletters/nov2003.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+270º Pagina
+'www.cs.sunysb.edu/events/newsletters/nov2004.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+271º Pagina
+'www.cs.sunysb.edu/events/newsletters/nov2006.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+272º Pagina
+'www.cs.sunysb.edu/events/newsletters/nov2007.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+273º Pagina
+'www.cs.sunysb.edu/events/newsletters/oct2003.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+274º Pagina
+'www.cs.sunysb.edu/events/newsletters/oct2004.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+275º Pagina
+'www.cs.sunysb.edu/events/newsletters/oct2005.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+276º Pagina
+'www.cs.sunysb.edu/events/newsletters/oct2006.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+277º Pagina
+'www.cs.sunysb.edu/events/newsletters/sep2003.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+278º Pagina
+'www.cs.sunysb.edu/events/newsletters/sept2005.html/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+279º Pagina
+'www.cs.sunysb.edu/events/xmas2004/xmasparty2004.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+280º Pagina
+'www.cs.sunysb.edu/facilities/CampusComputingResources.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+281º Pagina
+'www.cs.sunysb.edu/facilities/ComputerScienceLibrary.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+282º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/BouncedEmail.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+283º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/CopierAccess.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+284º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/DepartmentSpamFilter.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+285º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/DuplicateEmails.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+286º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/EmailAliases.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+287º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/EmailAttachmentsUnderUnix.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+288º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/EmailCDEErrorSendingMail.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+289º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/EmailFilterJunk.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+290º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/EmailForwarding.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+291º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/EmailPopmail.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+292º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/EmailWinmail.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+293º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/FAQbyIndex.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+294º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/gccfaq/cppincomp.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+295º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/gccfaq/porting-howto.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+296º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/gccfaq/standard_header_files.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+297º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/gccfaq/tutorial_namespaces.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+298º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+299º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetDepartmentDialup.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+300º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetDepartmentProxy.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+301º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetFTPTurnedOff.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+302º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetLaptopAccess.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+303º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetSbwin2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+304º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetSetupModemAndHomeNetwork.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+305º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetUnixDepartmentDialup.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+306º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetWin2kDepartmentDialup.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+307º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetWin9xDepartmentDialup.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+308º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetWinNTDepartmentDialup.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+309º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetWinXPDepartmentDialup.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+310º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InternetWireless.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+311º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/InvalidSecurityError.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+312º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MacFileConversion.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+313º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MacProjector.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+314º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscEncryptFile.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+315º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscFTPLsListing.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+316º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscHandinProgram.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+317º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscIEFavorites.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+318º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscNewsgroupsOutlookExpress.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+319º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscPrintingFacilitiesInDepartment.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+320º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscRealPlayerCongestion.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+321º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscRealPlayerNetworkSettings.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+322º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscReportProblems.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+323º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscUsingPGP.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+324º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscWindowsApplicationsOnUnix.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+325º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscWindowsPostscriptPrinter.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+326º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MiscWindowsUpdate.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+327º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/MSDNAA.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+328º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/ObtainingMathematica.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+329º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/PasswordGuidelines.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+330º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/PPT2700_128bitwep.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+331º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/PPT2700_restore.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+332º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/Projector1310.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+333º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/SCPtoTranslab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+334º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/SSHDownloadClient.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+335º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/SSHKeyPair.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+336º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/SSHTunnelingMac.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+337º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/SSHTunnelingUnix.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+338º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/SSHTunnelingWindows.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+339º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/SSHUsing.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+340º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/SSHUsingUnix.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+341º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/SSHUsingWindows.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+342º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/SSHUsingWindowsXPProblems.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+343º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/SSHWithMindterm.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+344º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixA4Printing.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+345º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixChangeLoginShell.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+346º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixCompilerPackageNotInstalled.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+347º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixCompilingLibraryErrors.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+348º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixCompilingMathLibrary.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+349º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixCompilingWithGCC.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+350º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixConversionPostscriptPDF.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+351º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixMozillaPrinting.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+352º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixMozillaTwm.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+353º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixPDFPrinting.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+354º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixQuota.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+355º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/UnixRealPlayerVolume.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+356º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/VirusesAndSpyware.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+357º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/VMware_VM_Access.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+358º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/WebAccessStatistics.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+359º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/WebAvoidMailto.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+360º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/WebDepartmentStatistics.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+361º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/WebPasswordProtect.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+362º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/WebPublishing.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+363º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/WebRedirect.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+364º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/WebSSI.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+365º Pagina
+'www.cs.sunysb.edu/facilities/FAQ/XWIN32.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+366º Pagina
+'www.cs.sunysb.edu/facilities/graduate/GraduateLaptopAccessRoom.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+367º Pagina
+'www.cs.sunysb.edu/facilities/graduate/GraduateNTLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+368º Pagina
+'www.cs.sunysb.edu/facilities/graduate/GraduatePubLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+369º Pagina
+'www.cs.sunysb.edu/facilities/graduate/GraduateStudentLounge.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+370º Pagina
+'www.cs.sunysb.edu/facilities/graduate/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+371º Pagina
+'www.cs.sunysb.edu/facilities/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+372º Pagina
+'www.cs.sunysb.edu/facilities/research/AppliedAlgorithms.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+373º Pagina
+'www.cs.sunysb.edu/facilities/research/AppliedLogic.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+374º Pagina
+'www.cs.sunysb.edu/facilities/research/CenterForCyberSecurity.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+375º Pagina
+'www.cs.sunysb.edu/facilities/research/CenterForExcellence.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+376º Pagina
+'www.cs.sunysb.edu/facilities/research/CenterForVisualComputing.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+377º Pagina
+'www.cs.sunysb.edu/facilities/research/ConcurrencyAndVerification.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+378º Pagina
+'www.cs.sunysb.edu/facilities/research/Cryptography.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+379º Pagina
+'www.cs.sunysb.edu/facilities/research/DesignAndAnalysisResearch.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+380º Pagina
+'www.cs.sunysb.edu/facilities/research/ExperimentalComputerSystems.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+381º Pagina
+'www.cs.sunysb.edu/facilities/research/FilesystemsAndStorage.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+382º Pagina
+'www.cs.sunysb.edu/facilities/research/GraphicsHardware.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+383º Pagina
+'www.cs.sunysb.edu/facilities/research/ImageAnalysis.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+384º Pagina
+'www.cs.sunysb.edu/facilities/research/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+385º Pagina
+'www.cs.sunysb.edu/facilities/research/MediaNetworksLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+386º Pagina
+'www.cs.sunysb.edu/facilities/research/NaturalLanguageProcessing.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+387º Pagina
+'www.cs.sunysb.edu/facilities/research/Net.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+388º Pagina
+'www.cs.sunysb.edu/facilities/research/Samson.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+389º Pagina
+'www.cs.sunysb.edu/facilities/research/SecureSystemsResearchLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+390º Pagina
+'www.cs.sunysb.edu/facilities/research/SensorNetworksLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+391º Pagina
+'www.cs.sunysb.edu/facilities/research/SmoresLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+392º Pagina
+'www.cs.sunysb.edu/facilities/research/SplatLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+393º Pagina
+'www.cs.sunysb.edu/facilities/research/ThlLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+394º Pagina
+'www.cs.sunysb.edu/facilities/research/VirtualReality.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+395º Pagina
+'www.cs.sunysb.edu/facilities/research/Visualization.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+396º Pagina
+'www.cs.sunysb.edu/facilities/research/Wings.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+397º Pagina
+'www.cs.sunysb.edu/facilities/sos_meeting.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+398º Pagina
+'www.cs.sunysb.edu/facilities/undergrad/AdvancedProgrammingLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+399º Pagina
+'www.cs.sunysb.edu/facilities/undergrad/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+400º Pagina
+'www.cs.sunysb.edu/facilities/undergrad/MultimediaLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+401º Pagina
+'www.cs.sunysb.edu/facilities/undergrad/ProgrammingTechniquesTeachingLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+402º Pagina
+'www.cs.sunysb.edu/facilities/undergrad/TransactionProcessingLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+403º Pagina
+'www.cs.sunysb.edu/facilities/undergrad/UndergraduateComputingLab.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+404º Pagina
+'www.cs.sunysb.edu/files/graduate/bsmsinfo.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+405º Pagina
+'www.cs.sunysb.edu/files/mindterm.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+406º Pagina
+'www.cs.sunysb.edu/graduate/areas/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+407º Pagina
+'www.cs.sunysb.edu/graduate/areas/InformationAssuranceMS.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+408º Pagina
+'www.cs.sunysb.edu/graduate/areas/InformationAssurancePhD.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+409º Pagina
+'www.cs.sunysb.edu/graduate/bsmsGeneral.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+410º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse502.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+411º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse504.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+412º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse505.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+413º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse506.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+414º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse507.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+415º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse508.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+416º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse509.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+417º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse510.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+418º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse511.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+419º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse515.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+420º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse523.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+421º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse524.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+422º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse525.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+423º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse526.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+424º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse527.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+425º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse528.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+426º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse529.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+427º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse530.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+428º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse532.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+429º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse533.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+430º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse534.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+431º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse535.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+432º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse536.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+433º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse537.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+434º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse540.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+435º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse541.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+436º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse542.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+437º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse544.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+438º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse547.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+439º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse548.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+440º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse549.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+441º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse555.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+442º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse564.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+443º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse587.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+444º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse590.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+445º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse591.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+446º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse592.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+447º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse593.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+448º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse594.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+449º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse595.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+450º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse596.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+451º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse599.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+452º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse600.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+453º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse601.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+454º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse602.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+455º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse605.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+456º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse608.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+457º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse610.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+458º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse611.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+459º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse612.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+460º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse613.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+461º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse614.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+462º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse615.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+463º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse616.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+464º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse618.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+465º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse620.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+466º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse621.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+467º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse622.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+468º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse624.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+469º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse625.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+470º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse626.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+471º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse627.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+472º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse628.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+473º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse630.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+474º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse631.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+475º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse632.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+476º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse633.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+477º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse634.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+478º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse635.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+479º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse636.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+480º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse637.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+481º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse638.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+482º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse640.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+483º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse641.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+484º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse642.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+485º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse643.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+486º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse644.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+487º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse645.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+488º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse646.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+489º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse647.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+490º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse648.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+491º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse649.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+492º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse650.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+493º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse651.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+494º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse652.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+495º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse653.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+496º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse654.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+497º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse655.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+498º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse656.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+499º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse657.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+500º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse658.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+501º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse659.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+502º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse660.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+503º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse664.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+504º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse665.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+505º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse666.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+506º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse667.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+507º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse668.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+508º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse669.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+509º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse670-ALP.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+510º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse670-PTPA.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+511º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse670.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+512º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse671.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+513º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse672.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+514º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse673.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+515º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse674.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+516º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse675.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+517º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse676.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+518º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse677.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+519º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse678.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+520º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse679.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+521º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse680.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+522º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse681.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+523º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse682.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+524º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse683.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+525º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse684.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+526º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse685.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+527º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse690.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+528º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse691.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+529º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse692.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+530º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse696.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+531º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse698.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+532º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse699.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+533º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse700.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+534º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse701.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+535º Pagina
+'www.cs.sunysb.edu/graduate/courses/cse800.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+536º Pagina
+'www.cs.sunysb.edu/graduate/courses/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+537º Pagina
+'www.cs.sunysb.edu/graduate/courses/section_instructor_mapping_523.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+538º Pagina
+'www.cs.sunysb.edu/graduate/courses/section_instructor_mapping_524.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+539º Pagina
+'www.cs.sunysb.edu/graduate/courses/section_instructor_mapping_593.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+540º Pagina
+'www.cs.sunysb.edu/graduate/courses/section_instructor_mapping_596.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+541º Pagina
+'www.cs.sunysb.edu/graduate/courses/section_instructor_mapping_696.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+542º Pagina
+'www.cs.sunysb.edu/graduate/courses/section_instructor_mapping_698.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+543º Pagina
+'www.cs.sunysb.edu/graduate/courses/section_instructor_mapping_699.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+544º Pagina
+'www.cs.sunysb.edu/graduate/courses/section_instructor_mapping_700.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+545º Pagina
+'www.cs.sunysb.edu/graduate/courses/section_instructor_mapping_701.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+546º Pagina
+'www.cs.sunysb.edu/graduate/fullTimeReg.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+547º Pagina
+'www.cs.sunysb.edu/graduate/GraduateAccountPolicies.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+548º Pagina
+'www.cs.sunysb.edu/graduate/GraduateHandbook.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+549º Pagina
+'www.cs.sunysb.edu/graduate/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+550º Pagina
+'www.cs.sunysb.edu/graduate/policyDocs.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+551º Pagina
+'www.cs.sunysb.edu/graduate/QualsHandbook.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+552º Pagina
+'www.cs.sunysb.edu/graduate/TAs/FinancialSupportPolicies.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+553º Pagina
+'www.cs.sunysb.edu/graduate/TAs/Responsibilities.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+554º Pagina
+'www.cs.sunysb.edu/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+555º Pagina
+'www.cs.sunysb.edu/index1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+556º Pagina
+'www.cs.sunysb.edu/news/stories/faculty_retreat/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+557º Pagina
+'www.cs.sunysb.edu/news/stories/Faculty_Retreat_2004/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+558º Pagina
+'www.cs.sunysb.edu/news/stories/graduation2003/index.htm', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+559º Pagina
+'www.cs.sunysb.edu/news/stories/graduation2004/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+560º Pagina
+'www.cs.sunysb.edu/news/stories/Orientation2003/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+561º Pagina
+'www.cs.sunysb.edu/news/stories/PhD_Hooding_Ceremony_2004/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+562º Pagina
+'www.cs.sunysb.edu/news/stories/vicon/abcnews/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+563º Pagina
+'www.cs.sunysb.edu/news/stories/Xmas2002/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+564º Pagina
+'www.cs.sunysb.edu/people/awards.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+565º Pagina
+'www.cs.sunysb.edu/people/awards_staff.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+566º Pagina
+'www.cs.sunysb.edu/people/awards_students.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+567º Pagina
+'www.cs.sunysb.edu/people/faculty/AhmadEsmaili.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+568º Pagina
+'www.cs.sunysb.edu/people/faculty/AhmadEsmailiAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+569º Pagina
+'www.cs.sunysb.edu/people/faculty/AlexanderMohr.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+570º Pagina
+'www.cs.sunysb.edu/people/faculty/AlexVasilescu.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+571º Pagina
+'www.cs.sunysb.edu/people/faculty/AmandaStent.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+572º Pagina
+'www.cs.sunysb.edu/people/faculty/AmandaStentAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+573º Pagina
+'www.cs.sunysb.edu/people/faculty/AnitaWasilewska.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+574º Pagina
+'www.cs.sunysb.edu/people/faculty/AnitaWasilewskaAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+575º Pagina
+'www.cs.sunysb.edu/people/faculty/AnnieLiu.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+576º Pagina
+'www.cs.sunysb.edu/people/faculty/AnnieLiuAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+577º Pagina
+'www.cs.sunysb.edu/people/faculty/ArieKaufman.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+578º Pagina
+'www.cs.sunysb.edu/people/faculty/ArieKaufmanAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+579º Pagina
+'www.cs.sunysb.edu/people/faculty/Art_Retirement/Art_Photos.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+580º Pagina
+'www.cs.sunysb.edu/people/faculty/ArthurBernstein.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+581º Pagina
+'www.cs.sunysb.edu/people/faculty/ArthurBernsteinAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+582º Pagina
+'www.cs.sunysb.edu/people/faculty/BradleyKuszmaul.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+583º Pagina
+'www.cs.sunysb.edu/people/faculty/CRRamakrishnan.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+584º Pagina
+'www.cs.sunysb.edu/people/faculty/CRRamakrishnanAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+585º Pagina
+'www.cs.sunysb.edu/people/faculty/DavidFerguson.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+586º Pagina
+'www.cs.sunysb.edu/people/faculty/DavidSmith.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+587º Pagina
+'www.cs.sunysb.edu/people/faculty/DavidWarren.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+588º Pagina
+'www.cs.sunysb.edu/people/faculty/DavidWarrenAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+589º Pagina
+'www.cs.sunysb.edu/people/faculty/DimitrisSamaras.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+590º Pagina
+'www.cs.sunysb.edu/people/faculty/DimitrisSamarasAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+591º Pagina
+'www.cs.sunysb.edu/people/faculty/ErezZadok.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+592º Pagina
+'www.cs.sunysb.edu/people/faculty/ErezZadokAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+593º Pagina
+'www.cs.sunysb.edu/people/faculty/EstherArkin.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+594º Pagina
+'www.cs.sunysb.edu/people/faculty/EugeneStark.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+595º Pagina
+'www.cs.sunysb.edu/people/faculty/EugeneWStarkAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+596º Pagina
+'www.cs.sunysb.edu/people/faculty/GeorgeHart.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+597º Pagina
+'www.cs.sunysb.edu/people/faculty/GeorgeHartAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+598º Pagina
+'www.cs.sunysb.edu/people/faculty/GregoryZelinsky.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+599º Pagina
+'www.cs.sunysb.edu/people/faculty/HerbertGelernter.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+600º Pagina
+'www.cs.sunysb.edu/people/faculty/HimanshuGupta.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+601º Pagina
+'www.cs.sunysb.edu/people/faculty/HimanshuGuptaAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+602º Pagina
+'www.cs.sunysb.edu/people/faculty/HongQin.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+603º Pagina
+'www.cs.sunysb.edu/people/faculty/HongQinAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+604º Pagina
+'www.cs.sunysb.edu/people/faculty/HusseinBadr.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+605º Pagina
+'www.cs.sunysb.edu/people/faculty/HusseinBadrAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+606º Pagina
+'www.cs.sunysb.edu/people/faculty/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+607º Pagina
+'www.cs.sunysb.edu/people/faculty/IVRamakrishnan.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+608º Pagina
+'www.cs.sunysb.edu/people/faculty/IVRamakrishnanAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+609º Pagina
+'www.cs.sunysb.edu/people/faculty/JackHeller.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+610º Pagina
+'www.cs.sunysb.edu/people/faculty/JenniferWong.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+611º Pagina
+'www.cs.sunysb.edu/people/faculty/JenniferWongAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+612º Pagina
+'www.cs.sunysb.edu/people/faculty/JeromeLiang.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+613º Pagina
+'www.cs.sunysb.edu/people/faculty/JieGao.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+614º Pagina
+'www.cs.sunysb.edu/people/faculty/JieGaoAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+615º Pagina
+'www.cs.sunysb.edu/people/faculty/JosephMitchell.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+616º Pagina
+'www.cs.sunysb.edu/people/faculty/KeriKo.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+617º Pagina
+'www.cs.sunysb.edu/people/faculty/KeriKoAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+618º Pagina
+'www.cs.sunysb.edu/people/faculty/KlausMueller.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+619º Pagina
+'www.cs.sunysb.edu/people/faculty/KlausMuellerAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+620º Pagina
+'www.cs.sunysb.edu/people/faculty/LarryWittie.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+621º Pagina
+'www.cs.sunysb.edu/people/faculty/LarryWittieAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+622º Pagina
+'www.cs.sunysb.edu/people/faculty/LeoBachmair.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+623º Pagina
+'www.cs.sunysb.edu/people/faculty/LeoBachmairAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+624º Pagina
+'www.cs.sunysb.edu/people/faculty/LoriScarlatos.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+625º Pagina
+'www.cs.sunysb.edu/people/faculty/LuisOrtiz.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+626º Pagina
+'www.cs.sunysb.edu/people/faculty/LuisOrtizAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+627º Pagina
+'www.cs.sunysb.edu/people/faculty/MichaelBender.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+628º Pagina
+'www.cs.sunysb.edu/people/faculty/MichaelBenderAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+629º Pagina
+'www.cs.sunysb.edu/people/faculty/MichaelKifer.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+630º Pagina
+'www.cs.sunysb.edu/people/faculty/MichaelKiferAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+631º Pagina
+'www.cs.sunysb.edu/people/faculty/MichaelTashbook.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+632º Pagina
+'www.cs.sunysb.edu/people/faculty/MichaelTashbookAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+633º Pagina
+'www.cs.sunysb.edu/people/faculty/PhilipLewis.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+634º Pagina
+'www.cs.sunysb.edu/people/faculty/PhilipLewisAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+635º Pagina
+'www.cs.sunysb.edu/people/faculty/RaduGrosu.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+636º Pagina
+'www.cs.sunysb.edu/people/faculty/RaduGrosuAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+637º Pagina
+'www.cs.sunysb.edu/people/faculty/RaduSion.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+638º Pagina
+'www.cs.sunysb.edu/people/faculty/RaduSionAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+639º Pagina
+'www.cs.sunysb.edu/people/faculty/RichardMcKenna.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+640º Pagina
+'www.cs.sunysb.edu/people/faculty/RichardMcKennaAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+641º Pagina
+'www.cs.sunysb.edu/people/faculty/RobertFKellyAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+642º Pagina
+'www.cs.sunysb.edu/people/faculty/RobJohnson.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+643º Pagina
+'www.cs.sunysb.edu/people/faculty/RobKelly.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+644º Pagina
+'www.cs.sunysb.edu/people/faculty/RongZhao.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+645º Pagina
+'www.cs.sunysb.edu/people/faculty/RongZhaoAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+646º Pagina
+'www.cs.sunysb.edu/people/faculty/RSekar.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+647º Pagina
+'www.cs.sunysb.edu/people/faculty/RSekarAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+648º Pagina
+'www.cs.sunysb.edu/people/faculty/SamirDas.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+649º Pagina
+'www.cs.sunysb.edu/people/faculty/SamirDasAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+650º Pagina
+'www.cs.sunysb.edu/people/faculty/ScottSmolka.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+651º Pagina
+'www.cs.sunysb.edu/people/faculty/ScottSmolkaAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+652º Pagina
+'www.cs.sunysb.edu/people/faculty/ScottStoller.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+653º Pagina
+'www.cs.sunysb.edu/people/faculty/ScottStollerAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+654º Pagina
+'www.cs.sunysb.edu/people/faculty/ShaunakPawagi.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+655º Pagina
+'www.cs.sunysb.edu/people/faculty/ShaunakPawagiAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+656º Pagina
+'www.cs.sunysb.edu/people/faculty/SteveSkiena.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+657º Pagina
+'www.cs.sunysb.edu/people/faculty/SteveSkienaAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+658º Pagina
+'www.cs.sunysb.edu/people/faculty/SusanBrennan.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+659º Pagina
+'www.cs.sunysb.edu/people/faculty/TamaraBerg.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+660º Pagina
+'www.cs.sunysb.edu/people/faculty/TheoPavlidis.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+661º Pagina
+'www.cs.sunysb.edu/people/faculty/TonyScarlatos.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+662º Pagina
+'www.cs.sunysb.edu/people/faculty/TonyScarlatosAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+663º Pagina
+'www.cs.sunysb.edu/people/faculty/TzickerChiueh.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+664º Pagina
+'www.cs.sunysb.edu/people/faculty/TzickerChiuehAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+665º Pagina
+'www.cs.sunysb.edu/people/faculty/WeiZhu.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+666º Pagina
+'www.cs.sunysb.edu/people/faculty/XianfengGu.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+667º Pagina
+'www.cs.sunysb.edu/people/faculty/XianfengGuAB.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+668º Pagina
+'www.cs.sunysb.edu/people/faculty/XiangminJiao.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+669º Pagina
+'www.cs.sunysb.edu/people/faculty/XinWang.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+670º Pagina
+'www.cs.sunysb.edu/people/faculty/YuanyuanYang.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+671º Pagina
+'www.cs.sunysb.edu/people/grads/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+672º Pagina
+'www.cs.sunysb.edu/people/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+673º Pagina
+'www.cs.sunysb.edu/people/staff/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+674º Pagina
+'www.cs.sunysb.edu/ProfessionalEthics.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+675º Pagina
+'www.cs.sunysb.edu/research/AreasOfResearch.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+676º Pagina
+'www.cs.sunysb.edu/research/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+677º Pagina
+'www.cs.sunysb.edu/research/ResearchAssociations.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+678º Pagina
+'www.cs.sunysb.edu/research/ResearchCenters.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+679º Pagina
+'www.cs.sunysb.edu/research/SummerResearch.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+680º Pagina
+'www.cs.sunysb.edu/undergrad/AcademicAdvising.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+681º Pagina
+'www.cs.sunysb.edu/undergrad/areas/GameProgrammingBS.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+682º Pagina
+'www.cs.sunysb.edu/undergrad/areas/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+683º Pagina
+'www.cs.sunysb.edu/undergrad/areas/InformationAssuranceBS.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+684º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse101.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+685º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse102.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+686º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse106.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+687º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse110.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+688º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse113.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+689º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse114.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+690º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse125.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+691º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse130.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+692º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse150.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+693º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse160.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+694º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse213.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+695º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse214.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+696º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse215.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+697º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse219.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+698º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse220.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+699º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse230.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+700º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse260.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+701º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse300.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+702º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse301.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+703º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse302.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+704º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse303.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+705º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse304.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+706º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse305.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+707º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse306.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+708º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse307.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+709º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse308.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+710º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse310.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+711º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse315.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+712º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse320.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+713º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse323.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+714º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse325.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+715º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse326.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+716º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse327.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+717º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse328.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+718º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse332.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+719º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse333.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+720º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse334.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+721º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse336.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+722º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse345.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+723º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse346.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+724º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse350.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+725º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse352.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+726º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse355.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+727º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse364.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+728º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse366.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+729º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse370.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+730º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse371.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+731º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse373.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+732º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse375.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+733º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse376.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+734º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse377.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+735º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse378.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+736º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse380.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+737º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse381.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+738º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse390.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+739º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse391.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+740º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse392.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+741º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse393.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+742º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse394.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+743º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse408.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+744º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse409.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+745º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse475.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+746º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse487.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+747º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse488.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+748º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse495.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+749º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/cse496.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+750º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+751º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/section_instructor_mapping_475.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+752º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/section_instructor_mapping_487.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+753º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/section_instructor_mapping_488.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+754º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/section_instructor_mapping_495.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+755º Pagina
+'www.cs.sunysb.edu/undergrad/cse_courses/section_instructor_mapping_496.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+756º Pagina
+'www.cs.sunysb.edu/undergrad/CSmajor.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+757º Pagina
+'www.cs.sunysb.edu/undergrad/csprogram/ComputerScienceSampleCourseSequence.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+758º Pagina
+'www.cs.sunysb.edu/undergrad/csprogram/FAQcsemajor.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+759º Pagina
+'www.cs.sunysb.edu/undergrad/csprogram/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+760º Pagina
+'www.cs.sunysb.edu/undergrad/csprogram/InfoOnRegistrationSpring2005.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+761º Pagina
+'www.cs.sunysb.edu/undergrad/csprogram/ProficiencyExams.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+762º Pagina
+'www.cs.sunysb.edu/undergrad/csprogram/RequirementsMajor.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+763º Pagina
+'www.cs.sunysb.edu/undergrad/DECDRequirements.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+764º Pagina
+'www.cs.sunysb.edu/undergrad/HelpDesk.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+765º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+766º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image10.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+767º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image11.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+768º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image12.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+769º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image13.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+770º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image14.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+771º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image15.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+772º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+773º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image3.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+774º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image4.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+775º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image5.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+776º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image6.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+777º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image7.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+778º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image8.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+779º Pagina
+'www.cs.sunysb.edu/undergrad/honors/honorspics/imagepages/image9.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+780º Pagina
+'www.cs.sunysb.edu/undergrad/honors/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+781º Pagina
+'www.cs.sunysb.edu/undergrad/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+782º Pagina
+'www.cs.sunysb.edu/undergrad/ISAcademicAdvising.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+783º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+784º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise102.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+785º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise108.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+786º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise208.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+787º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise215.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+788º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise300.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+789º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise301.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+790º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise302.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+791º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise305.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+792º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise308.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+793º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise311.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+794º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise315.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+795º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise320.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+796º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise323.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+797º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise325.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+798º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise332.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+799º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise333.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+800º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise334.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+801º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise336.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+802º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise340.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+803º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise364.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+804º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise377.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+805º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise378.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+806º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise390.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+807º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise391.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+808º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise440.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+809º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise475.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+810º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise487.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+811º Pagina
+'www.cs.sunysb.edu/undergrad/ise_courses/ise488.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+812º Pagina
+'www.cs.sunysb.edu/undergrad/ISmajor.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+813º Pagina
+'www.cs.sunysb.edu/undergrad/isprogram/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+814º Pagina
+'www.cs.sunysb.edu/undergrad/isprogram/InformationSystemsSampleCourseSequence.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+815º Pagina
+'www.cs.sunysb.edu/undergrad/isprogram/RequirementsMajor.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+816º Pagina
+'www.cs.sunysb.edu/undergrad/isprogram/TypicalISJobs.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+817º Pagina
+'www.cs.sunysb.edu/undergrad/minor.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+818º Pagina
+'www.cs.sunysb.edu/undergrad/PNCPolicies.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+819º Pagina
+'www.cs.sunysb.edu/undergrad/ResourcesAtStonyBrook.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+820º Pagina
+'www.cs.sunysb.edu/undergrad/studentadvisors.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+821º Pagina
+'www.cs.sunysb.edu/undergrad/UndergraduateAccountPolicies.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+822º Pagina
+'www.cs.sunysb.edu/undergrad/UndergraduatePolicies.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+823º Pagina
+'www.cs.sunysb.edu/undergrad/UndergraduateProgramDirectors.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+824º Pagina
+'www.cs.sunysb.edu/welcome/ContactUs.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+825º Pagina
+'www.cs.sunysb.edu/welcome/DepartmentPolicies.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+826º Pagina
+'www.cs.sunysb.edu/welcome/directions/BuildingMap.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+827º Pagina
+'www.cs.sunysb.edu/welcome/directions/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+828º Pagina
+'www.cs.sunysb.edu/welcome/directions/MapQuest.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+829º Pagina
+'www.cs.sunysb.edu/welcome/history/FoundingYears.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+830º Pagina
+'www.cs.sunysb.edu/welcome/history/HistoryChairs.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+831º Pagina
+'www.cs.sunysb.edu/welcome/history/HistoryParticipants.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+832º Pagina
+'www.cs.sunysb.edu/welcome/history/HistoryWelcome.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+833º Pagina
+'www.cs.sunysb.edu/welcome/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+834º Pagina
+'www.cs.sunysb.edu/welcome/joinus/faculty.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+835º Pagina
+'www.cs.sunysb.edu/welcome/joinus/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+836º Pagina
+'www.cs.sunysb.edu/welcome/OurHistory.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+837º Pagina
+'www.cs.sunysb.edu/welcome/OurRankings.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+838º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image1.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+839º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image10.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+840º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image11.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+841º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image12.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+842º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image13.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+843º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image14.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+844º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image15.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+845º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image16.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+846º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image2.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+847º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image3.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+848º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image4.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+849º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image5.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+850º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image6.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+851º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image7.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+852º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image8.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+853º Pagina
+'www.cs.sunysb.edu/welcome/quicktour/imagepages/image9.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 1;
+	Nº Entradas: 0;
+
+
+854º Pagina
+'www.cs.sunysb.edu/welcome/sites/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+855º Pagina
+'www.cs.sunysb.edu/~ari/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+856º Pagina
+'www.cs.sunysb.edu/~chiueh/chiueh.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+857º Pagina
+'www.cs.sunysb.edu/~cse300/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+858º Pagina
+'www.cs.sunysb.edu/~cse315/Spring03/manual/toc.htm', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+859º Pagina
+'www.cs.sunysb.edu/~cse346/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+860º Pagina
+'www.cs.sunysb.edu/~cse515/doc/manual/toc.htm', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+861º Pagina
+'www.cs.sunysb.edu/~cse592/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+862º Pagina
+'www.cs.sunysb.edu/~cse594/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+863º Pagina
+'www.cs.sunysb.edu/~cse595/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+864º Pagina
+'www.cs.sunysb.edu/~cse601/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+865º Pagina
+'www.cs.sunysb.edu/~csgsc/grc2003/agenda.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+866º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract02122003.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+867º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract02212003.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+868º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract02262003.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+869º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract02282007.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+870º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract04182007.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+871º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract04272007.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+872º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract05042007.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+873º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract10232002.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+874º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract11012002.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+875º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20031003.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+876º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20031031.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+877º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20031114.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+878º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20040216.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+879º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20040310.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+880º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20041105.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+881º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20041112.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+882º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20041119.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+883º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20041203.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+884º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20050204.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+885º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20050214.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+886º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20050218.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+887º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20050225.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+888º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20050311.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+889º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20051121.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+890º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20051208.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+891º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20070207.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+892º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20071010.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+893º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20080926.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+894º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20081027.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+895º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20081215.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+896º Pagina
+'www.cs.sunysb.edu/~events/DLseries/abstract20090320.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+897º Pagina
+'www.cs.sunysb.edu/~events/DLseries/DLSeriesFall2000.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+898º Pagina
+'www.cs.sunysb.edu/~events/DLseries/DLSeriesFall2000Abstracts.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+899º Pagina
+'www.cs.sunysb.edu/~events/DLseries/DLSeriesFall2001.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+900º Pagina
+'www.cs.sunysb.edu/~events/DLseries/DLSeriesFall2001Abstracts.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+901º Pagina
+'www.cs.sunysb.edu/~events/DLseries/DLSeriesFall2002.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+902º Pagina
+'www.cs.sunysb.edu/~events/DLseries/DLSeriesFall2003.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+903º Pagina
+'www.cs.sunysb.edu/~events/DLseries/DLSeriesFall2004.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+904º Pagina
+'www.cs.sunysb.edu/~events/DLseries/DLSeriesFall2005.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+905º Pagina
+'www.cs.sunysb.edu/~events/DLseries/DLSeriesFall2006.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+906º Pagina
+'www.cs.sunysb.edu/~events/DLseries/DLSeriesFall2007.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+907º Pagina
+'www.cs.sunysb.edu/~events/DLseries/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+908º Pagina
+'www.cs.sunysb.edu/~events/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+909º Pagina
+'www.cs.sunysb.edu/~ezk/index.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+910º Pagina
+'www.cs.sunysb.edu/~faq/DepartmentSpamFilter.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+911º Pagina
+'www.cs.sunysb.edu/~faq/InternetWireless.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+912º Pagina
+'www.cs.sunysb.edu/~faq/MiscWindowsUpdate.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+913º Pagina
+'www.cs.sunysb.edu/~faq/MSDNAA.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+914º Pagina
+'www.cs.sunysb.edu/~faq/Projector1310.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+915º Pagina
+'www.cs.sunysb.edu/~faq/SSHTunnelingWindows.html', tem:
+	PageRank: 0.150000;
+	Nº Saidas: 0;
+	Nº Entradas: 0;
+
+
+916º Pagina
+'www.cs.s

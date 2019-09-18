@@ -1,0 +1,346 @@
+<html>
+<head>
+<title>Computer Science Department - Running Windows Applications Under Unix</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- This file contains the site wide Javascript functions and stylesheet -->
+
+<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+  var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+  if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+  d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+  if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+          
+//-->
+</script>
+
+<link rel="STYLESHEET" type="text/css" href="/style/all.css">
+ 
+</head>
+
+<body bgcolor="#FFFFFF" link="#FFFFFF" vlink="#FFFFFF">
+ 
+<table border="0" align="center" width="760">
+  <tr> 
+    <td valign="top">
+              <img src="/menu/images/banners/CSfacilitiesbanner.gif" width="640" height="30"><br>
+        <img src="/menu/images/banners/CSfacilitiespic.jpg" width="640" height="120" vspace="3"><BR>
+ 
+      <table border="0" cellpadding="0" cellspacing="0" width="640">
+
+                  <tr>
+          <!-- Shim row, height 1. -->
+          <td colspan="8" bgcolor="FFFFFF" width="640" height="1"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+          <td gcolor="FFFFFF" width="1" height="1" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+ 
+
+                  <tr>
+          <!-- row 1 -->
+          <td ><a href="/admissions/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('admissions','','/menu/images/CSmenu/admissions_f2.gif',1);" ><img name="admissions" src="/menu/images/CSmenu/admissions.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/research/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('research','','/menu/images/CSmenu/research_f2.gif',1);" ><img name="research" src="/menu/images/CSmenu/research.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/facilities/index.html"><img name="facilities" src="/menu/images/CSmenu/facilities_r1.gif" width="80" height="30" border="0"></a></td>
+          <td><a href="/people/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('people','','/menu/images/CSmenu/people_f2.gif',1);" ><img name="people" src="/menu/images/CSmenu/people.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/undergrad/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('undergrad','','/menu/images/CSmenu/undergrad_f2.gif',1);" ><img name="undergrad" src="/menu/images/CSmenu/undergrad.gif" width="80" height="30" border="0"></a></td>
+          <td><a href="/graduate/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('graduate','','/menu/images/CSmenu/graduate_f2.gif',1);" ><img name="graduate" src="/menu/images/CSmenu/graduate.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="http://www.cs.sunysb.edu/~news/" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('events','','/menu/images/CSmenu/events_f2.gif',1);" ><img name="events" src="/menu/images/CSmenu/events.gif" width="80" height="30" border="0"></a></td>
+          <td ><a href="/welcome/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('welcome','','/menu/images/CSmenu/welcome_f2.gif',1);" ><img name="welcome" src="/menu/images/CSmenu/welcome.gif" width="80" height="30" border="0"></a></td>
+          <td bgcolor="FFFFFF" width="1" height="30" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+ 
+
+                  <tr>
+          <!-- row 3 -->
+          <td colspan="8">
+           <table border=0 cellpadding=0 cellspacing=0 width="640">
+            <tr>
+              <td width="100" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="3" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="30" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="3" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="61" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="118" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="85" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="80" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="100" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+             </tr>
+            </table>
+           </td>
+           <td bgcolor="FFFFFF" width="1" height="3" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+
+
+
+                  <tr>
+          <!-- row 3 -->
+          <td colspan="8">
+           <table border=0 cellpadding=0 cellspacing=0 width="640">
+            <tr bgcolor="CCCCCC">
+              <td bgcolor="CCCCCC" width="100" height="18" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td><a href="/facilities/FAQ/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('faq2','','/menu/images/facilities/faq2_f2.gif',1);" ><img name="faq2" src="/menu/images/facilities/faq2.gif" width="30" height="18" border="0"></a></td>
+              <td width="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td><img name="row3_dot" src="/menu/images/CSmenu/row3_dot.gif" width="15" height="18" border="0"></td>
+              <td><a href="/facilities/ComputerScienceLibrary.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('library2','','/menu/images/facilities/library2_f2.gif',1);" ><img name="library2" src="/menu/images/facilities/library2.gif" width="61" height="18" border="0"></a></td>
+              <td><img name="row3_dot" src="/menu/images/CSmenu/row3_dot.gif" width="15" height="18" border="0"></td>
+              <td><a href="/facilities/undergrad/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('uglabs2','','/menu/images/facilities/uglabs2_f2.gif',1);" ><img name="uglabs2" src="/menu/images/facilities/uglabs2.gif" width="118" height="18" border="0"></a></td>
+              <td><img name="row3_dot" src="/menu/images/CSmenu/row3_dot.gif" width="15" height="18" border="0"></td>
+              <td><a href="/facilities/graduate/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('gradlabs2','','/menu/images/facilities/gradlabs2_f2.gif',1);" ><img name="gradlabs2" src="/menu/images/facilities/gradlabs2.gif" width="85" height="18" border="0"></a></td>
+              <td><img name="row3_dot" src="/menu/images/CSmenu/row3_dot.gif" width="15" height="18" border="0"></td>
+              <td><a href="/facilities/research/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('researchlabs2','','/menu/images/facilities/researchlabs2_f2.gif',1);" ><img name="researchlabs2" src="/menu/images/facilities/researchlabs2.gif" width="80" height="18" border="0"></a></td>
+              <td bgcolor="CCCCCC" width="100" height="18" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+             </tr>
+            </table>
+           </td>
+           <td bgcolor="FFFFFF" width="1" height="18" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+
+
+
+                  <tr>
+          <!-- row 3 -->
+          <td colspan="8">
+           <table border=0 cellpadding=0 cellspacing=0 width="640">
+            <tr>
+              <td width="100" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="3" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="30" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="3" height="3" bgcolor="8D4714"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="61" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="118" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="85" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="15" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="80" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+              <td width="100" height="3" bgcolor="CCCCCC"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+             </tr>
+            </table>
+           </td>
+           <td bgcolor="FFFFFF" width="1" height="3" border="0"><IMG SRC="/menu/images/CSmenu/blank.gif" WIDTH="1" HEIGHT="1" BORDER="0"></td>
+        </tr>
+
+
+
+      </table>
+
+      <p> 
+        <!-- Image with table -->
+        <!-- Image with table -->
+      </p>
+                
+               <div align="center">
+                  
+        <h1> Running Windows Applications Under Unix</h1>
+               </div>
+      <!-- Enter main content here-->
+      <p><strong>Q. How can I run Windows applications on my Unix machine?</strong></p>
+      <p>Use the winnt command to launch a Windows session on your Unix box.<br>
+        Below are answers to some common questions.<br>
+      </p>
+      <ol>              <li><strong>What software applications are available?</strong></li><br>
+
+	Microsoft Office, including Access, Excel, Frontpage, PowerPoint, Project, Publisher, Visio and Word.
+	Adobe Photoshop
+	NetShield VirusScan
+
+<li><strong>How do I use it?</strong></li><br>
+
+	Run the command /usr/local/bin/winnt
+	Log in using your department username and password.
+
+<li><strong>Where do I save/retrieve files from?</strong></li><br>
+
+	Your Unix home directory is mounted as the H: drive.
+
+<li><strong>Can I cut and paste between Unix applications and Microsoft
+applications?</strong></li><br>
+
+	Yes.   From Unix to Microsoft, use your usual method to select
+the text on the Unix side, then select "Paste" from the menubar of the Microsoft application.  From Microsoft to Unix, select the text on the Microsoft side, then select "Copy" or "Cut" as required from the menubar of the application, then use your usual method to insert the text on the Unix side.
+
+<li><strong>I don't like the size and/or location of the Windows window
+on my Unix machine, can I change it?</strong></li><br>
+
+	Yes.  The startup command (winnt) will take a -geometry option to specify the startup size and location.  The format is:
+
+	<pre>winnt -geometry widthxheight+-xpos+-ypos</pre>
+
+For example, the command <pre>winnt -geometry 200x200+0-0</pre> will start Windows in a 200 pixel square window in the bottom left corner of your screen.
+
+<li><strong>How do I get files from/to the floppy drive on my workstation?</strong></li><br>
+
+	Using the Unix File Manager or mtools copy the file to your home directory which is mounted as the h: drive in your Windows session.</ol>
+	  <p>Other Ways to access Windows files Under Unix:</p> 
+      <ol>
+        <br>
+        <b>PCFileViewer</b><br>
+        PCFileViewer will allow you to view a Microsoft document. Usage: /usr/local/bin/sdtpcv 
+        filename Note that it does not have a print or edit feature. <br>
+        <br>
+        <strong>Qvpunix</strong> <br>
+        Qvpunix will allow you to view a Microsoft document and includes an option 
+        to print on any of the department printers. Usage: /usr/local/bin/qvpunix 
+        filename <br>
+        <br>
+        <strong>StarOffice</strong><br>
+        <br>
+<p><a name="staroffice"></a>
+StarOffice is a Unix version of the Microsoft Office suite of
+applications. It allows you to read, write and edit Microsoft
+Word documents, Excel spreadsheets, PowerPoint presentations, and so
+forth, on your Unix workstation.
+</p>
+<p>
+To run Staroffice 6.0 for the first time, do the following: <br>
+</p>
+<p>
+</p>
+<ul>
+  <li>cd /usr/local/pkg/staroffice/program</li>
+  <li>./setup <br>
+  </li>
+  <li>In the 'Installation Program for StarOffice 6.0' window click
+"Next" <br>
+  </li>
+  <li>In the 'Important Information' window click "Next" In the
+'Software License Agreement' window click "Accept" <br>
+  </li>
+  <li>If this is your first time using Staroffice, you will be
+presented
+with a 'Enter User Data' screen. The data entered here will be used as
+defaults by some applications, for example, in templates for letters
+and
+faxes. You can fill out whichever fields you like or leave them all
+blank. When you are finished, click "Next". <br>
+  </li>
+  <li>If you have a previous version of StarOffice installed then a
+window will pop up to 'Import Personal Data' - click "Next". <br>
+  </li>
+  <li>In the 'Select Installation Type' window select 'Workstation
+Installation' and click "Next". <br>
+  </li>
+  <li>In the Select Installation Directory window you can either accept
+the default suggestion, which should be ~/staroffice6.0, or use the
+'Browse'
+button to select an alternate directory. <br>
+  </li>
+  <li>Click "Yes" after being asked to create the directory. <br>
+  </li>
+  <li>In the 'Start Copying' window click "Install". <br>
+  </li>
+  <li>In the 'Java Setup' window click on the "Browse" button, double
+click on "pkg" in the list presented in the box to the left, click on
+"j2re1.4.0_01", and then click "OK". The window will change to read
+'Already Installed'. Click "OK". In the 'Installation completed window'
+click Complete. </li>
+</ul>
+<p>
+You will now have a staroffice6.0 directory in the top level of your
+home directory, (or wherever you chose to put it). Run 
+~/staroffice6.0/soffice to launch StarOffice.
+</p>
+
+      <p align="center">[<a href="FAQbyIndex.html">FAQ by Index</a>] [<a href="index.html">FAQ 
+        by Category</a>]<br>
+      </p>
+        <!-- End main content here-->
+
+    </td>
+    <td valign="top" bordercolor="#FFFFFF">
+            <div align="center"><a href="http://www.stonybrook.edu"><img src="/menu/images/SBLogo4pmsSM.gif" width="112" height="66" border="0"></a></div>
+      <BR>
+      <div align="center"><a href="http://www.cs.sunysb.edu"><img src="/menu/images/cslogotype_color.gif" width="95" height="95" border="0"></a></div>
+
+      <BR>
+   <table width="100%" border=0 cellpadding=2 cellspacing=0>
+    <tr>
+     <td align="center">
+      <form method="get" action="http://www.cs.sunysb.edu/search/search.cgi" name="search" >
+       <input type="text" name="Terms" id="fdse_TermsEx" size=12 value="Search CS" onFocus="document.search.Terms.value='';document.search.Terms.select()"><input type=image src="/csimages/searchsite.gif" width=15 height=14 alt="Search Now" value="Go">
+      </form>
+     </td>
+    </tr>
+   </table>
+
+      <hr>
+<div class="navindex">
+          
+  <table border=0 cellpadding=5 cellspacing=0>
+    <tr>
+     <td width="300">
+      <HR width="100%">
+     </td>
+    </tr>
+    <tr>
+
+    <td> <b><font face="Arial, Helvetica, sans-serif" size="2">
+      <a href="http://www.cs.sunysb.edu/%7Esso">Services via Single Sign-On</a>
+
+      </font></b> </td>
+    </tr>
+     <tr>
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/facilities/FAQ/index.html">Systems 
+        FAQ</a> </font> </td>
+    </tr>
+     <tr>
+	<td> <font face="Arial, Helvetica, sans-serif"> <a href="http://www.cs.sunysb.edu/~csstaff">Technical Staff</a></td>
+     </tr>
+    <tr>
+      <td><font face="Arial, Helvetica, sans-serif"><a href="/events/newsletters/index.html">Monthly 
+        Newsletter</a> </font> </td>
+    </tr>
+    <tr>
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/documentation/index.html">Documentation</a> 
+        </font> </td>
+    </tr>
+    <tr>
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/DepartmentPolicies.html">Department 
+        Policies</a> </font> </td>
+    </tr>
+    <tr>
+      <td><font face="Arial, Helvetica, sans-serif"><a href="/welcome/directions/BuildingMap.html">Computer Science Department Map</a> </font> </td>
+    </tr>
+    <tr>
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/facilities/GradOrientation_SysStaff.pdf">Start 
+        of Semester Information</a> </font> </td>
+    </tr>
+    <tr>
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/facilities/CampusComputingResources.html">Campus 
+        Computing Resources</a> </font> </td>
+    </tr>
+    <tr>
+    <tr> 
+      <td> <font face="Arial, Helvetica, sans-serif"> <a href="/CSbldg.html">New 
+        CS building Plans</a> </font> </td>
+    </tr>
+  </table>
+</div>
+
+</table>
+</body>
+</html>
+

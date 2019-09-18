@@ -1,0 +1,578 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Installing LATEX2HTML</TITLE>
+<META NAME="description" CONTENT="Installing LATEX2HTML">
+<META NAME="keywords" CONTENT="support">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="support.css">
+<LINK REL="previous" HREF="Snode2.html">
+<LINK REL="up" HREF="Snode1.html">
+<LINK REL="next" HREF="Snode4.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html97"
+ HREF="Snode4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html93"
+ HREF="Snode1.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html87"
+ HREF="Snode2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html95"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html96"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html98"
+ HREF="Snode4.html">Getting Support and More</A>
+<B> Up:</B> <A NAME="tex2html94"
+ HREF="Snode1.html">Getting L<SUP>A</SUP>TEX2HTML</A>
+<B> Previous:</B> <A NAME="tex2html88"
+ HREF="Snode2.html">Requirements</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000101200000000000000">
+Installing L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT></A>
+</H3>
+<A NAME="971">&#160;</A>
+<BR>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR>
+To install L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> you <B>MUST</B> do the following:
+<DL COMPACT>
+<DT>1.
+<DD><B>Specify where <A HREF="node10.html#GGGPerl"><I>Perl</I></A> is on your system</B>. <BR>
+In each of the files <A HREF="node10.html#GGGlatex2html"
+ NAME="2031"><TT>latex2html</TT></A>, <A HREF="node10.html#GGGtexexpand"
+ NAME="2039"><TT>texexpand</TT></A>, <A HREF="node10.html#GGGpstoimg"
+ NAME="2047"><TT>pstoimg</TT></A>,
+<A HREF="node10.html#GGGinstall-test"
+ NAME="2055"><TT>install-test</TT></A> and <A HREF="node10.html#GGGmakemap"
+ NAME="2063"><TT>makemap</TT></A>,
+modify the first line saying where <A HREF="node10.html#GGGPerl"><I>Perl</I></A> is on your system.
+<P>
+<A NAME="1261">&#160;</A>
+
+<P>
+Some system administrators do not allow <A HREF="node10.html#GGGPerl"><I>Perl</I></A> programs to run as shell scripts. 
+This means that you may not be able to run any of the above programs. 
+<EM>In this case change the first line in each of these programs from </EM>
+
+<P></P>
+
+<code>#!/usr/local/bin/perl </code> 
+
+<P></P>
+<EM>to</EM>:
+<PRE>
+# *-*-perl-*-*
+    eval 'exec perl -S  $0 "$@"'
+    if $running_under_some_shell;
+</PRE>
+
+<P>
+<A NAME="993">&#160;</A>
+<A NAME="994">&#160;</A>
+<DT>2.
+<DD>Copy the files to the destination directory.
+<BR>
+Copy the contents of the <A HREF="node10.html#GGGtexinputs_"
+ NAME="2080"><TT>texinputs/</TT></A> directory to a place where they
+will be found by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, or set up your <A HREF="node10.html#GGGTEXINPUTS"
+ NAME="2088"><TT>TEXINPUTS</TT></A> variable to point
+to that directory.
+
+<P>
+<A NAME="997">&#160;</A>
+<A NAME="998">&#160;</A>
+<DT>3.
+<DD><B>Run <A HREF="node10.html#GGGinstall-test"
+ NAME="2096"><TT>install-test</TT></A>.</B> <BR>
+This <A HREF="node10.html#GGGPerl"><I>Perl</I></A> script will make some changes in the <A HREF="node10.html#GGGlatex2html"
+ NAME="2107"><TT>latex2html</TT></A> file
+and then check whether the path-names to any external utilities
+required by <A HREF="node10.html#GGGlatex2html"
+ NAME="2115"><TT>latex2html</TT></A> are correct.
+It will not actually install the external utilities. 
+<A HREF="node10.html#GGGinstall-test"
+ NAME="2123"><TT>install-test</TT></A> asks you whether to configure for GIF or
+<A HREF="node10.html#GGGPNG"
+ NAME="2131"><TT>PNG</TT></A> image generation.
+Finally it creates the file <A HREF="node10.html#GGGlocal.pm"
+ NAME="2139"><TT>local.pm</TT></A> which houses pathnames for the
+external utilities determined earlier.
+
+<P>
+
+<P></P>
+You might need to make <A HREF="node10.html#GGGinstall-test"
+ NAME="2147"><TT>install-test</TT></A> executable before using it.
+<BR>
+Use <code>chmod +x install-test</code> to do this.
+
+<P>
+
+<P></P>
+You may also need to make the files <A HREF="node10.html#GGGpstogif"
+ NAME="2155"><TT>pstogif</TT></A>, 
+<A HREF="node10.html#GGGtexexpand"
+ NAME="2163"><TT>texexpand</TT></A>, <A HREF="node10.html#GGGconfigure-pstoimg"
+ NAME="2171"><TT>configure-pstoimg</TT></A> and <A HREF="node10.html#GGGlatex2html"
+ NAME="2179"><TT>latex2html</TT></A> executable 
+if <A HREF="node10.html#GGGinstall-test"
+ NAME="2187"><TT>install-test</TT></A> fails to do it for you.
+
+<P>
+<A NAME="1012">&#160;</A>
+<DT>4.
+<DD>If you like so, copy or move the <A HREF="node10.html#GGGlatex2html"
+ NAME="2195"><TT>latex2html</TT></A> executable script to
+some location outside the <A HREF="node10.html#GGG_LATEX2HTMLDIR"
+ NAME="2203"><TT>$LATEX2HTMLDIR</TT></A> directory.
+
+<P>
+<A NAME="1015">&#160;</A>
+<A NAME="1016">&#160;</A>
+<DT>5.
+<DD>You might want to edit <A HREF="node10.html#GGGlatex2html.config"
+ NAME="2211"><TT>latex2html.config</TT></A> to reflect your needs.
+Read the instructions about <A HREF="node10.html#GGG_ICONSERVER"
+ NAME="2219"><TT>$ICONSERVER</TT></A> carefully to make sure your
+<A HREF="node10.html#GGGHTML"
+ NAME="2227"><TT>HTML</TT></A> documents will be displayed right via the Web server.
+<BR>
+While you're at it you may want to change some of the default
+options in this file.
+<BR>
+If you do a system installation for many users, only cope with general
+aspects; let the user override these with <code>$HOME/.latex2html-init</code>.
+</DL>
+
+<P>
+Note that you <EM>must</EM> run <A HREF="node10.html#GGGinstall-test"
+ NAME="2235"><TT>install-test</TT></A> now;
+formerly you could manage without.
+If you want to reconfigure L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> for GIF/PNG image
+generation, or because some of the external tools changed the location,
+simply rerun <A HREF="node10.html#GGGconfigure-pstoimg"
+ NAME="2243"><TT>configure-pstoimg</TT></A>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+
+<P>
+<BR>
+<BR>
+<HR WIDTH="50%" ALIGN="center">
+
+This is usually enough for the main installation, but you may also 
+want to do some of the following, to ensure that advanced features 
+of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> work correctly on your system:
+<UL><A NAME="1263">&#160;</A>
+<A NAME="1029">&#160;</A>
+<LI><B>To use the new L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  commands 
+which are defined in <A HREF="node10.html#GGGhtml.sty"
+ NAME="2251"><TT>html.sty</TT></A>:</B>
+<BR>
+Make sure that L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  knows where the <A HREF="node10.html#GGGhtml.sty"
+ NAME="2259"><TT>html.sty</TT></A> file is, 
+either by putting it in the same place as the other style-files on your system, 
+or by changing your <A HREF="node10.html#GGGTEXINPUTS"
+ NAME="2267"><TT>TEXINPUTS</TT></A> shell environment variable,
+or by copying <A HREF="node10.html#GGGhtml.sty"
+ NAME="2275"><TT>html.sty</TT></A> into the same directory as your L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  source file.
+
+<P>
+The environment variable <A HREF="node10.html#GGGTEXINPUTS"
+ NAME="2283"><TT>TEXINPUTS</TT></A> is not to be confused with 
+the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> installation variable <A HREF="node10.html#GGG_TEXINPUTS"
+ NAME="2291"><TT>$TEXINPUTS</TT></A> described next.
+
+<P>
+<A NAME="1040">&#160;</A>
+<LI>
+There is an installation variable in <A HREF="node10.html#GGGlatex2html.config"
+ NAME="2299"><TT>latex2html.config</TT></A>
+called <A HREF="node10.html#GGG_TEXINPUTS"
+ NAME="2307"><TT>$TEXINPUTS</TT></A>, 
+which tells L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> where to look for L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X style-files to process.  
+It can also affect the input-path of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X when called by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>,
+unless the command <A HREF="node10.html#GGGlatex"
+ NAME="2315"><TT>latex</TT></A> is really a script 
+which overwrites the <A HREF="node10.html#GGG_TEXINPUTS"
+ NAME="2323"><TT>$TEXINPUTS</TT></A> variable 
+prior to calling the real <A HREF="node10.html#GGGlatex"
+ NAME="2331"><TT>latex</TT></A>.
+This variable is overridden by the environment variable of the same name 
+if it is set.
+
+<P>
+<A NAME="1049">&#160;</A>
+<LI>
+The installation variable <A HREF="node10.html#GGG_PK_GENERATION"
+ NAME="2339"><TT>$PK_GENERATION</TT></A> specifies which
+fonts are used in the generation of mathematical equations.  A value
+of ``<TT>0</TT>'' causes the same fonts to be used as those for the default
+printer.  Because they were designed for a printer of much greater
+resolution than the screen, equations will generally appear to be
+of a lower quality than is otherwise possible.  To cause L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> to
+dynamically generate fonts that are designed specifically for the
+screen, you should specify a value of ``<TT>1</TT>'' for this variable.
+If you do, then check to see whether your version of <TT>dvips</TT>
+supports the command-line option  <TT>-mode</TT> .  If it does,
+then also set the installation variable <A HREF="node10.html#GGG_DVIPS_MODE"
+ NAME="2348"><TT>$DVIPS_MODE</TT></A> to
+a low resolution entry from <A HREF="node10.html#GGGmodes.mf"
+ NAME="2356"><TT>modes.mf</TT></A>, such as <A HREF="node10.html#GGGtoshiba"
+ NAME="2364"><TT>toshiba</TT></A>.
+
+<P>
+It may also be necessary to edit the <A HREF="node10.html#GGGMakeTeXPK"
+ NAME="2372"><TT>MakeTeXPK</TT></A> script, 
+to recognise this mode at the appropriate resolution.
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+If you have <A HREF="#GGGpostscript"
+ NAME="2380">PostScript</A> fonts available for use with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X and <A HREF="node10.html#GGGdvips"
+ NAME="2389"><TT>dvips</TT></A>
+then you can probably ignore the above complications and simply
+set <A HREF="node10.html#GGG_PK_GENERATION"
+ NAME="2397"><TT>$PK_GENERATION</TT></A> to ``<TT>0</TT>'' 
+and <A HREF="node10.html#GGG_DVIPS_MODE"
+ NAME="2405"><TT>$DVIPS_MODE</TT></A> to <TT>&#34;&#34;</TT> (the empty string).
+You must also make sure that <A HREF="node10.html#GGGgs"
+ NAME="2413"><TT>gs</TT></A> has the locations of the
+fonts recorded in its <A HREF="node10.html#GGGgs_fonts.ps"
+ NAME="2421"><TT>gs_fonts.ps</TT></A> file. This should already be the case
+where <A HREF="node10.html#GGGGS-Preview"
+ NAME="2429"><I>GS-Preview</I></A> is installed as the viewer for <TT>.dvi</TT>-files,
+using the <A HREF="#GGGpostscript"
+ NAME="2438">PostScript</A> fonts.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+If <A HREF="node10.html#GGGdvips"
+ NAME="2447"><TT>dvips</TT></A> does <EM>not</EM> support the  <TT>-mode</TT>  switch,
+then leave <A HREF="node10.html#GGG_DVIPS_MODE"
+ NAME="2456"><TT>$DVIPS_MODE</TT></A> undefined, and verify that the
+<A HREF="node10.html#GGG.dvipsrc"
+ NAME="2464"><TT>.dvipsrc</TT></A> file points to the correct screen device and its
+resolution.
+
+<P>
+<A NAME="1078">&#160;</A><A NAME="autoprefix">&#160;</A><LI>
+The installation variable <A HREF="node10.html#GGG_AUTO_PREFIX"
+ NAME="2472"><TT>$AUTO_PREFIX</TT></A> 
+allows the filename-prefix to be automatically set 
+to the base filename-prefix of the document being translated.  
+This can be especially useful for multiple-segment documents.
+
+<P>
+<A NAME="1265">&#160;</A>
+<A NAME="1082">&#160;</A><A NAME="1083">&#160;</A>
+<LI>The <A HREF="node10.html#GGGmakemap"
+ NAME="2480"><TT>makemap</TT></A> script also has a configuration variable <A HREF="node10.html#GGG_SERVER"
+ NAME="2488"><TT>$SERVER</TT></A>, 
+which must be set to either <TT>CERN</TT> or <TT>NCSA</TT>, 
+depending on the type of Web-server you are using.
+
+<P>
+<A NAME="1088">&#160;</A>
+<A NAME="1089">&#160;</A>
+<A NAME="initfile">&#160;</A><LI><B>To set up different initialization files:</B>
+<BR>
+For a ``per user'' initialization file, 
+copy the file <A HREF="node10.html#GGGdot.latex2html-init"
+ NAME="2496"><TT>dot.latex2html-init</TT></A> in the home directory
+of any user that wants it, modify it according to her preferences and
+rename it as  <A HREF="node10.html#GGG.latex2html-init"
+ NAME="2504"><TT>.latex2html-init</TT></A>. At runtime, both the 
+<A HREF="node10.html#GGGlatex2html.config"
+ NAME="2512"><TT>latex2html.config</TT></A> file and <A HREF="node10.html#GGG_HOME_.latex2html-init"
+ NAME="2520"><TT>$HOME/.latex2html-init</TT></A> file will be
+loaded, but the latter will take precedence.
+
+<P>
+<A NAME="1096">&#160;</A>
+
+<P>
+You can also set up a ``per directory'' initialization file by 
+copying a version of  <A HREF="node10.html#GGG.latex2html-init"
+ NAME="2528"><TT>.latex2html-init</TT></A> in each directory you
+would like it to be effective. An initialization file
+<TT>/X/Y/Z/.latex2html-init</TT> will take precedence over all other
+initialization files if <TT>/X/Y/Z</TT> is the ``current directory'' when
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> is invoked.
+
+<P>
+<A NAME="1101">&#160;</A>
+<BLOCKQUOTE>
+
+<B>Warning: </B>
+This initialization file is incompatible with
+any version of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> prior to <SMALL>V96.1</SMALL>.  
+Users must either update this file in their home directory, 
+or delete it altogether.
+</BLOCKQUOTE>
+
+<P>
+<A NAME="1266">&#160;</A>
+<LI><A NAME="icondir">&#160;</A><B>To make your own local copies of the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> icons:</B> <BR>
+Please copy the <A HREF="node10.html#GGGicons_"
+ NAME="2538"><TT>icons/</TT></A> subdirectory to a 
+place under your WWW tree
+where they can be served by your server.
+Then modify the value of the <A HREF="node10.html#GGG_ICONSERVER"
+ NAME="2546"><TT>$ICONSERVER</TT></A> variable in 
+<A HREF="node10.html#GGGlatex2html.config"
+ NAME="2554"><TT>latex2html.config</TT></A> accordingly.
+<A NAME="1112">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Alternatively, a local copy of the icons can be included within
+the subdirectory containing your completed <TT>HTML</TT> documents.
+This is most easily done using the  <TT>-local_icons</TT>  command-line switch,
+or by setting <A HREF="node10.html#GGG_LOCAL_ICONS"
+ NAME="2563"><TT>$LOCAL_ICONS</TT></A> to ``<TT>1</TT>'' in <A HREF="node10.html#GGGlatex2html.config"
+ NAME="2571"><TT>latex2html.config</TT></A>
+or within an initialization file, as described <A HREF="Snode3.html#initfile">above</A>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="1123">&#160;</A>
+<BLOCKQUOTE>
+
+<B>Warnings: </B>
+If you cannot do that, bear in mind that these icons will have
+to travel from Livermore, California!!!
+Also note that several more icons were added in <SMALL>V96.1</SMALL>
+that were not present in earlier versions of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+</BLOCKQUOTE>
+
+<P>
+<A NAME="1128">&#160;</A>
+<A NAME="1129">&#160;</A>
+<LI>
+<B>To make your own local copy of the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>
+documentation:</B> <BR>
+This will also be a good test of your installation. 
+<A NAME="1269">&#160;</A>
+
+Firstly, to obtain the <TT>.dvi</TT> version for printing,
+from within the <A HREF="node10.html#GGGdocs_"
+ NAME="2579"><TT>docs/</TT></A> directory it is sufficient to type:
+
+<P>
+<TT> make manual.dvi</TT>
+
+<P>
+This initiates the following sequence of commands:
+<PRE>
+latex manual.tex
+makeindex -s l2hidx.ist manual.idx
+makeindex -s l2hglo.ist -o manual.gls manual.glo
+latex manual.tex
+latex manual.tex
+</PRE>
+<A NAME="1270">&#160;</A>
+<A NAME="1138">&#160;</A>
+...in which the two configuration files <A HREF="node10.html#GGGl2hidx.ist"
+ NAME="2587"><TT>l2hidx.ist</TT></A> and <A HREF="node10.html#GGGl2hglo.ist"
+ NAME="2595"><TT>l2hglo.ist</TT></A> 
+for the <A HREF="node10.html#GGGmakeindex"
+ NAME="2603"><TT>makeindex</TT></A> program, are used to create the index and glossary respectively.
+The 2nd run of <A HREF="node10.html#GGGlatex"
+ NAME="2611"><TT>latex</TT></A> is needed to assimilate references, etc.
+and include the index and glossary.
+<BR>
+<A NAME="1271">&#160;</A>
+<BR>
+(In case <A HREF="node10.html#GGGmakeindex"
+ NAME="2619"><TT>makeindex</TT></A> is not available, a copy of its outputs <A HREF="node10.html#GGGmanual.ind"
+ NAME="2627"><TT>manual.ind</TT></A> 
+and <A HREF="node10.html#GGGmanual.gls"
+ NAME="2635"><TT>manual.gls</TT></A> are included in the <A HREF="node10.html#GGGdocs_"
+ NAME="2643"><TT>docs/</TT></A> subdirectory, 
+along with <A HREF="node10.html#GGGmanual.aux"
+ NAME="2651"><TT>manual.aux</TT></A>.)
+<BR>
+The 3rd run of <A HREF="node10.html#GGGlatex"
+ NAME="2659"><TT>latex</TT></A> is needed to adjust page-numbering for the Index 
+and Glossary within the Table-of-Contents.
+
+<P>
+Next, the <TT>HTML</TT> version is obtained by typing:
+
+<P>
+<TT>make manual.html</TT>
+
+<P>
+This initiates a series of calls to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> on the separate
+segments of the manual; 
+the full manual is thus created as a ``segmented document''
+(see <A HREF="Hnode11.html#Segmentation">a later section</A>).
+The whole process may take quite some time, 
+as each segment needs to be processed at least twice, 
+to collect the cross-references from other segments.
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="1160">&#160;</A>
+<BR>
+
+The files necessary for correct typesetting of the manual to be
+found within the <A HREF="node10.html#GGGdocs_"
+ NAME="2667"><TT>docs/</TT></A> subdirectory. 
+They are as follows:
+<UL><A NAME="1272">&#160;</A>
+<A NAME="1165">&#160;</A>
+<LI>
+style-files:
+ <A HREF="node10.html#GGGl2hman.sty"
+ NAME="2675"><TT>l2hman.sty</TT></A>, <A HREF="node10.html#GGGhtml.sty"
+ NAME="2683"><TT>html.sty</TT></A>, <A HREF="node10.html#GGGhtmllist.sty"
+ NAME="2691"><TT>htmllist.sty</TT></A>, <A HREF="node10.html#GGGjustify.sty"
+ NAME="2699"><TT>justify.sty</TT></A>,
+<BR>
+  <A HREF="node10.html#GGGchangebar.sty"
+ NAME="2707"><TT>changebar.sty</TT></A> and <A HREF="node10.html#GGGurl.sty"
+ NAME="2715"><TT>url.sty</TT></A>
+<A NAME="1172">&#160;</A>
+<LI>
+inputs:
+ <I><A HREF="node10.html#GGGchanges.tex"
+ NAME="2723"><TT>changes.tex</TT></A>,</I> <A HREF="node10.html#GGGcredits.tex"
+ NAME="2731"><TT>credits.tex</TT></A>, <A HREF="node10.html#GGGfeatures.tex"
+ NAME="2739"><TT>features.tex</TT></A>, <A HREF="node10.html#GGGhypextra.tex"
+ NAME="2747"><TT>hypextra.tex</TT></A>,
+<BR>
+ <A HREF="node10.html#GGGlicence.tex"
+ NAME="2755"><TT>licence.tex</TT></A>, <A HREF="node10.html#GGGmanhtml.tex"
+ NAME="2763"><TT>manhtml.tex</TT></A>, <A HREF="node10.html#GGGmanual.tex"
+ NAME="2771"><TT>manual.tex</TT></A>, <A HREF="node10.html#GGGoverview.tex"
+ NAME="2779"><TT>overview.tex</TT></A>,
+<BR>
+ <A HREF="node10.html#GGGproblems.tex"
+ NAME="2787"><TT>problems.tex</TT></A>, <A HREF="node10.html#GGGsupport.tex"
+ NAME="2795"><TT>support.tex</TT></A> and <A HREF="node10.html#GGGuserman.tex"
+ NAME="2803"><TT>userman.tex</TT></A>
+<A NAME="1184">&#160;</A>
+<LI>
+sub-directory:
+ <A HREF="node10.html#GGGpsfiles_"
+ NAME="2811"><TT>psfiles/</TT></A> containing <A HREF="#GGGpostscript"
+ NAME="2819">PostScript</A> graphics
+ used in the printed version of this manual
+<A NAME="1186">&#160;</A>
+<LI>
+images of small curved arrows: <A HREF="node10.html#GGGup.gif"
+ NAME="2828"><TT>up.gif</TT></A>, <A HREF="node10.html#GGGdn.gif"
+ NAME="2836"><TT>dn.gif</TT></A>
+<A NAME="1189">&#160;</A>
+<LI>
+filename data:
+ <A HREF="node10.html#GGGl2hfiles.dat"
+ NAME="2844"><TT>l2hfiles.dat</TT></A>
+<A NAME="1191">&#160;</A>
+<LI>
+auxiliaries:
+ <A HREF="node10.html#GGGmanual.aux"
+ NAME="2852"><TT>manual.aux</TT></A>, <A HREF="node10.html#GGGmanual.ind"
+ NAME="2860"><TT>manual.ind</TT></A>, <A HREF="node10.html#GGGmanual.gls"
+ NAME="2868"><TT>manual.gls</TT></A>
+</UL>
+
+<P>
+The last three can be derived from the others, but are included for convenience.
+
+<P>
+<A NAME="1196">&#160;</A>
+<LI><P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR><B>To get a printed version of the `Changes' section: </B>
+<BR>
+Due to the burgeoning size of the <A HREF="node10.html#GGGChanges"
+ NAME="2876"><TT>Changes</TT></A> file with successive
+revisions of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, the `Changes' section is no longer
+supported for the manual.
+Please refer to text file <A HREF="node10.html#GGGChanges"
+ NAME="2884"><TT>Changes</TT></A> instead which is part of the
+distribution.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+<A NAME="1203">&#160;</A><A NAME="1204">&#160;</A>
+<LI><B>To join the community of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> users:</B> <BR>
+More information on a mailing list, discussion archives, bug reporting
+forms and more is available at 
+<A NAME="tex2html37"
+ HREF="http://cbl.leeds.ac.uk/nikos/tex2html/doc/latex2html/latex2html.html">http://cbl.leeds.ac.uk/nikos/tex2html/doc/latex2html/latex2html.html</A>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html97"
+ HREF="Snode4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html93"
+ HREF="Snode1.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html87"
+ HREF="Snode2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html95"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html96"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html98"
+ HREF="Snode4.html">Getting Support and More</A>
+<B> Up:</B> <A NAME="tex2html94"
+ HREF="Snode1.html">Getting L<SUP>A</SUP>TEX2HTML</A>
+<B> Previous:</B> <A NAME="tex2html88"
+ HREF="Snode2.html">Requirements</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

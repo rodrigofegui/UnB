@@ -1,0 +1,398 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Document Segmentation44</TITLE>
+<META NAME="description" CONTENT="Document Segmentation44">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="previous" HREF="Hnode10.html">
+<LINK REL="up" HREF="hypextra.html">
+<LINK REL="next" HREF="Hnode12.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html242"
+ HREF="Hnode12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html238"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html232"
+ HREF="Hnode10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html240"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html241"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html243"
+ HREF="Hnode12.html">A Segmentation Example</A>
+<B> Up:</B> <A NAME="tex2html239"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html233"
+ HREF="Hnode10.html">Active Image Maps</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0001210000000000000000">&#160;</A><A NAME="Segmentation">&#160;</A>
+<BR>
+Document Segmentation<A NAME="tex2html26"
+ HREF="#foot2130"><SUP>45</SUP></A>
+</H2>
+<!--Table of Child-Links-->
+<UL>
+<LI><A NAME="tex2html244"
+ HREF="Hnode12.html">A Segmentation Example</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR CLEAR="ALL">
+<HR>
+<A NAME="2132">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+One of the greatest appeals of the World-Wide Web is its high
+connectivity through hyper-links.  As we have seen, the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X 
+author can provide these links either manually or symbolically.
+Manual links are more tedious because a URL must be provided
+by the author for every link, and updated every time the target
+documents change.
+<A NAME="2136">&#160;</A>
+Symbolic links are more convenient, 
+because the translator keeps track of the URLs.  
+Earlier releases of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> required the entire document 
+to be processed together if it was to be linked symbolically.  
+However it was easy for large documents to overwhelm 
+the memory capacities of moderate-sized computers.  
+Furthermore, processing time could become prohibitively high, 
+if even a small change required the entire document to be reprocessed.
+
+<P>
+<A NAME="2137">&#160;</A><A NAME="2138">&#160;</A>
+<A NAME="2139">&#160;</A>
+<BR>
+For these reasons, program segmentation was developed.
+This feature enables the author to subdivide his document
+into multiple <I>segments</I><A NAME="segments">&#160;</A>.
+Each segment can be processed independently by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+Hypertext links between segments can be made symbolically,
+with references shared through auxiliary files.  
+If a single segment changes, only that segment needs to be reprocessed 
+(unless a label is changed that another segment requires).  
+Furthermore, the entire document can be processed 
+without modification by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X to obtain the printed version.  
+
+<P>
+<A NAME="2144">&#160;</A>
+<A NAME="2145">&#160;</A>
+<BR>
+The top level segment that L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X reads is called the <EM>parent</EM> segment.
+<BR>
+The others are called <EM>child</EM> segments.
+
+<P>
+<A NAME="2151">&#160;</A>
+<BR>
+Document segmentation does require a little more work on the
+part of the author, who will now have to undertake some
+of the book-keeping formerly performed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+The following four L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X extensions carry out segmentation:
+
+<P>
+<DL><DT>
+<A NAME="2610">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><TT>&#92;segment&#123;
+&lt;<I>file</I>&gt;&#125;&#123;
+&lt;<I>sec-type</I>&gt;</TT>
+<TT>&#125;&#123;
+&lt;<I>heading</I>&gt;&#125;</TT><A NAME="segment">&#160;</A></B>
+<DD>This command indicates the start of a new program segment.
+The segment resides in <TT>
+&lt;<I>file</I>&gt;.tex</TT>, represents the start
+of a new L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X sectional unit of type <TT>
+&lt;<I>sec-type</I>&gt;</TT>
+(e.g., <TT>&#92;section</TT>, <TT>&#92;chapter</TT>, etc.) and has a heading
+of <TT>
+&lt;<I>heading</I>&gt;</TT>.  (A variation <TT>&#92;segment*</TT> of this command, 
+is provided for segments that are <EM>not</EM> to appear in the table of contents.)
+<BR>
+These commands perform the following operations in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X:
+<DL COMPACT>
+<DT>1.
+<DD>The specified sectioning command is executed.
+<DT>2.
+<DD>L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X will write its section and equation counters
+into an auxiliary file, named <TT>
+&lt;<I>file</I>&gt;.ptr</TT>.  It will also
+write an <TT>&#92;htmlhead</TT> command to this file.  This
+information will tell L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> how to initialise itself
+for the new document segment.
+<DT>3.
+<DD>L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X will then proceed to input and process the file <TT>
+&lt;<I>file</I>&gt;.tex</TT>.
+</DL>
+The <TT>&#92;segment</TT> and <TT>&#92;segment*</TT> commands are ignored by
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+
+<P>
+<A NAME="2611">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><TT>&#92;internal[
+&lt;<I>type</I>&gt;]&#123;</TT>
+<TT>
+&lt;<I>prefix</I>&gt;&#125;</TT><A NAME="internal">&#160;</A></B>
+<DD>This command directs L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> to load inter-segment information 
+of type <TT>
+&lt;<I>type</I>&gt;</TT> from the file <TT>
+&lt;<I>prefix</I>&gt;
+&lt;<I>type</I>&gt;.pl</TT>&nbsp;.  
+Each program segment must be associated with a unique <A HREF="#prefix">filename-prefix</A>, 
+specified either through a command-line option, 
+or through the installation variable <A HREF="node10.html#GGG_AUTO_PREFIX"
+ NAME="3802"><TT>$AUTO_PREFIX</TT></A>&nbsp;.
+The information <TT>
+&lt;<I>type</I>&gt;</TT> must be one of the following:
+<DL><DT>
+ 
+<A NAME="2205">&#160;</A>
+<A NAME="2206">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><TT>internals</TT></B>
+<DD>This is the default type, which need not be
+        given.  It specifies that the
+        <A HREF="Hnode7.html#internallabels">internal labels</A> from the
+        designated segment are to be input and made available
+        to the current segment.  
+<BR>
+<A NAME="2211">&#160;</A>
+<A NAME="2212">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><TT>contents</TT></B>
+<DD>The table of contents information from
+        designated segment are to be made available to the
+        current segment.
+<BR>
+<A NAME="2215">&#160;</A>
+<A NAME="2216">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><TT>sections</TT></B>
+<DD>Sectioning information is to be read in.
+        Note that the segment containing the table of contents
+        requires both contents and sections information
+        from all other program segments.
+<BR>
+<A NAME="2219">&#160;</A>
+<A NAME="2220">&#160;</A>
+<A NAME="2221">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><TT>figure</TT></B>
+<DD>Lists of figures from other segments are to be read.
+<BR>
+<A NAME="2224">&#160;</A>
+<A NAME="2225">&#160;</A>
+<A NAME="2226">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><TT>table</TT></B>
+<DD>Lists of tables from other segments are to be read.
+<BR>
+<A NAME="2229">&#160;</A>
+<A NAME="2230">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/orangeball.gif" ALT="*">
+<B><TT>index</TT></B>
+<DD>Index information from other segments is to be read.
+<BR>
+</DL>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1f</SUP>
+<BR><A NAME="2236">&#160;</A>
+<A NAME="2237">&#160;</A>
+<BR>
+<B>Note: </B> If extensive indexing is to be used, then it is advisable
+to keep each <TT>
+&lt;<I>prefix</I>&gt;</TT> quite short. This is because the hyper-links
+in the index have text strings constructed from this <TT>
+&lt;<I>prefix</I>&gt;</TT>,
+when using the 
+<I>makeidx</I> package. Having long names with
+multiply-indexed items results in an extremely inelegant, cumbersome index.
+See <A HREF="Enode16.html#index">the section on indexing</A> for more details.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1f</SUP>
+<BR>
+
+<P>
+<A NAME="2612">&#160;</A>
+<A NAME="2249">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><TT>&#92;startdocument</TT><A NAME="startdoc">&#160;</A></B>
+<DD>The <TT>&#92;begin</TT><code>{document}</code> and  <TT>&#92;end</TT><code>{document}</code>
+statements are contained in the parent segment only.  
+It follows that the child segments cannot be processed
+separately by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X without modification.  However they can be
+processed separately by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, provided it is told
+where the end of the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X preamble is;  this is
+the function of the <TT>&#92;startdocument</TT> directive.  It 
+substitutes for <TT>&#92;begin</TT><code>{document}</code> in child segments, 
+but is otherwise ignored by both L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X and L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+
+<P>
+<A NAME="2613">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><TT>&#92;htmlhead&#123;
+&lt;<I>sec-type</I>&gt;</TT>
+<TT>&#125;&#123;
+&lt;<I>heading</I>&gt;&#125;</TT><A NAME="htmlhead">&#160;</A></B>
+<DD>This command is generated automatically by 
+a <A HREF="Hnode11.html#segment"><TT>&#92;segment</TT></A> command. 
+It is not normally placed in the document at all; instead it facilitates 
+information being passed from parent to child 
+via the <TT>
+&lt;<I>file</I>&gt;.ptr</TT> file.
+<BR>
+It identifies to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> that the current segment 
+is a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X sectional unit of type <TT>
+&lt;<I>sec-type</I>&gt;</TT>, with the specified heading.
+<BR>
+This command is ignored by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X. 
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+From version <SMALL>V97.1</SMALL>, it is possible to use this command to insert extra section-headings,
+for use in the <TT>HTML</TT> version only.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2615">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><TT>&#92;htmlnohead</TT><A NAME="htmlnohead">&#160;</A></B>
+<DD>When placed at the top of the preamble of a document segment, the <TT>&#92;htmlnohead</TT>
+command discards everything from the current page that has been placed already.
+Usually this will be just the section-head, from the <TT>&#92;htmlhead</TT> <A HREF="Hnode11.html#htmlhead">command</A>
+in the <TT>.ptr</TT> file. Numbering and color information is unaffected.
+<BR>
+This allows an alternative heading to be specified, or no heading at all in special
+circumstances; e.g. the page contains a single large table with a caption.
+
+<P>
+<A NAME="2616">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><TT>&#92;segmentcolor&#123;
+&lt;<I>model</I>&gt;</TT>
+<TT>&#125;&#123;
+&lt;<I>color</I>&gt;&#125;</TT><A NAME="segcolor">&#160;</A></B>
+<DD>This command is generated automatically by a <A HREF="Hnode11.html#segment"><TT>&#92;segment</TT></A> command. 
+It is not normally placed in the document at all; instead it facilitates 
+information being passed from parent to child 
+via the <TT>
+&lt;<I>file</I>&gt;.ptr</TT> file.
+<BR>
+It&nbsp;specifies to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> that text in the document 
+should have the color <TT>
+&lt;<I>color</I>&gt;</TT>.
+
+<P>
+<A NAME="2618">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><TT>&#92;segmentpagecolor&#123;
+&lt;<I>model</I>&gt;</TT>
+<TT>&#125;&#123;
+&lt;<I>color</I>&gt;&#125;</TT><A NAME="segpagecolor">&#160;</A></B>
+<DD>This command is generated automatically by a <A HREF="Hnode11.html#segment"><TT>&#92;segment</TT></A> command. 
+It is not normally placed in the document at all; instead it facilitates 
+information being passed from parent to child 
+via the <TT>
+&lt;<I>file</I>&gt;.ptr</TT> file.
+<BR>
+It specifies to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> that the background of in the document 
+should have the color <TT>
+&lt;<I>color</I>&gt;</TT>&nbsp;.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+</DL>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.2</SUP>
+<BR>
+The use of the segmenting commands is best illustrated by the
+<A HREF="Hnode12.html#sec:segmentexample">example</A> below.
+You might want to check your segmented document for consistency using
+the <A HREF="#unsegment">-unsegment</A> command line option.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.2</SUP>
+<BR>
+
+<P>
+<BR><HR><H4>Footnotes</H4>
+<DL>
+<DT><A NAME="foot2130">...</A><A NAME="foot2130"
+ HREF="Hnode11.html#tex2html24"><SUP>43</SUP></A>
+<DD>This feature
+is supported only for users of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB>.
+
+<DT><A NAME="foot2130">...</A><A NAME="foot2130"
+ HREF="Hnode11.html#tex2html25"><SUP>44</SUP></A>
+<DD>This feature
+is supported only for users of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB>.
+
+<DT><A NAME="foot2130">...</A><A NAME="foot2130"
+ HREF="Hnode11.html#tex2html26"><SUP>45</SUP></A>
+<DD>This feature
+is supported only for users of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB>.
+
+</DL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html242"
+ HREF="Hnode12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html238"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html232"
+ HREF="Hnode10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html240"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html241"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html243"
+ HREF="Hnode12.html">A Segmentation Example</A>
+<B> Up:</B> <A NAME="tex2html239"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html233"
+ HREF="Hnode10.html">Active Image Maps</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

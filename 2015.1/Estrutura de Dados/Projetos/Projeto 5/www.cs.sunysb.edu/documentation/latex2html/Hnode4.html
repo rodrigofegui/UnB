@@ -1,0 +1,403 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Conditional Text</TITLE>
+<META NAME="description" CONTENT="Conditional Text">
+<META NAME="keywords" CONTENT="hypextra">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="hypextra.css">
+<LINK REL="next" HREF="Hnode5.html">
+<LINK REL="previous" HREF="Hnode3.html">
+<LINK REL="up" HREF="hypextra.html">
+<LINK REL="next" HREF="Hnode5.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html134"
+ HREF="Hnode5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html130"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html124"
+ HREF="Hnode3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html132"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html133"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html135"
+ HREF="Hnode5.html">Symbolic References shown as</A>
+<B> Up:</B> <A NAME="tex2html131"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html125"
+ HREF="Hnode3.html">Arbitrary Tags and Attributes</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000124000000000000000">&#160;</A><A NAME="sec:latexonly">&#160;</A>
+<BR>
+Conditional Text
+</H2>
+<!--Table of Child-Links-->
+<UL>
+<LI><A NAME="tex2html136"
+ HREF="Hnode4.html#SECTION000124010000000000000"><TT>&#92;begin&#123;latexonly&#125;</TT> and 
+<TT>&#92;begin&#123;htmlonly&#125;</TT></A>
+<LI><A NAME="tex2html137"
+ HREF="Hnode4.html#SECTION000124020000000000000"><TT>&#92;htmlonly...&#92;endhtmlonly</TT></A>
+<LI><A NAME="tex2html138"
+ HREF="Hnode4.html#SECTION000124030000000000000"><TT>&#92;latexonly...&#92;endlatexonly</TT></A>
+<LI><A NAME="tex2html139"
+ HREF="Hnode4.html#SECTION000124040000000000000"><TT>&#92;latex</TT>, <TT>&#92;html</TT> and <TT>&#92;latexhtml</TT></A>
+<LI><A NAME="tex2html140"
+ HREF="Hnode4.html#SECTION000124050000000000000"><TT>%begin&#123;latexonly&#125;</TT></A>
+<LI><A NAME="tex2html141"
+ HREF="Hnode4.html#SECTION000124060000000000000"><TT>&#92;begin&#123;imagesonly&#125;</TT></A>
+<LI><A NAME="tex2html142"
+ HREF="Hnode4.html#SECTION000124070000000000000"><TT>&#92;begin&#123;makeimage&#125;</TT></A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<A NAME="2498">&#160;</A>
+<A NAME="2499">&#160;</A>
+<A NAME="2500">&#160;</A>
+<A NAME="2501">&#160;</A>
+<A NAME="1310">&#160;</A>
+<BR>
+
+<H4><A NAME="SECTION000124010000000000000">&#160;</A><A NAME="latexonly">&#160;</A><A NAME="htmlonly">&#160;</A>
+<BR>
+<TT>&#92;begin&#123;latexonly&#125;</TT> and 
+<TT>&#92;begin&#123;htmlonly&#125;</TT>
+</H4>
+Conditional text can be specified
+using the environments 
+<I>latexonly</I> and 
+<I>htmlonly</I>. 
+These allow writing parts of a document which are intended 
+only for electronic delivery or only for paper-based delivery.
+
+<P>
+This would be useful for example in adding a long description of a
+multi-media resource in the paper version of a document. 
+Such a description would be redundant in the electronic version, 
+as the user can have direct access to this resource. 
+
+<P>
+
+<P>
+<BR>
+Here is an example of the use of the 
+<I>latexonly</I> environment,
+used <A HREF="Hnode2.html#eform">earlier in</A> this manual:
+<TT>&#92;begin</TT><code>{latexonly}</code>
+
+<PRE>
+\begin{figure}
+    \begin{center}
+    \fbox{\includegraphics[width=4in]{psfiles/eform.ps}}
+    \end{center}
+    \caption{An electronic form. Of course in the online version of this
+     document the form above would be active.}
+\end{figure}
+</PRE>
+
+<TT>&#92;end</TT><code>{latexonly}</code>
+
+<P>
+Note the <A HREF="hypextra.html#env:warn">warning</A>
+concerning how the environment delimiters should be used in the
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source code.
+
+<P>
+<A NAME="2503">&#160;</A>
+
+<H4><A NAME="SECTION000124020000000000000">&#160;</A><A NAME="endhtmlonly">&#160;</A>
+<BR>
+<TT>&#92;htmlonly...&#92;endhtmlonly</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+This is an alternative way to specify a chunk of material intended
+for the <TT>HTML</TT> version only,
+using the old A<SUB><BIG>M</BIG></SUB>S-style of delimiting environments.
+Use of this style is discouraged; 
+the 
+<I>htmlonly</I> <A HREF="Hnode4.html#htmlonly">environment</A> is preferred.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="2505">&#160;</A>
+
+<H4><A NAME="SECTION000124030000000000000">&#160;</A><A NAME="endlatexonly">&#160;</A>
+<BR>
+<TT>&#92;latexonly...&#92;endlatexonly</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+This is an alternative way to specify a chunk of material intended
+for the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset version only,
+using the old A<SUB><BIG>M</BIG></SUB>S-style of delimiting environments.
+Use of this style is discouraged; 
+the 
+<I>latexonly</I> <A HREF="Hnode4.html#latexonly">environment</A> or the unscoped 
+<A HREF="Hnode4.html#unlatexonly"><TT>%begin&#123;latexonly&#125;</TT></A> 
+construction are preferred.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+
+<P></P>
+Note the <A HREF="hypextra.html#env:warn">warning</A>
+concerning how the environment delimiters should be used in the
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source code.
+
+<P>
+<A NAME="1361">&#160;</A>
+<A NAME="2508">&#160;</A>
+<A NAME="2509">&#160;</A>
+<A NAME="2510">&#160;</A>
+<BR>
+
+<H4><A NAME="SECTION000124040000000000000">&#160;</A><A NAME="latexhtml">&#160;</A>
+<BR>
+<TT>&#92;latex</TT>, <TT>&#92;html</TT> and <TT>&#92;latexhtml</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+There are also shorthand notations to accomplish the same thing 
+as in the 
+<I>latexonly</I> <A HREF="Hnode4.html#latexonly">environment</A> and 
+<I>htmlonly</I> 
+<A HREF="Hnode4.html#htmlonly">environment</A>, but with less typing.
+<UL>
+<LI>The <TT>&#92;latex</TT><code>{...}</code> command causes everything within the braces 
+to be processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, but ignored by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+<LI>Conversely, the <TT>&#92;html</TT><code>{...}</code> command causes everything within the braces 
+to be ignored by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X and processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+<LI>Finally the command <TT>&#92;latexhtml</TT><code>{...}{...}</code> causes everything 
+within the first set of braces to be processed exclusively by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, 
+with the contents of the second set of braces processed solely by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+</UL>
+<B>Warning: </B>
+Only small pieces of text work reliably in this way. 
+With whole paragraphs or contained sub-environments,
+the ``conditional'' environments should be used instead.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+<A NAME="1386">&#160;</A>
+<A NAME="2627">&#160;</A>
+<A NAME="2628">&#160;</A>
+
+<H4><A NAME="SECTION000124050000000000000">&#160;</A><A NAME="unlatexonly">&#160;</A>
+<BR>
+<TT>%begin&#123;latexonly&#125;</TT>
+</H4>
+Another variant of the 
+<I>latexonly</I> environment is available, 
+in which everything between 
+<code>%</code><code>begin{latexonly}</code> and <code>%</code><code>end{latexonly}</code> 
+is ignored by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.  
+The difference is that the 
+<I>latexonly</I> environment 
+puts the contents into a group, in which all definitions are local.
+There is no such scoping with the <code>%begin...%end</code> variant,
+since L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X sees the initial <TT>%</TT>s simply as starting comments.
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="1395">&#160;</A>
+<BR>
+The following example should clarify what happens:
+<PRE>
+\newcommand{\A}{The letter A.}
+\newcommand{\B}{The letter B.}
+</PRE>
+<code>\</code><code>begin{latexonly}</code>
+<BR>
+<code>\renewcommand{\A}{Not the letter A.}</code>
+<BR>
+<code>\</code><code>end{latexonly}</code>
+<BR>
+<code>%</code><code>begin{latexonly}</code>
+<BR>
+<code>\renewcommand{\B}{Not the letter B.}</code>
+<BR>
+<code>%</code><code>end{latexonly}</code>
+<PRE>
+\begin{document}
+\A \B
+\end{document}
+</PRE>
+If you process this with L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, the result is: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The letter A. Not the letter B.
+
+<P>
+
+<P></P>
+Note the <A HREF="hypextra.html#env:warn">warning</A>
+concerning how the environment delimiters should be used in the
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source code.
+
+<P>
+
+<P>
+<BR>
+<A NAME="1406">&#160;</A>
+<BR>
+<B>Warning: </B>
+Be careful when using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X  commands which alter the values of counters 
+(e.g. numbered figures or equations) in conditional text, because this may 
+cause the counter values in the electronic version to lose synchronisation 
+with the values of the corresponding counters in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version.
+
+<P>
+<BR>
+<HR WIDTH="300">
+<A NAME="2515">&#160;</A>
+<A NAME="2516">&#160;</A>
+
+<H4><A NAME="SECTION000124060000000000000">&#160;</A><A NAME="imagesonly">&#160;</A>
+<BR>
+<TT>&#92;begin&#123;imagesonly&#125;</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+This environment is used to put L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X code into the <A HREF="node10.html#GGGimages.tex"
+ NAME="3114"><TT>images.tex</TT></A> file,
+to be used when generating images. Typically this is used to add commands to
+the preamble of <A HREF="node10.html#GGGimages.tex"
+ NAME="3122"><TT>images.tex</TT></A>, such as setting the text or background color.
+However code can be added at any other point as well; 
+e.g. to change the background color of all images after a certain point in the document. 
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+
+<P></P>
+Note the <A HREF="hypextra.html#env:warn">warning</A>
+concerning how the environment delimiters should be used in the
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source code.
+
+<P>
+<A NAME="2518">&#160;</A>
+<A NAME="2519">&#160;</A>
+
+<H4><A NAME="SECTION000124070000000000000">&#160;</A><A NAME="makeimage">&#160;</A>
+<BR>
+<TT>&#92;begin&#123;makeimage&#125;</TT>
+</H4>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+This is a special environment which forces an image to be made of its contents.
+That is, one gets effectively a snapshot of a portion of a page
+that has been typeset using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X. 
+Within the normal L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X typeset version of the document, this environment 
+is completely transparent, adding its contents to the page as usual.
+
+<P>
+<A NAME="2521">&#160;</A>
+<BR>
+One further important use of the 
+<I>makeimage</I> environment is as follows.
+If a 
+<I>makeimage</I> environment occurs as a sub-environment within 
+a 
+<I>figure</I> environment, then an image will <EM>not</EM> be made of the
+
+<I>figure</I>'s contents. Instead, the contents are treated as normal text,
+each part being handled as if there were no 
+<I>figure</I> at all,
+except that everything is placed within a single cell of a
+<TT>&lt;TABLE&gt;</TT>...<TT>&lt;/TABLE&gt;</TT> construction in <TT>HTML</TT> 3.2. 
+The contents of any <TT>&#92;caption</TT>
+commands are placed between <TT>&lt;CAPTION&gt;</TT>...<TT>&lt;/CAPTION&gt;</TT> tags 
+for the <TT>&lt;TABLE&gt;</TT>.
+
+<P>
+<A NAME="2522">&#160;</A>
+<BR>
+Normally an image of the entire contents of the 
+<I>figure</I> would be
+placed within the single cell of the <TT>&lt;TABLE&gt;</TT>.
+Now images are made of any subparts of those 
+<I>figure</I>'s contents 
+that really need it, in particular the 
+<I>makeimage</I> sub-environments.
+An empty 
+<I>makeimage</I> sub-environment does not generate an image of itself,
+yet still it inhibits an image being made of the whole 
+<I>figure</I>.
+These comments apply also to 
+<I>table</I> environments.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html134"
+ HREF="Hnode5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html130"
+ HREF="hypextra.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html124"
+ HREF="Hnode3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html132"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html133"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html135"
+ HREF="Hnode5.html">Symbolic References shown as</A>
+<B> Up:</B> <A NAME="tex2html131"
+ HREF="hypextra.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html125"
+ HREF="Hnode3.html">Arbitrary Tags and Attributes</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

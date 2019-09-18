@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Indicating Differences between Document Versions</TITLE>
+<META NAME="description" CONTENT="Indicating Differences between Document Versions">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="previous" HREF="Enode14.html">
+<LINK REL="up" HREF="Enode12.html">
+<LINK REL="next" HREF="Enode16.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html277"
+ HREF="Enode16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html273"
+ HREF="Enode12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html267"
+ HREF="Enode14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html275"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html276"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html278"
+ HREF="Enode16.html">Indexing</A>
+<B> Up:</B> <A NAME="tex2html274"
+ HREF="Enode12.html">Packages and Style-Files</A>
+<B> Previous:</B> <A NAME="tex2html268"
+ HREF="Enode14.html">Support for FoilTeX</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000117300000000000000">&#160;</A><A NAME="1967">&#160;</A>
+<BR>
+Indicating Differences between Document Versions
+</H3>
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> supports the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB> <A HREF="node10.html#GGGchangebar.sty"
+ NAME="3301"><TT>changebar.sty</TT></A> package,
+written by Johannes Braams <A NAME="tex2html45"
+ HREF="mailto:JLBraams@cistron.nl">&lt;JLBraams@cistron.nl&gt;</A>, for 
+inserting <EM>change-bars</EM> in a document in order to indicate 
+differences from previous versions. This is a very primitive form of 
+version control and there is much scope for improvement.
+
+<P>
+<A NAME="1972">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1f</SUP>
+<BR>
+Within the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version of this manual two thicknesses of change-bar 
+have been used. Thicker bars indicate changes introduced with version <SMALL>V97.1</SMALL>,
+while thinner bars indicate earlier additions since <SMALL>V96.1</SMALL>.
+<BR>
+Within the <TT>HTML</TT> version the change-bars clearly indicate the 
+different revisions with explicit numbering.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1f</SUP>
+<BR>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Within the <TT>HTML</TT> version, the graphic icons representing
+the changebars can be followed by some text indicating the new version.
+This is used repeatedly throughout
+this manual. It is achieved using the command 
+<code>\cbversion{</code><TT>
+&lt;<I>version</I>&gt;</TT><code>}</code>, immediately following
+the <code>\begin{changebar}</code>. 
+This sets a variable <A HREF="node10.html#GGG_cb_version"
+ NAME="3313"><TT>$cb_version</TT></A> to be used both at the beginning
+and end of the environment. The value of this variable is retained,
+to be used with other 
+<I>changebar</I> environments, unless changed explicitly
+by another occurrence of <A HREF="node10.html#GGG_cb_version"
+ NAME="3322"><TT>$cb_version</TT></A>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+
+<P></P>
+
+<B>Warning: </B>
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> will not correctly process 
+<I>changebar</I> environments
+that contain sectioning commands, even when the (sub)sections or
+(sub)paragraphs are to occur on the same <TT>HTML</TT> page.
+If this is required, use a separate 
+<I>changebar</I> environment
+within each (sub)section or (sub)paragraph.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html277"
+ HREF="Enode16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html273"
+ HREF="Enode12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html267"
+ HREF="Enode14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html275"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html276"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html278"
+ HREF="Enode16.html">Indexing</A>
+<B> Up:</B> <A NAME="tex2html274"
+ HREF="Enode12.html">Packages and Style-Files</A>
+<B> Previous:</B> <A NAME="tex2html268"
+ HREF="Enode14.html">Support for FoilTeX</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

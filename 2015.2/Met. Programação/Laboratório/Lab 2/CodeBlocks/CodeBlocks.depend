@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1444236923 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 2/Codificação/Fontes/Lista_Vetor.c
+	"../Biblioteca/Lista.h"
+	"stdio.h"
+	"stdlib.h"
+
+1444244477 /home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 2/Codificação/Biblioteca/Lista.h
+
+1444236639 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 2/Codificação/Fontes/Principal_Lab2.c
+	"../Biblioteca/Lista.h"
+	"stdio.h"
+	"stdlib.h"
+
+1444771182 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 2/Codificação/Fontes/Principal_Lab2.cpp
+	"../Biblioteca/Pilha.hpp"
+	"stdio.h"
+	"stdlib.h"
+
+1444772502 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 2/Codificação/Fontes/Pilha.cpp
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	"../Biblioteca/Pilha.hpp"
+
+1444772643 /home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 2/Codificação/Biblioteca/Pilha.hpp
+
+1444775172 source:/home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 2/Codificação/Fontes/Vetor.cpp
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	"../Biblioteca/Vetor.hpp"
+
+1444775186 /home/rodrigo/Dropbox/UnB/UnB 2015.2/Met. Programação/Laboratório/Lab 2/Codificação/Biblioteca/Vetor.hpp
+

@@ -1,0 +1,23 @@
+Brasília para Goiânia: 173 Km
+Brasília para Natal: 2275 Km
+Brasília para Blumenau: 1624 Km
+Brasília para Belo Horizonte: 716 Km
+Goiânia para Campo Grande: 877 Km
+Goiânia para Belém: 2046 Km
+Goiânia para Belo Horizonte: 874 Km
+Barra do Garças para Goiânia: 405 Km
+Barra do Garças para Porto Velho: 1964 Km
+Campo Grande para Porto Velho: 2151 Km
+Campo Grande para Curitiba: 780 Km
+Blumenau para Curitiba: 228 Km
+Blumenau para Florianópolis: 139 Km
+Curitiba para Santos: 480 Km
+Curitiba para Florianópolis: 300 Km
+Santos para Rio de Janeiro: 501 Km
+Santos para Belo Horizonte: 658 Km
+Belo Horizonte para Petrópolis: 376 Km
+Rio de Janeiro para Petrópolis: 66 Km
+Maceió para Rio de Janeiro: 2448 Km
+Natal para Maceió: 540 Km
+Maceió para Belém: 2081 Km
+Porto Velho para Belém: 2564 Km

@@ -1,0 +1,23 @@
+/*****************************************************************
+**  Organização de Arquivos - Turma C - 116327
+**  Professor:
+**              Camilo Chang Dórea
+**  Responsável:
+**              Pedro Aurélio Coelho Almeida - 140158103
+**              Rodrigo Ferreira Guimarães - 140170740
+**  Finalidades:
+**              Dado um arquivo base deve ser comprido os
+**              aspectos:
+**              -   Criação de um índice primário, sobre a forma
+**                  de uma Árvore-B;
+**              -   Disponibilizar o índice formado via arquivo
+**                  como via monitor;
+**              -   Possibilidade de busca de registro;
+**              -   Assim como, a inclusão de registros;
+*****************************************************************/
+
+Para a execução do projeto vá para a Pasta 'Codificação' e execute,
+via terminal, o arquivo 'makefile' com o como simples: make.
+Este comando irá compilar os arquivos necessários para a execução
+do projeto. Após ter finalizado a compilação, o programa será executado
+automaticamente.

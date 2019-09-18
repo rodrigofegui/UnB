@@ -1,0 +1,104 @@
+<html><BODY bgcolor="ffffff">
+<PRE>
+SSH-KEYGEN2(1)                 SSH2                SSH-KEYGEN2(1)
+
+
+
+<B>NAME</B>
+       ssh-keygen2 - authentication key pair generation
+
+
+<B>SYNOPSIS</B>
+       <B>ssh-keygen2   </B>[<B>-b </B><I>bits</I>]   [<B>-t </B><I>key</I><B>_</B><I>algorithm</I>]   [   <B>-c </B><I>com­</I>
+       <I>ment</I><B>_</B><I>string</I>] [ <B>-e </B><I>file</I>] [ <B>-p </B><I>passphrase</I>] [ <B>-P </B>] [ <B>-\?  </B>] [
+       <B>-h  </B>]  [  <B>-q </B>] [ <B>-1 </B><I>file</I>] [ <B>-i </B>] [ <B>-V </B>] [ <B>-r </B>] [ <B>-F  file</B>]
+       [key1 key2 ...]
+
+
+<B>DESCRIPTION</B>
+       <B>ssh-keygen2 </B>generates and manages authentication keys  for
+       <B>ssh2</B>(1).  Normally each user wishing to use <B>ssh2 </B>with pub­
+       lic key authentication runs this to create  authentication
+       keys.  Additionally, the system administrator may use this
+       to generate host keys for <B>sshd2</B>(8).
+
+
+<B>OPTIONS</B>
+       <B>-b </B><I>bits</I>
+              Length of the key in bits, for example 1024 bits.
+
+       <B>-t </B><I>key</I><B>_</B><I>algorithm</I>
+              The algorithm used  in  key  generation.  Currently
+              only DSS (Digital Signature Standard) is supported.
+              (in some distributions, RSA is, too)
+
+       <B>-c </B><I>comment</I><B>_</B><I>string</I>
+              Specify the key's comment string.
+
+       <B>-e </B><I>file</I>
+              Edit the specified key. Makes <B>ssh-keygen2  </B>interac­
+              tive.  You  can change the key's passphrase or com­
+              ment.
+
+       <B>-p </B><I>passphrase</I>
+              Specify the passphrase used.
+
+       <B>-P     </B>Specify that the key will be saved  with  an  empty
+              passphrase.
+
+       <B>-h | -\?</B>
+              Print a short summary of ssh-keygen2 commands.
+
+       <B>-q     </B>Hide the progress indicator.
+
+       <B>-1 </B><I>file</I>
+              Convert  key  from <B>ssh1 </B>format to <B>ssh2 </B>format. (not
+              yet implemented)
+
+       <B>-i     </B>Display (all) information about  a  key.  (not  yet
+              implemented)
+
+       <B>-V     </B>Print version string and exit.
+
+       <B>-r     </B>Stir in data from stdin to the random pool.
+
+       <B>-F  file</B>
+              Dump  fingerprint  of  given publickey. The finger­
+              print is given in the ingenious Bubble Babble  for­
+              mat,  which  makes  the  fingerprint  looks  like a
+              string of "real" words (more easy to remember).
+
+
+<B>FILES</B>
+       <I>$HOME/.ssh2/random</I><B>_</B><I>seed</I>
+              Used for seeding the random number generator.  This
+              file should not be readable by anyone but the user.
+              This file is created the first time the program  is
+              run,  and is updated every time the program is run.
+
+       <I>$HOME/.ssh2/id</I><B>_</B><I>KEYTYPE</I><B>_</B><I>KEYLEN</I><B>_</B><I>X</I>
+              Private authentication keys.
+
+       <I>$HOME/.ssh2/id</I><B>_</B><I>KEYTYPE</I><B>_</B><I>KEYLEN</I><B>_</B><I>X.pub</I>
+              Public authentication keys.
+
+       <I>/etc/ssh2/hostkey</I>
+
+       <I>/etc/ssh2/hostkey.pub</I>
+              Private and public <B>sshd2</B>(8) host keys.
+
+
+<B>AUTHORS</B>
+       SSH Communications Security Corp
+
+       For more information, see http://www.ssh.com.
+
+
+<B>SEE ALSO</B>
+       <B>ssh2</B>(1), <B>sshd2</B>(8), <B>ssh-agent2</B>(1), <B>ssh-add2</B>(1)
+
+
+
+SSH2                      March 22, 2000           SSH-KEYGEN2(1)
+</PRE>
+</BODY></html>

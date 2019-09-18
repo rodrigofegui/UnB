@@ -1,0 +1,223 @@
+/*****************************************************************
+**  Organização de Arquivos - Turma C - 116327
+**  Professor:
+**              Camilo Chang Dórea
+**  Responsável:
+**              Rodrigo Ferreira Guimarães - 140170740
+**  Finalidades:
+**              - Gerar arquivos com os indices primários para
+**                os dois arquivos fornecidos;
+**              - Gerar arquivos com os indices secundários,
+**                semelhante ao anterior;
+**              - Ordenar os arquivos segundo o algoritmo
+**                Heapsort;
+**              - Exibição dos indices, primarios e secundários,
+**                no monitor;
+**              - Permitir a manipulaçao dos registros;
+**              - Realizar o merge entre as listas finais,
+**                guardando o resultado num arquivo.
+*****************************************************************/
+
+/*  Inclusão das bibliotecas requisitadas: */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include "../Bibliotecas/Básica.h"
+#include "../Bibliotecas/Arquivos.h"
+#include "../Bibliotecas/Lista.h"
+
+int main (){
+    Lista *lista1 = lista_cria ();
+    Lista *lista2 = lista_cria ();
+    IndicePrimario *lista_1, *lista_2;
+    IndiceSecundario *lista_11, *lista_22;
+    Registros dados, dados2;
+    char *nomearq[] = {"../../Referências/lista1.txt", "../../Referências/lista2.txt", "../../Resultados/lista12.txt"};
+    FILE *arq1 = arq_abre(nomearq[0], "r+", 'l');
+    FILE *arq2 = arq_abre(nomearq[1], "r+", 'l');
+    FILE *arqmerge = NULL;
+    int condicao, escolha;
+
+    arq_le (arq1, lista1);
+    arq_le (arq2, lista2);
+    //*
+    //lista_exibe (lista1);
+    printf ("Lista 2\n\n");
+    lista_exibe (lista2);
+    //*/
+    lista_1 = indpri_cria (lista1);
+    lista_2 = indpri_cria (lista2);
+    lista_11 = indsec_cria (lista_1);
+    lista_22 = indsec_cria (lista_2);
+
+    pausa ();
+    limpa_tela ();
+
+    indpri_ordena (lista_1);
+    //indpri_ordena (lista_2);
+    //*
+    printf ("Lista 1\n\n");
+    indpri_exibe (lista_1);
+    printf ("Lista 2\n\n");
+    indpri_exibe (lista_2);
+    //*/
+    pausa ();
+    limpa_tela ();
+    /*
+    indsec_exibe (lista_11);
+    indsec_exibe (lista_22);
+    */
+    indpri_escreve (lista_1, '1');
+    indpri_escreve (lista_2, '2');
+    indsec_escreve (lista_11, '1');
+    indsec_escreve (lista_22, '2');
+
+    //fclose (arq1);
+    //fclose (arq2);
+    do {
+        reg_zera (&dados);
+        reg_zera (&dados2);
+        printf ("0 - Sair;\n");
+        printf ("1 - Inserir;\n");
+        printf ("2 - Exclusão;\n");
+        printf ("3 - Atualizacao;\n");
+        printf ("4 - Merge.\n");
+        printf ("Digite uma escolha:\n");
+            scanf ("%d", &condicao);
+            getchar ();
+
+        switch (condicao){
+            case 1:
+                printf ("digite qual lista sera incluida: (1/2)\n");
+                    scanf ("%d", &escolha);
+
+                printf ("Digite a matricula:\n");
+                    scanf ("%d", &dados.Matricula);
+                    getchar ();
+                printf ("Digite o nome:\n");
+                    scanf ("%[^\n]", dados.Nome);
+                    getchar ();
+                printf ("Digite o operador:\n");
+                    scanf ("%d", &dados.OP);
+                    getchar ();
+                printf ("Digite o curso:\n");
+                    scanf ("%[^\n]", dados.Curso);
+                    getchar ();
+                    dados.Curso[0] = toupper (dados.Curso[0]);
+                    dados.Curso[1] = toupper (dados.Curso[1]);
+                printf ("Digite a turma:\n");
+                    scanf ("%c", &dados.Turma);
+                    getchar ();
+                    dados.Turma = toupper (dados.Turma);
+                if (escolha == 1){
+                    lista_insere (lista1, dados, lista1->ultimo->docseek + 64);
+                    indpri_monta (lista_1, lista1);
+                    indsec_monta (lista_11, lista_1);
+                }else{
+                    lista_insere (lista2, dados, lista2->ultimo->docseek + 64);
+                    indpri_monta (lista_2, lista2);
+                    indsec_monta (lista_22, lista_2);
+                }
+                break;
+
+            case 2:
+                printf ("digite qual lista sera incluida: (1/2)\n");
+                    scanf ("%d", &escolha);
+
+                printf ("Digite a matricula de origem:\n");
+                    scanf ("%d", &dados.Matricula);
+                    getchar ();
+
+
+                if (escolha == 1){
+                    lista_manipula (lista1, dados, dados2, 'R');
+                    indpri_monta (lista_1, lista1);
+                    indsec_monta (lista_11, lista_1);
+
+                }else{
+                    lista_manipula (lista2, dados, dados2, 'R');
+                    indpri_monta (lista_2, lista2);
+                    indsec_monta (lista_22, lista_2);
+                }
+                break;
+            case 3:
+                printf ("digite qual lista sera incluida: (1/2)\n");
+                    scanf ("%d", &escolha);
+
+                printf ("Digite a matricula de origem:\n");
+                    scanf ("%d", &dados.Matricula);
+                    getchar ();
+                printf ("Digite a nova matricula:\n");
+                    scanf ("%d", &dados2.Matricula);
+                    getchar ();
+                printf ("Digite o novo nome:\n");
+                    scanf ("%[^\n]", dados2.Nome);
+                    getchar ();
+                printf ("Digite o novo operador:\n");
+                    scanf ("%d", &dados2.OP);
+                    getchar ();
+                printf ("Digite o novo curso:\n");
+                    scanf ("%[^\n]", dados2.Curso);
+                    getchar ();
+                    dados2.Curso[0] = toupper (dados2.Curso[0]);
+                    dados2.Curso[1] = toupper (dados2.Curso[1]);
+                printf ("Digite a nova turma:\n");
+                    scanf ("%c", &dados.Turma);
+                    getchar ();
+                    dados2.Turma = toupper (dados2.Turma);
+
+                if (escolha == 1){
+                    lista_manipula (lista1, dados, dados2, 'A');
+                    indpri_monta (lista_1, lista1);
+                    indsec_monta (lista_11, lista_1);
+
+                }else{
+                    lista_manipula (lista2, dados, dados2, 'A');
+                    indpri_monta (lista_2, lista2);
+                    indsec_monta (lista_22, lista_2);
+                }
+                break;
+            case 4:
+                arqmerge = arq_abre (nomearq[2], "w", 'e');
+                lista_merge (arqmerge, lista_1, lista_2);
+                fclose (arqmerge);
+                break;
+
+        }
+    }while (condicao != 0);
+
+    //arq1 = arq_abre (nomearq[0], "w", 'e');
+    //arq2 = arq_abre (nomearq[1], "w", 'e');
+
+    lista_escreve (arq1, lista1);
+    lista_escreve (arq2, lista2);
+
+    indpri_ordena (lista_1);
+    indpri_ordena (lista_2);
+    /*
+    indpri_exibe (lista_1);
+    indpri_exibe (lista_2);
+    */
+    pausa ();
+    limpa_tela ();
+    /*
+    indsec_exibe (lista_11);
+    indsec_exibe (lista_22);
+    */
+    indpri_escreve (lista_1, '1');
+    indpri_escreve (lista_2, '2');
+    indsec_escreve (lista_11, '1');
+    indsec_escreve (lista_22, '2');
+
+
+
+    fclose (arq1);
+    fclose (arq2);
+    lista_libera (lista1);
+    lista_libera (lista2);
+    indpri_libera (lista_1);
+    indpri_libera (lista_2);
+    indsec_libera (lista_11);
+    indsec_libera (lista_22);
+    return 0;
+}

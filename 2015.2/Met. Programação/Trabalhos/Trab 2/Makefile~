@@ -1,0 +1,8 @@
+DIR_BUILD = Contrução
+SAIDA = Trab2_MP_Rodrigo
+
+trab2:
+	rm -rf ${DIR_BUILD}
+	mkdir ${DIR_BUILD}
+	cd ${DIR_BUILD} | cmake .. | make
+	./${SAIDA}

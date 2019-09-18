@@ -1,0 +1,19 @@
+Imagem base: ../Referências/pcb.jpg
+
+Foram encontradas 4 regiões de interesse, sendo elas:
+	* Região 1:
+		- Área = 933 pixels
+		- Diâmetro mínimo = 34 pixels
+
+	* Região 2:
+		- Área = 926 pixels
+		- Diâmetro mínimo = 34 pixels
+
+	* Região 3:
+		- Área = 951 pixels
+		- Diâmetro mínimo = 35 pixels
+
+	* Região 4:
+		- Área = 943 pixels
+		- Diâmetro mínimo = 34 pixels
+

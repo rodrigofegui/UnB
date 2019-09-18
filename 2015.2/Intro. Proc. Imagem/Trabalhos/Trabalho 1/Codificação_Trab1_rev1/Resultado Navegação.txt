@@ -1,0 +1,79 @@
+Navegando a partir de:
+	../Base de Dados/Calibragem do Sistema/Treinamento Elementos Conectados/Classe 1/
+
+Tipo =	4	Nome =	..
+Tipo =	8	Nome =	c1f4.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c1f1.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c1m1.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c1f3.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c1m2.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c1m4.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c1f5.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c1m3.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c1m5.jpg
+		SUCESSO
+
+Tipo =	4	Nome =	.
+Tipo =	8	Nome =	c1f2.jpg
+		SUCESSO
+
+Navegando a partir de:
+	../Base de Dados/Calibragem do Sistema/Treinamento Elementos Conectados/Classe 2/
+
+Tipo =	8	Nome =	c2m5.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c2m4.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c2m2.jpg
+		SUCESSO
+
+Tipo =	4	Nome =	..
+Tipo =	8	Nome =	c2m1.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c2f5.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c2f4.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c2f3.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c2f2.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c2f1.jpg
+		SUCESSO
+
+Tipo =	8	Nome =	c2m3.jpg
+		SUCESSO
+
+Tipo =	4	Nome =	.
+Navegando a partir de:
+	../Base de Dados/Execução e Análise/
+
+Tipo =	4	Nome =	..
+Tipo =	4	Nome =	Categoria 1 - Nude
+	Tipo =	8	Nome =	sasha-grey-62h.jpg
+			SUCESSO
+
+	Tipo =	8	Nome =	rosie-huntington.jpg

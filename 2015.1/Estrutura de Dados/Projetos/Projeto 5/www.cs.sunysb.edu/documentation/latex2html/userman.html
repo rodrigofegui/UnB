@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="userman">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="userman.css">
+<LINK REL="next" HREF="Mnode1.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html17"
+ HREF="Mnode1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html13"
+ HREF="manual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html7"
+ HREF="../manual/hypextra.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html15"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html16"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html18"
+ HREF="Mnode1.html">Developing Documents using L<SUP>A</SUP>TEX2HTML</A>
+<B> Up:</B> <A NAME="tex2html14"
+ HREF="manual.html">LaTeX2HTML</A>
+<B> Previous:</B> <A NAME="tex2html8"
+ HREF="../manual/hypextra.html">Hypertext_Extensions</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<P>
+<H2><A NAME="SECTION000130000000000000000">
+Customising the Layout of HTML pages</A>
+</H2><A NAME="sec:man">&#160;</A><A NAME="646">&#160;</A>
+<A NAME="sec:man">&#160;</A><A NAME="648">&#160;</A>
+<A NAME="649">&#160;</A>
+<BR>
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> is a program for creating hyperlinked sets of <TT>HTML</TT> pages
+from a document marked-up using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands.
+Previous sections have discussed the results of specific L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands.
+In this section we discuss instead the extensive range
+of command-line switches and options, and other aspects of <A HREF="node10.html#GGGPerl"><I>Perl</I></A> code,
+that affect the way the translation is performed.
+
+<P>
+
+<P>
+<BR>
+To use L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> to translate a file&nbsp;<TT>
+&lt;<I>file</I>&gt;.tex </TT>
+containing L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands, type:
+<BLOCKQUOTE>
+<TT>latex2html</TT> <TT>
+&lt;<I>file</I>&gt;.tex</TT> 
+</BLOCKQUOTE>
+
+<P>
+<A NAME="2046">&#160;</A>
+<A NAME="2155">&#160;</A>
+<A NAME="2048">&#160;</A>
+<A NAME="2049">&#160;</A>
+<BR>
+
+This will create a new directory called <TT>
+&lt;<I>file</I>&gt;</TT> which will contain 
+the generated <TT>HTML</TT> files, some log files and possibly some images.
+To view the result use an <TT>HTML</TT> browser, such as 
+<A HREF="node10.html#GGGNCSA_Mosaic"
+ NAME="2170"><I>NCSA Mosaic</I></A> or <A HREF="node10.html#GGGNetscape_Navigator"
+ NAME="2179"><I>Netscape Navigator</I></A>,
+on the main <TT>HTML</TT> file which is <TT><TT>
+&lt;<I>file</I>&gt;</TT>/<TT>
+&lt;<I>file</I>&gt;</TT>.html</TT>. 
+The file will contain navigation links 
+to the other parts of the generated document.
+<A NAME="679">&#160;</A>
+<A NAME="2051">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+The <TT>.tex</TT> suffix is optional and will be supplied
+by the program if it is omitted by the user.
+Other suffixes are acceptable also, such as <TT>.doc</TT>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="687">&#160;</A>
+<BR>
+It is possible to customise the output from L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> using a number of 
+<A HREF="Mnode2.html#options">command-line options</A>
+with which you can specify:
+<UL>
+<LI>
+how to break up the document;
+<LI>
+where to put the generated files, and what are their names;
+<LI>
+the title for the whole document;
+<LI>
+the signature at the end of each page is;
+<LI>
+how many navigation panels to provide, what links to put in them;
+<LI>
+what other documents this one links to;
+<LI>extra information to include about the document;
+<LI>whether to retain the original L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X section-numbering scheme;
+<LI>
+and many other things that affect how the information is obtained,
+processed or displayed in the resulting <TT>.html</TT> files and images.
+</UL>
+
+<P>
+
+<P>
+<BR>
+
+<A NAME="698">&#160;</A>
+<BR>
+The L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> script includes a short manual
+which can be viewed with the command: 
+<PRE>
+  nroff -man latex2html
+</PRE>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html19"
+ HREF="Mnode1.html">Developing Documents using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT></A>
+<LI><A NAME="tex2html20"
+ HREF="Mnode2.html">Command-Line Options</A>
+<UL>
+<LI><A NAME="tex2html21"
+ HREF="Mnode3.html">Options controlling Titles, File-Names and Sectioning</A>
+<LI><A NAME="tex2html22"
+ HREF="Mnode4.html">Options controlling Extensions and Special Features</A>
+<LI><A NAME="tex2html23"
+ HREF="Mnode5.html">Switches controlling Image Generation</A>
+<LI><A NAME="tex2html24"
+ HREF="Mnode6.html">Switches controlling Navigation Panels</A>
+<LI><A NAME="tex2html25"
+ HREF="Mnode7.html">Switches for Linking to other documents</A>
+<LI><A NAME="tex2html26"
+ HREF="Mnode8.html">Switches for Help and Tracing</A>
+<LI><A NAME="tex2html27"
+ HREF="Mnode9.html">Other Configuration Variables, without switches</A>
+</UL>
+<LI><A NAME="tex2html28"
+ HREF="Mnode10.html">Extending the Translator</A>
+<UL>
+<LI><A NAME="tex2html29"
+ HREF="Mnode11.html">Asking the Translator to Ignore Commands</A>
+<LI><A NAME="tex2html30"
+ HREF="Mnode12.html">Asking the Translator to Pass Commands to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</A>
+<LI><A NAME="tex2html31"
+ HREF="Mnode13.html">Handling ``order-sensitive'' Commands</A>
+</UL>
+<LI><A NAME="tex2html32"
+ HREF="Mnode14.html">Customising the Navigation Panels</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html17"
+ HREF="Mnode1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html13"
+ HREF="manual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html7"
+ HREF="../manual/hypextra.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html15"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html16"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html18"
+ HREF="Mnode1.html">Developing Documents using L<SUP>A</SUP>TEX2HTML</A>
+<B> Up:</B> <A NAME="tex2html14"
+ HREF="manual.html">LaTeX2HTML</A>
+<B> Previous:</B> <A NAME="tex2html8"
+ HREF="../manual/hypextra.html">Hypertext_Extensions</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

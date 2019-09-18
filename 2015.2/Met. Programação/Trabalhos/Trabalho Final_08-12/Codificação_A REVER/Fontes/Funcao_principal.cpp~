@@ -1,0 +1,32 @@
+#include"estruturas.hpp"
+#include"imprime.hpp"
+#include"libera.hpp"
+//#include "le_dir.hpp"
+
+int main(){
+    Elem* inicial=NULL;
+ /*   Conexao *conex=NULL;
+    Rede *r;
+    r = obtem_dados();
+    r = obtem_dados();
+    r=obtem_dados();
+    r=obtem_dados();
+    r=obtem_dados();
+    inicial = r->comeco;
+    conex=r->inic;
+  */
+    inicial = insere_elemento(inicial,NULL, "G Usina",10,42,100,1000);
+
+    inicial = insere_elemento(inicial,NULL, "A adapta_1",2,3,0,0);
+
+    inicial = insere_elemento(inicial,NULL, "C Brasília",15,47,143,0);
+
+    inicial = insere_elemento(inicial,NULL, "G Foda-se ",10,42,100,1000);
+
+    imprime_El(inicial);
+    libera_elementos(inicial);
+
+
+getchar();
+return 0;
+}

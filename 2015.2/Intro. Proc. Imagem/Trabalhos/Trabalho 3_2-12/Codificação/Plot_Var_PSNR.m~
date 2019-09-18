@@ -1,0 +1,79 @@
+function [void] = Plot_Var_PSNR(Info, Problema)
+    %%  Declaração das Variáveis e Constantes Iniciais
+        %   'larg' armazena a largura da linha nas plotagens
+            larg = 1.5;
+        %   'prob' armazena o problema a ser plotado as informacoes
+            if (Problema == 1)
+                prob = 'Problema 1 -';
+            else
+                prob = 'Problema 2 -';
+            end
+
+
+    %%  Plotando as Variâncias
+        %   Plotando as Variâncias da Lena
+            figure,
+            plot (Info.Quantizacao, Info.Variancias(1, :), 'r', 'LineWidth', larg);
+        %   Plotando as Variâncias do Marv
+            hold on,
+            plot (Info.Quantizacao, Info.Variancias(2, :), 'b', 'LineWidth', larg);
+        %   Plotando as Variâncias da Monalisa
+            hold on,
+            plot (Info.Quantizacao, Info.Variancias(3, :), 'k', 'LineWidth', larg);
+        %   Título e legenda da plotagem
+            nome = strcat (prob, sprintf (' Comparativo das Variâncias Médias'));
+            title (nome);
+            grid on,
+            xlabel ('Níveis de Quantização');
+            ylabel ('Variâncias');
+            legend ('Lena', 'Marv', 'Monalisa', 'Location', 'southoutside', 'Orientation','horizontal');
+        %   Salvando o plot
+            nome = strcat (Info.Dir_result, nome);
+            nome = strcat (nome, '.jpg');
+            saveas (gcf, nome);
+
+
+    %%  Plotando os PSNRs
+        %   Plotando os PSNRs da Lena
+            figure,
+            plot (Info.Quantizacao, Info.PSNRs(1, :), 'r', 'LineWidth', larg);
+        %   Plotando os PSNRs do Marv
+            hold on,
+            plot (Info.Quantizacao, Info.PSNRs(2, :), 'b', 'LineWidth', larg);
+        %   Plotando os PSNRs da Monalisa
+            hold on,
+            plot (Info.Quantizacao, Info.PSNRs(3, :), 'k', 'LineWidth', larg);
+        %   Título e legenda da plotagem
+            nome = strcat (prob, sprintf(' Comparativo dos PSNRs'));
+            title (nome);
+            grid on,
+            xlabel ('Níveis de Quantização');
+            ylabel ('PSNRs');
+            legend ('Lena', 'Marv', 'Monalisa', 'Location', 'southoutside', 'Orientation','horizontal');
+        %   Salvando o plot
+            nome = strcat (Info.Dir_result, nome);
+            nome = strcat (nome, '.jpg');
+            saveas (gcf, nome);
+
+
+    %%  Plotando PSNR x Variância
+        %   Plotando os PSNR versus Variância, para todas as imagens
+            figure
+            for ind = 1 : size (Info.PSNRs, 1)
+               plot (Info.PSNRs(ind, :), Info.Variancias(ind, :), 'LineWidth', larg);
+               hold on,
+            end
+        
+        %   Título e legenda da plotagem
+            nome = strcat (prob, sprintf (' PSNRs x Variâncias'));
+            title (nome);
+            grid on,
+            xlabel ('PSNRs');
+            ylabel ('Variâncias');
+            legend ('Lena', 'Marv', 'Monalisa', 'Location', 'southoutside', 'Orientation','horizontal');
+        %   Salvando o plot
+            nome = strcat (Info.Dir_result, nome);
+            nome = strcat (nome, '.jpg');
+            saveas (gcf, nome);
+end
+

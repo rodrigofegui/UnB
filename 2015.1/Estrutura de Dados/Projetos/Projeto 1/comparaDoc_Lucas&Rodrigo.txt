@@ -1,0 +1,5257 @@
+Analise de Semelhanca entre doc1.txt(1) e doc2.txt(2)
+
+As magnitudes:
+	Em 1 = 6.93	Em 2 = 11.49
+Com 40.21% de semelhança, angulo de 53.81 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = NONADA
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = TIROS
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = SENHOR
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ouviu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = briga
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = homem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Deus
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esteja
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Alvejei
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mira
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quintal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = baixo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = acerto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Todo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gosto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = desde
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mocidade
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vieram
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = chamar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Causa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = branco
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = erroso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = olhos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nem
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = ser
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = viu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cachorro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Me
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = disseram
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = avistar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = defeito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nasceu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = arrebitado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = figurava
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rindo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = feito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bezerro
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+
+Nao ha palavra em comum entre doc1.txt e doc3.txt
+
+
+Analise de Semelhanca entre doc1.txt(1) e doc4.txt(2)
+
+As magnitudes:
+	Em 1 = 6.93	Em 2 = 16.28
+Com 3.95% de semelhança, angulo de 86.44 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = Deus
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+
+Analise de Semelhanca entre doc1.txt(1) e doc5.txt(2)
+
+As magnitudes:
+	Em 1 = 6.93	Em 2 = 17.92
+Com 4.11% de semelhança, angulo de 86.30 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = homem
+	Freq. em 1 = 1	Freq. em 2 = 4
+
+Palavra = Deus
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+
+Analise de Semelhanca entre doc1.txt(1) e doc6.txt(2)
+
+As magnitudes:
+	Em 1 = 6.93	Em 2 = 20.62
+Com 4.01% de semelhança, angulo de 86.39 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = homem
+	Freq. em 1 = 1	Freq. em 2 = 4
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+
+Analise de Semelhanca entre doc1.txt(1) e doc7.txt(2)
+
+As magnitudes:
+	Em 1 = 6.93	Em 2 = 20.90
+Com 4.84% de semelhança, angulo de 85.64 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = homem
+	Freq. em 1 = 1	Freq. em 2 = 4
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = olhos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+
+Analise de Semelhanca entre doc1.txt(1) e doc8.txt(2)
+
+As magnitudes:
+	Em 1 = 6.93	Em 2 = 18.81
+Com 4.89% de semelhança, angulo de 85.60 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = homem
+	Freq. em 1 = 1	Freq. em 2 = 3
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = olhos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+
+Nao ha palavra em comum entre doc1.txt e doc9.txt
+
+
+Nao ha palavra em comum entre doc1.txt e doc10.txt
+
+
+Analise de Semelhanca entre doc2.txt(1) e doc3.txt(2)
+
+As magnitudes:
+	Em 1 = 11.49	Em 2 = 20.81
+Com 6.40% de semelhança, angulo de 84.24 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = um
+	Freq. em 1 = 1	Freq. em 2 = 4
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = quando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = primeiro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gerais
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dizem
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = tem
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = pode
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = casa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = O
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+
+Analise de Semelhanca entre doc2.txt(1) e doc4.txt(2)
+
+As magnitudes:
+	Em 1 = 11.49	Em 2 = 16.28
+Com 8.54% de semelhança, angulo de 82.32 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = Deus
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = um
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 1	Freq. em 2 = 3
+
+Palavra = primeiro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gerais
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = fora
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dizem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tem
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = casa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = O
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+
+Analise de Semelhanca entre doc2.txt(1) e doc5.txt(2)
+
+As magnitudes:
+	Em 1 = 11.49	Em 2 = 17.92
+Com 7.75% de semelhança, angulo de 83.02 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = homem
+	Freq. em 1 = 1	Freq. em 2 = 4
+
+Palavra = Deus
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = era
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 1	Freq. em 2 = 7
+
+Palavra = gerais
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dentro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Ah
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = O
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+
+Analise de Semelhanca entre doc2.txt(1) e doc6.txt(2)
+
+As magnitudes:
+	Em 1 = 11.49	Em 2 = 20.62
+Com 8.90% de semelhança, angulo de 81.99 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = homem
+	Freq. em 1 = 1	Freq. em 2 = 4
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = era
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 1	Freq. em 2 = 8
+
+Palavra = certas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gerais
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dentro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Ah
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = O
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+
+Analise de Semelhanca entre doc2.txt(1) e doc7.txt(2)
+
+As magnitudes:
+	Em 1 = 11.49	Em 2 = 20.90
+Com 7.97% de semelhança, angulo de 82.82 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = homem
+	Freq. em 1 = 1	Freq. em 2 = 4
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = olhos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = era
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 1	Freq. em 2 = 7
+
+Palavra = certas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dentro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Ah
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = O
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+
+Analise de Semelhanca entre doc2.txt(1) e doc8.txt(2)
+
+As magnitudes:
+	Em 1 = 11.49	Em 2 = 18.81
+Com 6.19% de semelhança, angulo de 84.43 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = homem
+	Freq. em 1 = 1	Freq. em 2 = 3
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = olhos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = senhor
+	Freq. em 1 = 1	Freq. em 2 = 4
+
+Palavra = certas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Ah
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+
+Analise de Semelhanca entre doc2.txt(1) e doc9.txt(2)
+
+As magnitudes:
+	Em 1 = 11.49	Em 2 = 10.25
+Com 1.62% de semelhança, angulo de 88.54 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Ah
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+
+Nao ha palavra em comum entre doc2.txt e doc10.txt
+
+
+Analise de Semelhanca entre doc3.txt(1) e doc4.txt(2)
+
+As magnitudes:
+	Em 1 = 20.81	Em 2 = 16.28
+Com 34.78% de semelhança, angulo de 58.70 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = almargem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vargens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bom
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = render
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vazantes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = culturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = madeiras
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = grossura
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ainda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = virgens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dessas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = corre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = volta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tamanho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Enfim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aprova
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sabe
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = parte
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Do
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gloso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Senhor
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pergunte
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = moradores
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Em
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = falso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = receio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = desfalam
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nome
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Que
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = Vote
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Quem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = evita
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = convive
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = num
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = existe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = buritizal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = primeiro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = direita
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = chamado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Vereda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Vaca
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Mansa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Santa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Rita
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = todo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = passar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = lugares
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = designados
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = escuta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = chorinho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vozinha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = avisando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = capiroto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = E
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = qualquer
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = daqui
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = jura
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = capeta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = casa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = satanazim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = preso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = obrigado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ajudar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = executa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = empresa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vias
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = completar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rico
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Apre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = besta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rupeia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nega
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = banda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = amontar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = engordando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Ainda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estude
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = porfalando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Diabo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = parou
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = passagem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = O
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = gerais
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = senhor
+	Freq. em 1 = 2	Freq. em 2 = 3
+
+Palavra = toda
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = dizem
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Aristides
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = gente
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = Eu
+	Freq. em 1 = 2	Freq. em 2 = 3
+
+Palavra = vou
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = tem
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = mesmo
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = ouvir
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = um
+	Freq. em 1 = 4	Freq. em 2 = 1
+
+Palavra = ele
+	Freq. em 1 = 4	Freq. em 2 = 2
+
+Palavra = em
+	Freq. em 1 = 6	Freq. em 2 = 1
+
+Palavra = que
+	Freq. em 1 = 8	Freq. em 2 = 2
+
+
+Analise de Semelhanca entre doc3.txt(1) e doc5.txt(2)
+
+As magnitudes:
+	Em 1 = 20.81	Em 2 = 17.92
+Com 13.59% de semelhança, angulo de 77.77 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = almargem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vargens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bom
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = render
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vazantes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = culturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = madeiras
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = grossura
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ainda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = virgens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dessas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = corre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = volta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tamanho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Enfim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aprova
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = sabe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Em
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = existe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = minha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = por
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = O
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = gerais
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = senhor
+	Freq. em 1 = 2	Freq. em 2 = 7
+
+Palavra = gente
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Eu
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = mesmo
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = ele
+	Freq. em 1 = 4	Freq. em 2 = 1
+
+Palavra = que
+	Freq. em 1 = 8	Freq. em 2 = 1
+
+Palavra = de
+	Freq. em 1 = 9	Freq. em 2 = 1
+
+
+Analise de Semelhanca entre doc3.txt(1) e doc6.txt(2)
+
+As magnitudes:
+	Em 1 = 20.81	Em 2 = 20.62
+Com 13.00% de semelhança, angulo de 78.30 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = almargem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vargens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bom
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = render
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vazantes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = culturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = madeiras
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = grossura
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ainda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = virgens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dessas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = corre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = volta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tamanho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Enfim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aprova
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = sabe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = parte
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = existe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = minha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = por
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 3
+
+Palavra = O
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = gerais
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = senhor
+	Freq. em 1 = 2	Freq. em 2 = 8
+
+Palavra = toda
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = mesmo
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = ele
+	Freq. em 1 = 4	Freq. em 2 = 1
+
+Palavra = que
+	Freq. em 1 = 8	Freq. em 2 = 1
+
+Palavra = de
+	Freq. em 1 = 9	Freq. em 2 = 1
+
+
+Analise de Semelhanca entre doc3.txt(1) e doc7.txt(2)
+
+As magnitudes:
+	Em 1 = 20.81	Em 2 = 20.90
+Com 7.92% de semelhança, angulo de 82.87 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = aprova
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = existe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = minha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = por
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = O
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 2	Freq. em 2 = 7
+
+Palavra = gente
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = mesmo
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = ele
+	Freq. em 1 = 4	Freq. em 2 = 1
+
+Palavra = que
+	Freq. em 1 = 8	Freq. em 2 = 1
+
+Palavra = de
+	Freq. em 1 = 9	Freq. em 2 = 1
+
+
+Analise de Semelhanca entre doc3.txt(1) e doc8.txt(2)
+
+As magnitudes:
+	Em 1 = 20.81	Em 2 = 18.81
+Com 3.25% de semelhança, angulo de 87.07 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = aprova
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = Diga
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = minha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 2	Freq. em 2 = 4
+
+Palavra = gente
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+
+Analise de Semelhanca entre doc3.txt(1) e doc9.txt(2)
+
+As magnitudes:
+	Em 1 = 20.81	Em 2 = 10.25
+Com 4.18% de semelhança, angulo de 86.24 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = de
+	Freq. em 1 = 9	Freq. em 2 = 1
+
+
+Nao ha palavra em comum entre doc3.txt e doc10.txt
+
+
+Analise de Semelhanca entre doc4.txt(1) e doc5.txt(2)
+
+As magnitudes:
+	Em 1 = 16.28	Em 2 = 17.92
+Com 33.88% de semelhança, angulo de 59.51 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = almargem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vargens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bom
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = render
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vazantes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = culturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = madeiras
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = grossura
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ainda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = virgens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dessas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = O
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = corre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = volta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tamanho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Enfim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aprova
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = existe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = clareia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = paz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Mas
+	Freq. em 1 = 1	Freq. em 2 = 3
+
+Palavra = entenda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mangar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Pois
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = hem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = despontar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nascentes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redobrar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = internos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = deste
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = custante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = viagem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Doideira
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = respeito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nomes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mesmo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = querer
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = invocar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forme
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = seja
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoalmente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quase
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = perdi
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Deus
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = lhe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = digo
+	Freq. em 1 = 1	Freq. em 2 = 3
+
+Palavra = puridade
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Sei
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estabelecido
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = grassa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Santos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Evangelhos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = conversei
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rapaz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = seminarista
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = condizente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = conferindo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = livro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rezas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = revestido
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = paramenta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vara
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = maria
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = preta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = proseou
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = adjutorar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = padre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Cujo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = corpo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vivo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = gerais
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = sabe
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Em
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = gente
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = ele
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = que
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Rio
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = pelas
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nosso
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = senhor
+	Freq. em 1 = 3	Freq. em 2 = 7
+
+Palavra = Eu
+	Freq. em 1 = 3	Freq. em 2 = 1
+
+
+Analise de Semelhanca entre doc4.txt(1) e doc6.txt(2)
+
+As magnitudes:
+	Em 1 = 16.28	Em 2 = 20.62
+Com 23.28% de semelhança, angulo de 69.05 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = almargem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vargens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bom
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = render
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vazantes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = culturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = madeiras
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = grossura
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ainda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = virgens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dessas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = O
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = corre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = volta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tamanho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Enfim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aprova
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = parte
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = existe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = clareia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = paz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Mas
+	Freq. em 1 = 1	Freq. em 2 = 3
+
+Palavra = entenda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mangar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Pois
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = hem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = despontar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nascentes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redobrar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = internos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = deste
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = custante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = viagem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Doideira
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = respeito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nomes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mesmo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = querer
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = invocar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forme
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = digo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 3
+
+Palavra = gerais
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = sabe
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = toda
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = ele
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = que
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Rio
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = pelas
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nosso
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = senhor
+	Freq. em 1 = 3	Freq. em 2 = 8
+
+
+Analise de Semelhanca entre doc4.txt(1) e doc7.txt(2)
+
+As magnitudes:
+	Em 1 = 16.28	Em 2 = 20.90
+Com 16.65% de semelhança, angulo de 75.01 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = O
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aprova
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = existe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = cavalo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = clareia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = paz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Mas
+	Freq. em 1 = 1	Freq. em 2 = 3
+
+Palavra = entenda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mangar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Pois
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = hem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = despontar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nascentes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redobrar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = internos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = deste
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = custante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = viagem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Doideira
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = respeito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nomes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mesmo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = querer
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = invocar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forme
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = digo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = ele
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = que
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Rio
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = pelas
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nosso
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = senhor
+	Freq. em 1 = 3	Freq. em 2 = 7
+
+
+Analise de Semelhanca entre doc4.txt(1) e doc8.txt(2)
+
+As magnitudes:
+	Em 1 = 16.28	Em 2 = 18.81
+Com 11.92% de semelhança, angulo de 79.27 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = aprova
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = demo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = cavalo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = clareia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = paz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Mas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = entenda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mangar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Pois
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = hem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = despontar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nascentes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redobrar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = internos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = custante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = viagem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Doideira
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = respeito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = invocar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = digo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Rio
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nosso
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 3	Freq. em 2 = 4
+
+
+Analise de Semelhanca entre doc4.txt(1) e doc9.txt(2)
+
+As magnitudes:
+	Em 1 = 16.28	Em 2 = 10.25
+Com 3.44% de semelhança, angulo de 86.91 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = padre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 3	Freq. em 2 = 1
+
+
+Nao ha palavra em comum entre doc4.txt e doc10.txt
+
+
+Analise de Semelhanca entre doc5.txt(1) e doc6.txt(2)
+
+As magnitudes:
+	Em 1 = 17.92	Em 2 = 20.62
+Com 60.05% de semelhança, angulo de 35.95 graus, conclui-se que:
+HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = almargem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vargens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bom
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = render
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vazantes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = culturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = madeiras
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = grossura
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ainda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = virgens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dessas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = corre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = volta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tamanho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Enfim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sabe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Dou
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Essas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = melancolias
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = existe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caindo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = retombando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = consome
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = desfaz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sobra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Viver
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = perigoso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Explico
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vige
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dentro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = crespos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = arruinado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = avessos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Solto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = por
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = si
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nenhum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = O
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = declare
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = franco
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pedir
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = posso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = encarecido
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Tomara
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = fosse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = assisado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = acredita
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Sua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = alta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = minha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = valia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sabia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esperava
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = campo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Ah
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = velhice
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aragem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = de
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = descanso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Tem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nunca
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vi
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = devia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = era
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = este
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vosso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = servidor
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Fosse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = contar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Bem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = regula
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = preto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = criaturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mulheres
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = homens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ditado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = menino
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = trem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = usos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = plantas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = terra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vento
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estrumes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redemunho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = clareia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = paz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = entenda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mangar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = hem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = despontar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Rio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pelas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nascentes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redobrar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = internos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = deste
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = custante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = viagem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Doideira
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = respeito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nomes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mesmo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = querer
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = invocar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = que
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forme
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 3
+
+Palavra = gerais
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = aprova
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = barranco
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = muito
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nenhum
+	Freq. em 1 = 2	Freq. em 2 = 3
+
+Palavra = Pois
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = nosso
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = cachoeira
+	Freq. em 1 = 3	Freq. em 2 = 3
+
+Palavra = Mas
+	Freq. em 1 = 3	Freq. em 2 = 3
+
+Palavra = digo
+	Freq. em 1 = 3	Freq. em 2 = 2
+
+Palavra = homem
+	Freq. em 1 = 4	Freq. em 2 = 4
+
+Palavra = diabo
+	Freq. em 1 = 6	Freq. em 2 = 7
+
+Palavra = senhor
+	Freq. em 1 = 7	Freq. em 2 = 8
+
+
+Analise de Semelhanca entre doc5.txt(1) e doc7.txt(2)
+
+As magnitudes:
+	Em 1 = 17.92	Em 2 = 20.90
+Com 50.04% de semelhança, angulo de 44.96 graus, conclui-se que:
+HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = Dou
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Essas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = melancolias
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = existe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caindo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = retombando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = consome
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = desfaz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sobra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Viver
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = perigoso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Explico
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vige
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dentro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = crespos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = arruinado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = avessos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Solto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = por
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = si
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nenhum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = O
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = declare
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = franco
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pedir
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = posso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = encarecido
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Tomara
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = fosse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = assisado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = acredita
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Sua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = alta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = minha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = valia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sabia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esperava
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = campo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Ah
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = velhice
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aragem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = de
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = descanso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Tem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nunca
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vi
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = devia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = era
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = este
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vosso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = servidor
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Fosse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = contar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Bem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = regula
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = preto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = criaturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mulheres
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = homens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ditado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = menino
+	Freq. em 1 = 1	Freq. em 2 = 3
+
+Palavra = trem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = usos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = plantas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = terra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vento
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estrumes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redemunho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = clareia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = paz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = entenda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mangar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = hem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = despontar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Rio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pelas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nascentes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redobrar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = internos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = deste
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = custante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = viagem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Doideira
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = respeito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nomes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mesmo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = querer
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = invocar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = que
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forme
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = aprova
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = barranco
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = muito
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nenhum
+	Freq. em 1 = 2	Freq. em 2 = 3
+
+Palavra = Pois
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = nosso
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = cachoeira
+	Freq. em 1 = 3	Freq. em 2 = 3
+
+Palavra = Mas
+	Freq. em 1 = 3	Freq. em 2 = 3
+
+Palavra = digo
+	Freq. em 1 = 3	Freq. em 2 = 2
+
+Palavra = homem
+	Freq. em 1 = 4	Freq. em 2 = 4
+
+Palavra = diabo
+	Freq. em 1 = 6	Freq. em 2 = 7
+
+Palavra = senhor
+	Freq. em 1 = 7	Freq. em 2 = 7
+
+
+Analise de Semelhanca entre doc5.txt(1) e doc8.txt(2)
+
+As magnitudes:
+	Em 1 = 17.92	Em 2 = 18.81
+Com 41.14% de semelhança, angulo de 52.97 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = Dou
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Essas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = melancolias
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caindo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = retombando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = consome
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = desfaz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sobra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Viver
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = perigoso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vige
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = crespos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = arruinado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = avessos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Solto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nenhum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = declare
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = franco
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = encarecido
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Tomara
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = assisado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = acredita
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Sua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = alta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = minha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = valia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sabia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esperava
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = campo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Ah
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = velhice
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aragem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = descanso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nunca
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = devia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = este
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vosso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = servidor
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Fosse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = contar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Bem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = regula
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = preto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = criaturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mulheres
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = homens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ditado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = menino
+	Freq. em 1 = 1	Freq. em 2 = 3
+
+Palavra = trem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = usos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = plantas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = terra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vento
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estrumes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redemunho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = clareia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = paz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = entenda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mangar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = hem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = despontar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Rio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nascentes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redobrar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = internos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = custante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = viagem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Doideira
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = respeito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = invocar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mata
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = aprova
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = barranco
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = muito
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nenhum
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = Pois
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nosso
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = cachoeira
+	Freq. em 1 = 3	Freq. em 2 = 3
+
+Palavra = Mas
+	Freq. em 1 = 3	Freq. em 2 = 1
+
+Palavra = digo
+	Freq. em 1 = 3	Freq. em 2 = 2
+
+Palavra = homem
+	Freq. em 1 = 4	Freq. em 2 = 3
+
+Palavra = diabo
+	Freq. em 1 = 6	Freq. em 2 = 7
+
+Palavra = senhor
+	Freq. em 1 = 7	Freq. em 2 = 4
+
+
+Analise de Semelhanca entre doc5.txt(1) e doc9.txt(2)
+
+As magnitudes:
+	Em 1 = 17.92	Em 2 = 10.25
+Com 8.00% de semelhança, angulo de 82.80 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = Ah
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = velhice
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = de
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = padre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nenhum
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = diabo
+	Freq. em 1 = 6	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 7	Freq. em 2 = 1
+
+
+Nao ha palavra em comum entre doc5.txt e doc10.txt
+
+
+Analise de Semelhanca entre doc6.txt(1) e doc7.txt(2)
+
+As magnitudes:
+	Em 1 = 20.62	Em 2 = 20.90
+Com 71.00% de semelhança, angulo de 26.10 graus, conclui-se que:
+HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = de
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Dou
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Essas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = melancolias
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = existe
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caindo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = retombando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = consome
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = desfaz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sobra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Viver
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = perigoso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Explico
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vige
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dentro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = crespos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = arruinado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = avessos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Solto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = por
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = si
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nenhum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = declare
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = franco
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pedir
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = posso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = encarecido
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Tomara
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = fosse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = assisado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = acredita
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Sua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = alta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = minha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = valia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sabia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esperava
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = campo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = velhice
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aragem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = descanso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Tem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nunca
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vi
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = devia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = era
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = este
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vosso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = servidor
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Fosse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = contar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Bem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = regula
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = preto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = criaturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mulheres
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = homens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ditado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = menino
+	Freq. em 1 = 1	Freq. em 2 = 3
+
+Palavra = trem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = usos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = plantas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = terra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vento
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estrumes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redemunho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = clareia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = paz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = entenda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mangar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = hem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = despontar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Rio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pelas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nascentes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redobrar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = internos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = deste
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = custante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = viagem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Doideira
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = respeito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esses
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nomes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mesmo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = querer
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = invocar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = que
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ele
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forme
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = forma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pior
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = certas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Mal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Sofro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pena
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Melhor
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = arrepare
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = formato
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ramos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = folhas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = come
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Agora
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estranhez
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = doce
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = azangada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = motivos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = replantada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = terreno
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mudas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = seguidas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = amargando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = toma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esmo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comer
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = franzido
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carantonho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = faces
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = duma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cobra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cascavel
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = porco
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gordo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = feliz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bruto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pudesse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = roncar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = engolir
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = suja
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comodidade
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = corvo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = talhar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = adiante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rasgar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bico
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = parece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = afiada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ruim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = desejo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tortas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pedras
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = horrorosas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = venenosas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estragam
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mortal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = jazendo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = fundo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dorme
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = significado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = azougue
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = maligno
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ordem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = seguir
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caminho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = campear
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Arremisturado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tudo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = O
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = aprova
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = barranco
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = digo
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = Ah
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = Pois
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = nosso
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = Hem
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = mansa
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = brava
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = demo
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = mata
+	Freq. em 1 = 3	Freq. em 2 = 1
+
+Palavra = cachoeira
+	Freq. em 1 = 3	Freq. em 2 = 3
+
+Palavra = Mas
+	Freq. em 1 = 3	Freq. em 2 = 3
+
+Palavra = nenhum
+	Freq. em 1 = 3	Freq. em 2 = 3
+
+Palavra = homem
+	Freq. em 1 = 4	Freq. em 2 = 4
+
+Palavra = mandioca
+	Freq. em 1 = 4	Freq. em 2 = 4
+
+Palavra = diabo
+	Freq. em 1 = 7	Freq. em 2 = 7
+
+Palavra = senhor
+	Freq. em 1 = 8	Freq. em 2 = 7
+
+
+Analise de Semelhanca entre doc6.txt(1) e doc8.txt(2)
+
+As magnitudes:
+	Em 1 = 20.62	Em 2 = 18.81
+Com 61.19% de semelhança, angulo de 34.93 graus, conclui-se que:
+HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = Dou
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Essas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = melancolias
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caindo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = retombando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = consome
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = desfaz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sobra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Viver
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = perigoso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vige
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = crespos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = arruinado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = avessos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Solto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nenhum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = declare
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = franco
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = encarecido
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Tomara
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = assisado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = acredita
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Sua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = alta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = minha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = valia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sabia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esperava
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = campo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = velhice
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aragem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = descanso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nunca
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = devia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = este
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vosso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = servidor
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Fosse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = contar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Bem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = regula
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = preto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = criaturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mulheres
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = homens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ditado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = menino
+	Freq. em 1 = 1	Freq. em 2 = 3
+
+Palavra = trem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = usos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = plantas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = terra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vento
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estrumes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redemunho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = clareia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = paz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = entenda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mangar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = hem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = despontar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Rio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nascentes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redobrar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = internos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = custante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = viagem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Doideira
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = respeito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = invocar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pior
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = certas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Mal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Sofro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pena
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Melhor
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = arrepare
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = formato
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ramos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = folhas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = come
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Agora
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estranhez
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = doce
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = azangada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = motivos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = replantada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = terreno
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mudas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = seguidas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = amargando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = toma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esmo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comer
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mal
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = franzido
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carantonho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = faces
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = duma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cobra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cascavel
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = porco
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gordo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = feliz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bruto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pudesse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = roncar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = engolir
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = suja
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comodidade
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = corvo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = talhar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = adiante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rasgar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bico
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = parece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = afiada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ruim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = desejo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tortas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pedras
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = horrorosas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = venenosas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estragam
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mortal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = jazendo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = fundo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dorme
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = significado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = azougue
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = maligno
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ordem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = seguir
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caminho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = campear
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aprova
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = barranco
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = digo
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = Ah
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = Pois
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nosso
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Hem
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = mansa
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = brava
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = demo
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = mata
+	Freq. em 1 = 3	Freq. em 2 = 1
+
+Palavra = cachoeira
+	Freq. em 1 = 3	Freq. em 2 = 3
+
+Palavra = Mas
+	Freq. em 1 = 3	Freq. em 2 = 1
+
+Palavra = nenhum
+	Freq. em 1 = 3	Freq. em 2 = 2
+
+Palavra = homem
+	Freq. em 1 = 4	Freq. em 2 = 3
+
+Palavra = mandioca
+	Freq. em 1 = 4	Freq. em 2 = 4
+
+Palavra = diabo
+	Freq. em 1 = 7	Freq. em 2 = 7
+
+Palavra = senhor
+	Freq. em 1 = 8	Freq. em 2 = 4
+
+
+Analise de Semelhanca entre doc6.txt(1) e doc9.txt(2)
+
+As magnitudes:
+	Em 1 = 20.62	Em 2 = 10.25
+Com 8.77% de semelhança, angulo de 82.11 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = de
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = velhice
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caminho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Ah
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nenhum
+	Freq. em 1 = 3	Freq. em 2 = 1
+
+Palavra = diabo
+	Freq. em 1 = 7	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 8	Freq. em 2 = 1
+
+
+Nao ha palavra em comum entre doc6.txt e doc10.txt
+
+
+Analise de Semelhanca entre doc7.txt(1) e doc8.txt(2)
+
+As magnitudes:
+	Em 1 = 20.90	Em 2 = 18.81
+Com 78.94% de semelhança, angulo de 18.95 graus, conclui-se que:
+HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = espia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = fica
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gasturado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rebaixou
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = magreza
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = olhos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carinha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ossos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = encaveirada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = entisicou
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tosse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tossura
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = secos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = peitos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Arre
+	Freq. em 1 = 1	Freq. em 2 = 2
+
+Palavra = mulher
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pouquim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = prazer
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = feio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sovas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = blimbilim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quaresma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = compadre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = perversidades
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Alma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = breu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pagava
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = chorando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = penando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sofre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = igual
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bonzinho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Ave
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = neste
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cavalo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mais
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = custosa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pecados
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = artes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = emendado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esbarram
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Compadre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sertanejo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = navego
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pobre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coitado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Inveja
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = conforme
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = suma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Dou
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Essas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = melancolias
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caindo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = retombando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = consome
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = desfaz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sobra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Viver
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = muito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = perigoso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vige
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = crespos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = arruinado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = avessos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Solto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nenhum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aprova
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = declare
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = franco
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = encarecido
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Tomara
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = assisado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = acredita
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Sua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = alta
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = minha
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = valia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = sabia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esperava
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = campo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = velhice
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = aragem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = descanso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Nunca
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = devia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = este
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vosso
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = servidor
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Fosse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = contar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Bem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = regula
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = preto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = criaturas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mulheres
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = homens
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = eu
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ditado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = trem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = usos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = plantas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = terra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = vento
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estrumes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rua
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redemunho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = clareia
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = paz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = entenda
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = quis
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mangar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = hem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = despontar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Rio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = nascentes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = redobrar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = internos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Estado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = custante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = viagem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Diga
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Doideira
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = respeito
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = invocar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pior
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = certas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Mal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Sofro
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pena
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Melhor
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = arrepare
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = formato
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ramos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = folhas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = come
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mata
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Agora
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estranhez
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = doce
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = azangada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = motivos
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = replantada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = terreno
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mudas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = seguidas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = amargando
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = toma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = esmo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comer
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = franzido
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carantonho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = faces
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = duma
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cobra
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = cascavel
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = porco
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gordo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = feliz
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bruto
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pudesse
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = roncar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = engolir
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = suja
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comodidade
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = corvo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = talhar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = adiante
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = rasgar
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = bico
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = parece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = afiada
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ruim
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = desejo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = tortas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pedras
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = horrorosas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = venenosas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = estragam
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mortal
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = jazendo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = fundo
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dorme
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = significado
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = dum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = azougue
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = maligno
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = ordem
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = seguir
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caminho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = campear
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = mal
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = barranco
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = digo
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = Ah
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = Pois
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nosso
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Hem
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = mansa
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = brava
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = demo
+	Freq. em 1 = 2	Freq. em 2 = 2
+
+Palavra = menino
+	Freq. em 1 = 3	Freq. em 2 = 3
+
+Palavra = cachoeira
+	Freq. em 1 = 3	Freq. em 2 = 3
+
+Palavra = Mas
+	Freq. em 1 = 3	Freq. em 2 = 1
+
+Palavra = nenhum
+	Freq. em 1 = 3	Freq. em 2 = 2
+
+Palavra = homem
+	Freq. em 1 = 4	Freq. em 2 = 3
+
+Palavra = mandioca
+	Freq. em 1 = 4	Freq. em 2 = 4
+
+Palavra = senhor
+	Freq. em 1 = 7	Freq. em 2 = 4
+
+Palavra = diabo
+	Freq. em 1 = 7	Freq. em 2 = 7
+
+
+Analise de Semelhanca entre doc7.txt(1) e doc9.txt(2)
+
+As magnitudes:
+	Em 1 = 20.90	Em 2 = 10.25
+Com 9.55% de semelhança, angulo de 81.41 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = artes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Compadre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = velhice
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = de
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caminho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Ah
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nenhum
+	Freq. em 1 = 3	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 7	Freq. em 2 = 1
+
+Palavra = diabo
+	Freq. em 1 = 7	Freq. em 2 = 1
+
+
+Nao ha palavra em comum entre doc7.txt e doc10.txt
+
+
+Analise de Semelhanca entre doc8.txt(1) e doc9.txt(2)
+
+As magnitudes:
+	Em 1 = 18.81	Em 2 = 10.25
+Com 8.94% de semelhança, angulo de 81.95 graus, conclui-se que:
+NÃO HOUVE PLAGIO
+
+Segue Lista das palavras semelhantes entre os documentos e suas respectivas frequencias:
+
+Palavra = artes
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = pessoas
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = Compadre
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = gente
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = velhice
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = carece
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = meio
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = coisa
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = comum
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = caminho
+	Freq. em 1 = 1	Freq. em 2 = 1
+
+Palavra = mundo
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = nenhum
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = Ah
+	Freq. em 1 = 2	Freq. em 2 = 1
+
+Palavra = senhor
+	Freq. em 1 = 4	Freq. em 2 = 1
+
+Palavra = diabo
+	Freq. em 1 = 7	Freq. em 2 = 1
+
+
+Nao ha palavra em comum entre doc8.txt e doc10.txt
+
+
+Nao ha palavra em comum entre doc9.txt e doc10.txt
+
+

@@ -1,0 +1,78 @@
+<html><BODY bgcolor="ffffff">
+<PRE>
+SCP(1)                         SSH                         SCP(1)
+
+
+
+<B>NAME</B>
+       scp - secure copy (remote file copy program)
+
+
+<B>SYNOPSIS</B>
+       <B>scp </B>[<B>-prvC</B>] [<B>-P </B><I>port</I>] [<B>-c </B><I>cipher</I>] [<B>-i </B><I>identity</I>]
+            [[<B>user@</B>]<B>host1:</B>]<B>filename1</B>...  [[<B>user@</B>]<B>host2:</B>]<B>filename2</B>
+
+
+<B>DESCRIPTION</B>
+       <B>Scp </B>copies files between hosts on a network.  It uses  <B>ssh</B>
+       for  data  transfer,  and uses the same authentication and
+       provides the same security as <B>ssh.  </B>Unlike <B>rcp</B>,  <B>ssh  </B>will
+       ask  for  passwords  or passphrases if they are needed for
+       authentication.
+
+       Any file name may contain a host and user specification to
+       indicate  that the file is to be copied to/from that host.
+       Copies between two remote hosts are permitted.
+
+
+<B>OPTIONS</B>
+       <B>-c </B><I>cipher</I>
+             Selects the cipher to use for  encrypting  the  data
+             transfer.  This option is directly passed to <B>ssh.</B>
+
+       <B>-i </B><I>identity</I><B>_</B><I>file</I>
+             Selects  the  file  from which the identity (private
+             key) for RSA authentication is read.  This option is
+             directly passed to <B>ssh.</B>
+
+       <B>-p    </B>Preserves  modification  times,  access  times,  and
+             modes from the original file.
+
+       <B>-r    </B>Recursively copy entire directories.
+
+       <B>-v    </B>Verbose mode.  Causes <B>scp </B>and <B>ssh </B>to print debugging
+             messages  about  their progress.  This is helpful in
+             debugging connection, authentication, and configura­
+             tion problems.
+
+       <B>-B    </B>Selects batch mode (prevents asking for passwords or
+             passphrases).
+
+       <B>-C    </B>Compression enable.  Passes the -C flag  to  <B>ssh  </B>to
+             enable compression.
+
+       <B>-P </B><I>port</I>
+             Specifies the port to connect to on the remote host.
+             Note that this option is written with a  capital  P,
+             because  -p  is  already reserved for preserving the
+             times and modes of the file in rcp.
+
+
+<B>AUTHORS</B>
+       Timo Rinne &lt;tri@iki.fi&gt; and Tatu Ylonen &lt;ylo@cs.hut.fi&gt;
+
+
+<B>DERIVATION</B>
+       <B>Scp </B>is based on the <B>rcp </B>program in BSD  source  code  from
+       the Regents of the University of California.
+
+
+<B>SEE ALSO</B>
+       <B>ssh</B>(1),  <B>sshd</B>(8), <B>ssh-keygen</B>(1), <B>ssh-agent</B>(1), <B>ssh-add</B>(1),
+       <B>rcp</B>(1)
+
+
+
+SSH                      November 8, 1995                  SCP(1)
+</PRE>
+</BODY></html>

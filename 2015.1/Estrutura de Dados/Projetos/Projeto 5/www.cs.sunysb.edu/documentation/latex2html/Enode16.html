@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Indexing</TITLE>
+<META NAME="description" CONTENT="Indexing">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="previous" HREF="Enode12.html">
+<LINK REL="up" HREF="features.html">
+<LINK REL="next" HREF="Enode17.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html289"
+ HREF="Enode17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html285"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html279"
+ HREF="Enode15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html287"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html288"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html290"
+ HREF="Enode17.html">Integrated Glossary and Index</A>
+<B> Up:</B> <A NAME="tex2html286"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html280"
+ HREF="Enode15.html">Indicating Differences between Document</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000118000000000000000">&#160;</A><A NAME="index">&#160;</A><A NAME="1996">&#160;</A>
+<BR>
+Indexing
+</H2>
+<A NAME="1997">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1f</SUP>
+<BR>
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> automatically produces an Index consisting of the
+arguments to all <TT>&#92;index</TT> commands encountered, if there are any.
+A hyperlink is created to that point in the text where the 
+<TT>&#92;index</TT> command occurred.
+
+<P>
+More sophisticated indexing is available by loading the 
+<I>makeidx</I> package.
+Most of the features described in [<A NAME="lamp:latex"
+ HREF="node9">1</A>, Appendix&nbsp;A] become available.
+This includes:
+<DL><DT>
+<A NAME="2007">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>styled entries, using `<TT>@</TT>' : </B>
+<DD>Entries of the form <code>\index{</code><TT>
+&lt;<I>sort-key</I>&gt;</TT><code>@</code><TT>
+&lt;<I>styled-text</I>&gt;</TT><code>}</code>
+produce <TT>
+&lt;<I>styled-text</I>&gt;</TT> as the entry, but sorted according to <TT>
+&lt;<I>sort-key</I>&gt;</TT>.
+
+<P>
+<A NAME="2013">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>hierarchical entries, using `<TT>!</TT>' : </B>
+<DD>Entries of the form
+<code>\index{</code><TT>
+&lt;<I>item</I>&gt;</TT><code>@</code><TT>
+&lt;<I>sub-item</I>&gt;</TT><code>}</code>
+set the <TT>
+&lt;<I>sub-item</I>&gt;</TT> indented below the <TT>
+&lt;<I>item</I>&gt;</TT>.
+Unlimited levels of hierarchy are possible, 
+even though L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X is limited to only 3 levels. 
+The <TT>
+&lt;<I>sort-key</I>&gt;</TT><code>@</code><TT>
+&lt;<I>styled-text</I>&gt;</TT> can be used at each level.
+
+<P>
+<A NAME="2022">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>explicit ranges, using `<TT>|(</TT>' and `<TT>|)</TT>' : </B>
+<DD>This is perhaps more useful in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version. 
+In the <TT>HTML</TT> version these simply insert words ``from'' and ``to'',
+respectively, prior to the hyperlink to where the index-entry occurs.
+
+<P>
+<A NAME="2027">&#160;</A>
+<A NAME="2415">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><TT>|see&#123;
+&lt;<I>index-entry</I>&gt;&#125;</TT> : </B>
+<DD>provides a textual reference to another indexed word or phrase, 
+by inserting the word ``see''. 
+This can be used in conjunction with <TT>&#92;htmlref</TT> to create a hyperlink
+to the <TT>
+&lt;<I>index-entry</I>&gt;</TT>; viz.
+<PRE>
+\index{latexe@\LaTeXe |see{\htmlref{\LaTeX}{IIIlatex}}}
+</PRE>
+where a <TT>&#92;label</TT> has been specified in some other index-entry, as follows:
+<PRE>
+\index{latex@\LaTeX\label{IIIlatex}}
+</PRE>
+
+<P>
+<A NAME="2416">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><TT>|emph</TT> : </B>
+<DD><I>is recognised but <EM>ignored</EM>; 
+other <TT>|<TT>
+&lt;<I>command</I>&gt;</TT></TT> commands are <EM>not</EM> processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>,
+with the following exception...</I> is handled correctly, by applying
+<TT>&#92;emph</TT> to the text of the generated hyperlink.
+
+<P>
+<A NAME="2418">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B><TT>|
+&lt;<I>style</I>&gt;</TT> : </B>
+<DD>where <TT>
+&lt;<I>style</I>&gt;</TT> is the name of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X style-changing command, 
+without the initial `<TT>&#92;</TT>'; e.g. `<TT>emph</TT>', `<TT>textbf</TT>',
+`<TT>textit</TT>', etc. The corresponding L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X command is applied
+to the text of the generated hyperlink.
+
+<P>
+<A NAME="2057">&#160;</A>
+<A NAME="2058">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>blank lines and alphabetization: </B>
+<DD>Having precisely a single space-character after the <code>|</code> 
+(e.g. <code>\index{A| }</code>) 
+places a blank line before the index entry and omits the hyperlink.
+This is used mainly for visual formatting; it allows a break before the entries
+starting with each letter, say. Using a printable-key, as in <code>\index{Q@Q, R| }</code>,
+is appropriate when there are no indexed words starting with `Q', say.
+
+<P>
+<A NAME="2059">&#160;</A>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/redball.gif" ALT="*">
+<B>quoted delimiters: </B>
+<DD>The three special delimiters can be used within the printable portion,
+if preceded by the double-quote character: <code>"@</code>, <code>"|</code>, <code>"!</code> 
+and also <code>""</code> for the quote character itself. 
+Also <code>\"</code> produces an umlaut accent on the following character, 
+when appropriate, else is ignored.
+</DL>
+
+<P>
+<A NAME="2061">&#160;</A>
+<A NAME="2062">&#160;</A>
+<BR>
+Furthermore, the printable part of an index entry can contain <TT>HTML</TT>
+anchors; that is, hyperlinks and/or <code>\label{...}</code>s.
+This allows index entries to contain cross-links to other entries, for example,
+as well as allowing index-entries to be the target of hyperlinks from elsewhere
+within the document. 
+
+<P>
+The <A HREF="Enode17.html#glossind">next section</A> describes how this feature is used within this
+manual to create a Glossary, containing a short description of all file-names,
+configuration-variables and application software mentioned within the manual,
+integrated with the Index. All occurrences of the technical names can be
+easily found, starting from any other.
+
+<P>
+<A NAME="2067">&#160;</A>
+
+<P>
+When a single item is indexed many times, it is sufficient 
+to have a <TT>&#92;label</TT> command appearing within the printable portion 
+of the first instance of an <code>\index{...}</code> command for that item,
+within a single document segment. 
+
+<P>
+
+<P>
+<BR>
+
+<P>
+If the index-entries are in different segments of a segmented document, 
+it is sufficient to have the  <code>\index{...@...\label{...}}</code> appearing 
+within that segment, in which the item is indexed, whose indexing information 
+is loaded earliest via a <code>\internal[index]{...}</code> command.
+When in doubt, include one <code>\index{...@...\label{...}}</code> per segment 
+in which the item is indexed.
+
+<P>
+<A NAME="2069">&#160;</A>
+<A NAME="2070">&#160;</A>
+
+<P>
+For cross-links to work effectively within segmented documents,
+the indexing command 
+<code>\index{...@...\label{...}}</code> <EM>must</EM> occur earlier 
+in the same segment than any use of 
+<code>\index{...@...\htmlref{...}{...}}</code> 
+intended to create a link to that label. 
+If the <TT>&#92;label</TT> occurs in a different segment,
+then a <code>\internal[index]{...}</code> command for that segment,
+may be needed at the beginning of the segment with the <TT>&#92;htmlref</TT>.
+When this is done incorrectly, the resulting link will be to the
+segment where the indexed item occurred, 
+rather than staying within the Index.
+
+<P>
+<BR CLEAR="ALL">
+<HR>
+<A NAME="2074">&#160;</A>
+<A NAME="2075">&#160;</A>
+
+<P>
+Since use of section-names, as the text for hyperlinks, can lead to a very long
+and cumbersome Index, especially when single items have been indexed many times,
+a further feature is provided to obtain a more compact Index.
+ 
+<A NAME="2076">&#160;</A>
+<BR>
+Use of the command-line option  <TT>-short_index</TT>  causes a codified 
+representation of the sectioning to be used, rather than the full section-name.
+The differences are as follows.
+<UL>
+<LI>
+For example, `<TT>2.1</TT>' means sub-node&nbsp;#1 of node&nbsp;#2, 
+viewing the entire document as a tree-like structure. 
+
+<P>
+<A NAME="2081">&#160;</A>
+<LI>
+The top-most node is simply denoted `<code>^</code>'.
+
+<P>
+<A NAME="2082">&#160;</A>
+<A NAME="2083">&#160;</A>
+<LI>
+With a <A HREF="Hnode11.html#Segmentation">segmented document</A>, 
+each segment is codified separately 
+using the <A HREF="#prefix"><TT>
+&lt;<I>prefix</I>&gt;</TT></A> supplied for that segment.
+The Index includes a legend of these prefixes, 
+each giving the title of the leading page from the segment,
+as a hyperlink to the place on that page where its 
+child-links are displayed.
+
+<P>
+<A NAME="2088">&#160;</A>
+<LI>
+Hyperlinks start on the same line as the index-key, 
+rather than the next line, separated by `<TT>|</TT>'. 
+This gives further compactification for easier browsing.
+
+<P>
+<A NAME="2420">&#160;</A>
+<LI>
+If  <TT>-prefix <TT>
+&lt;<I>prefix</I>&gt;</TT></TT>  has been specified, then the <TT>
+&lt;<I>prefix</I>&gt;</TT>
+is prepended to the codified form. This is most useful for segmented documents. 
+Now the top-most node is indicated by the bare <TT>
+&lt;<I>prefix</I>&gt;</TT>.
+</UL>
+These features can also be obtained by setting the variable <A HREF="node10.html#GGG_SHORT_INDEX"
+ NAME="3387"><TT>$SHORT_INDEX</TT></A>
+to have value `<TT>1</TT>', in a configuration or initialisation file;
+provided, of course, that the document loads the 
+<I>makeidx</I> package.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1f</SUP>
+<BR>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html291"
+ HREF="Enode17.html">Integrated Glossary and Index</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html289"
+ HREF="Enode17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html285"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html279"
+ HREF="Enode15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html287"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html288"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html290"
+ HREF="Enode17.html">Integrated Glossary and Index</A>
+<B> Up:</B> <A NAME="tex2html286"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html280"
+ HREF="Enode15.html">Indicating Differences between Document</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

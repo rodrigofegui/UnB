@@ -1,0 +1,1 @@
+/usr/bin/c++    -fprofile-arcs -ftest-coverage    -lgcov CMakeFiles/TrabF_MP_Rodrigo.dir/Fontes/Pilha.o CMakeFiles/TrabF_MP_Rodrigo.dir/Fontes/Pilha_teste.o  -o TrabF_MP_Rodrigo  -L/samples -rdynamic -lgtest -lgtest_main -lpthread -Wl,-rpath,/samples 

@@ -1,0 +1,342 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Packages and Style-Files</TITLE>
+<META NAME="description" CONTENT="Packages and Style-Files">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="next" HREF="Enode16.html">
+<LINK REL="previous" HREF="Enode11.html">
+<LINK REL="up" HREF="features.html">
+<LINK REL="next" HREF="Enode13.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html238"
+ HREF="Enode13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html234"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html228"
+ HREF="Enode11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html236"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html237"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html239"
+ HREF="Enode13.html">Fancy List-Markers</A>
+<B> Up:</B> <A NAME="tex2html235"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html229"
+ HREF="Enode11.html">Document Classes and Options</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000117000000000000000">&#160;</A><A NAME="sec:sty">&#160;</A>
+<BR>
+Packages and Style-Files
+</H2>
+<!--Table of Child-Links-->
+<UL>
+<LI><A NAME="tex2html240"
+ HREF="Enode13.html">Fancy List-Markers</A>
+<LI><A NAME="tex2html241"
+ HREF="Enode14.html">Support for 
+<I>FoilTeX</I></A>
+<LI><A NAME="tex2html242"
+ HREF="Enode15.html">Indicating Differences between Document Versions</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<A NAME="1644">&#160;</A>
+<A NAME="1645">&#160;</A>
+<BR>
+Similar to the document-class mechanism described in
+<A HREF="Enode11.html#sec:cls">the previous section</A>,
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> provides a mechanism whereby the code to translate specific
+packages and style-files is automatically loaded, if such code is available.
+For example, when use of a style such as <A HREF="node10.html#GGGgerman.sty"
+ NAME="2955"><TT>german.sty</TT></A> 
+is detected in a L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source document, either by
+<UL>
+<LI>
+a <TT>&#92;usepackage</TT> command of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB>;
+<LI>
+an option to the <TT>&#92;documentstyle</TT> command of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2.09;
+<LI>
+an explicit <TT>&#92;input</TT> or <TT>&#92;include</TT> command;
+</UL>
+the translator looks for a corresponding <TT>.perl</TT> file
+having the same file-name prefix;
+e.g. the file <A HREF="node10.html#GGG_LATEX2HTMLDIR_styles_german.perl"
+ NAME="2967"><TT>$LATEX2HTMLDIR/styles/german.perl</TT></A>.
+If such a <TT>.perl</TT> file is found, 
+then its code will be incorporated with the main script,
+to be used as required. 
+
+<P>
+<A NAME="1663">&#160;</A>
+<BR>
+
+<P>
+This mechanism helps to keep the core script smaller, as well as making
+it easier for others to contribute and share solutions on  
+how to translate specific style-files.
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1</SUP>
+<BR>
+The current distribution includes the files to support the styles
+listed in <A HREF="Enode12.html#styles">the table below</A>.
+These provide good examples of how you can create 
+further extensions to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1</SUP>
+<BR>
+<A NAME="1672">&#160;</A><A NAME="1673">&#160;</A>
+<DIV ALIGN="CENTER">
+<A NAME="1677">&#160;</A>
+<TABLE CELLPADDING=3 BORDER="1">
+<CAPTION><STRONG>:</STRONG>
+Supported L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> style-files.</CAPTION>
+<TR><TD ALIGN="CENTER">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="CENTER"><A NAME="styles">&#160;</A><TT>.perl</TT>&nbsp;file</TD>
+<TD ALIGN="LEFT"><B>Description</B>&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>alltt</I><A NAME="2311">&#160;</A><A NAME="2312">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<SUB>e</SUB>'s <I> alltt</I> package.<A NAME="alltt">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>amsfonts</I><A NAME="2313">&#160;</A><A NAME="2314">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">provides recognition of the special A<SUB><BIG>M</BIG></SUB>S font symbols.<A NAME="amsfonts">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>amsmath</I><A NAME="2315">&#160;</A><A NAME="2316">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">same as <A HREF="node10.html#GGGamstex.perl"
+ NAME="2985"><TT>amstex.perl</TT></A>.<A NAME="amsmath">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>amssymb</I><A NAME="2317">&#160;</A><A NAME="2318">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">same as <A HREF="node10.html#GGGamsfonts.perl"
+ NAME="2996"><TT>amsfonts.perl</TT></A>.<A NAME="amssymb">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>amstex</I><A NAME="2319">&#160;</A><A NAME="2320">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports much of the A<SUB><BIG>M</BIG></SUB>S-L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X package (not yet complete).<A NAME="amstex">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>babel</I><A NAME="2321">&#160;</A><A NAME="2322">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Interface to <A HREF="node10.html#GGGgerman.perl"
+ NAME="3010"><TT>german.perl</TT></A> via the <I> babel</I> package.<A NAME="babel">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>changebar</I><A NAME="2323">&#160;</A><A NAME="2324">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Provides rudimentary change-bar support.<A NAME="changebar">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>chemsym</I><A NAME="2325">&#160;</A><A NAME="2326">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">defines the standard atomic symbols.<A NAME="chemsym">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>color</I><A NAME="2327">&#160;</A><A NAME="2328">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Causes colored text to be processed as ordinary text by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.<A NAME="color">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>colordvi</I><A NAME="2329">&#160;</A><A NAME="2330">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">supports the Crayola colors.<A NAME="crayola">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>enumerate</I><A NAME="2331">&#160;</A><A NAME="2332">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">supports structured labels for <I> enumerate</I> environments.<A NAME="enumerate">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>epsbox</I><A NAME="2333">&#160;</A><A NAME="2334">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Processes embedded figures not enclosed in a <I> figure</I> environment.<A NAME="epsbox">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>epsfig</I><A NAME="2335">&#160;</A><A NAME="2336">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Processes embedded figures not enclosed in a <I> figure</I> environment.<A NAME="epsfig">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>floatfig</I><A NAME="2337">&#160;</A><A NAME="2338">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Processes floating figures.<A NAME="floatfig">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>floatflt</I><A NAME="2339">&#160;</A><A NAME="2340">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Processes floating figures and tables.<A NAME="floatflt">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>foils</I><A NAME="2341">&#160;</A><A NAME="2342">&#160;</A><A NAME="1753">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports <I> FoilTeX</I> system.<A NAME="foils">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>frames</I><A NAME="2343">&#160;</A><A NAME="2344">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Provides separate frames for navigation and footnotes.<A NAME="frames">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>francais</I><A NAME="2345">&#160;</A><A NAME="2346">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Special support for the French language, same as <A HREF="node10.html#GGGfrench.perl"
+ NAME="3060"><TT>french.perl</TT></A>.<A NAME="francais">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>french</I><A NAME="2347">&#160;</A><A NAME="2348">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Special support for the French language.<A NAME="french">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>german</I><A NAME="2349">&#160;</A><A NAME="2350">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Special support for the German language.<A NAME="german">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>germanb</I><A NAME="2351">&#160;</A><A NAME="2352">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Special support for the German language, same as <A HREF="node10.html#GGGgerman.perl"
+ NAME="3077"><TT>german.perl</TT></A>.<A NAME="germanb">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>graphics</I><A NAME="2353">&#160;</A><A NAME="2354">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports commands in the <I> graphics</I> package.<A NAME="graphics">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>graphicx</I><A NAME="2355">&#160;</A><A NAME="2356">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports the alternate syntax of graphics commands.<A NAME="graphicx">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>harvard</I><A NAME="2357">&#160;</A><A NAME="2358">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports the <I> harvard</I> style of <A HREF="Hnode6.html#harvard">citation</A> (same as fnnharvard.perl).</TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>heqn</I><A NAME="2359">&#160;</A><A NAME="2360">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Alters the way displayed equations are processed.<A NAME="heqn">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>hthtml</I><A NAME="2361">&#160;</A><A NAME="2362">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">gives an alternative syntax for specifying hyperlinks, etc.<A NAME="hthtml">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>htmllist</I><A NAME="2363">&#160;</A><A NAME="2364">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Provides support for <A HREF="Enode13.html#htmllist">fancy lists</A>.</TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>justify</I><A NAME="2365">&#160;</A><A NAME="2366">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">supports paragraph alignment--no longer needed.</TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>latexsym</I><A NAME="2367">&#160;</A><A NAME="2368">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">supports the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X symbol font.<A NAME="latexsym">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>lgrind</I><A NAME="2369">&#160;</A><A NAME="2370">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">macros for nice layout of computer program code.<A NAME="lgrind">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>longtable</I><A NAME="2371">&#160;</A>
+<A NAME="2372">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">supports use of long tables, as a single table.<A NAME="longtable">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>makeidx</I><A NAME="2373">&#160;</A><A NAME="2374">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">provides more sophisticated indexing.<A NAME="makeidx">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>multicol</I><A NAME="2375">&#160;</A><A NAME="2376">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">suppresses requests for multi-columns.<A NAME="multicol">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>natbib</I><A NAME="2377">&#160;</A><A NAME="2378">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports many different styles for citations and bibliographies.<A NAME="natbib">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>nharvard</I><A NAME="2379">&#160;</A><A NAME="2380">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports harvard-style citations, using <I> natbib</I>.<A NAME="nharvard">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>seminar</I><A NAME="2381">&#160;</A><A NAME="2382">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">for creation of overhead-presentation slides.<A NAME="seminar">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>supertabular</I><A NAME="2383">&#160;</A><A NAME="2384">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">supports use super-tables, as an ordinary table.<A NAME="supertabular">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>texdefs</I><A NAME="2385">&#160;</A><A NAME="2386">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports some raw T<SMALL>E</SMALL>X commands.<A NAME="texdefs">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>verbatim</I><A NAME="2387">&#160;</A><A NAME="2388">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports verbatim input of files.<A NAME="verbatim">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>verbatimfiles</I><A NAME="2389">&#160;</A><A NAME="2390">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports verbatim input of files, also with line-numbering.<A NAME="verbatimfiles">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>wrapfig</I><A NAME="2391">&#160;</A><A NAME="2392">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports wrapped figures.<A NAME="wrapfig">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>xspace</I><A NAME="2393">&#160;</A><A NAME="2394">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports use of the <I> xspace</I> package and <TT>&#92;xspace</TT> command.<A NAME="xspace">&#160;</A></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><I> <B>xy</I><A NAME="1872">&#160;</A><A NAME="1873">&#160;</A>
+<A NAME="1874">&#160;</A>
+</B></TD>
+<TD ALIGN="LEFT">Supports use of the X<SUB><BIG>Y</BIG></SUB>-pic graphics package.<A NAME="xypic">&#160;</A></TD>
+</TR>
+</TABLE></DIV>
+<A NAME="2395">&#160;</A>
+<BR>
+
+The problem however, is that writing such extensions requires an understanding 
+of <A HREF="node10.html#GGGPerl"><I>Perl</I></A> programming and of the way the processing in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> is organised. 
+Interfaces that are more ``user-friendly'' are being investigated.
+Some of the techniques currently used are explained in 
+<A HREF="Mnode10.html#sec:ext">a later section</A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html238"
+ HREF="Enode13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html234"
+ HREF="features.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html228"
+ HREF="Enode11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html236"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html237"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html239"
+ HREF="Enode13.html">Fancy List-Markers</A>
+<B> Up:</B> <A NAME="tex2html235"
+ HREF="features.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html229"
+ HREF="Enode11.html">Document Classes and Options</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

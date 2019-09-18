@@ -1,0 +1,837 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Troubleshooting</TITLE>
+<META NAME="description" CONTENT="Troubleshooting">
+<META NAME="keywords" CONTENT="problems">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="problems.css">
+<LINK REL="previous" HREF="problems.html">
+<LINK REL="up" HREF="problems.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html35"
+ HREF="../manual/node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html31"
+ HREF="problems.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html25"
+ HREF="problems.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html33"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html34"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html36"
+ HREF="../manual/node9.html">Bibliography</A>
+<B> Up:</B> <A NAME="tex2html32"
+ HREF="problems.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html26"
+ HREF="problems.html">No Title</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000141000000000000000">
+Troubleshooting</A>
+</H2>
+<A NAME="731">&#160;</A><A NAME="732">&#160;</A><A NAME="733">&#160;</A>
+Here are some curable symptoms:
+
+<P>
+<DL>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>Cannot run any of the <A HREF="node10.html#GGGPerl"><I>Perl</I></A> programs: </B>
+<DD>If your <A HREF="node10.html#GGGPerl"><I>Perl</I></A> installation is such that <A HREF="node10.html#GGGPerl"><I>Perl</I></A> programs are not allowed 
+to run as shell scripts you may be unable to run  
+<A HREF="node10.html#GGGlatex2html"
+ NAME="1116"><TT>latex2html</TT></A>, <A HREF="node10.html#GGGtexexpand"
+ NAME="1124"><TT>texexpand</TT></A>, <A HREF="node10.html#GGGpstoimg"
+ NAME="1132"><TT>pstoimg</TT></A> and  <A HREF="node10.html#GGGinstall-test"
+ NAME="1140"><TT>install-test</TT></A>. 
+In this case change the first line in each of these
+programs from
+<PRE>
+#!/usr/local/bin/perl
+</PRE>
+to
+<PRE>
+: # *-*-perl-*-*
+    eval 'exec perl -S  $0 "$@"'
+    if $running_under_some_shell;
+</PRE>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>The <A HREF="node10.html#GGGinstall-test"
+ NAME="1148"><TT>install-test</TT></A> script gives uninformative error messages: </B>
+<DD>If, for any reason, you have trouble running <A HREF="node10.html#GGGinstall-test"
+ NAME="1156"><TT>install-test</TT></A>,
+do not despair. Most of what it does is to do with checking
+your installation rather than actually installing anything.
+To do a <I>manual installation</I> just change the variable
+<A HREF="node10.html#GGG_LATEX2HTMLDIR"
+ NAME="1164"><TT>$LATEX2HTMLDIR</TT></A> in the beginning of the file <A HREF="node10.html#GGGlatex2html"
+ NAME="1172"><TT>latex2html</TT></A>
+to point to the directory where the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> files can be found.
+
+<P>
+Also, make sure that the files
+<A HREF="node10.html#GGGpstoimg"
+ NAME="1180"><TT>pstoimg</TT></A>, <A HREF="node10.html#GGGtexexpand"
+ NAME="1188"><TT>texexpand</TT></A> and <A HREF="node10.html#GGGlatex2html"
+ NAME="1196"><TT>latex2html</TT></A> are executable;
+if necessary use the Unix <A HREF="node10.html#GGGchmod"
+ NAME="1204"><TT>chmod</TT></A> command to make them 
+executable.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>It just stops. </B>
+<DD>Check the style
+files that you are using. It is possible that you are using
+a style file which contains raw T<SMALL>E</SMALL>X commands. In such a case
+start L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> with the option 
+ <TT>-dont_include <TT>
+&lt;<I>style-file name</I>&gt;</TT></TT> . 
+Alternatively, add the name of the style to the variable 
+<A HREF="node10.html#GGG_DONT_INCLUDE"
+ NAME="1216"><TT>$DONT_INCLUDE</TT></A> in your
+<A HREF="node10.html#GGG_HOME_.latex2html-init"
+ NAME="1224"><TT>$HOME/.latex2html-init</TT></A> file. If you don't have such a file then
+create one and add the lines:
+<BLOCKQUOTE>
+<code>$DONT_INCLUDE = "$DONT_INCLUDE" . ":</code><TT>
+&lt;<I>style file name</I>&gt;</TT><code>";</code>
+<BR>
+<code>1;        # This must be the last line</code>
+</BLOCKQUOTE>
+
+<P>
+Another reason why L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> might stop is that the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source
+file itself contains raw T<SMALL>E</SMALL>X commands. In this case you may 
+put such commands inside a 
+<I>latexonly</I>
+<A HREF="Hnode4.html#sec:latexonly">environment</A>.
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+The <A HREF="node10.html#GGG_VERBOSITY"
+ NAME="1235"><TT>$VERBOSITY</TT></A> <A HREF="#verbosity">variable</A> can be used 
+to create tracing messages, which may help to locate which command 
+or environment was being processed when everything stopped.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<A NAME="780">&#160;</A><A NAME="781">&#160;</A>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>It appears to be doing nothing.<A NAME="looping">&#160;</A></B>
+<DD>Perhaps the processor has fallen into an unending loop.
+Usually there will be a bad definition, or other faulty source code,
+which has caused this.
+The <A HREF="node10.html#GGG_VERBOSITY"
+ NAME="1243"><TT>$VERBOSITY</TT></A> <A HREF="Mnode8.html#cs_verbositylevel">variable</A>
+can be set to generate tracing messages, which may help to locate which command 
+or environment is being processed repeatedly.
+Try setting a value of `<TT>3</TT>'; e.g. using the commandline switch  <TT>-verbosity 3</TT> .
+This will print command and environment names, as thaey are processed.
+It should soon become apparent where any such looping occurs.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>It just fills the endlessly with dots.</B>
+<DD>No `perhaps' here; the processor has definitely fallen into an unending loop.
+See the previous item for how to detect which command or environment
+is causing the problem.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><A HREF="node10.html#GGGPerl"><I>Perl</I></A> cannot parse the <A HREF="node10.html#GGGlatex2html"
+ NAME="1255"><TT>latex2html</TT></A> script: </B>
+<DD>If <A HREF="node10.html#GGGPerl"><I>Perl</I></A> refuses to start L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> and issues errors, your
+<A HREF="node10.html#GGGPerl"><I>Perl</I></A> version is not up to date.
+Update your <A HREF="node10.html#GGGPerl"><I>Perl</I></A> to 5.003 or later. You can check which version of
+<A HREF="node10.html#GGGPerl"><I>Perl</I></A> you are using by invoking <A HREF="node10.html#GGGPerl"><I>Perl</I></A> with the  <TT>-v</TT>  option.
+
+<P>
+If <A HREF="node10.html#GGGPerl"><I>Perl</I></A> issues errors during runtime, this is most probably related
+to bugs within L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> or one of its modules.
+In this case you will need help from the developers or experienced users;
+this can be obtained via the discussion list.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>It crashes (dumps core) as soon as it starts<A NAME="perl">&#160;</A>: </B>
+<DD>Update your <A HREF="node10.html#GGGPerl"><I>Perl</I></A> to 5.003 or later.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>It does not show any of your images: </B>
+<DD>You can't run L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> in a subdirectory that contains a dot
+  within the directory name, such as <TT>latex2html-98.1</TT>,
+  or in name of any higher directory.
+  This is because <A HREF="node10.html#GGGdvips"
+ NAME="1285"><TT>dvips</TT></A>'s <TT>-o</TT> option will change 98.1 into 98.001
+  and use that as the resulting output file, instead of image001&nbsp;.
+  The <A HREF="#GGGpostscript"
+ NAME="1293">PostScript</A> files will be placed higher up in the directory tree.
+
+<P>
+For instance, if <TT> pwd </TT> returns something like:
+<PRE>
+/usr/people/nelson/files/latex2html-98.1/work/tests
+</PRE>
+and you run L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, then <A HREF="node10.html#GGGdvips"
+ NAME="1302"><TT>dvips</TT></A> will generate 
+image output files here:
+<PRE>
+/usr/people/nelson/files
+</PRE>
+  called <TT>latex2html-98.001</TT>, <TT>latex2html-98.002</TT>, ...
+  instead of <TT>image001</TT>, <TT>image002</TT>, <TT>image003</TT>, ...
+  in the subdirectory where your <TT>.html</TT> files were created.
+  As a result the images will not show in your documents.
+
+<P>
+If you are getting `File Not Found' errors,
+  then reprocess your job using the  <TT>-debug</TT>  switch,
+  to see what options are passed to <A HREF="node10.html#GGGdvips"
+ NAME="1311"><TT>dvips</TT></A>.
+  If there is a `.' in some parts of any directory name, 
+  then look above that directory
+  to see if files are being generated there.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+One obvious fix is to rename the offending directory
+  to remove the `.' from its name.
+
+<P>
+If that is not possible, then define an alternative location
+  for image generation to take place; set <TT>$TMP</TT> to contain
+  the name for this location. Typically <TT>$TMP = '/usr/tmp';</TT>&nbsp;.
+  (This use of <TT>$TMP</TT> is a good thing to do anyway,
+  especially if your Unix account is subject to quota limitations.)
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>It stops after having run L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, displaying a message about <A HREF="node10.html#GGGdvips"
+ NAME="1319"><TT>dvips</TT></A>: </B>
+<DD>See the previous item for the reason and `fix'. 
+  This version of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> detects the problem 
+  and will not allow images to be generated in the wrong place.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><A HREF="node10.html#GGGdvips"
+ NAME="1327"><TT>dvips</TT></A> complains about incorrect arguments:<A NAME="dvips">&#160;</A> </B>
+<DD>Please use a version which supports the command-line options  <TT>-M</TT> ,  <TT>-S</TT> ,
+ <TT>-o</TT>  and  <TT>-i</TT> . ``Recent'' versions, at least after 5.516, do support them.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>It gives an ``<TT>Out of memory</TT>'' message and dies: </B>
+<DD>Try splitting your source file into more than one file,
+using the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands <TT>&#92;input</TT> or <TT>&#92;include</TT>. 
+Also, try using the  <TT>-no_images</TT>  option.
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Perhaps the processor has fallen into an infinite loop.
+Usually there will be a bad definition, or other faulty source code,
+which has caused this. 
+See an <A HREF="Pnode1.html#looping">earlier problem</A> for
+how to set the <A HREF="node10.html#GGG_VERBOSITY"
+ NAME="1342"><TT>$VERBOSITY</TT></A> <A HREF="#verbosity">variable</A> to 
+help locate the bad code leading to this memory exhaustion.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+As a last resort you may consider increasing the virtual memory
+(swap space) of your machine. As an indication 
+of what you might be able to do on your machine,
+a very long book (about 1000 printed pages) required about 
+24MB of RAM and over 150MB of swap space to convert on a local Sun Sparc ELC
+running SunOS 4.1.3.
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+Much of this memory would have been consumed during image-generation.
+This part of the processing is much more efficient in <SMALL>V97.1</SMALL>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR><DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><A HREF="node10.html#GGGinstall-test"
+ NAME="1350"><TT>install-test</TT></A> issues ``dbm'' related error messages: </B>
+<DD>
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> requires a DataBase Management system (<A HREF="node10.html#GGGNDBM"
+ NAME="1358"><I>NDBM</I></A>,
+<A HREF="node10.html#GGGGDBM"
+ NAME="1367"><I>GDBM</I></A>, or <A HREF="node10.html#GGGSDBM"
+ NAME="1376"><I>SDBM</I></A>) in order to run.
+This is usually part of each Unix-like operating system and
+<A HREF="node10.html#GGGSDBM"
+ NAME="1385"><I>SDBM</I></A> is part of <A HREF="node10.html#GGGPerl"><I>Perl</I></A> 5, but sometimes this is either missing
+on your operating system or left out in a binary <A HREF="node10.html#GGGPerl"><I>Perl</I></A> distribution.
+<A NAME="tex2html8"
+ HREF="http://www.pvv.unit.no/archie/">Use </A>
+to find one or (better) update to a complete <A HREF="node10.html#GGGPerl"><I>Perl</I></A> 5 distribution.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><A HREF="node10.html#GGGlatex2html"
+ NAME="1412"><TT>latex2html</TT></A> issues ``dbm'' related error messages: </B>
+<DD>If you get warnings like
+<PRE>
+ndbm store returned -1, errno 28, key "xyz" at latex2html line 123
+</PRE>
+this is related to an overflow of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> internals.
+You will need help from the list, here.
+
+<P></P>
+
+<P>
+If you get real error messages which cause L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> to abort,
+run <A HREF="node10.html#GGGinstall-test"
+ NAME="1420"><TT>install-test</TT></A> to check if your DataBase management works.
+You will probably need to re-install <A HREF="node10.html#GGGPerl"><I>Perl</I></A> 5 (see above topic).
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+This can happen when an image is being created from a large piece
+of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source code. The image-reuse mechanism uses the code itself
+to construct a database key. If too long, the key is invalid and may
+crash <A HREF="node10.html#GGGDBM"
+ NAME="1431"><I>DBM</I></A> or <A HREF="node10.html#GGGNDBM"
+ NAME="1440"><I>NDBM</I></A>. (In fact this error should no longer
+occur in <SMALL>V97.1</SMALL>, so please advise the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> developers if
+you get error messages of this kind.)
+<BR>
+The message should contain the name of environment which caused the problem,
+along with an identifying number; e.g. <TT>eqnarray268</TT>.
+To find which exact piece of code this represents, run L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>
+again, using the  <TT>-debug</TT>  switch. Then look at the files
+in the <TT>TMP</TT> subdirectory of the working directory
+named <TT>TMP/part001</TT>, <TT>TMP/part002</TT>, etc.
+Use the unix <A HREF="node10.html#GGGgrep"
+ NAME="1450"><TT>grep</TT></A> command: <TT> grep 268 
+&lt;<I>dir</I>&gt;/TMP/part* </TT>
+to find that number in these files. 
+This should enable you to locate exactly where the problem occurs.
+
+<P>
+One solution may be to wrap the whole environment within
+<TT>&#92;begin&#123;makeimage&#125;</TT> and <TT>&#92;end&#123;makeimage&#125;</TT>.
+This will still cause the image to be created, 
+but uses just the environment name and number as the database key.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>The <TT>&#92;verb"ABC"</TT> command doesn't work: </B>
+<DD>This is an unfortunate bug which can be avoided by using 
+any character other than quotes; e.g. <TT>&#92;verb+ABC+</TT>.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>Cannot get the ``tilde'' (~) to show: </B>
+<DD>The trick here is to use <code>\~{}</code>.
+<BR>
+Alternatively try using something like:
+<A NAME="tex2html9"
+ HREF="<A NAME="tex2html7"
+ HREF="http://host/%7Eme/path/file.html">mylink</A>"><A NAME="tex2html6"
+ HREF="http://host/%7Eme/path/file.html">mylink</A></A>. 
+
+<P>
+<B>Warning:</B> Some browsers may not be able to interpret the <code>%7E</code>
+as a ``tilde'' character.
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR>
+Try using <TT>&#92;char126</TT>&nbsp;.
+In any case tildes within <TT>&#92;htmladdnormallink</TT> and similar commands
+are now handled correctly.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>Macro definitions don't work correctly: </B>
+<DD>As mentioned in other places, not all plain T<SMALL>E</SMALL>X <TT>&#92;def</TT>-initions 
+can be converted.
+But you may also have problems even when using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X definitions
+(with <TT>&#92;newcommand</TT> and <TT>&#92;newenvironment</TT>) if such definitions
+make use of sectioning or <TT>&#92;verbatim</TT> commands. These are 
+handled in a special way by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> and cannot be used in
+macro definitions. 
+
+<P>
+In general the macro handling mechanism is inefficient and very
+fragile. Avoid using macros if possible.
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>97.1</SUP>
+<BR>
+A greater range of macros definitions can now be handled,
+especially if appropriate declarations are added to an initialization file.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 97.1</SUP>
+<BR>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><TT>&#92;input</TT> commands: </B>
+<DD>There is a bug in the expansion of <TT>&#92;input</TT> commands which causes 
+a problem
+when more than one <TT>&#92;input</TT> command appears on the same line.
+There is no quick fix other than suggesting that you put each
+<TT>&#92;input</TT> command on a line by itself,
+in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source files.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><TT>&#92;input</TT> commands in 
+<I>verbatim</I> environments: </B>
+<DD>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR>
+These should no longer cause problems (actually since 97.1).
+<TT>&#92;input</TT> commands are also handled correctly within comment environments
+declared using <TT>&#92;excludecomment</TT> 
+and when loading multiple <TT>.aux</TT> files, 
+due to use of the <TT>&#92;include</TT> command.
+Alternatively you might want to use
+either the 
+<I>verbatim</I> or the 
+<I>verbatimfiles</I> package.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>Optional arguments in 
+<I>description</I> environments: </B>
+<DD>If&nbsp;you have optional arguments for the <TT>&#92;item</TT> command in 
+a 
+<I>description</I> environment containing nested ``<TT>]</TT>'' characters then 
+these may not show up correctly. To avoid the problem enclose them
+in <code>{}</code>s;
+<BR>
+e.g.  <code>\item[{[nested [angle [brackets] are ok]]}]</code>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> behaves differently even when you run it on the
+same file: </B>
+<DD>&nbsp;
+<BR>
+If&nbsp;you notice any strange side-effects from previous runs of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>, 
+try using the option  <TT>-no_reuse</TT>  and choose <TT>(d)</TT> when prompted. 
+This will clear any intermediate files generated during previous runs.
+Note that this option will disable the image-reuse mechanism.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>Cannot convert <A HREF="#GGGpostscript"
+ NAME="1495">PostScript</A> images which are included
+in the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X file: </B>
+<DD>&nbsp;
+<BR>
+It&nbsp;is likely that the macros you are using for including <A HREF="#GGGpostscript"
+ NAME="1504">PostScript</A> 
+files (e.g. <TT>&#92;epsffile</TT>) are not understood by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+To avoid this problem enclose them in an environment which will
+be passed to L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X anyway; e.g.
+<BLOCKQUOTE>
+<TT>&#92;begin</TT><code>{figure}</code>
+<BR>
+<TT>&#92;epsffile</TT><code>{</code><TT>
+&lt;<I>PostScript file name</I>&gt;</TT><code>}</code>
+<BR>
+<TT>&#92;end</TT><code>{figure}</code>
+</BLOCKQUOTE>
+
+<P>
+Another reason why this might happen is that your shell environment variable 
+<A HREF="node10.html#GGGTEXINPUTS"
+ NAME="1519"><TT>TEXINPUTS</TT></A> may be undefined. This is not always 
+fatal but if you have problems you can use full
+path-names for included <A HREF="#GGGpostscript"
+ NAME="1527">PostScript</A> files (even when the <A HREF="#GGGpostscript"
+ NAME="1536">PostScript</A> files are in the same directory as the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X source file).
+Alternatively try setting <A HREF="node10.html#GGGTEXINPUTS"
+ NAME="1545"><TT>TEXINPUTS</TT></A> to `<TT>.::</TT>'. 
+With some T<SMALL>E</SMALL>X and L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X installations setting <A HREF="node10.html#GGGTEXINPUTS"
+ NAME="1553"><TT>TEXINPUTS</TT></A> to 
+`<TT>.::</TT>' may cause problems in the normal operation of L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+If you get errors such as L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X complaining that it can no longer find
+any style files then you must set <A HREF="node10.html#GGGTEXINPUTS"
+ NAME="1561"><TT>TEXINPUTS</TT></A> to 
+<code>"&lt;path to your LaTeX installation&gt;:."</code>
+if you want to use both L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X and L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>Some of the inlined images are in the wrong places: </B>
+<DD>There are several known ways that this may occur.
+<UL>
+<LI>
+Perhaps one of the inlined images is more than a page (paper page) long. 
+This is sometimes the case with very large tables
+or large <A HREF="#GGGpostscript"
+ NAME="1569">PostScript</A> images. In this case you can try specifying 
+a larger paper size (e.g. `<TT>a4</TT>', `<TT>a3</TT>' or even `<TT>a0</TT>') 
+instead of the default (`<TT>a5</TT>') 
+using the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> variable <A HREF="node10.html#GGG_PAPERSIZE"
+ NAME="1578"><TT>$PAPERSIZE</TT></A> 
+in the file <A HREF="node10.html#GGGlatex2html.config"
+ NAME="1586"><TT>latex2html.config</TT></A>.
+
+<P>
+
+<P></P>
+
+<I>This error should no longer occur, with <SMALL>V97.1</SMALL>.
+Please report it on the mailing-list, if it does.</I>
+
+<P>
+<LI>
+More likely is that some inappropriate L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X code 
+has caused an error, resulting in an extra page (or pages) being generated.
+Examine the <A HREF="node10.html#GGGimages.log"
+ NAME="1594"><TT>images.log</TT></A> file, to see if it reports any L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X errors.
+
+<P>
+<LI>
+A much rarer reason is that by default the <A HREF="node10.html#GGGdvips"
+ NAME="1602"><TT>dvips</TT></A> program
+reverses the <A HREF="#GGGpostscript"
+ NAME="1610">PostScript</A> pages it generates. If your <A HREF="node10.html#GGGdvips"
+ NAME="1619"><TT>dvips</TT></A> program
+behaves in this way try changing the line: <BR>
+<code>$DVIPS = "dvips";</code> <BR>
+to: <BR>
+<code>$DVIPS = "dvips -r0";</code> <BR>
+within the file <A HREF="node10.html#GGGlatex2html.config"
+ NAME="1627"><TT>latex2html.config</TT></A>.
+
+<P>
+<LI>
+Yet another reason for images appearing out of place, especially while
+developing a document, is that the browser's image cache is providing
+out-of-date versions rather than getting the latest version afresh.
+When this occurs there will often be images stretched or shrunk
+to fit the wrong sized imaging area; this symptom is browser-dependent.
+Flushing the cache, then reloading the <TT>HTML</TT> document, should
+clear up the problem. 
+</UL>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B><B>Unacceptable quality of converted images: </B></B>
+<DD>Try changing the size of the image 
+(see <A HREF="Enode6.html#imgcon">image conversion</A>).
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>The bibliographic references are missing: </B>
+<DD>Run <A HREF="node10.html#GGGlatex"
+ NAME="1635"><TT>latex</TT></A> and then <A HREF="node10.html#GGGbibtex"
+ NAME="1643"><TT>bibtex</TT></A> on the original source file in
+order to generate a <TT>.bbl </TT> file. 
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> may need the <TT>.bbl </TT> file in order to generate 
+the references.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>The labels of figures, tables or equations are wrong: </B>
+<DD>This can happen if you have used any figures, tables, equations or
+any counters inside conditional text; i.e. in a 
+<I>latexonly</I> 
+or a 
+<I>htmlonly</I> environment. 
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>Problems after changing the configuration files: </B>
+<DD>Please make sure that the last line in the configuration files 
+(i.e. <A HREF="node10.html#GGG.latex2html-init"
+ NAME="1653"><TT>.latex2html-init</TT></A> and <A HREF="node10.html#GGGlatex2html.config"
+ NAME="1661"><TT>latex2html.config</TT></A>) is:<PRE>
+1;      # This is the last line
+</PRE>
+This is a <A HREF="node10.html#GGGPerl"><I>Perl</I></A> quirk.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>Problems when producing the <TT>.dvi</TT> version: <A NAME="htmlsty">&#160;</A></B>
+<DD>If you are using any of the new L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X commands which are defined in 
+the <A HREF="node10.html#GGGhtml.sty"
+ NAME="1672"><TT>html.sty</TT></A> file make sure that <A HREF="node10.html#GGGhtml.sty"
+ NAME="1680"><TT>html.sty</TT></A> is included;
+e.g. as one of the optional arguments to the <TT>&#92;documentclass</TT> command.
+
+<P>
+Of course you also have to make sure that L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X knows where the <A HREF="node10.html#GGGhtml.sty"
+ NAME="1689"><TT>html.sty</TT></A>
+file is, either by putting it in the same place as the other style-files on
+your system, or by changing your <A HREF="node10.html#GGGTEXINPUTS"
+ NAME="1697"><TT>TEXINPUTS</TT></A> shell environment variable
+<A NAME="tex2html10"
+ HREF="#foot1087"><SUP>47</SUP></A>.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>Some of the fonts are translated incorrectly: </B>
+<DD>There is a fault in way the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X scoping rules have been 
+interpreted in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>. Consider this:<PRE>
+\ttfamily fixed-width font.
+\begin{something}
+nothing here
+\end{something}
+default font.
+</PRE>
+When processed by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X, the effect of the <TT>&#92;tt</TT> command is
+delimited by the beginning of the environment ``something'',
+so that ``default font'' will appear in the default font. 
+But L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> will not recognise
+``something'' as a delimiter and ``default font'' will appear in the
+wrong font. 
+
+<P>
+To avoid this problem (until it is fixed) you may delimit the scope of
+some commands explicitly using <code>{}</code>'s; i.e.<PRE>
+\texttt{fixed-width font}.
+\begin{something}
+nothing here
+\end{something}
+default font.
+</PRE>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>98.1</SUP>
+<BR>
+Nesting of font changing commands is now handled correctly.
+Such problems should no longer occur, though it always helps
+to use explicitly delimited `pseudo'-environments; e.g.
+<code>{\bf ... }</code>, or L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X's commands requiring an explicit argument,
+such as <TT>&#92;textbf</TT>.
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 98.1</SUP>
+<BR>
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>Cannot get it to generate inlined images: </B>
+<DD>Run L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> on your document, using the  <TT>-debug</TT>  switch.
+Look in the directory where the <TT>HTML</TT> files are generated
+for two files named <A HREF="node10.html#GGGimages.tex"
+ NAME="1716"><TT>images.tex</TT></A> and <A HREF="node10.html#GGGimages.log"
+ NAME="1724"><TT>images.log</TT></A>.
+Examine their contents.
+Do you notice anything unusual in them?
+
+<P>
+Copy <A HREF="node10.html#GGGimages.tex"
+ NAME="1732"><TT>images.tex</TT></A> into the directory 
+of your original L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X file and run <A HREF="node10.html#GGGlatex"
+ NAME="1740"><TT>latex</TT></A> on <A HREF="node10.html#GGGimages.tex"
+ NAME="1748"><TT>images.tex</TT></A>.
+Can you see any errors in <A HREF="node10.html#GGGimages.log"
+ NAME="1756"><TT>images.log</TT></A>?
+If so, can you fix <A HREF="node10.html#GGGimages.tex"
+ NAME="1764"><TT>images.tex</TT></A> to get rid of the errors? 
+After fixing <A HREF="node10.html#GGGimages.tex"
+ NAME="1772"><TT>images.tex</TT></A>
+you can put it back in the directory of <TT>HTML</TT>,
+then run L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> on the original document 
+using the  <TT>-images_only</TT>  switch. 
+
+<P>
+However if you make changes or additions to the original source
+then the same problems may occur again. 
+Thus it is better to understand why the changes were required 
+and alter your document's source code appropriately.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+If you get into a mess delete all the image files and run L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>
+again. Often it is sufficient to just delete the file <A HREF="node10.html#GGGimages.pl"
+ NAME="1781"><TT>images.pl</TT></A>.
+
+<P>
+If you <EM>still</EM> get into a mess, try running L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> with the options
+ <TT>-no_reuse</TT>  and  <TT>-no_images</TT> ; e.g.<PRE>
+cblipca% latex2html -no_reuse -no_images test.tex
+This is LaTeX2HTML Version 95 (Tue Nov 29 1994) by Nikos Drakos, 
+Computer Based Learning Unit, University of Leeds.
+
+OPENING /tmp_mnt/home/cblelca/nikos/tmp/test.tex 
+Cannot create directory /usr/cblelca/nikos/tmp/test: File exists
+(r) Reuse the images in the old directory OR
+(d) *** DELETE *** /usr/cblelca/nikos/tmp/test AND ITS CONTENTS OR
+(q) Quit ?
+:d
+
+Reading ...
+Processing macros ....+.
+Reading test.aux ......................
+Translating ...0/1........1/1.....
+Writing image file ...
+
+Doing section links .....
+
+*********** WARNINGS ***********
+
+If you are having problems displaying the correct images with Mosaic,
+try selecting "Flush Image Cache" from "Options" in the menu-bar 
+and then reload the HTML file.
+
+Done.
+</PRE>
+Then try to have a look in the file  <A HREF="node10.html#GGGimages.tex"
+ NAME="1791"><TT>images.tex</TT></A> 
+(as described earlier) and perhaps fix it.
+Once you are happy that <A HREF="node10.html#GGGimages.tex"
+ NAME="1799"><TT>images.tex</TT></A> is OK, run L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>
+again with the option  <TT>-images_only</TT> .
+
+<P>
+Some problems in displaying the correct inlined images,
+may be due to the image caching mechanisms of your browser.
+With some browsers a simple ``<B>Reload Current Document</B>'' will be enough
+to refresh the images but with others (e.g. <A HREF="node10.html#GGGMosaic"
+ NAME="1808"><I>Mosaic</I></A>) you may need
+to request for the cache to be refreshed. With <A HREF="node10.html#GGGMosaic"
+ NAME="1817"><I>Mosaic</I></A> try 
+selecting ``<B>Flush Image Cache</B>'' from ``<B>Options</B>'' in the menu-bar 
+and then reload the <TT>HTML</TT> file.
+
+<P>
+<DT><IMG WIDTH="14" HEIGHT="14" SRC="/usr/local/pkg/latex2html/icons.gif/blueball.gif" ALT="*">
+<B>It cannot do slides, memos, etc. </B>
+<DD>If you use SliT<SMALL>E</SMALL>X you can go a long way just by replacing 
+the <code>{slides}</code> argument of the <TT>&#92;documentclass</TT> command with 
+something like <code>{article}</code> just before using L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT>.
+One problem may be that all your slides will end up in the  same <TT>HTML</TT> 
+file.
+If you use <A HREF="node10.html#GGGlslide.sty"
+ NAME="1827"><TT>lslide.sty</TT></A> you may get much better results 
+(<A NAME="tex2html11"
+ HREF="http://www.pvv.unit.no/archie/">use </A>
+to find this or any other style files).
+</DL>
+<A NAME="1076">&#160;</A>
+
+<P>
+<BR><HR><H4>Footnotes</H4>
+<DL>
+<DT><A NAME="foot1087">... variable</A><A NAME="foot1087"
+ HREF="Pnode1.html#tex2html10"><SUP>47</SUP></A>
+<DD>If you don't know how to do either of these things, copy (or
+link) <A HREF="node10.html#GGGhtml.sty"
+ NAME="1705"><TT>html.sty</TT></A> to the directory of your L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X document.
+
+</DL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html35"
+ HREF="../manual/node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html31"
+ HREF="problems.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html25"
+ HREF="problems.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html33"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html34"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html36"
+ HREF="../manual/node9.html">Bibliography</A>
+<B> Up:</B> <A NAME="tex2html32"
+ HREF="problems.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html26"
+ HREF="problems.html">No Title</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

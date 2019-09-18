@@ -1,0 +1,3 @@
+Tem-se 1 cursos:
+	- Curso = EC
+		* Chave = 24312LeonardoNu

@@ -1,0 +1,87 @@
+function [ void ] = Problema3 ( dir_ref )
+    %%  Inicialização da Execução da Função
+        Limpeza ();
+        
+    %%  Determinação dos Parâmetros
+        %   'nome_imagem_base' armazena o nome da imagem que será realizado
+        %   o processamento
+            nome_imagem_base = '../Referências/img_cells.jpg';
+            %nome_imagem_base = 'img_cells.jpg';
+        %   'nome_arquivo' armazena o nome do arquivo que conterá as
+        %   informações relevantes sobre este problema
+            nome_arq = '../Resultados/Problema 3/Resultados_Problema 3.txt';
+        %   'limite_bin' armazena o limiar da binarização da operação de
+        %   TopHat na imagem base
+            limite_bin = 145;
+        %   Normalização do 'limite_bin_top' para o intervalo [0, 1]
+            limite_bin = limite_bin/255;
+        %   'dist_tipo' armazena o tipo de distância a ser considerada
+            dist_tipo = 'euclidean';
+            %dist_tipo = 'cityblock';
+            %dist_tipo = 'chessboard';
+            %dist_tipo = 'quasi-euclidean';
+            
+    %% Carregando Imagem Base
+        %   Construção final do nome da imagem
+            %nome_imagem_base = strcat (dir_ref, nome_imagem_base);
+        %   Carregar a imagem base, cuja identificação é 'nome_imagem_base', e
+        %   armazenar em 'imagem_base'
+            imagem_base = rgb2gray(imread (nome_imagem_base));
+        %   Suavisando o ruído na 'imagem_base' com um filtro de média
+            filtro = fspecial ('average');
+            imagem_base = imfilter(imagem_base, filtro);
+        %   Exibição da 'imagem_base' com o título: "Imagem Base"
+            imshow(imagem_base);
+            title ('Imagem Base');
+
+        
+	%%  Binarização da Imagem
+        %   Binarização da imagem atráves da função 'im2bw', dado um
+        %   limiar, 'limite_bin', de binarização da imagem original
+            imagem_binaria = im2bw(imagem_base, limite_bin);
+        %   Negativo da imagem_binaria, para deixar o fundo preto e os
+        %   objetos de interesse em branco
+            imagem_binaria = ~imagem_binaria (:, :, :);
+        %   Exibição da imagem binarizada com o título: "Imagem
+        %   Binarizada"
+            figure, imshow(imagem_binaria);
+            title('Imagem Binarizada');
+        %   Salvando a 'imagem_binaria' com o título: "Imagem Binarizada"
+            imwrite (imagem_binaria, '../Resultados/Problema 3/Imagem Binarizada.jpg');
+            
+	%%  Preenchimento dos buracos
+        %   Preenchimento da imagem binária atráves da função 'imfill'
+            imagem_bin_preenchida = imfill (imagem_binaria, 'holes');
+        %   Exibição da imagem binaria preenchida com o título: "Binarizada
+        %   Preenchida"
+            figure, imshow(imagem_bin_preenchida);
+            title('Imagem Binarizada Preenchida');
+        %   Salvando a 'imagem_binaria' em disco com o título: "Imagem
+        %   Binarizada Preenchida"
+            imwrite (imagem_bin_preenchida, '../Resultados/Problema 3/Imagem Binarizada Preenchida.jpg');
+            
+	%%  Cálculo da Distância
+        %   Cálculo da Distância atráves da função 'bwdist'
+            dist = bwdist (imagem_bin_preenchida, dist_tipo);
+        %   Exibição dos contornos detectados, com o
+        %   título: "Distâncias Detectadas"
+            figure, hold on, imcontour(dist);
+            title ('Distâncias Detectadas');
+        %   Salvando a 'imagem_base', com a 'dist', em disco com o título:
+        %   "Distâncias Detectadas"
+            imwrite (imcontour (dist), '../Resultados/Problema 3/Distâncias Detectadas2.jpg');
+        %   Exibição da 'imagem_base', com os contornos detectados, com o
+        %   título: "Imagem Base com as Distâncias Detectadas"
+            figure, imshow (imagem_base);
+            hold on, imcontour(dist);
+            title ('Imagem Base com as Distâncias Detectadas');
+        %   Exibição da 'dist' com o título: Células Pretas e Fundo
+        %   Branco"
+            figure, imshow (dist);
+            title ('Células Pretas e Fundo Branco');
+        %   Salvando 'dist' em disco com o título: "Células Pretas e Fundo
+        %   Branco"
+            imwrite (dist, '../Resultados/Problema 3/Células Pretas e Fundo Branco.jpg');            
+                       
+	Pausa ();
+end

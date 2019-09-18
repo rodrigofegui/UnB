@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1 release (February 19th, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Integrated Glossary and Index</TITLE>
+<META NAME="description" CONTENT="Integrated Glossary and Index">
+<META NAME="keywords" CONTENT="features">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="features.css">
+<LINK REL="previous" HREF="Enode16.html">
+<LINK REL="up" HREF="Enode16.html">
+</HEAD>
+<BODY  text="#000000" bgcolor="#FFFFFF">
+<!--Navigation Panel-->
+<A NAME="tex2html302"
+ HREF="../manual/hypextra.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html298"
+ HREF="Enode16.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html292"
+ HREF="Enode16.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html300"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html301"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html303"
+ HREF="../manual/hypextra.html">Hypertext_Extensions</A>
+<B> Up:</B> <A NAME="tex2html299"
+ HREF="Enode16.html">Indexing</A>
+<B> Previous:</B> <A NAME="tex2html293"
+ HREF="Enode16.html">Indexing</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION000118100000000000000">&#160;</A><A NAME="glossind">&#160;</A>
+<BR>
+Integrated Glossary and Index
+</H3>
+<A NAME="2102">&#160;</A>
+<A NAME="2103">&#160;</A>
+
+<P>
+
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_begin" SRC="change_begin.gif"><SUP>96.1f</SUP>
+<BR>
+A large number of different pieces of software are required to make
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> work effectively, as well as many files containing data or code 
+to work with parts of this software. 
+For this reason, a Glossary is included with this manual. 
+It contains the names of all files, configuration variables, application software
+and related technical terms, with a short description of what it is, or does,
+and perhaps a URL for further reference. 
+
+<P>
+<A NAME="2107">&#160;</A>
+<A NAME="2424">&#160;</A>
+<BR>
+In the printed version each item in the Glossary is accompanied by the page-numbers
+on which the item is mentioned, somewhat like in the Index. 
+For the <TT>HTML</TT> version, each glossary-item contains a hyperlink to an
+index-entry, which then has links to each occurrence.
+These extra index-entries do not appear in the printed version; 
+indeed they also contain a hyperlink back to the corresponding glossary-entry. 
+
+<P>
+This feature is currently available only when using the 
+<I>makeidx</I> package,
+and needs also the 
+<I>html</I> and 
+<I>htmllist</I> packages.
+It was developed for version 96.1f by Ross Moore,
+incorporating an extensive revision of <A HREF="node10.html#GGGmakeidx.perl"
+ NAME="3399"><TT>makeidx.perl</TT></A>, as well as additions to
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X2<TT>HTML</TT> so that all aspects of indexing work correctly with segmented documents.
+
+<P>
+
+<P><P>
+<BR>
+Since L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X provides no guidelines for how a Glossary should be constructed,
+the technique used here will be explained in detail, for both the printed and
+<TT>HTML</TT> versions. 
+
+<P>
+<UL>
+<LI>
+Firstly the <TT>&#92;makeglossary</TT> command, which is similar to <TT>&#92;makeindex</TT>,
+must appear in the document preamble, so that L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X will record
+uses of the <code>\glossary{...}</code> command within a file <A HREF="node10.html#GGGmanual.glo"
+ NAME="3409"><TT>manual.glo</TT></A>.
+
+<P>
+This command is redundant in the <TT>HTML</TT> version, so is given a trivial
+definition which is ignored by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X.
+<P>
+<LI>
+Next, the words, phrases or technical terms to be included in the Glossary
+are marked in the main text using the <TT>&#92;glossary</TT> command, used indirectly
+via other macros. For example, file-names are inserted via 
+<code>\</code><code>fn{html.sty}</code>, <code>\</code><code>fn{dvips}</code>,  <code>\</code><code>appl{dvips}</code> etc. 
+which both insert the text and create the glossary-entry; <I>viz.</I>
+<PRE>
+\newcommand{\fn}[1]{\htmlref{\texttt{#1}}{GGG#1}\glossary{#1}}
+\newcommand{\appl}[1]{\htmlref{\textsl{#1}}{GGG#1}%
+  \Glossary{#1}{\textsl{#1}}}
+</PRE>
+
+<P>
+<LI>
+The expansions of <TT>&#92;glossary</TT>, and the slightly more general 
+<TT>&#92;Glossary</TT>, are different for the printed and <TT>HTML</TT> versions.
+For the <TT>HTML</TT> version the following definitions occur 
+within an 
+<I>htmlonly</I> environment:
+<PRE>
+\def\glossary#1{\index{#1@\texttt{#1} \label{III#1}%
+  \htmlref{(G)}{GGG#1}}}
+\def\Glossary#1#2{\index{#1@{#2} \label{III#1}\htmlref{(G)}{GGG#1}}}
+\def\makeglossary{}
+</PRE>
+...while in L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X we need only:&nbsp;&nbsp;&nbsp;&nbsp;
+<code>\newcommand\Glossary[2]{\glossary{#1@#2}}</code>&nbsp;.
+
+<P>
+Notice how the feature of 
+<I>makeidx</I>, allowing the printable portion to
+be separate from the sorting-key, is used to allow text-styles to be included within
+both index-entries and glossary-entries. Indeed the purpose of <TT>&#92;Glossary</TT> is
+to allow deviations from a fixed style, e.g. 
+<PRE>
+\newcommand{\MF}{\htmlref{\textsl{Metafont}}{GGGmetafont}%
+  \Glossary{metafont}{\textsl{Metafont}}}%
+</PRE>
+Also notice that in the <TT>HTML</TT> version an index-entry is created that
+includes, within its printable portion, both a <TT>&#92;label</TT> and a hyperlink.
+The former, having name <TT>III...</TT>, will ultimately reside on the Index page, 
+while the latter will point to an anchor named <TT>GGG...</TT> on the Glossary page.
+These names must be distinct from any other names used with <TT>&#92;label</TT>s 
+elsewhere in the document, hence the use of prefixes <TT>III</TT> and <TT>GGG</TT>.
+A short string `<TT>(G)</TT>' is used for the text of the hyperlink in the Index.
+
+<P>
+<LI>
+The text descriptions of the glossary-items are stored in a file 
+called <A HREF="node10.html#GGGl2hfiles.dat"
+ NAME="3425"><TT>l2hfiles.dat</TT></A>, with one description per line.
+For the <TT>HTML</TT> version this file is actually read as input:
+
+<code>\</code><code>end{htmlonly}</code>
+ <PRE>
+\section*{Glossary of variables and file-names\label{Glossary}}
+\begin{htmllist}\htmlitemmark{OrangeBall}
+  \input l2hfiles.dat
+\end{htmllist}
+</PRE>
+
+<P>
+For this reason alone it is desirable to have <A HREF="node10.html#GGGl2hfiles.dat"
+ NAME="3433"><TT>l2hfiles.dat</TT></A> sorted alphabetically.
+<P>
+<LI>
+The mechanism used for the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version also requires the file to be sorted
+strictly alphabetically, according to the sort-keys associated to each glossary entry.
+<BR>
+(This requirement could be relaxed, but only with a loss in efficiency; see below.)
+
+<P>
+L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X constructs its Glossary by running the <A HREF="node10.html#GGGmakeindex"
+ NAME="3441"><TT>makeindex</TT></A> utility 
+on the file <A HREF="node10.html#GGGmanual.glo"
+ NAME="3449"><TT>manual.glo</TT></A>, using the following command:
+<PRE>
+makeindex -o manual.gls -s l2hglo.ist manual.glo
+</PRE>
+Its output, which includes page numbering for an index, is stored in <A HREF="node10.html#GGGmanual.gls"
+ NAME="3457"><TT>manual.gls</TT></A>
+and subsequently read by L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X using:
+
+<P>
+<PRE>
+\InputIfFileExists{manual.gls}{\clearpage\typeout{^^Jcreating Glossary...}}
+{\typeout{^^JNo Glossary, since  manual.gls  could not be found.^^J}}
+</PRE>
+
+<P>
+The configuration file <A HREF="node10.html#GGGl2hglo.ist"
+ NAME="3465"><TT>l2hglo.ist</TT></A> is included along with this manual.
+It contains a portion that inserts tricky T<SMALL>E</SMALL>X code at the beginning of <A HREF="node10.html#GGGmanual.gls"
+ NAME="3473"><TT>manual.gls</TT></A>.
+This code extracts from <A HREF="node10.html#GGGl2hfiles.dat"
+ NAME="3481"><TT>l2hfiles.dat</TT></A> that line corresponding to each glossary entry, 
+then typesets it itemized within an environment called 
+<I>theglossary</I>.
+
+<P>
+<PRE>
+\newenvironment{theglossary}{\begin{list}{}{%
+  \setlength{\labelwidth}{20pt}%
+  \setlength{\leftmargin}{\labelwidth}%
+  \setlength\itemindent{-\labelwidth}%
+  \setlength\itemsep{0pt}\setlength\parsep{0pt}%
+  \rmfamily}}{\end{list}}
+</PRE>
+Currently searching within <A HREF="node10.html#GGGl2hfiles.dat"
+ NAME="3490"><TT>l2hfiles.dat</TT></A> is only done sequentially, stopping
+at the end of the file. If an entry is not found then it is skipped and a message
+printed to the log; the next entry will search from the top of the file.
+If all entries are included and maintained in strict order, there will be no skipping 
+and each line of <A HREF="node10.html#GGGl2hfiles.dat"
+ NAME="3498"><TT>l2hfiles.dat</TT></A> is read exactly once.
+<P>
+<LI>
+Within <A HREF="node10.html#GGGl2hfiles.dat"
+ NAME="3506"><TT>l2hfiles.dat</TT></A> the data lines look like:
+<PRE>
+\item[\gn{french.perl}] adds \Perl{} code to be compatible with the ...
+\item[\gn{\textsl  {ftp}}] `File Transfer Protocols', network ...
+\item[\gn{german.perl}] adds \Perl{} code to be compatible with the ...
+...
+</PRE>
+For the L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X version the <code>\item[\gn{...}]</code> is only used for pattern-matching, 
+to find the correct data entry.
+All typesetting is controlled from within <A HREF="node10.html#GGGmanual.gls"
+ NAME="3514"><TT>manual.gls</TT></A>.
+
+<P>
+However the <TT>HTML</TT> version requires the following definition:
+<PRE>
+\newcommand{\gn}[1]{\texttt{#1}\label{GGG#1}\htmlref{\^}{III#1}}%
+</PRE>
+which establishes the hyperlink to the Index, marked by `<code>^</code>', 
+and provides the <TT>&#92;label</TT> to create the target in the Glossary 
+for any <code>\glossary{...}</code> command having the corresponding argument.
+</UL>
+<BR>
+<IMG WIDTH="104" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="change_end" SRC="change_end.gif"><SUP> 96.1f</SUP>
+<BR><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html302"
+ HREF="../manual/hypextra.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next_motif.gif"></A> 
+<A NAME="tex2html298"
+ HREF="Enode16.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_motif.gif"></A> 
+<A NAME="tex2html292"
+ HREF="Enode16.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="previous_motif.gif"></A> 
+<A NAME="tex2html300"
+ HREF="node6.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents_motif.gif"></A> 
+<A NAME="tex2html301"
+ HREF="node11.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index_motif.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html303"
+ HREF="../manual/hypextra.html">Hypertext_Extensions</A>
+<B> Up:</B> <A NAME="tex2html299"
+ HREF="Enode16.html">Indexing</A>
+<B> Previous:</B> <A NAME="tex2html293"
+ HREF="Enode16.html">Indexing</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>SBCS System Staff</I>
+<BR><I>1999-01-06</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 2.6)
+project(Trab2_MP_Rodrigo)
+enable_testing()
+find_package (Threads)
+message(STATUS GTEST_ROOT=$ENV{GTEST_ROOT})
+include_directories($ENV{GTEST_ROOT}/include)
+link_directories($ENV{GTEST_ROOT}/samples)
+add_executable(Trab2_MP_Rodrigo Fontes/Pilha.cpp
+"P" Fontes/Pilha_teste.cpp)
+target_link_libraries(Trab2_MP_Rodrigo gtest gtest_main)
+target_link_libraries(Trab2_MP_Rodrigo
+"P" ${CMAKE_THREAD_LIBS_INIT})
+add_test(NAME Trab2_MP_Rodrigo COMMAND Trab2_MP_Rodrigo)
