@@ -1,6 +1,19 @@
 #ifndef TIPOS_TAGS_FLAGS_H
     #define TIPOS_TAGS_FLAGS_H
 
+    #include "./tipos.h"
+
+    #define V1_2 0x002E
+    #define V1_3 47
+    #define V1_4 48
+    #define V5 49
+    #define V6 50
+    #define V7 51
+    #define V8 52
+    #define V9 53
+    #define V10 54
+    #define V11 55
+
     #define TAG_UTF 1
     #define TAG_INT 3
     #define TAG_FLT 4
@@ -11,7 +24,7 @@
     #define TAG_REF_CMP 9
     #define TAG_REF_MTD 10
     #define TAG_REF_MTD_ITF 11
-    #define TAG_NET 12
+    #define TAG_NOM_TIP 12
 
     #define FLG_PBC 0x0001
     #define FLG_PVD 0x0002
@@ -25,5 +38,5 @@
     #define FLG_ITF 0x0200
     #define FLG_ABS 0x0400
     #define FLG_STT 0x0800
-    
+
 #endif

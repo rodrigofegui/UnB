@@ -1,19 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../lib/Basicos/tipos.h"
+#include "../lib/Manipulacao/arquivos.h"
+#include "../lib/Basicos/arq_class.h"
 
 int main(int argc, char *argv[]){
-    CPInfo teste;
-    InfoClasse p;
+    char nome_arq[] = "Referências/double_aritmetica.class";
+    // char nome_arq[] = "Referências/ControladorMidi.class";
+    // char nome_arq[] = "Referências/ControladorMidi.java";
 
-    p.tag = 0x0003;
-    p.ind_nome = 0xffff;
+    ArqClass *java_class;
 
-    teste.tag = 0x0023;
-    teste.dados.classe = p;
+    FILE *arq = leitura(nome_arq);
 
-    printf("hello world! -> %d\n", teste.tag);
-    printf("tag => %04X\tind_name=%04X\n", teste.dados.classe.tag, teste.dados.classe.ind_nome);
+    java_class = decodificar(arq);
+
+    exibir(java_class);
+
+    free(java_class->tab_simbolo);
+    free(java_class);
+
+    fclose(arq);
 
     return 0;
 }

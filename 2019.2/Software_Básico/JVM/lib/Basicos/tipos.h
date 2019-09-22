@@ -13,7 +13,7 @@
     /** Tipo básico para 2 bytes sem sinal */
     typedef uint16_t u2;
     /** Tipo básico para 4 bytes sem sinal */
-    typedef uint64_t u4;
+    typedef uint32_t u4;
 
     /** Dados identificadores de uma classe
      *  JAVA na `constante_pool` */
@@ -25,7 +25,6 @@
     /** Dados identificadores de um campo
      *  `constante_pool` */
     typedef struct info_ref_campo {
-        u1 tag;
         u2 ind_classe;
         u2 ind_nome_tipo;
     } InfoRefCampo;
@@ -33,7 +32,6 @@
     /** Dados identificadores de um nome
      *  e de um tipo na `constante_pool` */
     typedef struct info_nome_tipo {
-        u1 tag;
         u2 ind_nome;
         u2 ind_descritor;
     } InfoNomeTipo;
@@ -41,7 +39,6 @@
     /** Dados identificadores de uma string
      *  codificada em UTF-8 na `constante_pool` */
     typedef struct info_utf8 {
-        u1 tag;
         u2 tam;
         u1* bytes;
     } InfoUTF8;
@@ -49,7 +46,6 @@
     /** Dados identificadores de um método
      *  na `constante_pool` */
     typedef struct info_mtd {
-        u1 tag;
         u2 ind_classe;
         u2 ind_nome_tipo;
     } InfoMetodo;
@@ -57,7 +53,6 @@
     /** Dados identificadores de um método
      *  de interface na `constante_pool` */
     typedef struct info_mtd_itf {
-        u1 tag;
         u2 ind_classe;
         u2 ind_nome_tipo;
     } InfoMetodoInterface;
@@ -65,28 +60,24 @@
     /** Dados identificadores de uma referência
      *  para uma string na `constante_pool` */
     typedef struct info_string{
-        u1 tag;
         u2 ind_str;
     } InfoString;
 
     /** Dados identificadores de um `int`
      *  na `constante_pool` */
     typedef struct info_int {
-        u1 tag;
         u4 bytes;
     } InfoInt;
 
     /** Dados identificadores de um `float`
      *  na `constante_pool` */
     typedef struct info_float {
-        u1 tag;
         u4 bytes;
     } InfoFloat;
 
     /** Dados identificadores de um `long`
      *  na `constante_pool` */
     typedef struct info_long {
-        u1 tag;
         u4 bytes_mais;
         u4 bytes_menos;
     } InfoLong;
@@ -94,7 +85,6 @@
     /** Dados identificadores de um `double`
      *  na `constante_pool` */
     typedef struct info_double {
-        u1 tag;
         u4 bytes_mais;
         u4 bytes_menos;
     } InfoDouble;
