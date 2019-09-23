@@ -18,17 +18,33 @@
         u2 flag_acesso;
         u2 class_atual;
         u2 class_super;
+        u2 qnt_interfaces;
+        InfoClasse* interfaces;
+        u2 qnt_campos;
+        InfoCampo* campos;
+        u2 qnt_metodos;
+        // metodos;
+        u2 qnt_atributos;
+        // atributos;
     } ArqClass;
 
     ArqClass* decodificar (FILE* java_class);
 
     void decodificar_tab_simbolos(FILE* arq, ArqClass* java_class);
-    void decodificar_dbl(FILE* arq, ArqClass* java_class, u1 byte, int ind);
-    void decodificar_ref_cmp(FILE* arq, ArqClass* java_class, u1 byte, int ind);
-    void decodificar_ref_mtd(FILE* arq, ArqClass* java_class, u1 byte, int ind);
+    void decodificar_utf8(FILE* arq, ArqClass* java_class, int ind);
+    void decodificar_dbl(FILE* arq, ArqClass* java_class, int ind);
+    void decodificar_class(FILE *arq, ArqClass* java_class, int ind);
+    void decodificar_ref_cmp(FILE* arq, ArqClass* java_class, int ind);
+    void decodificar_ref_mtd(FILE* arq, ArqClass* java_class, int ind);
+    void decodificar_nom_tip(FILE* arq, ArqClass* java_class, int ind);
+
+    void decodificar_tab_campos(FILE* arq, ArqClass* java_class);
 
     void exibir (ArqClass* java_class);
     void exibir_versao_java(u2 a_verificar);
     void exibir_tab_simbolos(CPInfo* tab_simbolo, int cnt);
+    void exibir_flag(u2 a_verificar);
+
+    void liberar(ArqClass *java_class);
 
 #endif

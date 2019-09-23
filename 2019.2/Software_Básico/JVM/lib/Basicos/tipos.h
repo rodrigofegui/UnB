@@ -106,4 +106,13 @@
         } dados;
     } CPInfo;
 
+    typedef struct info_campo {
+        u2 flag_acesso;
+        u2 ind_nome;
+        u2 ind_descritor;
+        u2 qnt_atributos;
+        // atributos;
+    } InfoCampo;
+
+
 #endif

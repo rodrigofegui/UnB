@@ -12,7 +12,12 @@ FILE* leitura (const char *nome_arq){
     return arq;
 }
 
-void ler_b_u2(FILE *arq, u2 *dst){
+void ler_b_u2(FILE *arq, u2 *dst, int inverter){
+    if (!inverter){
+        fread(dst, sizeof(u2), 1, arq);
+        return;
+    }
+
     u1 temp;
 
     for (int ind = 1; ind <= sizeof(u2); ind++){
@@ -22,7 +27,12 @@ void ler_b_u2(FILE *arq, u2 *dst){
     }
 }
 
-void ler_b_u4(FILE *arq, u4 *dst){
+void ler_b_u4(FILE *arq, u4 *dst, int inverter){
+    if (!inverter){
+        fread(dst, sizeof(u4), 1, arq);
+        return;
+    }
+
     u1 temp;
 
     for (int ind = 1; ind <= sizeof(u4); ind++){

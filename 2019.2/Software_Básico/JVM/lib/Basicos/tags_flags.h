@@ -3,7 +3,8 @@
 
     #include "./tipos.h"
 
-    #define V1_2 0x002E
+    #define V1_1 45
+    #define V1_2 46
     #define V1_3 47
     #define V1_4 48
     #define V5 49
@@ -13,6 +14,9 @@
     #define V9 53
     #define V10 54
     #define V11 55
+    #define V12 56
+    #define V13 57
+    #define V14 58
 
     #define TAG_UTF 1
     #define TAG_INT 3

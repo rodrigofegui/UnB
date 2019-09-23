@@ -8,8 +8,8 @@
 
     FILE* leitura(const char *nome_arq);
 
-    void ler_b_u2(FILE*, u2*);
+    void ler_b_u2(FILE* arq, u2* dst, int inverter);
 
-    void ler_b_u4(FILE*, u4*);
+    void ler_b_u4(FILE* arq, u4* dst, int inverter);
 
 #endif
