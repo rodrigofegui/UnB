@@ -101,17 +101,24 @@
             InfoMetodoInterface metodo_interface;
             InfoString string;
             InfoInt inteiro;
+            InfoFloat decimal;
             InfoLong longo;
             InfoDouble duplo;
         } dados;
     } CPInfo;
+
+    typedef struct info_attr {
+        u2 ind_nome_attr;
+        u4 qnt_attr;
+        u1 *info;
+    } InfoAtributo;
 
     typedef struct info_campo {
         u2 flag_acesso;
         u2 ind_nome;
         u2 ind_descritor;
         u2 qnt_atributos;
-        // atributos;
+        InfoAtributo *atributos;
     } InfoCampo;
 
 

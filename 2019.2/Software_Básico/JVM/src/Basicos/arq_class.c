@@ -32,16 +32,16 @@ ArqClass* decodificar(FILE* arq_class){
     ler_b_u2(arq_class, &novo_class->class_atual, 0);
     ler_b_u2(arq_class, &novo_class->class_super, 0);
     ler_b_u2(arq_class, &novo_class->qnt_interfaces, 1);
+    novo_class->interfaces = NULL;
 
-    if (!novo_class->qnt_interfaces) {
-        novo_class->interfaces = NULL;
+    if (novo_class->qnt_interfaces) {
+        printf("deveria ter interface!!\n");
     }
 
-    ler_b_u2(arq_class, &novo_class->qnt_campos, 1);
+    ler_b_u2(arq_class, &novo_class->qnt_campos, 0);
+    novo_class->campos = NULL;
 
-    if (!novo_class->qnt_campos) {
-        novo_class->campos = NULL;
-    } else {
+    if (novo_class->qnt_campos) {
         novo_class->campos = (InfoCampo*) calloc (novo_class->qnt_campos, sizeof(InfoCampo));
 
         if (!novo_class->campos){
@@ -51,6 +51,8 @@ ArqClass* decodificar(FILE* arq_class){
 
         decodificar_tab_campos(arq_class, novo_class);
     }
+
+
 
     return novo_class;
 }
@@ -67,10 +69,14 @@ void decodificar_tab_simbolos(FILE* arq, ArqClass* java_class){
                 decodificar_utf8(arq, java_class, cnt);
                 break;
             case TAG_INT:
+                decodificar_int(arq, java_class, cnt);
                 break;
             case TAG_FLT:
+                decodificar_float(arq, java_class, cnt);
                 break;
             case TAG_LNG:
+                decodificar_long(arq, java_class, cnt);
+                ignora ^= 1;
                 break;
             case TAG_DBL:
                 decodificar_dbl(arq, java_class, cnt);
@@ -80,6 +86,7 @@ void decodificar_tab_simbolos(FILE* arq, ArqClass* java_class){
                 decodificar_class(arq, java_class, cnt);
                 break;
             case TAG_STR:
+                decodificar_string(arq, java_class, cnt);
                 break;
             case TAG_REF_CMP:
                 decodificar_ref_cmp(arq, java_class, cnt);
@@ -88,6 +95,7 @@ void decodificar_tab_simbolos(FILE* arq, ArqClass* java_class){
                 decodificar_ref_mtd(arq, java_class, cnt);
                 break;
             case TAG_REF_MTD_ITF:
+                decodificar_ref_mtd_itf(arq, java_class, cnt);
                 break;
             case TAG_NOM_TIP:
                 decodificar_nom_tip(arq, java_class, cnt);
@@ -124,6 +132,19 @@ void decodificar_utf8(FILE* arq, ArqClass* java_class, int ind){
     java_class->tab_simbolo[ind].dados.utf_8.bytes[*aux_t] = '\0';
 }
 
+void decodificar_int(FILE* arq, ArqClass* java_class, int ind){
+    ler_b_u4(arq, &java_class->tab_simbolo[ind].dados.inteiro.bytes, 1);
+}
+
+void decodificar_float(FILE* arq, ArqClass* java_class, int ind){
+    ler_b_u4(arq, &java_class->tab_simbolo[ind].dados.decimal.bytes, 1);
+}
+
+void decodificar_long(FILE* arq, ArqClass* java_class, int ind){
+    ler_b_u4(arq, &java_class->tab_simbolo[ind].dados.longo.bytes_mais, 1);
+    ler_b_u4(arq, &java_class->tab_simbolo[ind].dados.longo.bytes_menos, 1);
+}
+
 void decodificar_dbl(FILE* arq, ArqClass* java_class, int ind){
     ler_b_u4(arq, &java_class->tab_simbolo[ind].dados.duplo.bytes_mais, 1);
     ler_b_u4(arq, &java_class->tab_simbolo[ind].dados.duplo.bytes_menos, 1);
@@ -131,6 +152,10 @@ void decodificar_dbl(FILE* arq, ArqClass* java_class, int ind){
 
 void decodificar_class(FILE *arq, ArqClass* java_class, int ind){
     ler_b_u2(arq, &java_class->tab_simbolo[ind].dados.classe.ind_nome, 1);
+}
+
+void decodificar_string(FILE* arq, ArqClass* java_class, int ind){
+    ler_b_u2(arq, &java_class->tab_simbolo[ind].dados.string.ind_str, 1);
 }
 
 void decodificar_ref_cmp(FILE* arq, ArqClass* java_class, int ind){
@@ -143,6 +168,11 @@ void decodificar_ref_mtd(FILE* arq, ArqClass* java_class, int ind){
     ler_b_u2(arq, &java_class->tab_simbolo[ind].dados.metodo.ind_nome_tipo, 1);
 }
 
+void decodificar_ref_mtd_itf(FILE* arq, ArqClass* java_class, int ind){
+    ler_b_u2(arq, &java_class->tab_simbolo[ind].dados.metodo_interface.ind_classe, 1);
+    ler_b_u2(arq, &java_class->tab_simbolo[ind].dados.metodo_interface.ind_nome_tipo, 1);
+}
+
 void decodificar_nom_tip(FILE* arq, ArqClass* java_class, int ind){
     ler_b_u2(arq, &java_class->tab_simbolo[ind].dados.nome_tipo.ind_nome, 1);
     ler_b_u2(arq, &java_class->tab_simbolo[ind].dados.nome_tipo.ind_descritor, 1);
@@ -151,9 +181,38 @@ void decodificar_nom_tip(FILE* arq, ArqClass* java_class, int ind){
 void decodificar_tab_campos(FILE* arq, ArqClass* java_class){
     for (int cnt = 0; cnt < java_class->qnt_campos; cnt++){
         ler_b_u2(arq, &java_class->campos[cnt].flag_acesso, 0);
-        ler_b_u2(arq, &java_class->campos[cnt].ind_nome, 1);
-        ler_b_u2(arq, &java_class->campos[cnt].ind_descritor, 1);
+        ler_b_u2(arq, &java_class->campos[cnt].ind_nome, 0);
+        ler_b_u2(arq, &java_class->campos[cnt].ind_descritor, 0);
         ler_b_u2(arq, &java_class->campos[cnt].qnt_atributos, 1);
+
+        if (!java_class->campos[cnt].qnt_atributos) {
+            java_class->campos[cnt].atributos = NULL;
+        } else {
+            java_class->campos[cnt].atributos = (InfoAtributo*) calloc (java_class->campos[cnt].qnt_atributos, sizeof(InfoAtributo));
+
+            if (!java_class->campos[cnt].atributos){
+                printf("\n[ERROR] Falha ao alocar a tabela de campos\n");
+                exit(E_ALOCAR_ATTR_CAMPOS);
+            }
+
+            ler_b_u2(arq, &java_class->campos[cnt].atributos->ind_nome_attr, 1);
+            ler_b_u4(arq, &java_class->campos[cnt].atributos->qnt_attr, 1);
+
+            if (!java_class->campos[cnt].atributos->qnt_attr) {
+                java_class->campos[cnt].atributos->info = NULL;
+            } else {
+                java_class->campos[cnt].atributos->info = (u1*) calloc (java_class->campos[cnt].atributos->qnt_attr, sizeof(u1));
+
+                if (!java_class->campos[cnt].atributos->info){
+                    printf("\n[ERROR] Falha ao alocar info de atributo da tabela de campos\n");
+                    exit(E_ALOCAR_INFO_ATTR_CAMPOS);
+                }
+
+                for (int cnt2 = 0; cnt2 < java_class->campos[cnt].atributos->qnt_attr; cnt2++)
+                    fread(&java_class->campos[cnt].atributos->info[cnt2], sizeof(u1), 1, arq);
+            }
+
+        }
     }
 }
 
@@ -251,10 +310,18 @@ void exibir_tab_simbolos(CPInfo* tab_simbolo, int cnt){
                 printf("\t\tString: %s\n", c_dados.utf_8.bytes);
                 break;
             case TAG_INT:
+                printf("\t[%02d] CONSTANT_Integer\n", ind + 1);
+                printf("\t\tBytes: 0x%08X\n", c_dados.inteiro.bytes);
                 break;
             case TAG_FLT:
+                printf("\t[%02d] CONSTANT_Float\n", ind + 1);
+                printf("\t\tBytes: 0x%08X\n", c_dados.decimal.bytes);
                 break;
             case TAG_LNG:
+                printf("\t[%02d] CONSTANT_Long\n", ind + 1);
+                printf("\t\tByte mais significativo: 0x%08X\n", c_dados.longo.bytes_mais);
+                printf("\t\tByte menos significativo: 0x%08X\n", c_dados.longo.bytes_menos);
+                ignora ^= 1;
                 break;
             case TAG_DBL:
                 printf("\t[%02d] CONSTANT_Double\n", ind + 1);
@@ -267,6 +334,8 @@ void exibir_tab_simbolos(CPInfo* tab_simbolo, int cnt){
                 printf("\t\tÍndice para o nome: %d\n", c_dados.classe.ind_nome);
                 break;
             case TAG_STR:
+                printf("\t[%02d] CONSTANT_String\n", ind + 1);
+                printf("\t\tÍndice para a string: %d\n", c_dados.string.ind_str);
                 break;
             case TAG_REF_CMP:
                 printf("\t[%02d] CONSTANT_Fieldref\n", ind + 1);
@@ -279,6 +348,9 @@ void exibir_tab_simbolos(CPInfo* tab_simbolo, int cnt){
                 printf("\t\tÍndice para o nome e tipo: %d\n", c_dados.metodo.ind_nome_tipo);
                 break;
             case TAG_REF_MTD_ITF:
+                printf("\t[%02d] CONSTANT_InterfaceMethodref\n", ind + 1);
+                printf("\t\tIndíce para a classe: %d\n", c_dados.metodo_interface.ind_classe);
+                printf("\t\tÍndice para o nome e tipo: %d\n", c_dados.metodo_interface.ind_nome_tipo);
                 break;
             case TAG_NOM_TIP:
                 printf("\t[%02d] CONSTANT_NameAndType\n", ind + 1);
@@ -290,8 +362,8 @@ void exibir_tab_simbolos(CPInfo* tab_simbolo, int cnt){
         }
 
         if (ignora){
-            printf("\t[%02d] Extensão de número largo\n", ind + 2);
             ind++;
+            printf("\t[%02d] Extensão de número largo\n", ind + 1);
             ignora ^= 1;
         }
     }
@@ -303,11 +375,29 @@ void exibir_flag(u2 a_verificar){
     if ((a_verificar & 0x000F) == FLG_PBC)
         strcat(flag, "pública ");
 
+    if ((a_verificar & 0x000F) == FLG_PVD)
+        strcat(flag, "privada ");
+
+    if ((a_verificar & 0x000F) == FLG_PTD)
+        strcat(flag, "protegida ");
+
+    if ((a_verificar & 0x000F) == FLG_STC)
+        strcat(flag, "estática ");
+
     if ((a_verificar & 0x00F0) == FLG_FNL)
         strcat(flag, "final ");
 
     if ((a_verificar & 0x00F0) == FLG_SPR)
         strcat(flag, "super ");
+
+    if ((a_verificar & 0x00F0) == FLG_VLT)
+        strcat(flag, "volátil ");
+
+    if ((a_verificar & 0x00F0) == FLG_TST)
+        strcat(flag, "transiente ");
+
+    if ((a_verificar & 0x0F00) == FLG_NTV)
+        strcat(flag, "nativo ");
 
     if ((a_verificar & 0x0F00) == FLG_ITF)
         strcat(flag, "interface ");
@@ -315,8 +405,11 @@ void exibir_flag(u2 a_verificar){
     if ((a_verificar & 0x0F00) == FLG_ABS)
         strcat(flag, "abstrata ");
 
+    if ((a_verificar & 0x0F00) == FLG_STT)
+        strcat(flag, "estrito ");
+
     if (!strlen(flag))
-        printf("INVÁLIDA");
+        printf("Sem expecificação");
 
     else {
         flag[strlen(flag) - 1] = '\0';
@@ -324,85 +417,51 @@ void exibir_flag(u2 a_verificar){
     }
 
     printf(" [0x%04X]\n", a_verificar);
-
-    // switch (a_verificar){
-    //     case FLG_PBC:
-    //         printf("pública\n"); break;
-    //     case FLG_PVD:
-    //         printf("privada\n"); break;
-    //     case FLG_PTD:
-    //         printf("protegida\n"); break;
-    //     case FLG_STC:
-    //         printf("estática\n"); break;
-    //     case FLG_FNL:
-    //         printf("final\n"); break;
-    //     case FLG_SPR:
-    //         printf("super\n"); break;
-    //     case FLG_VLT:
-    //         printf("volátil\n"); break;
-    //     case FLG_TST:
-    //         printf("transiente\n"); break;
-    //     case FLG_NTV:
-    //         printf("nativo\n"); break;
-    //     case FLG_ITF:
-    //         printf("interface\n"); break;
-    //     case FLG_ABS:
-    //         printf("abstrata\n"); break;
-    //     case FLG_STT:
-    //         printf("estrito\n"); break;
-    //     default:
-    //         printf("INVÁLIDA [%X]\n", a_verificar);
-    // }
 }
 
 void exibir_tab_campos(InfoCampo* tab_campos, int lim, CPInfo* tab_simbolo){
     for (int cnt = 0; cnt < lim; cnt++){
-        printf("\t[%02d] %s\n", cnt, tab_simbolo[cnt].dados.utf_8.bytes);
-        printf("\t\tÍndice para o nome: %d\n", tab_campos[cnt].ind_nome);
+        int ind_nome = tab_campos[cnt].ind_nome,
+            qnt_atributos = tab_campos[cnt].qnt_atributos;
+
+        printf("\t[%02d] %s\n", cnt + 1, tab_simbolo[ind_nome - 1].dados.utf_8.bytes);
+        printf("\t\tFlag de acesso: ");
+            exibir_flag(tab_campos[cnt].flag_acesso);
+        printf("\t\tÍndice para o nome: %d\n", ind_nome);
         printf("\t\tÍndice para o descritor: %d\n", tab_campos[cnt].ind_descritor);
+        printf("\t\tQnt. de atributos: %d\n", qnt_atributos);
+
+        if (!qnt_atributos) {
+            printf("\t\tNão há atributos\n");
+        } else {
+            printf("\t\tAtributos:\n");
+            for (int cnt2 = 0; cnt < qnt_atributos; cnt2++){
+                printf("\t\t\tÍndice para o nome do atributo: %d\n", tab_campos[cnt].atributos[cnt2].ind_nome_attr);
+                printf("\t\t\tQnt. dados: %u\n", tab_campos[cnt].atributos[cnt2].qnt_attr);
+                printf("\t\t\tDados: %s\n", tab_campos[cnt].atributos[cnt2].info);
+            }
+        }
     }
 }
 
 void liberar(ArqClass *java_class){
     CPInfo *tab_simbolo = java_class->tab_simbolo;
-    int ignora = 0;
+    InfoCampo *tab_campos = java_class->campos;
 
-    for (int ind = 0; ind < java_class->qnt_tab_simbolo - 1; ind++){
-        u1 c_tag = tab_simbolo[ind].tag;
+    for (int ind = 0; ind < java_class->qnt_tab_simbolo - 1; ind++)
+        if (tab_simbolo[ind].tag == TAG_UTF)
+            free(tab_simbolo[ind].dados.utf_8.bytes);
 
-        switch (c_tag) {
-            case TAG_UTF:
-                free(tab_simbolo[ind].dados.utf_8.bytes);
-                break;
-            case TAG_INT:
-                break;
-            case TAG_FLT:
-                break;
-            case TAG_LNG:
-                break;
-            case TAG_DBL:
-                ignora ^= 1;
-                break;
-            case TAG_CLAS:
-                break;
-            case TAG_STR:
-                break;
-            case TAG_REF_CMP:
-                break;
-            case TAG_REF_MTD:
-                break;
-            case TAG_REF_MTD_ITF:
-                break;
-            case TAG_NOM_TIP:
-                break;
-        }
+    for (int ind = 0; ind < java_class->qnt_campos; ind++){
+        for (int ind2 = 0; ind2 < tab_campos[ind].qnt_atributos; ind2++)
+            free(tab_campos[ind].atributos[ind2].info);
 
-        if (ignora){
-            ind++;
-            ignora ^= 1;
-        }
+
+        if (tab_campos[ind].atributos != NULL)
+            free(tab_campos[ind].atributos);
     }
 
+    free(tab_campos);
     free(tab_simbolo);
     free(java_class);
 }

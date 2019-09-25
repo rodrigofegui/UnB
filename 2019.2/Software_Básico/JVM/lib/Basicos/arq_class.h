@@ -32,10 +32,15 @@
 
     void decodificar_tab_simbolos(FILE* arq, ArqClass* java_class);
     void decodificar_utf8(FILE* arq, ArqClass* java_class, int ind);
+    void decodificar_int(FILE* arq, ArqClass* java_class, int ind);
+    void decodificar_float(FILE* arq, ArqClass* java_class, int ind);
+    void decodificar_long(FILE* arq, ArqClass* java_class, int ind);
     void decodificar_dbl(FILE* arq, ArqClass* java_class, int ind);
     void decodificar_class(FILE *arq, ArqClass* java_class, int ind);
+    void decodificar_string(FILE *arq, ArqClass* java_class, int ind);
     void decodificar_ref_cmp(FILE* arq, ArqClass* java_class, int ind);
     void decodificar_ref_mtd(FILE* arq, ArqClass* java_class, int ind);
+    void decodificar_ref_mtd_itf(FILE* arq, ArqClass* java_class, int ind);
     void decodificar_nom_tip(FILE* arq, ArqClass* java_class, int ind);
 
     void decodificar_tab_campos(FILE* arq, ArqClass* java_class);
@@ -44,6 +49,7 @@
     void exibir_versao_java(u2 a_verificar);
     void exibir_tab_simbolos(CPInfo* tab_simbolo, int cnt);
     void exibir_flag(u2 a_verificar);
+    void exibir_tab_campos(InfoCampo* tab_campos, int lim, CPInfo* tab_simbolo);
 
     void liberar(ArqClass *java_class);
 
