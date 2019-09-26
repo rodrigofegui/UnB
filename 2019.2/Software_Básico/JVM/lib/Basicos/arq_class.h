@@ -23,7 +23,7 @@
         u2 qnt_campos;
         InfoCampo* campos;
         u2 qnt_metodos;
-        // metodos;
+        InfoMetodo *metodos;
         u2 qnt_atributos;
         // atributos;
     } ArqClass;
@@ -45,11 +45,14 @@
 
     void decodificar_tab_campos(FILE* arq, ArqClass* java_class);
 
+    void decodificar_tab_metodos(FILE* arq, ArqClass* java_class);
+
     void exibir (ArqClass* java_class);
     void exibir_versao_java(u2 a_verificar);
     void exibir_tab_simbolos(CPInfo* tab_simbolo, int cnt);
     void exibir_flag(u2 a_verificar);
     void exibir_tab_campos(InfoCampo* tab_campos, int lim, CPInfo* tab_simbolo);
+    void exibir_tab_metodos(InfoMetodo* tab_metodos, int lim, CPInfo* tab_simbolo);
 
     void liberar(ArqClass *java_class);
 

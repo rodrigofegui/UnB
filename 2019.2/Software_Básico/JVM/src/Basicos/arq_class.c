@@ -52,7 +52,19 @@ ArqClass* decodificar(FILE* arq_class){
         decodificar_tab_campos(arq_class, novo_class);
     }
 
+    ler_b_u2(arq_class, &novo_class->qnt_metodos, 0);
+    novo_class->metodos = NULL;
 
+    if (novo_class->qnt_metodos) {
+        novo_class->metodos = (InfoMetodo*) calloc (novo_class->qnt_metodos, sizeof(InfoMetodo));
+
+        if (!novo_class->metodos){
+            printf("\n[ERROR] Falha ao alocar a tabela de métodos\n");
+            exit(E_ALOCAR_TAB_METODOS);
+        }
+
+        decodificar_tab_metodos(arq_class, novo_class);
+    }
 
     return novo_class;
 }
@@ -184,34 +196,71 @@ void decodificar_tab_campos(FILE* arq, ArqClass* java_class){
         ler_b_u2(arq, &java_class->campos[cnt].ind_nome, 0);
         ler_b_u2(arq, &java_class->campos[cnt].ind_descritor, 0);
         ler_b_u2(arq, &java_class->campos[cnt].qnt_atributos, 1);
+        java_class->campos[cnt].atributos = NULL;
 
-        if (!java_class->campos[cnt].qnt_atributos) {
-            java_class->campos[cnt].atributos = NULL;
-        } else {
-            java_class->campos[cnt].atributos = (InfoAtributo*) calloc (java_class->campos[cnt].qnt_atributos, sizeof(InfoAtributo));
+        if (java_class->campos[cnt].qnt_atributos) {
+            java_class->campos[cnt].atributos = (InfoAtributos*) calloc (java_class->campos[cnt].qnt_atributos, sizeof(InfoAtributos));
 
             if (!java_class->campos[cnt].atributos){
-                printf("\n[ERROR] Falha ao alocar a tabela de campos\n");
+                printf("\n[ERROR] Falha ao alocar os atributos de um campo\n");
                 exit(E_ALOCAR_ATTR_CAMPOS);
             }
 
-            ler_b_u2(arq, &java_class->campos[cnt].atributos->ind_nome_attr, 1);
-            ler_b_u4(arq, &java_class->campos[cnt].atributos->qnt_attr, 1);
+            for (int cnt2 = 0; cnt < java_class->campos[cnt].qnt_atributos; cnt2++){
+                ler_b_u2(arq, &java_class->campos[cnt].atributos[cnt2].ind_nome_attr, 1);
+                ler_b_u4(arq, &java_class->campos[cnt].atributos[cnt2].tam_attr, 1);
+                ler_b_u2(arq, &java_class->campos[cnt].atributos[cnt2].especifico.vlr_const.ind, 1);
+            }
+        }
+    }
+}
 
-            if (!java_class->campos[cnt].atributos->qnt_attr) {
-                java_class->campos[cnt].atributos->info = NULL;
-            } else {
-                java_class->campos[cnt].atributos->info = (u1*) calloc (java_class->campos[cnt].atributos->qnt_attr, sizeof(u1));
+void decodificar_tab_metodos(FILE* arq, ArqClass* java_class){
+    // for (int cnt = 0; cnt < java_class->qnt_metodos; cnt++){
+    for (int cnt = 0; cnt < 1; cnt++){
+        ler_b_u2(arq, &java_class->metodos[cnt].flag_acesso, 0);
+        ler_b_u2(arq, &java_class->metodos[cnt].ind_nome, 0);
+        ler_b_u2(arq, &java_class->metodos[cnt].ind_descritor, 0);
+        ler_b_u2(arq, &java_class->metodos[cnt].qnt_atributos, 0);
+        java_class->metodos[cnt].atributos = NULL;
 
-                if (!java_class->campos[cnt].atributos->info){
-                    printf("\n[ERROR] Falha ao alocar info de atributo da tabela de campos\n");
-                    exit(E_ALOCAR_INFO_ATTR_CAMPOS);
-                }
+        if (java_class->metodos[cnt].qnt_atributos) {
+            java_class->metodos[cnt].atributos = (InfoAtributos*) calloc (java_class->metodos[cnt].qnt_atributos, sizeof(InfoAtributos));
 
-                for (int cnt2 = 0; cnt2 < java_class->campos[cnt].atributos->qnt_attr; cnt2++)
-                    fread(&java_class->campos[cnt].atributos->info[cnt2], sizeof(u1), 1, arq);
+            if (!java_class->metodos[cnt].atributos){
+                printf("\n[ERROR] Falha ao alocar os atributos de um método\n");
+                exit(E_ALOCAR_ATTR_METODOS);
             }
 
+            // for (int cnt2 = 0; cnt2 < java_class->metodos[cnt].qnt_atributos; cnt2++){
+            for (int cnt2 = 0; cnt2 < 1; cnt2++){
+                ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].ind_nome_attr, 0);
+                ler_b_u4(arq, &java_class->metodos[cnt].atributos[cnt2].tam_attr, 2);
+                ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.max_pilha, 0);
+                ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.max_locais, 0);
+                ler_b_u4(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.tam_codigo, 3);
+                java_class->metodos[cnt].atributos[cnt2].especifico.codigo.codigo = NULL;
+
+                if (java_class->metodos[cnt].atributos[cnt2].especifico.codigo.tam_codigo){
+                    java_class->metodos[cnt].atributos[cnt2].especifico.codigo.codigo = (u1*) calloc (java_class->metodos[cnt].atributos[cnt2].especifico.codigo.tam_codigo, sizeof(u1));
+
+                    if (!java_class->metodos[cnt].atributos[cnt2].especifico.codigo.codigo){
+                        printf("\n[ERROR] Falha ao alocar o código de um método\n");
+                        exit(E_ALOCAR_COD_METODOS);
+                    }
+
+                    for (int cnt3 = 0; cnt3 < java_class->metodos[cnt].atributos[cnt2].especifico.codigo.tam_codigo; cnt3++)
+                        fread(&java_class->metodos[cnt].atributos[cnt2].especifico.codigo.codigo[cnt3], sizeof(u1), 1, arq);
+                }
+
+                ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.tam_tab_excessao, 0);
+
+                if (java_class->metodos[cnt].atributos[cnt2].especifico.codigo.tam_tab_excessao){
+                    // LER EXCESSAO
+                }
+
+                ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.qnt_attr, 1);
+            }
         }
     }
 }
@@ -248,18 +297,32 @@ void exibir (ArqClass* java_class){
 
     temp = java_class->qnt_interfaces;
     printf("Qnt. de interfaces: %d\n", temp);
+    printf("Tabela de interfaces:\n");
 
-    if (temp){
-        // exibir
+    if (!temp){
+        printf("\tNão há interfaces\n");
     }
 
     temp = java_class->qnt_campos;
     printf("Qnt. de campos: %d\n", temp);
+    printf("Tabela de campos:\n");
 
-    if (temp){
-        printf("Tabela de campos: \n");
+    if (!temp){
+        printf("\tNão há campos\n");
+    } else {
         exibir_tab_campos(java_class->campos, java_class->qnt_campos, java_class->tab_simbolo);
     }
+
+    temp = java_class->qnt_metodos;
+    printf("Qnt. de métodos: %d\n", temp);
+    printf("Tabela de métodos:\n");
+
+    if (!temp){
+        printf("\tNão há métodos\n");
+    } else {
+        exibir_tab_metodos(java_class->metodos, java_class->qnt_metodos, java_class->tab_simbolo);
+    }
+
 }
 
 void exibir_versao_java(u2 a_verificar){
@@ -437,8 +500,43 @@ void exibir_tab_campos(InfoCampo* tab_campos, int lim, CPInfo* tab_simbolo){
             printf("\t\tAtributos:\n");
             for (int cnt2 = 0; cnt < qnt_atributos; cnt2++){
                 printf("\t\t\tÍndice para o nome do atributo: %d\n", tab_campos[cnt].atributos[cnt2].ind_nome_attr);
-                printf("\t\t\tQnt. dados: %u\n", tab_campos[cnt].atributos[cnt2].qnt_attr);
-                printf("\t\t\tDados: %s\n", tab_campos[cnt].atributos[cnt2].info);
+                printf("\t\t\tQnt. dados: %u\n", tab_campos[cnt].atributos[cnt2].tam_attr);
+                printf("\t\t\tìndice do valor constante: %d\n", tab_campos[cnt].atributos[cnt2].especifico.vlr_const.ind);
+            }
+        }
+    }
+}
+
+void exibir_tab_metodos(InfoMetodo* tab_metodos, int lim, CPInfo* tab_simbolo){
+    for (int cnt = 0; cnt < 1; cnt++){
+        int ind_nome = tab_metodos[cnt].ind_nome,
+            qnt_atributos = tab_metodos[cnt].qnt_atributos;
+
+        printf("\t[%02d] %s\n", cnt + 1, tab_simbolo[ind_nome - 1].dados.utf_8.bytes);
+        printf("\t\tFlag de acesso: ");
+            exibir_flag(tab_metodos[cnt].flag_acesso);
+        printf("\t\tÍndice para o nome: %d\n", ind_nome);
+        printf("\t\tÍndice para o descritor: %d\n", tab_metodos[cnt].ind_descritor);
+        printf("\t\tQnt. de atributos: %d\n", qnt_atributos);
+
+        if (!qnt_atributos) {
+            printf("\t\tNão há atributos\n");
+        } else {
+            printf("\t\tAtributos:\n");
+            for (int cnt2 = 0; cnt2 < qnt_atributos; cnt2++){
+                int ind_nome_2 = tab_metodos[cnt].atributos[cnt2].ind_nome_attr;
+
+                printf("\t\t\t[%02d] <%s>\n", cnt + 1, tab_simbolo[ind_nome_2 - 1].dados.utf_8.bytes);
+                printf("\t\t\t\tÍndice para o nome do atributo: %d\n", ind_nome_2);
+                printf("\t\t\t\tTamanho do atributo: %u\n", tab_metodos[cnt].atributos[cnt2].tam_attr);
+                printf("\t\t\t\tTamanho máximo da pilha: %d\n", tab_metodos[cnt].atributos[cnt2].especifico.codigo.max_pilha);
+                printf("\t\t\t\tTamanho máximo da variáveis locais: %d\n", tab_metodos[cnt].atributos[cnt2].especifico.codigo.max_locais);
+                printf("\t\t\t\tTamanho do código: %u\n", tab_metodos[cnt].atributos[cnt2].especifico.codigo.tam_codigo);
+                printf("\t\t\t\tCódigo:\n");
+                    for (int cnt3 = 0; cnt3 < tab_metodos[cnt].atributos[cnt2].especifico.codigo.tam_codigo; cnt3++)
+                        printf("\t\t\t\t\t0x%02X\n", tab_metodos[cnt].atributos[cnt2].especifico.codigo.codigo[cnt3]);
+                printf("\t\t\t\tTamanho da tabela de excessões: %d\n", tab_metodos[cnt].atributos[cnt2].especifico.codigo.tam_tab_excessao);
+                printf("\t\t\t\tQuantidade de atributos: %d\n", tab_metodos[cnt].atributos[cnt2].especifico.codigo.qnt_attr);
             }
         }
     }
@@ -447,20 +545,25 @@ void exibir_tab_campos(InfoCampo* tab_campos, int lim, CPInfo* tab_simbolo){
 void liberar(ArqClass *java_class){
     CPInfo *tab_simbolo = java_class->tab_simbolo;
     InfoCampo *tab_campos = java_class->campos;
+    InfoMetodo *tab_metodos = java_class->metodos;
 
     for (int ind = 0; ind < java_class->qnt_tab_simbolo - 1; ind++)
         if (tab_simbolo[ind].tag == TAG_UTF)
             free(tab_simbolo[ind].dados.utf_8.bytes);
 
-    for (int ind = 0; ind < java_class->qnt_campos; ind++){
-        for (int ind2 = 0; ind2 < tab_campos[ind].qnt_atributos; ind2++)
-            free(tab_campos[ind].atributos[ind2].info);
-
-
-        if (tab_campos[ind].atributos != NULL)
+    for (int ind = 0; ind < java_class->qnt_campos; ind++)
+        if (tab_campos[ind].atributos)
             free(tab_campos[ind].atributos);
+
+    for (int ind = 0; ind < java_class->qnt_metodos; ind++){
+        for (int ind2 = 0; ind2 < tab_metodos[ind].qnt_atributos; ind2++)
+            free(tab_metodos[ind].atributos[ind2].especifico.codigo.codigo);
+
+        if (tab_metodos[ind].atributos)
+            free(tab_metodos[ind].atributos);
     }
 
+    free(tab_metodos);
     free(tab_campos);
     free(tab_simbolo);
     free(java_class);

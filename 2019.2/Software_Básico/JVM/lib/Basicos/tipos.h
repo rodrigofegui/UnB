@@ -45,10 +45,10 @@
 
     /** Dados identificadores de um método
      *  na `constante_pool` */
-    typedef struct info_mtd {
+    typedef struct info_ref_mtd {
         u2 ind_classe;
         u2 ind_nome_tipo;
-    } InfoMetodo;
+    } InfoRefMetodo;
 
     /** Dados identificadores de um método
      *  de interface na `constante_pool` */
@@ -97,7 +97,7 @@
             InfoRefCampo ref_campo;
             InfoNomeTipo nome_tipo;
             InfoUTF8 utf_8;
-            InfoMetodo metodo;
+            InfoRefMetodo metodo;
             InfoMetodoInterface metodo_interface;
             InfoString string;
             InfoInt inteiro;
@@ -108,18 +108,56 @@
     } CPInfo;
 
     typedef struct info_attr {
-        u2 ind_nome_attr;
-        u4 qnt_attr;
         u1 *info;
     } InfoAtributo;
+
+    typedef struct info_vlr_const {
+        u2 ind;
+    } InfoValorConst;
+
+    typedef struct tab_excessao {
+        u2 pc_comeco;
+        u2 pc_final;
+        u2 pc_tratamento;
+        u2 tipo_tratamento;
+    } Excessao;
+
+    typedef struct info_code {
+        u2 max_pilha;
+        u2 max_locais;
+        u4 tam_codigo;
+        u1 *codigo;
+        u2 tam_tab_excessao;
+        Excessao *tab_excessao;
+        u2 qnt_attr;
+        // atributos;
+    } InfoCode;
+
+    typedef struct atributos {
+        u2 ind_nome_attr;
+        u4 tam_attr;
+        union dados_attr {
+            InfoAtributo generico;
+            InfoValorConst vlr_const;
+            InfoCode codigo;
+        } especifico;
+    } InfoAtributos;
 
     typedef struct info_campo {
         u2 flag_acesso;
         u2 ind_nome;
         u2 ind_descritor;
         u2 qnt_atributos;
-        InfoAtributo *atributos;
+        InfoAtributos *atributos;
     } InfoCampo;
+
+    typedef struct info_metodo {
+        u2 flag_acesso;
+        u2 ind_nome;
+        u2 ind_descritor;
+        u2 qnt_atributos;
+        InfoAtributos *atributos;
+    } InfoMetodo;
 
 
 #endif
