@@ -119,8 +119,28 @@
         u2 pc_comeco;
         u2 pc_final;
         u2 pc_tratamento;
-        u2 tipo_tratamento;
+        u2 ind_tipo_tratamento;
     } Excessao;
+
+    typedef struct info_num {
+        u2 pc_comeco;
+        u2 lin_num;
+    } InfoNumero;
+
+    typedef struct info_lin_num {
+        u2 tam_tab_numero;
+        InfoNumero *tab_numero;
+    } InfoLinhaNumero;
+
+    typedef struct atributos2 {
+        u2 ind_nome_attr;
+        u4 tam_attr;
+        union dados_attr2 {
+            InfoAtributo generico;
+            InfoValorConst vlr_const;
+            InfoLinhaNumero numero;
+        } especifico;
+    } InfoAtributos2;
 
     typedef struct info_code {
         u2 max_pilha;
@@ -130,7 +150,7 @@
         u2 tam_tab_excessao;
         Excessao *tab_excessao;
         u2 qnt_attr;
-        // atributos;
+        InfoAtributos2 *atributos;
     } InfoCode;
 
     typedef struct atributos {
@@ -140,8 +160,10 @@
             InfoAtributo generico;
             InfoValorConst vlr_const;
             InfoCode codigo;
+            InfoLinhaNumero numero;
         } especifico;
     } InfoAtributos;
+
 
     typedef struct info_campo {
         u2 flag_acesso;
