@@ -3,7 +3,7 @@
 ###################
 # Responsável por compilar a aplicação desenvolvida em C/C++
 COMP = gcc
-#
+# Flags do compilador
 COMP_FLAGS = -g
 # Resposável pela análise estática do código C/C++
 ESTATICO = cppcheck
@@ -11,15 +11,15 @@ ESTATICO = cppcheck
 ESTATICO_FLAGS = --enable=warning,style,performance,portability,unusedFunction
 # Responsável pela análise dinâmica do programa
 DINAMICO = valgrind
-#
+# Flags do analisador dinâmico
 DINAMICO_FLAGS = --tool=memcheck --leak-check=summary --show-leak-kinds=definite  --track-origins=yes
 
 ###################
-# Diretórios
+# Manipuladores de arquivos
 ###################
 # Raiz do projeto
 DIR_BASE = `pwd`
-# Arquivos-fonte .c
+# Todos Arquivos-fonte .c a partir do diretório corrente
 DIR_FONTES = `find . -type f -iname *.c -print |  sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g'`
 # Diretório dos arquivos objetos
 DIR_OBJETOS = obj/
@@ -32,8 +32,37 @@ EXECUTAVEL = leitor.out
 DESTAQUE = ************************************************
 
 ###################
+# Flags padrões do executável
+###################
+# Modo de operação do executável
+modo = e
+# Arquivo a ser manipulado
+arqs = Referências/double_aritmetica.class
+
+###################
 # Regras
 ###################
+help:
+	@echo "Usabilidade: make opcao [flags]"
+	@echo ""
+	@echo "Opções:"
+	@echo "    limpar_obj        Apaga todos os arquivos objetos .o já gerados"
+	@echo "    limpar_bin        Apaga o arquivo executável .out já gerado"
+	@echo "    limpar            Apaga tantos os arquivos objetos quanto o executável"
+	@echo "    estatico          Analisador estático recursivo sobre o diretório corrente"
+	@echo "    objetos           Gera os arquivos objetos .o para todos os arquivos"
+	@echo "                      .c encontrados recursivamente a partir do diretório corrente"
+	@echo "    compilar          Gera o arquivo executável"
+	@echo "    executável        Executa o programa em si."
+	@echo "                      Aceita as flags: <modo> e <arqs>"
+	@echo ""
+	@echo "Flags:"
+	@echo "    modo=e|i          Controle de como o programa tratará os arquivos .class:"
+	@echo "                      e = leitor e exibidor <default>"
+	@echo "                      i = leitor e interpretador"
+	@echo "    arqs=arq1,arq2    Arquivos a serem manipulados pelo programa, separados por ','"
+
+
 limpar_obj:
 	@echo "$(DESTAQUE)"
 	@echo "A limpar o diretório de objetos..."
@@ -44,6 +73,7 @@ limpar_obj:
 	@echo "Limpeza concluída"
 	@echo "$(DESTAQUE)\n"
 
+
 limpar_bin:
 	@echo "$(DESTAQUE)"
 	@echo "A limpar o executável..."
@@ -53,7 +83,9 @@ limpar_bin:
 	@echo "Limpeza concluída"
 	@echo "$(DESTAQUE)\n"
 
+
 limpar: limpar_obj limpar_bin
+
 
 estatico:
 	@echo "${DESTAQUE}"
@@ -63,6 +95,7 @@ estatico:
 	@$(ESTATICO) $(DIR_BASE)/$(DIR_FONTE) $(ESTATICO_FLAGS)
 
 	@echo "\n${DESTAQUE}\n"
+
 
 objetos: estatico limpar_obj
 	@echo "${DESTAQUE}"
@@ -88,6 +121,7 @@ compilar: limpar_bin objetos
 	@echo "'$(EXECUTAVEL)'"
 	@echo "${DESTAQUE}\n"
 
+
 executar: compilar
 	@echo "${DESTAQUE}"
 	@echo "Executando o arquivo:"
@@ -99,7 +133,7 @@ executar: compilar
 	@echo "\t- Busca pela origem de valores indefinido"
 	@echo ""
 
-	@$(DINAMICO) $(DINAMICO_FLAGS) ./$(EXECUTAVEL)
+	@$(DINAMICO) $(DINAMICO_FLAGS) ./$(EXECUTAVEL) -$(modo) $(arqs)
 
 	@echo "\nAcabou a execução"
 	@echo "${DESTAQUE}"

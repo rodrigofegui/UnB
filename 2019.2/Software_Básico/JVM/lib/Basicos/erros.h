@@ -2,6 +2,9 @@
     #define BASICO_ERROS_H
 
     enum erros {
+        E_QNT_ARGS = 1,
+        E_MODO,
+        E_TIPO,
         E_ABRIR_ARQUIVO,
         E_ALOCAR_CLASS,
         E_ALOCAR_TAB_SIMB,
