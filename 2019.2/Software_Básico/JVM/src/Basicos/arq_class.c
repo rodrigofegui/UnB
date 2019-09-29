@@ -26,7 +26,11 @@ ArqClass* decodificar(FILE* arq_class){
         exit(E_ALOCAR_TAB_SIMB);
     }
 
+
     decodificar_tab_simbolos(arq_class, novo_class);
+
+    if (feof(arq_class))
+        return novo_class;
 
     ler_b_u2(arq_class, &novo_class->flag_acesso, 0);
     ler_b_u2(arq_class, &novo_class->class_atual, 0);
@@ -37,6 +41,9 @@ ArqClass* decodificar(FILE* arq_class){
     if (novo_class->qnt_interfaces) {
         printf("deveria ter interface!!\n");
     }
+
+    if (feof(arq_class))
+        return novo_class;
 
     ler_b_u2(arq_class, &novo_class->qnt_campos, 0);
     novo_class->campos = NULL;
@@ -52,6 +59,9 @@ ArqClass* decodificar(FILE* arq_class){
         decodificar_tab_campos(arq_class, novo_class);
     }
 
+    if (feof(arq_class))
+        return novo_class;
+
     ler_b_u2(arq_class, &novo_class->qnt_metodos, 0);
     novo_class->metodos = NULL;
 
@@ -64,6 +74,23 @@ ArqClass* decodificar(FILE* arq_class){
         }
 
         decodificar_tab_metodos(arq_class, novo_class);
+    }
+
+    if (feof(arq_class))
+        return novo_class;
+
+    ler_b_u2(arq_class, &novo_class->qnt_atributos, 1);
+    novo_class->atributos = NULL;
+
+    if (novo_class->qnt_atributos){
+        novo_class->atributos = (InfoAtributos*) calloc (novo_class->qnt_atributos, sizeof(InfoAtributos));
+
+        if (!novo_class->metodos){
+            printf("\n[ERROR] Falha ao alocar a tabela de atributos\n");
+            exit(E_ALOCAR_TAB_ATRIBUTOS);
+        }
+
+        decodificar_tab_atributos(arq_class, novo_class);
     }
 
     return novo_class;
@@ -192,6 +219,9 @@ void decodificar_nom_tip(FILE* arq, ArqClass* java_class, int ind){
 
 void decodificar_tab_campos(FILE* arq, ArqClass* java_class){
     for (int cnt = 0; cnt < java_class->qnt_campos; cnt++){
+        if (feof(arq))
+            return;
+
         ler_b_u2(arq, &java_class->campos[cnt].flag_acesso, 0);
         ler_b_u2(arq, &java_class->campos[cnt].ind_nome, 0);
         ler_b_u2(arq, &java_class->campos[cnt].ind_descritor, 0);
@@ -207,9 +237,11 @@ void decodificar_tab_campos(FILE* arq, ArqClass* java_class){
             }
 
             for (int cnt2 = 0; cnt < java_class->campos[cnt].qnt_atributos; cnt2++){
+                if (feof(arq))
+                    return;
                 ler_b_u2(arq, &java_class->campos[cnt].atributos[cnt2].ind_nome_attr, 1);
                 ler_b_u4(arq, &java_class->campos[cnt].atributos[cnt2].tam_attr, 1);
-                ler_b_u2(arq, &java_class->campos[cnt].atributos[cnt2].especifico.vlr_const.ind, 1);
+                ler_b_u2(arq, &java_class->campos[cnt].atributos[cnt2].especifico.vlr_u2.ind, 1);
             }
         }
     }
@@ -219,6 +251,8 @@ void decodificar_tab_metodos(FILE* arq, ArqClass* java_class){
     int flag_0_p_1, flag_0_p_2, flag_2_p_1, flag_3_p_1;
 
     for (int cnt = 0; cnt < java_class->qnt_metodos; cnt++){
+        if (feof(arq))
+            return;
         if (!cnt){
             flag_0_p_1 = 0;
             flag_0_p_2 = 0;
@@ -230,7 +264,6 @@ void decodificar_tab_metodos(FILE* arq, ArqClass* java_class){
             flag_2_p_1 = 1;
             flag_3_p_1 = 1;
         }
-
 
         ler_b_u2(arq, &java_class->metodos[cnt].flag_acesso, flag_0_p_1);
         ler_b_u2(arq, &java_class->metodos[cnt].ind_nome, flag_0_p_1);
@@ -247,6 +280,8 @@ void decodificar_tab_metodos(FILE* arq, ArqClass* java_class){
             }
 
             for (int cnt2 = 0; cnt2 < java_class->metodos[cnt].qnt_atributos; cnt2++){
+                if (feof(arq))
+                    return;
                 int flag_0_p_1_2;
 
                 if (!cnt) flag_0_p_1_2 = 1;
@@ -283,6 +318,8 @@ void decodificar_tab_metodos(FILE* arq, ArqClass* java_class){
                     }
 
                     for (int cnt3 = 0; cnt3 < java_class->metodos[cnt].atributos[cnt2].especifico.codigo.tam_tab_excessao; cnt3++){
+                        if (feof(arq))
+                            return;
                         ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.tab_excessao[cnt3].pc_comeco, 0);
                         ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.tab_excessao[cnt3].pc_final, 0);
                         ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.tab_excessao[cnt3].pc_tratamento, 0);
@@ -292,9 +329,6 @@ void decodificar_tab_metodos(FILE* arq, ArqClass* java_class){
 
                 ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.qnt_attr, 1);
                 java_class->metodos[cnt].atributos[cnt2].especifico.codigo.atributos = NULL;
-                // printf("qnt_attr_code: %d\n", java_class->metodos[cnt].atributos[cnt2].especifico.codigo.qnt_attr);
-                // printf("arquivo: 0x%08X\n", ftell(arq));
-
 
                 if (java_class->metodos[cnt].atributos[cnt2].especifico.codigo.qnt_attr){
                     java_class->metodos[cnt].atributos[cnt2].especifico.codigo.atributos = (InfoAtributos2*) calloc (java_class->metodos[cnt].atributos[cnt2].especifico.codigo.qnt_attr, sizeof(InfoAtributos2));
@@ -305,11 +339,10 @@ void decodificar_tab_metodos(FILE* arq, ArqClass* java_class){
                     }
 
                     for (int cnt3 = 0; cnt3 < java_class->metodos[cnt].atributos[cnt2].especifico.codigo.qnt_attr; cnt3++){
+                        if (feof(arq))
+                            return;
                         ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].ind_nome_attr, 1);
                         ler_b_u4(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].tam_attr, 1);
-
-                        // printf("ind_nome_attr_code: [%d][%d][%d] %d\n", cnt, cnt2, cnt3, java_class->metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].ind_nome_attr);
-                        // printf("arquivo: 0x%08X\n", ftell(arq));
 
                         if (!strcmp(java_class->tab_simbolo[java_class->metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].ind_nome_attr - 1].dados.utf_8.bytes, "LineNumberTable")){
                             ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].especifico.numero.tam_tab_numero, 1);
@@ -324,6 +357,8 @@ void decodificar_tab_metodos(FILE* arq, ArqClass* java_class){
                                 }
 
                                 for (int cnt4 = 0; cnt4 < java_class->metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].especifico.numero.tam_tab_numero; cnt4++){
+                                        if (feof(arq))
+                                            return;
                                     ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].especifico.numero.tab_numero[cnt4].pc_comeco, 1);
                                     ler_b_u2(arq, &java_class->metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].especifico.numero.tab_numero[cnt4].lin_num, 1);
                                 }
@@ -335,6 +370,18 @@ void decodificar_tab_metodos(FILE* arq, ArqClass* java_class){
         }
     }
 }
+
+void decodificar_tab_atributos(FILE* arq, ArqClass* java_class){
+    for (int cnt = 0; cnt < java_class->qnt_atributos; cnt++){
+        ler_b_u2(arq, &java_class->atributos[cnt].ind_nome_attr, 1);
+        ler_b_u4(arq, &java_class->atributos[cnt].tam_attr, 1);
+
+        if (!strcmp(java_class->tab_simbolo[java_class->atributos[cnt].ind_nome_attr - 1].dados.utf_8.bytes, "SourceFile")){
+            ler_b_u2(arq, &java_class->atributos[cnt].especifico.vlr_u2.ind, 1);
+        }
+    }
+}
+
 
 void exibir (ArqClass* java_class){
     int temp;
@@ -392,6 +439,16 @@ void exibir (ArqClass* java_class){
         printf("\tNão há métodos\n");
     } else {
         exibir_tab_metodos(java_class->metodos, java_class->qnt_metodos, java_class->tab_simbolo);
+    }
+
+    temp = java_class->qnt_atributos;
+    printf("Qnt. de atributos: %d\n", temp);
+    printf("Tabela de atributos:\n");
+
+    if (!temp){
+        printf("\tNão há atributos\n");
+    } else {
+        exibir_tab_atributos(java_class->atributos, java_class->qnt_atributos, java_class->tab_simbolo);
     }
 
 }
@@ -572,7 +629,7 @@ void exibir_tab_campos(InfoCampo* tab_campos, int lim, CPInfo* tab_simbolo){
             for (int cnt2 = 0; cnt < qnt_atributos; cnt2++){
                 printf("\t\t\tÍndice para o nome do atributo: %d\n", tab_campos[cnt].atributos[cnt2].ind_nome_attr);
                 printf("\t\t\tQnt. dados: %u\n", tab_campos[cnt].atributos[cnt2].tam_attr);
-                printf("\t\t\tìndice do valor constante: %d\n", tab_campos[cnt].atributos[cnt2].especifico.vlr_const.ind);
+                printf("\t\t\tÍndice do valor constante: %d\n", tab_campos[cnt].atributos[cnt2].especifico.vlr_u2.ind);
             }
         }
     }
@@ -580,7 +637,6 @@ void exibir_tab_campos(InfoCampo* tab_campos, int lim, CPInfo* tab_simbolo){
 
 void exibir_tab_metodos(InfoMetodo* tab_metodos, int lim, CPInfo* tab_simbolo){
     for (int cnt = 0; cnt < lim; cnt++){
-    // for (int cnt = 0; cnt < 1; cnt++){
         int ind_nome = tab_metodos[cnt].ind_nome,
             qnt_atributos = tab_metodos[cnt].qnt_atributos;
 
@@ -639,9 +695,9 @@ void exibir_tab_metodos(InfoMetodo* tab_metodos, int lim, CPInfo* tab_simbolo){
 
                                 printf("\t\t\t\t\t\tTamanho da tabela de numeros: %d\n", tam_tab_numero);
 
+                                printf("\t\t\t\t\t\t\t\t#\t|\tPC Inicial\t|\tValor\n");
                                 for (int cnt4 = 0; cnt4 < tam_tab_numero; cnt4++){
-                                    printf("\t\t\t\t\t\t\t[%d] PC inicial: %d\n", cnt4, tab_metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].especifico.numero.tab_numero[cnt4].pc_comeco);
-                                    printf("\t\t\t\t\t\t\t[%d] Valor a partir dessa linha: %d\n", cnt4, tab_metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].especifico.numero.tab_numero[cnt4].lin_num);
+                                    printf("\t\t\t\t\t\t\t\t%d\t|\t  %02d\t\t|\t%d\n", cnt4, tab_metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].especifico.numero.tab_numero[cnt4].pc_comeco, tab_metodos[cnt].atributos[cnt2].especifico.codigo.atributos[cnt3].especifico.numero.tab_numero[cnt4].lin_num);
                                 }
                             }
                         }
@@ -651,10 +707,25 @@ void exibir_tab_metodos(InfoMetodo* tab_metodos, int lim, CPInfo* tab_simbolo){
     }
 }
 
+void exibir_tab_atributos(InfoAtributos* tab_atributos, int lim, CPInfo* tab_simbolo){
+    for (int cnt = 0; cnt < lim; cnt++){
+        u2 ind_attr = tab_atributos[cnt].ind_nome_attr;
+
+        printf("\t[%d] %s\n", cnt, tab_simbolo[ind_attr - 1].dados.utf_8.bytes);
+        printf("\t\tÍndice para o nome do atributo: %d\n", ind_attr);
+        printf("\t\tTamanho do atributo: %u\n", tab_atributos[cnt].tam_attr);
+
+        if (!strcmp(tab_simbolo[ind_attr - 1].dados.utf_8.bytes, "SourceFile")){
+            printf("\t\tÍndice do nome do arquivo fonte: %d\n", tab_atributos[cnt].especifico.vlr_u2.ind);
+        }
+    }
+}
+
 void liberar(ArqClass *java_class){
     CPInfo *tab_simbolo = java_class->tab_simbolo;
     InfoCampo *tab_campos = java_class->campos;
     InfoMetodo *tab_metodos = java_class->metodos;
+    InfoAtributos *tab_atributos = java_class->atributos;
 
     for (int ind = 0; ind < java_class->qnt_metodos; ind++){
         for (int ind2 = 0; ind2 < tab_metodos[ind].qnt_atributos; ind2++){
@@ -677,7 +748,6 @@ void liberar(ArqClass *java_class){
             free(tab_metodos[ind].atributos);
     }
 
-
     for (int ind = 0; ind < java_class->qnt_campos; ind++)
         if (tab_campos[ind].atributos)
             free(tab_campos[ind].atributos);
@@ -687,6 +757,7 @@ void liberar(ArqClass *java_class){
             free(tab_simbolo[ind].dados.utf_8.bytes);
 
 
+    free(tab_atributos);
     free(tab_metodos);
     free(tab_campos);
     free(tab_simbolo);

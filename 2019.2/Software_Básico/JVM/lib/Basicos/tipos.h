@@ -107,13 +107,17 @@
         } dados;
     } CPInfo;
 
-    typedef struct info_attr {
+    typedef struct info_pt_u1 {
         u1 *info;
-    } InfoAtributo;
+    } InfoPtU1;
 
     typedef struct info_vlr_const {
         u2 ind;
-    } InfoValorConst;
+    } InfoVlrU2;
+
+    typedef struct info_arq_fonte {
+        u2 ind;
+    } InfoArqFonte;
 
     typedef struct tab_excessao {
         u2 pc_comeco;
@@ -136,8 +140,8 @@
         u2 ind_nome_attr;
         u4 tam_attr;
         union dados_attr2 {
-            InfoAtributo generico;
-            InfoValorConst vlr_const;
+            InfoPtU1 pt_u1;
+            InfoVlrU2 vlr_u2;
             InfoLinhaNumero numero;
         } especifico;
     } InfoAtributos2;
@@ -157,8 +161,8 @@
         u2 ind_nome_attr;
         u4 tam_attr;
         union dados_attr {
-            InfoAtributo generico;
-            InfoValorConst vlr_const;
+            InfoPtU1 pt_u1;
+            InfoVlrU2 vlr_u2;
             InfoCode codigo;
             InfoLinhaNumero numero;
         } especifico;

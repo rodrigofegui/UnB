@@ -5,8 +5,8 @@
 #include "../lib/Basicos/arq_class.h"
 
 int main(int argc, char *argv[]){
-    char nome_arq[] = "Referências/double_aritmetica.class";
-    // char nome_arq[] = "Referências/ControladorMidi.class";
+    // char nome_arq[] = "Referências/double_aritmetica.class";
+    char nome_arq[] = "Referências/ControladorMidi.class";
     // char nome_arq[] = "Referências/ControladorMidi.java";
 
     ArqClass *java_class = NULL;
