@@ -1,7 +1,9 @@
-#include "../../lib/Basicos/parametros.h"
+#include "../../lib_c/Basicos/parametros.h"
 
-u1 check_parametros(int argc, char *argv[]){
-    u1 leitura = 1;
+u1* check_parametros(int argc, char *argv[]){
+    u1 *controle = (u1*) calloc (2, sizeof(u1));
+
+    controle[0] = 1;
 
     if ((argc - 1) > 2){
         printf("\n[ERRO] Este programa só aceita até 2 argumentos, mas vieram %d.\n", argc - 1);
@@ -15,7 +17,7 @@ u1 check_parametros(int argc, char *argv[]){
         exit(E_MODO);
 
     }else if (!strcmp(temp, "-i")){
-        leitura = 0;
+        controle[0] = 0;
     }
 
     temp = strtok(argv[2], DELIMITADOR_ARGS);
@@ -26,8 +28,10 @@ u1 check_parametros(int argc, char *argv[]){
             exit(E_TIPO);
         }
 
+        controle[1]++;
+
         temp = strtok(NULL, DELIMITADOR_ARGS);
     }
 
-    return leitura;
+    return controle;
 }

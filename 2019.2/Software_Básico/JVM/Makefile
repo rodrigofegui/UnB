@@ -2,17 +2,18 @@
 # Programas
 ###################
 # Responsável por compilar a aplicação desenvolvida em C/C++
-COMP = gcc
+# COMP = gcc
+COMP = g++
 # Flags do compilador
-COMP_FLAGS = -g
+COMP_FLAGS = -g -std=c++11
 # Resposável pela análise estática do código C/C++
 ESTATICO = cppcheck
 # Flags para o estático
-ESTATICO_FLAGS = --enable=warning,style,performance,portability,unusedFunction
+ESTATICO_FLAGS = --platform=unix64 --enable=warning,style,performance,portability,unusedFunction --language=c++
 # Responsável pela análise dinâmica do programa
 DINAMICO = valgrind
 # Flags do analisador dinâmico
-DINAMICO_FLAGS = --tool=memcheck --leak-check=summary --show-leak-kinds=definite  --track-origins=yes
+DINAMICO_FLAGS = --tool=memcheck --leak-check=summary --show-leak-kinds=definite  --track-origins=yes -s
 
 ###################
 # Manipuladores de arquivos
@@ -20,7 +21,8 @@ DINAMICO_FLAGS = --tool=memcheck --leak-check=summary --show-leak-kinds=definite
 # Raiz do projeto
 DIR_BASE = `pwd`
 # Todos Arquivos-fonte .c a partir do diretório corrente
-DIR_FONTES = `find . -type f -iname *.c -print |  sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g'`
+# DIR_FONTES = `find . -type f -iname *.c -print |  sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g'`
+DIR_FONTES = `find . -type f -iname *.cpp -print |  sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g'`
 # Diretório dos arquivos objetos
 DIR_OBJETOS = obj/
 # Arquivo executável
@@ -89,10 +91,10 @@ limpar: limpar_obj limpar_bin
 
 estatico:
 	@echo "${DESTAQUE}"
-	@echo "Verificação estática sobre o diretório:"
-	@echo "'${DIR_BASE}/'\n"
+	@echo "Verificação estática sobre os arquivos:"
+	@echo "${DIR_FONTES}\n"
 
-	@$(ESTATICO) $(DIR_BASE)/$(DIR_FONTE) $(ESTATICO_FLAGS)
+	@$(ESTATICO) $(DIR_FONTES) $(ESTATICO_FLAGS)
 
 	@echo "\n${DESTAQUE}\n"
 

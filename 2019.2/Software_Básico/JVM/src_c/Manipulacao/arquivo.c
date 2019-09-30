@@ -1,4 +1,4 @@
-#include "../../lib/Manipulacao/arquivos.h"
+#include "../../lib_c/Manipulacao/arquivos.h"
 
 FILE* leitura (const char *nome_arq){
     FILE *arq = fopen(nome_arq, "rb");

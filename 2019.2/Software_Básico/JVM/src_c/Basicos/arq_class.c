@@ -1,4 +1,4 @@
-#include "../../lib/Basicos/arq_class.h"
+#include "../../lib_c/Basicos/arq_class.h"
 
 ArqClass* decodificar(FILE* arq_class){
     ArqClass* novo_class = (ArqClass*) calloc (1, sizeof(ArqClass));

@@ -1,11 +1,14 @@
-#ifndef BASICO_ERROS_H
-    #define BASICO_ERROS_H
+#ifndef UTEIS_ERROS_HPP
+    #define UTEIS_ERROS_HPP
 
     enum erros {
         E_QNT_ARGS = 1,
         E_MODO,
         E_TIPO,
+        E_SEM_ARQ,
+        E_NAO_CLASS,
         E_ABRIR_ARQUIVO,
+        E_ALOCAR,
         E_ALOCAR_CLASS,
         E_ALOCAR_TAB_SIMB,
         E_ALOCAR_UTF8,

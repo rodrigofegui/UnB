@@ -1,5 +1,5 @@
-#ifndef MANIPULACAO_ARQUIVOS_H
-    #define MANIPULACAO_ARQUIVOS_H
+#ifndef _MANIPULACAO_ARQUIVOS_H
+    #define _MANIPULACAO_ARQUIVOS_H
 
     #include <stdio.h>
     #include <stdlib.h>

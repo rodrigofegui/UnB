@@ -1,5 +1,5 @@
-#ifndef BASICOS_TIPOS_H
-    #define BASICOS_TIPOS_H
+#ifndef _BASICOS_TIPOS_H
+    #define _BASICOS_TIPOS_H
     /**
      *  @file   tipos.h
      *  @author Rodrigo F. Guimarães

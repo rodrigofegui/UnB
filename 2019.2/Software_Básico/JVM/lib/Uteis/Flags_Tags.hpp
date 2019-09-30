@@ -1,7 +1,5 @@
-#ifndef TIPOS_TAGS_FLAGS_H
-    #define TIPOS_TAGS_FLAGS_H
-
-    #include "./tipos.h"
+#ifndef UTEIS_TAGS_FLAGS_HPP
+    #define UTEIS_TAGS_FLAGS_HPP
 
     #define V1_1 45
     #define V1_2 46

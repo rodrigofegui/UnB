@@ -1,5 +1,5 @@
-#ifndef BASICOS_ARQ_CLASS_H
-    #define BASICOS_ARQ_CLASS_H
+#ifndef _BASICOS_ARQ_CLASS_H
+    #define _BASICOS_ARQ_CLASS_H
 
     #include <stdio.h>
     #include <stdlib.h>
