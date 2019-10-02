@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <iostream>
+#include <math.h>
 #include "../../lib/Uteis/Arquivos.hpp"
 #include "../../lib/Uteis/Erros.hpp"
 
@@ -74,3 +76,15 @@ void ler_u4(FILE *arq, u4 *dst, int modo){
     }
 }
 
+int get_padding(int num_max){
+    int padding = 1;
+
+    do{
+        if ((num_max >= pow10(padding - 1)) && (num_max < pow10(padding)))
+            break;
+
+        padding++;
+    }while(true);
+
+    return padding;
+}

@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 #include <string>
 #include "../../lib/Tabelas/TabSimbolo.hpp"
@@ -6,108 +7,80 @@
 
 
 void TabSimbolo::decodificar(FILE *arq){
-    if (!this->tam) return;
+    int tam = *(this->tam) - 1;
+    if (!tam) return;
 
     u1 temp, ignora = 0;
 
-    for (int cnt = 0; cnt < this->tam; cnt++){
+    for (int cnt = 0; cnt < tam; cnt++){
         ler_u1(arq, &temp);
 
-        this->registros.push_back(CPInfo(temp));
-        InterCPDados *c_dados = this->registros[this->registros.size() - 1].dados;
+        CPInfo c_dados(temp);
 
         switch (temp){
             case TAG_UTF:
-                c_dados = new InfoUTF8(this); break;
+                c_dados.dados = new InfoUTF8(this); break;
             case TAG_INT:
-                c_dados = new InfoInteiro(this); break;
+                c_dados.dados = new InfoInteiro(this); break;
             case TAG_FLT:
-                c_dados = new InfoFloat(this); break;
+                c_dados.dados = new InfoFloat(this); break;
             case TAG_LNG:
-                c_dados = new InfoLong(this); ignora ^= 1; break;
+                c_dados.dados = new InfoLong(this); break;
             case TAG_DBL:
-                c_dados = new InfoDouble(this); ignora ^= 1; break;
+                c_dados.dados = new InfoDouble(this); break;
             case TAG_CLAS:
-                c_dados = new InfoClasse(this); break;
+                c_dados.dados = new InfoClasse(this); break;
             case TAG_STR:
-                c_dados = new InfoString(this); break;
+                c_dados.dados = new InfoString(this); break;
             case TAG_REF_CMP:
-                c_dados = new InfoRefCampo(this); break;
+                c_dados.dados = new InfoRefCampo(this); break;
             case TAG_REF_MTD:
-                c_dados = new InfoRefCampo(this); break;
+                c_dados.dados = new InfoRefMetodo(this); break;
             case TAG_REF_MTD_ITF:
-                c_dados = new InfoRefMetInterface(this); break;
+                c_dados.dados = new InfoRefMetInterface(this); break;
             case TAG_NOM_TIP:
-                c_dados = new InfoNomeTipo(this); break;
+                c_dados.dados = new InfoNomeTipo(this); break;
             default:
                 temp = 0;
         }
 
-        c_dados->decodificar(arq);
+        if (temp)
+            c_dados.dados->decodificar(arq);
+        else
+            c_dados.tag = temp;
 
-        if (ignora){
-            cnt++; ignora ^= 1;
-        }
+        this->registros.push_back(c_dados);
     }
 }
 
 void TabSimbolo::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
+    int tam = *(this->tam) - 1;
 
-    if (!(this->tam - 1)){
+    if (!tam){
         std::cout << tabs + "Não há itens na tabela de símbolos" << std::endl;
         return;
     }
 
-    u1 ignora = 0;
+    u1 padding = get_padding(tam);
 
-    for (int cnt = 0; cnt < this->tam - 1; cnt++){
-        u1 tag = this->registros[this->registros.size() - 1].tag;
+    for (int cnt = 0; cnt < tam; cnt++){
+        u1 tag = this->registros[cnt].tag;
 
-        InterCPDados *c_dados = this->registros[this->registros.size() - 1].dados;
         std::cout << tabs + "[";
-        std::cout << cnt + "] CONSTANT_";
+        std::cout << std::setfill('0') << std::setw(padding) << cnt + 1;
+        std::cout << "] ";
 
-        switch (tag){
-            case TAG_UTF:
-                std::cout << "Utf8" << std::endl; break;
-            case TAG_INT:
-                std::cout << "Integer" << std::endl; break;
-            case TAG_FLT:
-                std::cout << "Float" << std::endl; break;
-            case TAG_LNG:
-                std::cout << "Long" << std::endl; ignora ^= 1; break;
-            case TAG_DBL:
-                std::cout << "Double" << std::endl; ignora ^= 1; break;
-            case TAG_CLAS:
-                std::cout << "Class" << std::endl; break;
-            case TAG_STR:
-                std::cout << "String" << std::endl; break;
-            case TAG_REF_CMP:
-                std::cout << "Fieldref" << std::endl; break;
-            case TAG_REF_MTD:
-                std::cout << "Methodref" << std::endl; break;
-            case TAG_REF_MTD_ITF:
-                std::cout << "InterfaceMethodref" << std::endl; break;
-            case TAG_NOM_TIP:
-                std::cout << "NameAndType" << std::endl; break;
-            default:
-                tag = 0;
-        }
-
-        if (tag) c_dados->exibir(qnt_tab + 1);
-
-        if (ignora){
-            cnt++; ignora ^= 1;
-        }
+        this->registros[cnt].exibir(qnt_tab + 1);
     }
 }
 
 void TabSimbolo::deletar(){
     for (auto &registro: this->registros){
-        registro.dados->deletar();
         registro.deletar();
     }
 
-    this->registros.clear();
+    std::vector<CPInfo>().swap(this->registros);
+
+    delete this;
 }

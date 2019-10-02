@@ -2,18 +2,16 @@
     #define INTERFACE_CP_DADOS_HPP
 
     #include <stdio.h>
-    #include "../Tabelas/TabSimbolo.hpp"
-
-    class TabSimbolo;
+    #include "InterTabela.hpp"
 
     class InterCPDados{
         protected:
-            TabSimbolo *tab = NULL;
+            InterTabela *tab = NULL;
 
         public:
             InterCPDados(){};
 
-            explicit InterCPDados (TabSimbolo *tab): tab(tab){};
+            explicit InterCPDados (InterTabela *tab): tab(tab){};
 
             virtual void decodificar(FILE *arq) = 0;
 

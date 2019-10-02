@@ -9,7 +9,7 @@
             u2 ind_nome = 0;
 
         public:
-            explicit InfoClasse (TabSimbolo *tab): InterCPDados (tab) {};
+            explicit InfoClasse (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(int qnt_tabs) override;
             void deletar() override {};
@@ -21,7 +21,7 @@
             u2 ind_nome_tipo = 0;
 
         public:
-            explicit InfoRefCampo (TabSimbolo *tab): InterCPDados (tab) {};
+            explicit InfoRefCampo (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(int qnt_tabs) override;
             void deletar() override {};
@@ -33,7 +33,7 @@
             u2 ind_descritor = 0;
 
         public:
-            explicit InfoNomeTipo (TabSimbolo *tab): InterCPDados (tab) {};
+            explicit InfoNomeTipo (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(int qnt_tabs) override;
             void deletar() override {};
@@ -45,7 +45,7 @@
             std::vector<u1> bytes;
 
         public:
-            explicit InfoUTF8 (TabSimbolo *tab): InterCPDados (tab) {};
+            explicit InfoUTF8 (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(int qnt_tabs) override;
             void deletar() override;
@@ -57,7 +57,7 @@
             u2 ind_nome_tipo = 0;
 
         public:
-            explicit InfoRefMetodo (TabSimbolo *tab): InterCPDados (tab) {};
+            explicit InfoRefMetodo (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(int qnt_tabs) override;
             void deletar() override {};
@@ -69,7 +69,7 @@
             u2 ind_nome_tipo = 0;
 
         public:
-            explicit InfoRefMetInterface (TabSimbolo *tab): InterCPDados (tab) {};
+            explicit InfoRefMetInterface (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(int qnt_tabs) override;
             void deletar() override {};
@@ -80,7 +80,7 @@
             u2 ind_string = 0;
 
         public:
-            explicit InfoString (TabSimbolo *tab): InterCPDados (tab) {};
+            explicit InfoString (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(int qnt_tabs) override;
             void deletar() override {};
@@ -91,7 +91,7 @@
             u4 bytes = 0;
 
         public:
-            explicit InfoInteiro (TabSimbolo *tab): InterCPDados (tab) {};
+            explicit InfoInteiro (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(int qnt_tabs) override;
             void deletar() override {};
@@ -102,7 +102,7 @@
             u4 bytes = 0;
 
         public:
-            explicit InfoFloat (TabSimbolo *tab): InterCPDados (tab) {};
+            explicit InfoFloat (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(int qnt_tabs) override;
             void deletar() override {};
@@ -114,7 +114,7 @@
             u4 bytes_menos = 0;
 
         public:
-            explicit InfoLong (TabSimbolo *tab): InterCPDados (tab) {};
+            explicit InfoLong (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(int qnt_tabs) override;
             void deletar() override {};
@@ -126,7 +126,7 @@
             u4 bytes_menos = 0;
 
         public:
-            explicit InfoDouble (TabSimbolo *tab): InterCPDados (tab) {};
+            explicit InfoDouble (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(int qnt_tabs) override;
             void deletar() override {};

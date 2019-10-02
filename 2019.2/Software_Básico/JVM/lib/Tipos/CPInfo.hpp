@@ -8,8 +8,6 @@
     #include "Basicos.hpp"
     #include "../Interfaces/InterCPDados.hpp"
 
-    // class InterCPDados;
-
     class CPInfo{
         public:
             u1 tag;
@@ -17,6 +15,8 @@
 
             explicit CPInfo (u1 tag): tag(tag) {};
 
-            void deletar (){this->dados->deletar();};
+            void exibir (int qnt_tab);
+
+            void deletar ();
     };
 #endif

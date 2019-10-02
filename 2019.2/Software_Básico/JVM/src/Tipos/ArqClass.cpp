@@ -15,7 +15,6 @@ ArqClass::ArqClass(const char *nome_arq) : ArqClass(abrir(nome_arq)) {
 }
 
 
-
 void ArqClass::check_valido(){
     ler_u4(this->arq, &this->codigo, 1);
 
@@ -116,7 +115,7 @@ void ArqClass::decodificar(){
     ler_u2(this->arq, &this->versao_max, 1);
     ler_u2(this->arq, &this->tam_tab_simbolo, 1);
 
-    this->tab_simbolo = new TabSimbolo(this->tam_tab_simbolo);
+    this->tab_simbolo = new TabSimbolo(&this->tam_tab_simbolo);
     this->tab_simbolo->decodificar(this->arq);
 }
 
@@ -130,4 +129,10 @@ void ArqClass::exibir(){
 
     printf("Qnt. de entradas na tabela de símbolos: %d\n", this->tam_tab_simbolo);
     this->tab_simbolo->exibir(1);
+}
+
+void ArqClass::deletar(){
+    this->tab_simbolo->deletar();
+
+    if (this->arq) fclose(this->arq);
 }

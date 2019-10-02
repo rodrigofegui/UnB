@@ -13,4 +13,6 @@
 
     void ler_u4(FILE *arq, u4 *dst, int modo);
 
+    int get_padding(int num_max);
+
 #endif

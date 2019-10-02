@@ -16,7 +16,7 @@
     class ArqClass {
         private:
             u1 e_principal;
-            FILE *arq = NULL;
+            FILE *arq = nullptr;
 
             u4 codigo;
             u2 versao_min;
@@ -60,5 +60,7 @@
             void exibir();
 
             void reset();
+
+            void deletar();
     };
 #endif

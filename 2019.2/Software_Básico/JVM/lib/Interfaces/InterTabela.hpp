@@ -14,12 +14,12 @@
             void erro(const u1 e_codigo);
 
         protected:
-            u2 tam = 0;
+            u2 *tam = nullptr;
 
         public:
             InterTabela ();
 
-            explicit InterTabela (u2 tam) : tam(tam) {};
+            explicit InterTabela (u2 *tam) : tam(tam) {};
 
             virtual void decodificar(FILE *arq) = 0;
 

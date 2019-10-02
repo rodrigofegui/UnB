@@ -13,7 +13,7 @@ ESTATICO_FLAGS = --platform=unix64 --enable=warning,style,performance,portabilit
 # Responsável pela análise dinâmica do programa
 DINAMICO = valgrind
 # Flags do analisador dinâmico
-DINAMICO_FLAGS = --tool=memcheck --leak-check=summary --show-leak-kinds=definite  --track-origins=yes -s
+DINAMICO_FLAGS = --tool=memcheck --leak-check=full --show-leak-kinds=all --track-origins=yes --track-origins=yes -s
 
 ###################
 # Manipuladores de arquivos
@@ -40,6 +40,7 @@ DESTAQUE = ************************************************
 modo = e
 # Arquivo a ser manipulado
 arqs = Referências/double_aritmetica.class
+# arqs = Referências/ControladorMidi.class
 
 ###################
 # Regras

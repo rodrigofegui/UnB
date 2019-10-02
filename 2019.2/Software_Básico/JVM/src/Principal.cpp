@@ -20,17 +20,19 @@ int main(int argc, char *argv[]){
     }
 
     if (e_leitura){
-        for (int cnt = 0; cnt < arqs_class.size(); cnt++){
-            arqs_class[cnt].exibir();
-            arqs_class[cnt].reset();
+        for (auto &arq_class : arqs_class){
+            arq_class.exibir();
+            arq_class.deletar();
         }
     } else{
         std::cout << "operando como interpretador" << std::endl;
 
-        for (int cnt = 0; cnt < arqs_class.size(); cnt++){
-            arqs_class[cnt].reset();
+        for (auto &arq_class : arqs_class){
+            arq_class.deletar();
         }
     }
+
+    std::vector<ArqClass>().swap(arqs_class);
 
     return 0;
 }

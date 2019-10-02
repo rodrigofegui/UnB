@@ -17,7 +17,7 @@
 
         public:
             TabSimbolo (){};
-            explicit TabSimbolo (u2 tam): InterTabela(tam) {};
+            explicit TabSimbolo (u2 *tam): InterTabela(tam) {};
 
             void decodificar(FILE *arq) override;
 

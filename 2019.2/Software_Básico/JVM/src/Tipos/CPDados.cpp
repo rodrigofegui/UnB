@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 #include <string>
 #include "../../lib/Tipos/CPDados.hpp"
@@ -11,9 +12,11 @@ void InfoClasse::decodificar(FILE *arq){
 void InfoClasse::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
 
+    std::cout << "CONSTANT_Class" << std::endl;
+
     std::cout << tabs + "Índice para o nome: ";
-    std::cout << this->ind_nome << std::endl;
-    std::cout << tabs + "Nome: " << std::endl;
+    std::cout << this->ind_nome<< std::endl << std::endl;
+    // std::cout << tabs + "Nome: " << std::endl;
 }
 
 
@@ -25,10 +28,12 @@ void InfoRefCampo::decodificar(FILE *arq){
 void InfoRefCampo::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
 
+    std::cout << "CONSTANT_Fieldref" << std::endl;
+
     std::cout << tabs + "Índice para a classe: ";
     std::cout << this->ind_classe << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
-    std::cout << this->ind_nome_tipo << std::endl;
+    std::cout << this->ind_nome_tipo << std::endl << std::endl;
 }
 
 
@@ -40,10 +45,12 @@ void InfoNomeTipo::decodificar(FILE *arq){
 void InfoNomeTipo::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
 
+    std::cout << "CONSTANT_NameAndType" << std::endl;
+
     std::cout << tabs + "Índice para o nome: ";
     std::cout << this->ind_nome << std::endl;
     std::cout << tabs + "Índice para o descritor: ";
-    std::cout << this->ind_descritor << std::endl;
+    std::cout << this->ind_descritor << std::endl << std::endl;
 }
 
 
@@ -63,16 +70,18 @@ void InfoUTF8::decodificar(FILE *arq){
 void InfoUTF8::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
 
+    std::cout << "CONSTANT_Utf8" << std::endl;
+
     std::cout << tabs + "Tamanho da string: ";
     std::cout << this->tam << std::endl;
     std::cout << tabs + "String: ";
     for (auto &letra : this->bytes)
         std::cout << letra;
-    std::cout << std::endl;
+    std::cout << std::endl << std::endl;
 }
 
 void InfoUTF8::deletar(){
-    this->bytes.clear();
+    std::vector<u1>().swap(this->bytes);
 }
 
 
@@ -84,10 +93,12 @@ void InfoRefMetodo::decodificar(FILE *arq){
 void InfoRefMetodo::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
 
+    std::cout << "CONSTANT_Methodref" << std::endl;
+
     std::cout << tabs + "Índice para a clase: ";
     std::cout << this->ind_classe << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
-    std::cout << this->ind_nome_tipo << std::endl;
+    std::cout << this->ind_nome_tipo << std::endl << std::endl;
 }
 
 
@@ -99,10 +110,12 @@ void InfoRefMetInterface::decodificar(FILE *arq){
 void InfoRefMetInterface::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
 
+    std::cout << "CONSTANT_InterfaceMethodref" << std::endl;
+
     std::cout << tabs + "Índice para a clase: ";
     std::cout << this->ind_classe << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
-    std::cout << this->ind_nome_tipo << std::endl;
+    std::cout << this->ind_nome_tipo << std::endl << std::endl;
 }
 
 
@@ -113,8 +126,10 @@ void InfoString::decodificar(FILE *arq){
 void InfoString::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
 
+    std::cout << "CONSTANT_String" << std::endl;
+
     std::cout << tabs + "Índice para a string: ";
-    std::cout << this->ind_string << std::endl;
+    std::cout << this->ind_string << std::endl << std::endl;
 }
 
 
@@ -125,8 +140,12 @@ void InfoInteiro::decodificar(FILE *arq){
 void InfoInteiro::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
 
-    std::cout << tabs + "Bytes: ";
-    std::cout << this->bytes << std::endl;
+    std::cout << "CONSTANT_Integer" << std::endl;
+
+    std::cout << tabs + "Bytes: 0x";
+    std::cout << std::setfill('0') << std::setw(4);
+    std::cout << std::hex << std::uppercase;
+    std::cout << this->bytes << std::dec << std::endl << std::endl;
 }
 
 
@@ -137,8 +156,12 @@ void InfoFloat::decodificar(FILE *arq){
 void InfoFloat::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
 
-    std::cout << tabs + "Bytes: ";
-    std::cout << this->bytes << std::endl;
+    std::cout << "CONSTANT_Float" << std::endl;
+
+    std::cout << tabs + "Bytes: 0x";
+    std::cout << std::setfill('0') << std::setw(4);
+    std::cout << std::hex << std::uppercase;
+    std::cout << this->bytes << std::dec << std::endl << std::endl;
 }
 
 
@@ -150,10 +173,13 @@ void InfoLong::decodificar(FILE *arq){
 void InfoLong::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
 
-    std::cout << tabs + "Bytes mais significativos: ";
-    std::cout << this->bytes_mais << std::endl;
-    std::cout << tabs + "Bytes menos significativos: ";
-    std::cout << this->bytes_menos << std::endl;
+    std::cout << "CONSTANT_Long" << std::endl;
+
+    std::cout << tabs + "Bytes mais significativos: 0x";
+    std::cout << std::setfill('0') << std::setw(8);
+    std::cout << std::hex << std::uppercase << this->bytes_mais << std::endl;
+    std::cout << tabs + "Bytes menos significativos: 0x";
+    std::cout << this->bytes_menos << std::dec << std::endl << std::endl;
 }
 
 
@@ -165,8 +191,11 @@ void InfoDouble::decodificar(FILE *arq){
 void InfoDouble::exibir(int qnt_tab){
     std::string tabs(qnt_tab, '\t');
 
-    std::cout << tabs + "Bytes mais significativos: ";
-    std::cout << this->bytes_mais << std::endl;
-    std::cout << tabs + "Bytes menos significativos: ";
-    std::cout << this->bytes_menos << std::endl;
+    std::cout << "CONSTANT_Double" << std::endl;
+
+    std::cout << tabs + "Bytes mais significativos: 0x";
+    std::cout << std::setfill('0') << std::setw(8);
+    std::cout << std::hex << std::uppercase << this->bytes_mais << std::endl;
+    std::cout << tabs + "Bytes menos significativos: 0x";
+    std::cout << this->bytes_menos << std::dec << std::endl << std::endl;
 }
