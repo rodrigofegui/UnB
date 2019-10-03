@@ -1,9 +1,9 @@
 #include <iostream>
 #include "../../lib/Tipos/CPInfo.hpp"
 
-void CPInfo::exibir(int qnt_tab){
+void CPInfo::exibir (u1 qnt_tabs){
     if (this->dados)
-        this->dados->exibir(qnt_tab);
+        this->dados->exibir(qnt_tabs);
     else
         std::cout << "Extensão de número largo" << std::endl;
 }

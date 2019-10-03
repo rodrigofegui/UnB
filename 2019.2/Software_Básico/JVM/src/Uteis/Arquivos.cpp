@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <iomanip>
 #include <iostream>
 #include <math.h>
 #include "../../lib/Uteis/Arquivos.hpp"
@@ -87,4 +88,14 @@ int get_padding(int num_max){
     }while(true);
 
     return padding;
+}
+
+void exibir_hex_2(u2 fonte){
+    std::cout << std::setfill('0') << std::setw(4);
+    std::cout << std::hex << std::uppercase << fonte << std::dec;
+}
+
+void exibir_hex_4(u4 fonte){
+    std::cout << std::setfill('0') << std::setw(8);
+    std::cout << std::hex << std::uppercase << fonte << std::dec;
 }

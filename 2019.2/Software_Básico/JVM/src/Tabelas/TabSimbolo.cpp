@@ -1,13 +1,14 @@
 #include <iomanip>
 #include <iostream>
-#include <string>
+#include <typeinfo>
 #include "../../lib/Tabelas/TabSimbolo.hpp"
 #include "../../lib/Tipos/CPDados.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
+#include "../../lib/Uteis/Flags_Tags.hpp"
 
 
 void TabSimbolo::decodificar(FILE *arq){
-    int tam = *(this->tam) - 1;
+    int tam = *this->tam;
     if (!tam) return;
 
     u1 temp, ignora = 0;
@@ -53,8 +54,8 @@ void TabSimbolo::decodificar(FILE *arq){
     }
 }
 
-void TabSimbolo::exibir(int qnt_tab){
-    std::string tabs(qnt_tab, '\t');
+void TabSimbolo::exibir (u1 qnt_tabs){
+    std::string tabs(qnt_tabs, '\t');
     int tam = *(this->tam) - 1;
 
     if (!tam){
@@ -71,7 +72,17 @@ void TabSimbolo::exibir(int qnt_tab){
         std::cout << std::setfill('0') << std::setw(padding) << cnt + 1;
         std::cout << "] ";
 
-        this->registros[cnt].exibir(qnt_tab + 1);
+        this->registros[cnt].exibir(qnt_tabs + 1);
+    }
+}
+
+std::string TabSimbolo::get_name (u2 ind_nome){
+    if (ind_nome >= this->registros.size()) return "";
+
+    InterCPDados *c_cpdados = this->registros[ind_nome].dados;
+
+    if (dynamic_cast<InfoUTF8*>(c_cpdados)){
+        return (dynamic_cast<InfoUTF8*>(c_cpdados))->get_utf8();
     }
 }
 

@@ -29,6 +29,8 @@ ArqClass* decodificar(FILE* arq_class){
 
     decodificar_tab_simbolos(arq_class, novo_class);
 
+    printf("Arquivo: 0x%X\n", ftell(arq_class));
+
     if (feof(arq_class))
         return novo_class;
 

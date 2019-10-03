@@ -1,7 +1,11 @@
 #include <stdio.h>
+#include <iomanip>
+#include <iostream>
 #include <stdlib.h>
 #include "../../lib/Interfaces/InterTabela.hpp"
 #include "../../lib/Uteis/Erros.hpp"
+#include "../../lib/Uteis/Arquivos.hpp"
+
 
 void InterTabela::erro(u1 e_codigo){
     printf("[ERRO] ");

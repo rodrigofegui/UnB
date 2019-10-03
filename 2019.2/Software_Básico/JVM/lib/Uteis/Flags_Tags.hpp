@@ -1,6 +1,8 @@
 #ifndef UTEIS_TAGS_FLAGS_HPP
     #define UTEIS_TAGS_FLAGS_HPP
 
+    #include "../Tipos/Basicos.hpp"
+
     #define V1_1 45
     #define V1_2 46
     #define V1_3 47
@@ -41,4 +43,5 @@
     #define FLG_ABS 0x0400
     #define FLG_STT 0x0800
 
+    void exibir_flag(u2 a_verificar);
 #endif

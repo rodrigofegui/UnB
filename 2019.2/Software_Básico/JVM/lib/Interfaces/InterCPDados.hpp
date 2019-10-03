@@ -15,7 +15,7 @@
 
             virtual void decodificar(FILE *arq) = 0;
 
-            virtual void exibir(int qnt_tabs) = 0;
+            virtual void exibir(u1 qnt_tabs) = 0;
 
             virtual void deletar() = 0;
     };

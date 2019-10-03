@@ -1,6 +1,7 @@
 #ifndef TIPOS_CP_DADOS_HPP
     #define TIPOS_CP_DADOS_HPP
 
+    #include <string>
     #include <vector>
     #include "../Interfaces/InterCPDados.hpp"
 
@@ -11,7 +12,7 @@
         public:
             explicit InfoClasse (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
-            void exibir(int qnt_tabs) override;
+            void exibir(u1 qnt_tabs) override;
             void deletar() override {};
     };
 
@@ -23,7 +24,7 @@
         public:
             explicit InfoRefCampo (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
-            void exibir(int qnt_tabs) override;
+            void exibir(u1 qnt_tabs) override;
             void deletar() override {};
     };
 
@@ -35,7 +36,7 @@
         public:
             explicit InfoNomeTipo (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
-            void exibir(int qnt_tabs) override;
+            void exibir(u1 qnt_tabs) override;
             void deletar() override {};
     };
 
@@ -47,8 +48,9 @@
         public:
             explicit InfoUTF8 (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
-            void exibir(int qnt_tabs) override;
+            void exibir(u1 qnt_tabs) override;
             void deletar() override;
+            std::string get_utf8 ();
     };
 
     class InfoRefMetodo : public InterCPDados {
@@ -59,7 +61,7 @@
         public:
             explicit InfoRefMetodo (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
-            void exibir(int qnt_tabs) override;
+            void exibir(u1 qnt_tabs) override;
             void deletar() override {};
     };
 
@@ -71,7 +73,7 @@
         public:
             explicit InfoRefMetInterface (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
-            void exibir(int qnt_tabs) override;
+            void exibir(u1 qnt_tabs) override;
             void deletar() override {};
     };
 
@@ -82,7 +84,7 @@
         public:
             explicit InfoString (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
-            void exibir(int qnt_tabs) override;
+            void exibir(u1 qnt_tabs) override;
             void deletar() override {};
     };
 
@@ -93,7 +95,7 @@
         public:
             explicit InfoInteiro (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
-            void exibir(int qnt_tabs) override;
+            void exibir(u1 qnt_tabs) override;
             void deletar() override {};
     };
 
@@ -104,7 +106,7 @@
         public:
             explicit InfoFloat (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
-            void exibir(int qnt_tabs) override;
+            void exibir(u1 qnt_tabs) override;
             void deletar() override {};
     };
 
@@ -116,7 +118,7 @@
         public:
             explicit InfoLong (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
-            void exibir(int qnt_tabs) override;
+            void exibir(u1 qnt_tabs) override;
             void deletar() override {};
     };
 
@@ -128,7 +130,7 @@
         public:
             explicit InfoDouble (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
-            void exibir(int qnt_tabs) override;
+            void exibir(u1 qnt_tabs) override;
             void deletar() override {};
     };
 #endif

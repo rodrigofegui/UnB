@@ -15,7 +15,7 @@
 
             explicit CPInfo (u1 tag): tag(tag) {};
 
-            void exibir (int qnt_tab);
+            void exibir (u1 qnt_tabs);
 
             void deletar ();
     };

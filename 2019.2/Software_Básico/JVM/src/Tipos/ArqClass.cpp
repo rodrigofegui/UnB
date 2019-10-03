@@ -1,7 +1,11 @@
+#include <iomanip>
+#include <iostream>
 #include "../../lib/Tipos/ArqClass.hpp"
 #include "../../lib/Tabelas/TabSimbolo.hpp"
+#include "../../lib/Tabelas/TabCampos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 #include "../../lib/Uteis/Erros.hpp"
+#include "../../lib/Uteis/Flags_Tags.hpp"
 
 ArqClass::ArqClass(){
     reset();
@@ -54,15 +58,15 @@ void ArqClass::reset(){
 }
 
 void ArqClass::erro(u1 e_codigo){
-    printf("[ERRO] ");
+    std::cout << "[ERRO] ";
 
     switch (e_codigo){
         case E_SEM_ARQ:
-            printf("Não há arquivo associado para este .class\n"); break;
+            std::cout << "Não há arquivo associado para este .class" << std::endl; break;
         case E_NAO_CLASS:
-            printf("Este arquivo .class o código mágico correto\n"); break;
+            std::cout << "Este arquivo .class o código mágico correto" << std::endl; break;
         default:
-            printf("Não especificado\n");
+            std::cout << "Não especificado" << std::endl;
     }
 
     this->reset();
@@ -72,35 +76,35 @@ void ArqClass::erro(u1 e_codigo){
 void ArqClass::exibir_versao_java(u2 versao){
     switch (versao){
         case V1_1:
-            printf("JDK 1.1\n"); break;
+            std::cout << "JDK 1.1" << std::endl; break;
         case V1_2:
-            printf("JDK 1.2\n"); break;
+            std::cout << "JDK 1.2" << std::endl; break;
         case V1_3:
-            printf("JDK 1.3\n"); break;
+            std::cout << "JDK 1.3" << std::endl; break;
         case V1_4:
-            printf("JDK 1.4\n"); break;
+            std::cout << "JDK 1.4" << std::endl; break;
         case V5:
-            printf("Java SE 5.0\n"); break;
+            std::cout << "Java SE 5.0" << std::endl; break;
         case V6:
-            printf("Java SE 6.0\n"); break;
+            std::cout << "Java SE 6.0" << std::endl; break;
         case V7:
-            printf("Java SE 7\n"); break;
+            std::cout << "Java SE 7" << std::endl; break;
         case V8:
-            printf("Java SE 8\n"); break;
+            std::cout << "Java SE 8" << std::endl; break;
         case V9:
-            printf("Java SE 9\n"); break;
+            std::cout << "Java SE 9" << std::endl; break;
         case V10:
-            printf("Java SE 10\n"); break;
+            std::cout << "Java SE 10" << std::endl; break;
         case V11:
-            printf("Java SE 11\n"); break;
+            std::cout << "Java SE 11" << std::endl; break;
         case V12:
-            printf("Java SE 12\n"); break;
+            std::cout << "Java SE 12" << std::endl; break;
         case V13:
-            printf("Java SE 13\n"); break;
+            std::cout << "Java SE 13" << std::endl; break;
         case V14:
-            printf("Java SE 14\n"); break;
+            std::cout << "Java SE 14" << std::endl; break;
         default:
-            printf("Sem expecificação\n");
+            std::cout << "Sem expecificação" << std::endl;
     }
 }
 
@@ -115,24 +119,73 @@ void ArqClass::decodificar(){
     ler_u2(this->arq, &this->versao_max, 1);
     ler_u2(this->arq, &this->tam_tab_simbolo, 1);
 
-    this->tab_simbolo = new TabSimbolo(&this->tam_tab_simbolo);
-    this->tab_simbolo->decodificar(this->arq);
+    if (this->tam_tab_simbolo){
+        this->tab_simbolo = new TabSimbolo(&this->tam_tab_simbolo);
+        this->tab_simbolo->decodificar(this->arq);
+    }
+
+    // std::cout << "Arquivo: ";
+    // exibir_hex_2(ftell(this->arq));
+
+    ler_u2(this->arq, &this->flag_acesso, 0);
+    ler_u2(this->arq, &this->class_atual, 0);
+    ler_u2(this->arq, &this->class_super, 0);
+    ler_u2(this->arq, &this->tam_tab_interfaces, 1);
+
+    if (this->tam_tab_interfaces){
+        // this->tab_interfaces = new
+    }
+
+    ler_u2(this->arq, &this->tam_tab_campos, 0);
+
+    if (this->tam_tab_campos){
+        this->tab_campos = new TabCampos(&this->tam_tab_campos);
+        this->tab_campos->decodificar(this->arq);
+    }
+
+    // ler_u2(this->arq, &this->tam_tab_metodos, 0);
+
+    // if (this->tam_tab_metodos){
+
+    // }
+
+    // ler_u2(this->arq, &this->tam_tab_atributos, 0);
+
+    // if (this->tam_tab_atributos){
+
+    // }
 }
 
 void ArqClass::exibir(){
-    printf("Código indentificador: 0x%08X\n", this->codigo);
+    std::cout << "Código indentificador: 0x";
+        exibir_hex_4(this->codigo);
+        std::cout << std::endl;
 
-    printf("Versão mínima compilador: ");
+    std::cout << "Versão mínima compilador: ";
         exibir_versao_java(this->versao_min);
-    printf("Versão máxima compilador: ");
+    std::cout << "Versão máxima compilador: ";
         exibir_versao_java(this->versao_max);
 
-    printf("Qnt. de entradas na tabela de símbolos: %d\n", this->tam_tab_simbolo);
-    this->tab_simbolo->exibir(1);
+    std::cout << "Qnt. de entradas na tabela de símbolos: " << this->tam_tab_simbolo << std::endl;
+    if (this->tab_simbolo) this->tab_simbolo->exibir(1);
+
+    std::cout << "Flag de acesso: ";
+        exibir_flag(this->flag_acesso);
+
+    std::cout << "Classe corrente: " << this->class_atual << std::endl;
+    std::cout << "Classe super: " << this->class_super << std::endl;
+
+    std::cout << "Qnt. de entradas na tabela de interfaces: " << this->tam_tab_interfaces << std::endl;
+    if (this->tab_interfaces) this->tab_interfaces->exibir(1);
+
+    std::cout << "Qnt. de entradas na tabela de campos: " << this->tam_tab_campos << std::endl;
+    if (this->tab_campos) this->tab_campos->exibir(this->tab_simbolo, 1);
 }
 
 void ArqClass::deletar(){
     this->tab_simbolo->deletar();
+
+    this->tab_campos->deletar();
 
     if (this->arq) fclose(this->arq);
 }

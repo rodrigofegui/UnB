@@ -21,9 +21,13 @@
 
             explicit InterTabela (u2 *tam) : tam(tam) {};
 
+            InterTabela (InterTabela *tab, u2 *tam);
+
             virtual void decodificar(FILE *arq) = 0;
 
-            virtual void exibir(int qnt_tab) = 0;
+            virtual void exibir (u1 qnt_tabs) = 0;
+
+            virtual void exibir (InterTabela *tab_simbolos, u1 qnt_tabs) = 0;
 
             virtual void deletar() = 0;
     };
