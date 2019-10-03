@@ -6,6 +6,8 @@
     #include "Basicos.hpp"
 
     class Campo {
+        private:
+            u1 e_metodo = 0;
         public:
             u2 flag_acesso = 0;
             u2 ind_nome = 0;
@@ -14,6 +16,8 @@
             InterTabela *tab_atributos = nullptr;
 
             Campo() {};
+
+            explicit Campo (u1 e_metodo): e_metodo(e_metodo) {};
 
             void decodificar(FILE *arq);
 

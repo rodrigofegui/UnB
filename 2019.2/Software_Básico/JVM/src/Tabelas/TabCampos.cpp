@@ -5,7 +5,7 @@
 
 void TabCampos::decodificar(FILE *arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){
-        Campo c_campo = Campo();
+        Campo c_campo = Campo(0);
 
         c_campo.decodificar(arq);
 
@@ -26,7 +26,7 @@ void TabCampos::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
 
     for (int cnt = 0; cnt < tam; cnt++){
         std::cout << tabs + "[";
-        std::cout << std::setfill('0') << std::setw(padding) << cnt + 1;
+        std::cout << std::setfill('0') << std::setw(padding) << cnt;
         std::cout << "] ";
 
         this->registros[cnt].exibir(tab_simbolos, qnt_tabs + 1);

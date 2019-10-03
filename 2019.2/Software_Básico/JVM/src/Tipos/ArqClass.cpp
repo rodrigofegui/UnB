@@ -3,6 +3,7 @@
 #include "../../lib/Tipos/ArqClass.hpp"
 #include "../../lib/Tabelas/TabSimbolo.hpp"
 #include "../../lib/Tabelas/TabCampos.hpp"
+#include "../../lib/Tabelas/TabMetodos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 #include "../../lib/Uteis/Erros.hpp"
 #include "../../lib/Uteis/Flags_Tags.hpp"
@@ -143,11 +144,12 @@ void ArqClass::decodificar(){
         this->tab_campos->decodificar(this->arq);
     }
 
-    // ler_u2(this->arq, &this->tam_tab_metodos, 0);
+    ler_u2(this->arq, &this->tam_tab_metodos, 0);
 
-    // if (this->tam_tab_metodos){
-
-    // }
+    if (this->tam_tab_metodos){
+        this->tab_metodos = new TabMetodos(&this->tam_tab_metodos);
+        this->tab_metodos->decodificar(this->arq);
+    }
 
     // ler_u2(this->arq, &this->tam_tab_atributos, 0);
 
@@ -180,6 +182,9 @@ void ArqClass::exibir(){
 
     std::cout << "Qnt. de entradas na tabela de campos: " << this->tam_tab_campos << std::endl;
     if (this->tab_campos) this->tab_campos->exibir(this->tab_simbolo, 1);
+
+    std::cout << "Qnt. de entradas na tabela de métodos: " << this->tam_tab_metodos << std::endl;
+    if (this->tab_metodos) this->tab_metodos->exibir(this->tab_simbolo, 1);
 }
 
 void ArqClass::deletar(){

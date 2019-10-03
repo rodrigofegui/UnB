@@ -2,7 +2,6 @@
     #define TABELA_CAMPOS_HPP
 
     #include "../Interfaces/InterTabela.hpp"
-    #include "../Tabelas/TabSimbolo.hpp"
     #include "../Tipos/Campo.hpp"
 
     class TabCampos : public InterTabela {

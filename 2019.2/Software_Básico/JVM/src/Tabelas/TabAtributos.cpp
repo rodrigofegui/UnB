@@ -3,9 +3,18 @@
 #include "../../lib/Tipos/Atributos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 
+TabAtributos::TabAtributos (u1 e_metodo, u2 *tam) : TabAtributos(tam){
+    this->e_metodo = e_metodo;
+}
+
 void TabAtributos::decodificar(FILE *arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){
-        AttrU2 *attrU2 = new AttrU2();
+        InterAtributo *attrU2;
+
+        if (this->e_metodo)
+            attrU2 = new AttrCode();
+        else
+            attrU2 = new AttrU2();
 
         attrU2->decodificar(arq);
 
@@ -21,8 +30,6 @@ void TabAtributos::exibir (u1 qnt_tabs){
         std::cout << tabs + "Não há itens na tabela de atributos" << std::endl;
         return;
     }
-
-    // u1 padding = get_padding(tam);
 
     for (int cnt = 0; cnt < tam; cnt++){
         this->registros[cnt]->exibir(qnt_tabs);
