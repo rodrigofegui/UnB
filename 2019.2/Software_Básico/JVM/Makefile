@@ -128,6 +128,7 @@ compilar: limpar_bin objetos
 
 
 executar: compilar
+	@clear
 	@echo "${DESTAQUE}"
 	@echo "Executando o arquivo:"
 	@echo "'$(EXECUTAVEL)'"

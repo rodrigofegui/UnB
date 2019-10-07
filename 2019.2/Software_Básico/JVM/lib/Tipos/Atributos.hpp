@@ -3,6 +3,9 @@
 
     #include <vector>
     #include "../Interfaces/InterAtributos.hpp"
+    #include "../Interfaces/InterTabela.hpp"
+    #include "../Tabelas/TabAtributos.hpp"
+    #include "../Tipos/Basicos.hpp"
 
     class AttrU1 : public InterAtributo {
         private:
@@ -11,11 +14,13 @@
         public:
             AttrU1() {};
 
+            explicit AttrU1 (const u2 ind_nome) : InterAtributo(ind_nome){};
+
             explicit AttrU1 (const u2 ind_nome, const u4 tam): InterAtributo(ind_nome, tam){};
 
-            void decodificar(FILE *arq);
+            void decodificar(FILE *arq) override;
 
-            void exibir(u1 qnt_tabs) override;
+            void exibir(InterTabela *tab_simbolos, u1 qnt_tabs) override;
 
             void deletar() override;
     };
@@ -26,13 +31,15 @@
 
             AttrU2() {};
 
+            explicit AttrU2 (const u2 ind_nome) : InterAtributo(ind_nome){};
+
             explicit AttrU2 (const u2 ind_nome, const u4 tam): InterAtributo(ind_nome, tam){};
 
-            void decodificar(FILE *arq);
+            void decodificar(FILE *arq) override;
 
-            void exibir(u1 qnt_tabs) override;
+            void exibir(InterTabela *tab_simbolos, u1 qnt_tabs) override;
 
-            void deletar() override {};
+            void deletar() override;
     };
 
     class AttrCode : public InterAtributo {
@@ -44,16 +51,21 @@
             u2 tam_tab_excessao = 0;
             // Excessao *tab_excessao;
             u2 tam_tab_atributos = 0;
-            InterAtributo *tab_atributos = nullptr;
+            TabAtributos *tab_atributos = nullptr;
+            InterTabela *tab_simbolos = nullptr;
 
         public:
             AttrCode() {};
 
+            explicit AttrCode (const u2 ind_nome) : InterAtributo(ind_nome){};
+
+            explicit AttrCode (InterTabela *tab, const u2 ind_nome);
+
             explicit AttrCode (const u2 ind_nome, const u4 tam): InterAtributo(ind_nome, tam){};
 
-            void decodificar(FILE *arq);
+            void decodificar(FILE *arq) override;
 
-            void exibir(u1 qnt_tabs) override;
+            void exibir(InterTabela *tab_simbolos, u1 qnt_tabs) override;
 
             void deletar() override;
     };
@@ -61,16 +73,19 @@
     class AttrLinhaNum : public InterAtributo {
         private:
             u2 tam_tab_valores = 0;
+            std::vector<InfoNumero> tab_valores;
 
         public:
             AttrLinhaNum() {};
 
+            explicit AttrLinhaNum (const u2 ind_nome) : InterAtributo(ind_nome){};
+
             explicit AttrLinhaNum (const u2 ind_nome, const u4 tam): InterAtributo(ind_nome, tam){};
 
-            void decodificar(FILE *arq);
+            void decodificar(FILE *arq) override;
 
-            void exibir(u1 qnt_tabs) override;
+            void exibir(InterTabela *tab_simbolos, u1 qnt_tabs) override;
 
-            void deletar() override {};
+            void deletar() override;
     };
 #endif

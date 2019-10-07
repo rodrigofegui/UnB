@@ -76,8 +76,12 @@ void TabSimbolo::exibir (u1 qnt_tabs){
     }
 }
 
-std::string TabSimbolo::get_name (u2 ind_nome){
-    if (ind_nome >= this->registros.size()) return "";
+std::string TabSimbolo::get_nome (u2 ind_nome){
+    if (!this->tam) return "";
+
+    if (ind_nome == 0 || (ind_nome > *this->tam)) return "";
+
+    ind_nome--;
 
     InterCPDados *c_cpdados = this->registros[ind_nome].dados;
 

@@ -15,6 +15,8 @@
 
     int get_padding(int num_max);
 
+    void exibir_hex(u1 fonte);
+
     void exibir_hex_2(u2 fonte);
 
     void exibir_hex_4(u4 fonte);

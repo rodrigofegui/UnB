@@ -6,15 +6,18 @@
 
     class TabAtributos : public InterTabela {
         private:
-            u1 e_metodo = 0;
             std::vector<InterAtributo *> registros;
+            InterTabela *tab_simbolos = nullptr;
+            u1 attr_code = 0;
 
         public:
             TabAtributos (){};
 
             explicit TabAtributos (u2 *tam): InterTabela(tam) {};
 
-            TabAtributos (u1 e_metodo, u2 *tam);
+            TabAtributos (InterTabela *tab, u2 *tam);
+
+            TabAtributos (InterTabela *tab, u2 *tam, u1 attr_code);
 
             void decodificar(FILE *arq) override;
 

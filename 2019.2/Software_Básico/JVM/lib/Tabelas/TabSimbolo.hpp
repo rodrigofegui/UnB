@@ -26,7 +26,7 @@
 
             void exibir (InterTabela *tab_simbolos, u1 qnt_tabs) override {};
 
-            std::string get_name (u2 ind_name);
+            std::string get_nome (u2 ind_name);
 
             void deletar () override;
     };

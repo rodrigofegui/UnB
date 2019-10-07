@@ -1,8 +1,16 @@
+#include <iomanip>
+#include <iostream>
 #include "../../lib/Tabelas/TabMetodos.hpp"
+#include "../../lib/Uteis/Arquivos.hpp"
+
+TabMetodos::TabMetodos(InterTabela *tab, u2 *tam): TabMetodos(tam) {
+    this->tab_simbolos = tab;
+}
 
 void TabMetodos::decodificar(FILE *arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){
-        Campo c_campo = Campo(1);
+        // std::cout << "Decodificando TabMetodos" << std::endl;
+        Campo c_campo(this->tab_simbolos);
 
         c_campo.decodificar(arq);
 
@@ -10,11 +18,28 @@ void TabMetodos::decodificar(FILE *arq){
     }
 }
 
-
 void TabMetodos::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
-    TabCampos::exibir(tab_simbolos, qnt_tabs);
+    std::string tabs(qnt_tabs, '\t');
+    int tam = *this->tam;
+
+    if (!tam){
+        std::cout << tabs + "Não há itens na tabela de métodos" << std::endl;
+        return;
+    }
+
+    u1 padding = get_padding(tam);
+
+    for (int cnt = 0; cnt < tam; cnt++){
+        std::cout << tabs + "[";
+        std::cout << std::setfill('0') << std::setw(padding) << cnt;
+        std::cout << "] ";
+
+        this->registros[cnt].exibir(qnt_tabs + 1);
+    }
 }
 
 void TabMetodos::deletar(){
-    TabCampos::deletar();
+    std::vector<Campo>().swap(this->registros);
+
+    delete this;
 }

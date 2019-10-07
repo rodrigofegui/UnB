@@ -64,7 +64,7 @@ void InfoUTF8::decodificar(FILE *arq){
         this->bytes.push_back(temp);
     }
 
-    this->bytes.push_back('\0');
+    // this->bytes.push_back('\0');
 }
 
 void InfoUTF8::exibir (u1 qnt_tabs){

@@ -125,9 +125,6 @@ void ArqClass::decodificar(){
         this->tab_simbolo->decodificar(this->arq);
     }
 
-    // std::cout << "Arquivo: ";
-    // exibir_hex_2(ftell(this->arq));
-
     ler_u2(this->arq, &this->flag_acesso, 0);
     ler_u2(this->arq, &this->class_atual, 0);
     ler_u2(this->arq, &this->class_super, 0);
@@ -140,14 +137,14 @@ void ArqClass::decodificar(){
     ler_u2(this->arq, &this->tam_tab_campos, 0);
 
     if (this->tam_tab_campos){
-        this->tab_campos = new TabCampos(&this->tam_tab_campos);
+        this->tab_campos = new TabCampos(this->tab_simbolo, &this->tam_tab_campos);
         this->tab_campos->decodificar(this->arq);
     }
 
     ler_u2(this->arq, &this->tam_tab_metodos, 0);
 
     if (this->tam_tab_metodos){
-        this->tab_metodos = new TabMetodos(&this->tam_tab_metodos);
+        this->tab_metodos = new TabMetodos(this->tab_simbolo, &this->tam_tab_metodos);
         this->tab_metodos->decodificar(this->arq);
     }
 

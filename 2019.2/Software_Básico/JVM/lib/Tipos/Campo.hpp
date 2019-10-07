@@ -7,7 +7,7 @@
 
     class Campo {
         private:
-            u1 e_metodo = 0;
+            InterTabela *tab_simbolos = nullptr;
         public:
             u2 flag_acesso = 0;
             u2 ind_nome = 0;
@@ -17,11 +17,11 @@
 
             Campo() {};
 
-            explicit Campo (u1 e_metodo): e_metodo(e_metodo) {};
+            explicit Campo (InterTabela *tab);
 
             void decodificar(FILE *arq);
 
-            void exibir (InterTabela *tab_simbolos, u1 qnt_tabs);
+            void exibir (u1 qnt_tabs);
 
             void deletar();
     };

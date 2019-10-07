@@ -18,4 +18,9 @@
     /** Código característico de um arquivo .class válido */
     #define COD_ARQ_CLASS 0xCAFEBABE
 
+    typedef struct info_num {
+        u2 pc_comeco;
+        u2 lin_num;
+    } InfoNumero;
+
 #endif

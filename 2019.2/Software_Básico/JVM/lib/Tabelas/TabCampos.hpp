@@ -6,12 +6,15 @@
 
     class TabCampos : public InterTabela {
         private:
+            InterTabela *tab_simbolos = nullptr;
             std::vector<Campo> registros;
 
         public:
             TabCampos (){};
 
             explicit TabCampos (u2 *tam): InterTabela(tam) {};
+
+            explicit TabCampos (InterTabela *tab, u2 *tam);
 
             void decodificar(FILE *arq) override;
 
