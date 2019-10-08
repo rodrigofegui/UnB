@@ -51,15 +51,11 @@ AttrCode::AttrCode (InterTabela *tab, const u2 ind_nome) : AttrCode(ind_nome){
 void AttrCode::decodificar (FILE *arq){
     u1 temp;
 
-    if (InterAtributo::flag_ler_tam == 1)
-        InterAtributo::flag_ler_tam = 2;
-
     InterAtributo::decodificar(arq);
-    InterAtributo::flag_ler_tam = 1;
 
-    ler_u2(arq, &this->max_pilha, 0);
-    ler_u2(arq, &this->max_locais, 0);
-    ler_u4(arq, &this->tam_codigo, 3);
+    ler_u2(arq, &this->max_pilha, InterAtributo::flag_0_p_1);
+    ler_u2(arq, &this->max_locais, InterAtributo::flag_0_p_1);
+    ler_u4(arq, &this->tam_codigo, InterAtributo::flag_3_p_1);
 
     for (int cnt = 0; cnt < this->tam_codigo; cnt++){
         ler_u1(arq, &temp);

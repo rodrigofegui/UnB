@@ -7,7 +7,10 @@
 
     class InterAtributo{
         public:
-            static u1 flag_ler_tam;
+            static u1 flag_0_p_1;
+            static u1 flag_0_p_2;
+            static u1 flag_2_p_1;
+            static u1 flag_3_p_1;
             u2 ind_nome = 0;
             u4 tam = 0;
 

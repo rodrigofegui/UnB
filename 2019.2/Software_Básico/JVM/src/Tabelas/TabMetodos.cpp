@@ -12,7 +12,7 @@ void TabMetodos::decodificar(FILE *arq){
         // std::cout << "Decodificando TabMetodos" << std::endl;
         Campo c_campo(this->tab_simbolos);
 
-        c_campo.decodificar(arq);
+        c_campo.decodificar(arq, cnt && 1);
 
         this->registros.push_back(c_campo);
     }

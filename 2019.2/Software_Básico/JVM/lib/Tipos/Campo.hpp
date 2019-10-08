@@ -21,6 +21,8 @@
 
             void decodificar(FILE *arq);
 
+            void decodificar(FILE *arq, u1 flag_leitura);
+
             void exibir (u1 qnt_tabs);
 
             void deletar();
