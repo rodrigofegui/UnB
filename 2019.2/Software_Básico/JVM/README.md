@@ -12,7 +12,7 @@ cd cppcheck/
 # Substituir pela mais recente
 git checkout 1.89
 make MATCHCOMPILER=yes FILESDIR=/usr/share/cppcheck HAVE_RULES=yes CXXFLAGS="-O2 -DNDEBUG -Wall -Wno-sign-compare -Wno-unused-function"
-sudo FILESDIR=/etc/cppcheck/ make install
+sudo FILESDIR=/usr/share/cppcheck make install
 # Testando se foi instalado
 cppcheck --version
 ```

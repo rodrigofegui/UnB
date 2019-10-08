@@ -189,5 +189,7 @@ void ArqClass::deletar(){
 
     this->tab_campos->deletar();
 
+    this->tab_metodos->deletar();
+
     if (this->arq) fclose(this->arq);
 }

@@ -61,7 +61,6 @@ void AttrCode::decodificar (FILE *arq){
         ler_u1(arq, &temp);
         this->codigo.push_back(temp);
     }
-    this->codigo.push_back('\0');
 
     ler_u2(arq, &this->tam_tab_excessao, 0);
 

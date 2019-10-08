@@ -21,19 +21,6 @@ void TabAtributos::decodificar(FILE *arq){
         InterAtributo *attr;
         u2 temp = 0;
 
-        if (!cnt){
-            InterAtributo::flag_0_p_1 = 0;
-            InterAtributo::flag_0_p_2 = 0;
-            InterAtributo::flag_2_p_1 = 2;
-            InterAtributo::flag_3_p_1 = 3;
-        } else {
-            std::cout << "trocou as flags" << std::endl;
-            InterAtributo::flag_0_p_1 = 1;
-            InterAtributo::flag_0_p_2 = 2;
-            InterAtributo::flag_2_p_1 = 3;
-            InterAtributo::flag_3_p_1 = 1;
-        }
-
         ler_u2(arq, &temp, InterAtributo::flag_0_p_1 || this->attr_code);
 
         if ((dynamic_cast<TabSimbolo*>(this->tab_simbolos)))
@@ -47,11 +34,6 @@ void TabAtributos::decodificar(FILE *arq){
             attr = new AttrLinhaNum(temp);
         else
             attr = new AttrU2(temp);
-
-        std::cout << "flag_0_p_1: " << InterAtributo::flag_0_p_1 << std::endl;
-        std::cout << "flag_0_p_2: " << InterAtributo::flag_0_p_2 << std::endl;
-        std::cout << "flag_2_p_1: " << InterAtributo::flag_2_p_1 << std::endl;
-        std::cout << "flag_3_p_1: " << InterAtributo::flag_3_p_1 << std::endl;
 
         attr->decodificar(arq);
 

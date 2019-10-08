@@ -46,7 +46,6 @@ void Campo::exibir (u1 qnt_tabs){
 }
 
 void Campo::deletar(){
-    tab_atributos->deletar();
-
-    delete this;
+    if (this->tab_atributos)
+        this->tab_atributos->deletar();
 }
