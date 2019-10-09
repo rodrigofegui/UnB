@@ -62,7 +62,16 @@ void AttrCode::decodificar (FILE *arq){
         this->codigo.push_back(temp);
     }
 
-    ler_u2(arq, &this->tam_tab_excessao, 0);
+    ler_u2(arq, &this->tam_tab_excessao, 1);
+
+    if (this->tam_tab_excessao){
+        for (int cnt =0; cnt < this->tam_tab_excessao; cnt++){
+            Excessao excessao;
+            excessao.decodificar(arq);
+
+            this->tab_excessao.push_back(excessao);
+        }
+    }
 
     ler_u2(arq, &this->tam_tab_atributos, 1);
 
@@ -90,6 +99,13 @@ void AttrCode::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
     }
 
     std::cout << tabs + "Tamanho da tabela de excessões: " << this->tam_tab_excessao << std::endl;
+
+    if (this->tam_tab_excessao)
+        std::cout << tabs + "\tIni.\tFim\tTrat.\tCatch" << std::endl;
+
+    for (auto &excessao : this->tab_excessao)
+        excessao.exibir(tab_simbolos, qnt_tabs + 1);
+
     std::cout << tabs + "Tamanho da tabela de atributos: " << this->tam_tab_atributos << std::endl;
 
     this->tab_atributos->exibir(qnt_tabs + 1);
@@ -97,6 +113,8 @@ void AttrCode::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
 
 void AttrCode::deletar(){
     std::vector<u1>().swap(this->codigo);
+
+    std::vector<Excessao>().swap(tab_excessao);
 
     if (this->tab_atributos)
         this->tab_atributos->deletar();
@@ -166,18 +184,19 @@ void AttrArqFonte::deletar(){
 
 
 void AttrSilenciado::decodificar (FILE *arq){
-    // InterAtributo::flag_2_p_1 = 0;
+    int temp = InterAtributo::flag_2_p_1;
+    InterAtributo::flag_2_p_1 = 1;
     InterAtributo::decodificar(arq);
+    InterAtributo::flag_2_p_1 = temp;
 
-    std::cout << "tam:" << this->tam << std::endl;
-
-    // fseek(arq, this->tam, SEEK_CUR);
+    fseek(arq, this->tam + 1, SEEK_CUR);
 }
 
 void AttrSilenciado::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
-    std::cout << "Não reconhecido" << std::endl;
+    std::cout << "Não reconhecido";
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(tab_simbolos))->get_nome(this->ind_nome) << std::endl;
 
     std::cout << tabs + "Índice para o nome: " << this->ind_nome << std::endl;
     std::cout << tabs + "Tamanho do atributo: " << this->tam << std::endl;

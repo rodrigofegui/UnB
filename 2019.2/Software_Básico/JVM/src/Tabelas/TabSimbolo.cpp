@@ -85,9 +85,14 @@ std::string TabSimbolo::get_nome (u2 ind_nome){
 
     InterCPDados *c_cpdados = this->registros[ind_nome].dados;
 
-    if (dynamic_cast<InfoUTF8*>(c_cpdados)){
+    if (dynamic_cast<InfoUTF8*>(c_cpdados))
         return (dynamic_cast<InfoUTF8*>(c_cpdados))->get_utf8();
+
+    if (dynamic_cast<InfoClasse*>(c_cpdados)){
+        return get_nome((dynamic_cast<InfoClasse*>(c_cpdados))->ind_nome);
     }
+
+    return "";
 }
 
 void TabSimbolo::deletar(){

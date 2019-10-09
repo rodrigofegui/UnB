@@ -26,6 +26,9 @@ void TabAtributos::decodificar(FILE *arq){
         if ((dynamic_cast<TabSimbolo*>(this->tab_simbolos)))
             nome = (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(temp);
 
+        std::cout << "Ind: " << temp << std::endl;
+        std::cout << "Nome: " << nome << std::endl;
+
         if (nome.empty()) continue;
 
         if (!nome.compare("Code"))

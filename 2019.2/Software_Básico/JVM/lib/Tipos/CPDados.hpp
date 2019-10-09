@@ -6,10 +6,9 @@
     #include "../Interfaces/InterCPDados.hpp"
 
     class InfoClasse : public InterCPDados {
-        private:
+        public:
             u2 ind_nome = 0;
 
-        public:
             explicit InfoClasse (InterTabela *tab): InterCPDados (tab) {};
             void decodificar(FILE *arq) override;
             void exibir(u1 qnt_tabs) override;

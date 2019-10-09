@@ -6,6 +6,7 @@
     #include "../Interfaces/InterTabela.hpp"
     #include "../Tabelas/TabAtributos.hpp"
     #include "../Tipos/Basicos.hpp"
+    #include "../Tipos/Excessao.hpp"
 
     class AttrU1 : public InterAtributo {
         private:
@@ -49,7 +50,7 @@
             u4 tam_codigo = 0;
             std::vector<u1> codigo;
             u2 tam_tab_excessao = 0;
-            // Excessao *tab_excessao;
+            std::vector<Excessao> tab_excessao;
             u2 tam_tab_atributos = 0;
             TabAtributos *tab_atributos = nullptr;
             InterTabela *tab_simbolos = nullptr;
