@@ -35,7 +35,8 @@ void InfoRefCampo::exibir (u1 qnt_tabs){
     std::cout << this->ind_classe;
     std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_classe) << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
-    std::cout << this->ind_nome_tipo << std::endl;
+    std::cout << this->ind_nome_tipo;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_nome_tipo) << std::endl;
 }
 
 
@@ -108,7 +109,8 @@ void InfoRefMetodo::exibir (u1 qnt_tabs){
     std::cout << this->ind_classe;
     std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_classe) << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
-    std::cout << this->ind_nome_tipo << std::endl;
+    std::cout << this->ind_nome_tipo;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_nome_tipo) << std::endl;
 }
 
 
@@ -126,7 +128,8 @@ void InfoRefMetInterface::exibir (u1 qnt_tabs){
     std::cout << this->ind_classe;
     std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_classe) << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
-    std::cout << this->ind_nome_tipo << std::endl;
+    std::cout << this->ind_nome_tipo;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_nome_tipo) << std::endl;
 }
 
 

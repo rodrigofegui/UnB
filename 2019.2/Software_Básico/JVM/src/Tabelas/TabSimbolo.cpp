@@ -94,6 +94,11 @@ std::string TabSimbolo::get_nome (u2 ind_nome){
         return get_nome((dynamic_cast<InfoClasse*>(c_cpdados))->ind_nome);
     }
 
+    if (dynamic_cast<InfoNomeTipo*>(c_cpdados)){
+        return get_nome((dynamic_cast<InfoNomeTipo*>(c_cpdados))->ind_nome)
+                + " : " + get_nome((dynamic_cast<InfoNomeTipo*>(c_cpdados))->ind_descritor);
+    }
+
     return "";
 }
 
