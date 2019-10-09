@@ -6,12 +6,12 @@
 
     class InterCPDados{
         protected:
-            InterTabela *tab = NULL;
+            InterTabela *tab_simbolos = nullptr;
 
         public:
             InterCPDados(){};
 
-            explicit InterCPDados (InterTabela *tab): tab(tab){};
+            explicit InterCPDados (InterTabela *tab): tab_simbolos(tab){};
 
             virtual void decodificar(FILE *arq) = 0;
 

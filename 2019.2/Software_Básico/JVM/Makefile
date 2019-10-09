@@ -42,8 +42,8 @@ modo = e
 # Arquivo a ser manipulado
 # arqs = Referências/double_aritmetica.class
 # arqs = Referências/ControladorMidi.class
-# arqs = Referências/ControladorEstoque.class
-arqs = Referências/Instrumento.class
+arqs = Referências/ControladorEstoque.class
+# arqs = Referências/Instrumento.class
 
 ###################
 # Regras

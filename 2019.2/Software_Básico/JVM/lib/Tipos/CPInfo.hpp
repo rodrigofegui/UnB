@@ -6,6 +6,7 @@
      *  @author Rodrigo F. Guimarães
      */
     #include "Basicos.hpp"
+    #include "../Interfaces/InterTabela.hpp"
     #include "../Interfaces/InterCPDados.hpp"
 
     class CPInfo{

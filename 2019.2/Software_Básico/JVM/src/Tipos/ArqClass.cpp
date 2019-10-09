@@ -178,16 +178,16 @@ void ArqClass::exibir(){
     std::cout << "Classe super: " << this->class_super << std::endl;
 
     std::cout << "Qnt. de entradas na tabela de interfaces: " << this->tam_tab_interfaces << std::endl;
-    // if (this->tab_interfaces) this->tab_interfaces->exibir(1);
+    if (this->tab_interfaces) this->tab_interfaces->exibir(1);
 
     std::cout << "Qnt. de entradas na tabela de campos: " << this->tam_tab_campos << std::endl;
-    // if (this->tab_campos) this->tab_campos->exibir(this->tab_simbolo, 1);
+    if (this->tab_campos) this->tab_campos->exibir(this->tab_simbolo, 1);
 
     std::cout << "Qnt. de entradas na tabela de métodos: " << this->tam_tab_metodos << std::endl;
-    // if (this->tab_metodos) this->tab_metodos->exibir(this->tab_simbolo, 1);
+    if (this->tab_metodos) this->tab_metodos->exibir(this->tab_simbolo, 1);
 
     std::cout << "Qnt. de entradas na tabela de atributos: " << this->tam_tab_atributos << std::endl;
-    // if (this->tab_atributos) this->tab_atributos->exibir(1);
+    if (this->tab_atributos) this->tab_atributos->exibir(1);
 }
 
 void ArqClass::deletar(){

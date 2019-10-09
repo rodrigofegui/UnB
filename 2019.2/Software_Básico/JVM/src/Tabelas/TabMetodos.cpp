@@ -34,8 +34,6 @@ void TabMetodos::decodificar(FILE *arq){
     InterAtributo::flag_0_p_2 = 2;
     InterAtributo::flag_2_p_1 = 1;
     InterAtributo::flag_3_p_1 = 1;
-
-    std::cout << "Acabou métodos" << std::endl;
 }
 
 void TabMetodos::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){

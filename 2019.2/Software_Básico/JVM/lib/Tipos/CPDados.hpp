@@ -4,6 +4,7 @@
     #include <string>
     #include <vector>
     #include "../Interfaces/InterCPDados.hpp"
+    #include "../Interfaces/InterTabela.hpp"
 
     class InfoClasse : public InterCPDados {
         public:

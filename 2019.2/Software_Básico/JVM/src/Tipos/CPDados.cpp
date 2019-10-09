@@ -1,6 +1,7 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
+#include "../../lib/Tabelas/TabSimbolo.hpp"
 #include "../../lib/Tipos/CPDados.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 
@@ -15,8 +16,8 @@ void InfoClasse::exibir (u1 qnt_tabs){
     std::cout << "CONSTANT_Class" << std::endl;
 
     std::cout << tabs + "Índice para o nome: ";
-    std::cout << this->ind_nome<< std::endl;
-    // std::cout << tabs + "Nome: " << std::endl;
+    std::cout << this->ind_nome;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_nome) << std::endl;
 }
 
 
@@ -31,7 +32,8 @@ void InfoRefCampo::exibir (u1 qnt_tabs){
     std::cout << "CONSTANT_Fieldref" << std::endl;
 
     std::cout << tabs + "Índice para a classe: ";
-    std::cout << this->ind_classe << std::endl;
+    std::cout << this->ind_classe;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_classe) << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
     std::cout << this->ind_nome_tipo << std::endl;
 }
@@ -48,9 +50,11 @@ void InfoNomeTipo::exibir (u1 qnt_tabs){
     std::cout << "CONSTANT_NameAndType" << std::endl;
 
     std::cout << tabs + "Índice para o nome: ";
-    std::cout << this->ind_nome << std::endl;
+    std::cout << this->ind_nome;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_nome) << std::endl;
     std::cout << tabs + "Índice para o descritor: ";
-    std::cout << this->ind_descritor << std::endl;
+    std::cout << this->ind_descritor;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_descritor) << std::endl;
 }
 
 
@@ -63,8 +67,6 @@ void InfoUTF8::decodificar(FILE *arq){
         ler_u1(arq, &temp);
         this->bytes.push_back(temp);
     }
-
-    // this->bytes.push_back('\0');
 }
 
 void InfoUTF8::exibir (u1 qnt_tabs){
@@ -75,6 +77,7 @@ void InfoUTF8::exibir (u1 qnt_tabs){
     std::cout << tabs + "Tamanho da string: ";
     std::cout << this->tam << std::endl;
     std::cout << tabs + "String: ";
+
     for (auto &letra : this->bytes)
         std::cout << letra;
     std::cout << std::endl;
@@ -102,7 +105,8 @@ void InfoRefMetodo::exibir (u1 qnt_tabs){
     std::cout << "CONSTANT_Methodref" << std::endl;
 
     std::cout << tabs + "Índice para a clase: ";
-    std::cout << this->ind_classe << std::endl;
+    std::cout << this->ind_classe;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_classe) << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
     std::cout << this->ind_nome_tipo << std::endl;
 }
@@ -119,7 +123,8 @@ void InfoRefMetInterface::exibir (u1 qnt_tabs){
     std::cout << "CONSTANT_InterfaceMethodref" << std::endl;
 
     std::cout << tabs + "Índice para a clase: ";
-    std::cout << this->ind_classe << std::endl;
+    std::cout << this->ind_classe;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_classe) << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
     std::cout << this->ind_nome_tipo << std::endl;
 }
@@ -135,7 +140,8 @@ void InfoString::exibir (u1 qnt_tabs){
     std::cout << "CONSTANT_String" << std::endl;
 
     std::cout << tabs + "Índice para a string: ";
-    std::cout << this->ind_string << std::endl;
+    std::cout << this->ind_string;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_string) << std::endl;
 }
 
 
