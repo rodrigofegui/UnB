@@ -29,3 +29,8 @@ sudo make install
 # Testando se foi instalado
 valgrind --version
 ```
+
+
+## A resolver
+Com o arquivo `CasosTestes/ControladorMidi.class`:
+- Tamanho do atributo `Code` do método `carregarBanco` está **16777228**; deveria ser **268**

@@ -6,40 +6,40 @@
 void exibir_flag(u2 a_verificar){
     char flag[100] = "\0";
 
-    if ((a_verificar & 0x000F) == FLG_PBC)
+    if (a_verificar & FLG_PBC)
         strcat(flag, "pública ");
 
-    if ((a_verificar & 0x000F) == FLG_PVD)
+    if (a_verificar & FLG_PVD)
         strcat(flag, "privada ");
 
-    if ((a_verificar & 0x000F) == FLG_PTD)
+    if (a_verificar & FLG_PTD)
         strcat(flag, "protegida ");
 
-    if ((a_verificar & 0x000F) == FLG_STC)
+    if (a_verificar & FLG_STC)
         strcat(flag, "estática ");
 
-    if ((a_verificar & 0x00F0) == FLG_FNL)
+    if (a_verificar & FLG_FNL)
         strcat(flag, "final ");
 
-    if ((a_verificar & 0x00F0) == FLG_SPR)
+    if (a_verificar & FLG_SPR)
         strcat(flag, "super ");
 
-    if ((a_verificar & 0x00F0) == FLG_VLT)
+    if (a_verificar & FLG_VLT)
         strcat(flag, "volátil ");
 
-    if ((a_verificar & 0x00F0) == FLG_TST)
+    if (a_verificar & FLG_TST)
         strcat(flag, "transiente ");
 
-    if ((a_verificar & 0x0F00) == FLG_NTV)
+    if (a_verificar & FLG_NTV)
         strcat(flag, "nativo ");
 
-    if ((a_verificar & 0x0F00) == FLG_ITF)
+    if (a_verificar & FLG_ITF)
         strcat(flag, "interface ");
 
-    if ((a_verificar & 0x0F00) == FLG_ABS)
+    if (a_verificar & FLG_ABS)
         strcat(flag, "abstrata ");
 
-    if ((a_verificar & 0x0F00) == FLG_STT)
+    if (a_verificar & FLG_STT)
         strcat(flag, "estrito ");
 
     if (!strlen(flag))

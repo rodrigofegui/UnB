@@ -8,7 +8,7 @@ bin/
 # Arquivos objeto
 *.o
 
-# Pasta auxilar na aprendizagem
+# Materiais auxiliares diversos
 Referências/*
 
 # Makefile

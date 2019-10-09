@@ -65,8 +65,6 @@ void TabSimbolo::exibir (u1 qnt_tabs){
         return;
     }
 
-    std::cout << tabs << this->registros.size() << " e " << *this->tam << std::endl;
-
     u1 padding = get_padding(tam);
 
     for (int cnt = 0; cnt < tam; cnt++){
