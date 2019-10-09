@@ -26,9 +26,9 @@ void TabSimbolo::decodificar(FILE *arq){
             case TAG_FLT:
                 c_dados.dados = new InfoFloat(this); break;
             case TAG_LNG:
-                c_dados.dados = new InfoLong(this); break;
+                c_dados.dados = new InfoLong(this); ignora = 1; break;
             case TAG_DBL:
-                c_dados.dados = new InfoDouble(this); break;
+                c_dados.dados = new InfoDouble(this); ignora = 1; break;
             case TAG_CLAS:
                 c_dados.dados = new InfoClasse(this); break;
             case TAG_STR:
@@ -41,16 +41,18 @@ void TabSimbolo::decodificar(FILE *arq){
                 c_dados.dados = new InfoRefMetInterface(this); break;
             case TAG_NOM_TIP:
                 c_dados.dados = new InfoNomeTipo(this); break;
-            default:
-                temp = 0;
         }
 
-        if (temp)
+        if (c_dados.dados)
             c_dados.dados->decodificar(arq);
-        else
-            c_dados.tag = temp;
 
         this->registros.push_back(c_dados);
+
+        if (ignora){
+            this->registros.push_back(CPInfo());
+            cnt++;
+            ignora = 0;
+        }
     }
 }
 
@@ -63,11 +65,11 @@ void TabSimbolo::exibir (u1 qnt_tabs){
         return;
     }
 
+    std::cout << tabs << this->registros.size() << " e " << *this->tam << std::endl;
+
     u1 padding = get_padding(tam);
 
     for (int cnt = 0; cnt < tam; cnt++){
-        u1 tag = this->registros[cnt].tag;
-
         std::cout << tabs + "[";
         std::cout << std::setfill('0') << std::setw(padding) << cnt + 1;
         std::cout << "] ";

@@ -10,8 +10,10 @@
 
     class CPInfo{
         public:
-            u1 tag;
+            u1 tag = 0;
             InterCPDados *dados = nullptr;
+
+            CPInfo (){};
 
             explicit CPInfo (u1 tag): tag(tag) {};
 
