@@ -32,8 +32,10 @@ void TabAtributos::decodificar(FILE *arq){
             attr = new AttrCode(this->tab_simbolos, temp);
         else if (!nome.compare("LineNumberTable"))
             attr = new AttrLinhaNum(temp);
+        else if (!nome.compare("SourceFile"))
+            attr = new AttrArqFonte(temp);
         else
-            attr = new AttrU2(temp);
+            attr = new AttrSilenciado(temp);
 
         attr->decodificar(arq);
 

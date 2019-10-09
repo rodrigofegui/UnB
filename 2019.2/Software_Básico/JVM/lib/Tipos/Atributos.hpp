@@ -88,4 +88,40 @@
 
             void deletar() override;
     };
+
+    class AttrArqFonte : public InterAtributo {
+        private:
+            u2 ind = 0;
+
+        public:
+            AttrArqFonte() {};
+
+            explicit AttrArqFonte (const u2 ind_nome) : InterAtributo(ind_nome){};
+
+            explicit AttrArqFonte (const u2 ind_nome, const u4 tam): InterAtributo(ind_nome, tam){};
+
+            void decodificar(FILE *arq) override;
+
+            void exibir(InterTabela *tab_simbolos, u1 qnt_tabs) override;
+
+            void deletar() override;
+    };
+
+    class AttrSilenciado : public InterAtributo {
+        private:
+            u2 ind = 0;
+
+        public:
+            AttrSilenciado() {};
+
+            explicit AttrSilenciado (const u2 ind_nome) : InterAtributo(ind_nome){};
+
+            explicit AttrSilenciado (const u2 ind_nome, const u4 tam): InterAtributo(ind_nome, tam){};
+
+            void decodificar(FILE *arq) override;
+
+            void exibir(InterTabela *tab_simbolos, u1 qnt_tabs) override;
+
+            void deletar() override;
+    };
 #endif

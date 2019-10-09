@@ -4,6 +4,7 @@
 #include "../../lib/Tabelas/TabSimbolo.hpp"
 #include "../../lib/Tabelas/TabCampos.hpp"
 #include "../../lib/Tabelas/TabMetodos.hpp"
+#include "../../lib/Tabelas/TabAtributos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 #include "../../lib/Uteis/Erros.hpp"
 #include "../../lib/Uteis/Flags_Tags.hpp"
@@ -148,11 +149,12 @@ void ArqClass::decodificar(){
         this->tab_metodos->decodificar(this->arq);
     }
 
-    // ler_u2(this->arq, &this->tam_tab_atributos, 0);
+    ler_u2(this->arq, &this->tam_tab_atributos, 1);
 
-    // if (this->tam_tab_atributos){
-
-    // }
+    if (this->tam_tab_atributos){
+        this->tab_atributos = new TabAtributos(this->tab_simbolo, &this->tam_tab_atributos);
+        this->tab_atributos->decodificar(this->arq);
+    }
 }
 
 void ArqClass::exibir(){
@@ -172,6 +174,7 @@ void ArqClass::exibir(){
         exibir_flag(this->flag_acesso);
 
     std::cout << "Classe corrente: " << this->class_atual << std::endl;
+
     std::cout << "Classe super: " << this->class_super << std::endl;
 
     std::cout << "Qnt. de entradas na tabela de interfaces: " << this->tam_tab_interfaces << std::endl;
@@ -182,14 +185,23 @@ void ArqClass::exibir(){
 
     std::cout << "Qnt. de entradas na tabela de métodos: " << this->tam_tab_metodos << std::endl;
     if (this->tab_metodos) this->tab_metodos->exibir(this->tab_simbolo, 1);
+
+    std::cout << "Qnt. de entradas na tabela de atributos: " << this->tam_tab_atributos << std::endl;
+    if (this->tab_atributos) this->tab_atributos->exibir(1);
 }
 
 void ArqClass::deletar(){
-    this->tab_simbolo->deletar();
+    if (this->tab_simbolo)
+        this->tab_simbolo->deletar();
 
-    this->tab_campos->deletar();
+    if (this->tab_campos)
+        this->tab_campos->deletar();
 
-    this->tab_metodos->deletar();
+    if (this->tab_metodos)
+        this->tab_metodos->deletar();
+
+    if (this->tab_atributos)
+        this->tab_atributos->deletar();
 
     if (this->arq) fclose(this->arq);
 }

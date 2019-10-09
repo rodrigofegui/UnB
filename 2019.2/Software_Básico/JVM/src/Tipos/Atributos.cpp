@@ -75,7 +75,7 @@ void AttrCode::decodificar (FILE *arq){
 void AttrCode::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
-    std::cout << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_nome) << std::endl;
+    std::cout << "Code" << std::endl;
 
     std::cout << tabs + "Índice para o nome: " << this->ind_nome << std::endl;
     std::cout << tabs + "Tamanho do atributo: " << this->tam << std::endl;
@@ -123,7 +123,7 @@ void AttrLinhaNum::decodificar (FILE *arq){
 void AttrLinhaNum::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
-    std::cout << (dynamic_cast<TabSimbolo*>(tab_simbolos))->get_nome(this->ind_nome) << std::endl;
+    std::cout << "LineNumberTable" << std::endl;
 
     std::cout << tabs + "Índice para o nome: " << this->ind_nome << std::endl;
     std::cout << tabs + "Tamanho do atributo: " << this->tam << std::endl;
@@ -132,12 +132,57 @@ void AttrLinhaNum::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
     for (auto &valores : this->tab_valores){
         std::cout << tabs + '\t';
         std::cout << "Vale " << valores.lin_num;
-        std::cout << " depois da linha " << valores.pc_comeco <<std::endl;
+        std::cout << " após a linha " << valores.pc_comeco <<std::endl;
     }
 }
 
 void AttrLinhaNum::deletar (){
     std::vector<InfoNumero>().swap(tab_valores);
 
+    InterAtributo::deletar();
+}
+
+
+void AttrArqFonte::decodificar (FILE *arq){
+    InterAtributo::decodificar(arq);
+
+    ler_u2(arq, &this->ind, 1);
+}
+
+void AttrArqFonte::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
+    std::string tabs(qnt_tabs, '\t');
+
+    std::cout << "SourceFile" << std::endl;
+
+    std::cout << tabs + "Índice para o nome: " << this->ind_nome << std::endl;
+    std::cout << tabs + "Tamanho do atributo: " << this->tam << std::endl;
+    std::cout << tabs + "Índice para o nome do arquivo-fonte: " << this->ind;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(tab_simbolos))->get_nome(this->ind) << std::endl;
+}
+
+void AttrArqFonte::deletar(){
+    InterAtributo::deletar();
+}
+
+
+void AttrSilenciado::decodificar (FILE *arq){
+    // InterAtributo::flag_2_p_1 = 0;
+    InterAtributo::decodificar(arq);
+
+    std::cout << "tam:" << this->tam << std::endl;
+
+    // fseek(arq, this->tam, SEEK_CUR);
+}
+
+void AttrSilenciado::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
+    std::string tabs(qnt_tabs, '\t');
+
+    std::cout << "Não reconhecido" << std::endl;
+
+    std::cout << tabs + "Índice para o nome: " << this->ind_nome << std::endl;
+    std::cout << tabs + "Tamanho do atributo: " << this->tam << std::endl;
+}
+
+void AttrSilenciado::deletar(){
     InterAtributo::deletar();
 }

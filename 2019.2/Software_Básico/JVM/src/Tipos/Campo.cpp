@@ -38,7 +38,8 @@ void Campo::exibir (u1 qnt_tabs){
     std::cout << tabs + "Flag de acesso: ";
         exibir_flag(this->flag_acesso);
     std::cout << tabs + "Índice para o nome: " << this->ind_nome << std::endl;
-    std::cout << tabs + "Índice para o descritor: " << this->ind_descritor << std::endl;
+    std::cout << tabs + "Índice para o descritor: " << this->ind_descritor;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_descritor) << std::endl;
     std::cout << tabs + "Qnt. de entradas na tabela de atributos: " << this->tam_tab_atributos << std::endl;
 
     if (this->tab_atributos)
