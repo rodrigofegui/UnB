@@ -132,7 +132,7 @@ void ArqClass::decodificar(){
     ler_u2(this->arq, &this->tam_tab_interfaces, 1);
 
     if (this->tam_tab_interfaces){
-        // this->tab_interfaces = new
+        // A DESENVOLVER
     }
 
     ler_u2(this->arq, &this->tam_tab_campos, 1);

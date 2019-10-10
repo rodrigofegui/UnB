@@ -9,7 +9,6 @@ TabCampos::TabCampos(InterTabela *tab, u2 *tam): TabCampos(tam) {
 
 void TabCampos::decodificar(FILE *arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){
-        // std::cout << "Decodificando TabCampos" << std::endl;
         Campo c_campo(this->tab_simbolos);
 
         c_campo.decodificar(arq);

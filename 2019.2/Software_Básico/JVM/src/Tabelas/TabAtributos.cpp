@@ -15,7 +15,6 @@ TabAtributos::TabAtributos (InterTabela *tab, u2 *tam, u1 attr_code) : TabAtribu
 }
 
 void TabAtributos::decodificar(FILE *arq){
-    // std::cout << "veio decifrar TabA" << std::endl;
     for (int cnt = 0; cnt < *this->tam; cnt++){
         std::string nome("");
         InterAtributo *attr;

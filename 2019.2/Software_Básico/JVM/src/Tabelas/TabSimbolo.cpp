@@ -53,11 +53,7 @@ void TabSimbolo::decodificar(FILE *arq){
             cnt++;
             ignora = 0;
         }
-
-        // printf("\nAcabou símbolo [%d]: 0x%04X\n", cnt, (unsigned int)ftell(arq));
     }
-
-    // printf("\nAcabou tabela de símbolos: 0x%04X\n", (unsigned int)ftell(arq));
 }
 
 void TabSimbolo::exibir (u1 qnt_tabs){
