@@ -15,24 +15,24 @@
      */
     class ArqClass {
         private:
-            u1 e_principal;
+            u1 e_principal = 0;
             FILE *arq = nullptr;
 
-            u4 codigo;
-            u2 versao_min;
-            u2 versao_max;
-            u2 tam_tab_simbolo;
+            u4 codigo = 0;
+            u2 versao_min = 0;
+            u2 versao_max = 0;
+            u2 tam_tab_simbolo = 0;
             InterTabela *tab_simbolo = nullptr;
-            u2 flag_acesso;
-            u2 class_atual;
-            u2 class_super;
-            u2 tam_tab_interfaces;
+            u2 flag_acesso = 0;
+            u2 class_atual = 0;
+            u2 class_super = 0;
+            u2 tam_tab_interfaces = 0;
             InterTabela *tab_interfaces = nullptr;
-            u2 tam_tab_campos;
+            u2 tam_tab_campos = 0;
             InterTabela *tab_campos = nullptr;
-            u2 tam_tab_metodos;
+            u2 tam_tab_metodos = 0;
             InterTabela *tab_metodos = nullptr;
-            u2 tam_tab_atributos;
+            u2 tam_tab_atributos = 0;
             InterTabela *tab_atributos = nullptr;
 
             void check_valido();

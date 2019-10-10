@@ -17,10 +17,10 @@ InterAtributo::InterAtributo(const u2 ind_nome, const u4 tam) : InterAtributo(in
 
 void InterAtributo::decodificar (FILE *arq){
     if (!this->ind_nome)
-        ler_u2(arq, &this->ind_nome, InterAtributo::flag_0_p_1);
+        ler_u2(arq, &this->ind_nome, 1);
 
     if (!this->tam)
-        ler_u4(arq, &this->tam, InterAtributo::flag_2_p_1);
+        ler_u4(arq, &this->tam, 1);
 
 }
 

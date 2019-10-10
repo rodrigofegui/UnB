@@ -11,19 +11,19 @@ Campo::Campo (InterTabela *tab) : Campo(){
 }
 
 void Campo::decodificar(FILE *arq){
-    decodificar(arq, 0);
+    decodificar(arq, 1);
 }
 
 void Campo::decodificar(FILE *arq, u1 flag_leitura){
     this->tam_tab_atributos = 0;
 
-    ler_u2(arq, &this->flag_acesso, flag_leitura);
-    ler_u2(arq, &this->ind_nome, flag_leitura);
-    ler_u2(arq, &this->ind_descritor, flag_leitura);
-    ler_u2(arq, &this->tam_tab_atributos, flag_leitura);
+    ler_u2(arq, &this->flag_acesso, 1);
+    ler_u2(arq, &this->ind_nome, 1);
+    ler_u2(arq, &this->ind_descritor, 1);
+    ler_u2(arq, &this->tam_tab_atributos, 1);
 
     if(this->tam_tab_atributos){
-        this->tab_atributos = new TabAtributos(this->tab_simbolos, &this->tam_tab_atributos, flag_leitura);
+        this->tab_atributos = new TabAtributos(this->tab_simbolos, &this->tam_tab_atributos, 1);
         this->tab_atributos->decodificar(arq);
     }
 }

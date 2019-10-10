@@ -10,30 +10,30 @@ TabMetodos::TabMetodos(InterTabela *tab, u2 *tam): TabMetodos(tam) {
 
 void TabMetodos::decodificar(FILE *arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){
-        if (cnt == 1){
-            InterAtributo::flag_0_p_1 = 1;
-            InterAtributo::flag_0_p_2 = 2;
-            InterAtributo::flag_2_p_1 = 1;
-            InterAtributo::flag_3_p_1 = 1;
+        // if (cnt == 1){
+        //     InterAtributo::flag_0_p_1 = 1;
+        //     InterAtributo::flag_0_p_2 = 2;
+        //     InterAtributo::flag_2_p_1 = 1;
+        //     InterAtributo::flag_3_p_1 = 1;
 
-        } else {
-            InterAtributo::flag_0_p_1 = 0;
-            InterAtributo::flag_0_p_2 = 0;
-            InterAtributo::flag_2_p_1 = 2;
-            InterAtributo::flag_3_p_1 = 3;
-        }
+        // } else {
+        //     InterAtributo::flag_0_p_1 = 0;
+        //     InterAtributo::flag_0_p_2 = 0;
+        //     InterAtributo::flag_2_p_1 = 2;
+        //     InterAtributo::flag_3_p_1 = 3;
+        // }
 
         Campo c_campo(this->tab_simbolos);
 
-        c_campo.decodificar(arq, InterAtributo::flag_0_p_1);
+        c_campo.decodificar(arq);
 
         this->registros.push_back(c_campo);
     }
 
-    InterAtributo::flag_0_p_1 = 1;
-    InterAtributo::flag_0_p_2 = 2;
-    InterAtributo::flag_2_p_1 = 1;
-    InterAtributo::flag_3_p_1 = 1;
+    // InterAtributo::flag_0_p_1 = 1;
+    // InterAtributo::flag_0_p_2 = 2;
+    // InterAtributo::flag_2_p_1 = 1;
+    // InterAtributo::flag_3_p_1 = 1;
 }
 
 void TabMetodos::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){

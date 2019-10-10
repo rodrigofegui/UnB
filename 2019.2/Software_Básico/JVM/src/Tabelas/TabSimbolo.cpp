@@ -13,7 +13,7 @@ void TabSimbolo::decodificar(FILE *arq){
 
     u1 temp, ignora = 0;
 
-    for (int cnt = 0; cnt < tam; cnt++){
+    for (int cnt = 0; cnt < tam - 1; cnt++){
         ler_u1(arq, &temp);
 
         CPInfo c_dados(temp);
@@ -53,7 +53,11 @@ void TabSimbolo::decodificar(FILE *arq){
             cnt++;
             ignora = 0;
         }
+
+        // printf("\nAcabou símbolo [%d]: 0x%04X\n", cnt, (unsigned int)ftell(arq));
     }
+
+    // printf("\nAcabou tabela de símbolos: 0x%04X\n", (unsigned int)ftell(arq));
 }
 
 void TabSimbolo::exibir (u1 qnt_tabs){

@@ -21,7 +21,7 @@ void TabAtributos::decodificar(FILE *arq){
         InterAtributo *attr;
         u2 temp = 0;
 
-        ler_u2(arq, &temp, InterAtributo::flag_0_p_1 || this->attr_code);
+        ler_u2(arq, &temp, 1);
 
         if ((dynamic_cast<TabSimbolo*>(this->tab_simbolos)))
             nome = (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(temp);

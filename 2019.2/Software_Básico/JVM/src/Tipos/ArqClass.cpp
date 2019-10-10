@@ -126,23 +126,23 @@ void ArqClass::decodificar(){
         this->tab_simbolo->decodificar(this->arq);
     }
 
-    ler_u2(this->arq, &this->flag_acesso, 0);
-    ler_u2(this->arq, &this->class_atual, 0);
-    ler_u2(this->arq, &this->class_super, 0);
+    ler_u2(this->arq, &this->flag_acesso, 1);
+    ler_u2(this->arq, &this->class_atual, 1);
+    ler_u2(this->arq, &this->class_super, 1);
     ler_u2(this->arq, &this->tam_tab_interfaces, 1);
 
     if (this->tam_tab_interfaces){
         // this->tab_interfaces = new
     }
 
-    ler_u2(this->arq, &this->tam_tab_campos, 0);
+    ler_u2(this->arq, &this->tam_tab_campos, 1);
 
     if (this->tam_tab_campos){
         this->tab_campos = new TabCampos(this->tab_simbolo, &this->tam_tab_campos);
         this->tab_campos->decodificar(this->arq);
     }
 
-    ler_u2(this->arq, &this->tam_tab_metodos, 0);
+    ler_u2(this->arq, &this->tam_tab_metodos, 1);
 
     if (this->tam_tab_metodos){
         this->tab_metodos = new TabMetodos(this->tab_simbolo, &this->tam_tab_metodos);

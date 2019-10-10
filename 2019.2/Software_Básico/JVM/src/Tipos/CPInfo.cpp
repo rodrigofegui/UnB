@@ -5,7 +5,7 @@ void CPInfo::exibir (u1 qnt_tabs){
     if (this->dados)
         this->dados->exibir(qnt_tabs);
     else
-        std::cout << "Extensão de número largo" << std::endl << std::endl;
+        std::cout << "Extensão de número largo" << std::endl;
 }
 
 void CPInfo::deletar(){

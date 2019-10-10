@@ -53,9 +53,9 @@ void AttrCode::decodificar (FILE *arq){
 
     InterAtributo::decodificar(arq);
 
-    ler_u2(arq, &this->max_pilha, InterAtributo::flag_0_p_1);
-    ler_u2(arq, &this->max_locais, InterAtributo::flag_0_p_1);
-    ler_u4(arq, &this->tam_codigo, InterAtributo::flag_3_p_1);
+    ler_u2(arq, &this->max_pilha, 1);
+    ler_u2(arq, &this->max_locais, 1);
+    ler_u4(arq, &this->tam_codigo, 1);
 
     for (int cnt = 0; cnt < this->tam_codigo; cnt++){
         ler_u1(arq, &temp);
@@ -189,7 +189,7 @@ void AttrSilenciado::decodificar (FILE *arq){
     InterAtributo::decodificar(arq);
     InterAtributo::flag_2_p_1 = temp;
 
-    fseek(arq, this->tam + 1, SEEK_CUR);
+    fseek(arq, this->tam, SEEK_CUR);
 }
 
 void AttrSilenciado::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
