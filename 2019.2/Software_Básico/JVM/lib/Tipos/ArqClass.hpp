@@ -5,19 +5,23 @@
      *  @file   ArqClass.hpp
      *  @author Rodrigo F. Guimarães
      */
-    #include <stdio.h>
+    #include <string>
     #include "../Interfaces/InterTabela.hpp"
-    #include "Basicos.hpp"
 
     /**
      *  @class ArqClass
-     *  Arquivo .class a ser manipulado
+     *  Representação de um arquivo .class
      */
     class ArqClass {
         private:
-            u1 e_principal = 0;
+            /*  Controle do arquivo .class original */
+            char *nome_arq;
             FILE *arq = nullptr;
 
+            /*  Flag sobre a existência de um método <main> no arquivo */
+            u1 tem_main = 0;
+
+            /*  Estrutura de um arquivo .class */
             u4 codigo = 0;
             u2 versao_min = 0;
             u2 versao_max = 0;
@@ -35,32 +39,42 @@
             u2 tam_tab_atributos = 0;
             InterTabela *tab_atributos = nullptr;
 
-            void check_valido();
+            /*  Verifica se o arquivo conectado é válido */
+            void check_valido ();
 
-            void erro(const u1 e_codigo);
+            void erro (const u1 e_codigo);
 
-            void exibir_versao_java(u2 versao);
+            std::string get_versao_java (u2 versao);
 
         public:
             /*  Construtor padrão */
             ArqClass ();
 
-            /** Construtor sabendo o arquivo fonte
+            /**
+             *  Construtor com o conhecimento prévio do arquivo .class em si
              *  @param arq Arquivo .class a ser lido
              */
             explicit ArqClass (FILE *arq);
 
-            /** Construtor sabendo o arquivo fonte
+            /**
+             *  Construtor com o conhecimento prévio do arquivo .class indiretamente
              *  @param nome_arq Nome do arquivo .class a ser lido
              */
             explicit ArqClass (const char *nome_arq);
 
-            void decodificar();
+            /**
+             *  Decodificador do arquivo binário .class
+             */
+            void decodificar ();
 
-            void exibir();
+            /**
+             *  Exibição do arquivo .class na saída padrão
+             */
+            void exibir ();
 
-            void reset();
-
-            void deletar();
+            /**
+             *  Destrutor do arquivo .class e suas dependências
+             */
+            void deletar ();
     };
 #endif

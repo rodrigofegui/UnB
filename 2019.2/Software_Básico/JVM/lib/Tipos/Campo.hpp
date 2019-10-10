@@ -1,30 +1,56 @@
 #ifndef TIPOS_CAMPO_HPP
     #define TIPOS_CAMPO_HPP
 
+    /**
+     *  @file   Campo.hpp
+     *  @author Rodrigo F. Guimarães
+     */
     #include <vector>
     #include "../Interfaces/InterTabela.hpp"
-    #include "Basicos.hpp"
 
+    /**
+     *  @class Campo
+     *  Campo presente tanto na tabela de campos quanto na de métodos
+     */
     class Campo {
         private:
+            /*  Tabela de símbolos que está vinculado */
             InterTabela *tab_simbolos = nullptr;
+
         public:
+            /*  Estrutura de um campo */
             u2 flag_acesso = 0;
             u2 ind_nome = 0;
             u2 ind_descritor = 0;
             u2 tam_tab_atributos = 0;
             InterTabela *tab_atributos = nullptr;
 
-            Campo() {};
+            /*  Construtor padrão */
+            Campo (){};
 
-            explicit Campo (InterTabela *tab);
+            /**
+             *  Construtor com o conhecimento prévio da tabela de símbolos que está
+             *  vinculado
+             *  @param tab_simbolos Tabela de símbolos que está vinculado
+             */
+            explicit Campo (InterTabela *tab_simbolos);
 
-            void decodificar(FILE *arq);
+            /**
+             *  Decodificador do arquivo binário .class para um campo, extraindo todos os
+             *  seus dados específicos, além de seus atributos
+             *  @param arq Arquivo .class sob análise
+             */
+            void decodificar (FILE *arq);
 
-            void decodificar(FILE *arq, u1 flag_leitura);
-
+            /**
+             *  Exibição de um campo na saída padrão, com controle de tabulação
+             *  @param qnt_tabs Quantidade de TABs
+             */
             void exibir (u1 qnt_tabs);
 
-            void deletar();
+            /**
+             *  Destrutor de um campo e suas dependências
+             */
+            void deletar ();
     };
 #endif
