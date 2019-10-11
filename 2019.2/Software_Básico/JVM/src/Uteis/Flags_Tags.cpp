@@ -1,6 +1,7 @@
 #include <iostream>
-#include "../../lib/Uteis/Flags_Tags.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
+#include "../../lib/Uteis/Flags_Tags.hpp"
+
 
 std::string get_flag(u2 a_verificar){
     std::string flag;

@@ -3,7 +3,7 @@
 #include "../../lib/Uteis/Arquivos.hpp"
 
 
-InterAtributo::InterAtributo(const u2 ind_nome): InterAtributo(){
+InterAtributo::InterAtributo (const u2 ind_nome): InterAtributo(){
     this->ind_nome = ind_nome;
 };
 
@@ -16,6 +16,6 @@ void InterAtributo::decodificar (FILE *arq){
 
 }
 
-void InterAtributo::deletar(){
+void InterAtributo::deletar (){
     delete this;
 }

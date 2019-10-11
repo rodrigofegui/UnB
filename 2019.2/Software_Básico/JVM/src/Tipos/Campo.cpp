@@ -1,10 +1,10 @@
 #include <iostream>
-#include <string>
-#include "../../lib/Tabelas/TabSimbolo.hpp"
 #include "../../lib/Tabelas/TabAtributos.hpp"
+#include "../../lib/Tabelas/TabSimbolo.hpp"
 #include "../../lib/Tipos/Campo.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 #include "../../lib/Uteis/Flags_Tags.hpp"
+
 
 Campo::Campo (InterTabela *tab_simbolos) : Campo(){
     this->tab_simbolos = tab_simbolos;

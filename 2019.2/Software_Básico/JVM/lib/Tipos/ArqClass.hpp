@@ -14,14 +14,14 @@
      */
     class ArqClass {
         private:
-            /*  Controle do arquivo .class original */
+            /** Controle do arquivo .class original */
             char *nome_arq;
             FILE *arq = nullptr;
 
-            /*  Flag sobre a existência de um método <main> no arquivo */
+            /** Flag sobre a existência de um método <main> no arquivo */
             u1 tem_main = 0;
 
-            /*  Estrutura de um arquivo .class */
+            /** Estrutura de um arquivo .class */
             u4 codigo = 0;
             u2 versao_min = 0;
             u2 versao_max = 0;
@@ -39,7 +39,7 @@
             u2 tam_tab_atributos = 0;
             InterTabela *tab_atributos = nullptr;
 
-            /*  Verifica se o arquivo conectado é válido */
+            /** Verifica se o arquivo conectado é válido */
             void check_valido ();
 
             void erro (const u1 e_codigo);
@@ -47,7 +47,7 @@
             std::string get_versao_java (u2 versao);
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             ArqClass (){};
 
             /**

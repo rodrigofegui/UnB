@@ -12,7 +12,7 @@
     #include "Status.hpp"
     #include "../Tipos/Basicos.hpp"
 
-    /*  Controles dos parâmetros */
+    /** Controles dos parâmetros */
     #define DELIMITADOR_ARGS    ","
     #define TIPO_ARQ_ACEITO     ".class"
 

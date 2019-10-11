@@ -16,11 +16,11 @@
      */
     class TabSimbolo : public InterTabela {
         private:
-            /*  Conteúdo da tabela em si */
+            /** Conteúdo da tabela em si */
             std::vector<InterCPDado*> registros;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             TabSimbolo (){};
 
             /**

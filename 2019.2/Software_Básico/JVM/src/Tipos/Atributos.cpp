@@ -4,8 +4,8 @@
 #include "../../lib/Tipos/Atributos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 
-AttrCode::AttrCode (const u2 ind_nome) : InterAtributo(ind_nome){}
 
+AttrCode::AttrCode (const u2 ind_nome) : InterAtributo(ind_nome){}
 
 AttrCode::AttrCode (const u2 ind_nome, InterTabela *tab_simbolos) : AttrCode(ind_nome){
     this->tab_simbolos = tab_simbolos;
@@ -83,6 +83,8 @@ void AttrCode::deletar (){
     InterAtributo::deletar();
 }
 
+
+
 AttrLinhaNum::AttrLinhaNum (const u2 ind_nome) : InterAtributo(ind_nome){}
 
 void AttrLinhaNum::decodificar (FILE *arq){
@@ -123,8 +125,8 @@ void AttrLinhaNum::deletar (){
 }
 
 
-AttrArqFonte::AttrArqFonte (const u2 ind_nome) : InterAtributo(ind_nome){}
 
+AttrArqFonte::AttrArqFonte (const u2 ind_nome) : InterAtributo(ind_nome){}
 
 void AttrArqFonte::decodificar (FILE *arq){
     InterAtributo::decodificar (arq);
@@ -143,9 +145,10 @@ void AttrArqFonte::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
     std::cout << " -> " << (dynamic_cast<TabSimbolo*>(tab_simbolos))->get_string(this->ind) << std::endl;
 }
 
-void AttrArqFonte::deletar(){
+void AttrArqFonte::deletar (){
     InterAtributo::deletar();
 }
+
 
 
 AttrSilenciado::AttrSilenciado (const u2 ind_nome) : InterAtributo(ind_nome){}

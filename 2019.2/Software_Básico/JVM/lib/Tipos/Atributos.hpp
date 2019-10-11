@@ -11,14 +11,14 @@
 
     /**
      *  @class AttrCode
-     *  Atributo do tipo <<Code>>, presente somente nos métodos
+     *  Atributo do tipo __Code__, presente somente nos métodos
      */
     class AttrCode : public InterAtributo {
         private:
-            /*  Tabela de símbolos que está vinculado */
+            /** Tabela de símbolos que está vinculado */
             InterTabela *tab_simbolos = nullptr;
 
-            /*  Estrutura de um atributo <<Code>> */
+            /** Estrutura de um atributo __Code__ */
             u2 max_pilha = 0;
             u2 max_locais = 0;
             u4 tam_codigo = 0;
@@ -29,7 +29,7 @@
             TabAtributos *tab_atributos = nullptr;
 
         public:
-            /*  Construtor padrão */
+            /**  Construtor padrão */
             AttrCode (){};
 
             /**
@@ -47,7 +47,7 @@
             explicit AttrCode (const u2 ind_nome, InterTabela *tab_simbolos);
 
             /**
-             *  Decodificador do arquivo binário .class para o atributo <<Code>>,
+             *  Decodificador do arquivo binário .class para o atributo __Code__,
              *  extraindo todos os seus campos, além do índice do nome e do seu tamanho,
              *  caso já não os tenha extraído
              *  @param arq Arquivo .class sob análise
@@ -55,7 +55,7 @@
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição do atributo <<Code>> na saída padrão, conhecendo-se a tabela de
+             *  Exibição do atributo __Code__ na saída padrão, conhecendo-se a tabela de
              *  símbolos do arquivo corrente, para exibir as referências, além do controle
              *  de tabulação
              *  @param tab_simbolos Tabela de símbolos que está vinculado
@@ -64,29 +64,29 @@
             void exibir (InterTabela *tab_simbolos, u1 qnt_tabs) override;
 
             /**
-             *  Destrutor do atributo <<Code>> e suas dependências
+             *  Destrutor do atributo __Code__ e suas dependências
              */
             void deletar () override;
     };
 
     /**
      *  @class AttrLinhaNum
-     *  Atributo do tipo <<LineNumberTable>>, comulmente associados aos atributos <<Code>>
+     *  Atributo do tipo __LineNumberTable__, comulmente associados aos atributos __Code__
      */
     class AttrLinhaNum : public InterAtributo {
         private:
-            /*  Estrutura dos número de um atributo <<LineNumberTable>> */
+            /** Estrutura dos número de um atributo __LineNumberTable__ */
             typedef struct info_num {
                 u2 pc_comeco;
                 u2 lin_num;
             } InfoNumero;
 
-            /*  Estrutura de um atributo <<LineNumberTable>> */
+            /** Estrutura de um atributo __LineNumberTable__ */
             u2 tam_tab_valores = 0;
             std::vector<InfoNumero> tab_valores;
 
         public:
-            /*  Construtor padrão */
+            /**  Construtor padrão */
             AttrLinhaNum () {};
 
             /**
@@ -97,14 +97,14 @@
 
             /**
              *  Decodificador do arquivo binário .class para o atributo
-             *  <<LineNumberTable>>, extraindo todos os seus campos, além do índice do
+             *  __LineNumberTable__, extraindo todos os seus campos, além do índice do
              *  nome e do seu tamanho, caso já não os tenha extraído
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição do atributo <<LineNumberTable>> na saída padrão, conhecendo-se
+             *  Exibição do atributo __LineNumberTable__ na saída padrão, conhecendo-se
              *  a tabela de símbolos do arquivo corrente, para exibir as referências,
              *  além do controle de tabulação
              *  @param tab_simbolos Tabela de símbolos que está vinculado
@@ -113,22 +113,22 @@
             void exibir (InterTabela *tab_simbolos, u1 qnt_tabs) override;
 
             /**
-             *  Destrutor do atributo <<LineNumberTable>> e suas dependências
+             *  Destrutor do atributo __LineNumberTable__ e suas dependências
              */
             void deletar () override;
     };
 
     /**
      *  @class AttrArqFonte
-     *  Atributo do tipo <<SourceFile>>
+     *  Atributo do tipo __SourceFile__
      */
     class AttrArqFonte : public InterAtributo {
         private:
-            /*  Estrutura de um atributo <<Code>> */
+            /** Estrutura de um atributo __Code__ */
             u2 ind = 0;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             AttrArqFonte (){};
 
             /**
@@ -138,7 +138,7 @@
             explicit AttrArqFonte (const u2 ind_nome);
 
             /**
-             *  Decodificador do arquivo binário .class para o atributo <<SourceFile>>,
+             *  Decodificador do arquivo binário .class para o atributo __SourceFile__,
              *  extraindo todos os seus campos, além do índice do nome e do seu tamanho,
              *  caso já não os tenha extraído
              *  @param arq Arquivo .class sob análise
@@ -146,7 +146,7 @@
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição do atributo <<SourceFile>> na saída padrão, conhecendo-se a
+             *  Exibição do atributo __SourceFile__ na saída padrão, conhecendo-se a
              *  tabela de símbolos do arquivo corrente, para exibir as referências,
              *  além do controle de tabulação
              *  @param tab_simbolos Tabela de símbolos que está vinculado
@@ -155,7 +155,7 @@
             void exibir (InterTabela *tab_simbolos, u1 qnt_tabs) override;
 
             /**
-             *  Destrutor do atributo <<SourceFile>> e suas dependências
+             *  Destrutor do atributo __SourceFile__ e suas dependências
              */
             void deletar () override;
     };
@@ -166,7 +166,7 @@
      */
     class AttrSilenciado : public InterAtributo {
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             AttrSilenciado (){};
 
             /**

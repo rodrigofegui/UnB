@@ -1,4 +1,3 @@
-#include <iomanip>
 #include <iostream>
 #include "../../lib/Tabelas/TabCampos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
@@ -40,7 +39,7 @@ void TabCampos::exibir (u1 qnt_tabs){
     }
 }
 
-void TabCampos::deletar(){
+void TabCampos::deletar (){
     std::vector<Campo>().swap(this->registros);
 
     delete this;

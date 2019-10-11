@@ -8,13 +8,13 @@
      */
     #include <stdint.h>
 
-    /*  Tipo básico para 1 byte sem sinal */
+    /** Tipo básico para 1 byte sem sinal */
     typedef uint8_t u1;
-    /*  Tipo básico para 2 bytes sem sinal */
+    /** Tipo básico para 2 bytes sem sinal */
     typedef uint16_t u2;
-    /*  Tipo básico para 4 bytes sem sinal */
+    /** Tipo básico para 4 bytes sem sinal */
     typedef uint32_t u4;
 
-    /*  Código característico de um arquivo .class válido */
+    /** Código característico de um arquivo .class válido */
     #define COD_ARQ_CLASS 0xCAFEBABE
 #endif

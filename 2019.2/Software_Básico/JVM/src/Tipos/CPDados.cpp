@@ -19,6 +19,7 @@ void InfoClasse::exibir (u1 qnt_tabs){
 }
 
 
+
 void InfoRefCampo::decodificar (FILE *arq){
     ler_u2(arq, &this->ind_classe);
     ler_u2(arq, &this->ind_nome_tipo);
@@ -37,6 +38,8 @@ void InfoRefCampo::exibir (u1 qnt_tabs){
     std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_nome_tipo) << std::endl;
 }
 
+
+
 void InfoNomeTipo::decodificar (FILE *arq){
     ler_u2(arq, &this->ind_nome);
     ler_u2(arq, &this->ind_descritor);
@@ -54,6 +57,8 @@ void InfoNomeTipo::exibir (u1 qnt_tabs){
     std::cout << this->ind_descritor;
     std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_descritor) << std::endl;
 }
+
+
 
 void InfoUTF8::decodificar (FILE *arq){
     u1 temp;
@@ -88,6 +93,7 @@ void InfoUTF8::deletar (){
 }
 
 
+
 void InfoRefMetodo::decodificar (FILE *arq){
     ler_u2(arq, &this->ind_classe);
     ler_u2(arq, &this->ind_nome_tipo);
@@ -105,6 +111,7 @@ void InfoRefMetodo::exibir (u1 qnt_tabs){
     std::cout << this->ind_nome_tipo;
     std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_nome_tipo) << std::endl;
 }
+
 
 
 void InfoRefMetInterface::decodificar (FILE *arq){
@@ -126,6 +133,7 @@ void InfoRefMetInterface::exibir (u1 qnt_tabs){
 }
 
 
+
 void InfoString::decodificar (FILE *arq){
     ler_u2(arq, &this->ind_string);
 }
@@ -141,7 +149,8 @@ void InfoString::exibir (u1 qnt_tabs){
 }
 
 
-void InfoInteiro::decodificar(FILE *arq){
+
+void InfoInteiro::decodificar (FILE *arq){
     ler_u4(arq, &this->bytes);
 }
 
@@ -155,7 +164,7 @@ void InfoInteiro::exibir (u1 qnt_tabs){
 
 
 
-void InfoFloat::decodificar(FILE *arq){
+void InfoFloat::decodificar (FILE *arq){
     ler_u4(arq, &this->bytes);
 }
 
@@ -182,6 +191,7 @@ void InfoLong::exibir (u1 qnt_tabs){
     std::cout << tabs + "Bytes mais significativos: " << get_hex_4(this->bytes_mais) << std::endl;
     std::cout << tabs + "Bytes menos significativos: " << get_hex_4(this->bytes_menos) << std::endl;
 }
+
 
 
 void InfoDouble::decodificar (FILE *arq){

@@ -15,11 +15,11 @@
      */
     class InterCPDado{
         protected:
-            /*  Tabela de símbolos do arquivo .class ao qual os dados pertencem */
+            /** Tabela de símbolos do arquivo .class ao qual os dados pertencem */
             InterTabela *tab_simbolos = nullptr;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InterCPDado (){};
 
             /**

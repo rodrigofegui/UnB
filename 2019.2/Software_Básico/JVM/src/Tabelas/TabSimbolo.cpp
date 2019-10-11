@@ -1,6 +1,4 @@
-#include <iomanip>
 #include <iostream>
-#include <typeinfo>
 #include "../../lib/Tabelas/TabSimbolo.hpp"
 #include "../../lib/Tipos/CPDados.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"

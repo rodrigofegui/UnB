@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <iomanip>
 #include <iostream>
 #include <sstream>
@@ -41,7 +40,6 @@ void ler_u4(FILE *arq, u4 *dst){
         *dst |= temp;
     }
 }
-
 
 int get_padding(int num_max){
     int padding = 1;

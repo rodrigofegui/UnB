@@ -14,18 +14,18 @@
      */
     class Campo {
         private:
-            /*  Tabela de símbolos que está vinculado */
+            /** Tabela de símbolos que está vinculado */
             InterTabela *tab_simbolos = nullptr;
 
         public:
-            /*  Estrutura de um campo */
+            /** Estrutura de um campo */
             u2 flag_acesso = 0;
             u2 ind_nome = 0;
             u2 ind_descritor = 0;
             u2 tam_tab_atributos = 0;
             InterTabela *tab_atributos = nullptr;
 
-            /*  Construtor padrão */
+            /** Construtor padrão */
             Campo (){};
 
             /**

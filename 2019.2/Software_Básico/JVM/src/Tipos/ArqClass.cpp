@@ -1,20 +1,19 @@
-#include <iomanip>
 #include <iostream>
-#include "../../lib/Tipos/ArqClass.hpp"
-#include "../../lib/Tabelas/TabSimbolo.hpp"
+#include "../../lib/Tabelas/TabAtributos.hpp"
 #include "../../lib/Tabelas/TabCampos.hpp"
 #include "../../lib/Tabelas/TabMetodos.hpp"
-#include "../../lib/Tabelas/TabAtributos.hpp"
+#include "../../lib/Tabelas/TabSimbolo.hpp"
+#include "../../lib/Tipos/ArqClass.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
-#include "../../lib/Uteis/Status.hpp"
 #include "../../lib/Uteis/Flags_Tags.hpp"
+#include "../../lib/Uteis/Status.hpp"
 
 
 ArqClass::ArqClass (char *nome_arq) : ArqClass() {
     this->nome_arq = nome_arq;
 }
 
-void ArqClass::check_valido(){
+void ArqClass::check_valido (){
     ler_u4(this->arq, &this->codigo);
 
     if (this->codigo != COD_ARQ_CLASS) erro(E_NAO_CLASS);
@@ -36,7 +35,6 @@ void ArqClass::erro (u1 e_codigo){
     exit(e_codigo);
 }
 
-
 std::string ArqClass::get_versao_java (u2 versao){
     switch (versao){
         case V1_1:  return "JDK 1.1";
@@ -56,7 +54,6 @@ std::string ArqClass::get_versao_java (u2 versao){
         default:    return "Sem expecificação";
     }
 }
-
 
 void ArqClass::decodificar (){
     this->arq = abrir(nome_arq);

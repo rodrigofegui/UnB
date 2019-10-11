@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include "../lib/Tipos/ArqClass.hpp"
-#include "../lib/Uteis/Parametros.hpp"
 #include "../lib/Uteis/Arquivos.hpp"
+#include "../lib/Uteis/Parametros.hpp"
 
 
 int main(int argc, char *argv[]){

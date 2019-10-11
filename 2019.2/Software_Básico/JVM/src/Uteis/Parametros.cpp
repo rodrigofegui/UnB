@@ -1,5 +1,6 @@
 #include "../../lib/Uteis/Parametros.hpp"
 
+
 u1 check_parametros(int argc, char *argv[]){
     u1 e_leitura = 1;
 

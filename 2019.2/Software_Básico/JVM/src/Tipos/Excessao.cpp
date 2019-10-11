@@ -1,7 +1,8 @@
 #include <iostream>
+#include "../../lib/Tabelas/TabSimbolo.hpp"
 #include "../../lib/Tipos/Excessao.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
-#include "../../lib/Tabelas/TabSimbolo.hpp"
+
 
 void Excessao::decodificar (FILE *arq){
     ler_u2(arq, &this->lin_comeco);

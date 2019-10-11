@@ -13,14 +13,14 @@
      */
     class Excessao{
         private:
-            /*  Estrutura de uma excessão */
+            /** Estrutura de uma excessão */
             u2 lin_comeco = 0;
             u2 lin_final = 0;
             u2 lin_tratamento = 0;
             u2 ind_tipo_catch = 0;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             Excessao (){};
 
             /**

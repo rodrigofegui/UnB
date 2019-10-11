@@ -14,13 +14,13 @@
      */
     class TabCampos : public InterTabela {
         private:
-            /*  Tabela de símbolos que está vinculada */
+            /** Tabela de símbolos que está vinculada */
             InterTabela *tab_simbolos = nullptr;
-            /*  Conteúdo da tabela em si */
+            /** Conteúdo da tabela em si */
             std::vector<Campo> registros;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             TabCampos (){};
 
             /**

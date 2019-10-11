@@ -9,7 +9,7 @@
     #include <string>
     #include "../Tipos/Basicos.hpp"
 
-    /*  Versionamento do JAVAC */
+    /** Versionamento do JAVAC */
     #define V1_1 45
     #define V1_2 46
     #define V1_3 47
@@ -25,7 +25,7 @@
     #define V13 57
     #define V14 58
 
-    /*  Tags dos dados da tabela de símbolos */
+    /** Tags dos dados da tabela de símbolos */
     #define TAG_UTF 1
     #define TAG_INT 3
     #define TAG_FLT 4
@@ -38,7 +38,7 @@
     #define TAG_REF_MTD_ITF 11
     #define TAG_NOM_TIP 12
 
-    /*  Flags de acesso */
+    /** Flags de acesso */
     #define FLG_PBC 0x0001
     #define FLG_PVD 0x0002
     #define FLG_PTD 0x0004

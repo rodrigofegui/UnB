@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JVM: Código-Fonte de src/Uteis/Parametros.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JVM
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_parametros_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Parametros.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_parametros_8cpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../../lib/Uteis/Parametros.hpp&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="_parametros_8cpp.html#a261258f7bca27125dfd0da80bff72ef3">    4</a></span>&#160;<a class="code" href="_basicos_8hpp.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> <a class="code" href="_parametros_8cpp.html#a261258f7bca27125dfd0da80bff72ef3">check_parametros</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]){</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="_basicos_8hpp.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a> e_leitura = 1;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordflow">if</span> ((argc - 1) &gt; 2){</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        printf(<span class="stringliteral">&quot;\n[ERRO] Este programa só aceita até 2 argumentos, mas vieram %d.\n&quot;</span>, argc - 1);</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        exit(<a class="code" href="_status_8hpp.html#a8bf23197cc9edc8ecf786c9be6899350a428c203c05f07c40675eac0a2313bd7f">E_QNT_ARGS</a>);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    }</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">char</span> *temp = argv[1];</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span> (strcmp(temp, <span class="stringliteral">&quot;-e&quot;</span>) &amp;&amp; strcmp(temp, <span class="stringliteral">&quot;-i&quot;</span>)){</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        printf(<span class="stringliteral">&quot;\n[ERRO] Este programa só opera sobre 2 modos: -e ou -i; foi passado: %s.\n&quot;</span>, temp);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_status_8hpp.html#a8bf23197cc9edc8ecf786c9be6899350a997e824308da0a6c931b4014c2339ce6">E_MODO</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp(temp, <span class="stringliteral">&quot;-i&quot;</span>)){</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        e_leitura = 1;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    temp = strtok(argv[2], <a class="code" href="_parametros_8hpp.html#a4f0030f2d670b969cd0aecdb2bc4150c">DELIMITADOR_ARGS</a>);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">while</span>(temp){</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span> (!strstr(temp, <a class="code" href="_parametros_8hpp.html#a2c8def722c50f464d70ab3f59d729439">TIPO_ARQ_ACEITO</a>)){</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            printf(<span class="stringliteral">&quot;\n[ERRO] Este programa só analisa arquivos da extensão .class; foi passado o arquivo: &#39;%s&#39;.\n&quot;</span>, temp);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            exit(<a class="code" href="_status_8hpp.html#a8bf23197cc9edc8ecf786c9be6899350a95f878d8132d2debe4ac5b7cc511ed27">E_TIPO</a>);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        temp = strtok(NULL, <a class="code" href="_parametros_8hpp.html#a4f0030f2d670b969cd0aecdb2bc4150c">DELIMITADOR_ARGS</a>);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> e_leitura;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// u1 check_qnt_args(int argc){</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//     if (!(argc - 1))</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//         return W_QNT_ARGS;</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//     return 0;</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// }</span></div><div class="ttc" id="_parametros_8cpp_html_a261258f7bca27125dfd0da80bff72ef3"><div class="ttname"><a href="_parametros_8cpp.html#a261258f7bca27125dfd0da80bff72ef3">check_parametros</a></div><div class="ttdeci">u1 check_parametros(int argc, char *argv[])</div><div class="ttdoc">Verifica os parâmetros passados via linha de comando. </div><div class="ttdef"><b>Definition:</b> <a href="_parametros_8cpp_source.html#l00004">Parametros.cpp:4</a></div></div>
+<div class="ttc" id="_parametros_8hpp_html_a2c8def722c50f464d70ab3f59d729439"><div class="ttname"><a href="_parametros_8hpp.html#a2c8def722c50f464d70ab3f59d729439">TIPO_ARQ_ACEITO</a></div><div class="ttdeci">#define TIPO_ARQ_ACEITO</div><div class="ttdef"><b>Definition:</b> <a href="_parametros_8hpp_source.html#l00017">Parametros.hpp:17</a></div></div>
+<div class="ttc" id="_status_8hpp_html_a8bf23197cc9edc8ecf786c9be6899350a997e824308da0a6c931b4014c2339ce6"><div class="ttname"><a href="_status_8hpp.html#a8bf23197cc9edc8ecf786c9be6899350a997e824308da0a6c931b4014c2339ce6">E_MODO</a></div><div class="ttdef"><b>Definition:</b> <a href="_status_8hpp_source.html#l00011">Status.hpp:11</a></div></div>
+<div class="ttc" id="_parametros_8hpp_html_a4f0030f2d670b969cd0aecdb2bc4150c"><div class="ttname"><a href="_parametros_8hpp.html#a4f0030f2d670b969cd0aecdb2bc4150c">DELIMITADOR_ARGS</a></div><div class="ttdeci">#define DELIMITADOR_ARGS</div><div class="ttdoc">Controles dos parâmetros. </div><div class="ttdef"><b>Definition:</b> <a href="_parametros_8hpp_source.html#l00016">Parametros.hpp:16</a></div></div>
+<div class="ttc" id="_basicos_8hpp_html_ad9f4cdb6757615aae2fad89dab3c5470"><div class="ttname"><a href="_basicos_8hpp.html#ad9f4cdb6757615aae2fad89dab3c5470">u1</a></div><div class="ttdeci">uint8_t u1</div><div class="ttdoc">Tipo básico para 1 byte sem sinal. </div><div class="ttdef"><b>Definition:</b> <a href="_basicos_8hpp_source.html#l00012">Basicos.hpp:12</a></div></div>
+<div class="ttc" id="_status_8hpp_html_a8bf23197cc9edc8ecf786c9be6899350a95f878d8132d2debe4ac5b7cc511ed27"><div class="ttname"><a href="_status_8hpp.html#a8bf23197cc9edc8ecf786c9be6899350a95f878d8132d2debe4ac5b7cc511ed27">E_TIPO</a></div><div class="ttdef"><b>Definition:</b> <a href="_status_8hpp_source.html#l00012">Status.hpp:12</a></div></div>
+<div class="ttc" id="_status_8hpp_html_a8bf23197cc9edc8ecf786c9be6899350a428c203c05f07c40675eac0a2313bd7f"><div class="ttname"><a href="_status_8hpp.html#a8bf23197cc9edc8ecf786c9be6899350a428c203c05f07c40675eac0a2313bd7f">E_QNT_ARGS</a></div><div class="ttdef"><b>Definition:</b> <a href="_status_8hpp_source.html#l00010">Status.hpp:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8df5b1563d359b27a9ebde39528d124e.html">Uteis</a></li><li class="navelem"><a class="el" href="_parametros_8cpp.html">Parametros.cpp</a></li>
+    <li class="footer">Gerado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

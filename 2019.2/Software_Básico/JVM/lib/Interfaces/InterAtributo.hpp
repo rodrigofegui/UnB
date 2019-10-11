@@ -15,11 +15,11 @@
      */
     class InterAtributo {
         public:
-            /*  Variáveis comuns a todos os atributos */
+            /** Variáveis comuns a todos os atributos */
             u2 ind_nome = 0;
             u4 tam = 0;
 
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InterAtributo (){};
 
             /**

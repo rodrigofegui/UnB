@@ -14,11 +14,11 @@
      */
     class InterTabela {
         protected:
-            /*  Ref. para o tamanho da tabela */
+            /** Ref. para o tamanho da tabela */
             u2 *tam = nullptr;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InterTabela ();
 
             /**

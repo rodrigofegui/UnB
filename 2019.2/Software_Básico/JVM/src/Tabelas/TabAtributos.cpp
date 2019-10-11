@@ -1,18 +1,15 @@
-#include <iomanip>
 #include <iostream>
-#include <string.h>
 #include "../../lib/Tabelas/TabAtributos.hpp"
 #include "../../lib/Tabelas/TabSimbolo.hpp"
 #include "../../lib/Tipos/Atributos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 
-TabAtributos::TabAtributos (u2 *tam) : InterTabela(tam){};
 
+TabAtributos::TabAtributos (u2 *tam) : InterTabela(tam){};
 
 TabAtributos::TabAtributos (u2 *tam, InterTabela *tab_simbolos) : TabAtributos(tam){
     this->tab_simbolos = tab_simbolos;
 }
-
 
 void TabAtributos::decodificar (FILE *arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){

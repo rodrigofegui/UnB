@@ -11,14 +11,14 @@
 
     /**
      *  @class InfoClasse
-     *  Dados da tabela de símbolos do tipo <<CONSTANT_Class>>
+     *  Dados da tabela de símbolos do tipo __CONSTANT_Class__
      */
     class InfoClasse : public InterCPDado {
         public:
-            /*  Estrutura dos dados da <<CONSTANT_Class>> */
+            /** Estrutura dos dados da __CONSTANT_Class__ */
             u2 ind_nome = 0;
 
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InfoClasse (){};
 
             /**
@@ -30,13 +30,13 @@
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
-             *  <<CONSTANT_Class>>, extraindo todos os seus campos
+             *  __CONSTANT_Class__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição dos dados da <<CONSTANT_Class>> na saída padrão com controle
+             *  Exibição dos dados da __CONSTANT_Class__ na saída padrão com controle
              *  de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
@@ -45,16 +45,16 @@
 
     /**
      *  @class InfoRefCampo
-     *  Dados da tabela de símbolos do tipo <<CONSTANT_Fieldref>>
+     *  Dados da tabela de símbolos do tipo __CONSTANT_Fieldref__
      */
     class InfoRefCampo : public InterCPDado {
         private:
-            /*  Estrutura dos dados da <<CONSTANT_Fieldref>> */
+            /** Estrutura dos dados da __CONSTANT_Fieldref__ */
             u2 ind_classe = 0;
             u2 ind_nome_tipo = 0;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InfoRefCampo (){};
 
             /**
@@ -66,13 +66,13 @@
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
-             *  <<CONSTANT_Fieldref>>, extraindo todos os seus campos
+             *  __CONSTANT_Fieldref__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição dos dados da <<CONSTANT_Fieldref>> na saída padrão com controle
+             *  Exibição dos dados da __CONSTANT_Fieldref__ na saída padrão com controle
              *  de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
@@ -81,15 +81,15 @@
 
     /**
      *  @class InfoNomeTipo
-     *  Dados da tabela de símbolos do tipo <<CONSTANT_NameAndType>>
+     *  Dados da tabela de símbolos do tipo __CONSTANT_NameAndType__
      */
     class InfoNomeTipo : public InterCPDado {
         public:
-            /*  Estrutura dos dados da <<CONSTANT_NameAndType>> */
+            /** Estrutura dos dados da __CONSTANT_NameAndType__ */
             u2 ind_nome = 0;
             u2 ind_descritor = 0;
 
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InfoNomeTipo (){};
 
             /**
@@ -101,13 +101,13 @@
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
-             *  <<CONSTANT_NameAndType>>, extraindo todos os seus campos
+             *  __CONSTANT_NameAndType__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição dos dados da <<CONSTANT_NameAndType>> na saída padrão com controle
+             *  Exibição dos dados da __CONSTANT_NameAndType__ na saída padrão com controle
              *  de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
@@ -116,16 +116,16 @@
 
     /**
      *  @class InfoUTF8
-     *  Dados da tabela de símbolos do tipo <<CONSTANT_Utf8>>
+     *  Dados da tabela de símbolos do tipo __CONSTANT_Utf8__
      */
     class InfoUTF8 : public InterCPDado {
         private:
-            /*  Estrutura dos dados da <<CONSTANT_Utf8>> */
+            /** Estrutura dos dados da __CONSTANT_Utf8__ */
             u2 tam = 0;
             std::vector<u1> bytes;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InfoUTF8 (){};
 
             /**
@@ -137,20 +137,20 @@
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
-             *  <<CONSTANT_Utf8>>, extraindo todos os seus campos
+             *  __CONSTANT_Utf8__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição dos dados da <<CONSTANT_Utf8>> na saída padrão com controle
+             *  Exibição dos dados da __CONSTANT_Utf8__ na saída padrão com controle
              *  de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (u1 qnt_tabs) override;
 
             /**
-             *  Destrutor dos dados da <<CONSTANT_Utf8>>
+             *  Destrutor dos dados da __CONSTANT_Utf8__
              */
             void deletar () override;
 
@@ -163,16 +163,16 @@
 
     /**
      *  @class InfoRefMetodo
-     *  Dados da tabela de símbolos do tipo <<CONSTANT_Methodref>>
+     *  Dados da tabela de símbolos do tipo __CONSTANT_Methodref__
      */
     class InfoRefMetodo : public InterCPDado {
         private:
-            /*  Estrutura dos dados da <<CONSTANT_Methodref>> */
+            /** Estrutura dos dados da __CONSTANT_Methodref__ */
             u2 ind_classe = 0;
             u2 ind_nome_tipo = 0;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InfoRefMetodo (){};
 
             /**
@@ -184,13 +184,13 @@
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
-             *  <<CONSTANT_Methodref>>, extraindo todos os seus campos
+             *  __CONSTANT_Methodref__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição dos dados da <<CONSTANT_Methodref>> na saída padrão com controle
+             *  Exibição dos dados da __CONSTANT_Methodref__ na saída padrão com controle
              *  de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
@@ -199,16 +199,16 @@
 
     /**
      *  @class InfoRefMetInterface
-     *  Dados da tabela de símbolos do tipo <<CONSTANT_InterfaceMethodref>>
+     *  Dados da tabela de símbolos do tipo __CONSTANT_InterfaceMethodref__
      */
     class InfoRefMetInterface : public InterCPDado {
         private:
-            /*  Estrutura dos dados da <<CONSTANT_InterfaceMethodref>> */
+            /** Estrutura dos dados da __CONSTANT_InterfaceMethodref__ */
             u2 ind_classe = 0;
             u2 ind_nome_tipo = 0;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InfoRefMetInterface (){};
 
             /**
@@ -220,13 +220,13 @@
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
-             *  <<CONSTANT_InterfaceMethodref>>, extraindo todos os seus campos
+             *  __CONSTANT_InterfaceMethodref__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição dos dados da <<CONSTANT_InterfaceMethodref>> na saída padrão com
+             *  Exibição dos dados da __CONSTANT_InterfaceMethodref__ na saída padrão com
              *  controle de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
@@ -235,15 +235,15 @@
 
     /**
      *  @class InfoString
-     *  Dados da tabela de símbolos do tipo <<CONSTANT_String>>
+     *  Dados da tabela de símbolos do tipo __CONSTANT_String__
      */
     class InfoString : public InterCPDado {
         private:
-            /*  Estrutura dos dados da <<CONSTANT_String>> */
+            /** Estrutura dos dados da __CONSTANT_String__ */
             u2 ind_string = 0;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InfoString (){};
 
             /**
@@ -255,13 +255,13 @@
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
-             *  <<CONSTANT_String>>, extraindo todos os seus campos
+             *  __CONSTANT_String__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição dos dados da <<CONSTANT_String>> na saída padrão com controle de
+             *  Exibição dos dados da __CONSTANT_String__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
@@ -270,15 +270,15 @@
 
     /**
      *  @class InfoInteiro
-     *  Dados da tabela de símbolos do tipo <<CONSTANT_Integer>>
+     *  Dados da tabela de símbolos do tipo __CONSTANT_Integer__
      */
     class InfoInteiro : public InterCPDado {
         private:
-            /*  Estrutura dos dados da <<CONSTANT_Integer>> */
+            /** Estrutura dos dados da __CONSTANT_Integer__ */
             u4 bytes = 0;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InfoInteiro (){};
 
             /**
@@ -290,13 +290,13 @@
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
-             *  <<CONSTANT_Integer>>, extraindo todos os seus campos
+             *  __CONSTANT_Integer__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição dos dados da <<CONSTANT_Integer>> na saída padrão com controle de
+             *  Exibição dos dados da __CONSTANT_Integer__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
@@ -305,15 +305,15 @@
 
     /**
      *  @class InfoFloat
-     *  Dados da tabela de símbolos do tipo <<CONSTANT_Float>>
+     *  Dados da tabela de símbolos do tipo __CONSTANT_Float__
      */
     class InfoFloat : public InterCPDado {
         private:
-            /*  Estrutura dos dados da <<CONSTANT_Float>> */
+            /** Estrutura dos dados da __CONSTANT_Float__ */
             u4 bytes = 0;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InfoFloat (){};
 
             /**
@@ -325,13 +325,13 @@
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
-             *  <<CONSTANT_Float>>, extraindo todos os seus campos
+             *  __CONSTANT_Float__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição dos dados da <<CONSTANT_Float>> na saída padrão com controle de
+             *  Exibição dos dados da __CONSTANT_Float__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
@@ -340,16 +340,16 @@
 
     /**
      *  @class InfoLong
-     *  Dados da tabela de símbolos do tipo <<CONSTANT_Long>>
+     *  Dados da tabela de símbolos do tipo __CONSTANT_Long__
      */
     class InfoLong : public InterCPDado {
         private:
-            /*  Estrutura dos dados da <<CONSTANT_Long>> */
+            /** Estrutura dos dados da __CONSTANT_Long__ */
             u4 bytes_mais = 0;
             u4 bytes_menos = 0;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InfoLong (){};
 
             /**
@@ -361,13 +361,13 @@
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
-             *  <<CONSTANT_Long>>, extraindo todos os seus campos
+             *  __CONSTANT_Long__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição dos dados da <<CONSTANT_Long>> na saída padrão com controle de
+             *  Exibição dos dados da __CONSTANT_Long__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
@@ -376,16 +376,16 @@
 
     /**
      *  @class InfoDouble
-     *  Dados da tabela de símbolos do tipo <<CONSTANT_Double>>
+     *  Dados da tabela de símbolos do tipo __CONSTANT_Double__
      */
     class InfoDouble : public InterCPDado {
         private:
-            /*  Estrutura dos dados da <<CONSTANT_Double>> */
+            /** Estrutura dos dados da __CONSTANT_Double__ */
             u4 bytes_mais = 0;
             u4 bytes_menos = 0;
 
         public:
-            /*  Construtor padrão */
+            /** Construtor padrão */
             InfoDouble (){};
 
             /**
@@ -397,13 +397,13 @@
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
-             *  <<CONSTANT_Double>>, extraindo todos os seus campos
+             *  __CONSTANT_Double__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *arq) override;
 
             /**
-             *  Exibição dos dados da <<CONSTANT_Double>> na saída padrão com controle de
+             *  Exibição dos dados da __CONSTANT_Double__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
