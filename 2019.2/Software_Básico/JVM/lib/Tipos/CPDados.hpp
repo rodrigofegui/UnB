@@ -13,17 +13,20 @@
      *  @class InfoClasse
      *  Dados da tabela de símbolos do tipo <<CONSTANT_Class>>
      */
-    class InfoClasse : public InterCPDados {
+    class InfoClasse : public InterCPDado {
         public:
             /*  Estrutura dos dados da <<CONSTANT_Class>> */
             u2 ind_nome = 0;
+
+            /*  Construtor padrão */
+            InfoClasse (){};
 
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos que está
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit InfoClasse (InterTabela *tab_simbolos);
+            explicit InfoClasse (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
@@ -38,30 +41,28 @@
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (u1 qnt_tabs) override;
-
-            /**
-             *  Destrutor dos dados da <<CONSTANT_Class>>
-             */
-            void deletar () override {};
     };
 
     /**
      *  @class InfoRefCampo
      *  Dados da tabela de símbolos do tipo <<CONSTANT_Fieldref>>
      */
-    class InfoRefCampo : public InterCPDados {
+    class InfoRefCampo : public InterCPDado {
         private:
             /*  Estrutura dos dados da <<CONSTANT_Fieldref>> */
             u2 ind_classe = 0;
             u2 ind_nome_tipo = 0;
 
         public:
+            /*  Construtor padrão */
+            InfoRefCampo (){};
+
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos que está
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit InfoRefCampo (InterTabela *tab_simbolos);
+            explicit InfoRefCampo (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
@@ -76,29 +77,27 @@
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (u1 qnt_tabs) override;
-
-            /**
-             *  Destrutor dos dados da <<CONSTANT_Fieldref>>
-             */
-            void deletar () override {};
     };
 
     /**
      *  @class InfoNomeTipo
      *  Dados da tabela de símbolos do tipo <<CONSTANT_NameAndType>>
      */
-    class InfoNomeTipo : public InterCPDados {
+    class InfoNomeTipo : public InterCPDado {
         public:
             /*  Estrutura dos dados da <<CONSTANT_NameAndType>> */
             u2 ind_nome = 0;
             u2 ind_descritor = 0;
+
+            /*  Construtor padrão */
+            InfoNomeTipo (){};
 
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos que está
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit InfoNomeTipo (InterTabela *tab_simbolos);
+            explicit InfoNomeTipo (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
@@ -113,30 +112,28 @@
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (u1 qnt_tabs) override;
-
-            /**
-             *  Destrutor dos dados da <<CONSTANT_NameAndType>>
-             */
-            void deletar () override {};
     };
 
     /**
      *  @class InfoUTF8
      *  Dados da tabela de símbolos do tipo <<CONSTANT_Utf8>>
      */
-    class InfoUTF8 : public InterCPDados {
+    class InfoUTF8 : public InterCPDado {
         private:
             /*  Estrutura dos dados da <<CONSTANT_Utf8>> */
             u2 tam = 0;
             std::vector<u1> bytes;
 
         public:
+            /*  Construtor padrão */
+            InfoUTF8 (){};
+
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos que está
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit InfoUTF8 (InterTabela *tab_simbolos);
+            explicit InfoUTF8 (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
@@ -168,19 +165,22 @@
      *  @class InfoRefMetodo
      *  Dados da tabela de símbolos do tipo <<CONSTANT_Methodref>>
      */
-    class InfoRefMetodo : public InterCPDados {
+    class InfoRefMetodo : public InterCPDado {
         private:
             /*  Estrutura dos dados da <<CONSTANT_Methodref>> */
             u2 ind_classe = 0;
             u2 ind_nome_tipo = 0;
 
         public:
+            /*  Construtor padrão */
+            InfoRefMetodo (){};
+
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos que está
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit InfoRefMetodo (InterTabela *tab_simbolos);
+            explicit InfoRefMetodo (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
@@ -195,30 +195,28 @@
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (u1 qnt_tabs) override;
-
-            /**
-             *  Destrutor dos dados da <<CONSTANT_Methodref>>
-             */
-            void deletar () override {};
     };
 
     /**
      *  @class InfoRefMetInterface
      *  Dados da tabela de símbolos do tipo <<CONSTANT_InterfaceMethodref>>
      */
-    class InfoRefMetInterface : public InterCPDados {
+    class InfoRefMetInterface : public InterCPDado {
         private:
             /*  Estrutura dos dados da <<CONSTANT_InterfaceMethodref>> */
             u2 ind_classe = 0;
             u2 ind_nome_tipo = 0;
 
         public:
+            /*  Construtor padrão */
+            InfoRefMetInterface (){};
+
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos que está
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit InfoRefMetInterface (InterTabela *tab_simbolos);
+            explicit InfoRefMetInterface (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
@@ -233,29 +231,27 @@
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (u1 qnt_tabs) override;
-
-            /**
-             *  Destrutor dos dados da <<CONSTANT_InterfaceMethodref>>
-             */
-            void deletar () override {};
     };
 
     /**
      *  @class InfoString
      *  Dados da tabela de símbolos do tipo <<CONSTANT_String>>
      */
-    class InfoString : public InterCPDados {
+    class InfoString : public InterCPDado {
         private:
             /*  Estrutura dos dados da <<CONSTANT_String>> */
             u2 ind_string = 0;
 
         public:
+            /*  Construtor padrão */
+            InfoString (){};
+
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos que está
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit InfoRefMetInterface (InterTabela *tab_simbolos);
+            explicit InfoString (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
@@ -270,29 +266,27 @@
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (u1 qnt_tabs) override;
-
-            /**
-             *  Destrutor dos dados da <<CONSTANT_String>>
-             */
-            void deletar () override {};
     };
 
     /**
      *  @class InfoInteiro
      *  Dados da tabela de símbolos do tipo <<CONSTANT_Integer>>
      */
-    class InfoInteiro : public InterCPDados {
+    class InfoInteiro : public InterCPDado {
         private:
             /*  Estrutura dos dados da <<CONSTANT_Integer>> */
             u4 bytes = 0;
 
         public:
+            /*  Construtor padrão */
+            InfoInteiro (){};
+
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos que está
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit InfoInteiro (InterTabela *tab_simbolos);
+            explicit InfoInteiro (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
@@ -307,29 +301,27 @@
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (u1 qnt_tabs) override;
-
-            /**
-             *  Destrutor dos dados da <<CONSTANT_Integer>>
-             */
-            void deletar () override {};
     };
 
     /**
      *  @class InfoFloat
      *  Dados da tabela de símbolos do tipo <<CONSTANT_Float>>
      */
-    class InfoFloat : public InterCPDados {
+    class InfoFloat : public InterCPDado {
         private:
             /*  Estrutura dos dados da <<CONSTANT_Float>> */
             u4 bytes = 0;
 
         public:
+            /*  Construtor padrão */
+            InfoFloat (){};
+
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos que está
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit InfoFloat (InterTabela *tab_simbolos);
+            explicit InfoFloat (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
@@ -344,30 +336,28 @@
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (u1 qnt_tabs) override;
-
-            /**
-             *  Destrutor dos dados da <<CONSTANT_Float>>
-             */
-            void deletar () override {};
     };
 
     /**
      *  @class InfoLong
      *  Dados da tabela de símbolos do tipo <<CONSTANT_Long>>
      */
-    class InfoLong : public InterCPDados {
+    class InfoLong : public InterCPDado {
         private:
             /*  Estrutura dos dados da <<CONSTANT_Long>> */
             u4 bytes_mais = 0;
             u4 bytes_menos = 0;
 
         public:
+            /*  Construtor padrão */
+            InfoLong (){};
+
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos que está
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit InfoLong (InterTabela *tab_simbolos);
+            explicit InfoLong (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
@@ -382,30 +372,28 @@
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (u1 qnt_tabs) override;
-
-            /**
-             *  Destrutor dos dados da <<CONSTANT_Long>>
-             */
-            void deletar () override {};
     };
 
     /**
      *  @class InfoDouble
      *  Dados da tabela de símbolos do tipo <<CONSTANT_Double>>
      */
-    class InfoDouble : public InterCPDados {
+    class InfoDouble : public InterCPDado {
         private:
             /*  Estrutura dos dados da <<CONSTANT_Double>> */
             u4 bytes_mais = 0;
             u4 bytes_menos = 0;
 
         public:
+            /*  Construtor padrão */
+            InfoDouble (){};
+
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos que está
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit InfoDouble (InterTabela *tab_simbolos);
+            explicit InfoDouble (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
@@ -420,10 +408,5 @@
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (u1 qnt_tabs) override;
-
-            /**
-             *  Destrutor dos dados da <<CONSTANT_Double>>
-             */
-            void deletar () override {};
     };
 #endif

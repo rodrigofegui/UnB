@@ -5,6 +5,7 @@
      *  @file   TabSimbolo.hpp
      *  @author Rodrigo F. Guimarães
      */
+    #include <vector>
     #include <string>
     #include "../Interfaces/InterTabela.hpp"
     #include "../Interfaces/InterCPDado.hpp"

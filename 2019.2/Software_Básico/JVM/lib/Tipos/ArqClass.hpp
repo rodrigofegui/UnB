@@ -48,19 +48,13 @@
 
         public:
             /*  Construtor padrão */
-            ArqClass ();
-
-            /**
-             *  Construtor com o conhecimento prévio do arquivo .class em si
-             *  @param arq Arquivo .class a ser lido
-             */
-            explicit ArqClass (FILE *arq);
+            ArqClass (){};
 
             /**
              *  Construtor com o conhecimento prévio do arquivo .class indiretamente
              *  @param nome_arq Nome do arquivo .class a ser lido
              */
-            explicit ArqClass (const char *nome_arq);
+            explicit ArqClass (char *nome_arq);
 
             /**
              *  Decodificador do arquivo binário .class

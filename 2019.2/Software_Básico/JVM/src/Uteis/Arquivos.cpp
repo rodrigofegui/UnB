@@ -1,15 +1,17 @@
 #include <stdlib.h>
 #include <iomanip>
 #include <iostream>
+#include <sstream>
 #include <math.h>
 #include "../../lib/Uteis/Arquivos.hpp"
-#include "../../lib/Uteis/Erros.hpp"
+#include "../../lib/Uteis/Status.hpp"
+
 
 FILE * abrir(const char *nome_arq){
     FILE *arq = fopen(nome_arq, "rb");
 
     if (arq == NULL){
-        printf("\n[ERROR] Falha ao abrir o arquivo: '%s'\n", nome_arq);
+        std::cout << "\n[ERROR] Falha ao abrir o arquivo: " << nome_arq << std::endl;
 
         exit(E_ABRIR_ARQUIVO);
     }
@@ -21,13 +23,8 @@ void ler_u1(FILE *arq, u1 *dst){
     fread(dst, sizeof(u1), 1, arq);
 }
 
-void ler_u2(FILE *arq, u2 *dst, int modo){
-    if (modo == 0){
-        fread(dst, sizeof(u2), 1, arq);
-        return;
-    }
-
-    u1 temp;
+void ler_u2(FILE *arq, u2 *dst){
+   u1 temp;
 
     for (int ind = 1; ind <= sizeof(u2); ind++){
         fread(&temp, sizeof(u1), 1, arq);
@@ -36,46 +33,15 @@ void ler_u2(FILE *arq, u2 *dst, int modo){
     }
 }
 
-void ler_u4(FILE *arq, u4 *dst, int modo){
-    if (modo == 0){
-        fread(dst, sizeof(u4), 1, arq);
-        return;
-    }
-
-    if (modo == 1){
-        u1 temp;
-
-        for (int ind = 0; ind < sizeof(u4); ind++){
-            fread(&temp, sizeof(u1), 1, arq);
-            *dst <<= 8;
-            *dst |= temp;
-        }
-
-        return;
-    }
-
-    if (modo == 2){
-        u2 temp;
-
-        for (int ind = 0; ind < sizeof(u2); ind++){
-            fread(&temp, sizeof(u2), 1, arq);
-            *dst <<= 16;
-            *dst |= temp;
-        }
-        return;
-    }
-
-    if (modo == 3) {
-        u1 temp1;
-
-        fread(dst, sizeof(u2), 1, arq);
-        fread(&temp1, sizeof(u1), 1, arq);
-
-        *dst = *dst << 16 | temp1;
-
-        return;
+void ler_u4(FILE *arq, u4 *dst){
+    u1 temp;
+    for (int ind = 0; ind < sizeof(u4); ind++){
+        fread(&temp, sizeof(u1), 1, arq);
+        *dst <<= 8;
+        *dst |= temp;
     }
 }
+
 
 int get_padding(int num_max){
     int padding = 1;
@@ -90,12 +56,29 @@ int get_padding(int num_max){
     return padding;
 }
 
-void exibir_hex_2(u2 fonte){
-    std::cout << std::setfill('0') << std::setw(4);
-    std::cout << std::hex << std::uppercase << fonte << std::dec;
+std::string get_hex(u1 fonte){
+    std::stringstream hex_str;
+
+    hex_str << std::setfill('0') << std::setw(2)
+            << std::hex << std::uppercase << "0x" << fonte;
+
+    return hex_str.str();
 }
 
-void exibir_hex_4(u4 fonte){
-    std::cout << std::setfill('0') << std::setw(8);
-    std::cout << std::hex << std::uppercase << fonte << std::dec;
+std::string get_hex_2(u2 fonte){
+    std::stringstream hex_str;
+
+    hex_str << std::setfill('0') << std::setw(4)
+            << std::hex << std::uppercase << "0x" << fonte;
+
+    return hex_str.str();
+}
+
+std::string get_hex_4(u4 fonte){
+    std::stringstream hex_str;
+
+    hex_str << std::setfill('0') << std::setw(8)
+            << std::hex << std::uppercase << "0x" << fonte;
+
+    return hex_str.str();
 }

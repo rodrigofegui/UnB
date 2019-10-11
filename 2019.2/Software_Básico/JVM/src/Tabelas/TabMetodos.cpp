@@ -1,11 +1,14 @@
 #include <iomanip>
 #include <iostream>
-#include "../../lib/Interfaces/InterAtributos.hpp"
+#include "../../lib/Interfaces/InterAtributo.hpp"
 #include "../../lib/Tabelas/TabMetodos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 
-TabMetodos::TabMetodos(InterTabela *tab, u2 *tam): TabMetodos(tam) {
-    this->tab_simbolos = tab;
+
+TabMetodos::TabMetodos (u2 *tam) : InterTabela(tam){}
+
+TabMetodos::TabMetodos (u2 *tam, InterTabela *tab_simbolos): TabMetodos(tam) {
+    this->tab_simbolos = tab_simbolos;
 }
 
 void TabMetodos::decodificar(FILE *arq){
@@ -18,7 +21,7 @@ void TabMetodos::decodificar(FILE *arq){
     }
 }
 
-void TabMetodos::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
+void TabMetodos::exibir (u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
     int tam = *this->tam;
 

@@ -6,6 +6,7 @@
      *  @author Rodrigo F. Guimarães
      *  @brief  Catálogo de todas as flags e tags utilizadas neste projeto
      */
+    #include <string>
     #include "../Tipos/Basicos.hpp"
 
     /*  Versionamento do JAVAC */
@@ -52,8 +53,8 @@
     #define FLG_STT 0x0800
 
     /**
-     *  Exibição de uma flag traduzida na saída padrão
+     *  Recuperação de uma flag traduzida
      *  @param a_verificar Flag a ser analisada
      */
-    void exibir_flag (u2 a_verificar);
+    std::string get_flag(u2 a_verificar);
 #endif

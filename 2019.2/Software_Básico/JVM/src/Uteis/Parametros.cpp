@@ -12,10 +12,10 @@ u1 check_parametros(int argc, char *argv[]){
 
     if (strcmp(temp, "-e") && strcmp(temp, "-i")){
         printf("\n[ERRO] Este programa só opera sobre 2 modos: -e ou -i; foi passado: %s.\n", temp);
-        exit(E_MODO);
+        return E_MODO;
 
     }else if (!strcmp(temp, "-i")){
-        e_leitura = 0;
+        e_leitura = 1;
     }
 
     temp = strtok(argv[2], DELIMITADOR_ARGS);
@@ -31,3 +31,11 @@ u1 check_parametros(int argc, char *argv[]){
 
     return e_leitura;
 }
+
+
+// u1 check_qnt_args(int argc){
+//     if (!(argc - 1))
+//         return W_QNT_ARGS;
+
+//     return 0;
+// }

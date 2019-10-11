@@ -6,6 +6,7 @@
      *  @author Rodrigo F. Guimarães
      */
     #include <stdio.h>
+    #include <iostream>
     #include "InterTabela.hpp"
 
     /**
@@ -17,9 +18,6 @@
             /*  Tabela de símbolos do arquivo .class ao qual os dados pertencem */
             InterTabela *tab_simbolos = nullptr;
 
-            /*  Estrutura comum */
-            u1 tag = 0;
-
         public:
             /*  Construtor padrão */
             InterCPDado (){};
@@ -28,7 +26,7 @@
              *  Construtor com o conhecimento prévio da tabela de símbolos
              *  @param tab Tabela de símbolo que está vinculado
              */
-            explicit InterCPDado (InterTabela *tab);
+            explicit InterCPDado (InterTabela *tab_simbolos) : tab_simbolos(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para um dado da tabela de
@@ -46,6 +44,6 @@
             /**
              *  Destrutor de um dado da tabela de símbolos e suas eventuais dependências
              */
-            virtual void deletar () = 0;
+            virtual void deletar () {delete this;};
     };
 #endif

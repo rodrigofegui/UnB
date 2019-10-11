@@ -8,6 +8,7 @@
      *  a estes úteis para este projeto
      */
     #include <stdio.h>
+    #include <string>
     #include "../Tipos/Basicos.hpp"
 
     /**
@@ -48,20 +49,23 @@
     int get_padding (int tam);
 
     /**
-     *  Exibição de um número de 1 byte em representação hexadecimal na saída padrão
+     *  Recuperação da representação em hexadecimal de um número de 1 byte
      *  @param fonte Número a ser exibido
+     *  @returns String no formato "0xFF"
      */
-    void exibir_hex (u1 fonte);
+    std::string get_hex (u1 fonte);
 
     /**
-     *  Exibição de um número de 2 bytes em representação hexadecimal na saída padrão
+     *  Recuperação da representação em hexadecimal de um número de 2 bytes
      *  @param fonte Número a ser exibido
+     *  @returns String no formato "0xFFFF"
      */
-    void exibir_hex_2 (u2 fonte);
+    std::string get_hex_2 (u2 fonte);
 
     /**
-     *  Exibição de um número de 4 bytes em representação hexadecimal na saída padrão
+     *  Recuperação da representação em hexadecimal de um número de 4 bytes
      *  @param fonte Número a ser exibido
+     *  @returns String no formato "0xFFFFFFFF"
      */
-    void exibir_hex_4 (u4 fonte);
+    std::string get_hex_4 (u4 fonte);
 #endif

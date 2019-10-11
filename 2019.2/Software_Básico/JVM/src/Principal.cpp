@@ -2,6 +2,7 @@
 #include <vector>
 #include "../lib/Tipos/ArqClass.hpp"
 #include "../lib/Uteis/Parametros.hpp"
+#include "../lib/Uteis/Arquivos.hpp"
 
 
 int main(int argc, char *argv[]){

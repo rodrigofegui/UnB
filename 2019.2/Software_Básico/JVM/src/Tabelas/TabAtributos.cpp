@@ -6,29 +6,29 @@
 #include "../../lib/Tipos/Atributos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 
-TabAtributos::TabAtributos (InterTabela *tab, u2 *tam) : TabAtributos(tam){
-    this->tab_simbolos = tab;
+TabAtributos::TabAtributos (u2 *tam) : InterTabela(tam){};
+
+
+TabAtributos::TabAtributos (u2 *tam, InterTabela *tab_simbolos) : TabAtributos(tam){
+    this->tab_simbolos = tab_simbolos;
 }
 
-TabAtributos::TabAtributos (InterTabela *tab, u2 *tam, u1 attr_code) : TabAtributos(tab, tam){
-    this->attr_code = attr_code;
-}
 
-void TabAtributos::decodificar(FILE *arq){
+void TabAtributos::decodificar (FILE *arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){
         std::string nome("");
         InterAtributo *attr;
         u2 temp = 0;
 
-        ler_u2(arq, &temp, 1);
+        ler_u2(arq, &temp);
 
         if ((dynamic_cast<TabSimbolo*>(this->tab_simbolos)))
-            nome = (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(temp);
+            nome = (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(temp);
 
         if (nome.empty()) continue;
 
         if (!nome.compare("Code"))
-            attr = new AttrCode(this->tab_simbolos, temp);
+            attr = new AttrCode(temp, this->tab_simbolos);
         else if (!nome.compare("LineNumberTable"))
             attr = new AttrLinhaNum(temp);
         else if (!nome.compare("SourceFile"))
@@ -44,7 +44,7 @@ void TabAtributos::decodificar(FILE *arq){
 
 void TabAtributos::exibir (u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
-    int tam = this->registros.size();
+    int tam = *this->tam;
 
     if (!tam){
         std::cout << tabs + "Não há itens na tabela de atributos" << std::endl;
@@ -66,7 +66,7 @@ void TabAtributos::deletar (){
     for (auto &registro : registros)
         registro->deletar();
 
-    std::vector<InterAtributo *>().swap(this->registros);
+    std::vector<InterAtributo*>().swap(this->registros);
 
     delete this;
 }

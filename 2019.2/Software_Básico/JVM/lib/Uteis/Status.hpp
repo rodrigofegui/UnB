@@ -1,13 +1,13 @@
-#ifndef UTEIS_ERROS_HPP
-    #define UTEIS_ERROS_HPP
+#ifndef UTEIS_STATUS_HPP
+    #define UTEIS_STATUS_HPP
 
     /**
-     *  @file   Erros.hpp
+     *  @file   Status.hpp
      *  @author Rodrigo F. Guimarães
-     *  @brief  Códigos de erros considerados neste projeto
+     *  @brief  Códigos de erros e avisos considerados neste projeto
      */
     enum erros {
-        E_QNT_ARGS = 1,
+        E_QNT_ARGS = 200,
         E_MODO,
         E_TIPO,
         E_SEM_ARQ,
@@ -28,5 +28,9 @@
         E_ALOCAR_ATTR_COD_METODOS,
         E_ALOCAR_LIN_NMB_ATTR_COD_METODOS,
         E_ALOCAR_TAB_ATRIBUTOS
+    };
+
+    enum avisos {
+        W_QNT_ARGS = 100,
     };
 #endif

@@ -6,24 +6,20 @@
 #include "../../lib/Uteis/Arquivos.hpp"
 #include "../../lib/Uteis/Flags_Tags.hpp"
 
-Campo::Campo (InterTabela *tab) : Campo(){
-    this->tab_simbolos = tab;
+Campo::Campo (InterTabela *tab_simbolos) : Campo(){
+    this->tab_simbolos = tab_simbolos;
 }
 
-void Campo::decodificar(FILE *arq){
-    decodificar(arq, 1);
-}
-
-void Campo::decodificar(FILE *arq, u1 flag_leitura){
+void Campo::decodificar (FILE *arq){
     this->tam_tab_atributos = 0;
 
-    ler_u2(arq, &this->flag_acesso, 1);
-    ler_u2(arq, &this->ind_nome, 1);
-    ler_u2(arq, &this->ind_descritor, 1);
-    ler_u2(arq, &this->tam_tab_atributos, 1);
+    ler_u2(arq, &this->flag_acesso);
+    ler_u2(arq, &this->ind_nome);
+    ler_u2(arq, &this->ind_descritor);
+    ler_u2(arq, &this->tam_tab_atributos);
 
     if(this->tam_tab_atributos){
-        this->tab_atributos = new TabAtributos(this->tab_simbolos, &this->tam_tab_atributos, 1);
+        this->tab_atributos = new TabAtributos(&this->tam_tab_atributos, this->tab_simbolos);
         this->tab_atributos->decodificar(arq);
     }
 }
@@ -33,20 +29,19 @@ void Campo::exibir (u1 qnt_tabs){
 
     std::string tabs(qnt_tabs, '\t');
 
-    std::cout << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_nome) << std::endl;
+    std::cout << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_nome) << std::endl;
 
-    std::cout << tabs + "Flag de acesso: ";
-        exibir_flag(this->flag_acesso);
+    std::cout << tabs + "Flag de acesso: " << get_flag(this->flag_acesso) << std::endl;
     std::cout << tabs + "Índice para o nome: " << this->ind_nome << std::endl;
     std::cout << tabs + "Índice para o descritor: " << this->ind_descritor;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_nome(this->ind_descritor) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_descritor) << std::endl;
     std::cout << tabs + "Qnt. de entradas na tabela de atributos: " << this->tam_tab_atributos << std::endl;
 
     if (this->tab_atributos)
         this->tab_atributos->exibir(qnt_tabs + 1);
 }
 
-void Campo::deletar(){
+void Campo::deletar (){
     if (this->tab_atributos)
         this->tab_atributos->deletar();
 }

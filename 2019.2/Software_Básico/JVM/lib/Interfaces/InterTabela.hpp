@@ -25,7 +25,7 @@
              *  Construtor com o conhecimento prévio do seu tamanho
              *  @param tam Tamanho a ser atribuido à tabela
              */
-            explicit InterTabela (u2 *tam);
+            explicit InterTabela (u2 *tam) : tam(tam) {};
 
             /**
              *  Decodificador do arquivo binário .class para uma tabela, extraindo todos

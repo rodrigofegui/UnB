@@ -9,7 +9,7 @@
     #include <stdio.h>
     #include <stdlib.h>
     #include <string.h>
-    #include "Erros.hpp"
+    #include "Status.hpp"
     #include "../Tipos/Basicos.hpp"
 
     /*  Controles dos parâmetros */
@@ -24,4 +24,5 @@
      *  ou interpretação
      */
     u1 check_parametros (int argc, char *argv[]);
+    u1 check_qnt_args(int argc);
 #endif

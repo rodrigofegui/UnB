@@ -5,6 +5,7 @@
      *  @file   TabAtributos.hpp
      *  @author Rodrigo F. Guimarães
      */
+    #include <vector>
     #include "../Interfaces/InterAtributo.hpp"
     #include "../Interfaces/InterTabela.hpp"
 
