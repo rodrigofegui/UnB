@@ -44,7 +44,7 @@ void TabAtributos::decodificar (FILE *arq){
 
 void TabAtributos::exibir (u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
-    int tam = *this->tam;
+    int tam = this->registros.size();
 
     if (!tam){
         std::cout << tabs + "Não há itens na tabela de atributos" << std::endl;

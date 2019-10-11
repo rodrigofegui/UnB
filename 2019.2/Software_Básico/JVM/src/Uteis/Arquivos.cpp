@@ -59,8 +59,8 @@ int get_padding(int num_max){
 std::string get_hex(u1 fonte){
     std::stringstream hex_str;
 
-    hex_str << std::setfill('0') << std::setw(2)
-            << std::hex << std::uppercase << "0x" << fonte;
+    hex_str << "0x" << std::setfill('0') << std::setw(2)
+            << std::hex << std::uppercase << static_cast<int>(fonte);
 
     return hex_str.str();
 }
@@ -68,8 +68,8 @@ std::string get_hex(u1 fonte){
 std::string get_hex_2(u2 fonte){
     std::stringstream hex_str;
 
-    hex_str << std::setfill('0') << std::setw(4)
-            << std::hex << std::uppercase << "0x" << fonte;
+    hex_str << "0x" << std::setfill('0') << std::setw(4)
+            << std::hex << std::uppercase << fonte;
 
     return hex_str.str();
 }
@@ -77,8 +77,8 @@ std::string get_hex_2(u2 fonte){
 std::string get_hex_4(u4 fonte){
     std::stringstream hex_str;
 
-    hex_str << std::setfill('0') << std::setw(8)
-            << std::hex << std::uppercase << "0x" << fonte;
+    hex_str << "0x" << std::setfill('0') << std::setw(8)
+            << std::hex << std::uppercase  << fonte;
 
     return hex_str.str();
 }

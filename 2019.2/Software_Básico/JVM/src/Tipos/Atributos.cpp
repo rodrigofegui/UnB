@@ -65,11 +65,11 @@ void AttrCode::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
         std::cout << tabs + "\tIni.\tFim\tTrat.\tCatch" << std::endl;
 
     for (auto &excessao : this->tab_excessao)
-        excessao.exibir(tab_simbolos, qnt_tabs + 1);
+        excessao.exibir(this->tab_simbolos, qnt_tabs + 1);
 
     std::cout << tabs + "Tamanho da tabela de atributos: " << this->tam_tab_atributos << std::endl;
 
-    this->tab_atributos->exibir(qnt_tabs + 1);
+     if (this->tab_atributos) this->tab_atributos->exibir(qnt_tabs + 1);
 }
 
 void AttrCode::deletar (){

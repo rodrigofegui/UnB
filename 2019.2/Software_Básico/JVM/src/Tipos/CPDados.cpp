@@ -106,10 +106,6 @@ void InfoRefMetodo::exibir (u1 qnt_tabs){
     std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_nome_tipo) << std::endl;
 }
 
-// void InfoRefMetodo::deletar (){
-//     InterCPDado::deletar();
-// }
-
 
 void InfoRefMetInterface::decodificar (FILE *arq){
     ler_u2(arq, &this->ind_classe);
@@ -129,10 +125,6 @@ void InfoRefMetInterface::exibir (u1 qnt_tabs){
     std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_nome_tipo) << std::endl;
 }
 
-// void InfoRefMetInterface::deletar (){
-//     InterCPDado::deletar();
-// }
-
 
 void InfoString::decodificar (FILE *arq){
     ler_u2(arq, &this->ind_string);
@@ -148,10 +140,6 @@ void InfoString::exibir (u1 qnt_tabs){
     std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_string) << std::endl;
 }
 
-// void InfoString::deletar (){
-//     InterCPDado::deletar();
-// }
-
 
 void InfoInteiro::decodificar(FILE *arq){
     ler_u4(arq, &this->bytes);
@@ -165,9 +153,6 @@ void InfoInteiro::exibir (u1 qnt_tabs){
     std::cout << tabs + "Bytes: " << get_hex_4(this->bytes) << std::endl;
 }
 
-// void InfoInteiro::deletar (){
-//     InterCPDado::deletar();
-// }
 
 
 void InfoFloat::decodificar(FILE *arq){
@@ -182,9 +167,6 @@ void InfoFloat::exibir (u1 qnt_tabs){
     std::cout << tabs + "Bytes: " << get_hex_4(this->bytes) << std::endl;
 }
 
-// void InfoFloat::deletar (){
-//     InterCPDado::deletar();
-// }
 
 
 void InfoLong::decodificar (FILE *arq){
@@ -201,10 +183,6 @@ void InfoLong::exibir (u1 qnt_tabs){
     std::cout << tabs + "Bytes menos significativos: " << get_hex_4(this->bytes_menos) << std::endl;
 }
 
-// void InfoLong::deletar (){
-//     InterCPDado::deletar();
-// }
-
 
 void InfoDouble::decodificar (FILE *arq){
     ler_u4(arq, &this->bytes_mais);
@@ -219,7 +197,3 @@ void InfoDouble::exibir (u1 qnt_tabs){
     std::cout << tabs + "Bytes mais significativos: " << get_hex_4(this->bytes_mais) << std::endl;
     std::cout << tabs + "Bytes menos significativos: " << get_hex_4(this->bytes_menos) << std::endl;
 }
-
-// void InfoDouble::deletar (){
-//     InterCPDado::deletar();
-// }

@@ -109,7 +109,8 @@ void ArqClass::decodificar (){
 }
 
 void ArqClass::exibir (){
-    std::cout << "Código indentificador: 0x" << get_hex_4(this->codigo) << std::endl;
+    std::cout << "Dados do arquivo: " << this->nome_arq << std::endl;
+    std::cout << "Código indentificador: " << get_hex_4(this->codigo) << std::endl;
 
     std::cout << "Versão mínima compilador: ";
     std::cout << get_versao_java(this->versao_min) << std::endl;
@@ -146,6 +147,8 @@ void ArqClass::exibir (){
     std::cout << this->tam_tab_atributos << std::endl;
 
     if (this->tab_atributos) this->tab_atributos->exibir(1);
+
+    std::cout << "Fim dos dados" << std::endl;
 }
 
 void ArqClass::deletar (){
