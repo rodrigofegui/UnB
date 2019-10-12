@@ -14,12 +14,15 @@
      */
     class ArqClass {
         private:
+            /** Arquivo com a função main */
+            static ArqClass *arq_main;
+
             /** Controle do arquivo .class original */
             char *nome_arq;
             FILE *arq = nullptr;
 
-            /** Flag sobre a existência de um método <main> no arquivo */
-            u1 tem_main = 0;
+            /** Flag se é um .class com o MagicCode correto */
+            u1 e_valido = 0;
 
             /** Estrutura de um arquivo .class */
             u4 codigo = 0;
@@ -40,9 +43,7 @@
             InterTabela *tab_atributos = nullptr;
 
             /** Verifica se o arquivo conectado é válido */
-            void check_valido ();
-
-            void erro (const u1 e_codigo);
+            void check_validade ();
 
             std::string get_versao_java (u2 versao);
 
@@ -70,5 +71,9 @@
              *  Destrutor do arquivo .class e suas dependências
              */
             void deletar ();
+
+            static void executar ();
+
+            static void set_arq_main (ArqClass *arq_class);
     };
 #endif

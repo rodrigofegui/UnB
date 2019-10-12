@@ -32,8 +32,10 @@
             /**
              *  Decodificador do arquivo binário .class para a tabela de símbolos
              *  @param arq Arquivo .class sob análise
+             *  @returns 1 se houver a string `main` definida, 0 se não aconteceu
+             *  problemas na decodificação, caso contrário outro número
              */
-            void decodificar (FILE *arq) override;
+            u1 decodificar (FILE *arq) override;
 
             /**
              *  Exibição da tabela na saída padrão com controle de tabulação

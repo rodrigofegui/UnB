@@ -40,8 +40,10 @@
             /**
              *  Decodificador do arquivo binário .class para a tabela de campos
              *  @param arq Arquivo .class sob análise
+             *  @returns 0 se não aconteceu problemas na decodificação, caso contrário
+             *  outro número
              */
-            void decodificar (FILE *arq) override;
+            u1 decodificar (FILE *arq) override;
 
             /**
              *  Exibição da tabela na saída padrão com controle de tabulação

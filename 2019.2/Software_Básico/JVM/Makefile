@@ -41,8 +41,8 @@ DESTAQUE = ************************************************
 modo = e
 # Arquivo a ser manipulado
 # arqs = CasosTestes/double_aritmetica.class
-arqs = CasosTestes/ControladorMidi.class
-# arqs = CasosTestes/ControladorEstoque.class
+# arqs = CasosTestes/ControladorMidi.class
+arqs = CasosTestes/ControladorEstoque.class
 # arqs = CasosTestes/Instrumento.class
 
 ###################

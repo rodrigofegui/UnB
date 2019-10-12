@@ -9,30 +9,16 @@
 #include "../../lib/Uteis/Status.hpp"
 
 
+ArqClass *ArqClass::arq_main = nullptr;
+
 ArqClass::ArqClass (char *nome_arq) : ArqClass() {
     this->nome_arq = nome_arq;
 }
 
-void ArqClass::check_valido (){
+void ArqClass::check_validade (){
     ler_u4(this->arq, &this->codigo);
 
-    if (this->codigo != COD_ARQ_CLASS) erro(E_NAO_CLASS);
-}
-
-void ArqClass::erro (u1 e_codigo){
-    std::cout << "[ERRO] ";
-
-    switch (e_codigo){
-        case E_SEM_ARQ:
-            std::cout << "Não há arquivo associado para este .class" << std::endl; break;
-        case E_NAO_CLASS:
-            std::cout << "Este arquivo .class o código mágico correto" << std::endl; break;
-        default:
-            std::cout << "Não especificado" << std::endl;
-    }
-
-    deletar();
-    exit(e_codigo);
+    if (this->codigo == COD_ARQ_CLASS) this->e_valido = 1;
 }
 
 std::string ArqClass::get_versao_java (u2 versao){
@@ -58,9 +44,11 @@ std::string ArqClass::get_versao_java (u2 versao){
 void ArqClass::decodificar (){
     this->arq = abrir(nome_arq);
 
-    if (!this->arq) erro(E_SEM_ARQ);
+    if (!this->arq) return;
 
-    check_valido();
+    check_validade();
+
+    if (!this->e_valido) return;
 
     ler_u2(this->arq, &this->versao_min);
     ler_u2(this->arq, &this->versao_max);
@@ -68,7 +56,8 @@ void ArqClass::decodificar (){
 
     if (this->tam_tab_simbolo){
         this->tab_simbolo = new TabSimbolo(&this->tam_tab_simbolo);
-        this->tab_simbolo->decodificar(this->arq);
+        if (this->tab_simbolo->decodificar(this->arq))
+            ArqClass::set_arq_main(this);
     }
 
     ler_u2(this->arq, &this->flag_acesso);
@@ -106,8 +95,14 @@ void ArqClass::decodificar (){
 }
 
 void ArqClass::exibir (){
-    std::cout << "Dados do arquivo: " << this->nome_arq << std::endl;
+    std::cout << "Nome do arquivo .class: " << this->nome_arq << std::endl;
+    std::cout << "Este arq: " << this << std::endl;
     std::cout << "Código indentificador: " << get_hex_4(this->codigo) << std::endl;
+
+    if (!this->e_valido){
+        std::cout << "Não é um arquivo válido!" << std::endl;
+        return;
+    }
 
     std::cout << "Versão mínima compilador: ";
     std::cout << get_versao_java(this->versao_min) << std::endl;
@@ -162,4 +157,16 @@ void ArqClass::deletar (){
         this->tab_atributos->deletar();
 
     if (this->arq) fclose(this->arq);
+}
+
+
+void ArqClass::executar (){
+    std::cout << "veio executar" << std::endl;
+    std::cout << "Arq com `main`: " << ArqClass::arq_main << std::endl;
+}
+
+void ArqClass::set_arq_main (ArqClass *arq_class){
+    if (ArqClass::arq_main) return;
+
+    ArqClass::arq_main = arq_class;
 }

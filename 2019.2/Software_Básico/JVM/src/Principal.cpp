@@ -33,6 +33,8 @@ int main(int argc, char *argv[]){
         }
     }
 
+    ArqClass::executar();
+
     std::vector<ArqClass>().swap(arqs_class);
 
     return 0;

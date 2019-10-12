@@ -31,8 +31,10 @@
              *  Decodificador do arquivo binário .class para uma tabela, extraindo todos
              *  os seus registros específicos
              *  @param arq Arquivo .class sob análise
+             *  @returns 0 se não aconteceu problemas na decodificação, caso contrário
+             *  outro número
              */
-            virtual void decodificar (FILE *arq) = 0;
+            virtual u1 decodificar (FILE *arq) = 0;
 
             /**
              *  Exibição da tabela na saída padrão com controle de tabulação

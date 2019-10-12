@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 #include "../../lib/Tabelas/TabAtributos.hpp"
 #include "../../lib/Tabelas/TabSimbolo.hpp"
@@ -11,7 +12,7 @@ TabAtributos::TabAtributos (u2 *tam, InterTabela *tab_simbolos) : TabAtributos(t
     this->tab_simbolos = tab_simbolos;
 }
 
-void TabAtributos::decodificar (FILE *arq){
+u1 TabAtributos::decodificar (FILE *arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){
         std::string nome("");
         InterAtributo *attr;
@@ -37,6 +38,8 @@ void TabAtributos::decodificar (FILE *arq){
 
         this->registros.push_back(attr);
     }
+
+    return 0;
 }
 
 void TabAtributos::exibir (u1 qnt_tabs){

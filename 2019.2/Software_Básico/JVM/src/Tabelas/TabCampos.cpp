@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 #include "../../lib/Tabelas/TabCampos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
@@ -9,7 +10,7 @@ TabCampos::TabCampos (u2 *tam, InterTabela *tab_simbolos): TabCampos(tam) {
     this->tab_simbolos = tab_simbolos;
 }
 
-void TabCampos::decodificar (FILE *arq){
+u1 TabCampos::decodificar (FILE *arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){
         Campo c_campo(this->tab_simbolos);
 
@@ -17,6 +18,8 @@ void TabCampos::decodificar (FILE *arq){
 
         this->registros.push_back(c_campo);
     }
+
+    return 0;
 }
 
 void TabCampos::exibir (u1 qnt_tabs){

@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 #include "../../lib/Interfaces/InterAtributo.hpp"
 #include "../../lib/Tabelas/TabMetodos.hpp"
@@ -10,7 +11,7 @@ TabMetodos::TabMetodos (u2 *tam, InterTabela *tab_simbolos): TabMetodos(tam) {
     this->tab_simbolos = tab_simbolos;
 }
 
-void TabMetodos::decodificar (FILE *arq){
+u1 TabMetodos::decodificar (FILE *arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){
         Campo c_campo(this->tab_simbolos);
 
@@ -18,6 +19,8 @@ void TabMetodos::decodificar (FILE *arq){
 
         this->registros.push_back(c_campo);
     }
+
+    return 0;
 }
 
 void TabMetodos::exibir (u1 qnt_tabs){

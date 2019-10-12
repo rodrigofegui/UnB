@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 #include "../../lib/Tabelas/TabSimbolo.hpp"
 #include "../../lib/Tipos/CPDados.hpp"
@@ -7,11 +8,11 @@
 
 TabSimbolo::TabSimbolo (u2 *tam): InterTabela(tam){}
 
-void TabSimbolo::decodificar (FILE *arq){
+u1 TabSimbolo::decodificar (FILE *arq){
     int tam = *this->tam;
-    if (!tam) return;
+    if (!tam) return 2;
 
-    u1 temp, ignora = 0;
+    u1 temp, ignora = 0, tem_main = 0;
 
     for (int cnt = 0; cnt < tam - 1; cnt++){
         ler_u1(arq, &temp);
@@ -40,8 +41,14 @@ void TabSimbolo::decodificar (FILE *arq){
             ignora = 0;
         }
 
+        if (dynamic_cast<InfoUTF8*>(c_dados)
+                && !(dynamic_cast<InfoUTF8*>(c_dados))->get_string().compare("main"))
+            tem_main = 1;
+
         this->registros.push_back(c_dados);
     }
+
+    return tem_main;
 }
 
 void TabSimbolo::exibir (u1 qnt_tabs){
