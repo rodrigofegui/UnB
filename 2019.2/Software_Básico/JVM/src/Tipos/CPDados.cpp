@@ -1,66 +1,66 @@
 #include <iostream>
-#include "../../lib/Tabelas/TabSimbolo.hpp"
+#include "../../lib/Tabelas/TabSimbolos.hpp"
 #include "../../lib/Tipos/CPDados.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 
 
-void InfoClasse::decodificar (FILE *arq){
+void InfoClasse::decodificar (FILE *const arq){
     ler_u2(arq, &this->ind_nome);
 }
 
-void InfoClasse::exibir (u1 qnt_tabs){
+void InfoClasse::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "CONSTANT_Class" << std::endl;
 
     std::cout << tabs + "Índice para o nome: ";
     std::cout << this->ind_nome;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_nome) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind_nome) << std::endl;
 }
 
 
 
-void InfoRefCampo::decodificar (FILE *arq){
+void InfoRefCampo::decodificar (FILE *const arq){
     ler_u2(arq, &this->ind_classe);
     ler_u2(arq, &this->ind_nome_tipo);
 }
 
-void InfoRefCampo::exibir (u1 qnt_tabs){
+void InfoRefCampo::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "CONSTANT_Fieldref" << std::endl;
 
     std::cout << tabs + "Índice para a classe: ";
     std::cout << this->ind_classe;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_classe) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind_classe) << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
     std::cout << this->ind_nome_tipo;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_nome_tipo) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind_nome_tipo) << std::endl;
 }
 
 
 
-void InfoNomeTipo::decodificar (FILE *arq){
+void InfoNomeTipo::decodificar (FILE *const arq){
     ler_u2(arq, &this->ind_nome);
     ler_u2(arq, &this->ind_descritor);
 }
 
-void InfoNomeTipo::exibir (u1 qnt_tabs){
+void InfoNomeTipo::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "CONSTANT_NameAndType" << std::endl;
 
     std::cout << tabs + "Índice para o nome: ";
     std::cout << this->ind_nome;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_nome) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind_nome) << std::endl;
     std::cout << tabs + "Índice para o descritor: ";
     std::cout << this->ind_descritor;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_descritor) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind_descritor) << std::endl;
 }
 
 
 
-void InfoUTF8::decodificar (FILE *arq){
+void InfoUTF8::decodificar (FILE *const arq){
     u1 temp;
 
     ler_u2(arq, &this->tam);
@@ -71,7 +71,7 @@ void InfoUTF8::decodificar (FILE *arq){
     }
 }
 
-void InfoUTF8::exibir (u1 qnt_tabs){
+void InfoUTF8::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "CONSTANT_Utf8" << std::endl;
@@ -94,63 +94,63 @@ void InfoUTF8::deletar (){
 
 
 
-void InfoRefMetodo::decodificar (FILE *arq){
+void InfoRefMetodo::decodificar (FILE *const arq){
     ler_u2(arq, &this->ind_classe);
     ler_u2(arq, &this->ind_nome_tipo);
 }
 
-void InfoRefMetodo::exibir (u1 qnt_tabs){
+void InfoRefMetodo::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "CONSTANT_Methodref" << std::endl;
 
     std::cout << tabs + "Índice para a clase: ";
     std::cout << this->ind_classe;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_classe) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind_classe) << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
     std::cout << this->ind_nome_tipo;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_nome_tipo) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind_nome_tipo) << std::endl;
 }
 
 
 
-void InfoRefMetInterface::decodificar (FILE *arq){
+void InfoRefMetInterface::decodificar (FILE *const arq){
     ler_u2(arq, &this->ind_classe);
     ler_u2(arq, &this->ind_nome_tipo);
 }
 
-void InfoRefMetInterface::exibir (u1 qnt_tabs){
+void InfoRefMetInterface::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "CONSTANT_InterfaceMethodref" << std::endl;
 
     std::cout << tabs + "Índice para a clase: ";
     std::cout << this->ind_classe;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_classe) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind_classe) << std::endl;
     std::cout << tabs + "Índice para o nome e tipo: ";
     std::cout << this->ind_nome_tipo;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_nome_tipo) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind_nome_tipo) << std::endl;
 }
 
 
 
-void InfoString::decodificar (FILE *arq){
+void InfoString::decodificar (FILE *const arq){
     ler_u2(arq, &this->ind_string);
 }
 
-void InfoString::exibir (u1 qnt_tabs){
+void InfoString::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "CONSTANT_String" << std::endl;
 
     std::cout << tabs + "Índice para a string: ";
     std::cout << this->ind_string;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(this->tab_simbolos))->get_string(this->ind_string) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind_string) << std::endl;
 }
 
 
 
-void InfoInteiro::decodificar (FILE *arq){
+void InfoInteiro::decodificar (FILE *const arq){
     ler_u4(arq, &this->bytes);
 }
 
@@ -164,11 +164,11 @@ void InfoInteiro::exibir (u1 qnt_tabs){
 
 
 
-void InfoFloat::decodificar (FILE *arq){
+void InfoFloat::decodificar (FILE *const arq){
     ler_u4(arq, &this->bytes);
 }
 
-void InfoFloat::exibir (u1 qnt_tabs){
+void InfoFloat::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "CONSTANT_Float" << std::endl;
@@ -178,12 +178,12 @@ void InfoFloat::exibir (u1 qnt_tabs){
 
 
 
-void InfoLong::decodificar (FILE *arq){
+void InfoLong::decodificar (FILE *const arq){
     ler_u4(arq, &this->bytes_mais);
     ler_u4(arq, &this->bytes_menos);
 }
 
-void InfoLong::exibir (u1 qnt_tabs){
+void InfoLong::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "CONSTANT_Long" << std::endl;
@@ -194,12 +194,12 @@ void InfoLong::exibir (u1 qnt_tabs){
 
 
 
-void InfoDouble::decodificar (FILE *arq){
+void InfoDouble::decodificar (FILE *const arq){
     ler_u4(arq, &this->bytes_mais);
     ler_u4(arq, &this->bytes_menos);
 }
 
-void InfoDouble::exibir (u1 qnt_tabs){
+void InfoDouble::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "CONSTANT_Double" << std::endl;

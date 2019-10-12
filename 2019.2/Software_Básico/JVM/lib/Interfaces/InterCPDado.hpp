@@ -26,20 +26,20 @@
              *  Construtor com o conhecimento prévio da tabela de símbolos
              *  @param tab Tabela de símbolo que está vinculado
              */
-            explicit InterCPDado (InterTabela *tab_simbolos) : tab_simbolos(tab_simbolos){};
+            explicit InterCPDado (InterTabela *const tab_simbolos) : tab_simbolos(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para um dado da tabela de
              *  símbolos, extraindo todos os seus campos específicos
              *  @param arq Arquivo .class sob análise
              */
-            virtual void decodificar (FILE *arq) = 0;
+            virtual void decodificar (FILE *const arq) = 0;
 
             /**
              *  Exibição do dado na saída padrão com controle de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            virtual void exibir (u1 qnt_tabs) = 0;
+            virtual void exibir (const u1 qnt_tabs) = 0;
 
             /**
              *  Destrutor de um dado da tabela de símbolos e suas eventuais dependências

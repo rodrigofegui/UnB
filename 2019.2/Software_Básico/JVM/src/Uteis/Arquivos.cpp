@@ -18,11 +18,11 @@ FILE * abrir(const char *nome_arq){
     return arq;
 }
 
-void ler_u1(FILE *arq, u1 *dst){
+void ler_u1(FILE *const arq, u1 *dst){
     fread(dst, sizeof(u1), 1, arq);
 }
 
-void ler_u2(FILE *arq, u2 *dst){
+void ler_u2(FILE *const arq, u2 *dst){
    u1 temp;
 
     for (int ind = 1; ind <= sizeof(u2); ind++){
@@ -32,7 +32,7 @@ void ler_u2(FILE *arq, u2 *dst){
     }
 }
 
-void ler_u4(FILE *arq, u4 *dst){
+void ler_u4(FILE *const arq, u4 *dst){
     u1 temp;
     for (int ind = 0; ind < sizeof(u4); ind++){
         fread(&temp, sizeof(u1), 1, arq);
@@ -41,7 +41,7 @@ void ler_u4(FILE *arq, u4 *dst){
     }
 }
 
-int get_padding(int num_max){
+int get_padding(const int num_max){
     int padding = 1;
 
     do{
@@ -54,7 +54,7 @@ int get_padding(int num_max){
     return padding;
 }
 
-std::string get_hex(u1 fonte){
+std::string get_hex(const u1 fonte){
     std::stringstream hex_str;
 
     hex_str << "0x" << std::setfill('0') << std::setw(2)
@@ -63,7 +63,7 @@ std::string get_hex(u1 fonte){
     return hex_str.str();
 }
 
-std::string get_hex_2(u2 fonte){
+std::string get_hex_2(const u2 fonte){
     std::stringstream hex_str;
 
     hex_str << "0x" << std::setfill('0') << std::setw(4)
@@ -72,7 +72,7 @@ std::string get_hex_2(u2 fonte){
     return hex_str.str();
 }
 
-std::string get_hex_4(u4 fonte){
+std::string get_hex_4(const u4 fonte){
     std::stringstream hex_str;
 
     hex_str << "0x" << std::setfill('0') << std::setw(8)

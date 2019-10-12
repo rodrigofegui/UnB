@@ -18,29 +18,22 @@
             /** Estrutura dos dados da __CONSTANT_Class__ */
             u2 ind_nome = 0;
 
-            /** Construtor padrão */
-            InfoClasse (){};
-
-            /**
-             *  Construtor com o conhecimento prévio da tabela de símbolos que está
-             *  vinculado
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit InfoClasse (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
+            /* Herdando método já implementado */
+            explicit InfoClasse (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){}
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
              *  __CONSTANT_Class__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição dos dados da __CONSTANT_Class__ na saída padrão com controle
              *  de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
     };
 
     /**
@@ -54,29 +47,22 @@
             u2 ind_nome_tipo = 0;
 
         public:
-            /** Construtor padrão */
-            InfoRefCampo (){};
-
-            /**
-             *  Construtor com o conhecimento prévio da tabela de símbolos que está
-             *  vinculado
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit InfoRefCampo (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
+            /* Herdando método já implementado */
+            explicit InfoRefCampo (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
              *  __CONSTANT_Fieldref__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição dos dados da __CONSTANT_Fieldref__ na saída padrão com controle
              *  de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
     };
 
     /**
@@ -89,29 +75,22 @@
             u2 ind_nome = 0;
             u2 ind_descritor = 0;
 
-            /** Construtor padrão */
-            InfoNomeTipo (){};
-
-            /**
-             *  Construtor com o conhecimento prévio da tabela de símbolos que está
-             *  vinculado
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit InfoNomeTipo (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
+            /* Herdando método já implementado */
+            explicit InfoNomeTipo (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
              *  __CONSTANT_NameAndType__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição dos dados da __CONSTANT_NameAndType__ na saída padrão com controle
              *  de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
     };
 
     /**
@@ -125,29 +104,22 @@
             std::vector<u1> bytes;
 
         public:
-            /** Construtor padrão */
-            InfoUTF8 (){};
-
-            /**
-             *  Construtor com o conhecimento prévio da tabela de símbolos que está
-             *  vinculado
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit InfoUTF8 (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
+            /* Herdando método já implementado */
+            explicit InfoUTF8 (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
              *  __CONSTANT_Utf8__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição dos dados da __CONSTANT_Utf8__ na saída padrão com controle
              *  de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
 
             /**
              *  Destrutor dos dados da __CONSTANT_Utf8__
@@ -172,29 +144,22 @@
             u2 ind_nome_tipo = 0;
 
         public:
-            /** Construtor padrão */
-            InfoRefMetodo (){};
-
-            /**
-             *  Construtor com o conhecimento prévio da tabela de símbolos que está
-             *  vinculado
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit InfoRefMetodo (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
+            /* Herdando método já implementado */
+            explicit InfoRefMetodo (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
              *  __CONSTANT_Methodref__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição dos dados da __CONSTANT_Methodref__ na saída padrão com controle
              *  de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
     };
 
     /**
@@ -208,29 +173,22 @@
             u2 ind_nome_tipo = 0;
 
         public:
-            /** Construtor padrão */
-            InfoRefMetInterface (){};
-
-            /**
-             *  Construtor com o conhecimento prévio da tabela de símbolos que está
-             *  vinculado
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit InfoRefMetInterface (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
+            /* Herdando método já implementado */
+            explicit InfoRefMetInterface (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
              *  __CONSTANT_InterfaceMethodref__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição dos dados da __CONSTANT_InterfaceMethodref__ na saída padrão com
              *  controle de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
     };
 
     /**
@@ -243,29 +201,22 @@
             u2 ind_string = 0;
 
         public:
-            /** Construtor padrão */
-            InfoString (){};
-
-            /**
-             *  Construtor com o conhecimento prévio da tabela de símbolos que está
-             *  vinculado
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit InfoString (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
+            /* Herdando método já implementado */
+            explicit InfoString (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
              *  __CONSTANT_String__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição dos dados da __CONSTANT_String__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
     };
 
     /**
@@ -278,29 +229,22 @@
             u4 bytes = 0;
 
         public:
-            /** Construtor padrão */
-            InfoInteiro (){};
-
-            /**
-             *  Construtor com o conhecimento prévio da tabela de símbolos que está
-             *  vinculado
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit InfoInteiro (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
+            /* Herdando método já implementado */
+            explicit InfoInteiro (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
              *  __CONSTANT_Integer__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição dos dados da __CONSTANT_Integer__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
     };
 
     /**
@@ -313,29 +257,22 @@
             u4 bytes = 0;
 
         public:
-            /** Construtor padrão */
-            InfoFloat (){};
-
-            /**
-             *  Construtor com o conhecimento prévio da tabela de símbolos que está
-             *  vinculado
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit InfoFloat (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
+            /* Herdando método já implementado */
+            explicit InfoFloat (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
              *  __CONSTANT_Float__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição dos dados da __CONSTANT_Float__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
     };
 
     /**
@@ -349,29 +286,22 @@
             u4 bytes_menos = 0;
 
         public:
-            /** Construtor padrão */
-            InfoLong (){};
-
-            /**
-             *  Construtor com o conhecimento prévio da tabela de símbolos que está
-             *  vinculado
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit InfoLong (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
+            /* Herdando método já implementado */
+            explicit InfoLong (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
              *  __CONSTANT_Long__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição dos dados da __CONSTANT_Long__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
     };
 
     /**
@@ -385,28 +315,21 @@
             u4 bytes_menos = 0;
 
         public:
-            /** Construtor padrão */
-            InfoDouble (){};
-
-            /**
-             *  Construtor com o conhecimento prévio da tabela de símbolos que está
-             *  vinculado
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit InfoDouble (InterTabela *tab_simbolos) : InterCPDado(tab_simbolos){}
+            /* Herdando método já implementado */
+            explicit InfoDouble (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
              *  __CONSTANT_Double__, extraindo todos os seus campos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição dos dados da __CONSTANT_Double__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
     };
 #endif

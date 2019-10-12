@@ -1,14 +1,12 @@
 #include <iomanip>
 #include <iostream>
-#include "../../lib/Tabelas/TabSimbolo.hpp"
+#include "../../lib/Tabelas/TabSimbolos.hpp"
 #include "../../lib/Tipos/CPDados.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 #include "../../lib/Uteis/Flags_Tags.hpp"
 
 
-TabSimbolo::TabSimbolo (u2 *tam): InterTabela(tam){}
-
-u1 TabSimbolo::decodificar (FILE *arq){
+u1 TabSimbolos::decodificar (FILE *const arq){
     int tam = *this->tam;
     if (!tam) return 2;
 
@@ -51,7 +49,7 @@ u1 TabSimbolo::decodificar (FILE *arq){
     return tem_main;
 }
 
-void TabSimbolo::exibir (u1 qnt_tabs){
+void TabSimbolos::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
     int tam = *this->tam;
 
@@ -74,7 +72,7 @@ void TabSimbolo::exibir (u1 qnt_tabs){
     }
 }
 
-std::string TabSimbolo::get_string (u2 ind_nome){
+std::string TabSimbolos::get_string (u2 ind_nome){
     if (!this->tam) return "";
 
     if (ind_nome == 0 || (ind_nome > *this->tam)) return "";
@@ -98,7 +96,7 @@ std::string TabSimbolo::get_string (u2 ind_nome){
     return "";
 }
 
-void TabSimbolo::deletar (){
+void TabSimbolos::deletar (){
     for (auto &registro: this->registros)
         registro->deletar();
 

@@ -13,6 +13,8 @@
      */
     class Excessao{
         private:
+            InterTabela *tab_simbolos = nullptr;
+
             /** Estrutura de uma excessão */
             u2 lin_comeco = 0;
             u2 lin_final = 0;
@@ -22,6 +24,8 @@
         public:
             /** Construtor padrão */
             Excessao (){};
+
+            explicit Excessao (InterTabela *const tab_simbolos) : tab_simbolos(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para uma excessão, extraindo todos
@@ -37,6 +41,6 @@
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (InterTabela *tab_simbolos, u1 qnt_tabs);
+            void exibir (const u1 qnt_tabs);
     };
 #endif

@@ -15,10 +15,7 @@
      */
     class AttrCode : public InterAtributo {
         private:
-            /** Tabela de símbolos que está vinculado */
-            InterTabela *tab_simbolos = nullptr;
-
-            /** Estrutura de um atributo __Code__ */
+            /* Estrutura de um atributo __Code__ */
             u2 max_pilha = 0;
             u2 max_locais = 0;
             u4 tam_codigo = 0;
@@ -29,22 +26,8 @@
             TabAtributos *tab_atributos = nullptr;
 
         public:
-            /**  Construtor padrão */
-            AttrCode (){};
-
-            /**
-             *  Construtor com o conhecimento prévio do índice do nome
-             *  @param ind_nome Índice do nome
-             */
-            explicit AttrCode (const u2 ind_nome);
-
-            /**
-             *  Construtor com o conhecimento prévio tanto do índice do nome quanto da
-             *  tabela de símbolos que está vinculado
-             *  @param ind_nome Índice do nome
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
-             */
-            explicit AttrCode (const u2 ind_nome, InterTabela *tab_simbolos);
+            /* Herdando método já implementado */
+            explicit AttrCode (const u2 ind_nome, InterTabela *const tab_simbolos);
 
             /**
              *  Decodificador do arquivo binário .class para o atributo __Code__,
@@ -52,7 +35,7 @@
              *  caso já não os tenha extraído
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição do atributo __Code__ na saída padrão, conhecendo-se a tabela de
@@ -61,7 +44,7 @@
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (InterTabela *tab_simbolos, u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
 
             /**
              *  Destrutor do atributo __Code__ e suas dependências
@@ -86,14 +69,8 @@
             std::vector<InfoNumero> tab_valores;
 
         public:
-            /**  Construtor padrão */
-            AttrLinhaNum () {};
-
-            /**
-             *  Construtor com o conhecimento prévio do índice do nome
-             *  @param ind_nome Índice do nome
-             */
-            explicit AttrLinhaNum (const u2 ind_nome);
+            /* Herdando método já implementado */
+            explicit AttrLinhaNum (const u2 ind_nome) : InterAtributo(ind_nome){};
 
             /**
              *  Decodificador do arquivo binário .class para o atributo
@@ -101,7 +78,7 @@
              *  nome e do seu tamanho, caso já não os tenha extraído
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição do atributo __LineNumberTable__ na saída padrão, conhecendo-se
@@ -110,7 +87,7 @@
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (InterTabela *tab_simbolos, u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
 
             /**
              *  Destrutor do atributo __LineNumberTable__ e suas dependências
@@ -124,18 +101,12 @@
      */
     class AttrArqFonte : public InterAtributo {
         private:
-            /** Estrutura de um atributo __Code__ */
+            /** Estrutura de um atributo __SourceFile__ */
             u2 ind = 0;
 
         public:
-            /** Construtor padrão */
-            AttrArqFonte (){};
-
-            /**
-             *  Construtor com o conhecimento prévio do índice do nome
-             *  @param ind_nome Índice do nome
-             */
-            explicit AttrArqFonte (const u2 ind_nome);
+            /* Herdando método já implementado */
+            explicit AttrArqFonte (const u2 ind_nome, InterTabela *const tab_simbolos);
 
             /**
              *  Decodificador do arquivo binário .class para o atributo __SourceFile__,
@@ -143,7 +114,7 @@
              *  caso já não os tenha extraído
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição do atributo __SourceFile__ na saída padrão, conhecendo-se a
@@ -152,7 +123,7 @@
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (InterTabela *tab_simbolos, u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
 
             /**
              *  Destrutor do atributo __SourceFile__ e suas dependências
@@ -166,21 +137,15 @@
      */
     class AttrSilenciado : public InterAtributo {
         public:
-            /** Construtor padrão */
-            AttrSilenciado (){};
-
-            /**
-             *  Construtor com o conhecimento prévio do índice do nome
-             *  @param ind_nome Índice do nome
-             */
-            explicit AttrSilenciado (const u2 ind_nome);
+            /* Herdando método já implementado */
+            explicit AttrSilenciado (const u2 ind_nome, InterTabela *const tab_simbolos);
 
             /**
              *  Decodificador do arquivo binário .class para o atributo não tratável para
              *  o seu índice do nome e o seu tamanho, caso já não os tenha extraído
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq) override;
+            void decodificar (FILE *const arq) override;
 
             /**
              *  Exibição do atributo não tratável na saída padrão, conhecendo-se a
@@ -189,7 +154,7 @@
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (InterTabela *tab_simbolos, u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
 
             /**
              *  Destrutor do atributo não tratável e suas dependências

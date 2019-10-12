@@ -2,7 +2,7 @@
 #include "../../lib/Tabelas/TabAtributos.hpp"
 #include "../../lib/Tabelas/TabCampos.hpp"
 #include "../../lib/Tabelas/TabMetodos.hpp"
-#include "../../lib/Tabelas/TabSimbolo.hpp"
+#include "../../lib/Tabelas/TabSimbolos.hpp"
 #include "../../lib/Tipos/ArqClass.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 #include "../../lib/Uteis/Flags_Tags.hpp"
@@ -11,7 +11,7 @@
 
 ArqClass *ArqClass::arq_main = nullptr;
 
-ArqClass::ArqClass (char *nome_arq) : ArqClass() {
+ArqClass::ArqClass (char *const nome_arq) : ArqClass() {
     this->nome_arq = nome_arq;
 }
 
@@ -21,7 +21,7 @@ void ArqClass::check_validade (){
     if (this->codigo == COD_ARQ_CLASS) this->e_valido = 1;
 }
 
-std::string ArqClass::get_versao_java (u2 versao){
+std::string ArqClass::get_versao_java (const u2 versao){
     switch (versao){
         case V1_1:  return "JDK 1.1";
         case V1_2:  return "JDK 1.2";
@@ -55,7 +55,7 @@ void ArqClass::decodificar (){
     ler_u2(this->arq, &this->tam_tab_simbolo);
 
     if (this->tam_tab_simbolo){
-        this->tab_simbolo = new TabSimbolo(&this->tam_tab_simbolo);
+        this->tab_simbolo = new TabSimbolos(&this->tam_tab_simbolo);
         if (this->tab_simbolo->decodificar(this->arq))
             ArqClass::set_arq_main(this);
     }
@@ -159,13 +159,12 @@ void ArqClass::deletar (){
     if (this->arq) fclose(this->arq);
 }
 
-
 void ArqClass::executar (){
     std::cout << "veio executar" << std::endl;
     std::cout << "Arq com `main`: " << ArqClass::arq_main << std::endl;
 }
 
-void ArqClass::set_arq_main (ArqClass *arq_class){
+void ArqClass::set_arq_main (ArqClass *const arq_class){
     if (ArqClass::arq_main) return;
 
     ArqClass::arq_main = arq_class;

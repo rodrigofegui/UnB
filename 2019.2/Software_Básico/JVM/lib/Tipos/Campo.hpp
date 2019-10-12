@@ -33,20 +33,20 @@
              *  vinculado
              *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            explicit Campo (InterTabela *tab_simbolos);
+            explicit Campo (InterTabela *const tab_simbolos);
 
             /**
              *  Decodificador do arquivo binário .class para um campo, extraindo todos os
              *  seus dados específicos, além de seus atributos
              *  @param arq Arquivo .class sob análise
              */
-            void decodificar (FILE *arq);
+            void decodificar (FILE *const arq);
 
             /**
              *  Exibição de um campo na saída padrão, com controle de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs);
+            void exibir (const u1 qnt_tabs);
 
             /**
              *  Destrutor de um campo e suas dependências

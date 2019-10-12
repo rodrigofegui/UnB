@@ -14,28 +14,12 @@
      */
     class TabMetodos : public InterTabela {
         private:
-            /** Tabela de símbolos que está vinculada */
-            InterTabela *tab_simbolos = nullptr;
             /** Conteúdo da tabela em si */
             std::vector<Campo> registros;
 
         public:
-            /** Construtor padrão */
-            TabMetodos (){};
-
-            /**
-             *  Construtor com o conhecimento prévio do seu tamanho
-             *  @param tam Tamanho a ser atribuido à tabela
-             */
-            explicit TabMetodos (u2 *tam);
-
-            /**
-             *  Construtor com o conhecimento prévio tanto do seu tamanho quanto da tabela
-             *  de símbolos que está vinculada
-             *  @param tam Tamanho a ser atribuido à tabela
-             *  @param tab_simbolos Tabela de símbolos que está vinculada
-             */
-            explicit TabMetodos (u2 *tam, InterTabela *tab_simbolos);
+            /* Herdando método já implementado */
+            explicit TabMetodos (u2 *const tam, InterTabela *const tab_simbolos) : InterTabela(tam, tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para a tabela de métodos

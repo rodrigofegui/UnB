@@ -17,14 +17,14 @@
             /** Arquivo com a função main */
             static ArqClass *arq_main;
 
-            /** Controle do arquivo .class original */
+            /* Controle do arquivo .class original */
             char *nome_arq;
             FILE *arq = nullptr;
 
             /** Flag se é um .class com o MagicCode correto */
             u1 e_valido = 0;
 
-            /** Estrutura de um arquivo .class */
+            /* Estrutura de um arquivo .class */
             u4 codigo = 0;
             u2 versao_min = 0;
             u2 versao_max = 0;
@@ -45,7 +45,7 @@
             /** Verifica se o arquivo conectado é válido */
             void check_validade ();
 
-            std::string get_versao_java (u2 versao);
+            static std::string get_versao_java (const u2 versao);
 
         public:
             /** Construtor padrão */
@@ -55,7 +55,7 @@
              *  Construtor com o conhecimento prévio do arquivo .class indiretamente
              *  @param nome_arq Nome do arquivo .class a ser lido
              */
-            explicit ArqClass (char *nome_arq);
+            explicit ArqClass (char *const nome_arq);
 
             /**
              *  Decodificador do arquivo binário .class
@@ -74,6 +74,6 @@
 
             static void executar ();
 
-            static void set_arq_main (ArqClass *arq_class);
+            static void set_arq_main (ArqClass *const arq_class);
     };
 #endif

@@ -5,13 +5,7 @@
 #include "../../lib/Uteis/Arquivos.hpp"
 
 
-TabMetodos::TabMetodos (u2 *tam) : InterTabela(tam){}
-
-TabMetodos::TabMetodos (u2 *tam, InterTabela *tab_simbolos): TabMetodos(tam) {
-    this->tab_simbolos = tab_simbolos;
-}
-
-u1 TabMetodos::decodificar (FILE *arq){
+u1 TabMetodos::decodificar (FILE *const arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){
         Campo c_campo(this->tab_simbolos);
 
@@ -23,7 +17,7 @@ u1 TabMetodos::decodificar (FILE *arq){
     return 0;
 }
 
-void TabMetodos::exibir (u1 qnt_tabs){
+void TabMetodos::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
     int tam = *this->tam;
 

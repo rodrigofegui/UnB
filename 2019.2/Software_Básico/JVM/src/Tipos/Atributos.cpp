@@ -1,17 +1,15 @@
 #include <iostream>
 #include "../../lib/Tabelas/TabAtributos.hpp"
-#include "../../lib/Tabelas/TabSimbolo.hpp"
+#include "../../lib/Tabelas/TabSimbolos.hpp"
 #include "../../lib/Tipos/Atributos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
 
 
-AttrCode::AttrCode (const u2 ind_nome) : InterAtributo(ind_nome){}
+AttrCode::AttrCode (const u2 ind_nome, InterTabela *const tab_simbolos) :
+    InterAtributo(ind_nome, tab_simbolos){
+};
 
-AttrCode::AttrCode (const u2 ind_nome, InterTabela *tab_simbolos) : AttrCode(ind_nome){
-    this->tab_simbolos = tab_simbolos;
-}
-
-void AttrCode::decodificar (FILE *arq){
+void AttrCode::decodificar (FILE *const arq){
     u1 temp;
 
     InterAtributo::decodificar(arq);
@@ -29,7 +27,8 @@ void AttrCode::decodificar (FILE *arq){
 
     if (this->tam_tab_excessao){
         for (int cnt =0; cnt < this->tam_tab_excessao; cnt++){
-            Excessao excessao;
+            Excessao excessao(this->tab_simbolos);
+
             excessao.decodificar(arq);
 
             this->tab_excessao.push_back(excessao);
@@ -44,7 +43,7 @@ void AttrCode::decodificar (FILE *arq){
     }
 }
 
-void AttrCode::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
+void AttrCode::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "Code" << std::endl;
@@ -65,7 +64,7 @@ void AttrCode::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
         std::cout << tabs + "\tIni.\tFim\tTrat.\tCatch" << std::endl;
 
     for (auto &excessao : this->tab_excessao)
-        excessao.exibir(this->tab_simbolos, qnt_tabs + 1);
+        excessao.exibir(qnt_tabs + 1);
 
     std::cout << tabs + "Tamanho da tabela de atributos: " << this->tam_tab_atributos << std::endl;
 
@@ -85,9 +84,7 @@ void AttrCode::deletar (){
 
 
 
-AttrLinhaNum::AttrLinhaNum (const u2 ind_nome) : InterAtributo(ind_nome){}
-
-void AttrLinhaNum::decodificar (FILE *arq){
+void AttrLinhaNum::decodificar (FILE *const arq){
     ler_u4(arq, &this->tam);
 
     ler_u2(arq, &this->tam_tab_valores);
@@ -102,7 +99,7 @@ void AttrLinhaNum::decodificar (FILE *arq){
     }
 }
 
-void AttrLinhaNum::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
+void AttrLinhaNum::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "LineNumberTable" << std::endl;
@@ -126,15 +123,17 @@ void AttrLinhaNum::deletar (){
 
 
 
-AttrArqFonte::AttrArqFonte (const u2 ind_nome) : InterAtributo(ind_nome){}
+AttrArqFonte::AttrArqFonte (const u2 ind_nome, InterTabela *const tab_simbolos) :
+    InterAtributo(ind_nome, tab_simbolos){
+};
 
-void AttrArqFonte::decodificar (FILE *arq){
+void AttrArqFonte::decodificar (FILE *const arq){
     InterAtributo::decodificar (arq);
 
     ler_u2(arq, &this->ind);
 }
 
-void AttrArqFonte::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
+void AttrArqFonte::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "SourceFile" << std::endl;
@@ -142,7 +141,7 @@ void AttrArqFonte::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
     std::cout << tabs + "Índice para o nome: " << this->ind_nome << std::endl;
     std::cout << tabs + "Tamanho do atributo: " << this->tam << std::endl;
     std::cout << tabs + "Índice para o nome do arquivo-fonte: " << this->ind;
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(tab_simbolos))->get_string(this->ind) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind) << std::endl;
 }
 
 void AttrArqFonte::deletar (){
@@ -151,19 +150,21 @@ void AttrArqFonte::deletar (){
 
 
 
-AttrSilenciado::AttrSilenciado (const u2 ind_nome) : InterAtributo(ind_nome){}
+AttrSilenciado::AttrSilenciado (const u2 ind_nome, InterTabela *const tab_simbolos) :
+    InterAtributo(ind_nome, tab_simbolos){
+};
 
-void AttrSilenciado::decodificar (FILE *arq){
+void AttrSilenciado::decodificar (FILE *const arq){
     InterAtributo::decodificar(arq);
 
     fseek(arq, this->tam, SEEK_CUR);
 }
 
-void AttrSilenciado::exibir (InterTabela *tab_simbolos, u1 qnt_tabs){
+void AttrSilenciado::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
 
     std::cout << "Não reconhecido";
-    std::cout << " -> " << (dynamic_cast<TabSimbolo*>(tab_simbolos))->get_string(this->ind_nome) << std::endl;
+    std::cout << " -> " << (dynamic_cast<TabSimbolos*>(this->tab_simbolos))->get_string(this->ind_nome) << std::endl;
 
     std::cout << tabs + "Índice para o nome: " << this->ind_nome << std::endl;
     std::cout << tabs + "Tamanho do atributo: " << this->tam << std::endl;

@@ -14,9 +14,14 @@
      *  Interface para todos os tipos de atributos de um arquivo .class
      */
     class InterAtributo {
+        protected:
+            /** Tabela de símbolos que está vinculado */
+            InterTabela *tab_simbolos = nullptr;
+
         public:
-            /** Variáveis comuns a todos os atributos */
+            /** Índice do nome na tabela de símbolos */
             u2 ind_nome = 0;
+            /** Tamanho do atributo */
             u4 tam = 0;
 
             /** Construtor padrão */
@@ -29,21 +34,25 @@
             explicit InterAtributo (const u2 ind_nome);
 
             /**
-             *  Decodificador do arquivo binário .class para um atributo, extraindo todos
-             *  os seus campos específicos, caso exista, além do índice do nome e do seu
-             *  tamanho
-             *  @param arq Arquivo .class sob análise
+             *  Construtor com o conhecimento prévio tanto do índice do nome quanto da tabela de símbolos que está
+             *  vinculado
+             *  @param ind_nome Índice do nome
+             *  @param tab_simbolos Tabela de símbolos que está vinculado
              */
-            virtual void decodificar (FILE *arq);
+            explicit InterAtributo (const u2 ind_nome, InterTabela *const tab_simbolos);
 
             /**
-             *  Exibição do atributo na saída padrão, conhecendo-se a tabela de símbolos
-             *  do arquivo corrente, para exibir as referências, além do controle de
-             *  tabulação
-             *  @param tab_simbolos Tabela de símbolos do arquivo .class
+             *  Decodificador do arquivo binário .class para um atributo, extraindo todos os seus campos específicos,
+             *  caso exista, além do índice do nome e do seu tamanho
+             *  @param arq Arquivo .class sob análise
+             */
+            virtual void decodificar (FILE *const arq);
+
+            /**
+             *  Exibição do atributo na saída padrão, conhecendo-se o controle de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            virtual void exibir (InterTabela *tab_simbolos, u1 qnt_tabs) = 0;
+            virtual void exibir (const u1 qnt_tabs) = 0;
 
             /**
              *  Destrutor de um atributo e suas eventuais dependências

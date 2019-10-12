@@ -11,23 +11,17 @@
     #include "../Interfaces/InterCPDado.hpp"
 
     /**
-     *  @class TabSimbolo
+     *  @class TabSimbolos
      *  Tabela de símbolos do arquivo .class
      */
-    class TabSimbolo : public InterTabela {
+    class TabSimbolos : public InterTabela {
         private:
             /** Conteúdo da tabela em si */
             std::vector<InterCPDado*> registros;
 
         public:
-            /** Construtor padrão */
-            TabSimbolo (){};
-
-            /**
-             *  Construtor com o conhecimento prévio do seu tamanho
-             *  @param tam Tamanho a ser atribuido à tabela
-             */
-            explicit TabSimbolo (u2 *tam);
+            /* Herdando método já implementado */
+            explicit TabSimbolos (u2 *const tam) : InterTabela(tam){};
 
             /**
              *  Decodificador do arquivo binário .class para a tabela de símbolos
@@ -35,13 +29,13 @@
              *  @returns 1 se houver a string `main` definida, 0 se não aconteceu
              *  problemas na decodificação, caso contrário outro número
              */
-            u1 decodificar (FILE *arq) override;
+            u1 decodificar (FILE *const arq) override;
 
             /**
              *  Exibição da tabela na saída padrão com controle de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
-            void exibir (u1 qnt_tabs) override;
+            void exibir (const u1 qnt_tabs) override;
 
             /**
              *  Recuperação da descrição do item da tabela na posição requisitada, podendo
