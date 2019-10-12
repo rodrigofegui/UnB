@@ -72,8 +72,14 @@
              */
             void deletar ();
 
+            /** Interpretador de todos os arquivos considerados pelo sistema */
             static void executar ();
 
+            /**
+             *  Dentre os arquivos considerados pelo sistema, o primeiro que possuir a função `main` definida
+             *  será considerado como o arquivo de entrada pelo interpretador
+             *  @param arq_class Arquivo .class que contém um método main
+             */
             static void set_arq_main (ArqClass *const arq_class);
     };
 #endif

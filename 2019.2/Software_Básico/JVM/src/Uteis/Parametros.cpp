@@ -1,42 +1,112 @@
 #include "../../lib/Uteis/Parametros.hpp"
+#include "../../lib/Uteis/Arquivos.hpp"
 
 
-u1 check_parametros(int argc, char *argv[]){
-    u1 e_leitura = 1;
+void Parametros::get_entradas (int argc, char *argv[]){
+    check_modo(argc, argv);
 
-    if ((argc - 1) > 2){
-        printf("\n[ERRO] Este programa só aceita até 2 argumentos, mas vieram %d.\n", argc - 1);
-        exit(E_QNT_ARGS);
-    }
-
-    char *temp = argv[1];
-
-    if (strcmp(temp, "-e") && strcmp(temp, "-i")){
-        printf("\n[ERRO] Este programa só opera sobre 2 modos: -e ou -i; foi passado: %s.\n", temp);
-        return E_MODO;
-
-    }else if (!strcmp(temp, "-i")){
-        e_leitura = 1;
-    }
-
-    temp = strtok(argv[2], DELIMITADOR_ARGS);
-
-    while(temp){
-        if (!strstr(temp, TIPO_ARQ_ACEITO)){
-            printf("\n[ERRO] Este programa só analisa arquivos da extensão .class; foi passado o arquivo: '%s'.\n", temp);
-            exit(E_TIPO);
-        }
-
-        temp = strtok(NULL, DELIMITADOR_ARGS);
-    }
-
-    return e_leitura;
+    check_nome_arqs(argc, argv);
 }
 
+void Parametros::check_modo (int argc, char *argv[]){
+    if (tem_modo_cli(argc, argv)) {
+        std::cout << "Passou por linha de comando " << get_hex(this->flags) << std::endl;
+        return;
+    }
 
-// u1 check_qnt_args(int argc){
-//     if (!(argc - 1))
-//         return W_QNT_ARGS;
+    std::string leitura;
 
-//     return 0;
-// }
+    std::cout << "Não houve o modo de operação!" << std::endl;
+
+    do{
+        std::cout << "Digite o modo de operação: [e/i]" << std::endl;
+        std::cin >> leitura; getchar();
+
+        if (!leitura.compare("e") || !leitura.compare("i"))
+            break;
+
+        std::cout << "Entrada inválida!" << std::endl;
+        std::cout << "Só pode ser ou 'e' ou 'i'" << std::endl;
+
+    }while(true);
+
+    set_modo("-" + leitura);
+}
+
+void Parametros::check_nome_arqs (int argc, char *argv[]){
+     if (tem_arqs_cli(argc, argv)) {
+        return;
+    }
+
+    std::string leitura;
+
+    std::cout << "Não houve arquivo por linha de comando!" << std::endl;
+
+    do{
+        std::cout << "Digite o nome do arquivo que deseja incluir:" << std::endl;
+        std::cin >> leitura; getchar();
+
+        this->nome_arqs.push_back(leitura);
+
+        std::cout << "Deseja incluir mais um arquivo? Digite 'q' caso não queira:" << std::endl;
+        std::cin >> leitura; getchar();
+
+        if (!leitura.compare("q"))
+            break;
+    }while(true);
+}
+
+u1 Parametros::tem_modo_cli (int argc, char *argv[]){
+    for (int cnt = 1; cnt < argc; cnt++){
+        std::string temp(argv[cnt]);
+
+        if (temp.compare("-e") && temp.compare("-i"))
+            continue;
+
+        set_modo(temp);
+        return 1;
+    }
+
+    return 0;
+}
+
+u1 Parametros::tem_arqs_cli (int argc, char *argv[]){
+    u1 achou_tag = 0;
+
+    for (int cnt = 1; cnt < argc; cnt++){
+        std::string temp(argv[cnt]);
+
+        if (!achou_tag){
+            if (!temp.compare("--arqs") || !temp.compare("--arq"))
+                achou_tag = 1;
+
+            continue;
+
+        }else if (temp.compare("-e") && temp.compare("-i") && temp.compare("-f") && temp.compare("-p"))
+            this->nome_arqs.push_back(temp);
+        else
+            break;
+    }
+
+    return this->nome_arqs.size();
+}
+
+void Parametros::deletar (){
+    std::vector<std::string>().swap(nome_arqs);
+}
+
+void Parametros::set_modo (std::string modo){
+    std::cout << "configurando para: " << modo << std::endl;
+
+    if (!modo.compare("-e"))
+        this->flags &= 0xF1;
+    else
+        this->flags &= 0xF2;
+}
+
+u1 Parametros::e_leitura (){
+    if (this->flags & 0x01)
+        return 1;
+    
+    return 0;
+}

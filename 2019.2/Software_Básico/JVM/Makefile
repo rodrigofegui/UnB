@@ -128,7 +128,7 @@ compilar: limpar_bin objetos
 	@echo "${DESTAQUE}\n"
 
 
-executar: compilar
+executar:
 	@clear
 	@echo "${DESTAQUE}"
 	@echo "Executando o arquivo:"
@@ -139,8 +139,12 @@ executar: compilar
 	@echo "\t- Informe das perdas definitivas"
 	@echo "\t- Busca pela origem de valores indefinido"
 	@echo ""
-
-	@$(DINAMICO) $(DINAMICO_FLAGS) ./$(EXECUTAVEL) -$(modo) $(arqs)
+	@$(DINAMICO) $(DINAMICO_FLAGS) ./$(EXECUTAVEL) -$(modo) --arqs $(arqs)
 
 	@echo "\nAcabou a execução"
 	@echo "${DESTAQUE}"
+
+
+completo: compilar executar
+
+
