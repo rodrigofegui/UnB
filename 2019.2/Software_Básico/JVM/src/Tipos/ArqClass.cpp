@@ -11,7 +11,7 @@
 
 ArqClass *ArqClass::arq_main = nullptr;
 
-ArqClass::ArqClass (char *const nome_arq) : ArqClass() {
+ArqClass::ArqClass (const std::string &nome_arq) : ArqClass() {
     this->nome_arq = nome_arq;
 }
 
@@ -42,7 +42,7 @@ std::string ArqClass::get_versao_java (const u2 versao){
 }
 
 void ArqClass::decodificar (){
-    this->arq = abrir(nome_arq);
+    this->arq = abrir(nome_arq.c_str());
 
     if (!this->arq) return;
 
@@ -140,7 +140,7 @@ void ArqClass::exibir (){
 
     if (this->tab_atributos) this->tab_atributos->exibir(1);
 
-    std::cout << "Fim dos dados" << std::endl;
+    std::cout << "Fim dos dados" << std::endl << std::endl;
 }
 
 void ArqClass::deletar (){

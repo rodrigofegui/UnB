@@ -31,6 +31,8 @@
     };
 
     enum avisos {
-        W_QNT_ARGS = 100,
+        W_SEM_MODO = 100,
     };
+
+    #define SUCESSO 0
 #endif

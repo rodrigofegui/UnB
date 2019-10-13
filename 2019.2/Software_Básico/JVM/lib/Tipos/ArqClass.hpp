@@ -18,7 +18,7 @@
             static ArqClass *arq_main;
 
             /* Controle do arquivo .class original */
-            char *nome_arq;
+            std::string nome_arq;
             FILE *arq = nullptr;
 
             /** Flag se é um .class com o MagicCode correto */
@@ -55,7 +55,7 @@
              *  Construtor com o conhecimento prévio do arquivo .class indiretamente
              *  @param nome_arq Nome do arquivo .class a ser lido
              */
-            explicit ArqClass (char *const nome_arq);
+            explicit ArqClass (const std::string &nome_arq);
 
             /**
              *  Decodificador do arquivo binário .class
@@ -72,8 +72,14 @@
              */
             void deletar ();
 
+            /** Interpretador de todos os arquivos considerados pelo sistema */
             static void executar ();
 
+            /**
+             *  Dentre os arquivos considerados pelo sistema, o primeiro que possuir a função `main` definida
+             *  será considerado como o arquivo de entrada pelo interpretador
+             *  @param arq_class Arquivo .class que contém um método main
+             */
             static void set_arq_main (ArqClass *const arq_class);
     };
 #endif

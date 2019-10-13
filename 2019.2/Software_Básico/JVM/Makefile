@@ -40,10 +40,11 @@ DESTAQUE = ************************************************
 # Modo de operação do executável
 modo = e
 # Arquivo a ser manipulado
-# arqs = CasosTestes/double_aritmetica.class
-# arqs = CasosTestes/ControladorMidi.class
-arqs = CasosTestes/ControladorEstoque.class
-# arqs = CasosTestes/Instrumento.class
+arq1 = CasosTestes/double_aritmetica.class
+arq2 = CasosTestes/ControladorMidi.class
+arq3 = CasosTestes/ControladorEstoque.class
+arq4 = CasosTestes/Instrumento.class
+arqs = $(arq3) $(arq4)
 
 ###################
 # Regras
@@ -128,7 +129,7 @@ compilar: limpar_bin objetos
 	@echo "${DESTAQUE}\n"
 
 
-executar: compilar
+executar:
 	@clear
 	@echo "${DESTAQUE}"
 	@echo "Executando o arquivo:"
@@ -139,8 +140,12 @@ executar: compilar
 	@echo "\t- Informe das perdas definitivas"
 	@echo "\t- Busca pela origem de valores indefinido"
 	@echo ""
-
-	@$(DINAMICO) $(DINAMICO_FLAGS) ./$(EXECUTAVEL) -$(modo) $(arqs)
+	@$(DINAMICO) $(DINAMICO_FLAGS) ./$(EXECUTAVEL) -$(modo) --arqs $(arqs)
 
 	@echo "\nAcabou a execução"
 	@echo "${DESTAQUE}"
+
+
+completo: compilar executar
+
+
