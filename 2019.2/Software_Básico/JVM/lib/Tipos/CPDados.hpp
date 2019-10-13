@@ -10,6 +10,30 @@
     #include "../Interfaces/InterCPDado.hpp"
 
     /**
+     *  @class InfoPadding
+     *  Dados da tabela de símbolos para continuação de números grandes
+     */
+    class InfoPadding : public InterCPDado {
+        public:
+            /* Herdando método já implementado */
+            InfoPadding (){};
+
+            /**
+             *  Decodificador do arquivo binário .class para os dados da
+             *  __CONSTANT_Class__, extraindo todos os seus campos
+             *  @param arq Arquivo .class sob análise
+             */
+            void decodificar (FILE *const arq) override {};
+
+            /**
+             *  Exibição dos dados da __CONSTANT_Class__ na saída padrão com controle
+             *  de tabulação
+             *  @param qnt_tabs Quantidade de TABs
+             */
+            void exibir (const u1 qnt_tabs) override;
+    };
+
+    /**
      *  @class InfoClasse
      *  Dados da tabela de símbolos do tipo __CONSTANT_Class__
      */
@@ -19,7 +43,7 @@
             u2 ind_nome = 0;
 
             /* Herdando método já implementado */
-            explicit InfoClasse (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){}
+            explicit InfoClasse (InterTabela *const tab_simbolos) : InterCPDado(tab_simbolos){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da

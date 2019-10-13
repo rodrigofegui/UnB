@@ -140,7 +140,7 @@ void ArqClass::exibir (){
 
     if (this->tab_atributos) this->tab_atributos->exibir(1);
 
-    std::cout << "Fim dos dados" << std::endl << std::endl;
+    std::cout << "Fim dos dados" << std::endl;
 }
 
 void ArqClass::deletar (){
@@ -160,8 +160,8 @@ void ArqClass::deletar (){
 }
 
 void ArqClass::executar (){
-    std::cout << "veio executar" << std::endl;
-    std::cout << "Arq com `main`: " << ArqClass::arq_main << std::endl;
+    // std::cout << "veio executar" << std::endl;
+    // std::cout << "Arq com `main`: " << ArqClass::arq_main << std::endl;
 }
 
 void ArqClass::set_arq_main (ArqClass *const arq_class){

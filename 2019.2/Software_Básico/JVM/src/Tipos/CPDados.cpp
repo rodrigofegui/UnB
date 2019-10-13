@@ -4,6 +4,12 @@
 #include "../../lib/Uteis/Arquivos.hpp"
 
 
+void InfoPadding::exibir (const u1 qnt_tabs){
+    std::cout << "Extensão de número largo" << std::endl;
+}
+
+
+
 void InfoClasse::decodificar (FILE *const arq){
     ler_u2(arq, &this->ind_nome);
 }

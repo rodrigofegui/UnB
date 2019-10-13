@@ -44,7 +44,7 @@ arq1 = CasosTestes/double_aritmetica.class
 arq2 = CasosTestes/ControladorMidi.class
 arq3 = CasosTestes/ControladorEstoque.class
 arq4 = CasosTestes/Instrumento.class
-arqs = $(arq3) $(arq4)
+arqs = $(arq1) $(arq4)
 
 ###################
 # Regras

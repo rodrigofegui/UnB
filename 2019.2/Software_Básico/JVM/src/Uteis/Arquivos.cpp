@@ -23,7 +23,7 @@ void ler_u1(FILE *const arq, u1 *dst){
 }
 
 void ler_u2(FILE *const arq, u2 *dst){
-   u1 temp;
+   u1 temp = 0;
 
     for (int ind = 1; ind <= sizeof(u2); ind++){
         fread(&temp, sizeof(u1), 1, arq);
@@ -33,7 +33,8 @@ void ler_u2(FILE *const arq, u2 *dst){
 }
 
 void ler_u4(FILE *const arq, u4 *dst){
-    u1 temp;
+    u1 temp = 0;
+    
     for (int ind = 0; ind < sizeof(u4); ind++){
         fread(&temp, sizeof(u1), 1, arq);
         *dst <<= 8;

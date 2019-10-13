@@ -10,9 +10,15 @@ u1 TabSimbolos::decodificar (FILE *const arq){
     int tam = *this->tam;
     if (!tam) return 2;
 
-    u1 temp, ignora = 0, tem_main = 0;
+    u1 temp = 0, ignora = 0, tem_main = 0;
 
     for (int cnt = 0; cnt < tam - 1; cnt++){
+        if (ignora){
+            this->registros.push_back(new InfoPadding());
+            ignora = 0;
+            continue;
+        }
+
         ler_u1(arq, &temp);
 
         InterCPDado *c_dados = nullptr;
@@ -31,19 +37,15 @@ u1 TabSimbolos::decodificar (FILE *const arq){
             case TAG_NOM_TIP:       c_dados = new InfoNomeTipo(this); break;
         }
 
-        if (c_dados)
+        if (c_dados){
             c_dados->decodificar(arq);
 
-        if (ignora){
-            cnt++;
-            ignora = 0;
+            if (dynamic_cast<InfoUTF8*>(c_dados)
+                    && !(dynamic_cast<InfoUTF8*>(c_dados))->get_string().compare("main"))
+                tem_main = 1;
+
+            this->registros.push_back(c_dados);
         }
-
-        if (dynamic_cast<InfoUTF8*>(c_dados)
-                && !(dynamic_cast<InfoUTF8*>(c_dados))->get_string().compare("main"))
-            tem_main = 1;
-
-        this->registros.push_back(c_dados);
     }
 
     return tem_main;
@@ -61,21 +63,20 @@ void TabSimbolos::exibir (const u1 qnt_tabs){
     u1 padding = get_padding(tam);
 
     for (int cnt = 0; cnt < tam - 1; cnt++){
-        std::cout << tabs + "[";
-        std::cout << std::setfill('0') << std::setw(padding) << cnt + 1;
-        std::cout << "] ";
+        std::cout << tabs + "["
+                  << std::setfill('0') << std::setw(padding)
+                  << cnt + 1 << "] ";
 
-        if (this->registros[cnt])
-            this->registros[cnt]->exibir(qnt_tabs + 1);
-        else
-            std::cout << "Extensão de número largo" << std::endl;
+        this->registros[cnt]->exibir(qnt_tabs + 1);
     }
 }
 
 std::string TabSimbolos::get_string (u2 ind_nome){
-    if (!this->tam) return "";
+    u2 tam = this->tam ? *this->tam : 0;
 
-    if (ind_nome == 0 || (ind_nome > *this->tam)) return "";
+    if (!tam) return "";
+
+    if (ind_nome == 0 || (ind_nome > tam)) return "";
 
     ind_nome--;
 

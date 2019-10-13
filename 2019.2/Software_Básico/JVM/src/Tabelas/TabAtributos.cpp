@@ -10,7 +10,7 @@ u1 TabAtributos::decodificar (FILE *const arq){
     for (int cnt = 0; cnt < *this->tam; cnt++){
         std::string nome("");
         InterAtributo *attr;
-        u2 temp = 0;
+        u2 temp = 0xFFFF;
 
         ler_u2(arq, &temp);
 

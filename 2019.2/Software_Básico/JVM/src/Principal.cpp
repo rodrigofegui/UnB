@@ -13,26 +13,30 @@ int main(int argc, char *argv[]){
     std::vector<ArqClass> arqs_class;
 
     for (auto &nome_arq : param.nome_arqs){
-        arqs_class.push_back(ArqClass(nome_arq));
+        ArqClass arq_class(nome_arq);
 
-        arqs_class[arqs_class.size() - 1].decodificar();
+        arq_class.decodificar();
+
+        arqs_class.push_back(arq_class);
     }
 
     if (param.e_leitura()){
         for (auto &arq_class : arqs_class){
             arq_class.exibir();
-            arq_class.deletar();
+            std::cout << std::endl;
         }
     } else{
-        std::cout << "operando como interpretador" << std::endl;
+        // std::cout << "operando como interpretador" << std::endl;
 
-        for (auto &arq_class : arqs_class){
-            arq_class.deletar();
-        }
+        // for (auto &arq_class : arqs_class){
+        //     arq_class.deletar();
+        // }
     }
 
     ArqClass::executar();
 
+    for (auto &arq_class : arqs_class)
+        arq_class.deletar();
     std::vector<ArqClass>().swap(arqs_class);
 
     param.deletar();
