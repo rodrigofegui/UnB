@@ -19,21 +19,22 @@ u1 TabMetodos::decodificar (FILE *const arq){
 
 void TabMetodos::exibir (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
-    int tam = *this->tam;
+    int tam = this->registros.size();
 
     if (!tam){
         std::cout << tabs + "Não há itens na tabela de métodos" << std::endl;
         return;
     }
 
-    u1 padding = get_padding(tam);
+    int padding = get_padding(tam);
+    int cnt = 0;
 
-    for (int cnt = 0; cnt < tam; cnt++){
-        std::cout << tabs + "[";
-        std::cout << std::setfill('0') << std::setw(padding) << cnt;
-        std::cout << "] ";
+    for (auto &registro : this->registros){
+        std::cout << tabs + "["
+                  << std::setfill('0') << std::setw(padding)
+                  << cnt++ << "] ";
 
-        this->registros[cnt].exibir(qnt_tabs + 1);
+        registro.exibir(qnt_tabs + 1);
     }
 }
 

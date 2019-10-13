@@ -96,7 +96,6 @@ void ArqClass::decodificar (){
 
 void ArqClass::exibir (){
     std::cout << "Nome do arquivo .class: " << this->nome_arq << std::endl;
-    std::cout << "Este arq: " << this << std::endl;
     std::cout << "Código indentificador: " << get_hex_4(this->codigo) << std::endl;
 
     if (!this->e_valido){
@@ -140,7 +139,7 @@ void ArqClass::exibir (){
 
     if (this->tab_atributos) this->tab_atributos->exibir(1);
 
-    std::cout << "Fim dos dados" << std::endl;
+    std::cout << "Fim dos dados sobre: " << this->nome_arq << std::endl;
 }
 
 void ArqClass::deletar (){

@@ -34,7 +34,7 @@ void ler_u2(FILE *const arq, u2 *dst){
 
 void ler_u4(FILE *const arq, u4 *dst){
     u1 temp = 0;
-    
+
     for (int ind = 0; ind < sizeof(u4); ind++){
         fread(&temp, sizeof(u1), 1, arq);
         *dst <<= 8;
@@ -46,7 +46,7 @@ int get_padding(const int num_max){
     int padding = 1;
 
     do{
-        if ((num_max >= pow10(padding - 1)) && (num_max < pow10(padding)))
+       if ((num_max >= pow10(padding - 1)) && (num_max < pow10(padding)))
             break;
 
         padding++;

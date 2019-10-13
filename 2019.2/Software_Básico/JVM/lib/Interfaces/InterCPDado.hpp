@@ -20,7 +20,7 @@
 
         public:
             /** Construtor padrão */
-            InterCPDado (){};
+            InterCPDado () : tab_simbolos(nullptr){};
 
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos

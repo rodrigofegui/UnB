@@ -16,7 +16,7 @@
     class InfoPadding : public InterCPDado {
         public:
             /* Herdando método já implementado */
-            InfoPadding (){};
+            InfoPadding () : InterCPDado (){};
 
             /**
              *  Decodificador do arquivo binário .class para os dados da
