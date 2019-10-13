@@ -292,6 +292,12 @@
             void decodificar (FILE *const arq) override;
 
             /**
+             *  Recuperação do valor float armazenado, podendo ser `Infinity`, `-Infinity`, `NaN` ou o valor correto
+             *  @returns String com o valor do float
+             */
+            std::string get();
+
+            /**
              *  Exibição dos dados da __CONSTANT_Float__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
@@ -321,6 +327,12 @@
             void decodificar (FILE *const arq) override;
 
             /**
+             *  Recuperação do valor long armazenado
+             *  @returns String com o valor do long
+             */
+            std::string get();
+
+            /**
              *  Exibição dos dados da __CONSTANT_Long__ na saída padrão com controle de
              *  tabulação
              *  @param qnt_tabs Quantidade de TABs
@@ -348,6 +360,12 @@
              *  @param arq Arquivo .class sob análise
              */
             void decodificar (FILE *const arq) override;
+
+            /**
+             *  Recuperação do valor double armazenado, podendo ser `Infinity`, `-Infinity` ou `NaN`
+             *  @returns String com o valor do double
+             */
+            std::string get();
 
             /**
              *  Exibição dos dados da __CONSTANT_Double__ na saída padrão com controle de

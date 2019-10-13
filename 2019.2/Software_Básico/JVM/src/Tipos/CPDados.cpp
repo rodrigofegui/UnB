@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 #include "../../lib/Tabelas/TabSimbolos.hpp"
 #include "../../lib/Tipos/CPDados.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
@@ -166,6 +167,7 @@ void InfoInteiro::exibir (u1 qnt_tabs){
     std::cout << "CONSTANT_Integer" << std::endl;
 
     std::cout << tabs + "Bytes: " << get_hex_4(this->bytes) << std::endl;
+    std::cout << tabs + "Valor correspondente: " << this->bytes << std::endl;
 }
 
 
@@ -180,6 +182,25 @@ void InfoFloat::exibir (const u1 qnt_tabs){
     std::cout << "CONSTANT_Float" << std::endl;
 
     std::cout << tabs + "Bytes: " << get_hex_4(this->bytes) << std::endl;
+    std::cout << tabs + "Valor correspondente: " << get() << std::endl;
+}
+
+std::string InfoFloat::get (){
+    if (this->bytes == 0x7f800000)
+        return "Infinity";
+
+    if (this->bytes == 0xff800000)
+        return "-Infinity";
+
+    if (((this->bytes >= 0x7f800001) && (this->bytes <= 0x7fffffff))
+            || ((this->bytes >= 0xff800001) && (this->bytes <= 0xffffffff)))
+        return "NaN";
+
+    int sinal = ((this->bytes >> 31) == 0) ? 1 : -1,
+        expoente = ((this->bytes >> 23) & 0xff),
+        mantissa = (expoente == 0) ? (this->bytes & 0x7fffff) << 1 : (this->bytes & 0x7fffff) | 0x800000;
+
+    return std::to_string(sinal * mantissa * pow(2, expoente - 150));
 }
 
 
@@ -196,6 +217,11 @@ void InfoLong::exibir (const u1 qnt_tabs){
 
     std::cout << tabs + "Bytes mais significativos: " << get_hex_4(this->bytes_mais) << std::endl;
     std::cout << tabs + "Bytes menos significativos: " << get_hex_4(this->bytes_menos) << std::endl;
+    std::cout << tabs + "Valor correspondente: " << get() << std::endl;
+}
+
+std::string InfoLong::get (){
+    return std::to_string(((long) this->bytes_mais << 32) + this->bytes_menos);
 }
 
 
@@ -212,4 +238,25 @@ void InfoDouble::exibir (const u1 qnt_tabs){
 
     std::cout << tabs + "Bytes mais significativos: " << get_hex_4(this->bytes_mais) << std::endl;
     std::cout << tabs + "Bytes menos significativos: " << get_hex_4(this->bytes_menos) << std::endl;
+    std::cout << tabs + "Valor correspondente: " << get() << std::endl;
+}
+
+std::string InfoDouble::get (){
+    unsigned long int bytes = ((long) this->bytes_mais << 32) + this->bytes_menos;
+
+    if (bytes == 0x7FF0000000000000L)
+        return "Infinity";
+
+    if (bytes == 0xFFF0000000000000L)
+        return "-Infinity";
+
+    if (((bytes >= 0x7FF0000000000001L) && (bytes <= 0x7FFFFFFFFFFFFFFFL))
+            || ((bytes >= 0xFFF0000000000001L) && (bytes <= 0xFFFFFFFFFFFFFFFFL)))
+        return "NaN";
+
+    int sinal = ((bytes >> 63) == 0) ? 1 : -1,
+        expoente = ((bytes >> 52) & 0x7FFL);
+    long mantissa = (expoente == 0) ? (bytes & 0xfffffffffffffL) << 1 : (bytes & 0xfffffffffffffL) | 0x10000000000000L;
+
+    return std::to_string(sinal * mantissa * pow(2, expoente - 1075));
 }
