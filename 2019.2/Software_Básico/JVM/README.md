@@ -29,3 +29,10 @@ sudo make install
 # Testando se foi instalado
 valgrind --version
 ```
+
+## A fazer
+
+- Nenhum arquivo possuia interfaces para poder programar tal parte, embora pareça ser somente uma lista de índices;
+- Opção de imprimir num arquivo;
+- Tradutor dos valores dos: inteiros, _float_, longos e _double_;
+- Tradutor dos códigos do Code.
