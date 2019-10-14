@@ -3,6 +3,7 @@
 #include "../../lib/Tabelas/TabSimbolos.hpp"
 #include "../../lib/Tipos/Atributos.hpp"
 #include "../../lib/Uteis/Arquivos.hpp"
+#include "../../lib/Tipos/ByteCode.hpp"
 
 
 AttrCode::AttrCode (const u2 ind_nome, InterTabela *const tab_simbolos) :
@@ -54,9 +55,7 @@ void AttrCode::exibir (const u1 qnt_tabs){
     std::cout << tabs + "Tamanho máximo das variáveis locais: " << this->max_locais << std::endl;
     std::cout << tabs + "Tamanho do código: " << this->tam_codigo << std::endl;
 
-    for (auto &linha : this->codigo){
-        std::cout << tabs + '\t' << get_hex(linha) << std::endl;
-    }
+    exibir_bytecodes(qnt_tabs + 1);
 
     std::cout << tabs + "Tamanho da tabela de excessões: " << this->tam_tab_excessao << std::endl;
 
@@ -69,6 +68,18 @@ void AttrCode::exibir (const u1 qnt_tabs){
     std::cout << tabs + "Tamanho da tabela de atributos: " << this->tam_tab_atributos << std::endl;
 
      if (this->tab_atributos) this->tab_atributos->exibir(qnt_tabs + 1);
+}
+
+void AttrCode::exibir_bytecodes (const u1 qnt_tabs){
+    std::string tabs(qnt_tabs, '\t');
+    int cnt = 0;
+
+    for (auto &bytecode : this->codigo){
+        std::cout << tabs << cnt++ << ": "
+                  << get_hex(bytecode) << " ~> " << bytecodes[bytecode].mnemonico << std::endl;
+    }
+
+    // std::cout << "TEste:::::::: " << bytecodes[255].mnemonico << std::endl;
 }
 
 void AttrCode::deletar (){

@@ -1,11 +1,14 @@
 #include <iostream>
 #include <vector>
 #include "../lib/Tipos/ArqClass.hpp"
+#include "../lib/Tipos/ByteCode.hpp"
 #include "../lib/Uteis/Arquivos.hpp"
 #include "../lib/Uteis/Parametros.hpp"
 
 
 int main(int argc, char *argv[]){
+    iniciar_bytecodes();
+
     Parametros param;
 
     param.get_entradas(argc, argv);

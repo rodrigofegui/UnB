@@ -46,6 +46,8 @@
              */
             void exibir (const u1 qnt_tabs) override;
 
+            void exibir_bytecodes (const u1 qnt_tabs);
+
             /**
              *  Destrutor do atributo __Code__ e suas dependências
              */
