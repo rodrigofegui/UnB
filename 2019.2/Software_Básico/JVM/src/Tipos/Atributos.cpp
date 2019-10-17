@@ -72,14 +72,15 @@ void AttrCode::exibir (const u1 qnt_tabs){
 
 void AttrCode::exibir_bytecodes (const u1 qnt_tabs){
     std::string tabs(qnt_tabs, '\t');
-    int cnt = 0;
 
-    for (auto &bytecode : this->codigo){
-        std::cout << tabs << cnt++ << ": "
-                  << get_hex(bytecode) << " ~> " << bytecodes[bytecode].mnemonico << std::endl;
+    for (int cnt = 0; cnt < this->codigo.size(); cnt++){
+        u1 bytecode = this->codigo[cnt];
+
+        std::cout << tabs << cnt << ": "
+                  << bytecodes[bytecode].mnemonico << std::endl;
+
+        cnt += bytecodes[bytecode].manipulador(this->codigo, cnt, 0);
     }
-
-    // std::cout << "TEste:::::::: " << bytecodes[255].mnemonico << std::endl;
 }
 
 void AttrCode::deletar (){

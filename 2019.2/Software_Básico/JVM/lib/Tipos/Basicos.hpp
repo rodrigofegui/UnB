@@ -2,7 +2,7 @@
     #define TIPOS_BASICOS_HPP
 
     /**
-     *  @file   Basicos.h
+     *  @file   Basicos.hpp
      *  @author Rodrigo F. Guimarães
      *  @brief Definição dos tipos básicos a serem utilizados
      */
