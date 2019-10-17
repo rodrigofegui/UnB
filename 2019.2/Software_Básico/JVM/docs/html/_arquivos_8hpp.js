@@ -1,11 +1,11 @@
 var _arquivos_8hpp =
 [
     [ "abrir", "_arquivos_8hpp.html#a1cb0dfbabe1cb1f60c49849c1a9a880d", null ],
-    [ "get_hex", "_arquivos_8hpp.html#a7a7638c7b0fe45eed3bc5574949c1858", null ],
-    [ "get_hex_2", "_arquivos_8hpp.html#a82115e6e634353a118643e14fffa0a5a", null ],
-    [ "get_hex_4", "_arquivos_8hpp.html#ac4de47d06c534954cfe8db0528e7d14f", null ],
-    [ "get_padding", "_arquivos_8hpp.html#acae530d83a13e0d407569e117a35cec8", null ],
-    [ "ler_u1", "_arquivos_8hpp.html#acb1c5d428b9c780736056cab1dd45242", null ],
-    [ "ler_u2", "_arquivos_8hpp.html#a03c0b303e6ae10d2faa53a91ca574aa0", null ],
-    [ "ler_u4", "_arquivos_8hpp.html#a4ec5f26aa79c35415ffc7955566d8ac6", null ]
+    [ "get_hex", "_arquivos_8hpp.html#af0a885464aea6de339facb9a54d62b32", null ],
+    [ "get_hex_2", "_arquivos_8hpp.html#a784ed1cfd09c35189303cce7da318b16", null ],
+    [ "get_hex_4", "_arquivos_8hpp.html#ac0aef7a1c428e51320eaaac2e0a848b6", null ],
+    [ "get_padding", "_arquivos_8hpp.html#aead51e0e666295249028bfbe2b081c73", null ],
+    [ "ler_u1", "_arquivos_8hpp.html#a68569781f8fd07d3f49e8727bd19546d", null ],
+    [ "ler_u2", "_arquivos_8hpp.html#a6682f56124065e3095aef95992e6f402", null ],
+    [ "ler_u4", "_arquivos_8hpp.html#a5dd1016ba46dbf2dd2811f820fe55e5f", null ]
 ];

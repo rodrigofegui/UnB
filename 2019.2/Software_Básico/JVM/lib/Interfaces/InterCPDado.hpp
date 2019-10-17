@@ -24,7 +24,7 @@
 
             /**
              *  Construtor com o conhecimento prévio da tabela de símbolos
-             *  @param tab Tabela de símbolo que está vinculado
+             *  @param tab_simbolos Tabela de símbolo que está vinculado
              */
             explicit InterCPDado (InterTabela *const tab_simbolos) : tab_simbolos(tab_simbolos){};
 

@@ -15,16 +15,28 @@
     #define CAT1(x,y) (x ## y)
     #define FUNC(y) (CAT1(manipulador, y))
 
+    /**  Estrutura de um item da tabela de bytecodes */
     typedef struct bc {
+        /** Nome que indentifica o bytecode */
         std::string mnemonico;
+        /** Função manipuladora do bytecode */
         int (*manipulador) (const std::vector<u1> codigo, const u2 c_pos, const u1 e_interpretador);
     } ByteCode;
 
+    //  Conjunto de ByteCode a ser consultado pelo sitema
     extern std::vector<ByteCode> bytecodes;
 
+    /*  Inicialização da tabela de bytecodes da JVM */
     void iniciar_bytecodes ();
 
-    // Para os bytecode sem operação associada
+    /**
+     *  Manipulador de bytecode não implementado pelo sistema
+     *  @param codigo Código ao qual o bytecode está sendo usado
+     *  @param c_pos Posição atual do código em que aparece o bytecode
+     *  @param e_interpretador Flag que varia o comportamento do manipulador, 1 é como interpretador
+     *  caso contrário será como exibidor
+     *  @returns Quantidade de bytes do código que foram necessários para o funcionamento do manipulador
+     */
     int manipulador_undef (const std::vector<u1> codigo, const u2 c_pos, const u1 e_interpretador);
 
     // 0 (0x00)

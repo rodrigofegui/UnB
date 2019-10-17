@@ -1,7 +1,7 @@
 var class_info_long =
 [
-    [ "InfoLong", "class_info_long.html#a0aadd16bb40217b70c09e29313d6c77f", null ],
-    [ "InfoLong", "class_info_long.html#a1ea0e94cdace07c846e7be0b6a7a85f9", null ],
-    [ "decodificar", "class_info_long.html#ad2f44709fdd9e8a7944a3dca46a00a72", null ],
-    [ "exibir", "class_info_long.html#af6228a9a80eb2fcf7725b8b6d7c92bc6", null ]
+    [ "InfoLong", "class_info_long.html#ae3449024b651fc4897ed33bde6f86b88", null ],
+    [ "decodificar", "class_info_long.html#a2a02397cbb8401a8c821e934f1f29a80", null ],
+    [ "exibir", "class_info_long.html#a0403cfc47caa220df4ae5d704b5a25be", null ],
+    [ "get", "class_info_long.html#a1292eaf4cec91a3e76dba3c3f17b8e4c", null ]
 ];

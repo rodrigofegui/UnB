@@ -1,7 +1,8 @@
 var _status_8hpp =
 [
+    [ "SUCESSO", "_status_8hpp.html#a7d756aebcbd3d7c0bd83950a5b087139", null ],
     [ "avisos", "_status_8hpp.html#afe4836b6b585ba2f8453e75aab393b47", [
-      [ "W_QNT_ARGS", "_status_8hpp.html#afe4836b6b585ba2f8453e75aab393b47a3cabdd5374e7d6bea1d6f8d6e5bf4a21", null ]
+      [ "W_SEM_MODO", "_status_8hpp.html#afe4836b6b585ba2f8453e75aab393b47a29b3fca5ef077a3f352c3d6c55069c5d", null ]
     ] ],
     [ "erros", "_status_8hpp.html#a8bf23197cc9edc8ecf786c9be6899350", [
       [ "E_QNT_ARGS", "_status_8hpp.html#a8bf23197cc9edc8ecf786c9be6899350a428c203c05f07c40675eac0a2313bd7f", null ],

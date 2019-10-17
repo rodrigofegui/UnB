@@ -15,8 +15,9 @@ var NAVTREE =
     [ "Ficheiros", null, [
       [ "Lista de ficheiros", "files.html", "files" ],
       [ "Membros dos Ficheiros", "globals.html", [
-        [ "Tudo", "globals.html", null ],
-        [ "Funções", "globals_func.html", null ],
+        [ "Tudo", "globals.html", "globals_dup" ],
+        [ "Funções", "globals_func.html", "globals_func" ],
+        [ "Variáveis", "globals_vars.html", null ],
         [ "Definições de tipos", "globals_type.html", null ],
         [ "Enumerações", "globals_enum.html", null ],
         [ "Valores de enumerações", "globals_eval.html", null ],
@@ -29,7 +30,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_arq_class_8cpp.html",
-"class_info_string.html#af51024740060ea5798ab19043f4fed91"
+"_byte_code_8hpp.html#a06554507427bafd741a08ea814ba8aeb",
+"_flags___tags_8hpp.html#acc4df61f3853d5eba5b684ebb999d89f",
+"globals_f.html"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

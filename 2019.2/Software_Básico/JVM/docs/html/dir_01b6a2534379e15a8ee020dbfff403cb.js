@@ -9,7 +9,7 @@ var dir_01b6a2534379e15a8ee020dbfff403cb =
     [ "TabMetodos.hpp", "_tab_metodos_8hpp.html", [
       [ "TabMetodos", "class_tab_metodos.html", "class_tab_metodos" ]
     ] ],
-    [ "TabSimbolo.hpp", "_tab_simbolo_8hpp.html", [
-      [ "TabSimbolo", "class_tab_simbolo.html", "class_tab_simbolo" ]
+    [ "TabSimbolos.hpp", "_tab_simbolos_8hpp.html", [
+      [ "TabSimbolos", "class_tab_simbolos.html", "class_tab_simbolos" ]
     ] ]
 ];

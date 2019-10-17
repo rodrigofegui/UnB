@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['longo',['longo',['../unioncp__info_1_1dados__cp__info.html#a2298945e0db7a4840a1a98d046589054',1,'cp_info::dados_cp_info']]]
+  ['nome_5farqs',['nome_arqs',['../class_parametros.html#a5429ff81652c997e454084e1a6011878',1,'Parametros']]]
 ];

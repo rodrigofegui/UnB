@@ -10,10 +10,12 @@ var dir_ffc3271e8ef812ad256a88e75a8b242c =
       [ "AttrSilenciado", "class_attr_silenciado.html", "class_attr_silenciado" ]
     ] ],
     [ "Basicos.hpp", "_basicos_8hpp.html", "_basicos_8hpp" ],
+    [ "ByteCode.hpp", "_byte_code_8hpp.html", "_byte_code_8hpp" ],
     [ "Campo.hpp", "_campo_8hpp.html", [
       [ "Campo", "class_campo.html", "class_campo" ]
     ] ],
     [ "CPDados.hpp", "_c_p_dados_8hpp.html", [
+      [ "InfoPadding", "class_info_padding.html", "class_info_padding" ],
       [ "InfoClasse", "class_info_classe.html", "class_info_classe" ],
       [ "InfoRefCampo", "class_info_ref_campo.html", "class_info_ref_campo" ],
       [ "InfoNomeTipo", "class_info_nome_tipo.html", "class_info_nome_tipo" ],

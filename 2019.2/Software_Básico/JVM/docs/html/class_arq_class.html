@@ -81,6 +81,7 @@ $(document).ready(function(){initNavTree('class_arq_class.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pub-static-methods">Membros públicos estáticos</a> &#124;
 <a href="class_arq_class-members.html">Mostrar lista completa dos membros</a>  </div>
   <div class="headertitle">
 <div class="title">Referência à classe ArqClass</div>  </div>
@@ -97,9 +98,9 @@ Membros públicos</h2></td></tr>
 <tr class="memitem:a6ffa9e6cf6fb50c5af4a7e85cc5c09ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_arq_class.html#a6ffa9e6cf6fb50c5af4a7e85cc5c09ea">ArqClass</a> ()</td></tr>
 <tr class="memdesc:a6ffa9e6cf6fb50c5af4a7e85cc5c09ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor padrão.  <a href="#a6ffa9e6cf6fb50c5af4a7e85cc5c09ea">Mais...</a><br /></td></tr>
 <tr class="separator:a6ffa9e6cf6fb50c5af4a7e85cc5c09ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab01f2dd09f15dd572bd20105f439d484"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_arq_class.html#ab01f2dd09f15dd572bd20105f439d484">ArqClass</a> (char *nome_arq)</td></tr>
-<tr class="memdesc:ab01f2dd09f15dd572bd20105f439d484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor com o conhecimento prévio do arquivo .class indiretamente.  <a href="#ab01f2dd09f15dd572bd20105f439d484">Mais...</a><br /></td></tr>
-<tr class="separator:ab01f2dd09f15dd572bd20105f439d484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89cf940c27a06157ee3cbdb74a40171c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_arq_class.html#a89cf940c27a06157ee3cbdb74a40171c">ArqClass</a> (const std::string &amp;nome_arq)</td></tr>
+<tr class="memdesc:a89cf940c27a06157ee3cbdb74a40171c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor com o conhecimento prévio do arquivo .class indiretamente.  <a href="#a89cf940c27a06157ee3cbdb74a40171c">Mais...</a><br /></td></tr>
+<tr class="separator:a89cf940c27a06157ee3cbdb74a40171c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d4cf50b04382f066d7e8825ea23d978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_arq_class.html#a1d4cf50b04382f066d7e8825ea23d978">decodificar</a> ()</td></tr>
 <tr class="memdesc:a1d4cf50b04382f066d7e8825ea23d978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodificador do arquivo binário .class.  <a href="#a1d4cf50b04382f066d7e8825ea23d978">Mais...</a><br /></td></tr>
 <tr class="separator:a1d4cf50b04382f066d7e8825ea23d978"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +110,15 @@ Membros públicos</h2></td></tr>
 <tr class="memitem:a00b95a041d3678b2cc1de176a2738015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_arq_class.html#a00b95a041d3678b2cc1de176a2738015">deletar</a> ()</td></tr>
 <tr class="memdesc:a00b95a041d3678b2cc1de176a2738015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor do arquivo .class e suas dependências.  <a href="#a00b95a041d3678b2cc1de176a2738015">Mais...</a><br /></td></tr>
 <tr class="separator:a00b95a041d3678b2cc1de176a2738015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:a3ea71dd3be6b75da0882454110a920c8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_arq_class.html#a3ea71dd3be6b75da0882454110a920c8">executar</a> ()</td></tr>
+<tr class="memdesc:a3ea71dd3be6b75da0882454110a920c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpretador de todos os arquivos considerados pelo sistema.  <a href="#a3ea71dd3be6b75da0882454110a920c8">Mais...</a><br /></td></tr>
+<tr class="separator:a3ea71dd3be6b75da0882454110a920c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7973c31679f33f306e6e7f65e461ba71"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_arq_class.html#a7973c31679f33f306e6e7f65e461ba71">set_arq_main</a> (<a class="el" href="class_arq_class.html">ArqClass</a> *const arq_class)</td></tr>
+<tr class="memdesc:a7973c31679f33f306e6e7f65e461ba71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dentre os arquivos considerados pelo sistema, o primeiro que possuir a função <code>main</code> definida será considerado como o arquivo de entrada pelo interpretador.  <a href="#a7973c31679f33f306e6e7f65e461ba71">Mais...</a><br /></td></tr>
+<tr class="separator:a7973c31679f33f306e6e7f65e461ba71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Representação de um arquivo .class. </p>
@@ -140,12 +150,12 @@ Membros públicos</h2></td></tr>
 
 <p>Construtor padrão. </p>
 
-<p class="definition">Definido na linha <a class="el" href="_arq_class_8hpp_source.html#l00051">51</a> do ficheiro <a class="el" href="_arq_class_8hpp_source.html">ArqClass.hpp</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="_arq_class_8hpp_source.html#l00052">52</a> do ficheiro <a class="el" href="_arq_class_8hpp_source.html">ArqClass.hpp</a>.</p>
 
 </div>
 </div>
-<a id="ab01f2dd09f15dd572bd20105f439d484"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab01f2dd09f15dd572bd20105f439d484">&#9670;&nbsp;</a></span>ArqClass() <span class="overload">[2/2]</span></h2>
+<a id="a89cf940c27a06157ee3cbdb74a40171c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89cf940c27a06157ee3cbdb74a40171c">&#9670;&nbsp;</a></span>ArqClass() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,7 +166,7 @@ Membros públicos</h2></td></tr>
         <tr>
           <td class="memname">ArqClass::ArqClass </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>nome_arq</em></td><td>)</td>
           <td></td>
         </tr>
@@ -176,7 +186,7 @@ Membros públicos</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definido na linha <a class="el" href="_arq_class_8cpp_source.html#l00012">12</a> do ficheiro <a class="el" href="_arq_class_8cpp_source.html">ArqClass.cpp</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="_arq_class_8cpp_source.html#l00014">14</a> do ficheiro <a class="el" href="_arq_class_8cpp_source.html">ArqClass.cpp</a>.</p>
 
 </div>
 </div>
@@ -198,7 +208,7 @@ Membros públicos</h2></td></tr>
 
 <p>Decodificador do arquivo binário .class. </p>
 
-<p class="definition">Definido na linha <a class="el" href="_arq_class_8cpp_source.html#l00058">58</a> do ficheiro <a class="el" href="_arq_class_8cpp_source.html">ArqClass.cpp</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="_arq_class_8cpp_source.html#l00044">44</a> do ficheiro <a class="el" href="_arq_class_8cpp_source.html">ArqClass.cpp</a>.</p>
 
 </div>
 </div>
@@ -219,7 +229,36 @@ Membros públicos</h2></td></tr>
 
 <p>Destrutor do arquivo .class e suas dependências. </p>
 
-<p class="definition">Definido na linha <a class="el" href="_arq_class_8cpp_source.html#l00151">151</a> do ficheiro <a class="el" href="_arq_class_8cpp_source.html">ArqClass.cpp</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="_arq_class_8cpp_source.html#l00145">145</a> do ficheiro <a class="el" href="_arq_class_8cpp_source.html">ArqClass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3ea71dd3be6b75da0882454110a920c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea71dd3be6b75da0882454110a920c8">&#9670;&nbsp;</a></span>executar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArqClass::executar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Interpretador de todos os arquivos considerados pelo sistema. </p>
+
+<p class="definition">Definido na linha <a class="el" href="_arq_class_8cpp_source.html#l00161">161</a> do ficheiro <a class="el" href="_arq_class_8cpp_source.html">ArqClass.cpp</a>.</p>
 
 </div>
 </div>
@@ -240,7 +279,43 @@ Membros públicos</h2></td></tr>
 
 <p>Exibição do arquivo .class na saída padrão. </p>
 
-<p class="definition">Definido na linha <a class="el" href="_arq_class_8cpp_source.html#l00108">108</a> do ficheiro <a class="el" href="_arq_class_8cpp_source.html">ArqClass.cpp</a>.</p>
+<p class="definition">Definido na linha <a class="el" href="_arq_class_8cpp_source.html#l00097">97</a> do ficheiro <a class="el" href="_arq_class_8cpp_source.html">ArqClass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7973c31679f33f306e6e7f65e461ba71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7973c31679f33f306e6e7f65e461ba71">&#9670;&nbsp;</a></span>set_arq_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArqClass::set_arq_main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_arq_class.html">ArqClass</a> *const&#160;</td>
+          <td class="paramname"><em>arq_class</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dentre os arquivos considerados pelo sistema, o primeiro que possuir a função <code>main</code> definida será considerado como o arquivo de entrada pelo interpretador. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arq_class</td><td>Arquivo .class que contém um método main </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="_arq_class_8cpp_source.html#l00166">166</a> do ficheiro <a class="el" href="_arq_class_8cpp_source.html">ArqClass.cpp</a>.</p>
 
 </div>
 </div>

@@ -35,10 +35,7 @@
             void decodificar (FILE *arq);
 
             /**
-             *  Exibição de uma excessão na saída padrão, conhecendo-se a tabela de
-             *  símbolos do arquivo corrente, para exibir as referências, além do controle
-             *  de tabulação
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
+             *  Exibição de uma excessão na saída padrão, conhecendo-se o controle de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (const u1 qnt_tabs);

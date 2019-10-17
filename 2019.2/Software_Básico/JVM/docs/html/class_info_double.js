@@ -1,7 +1,7 @@
 var class_info_double =
 [
-    [ "InfoDouble", "class_info_double.html#a542919fd15ac52b3f5eccd38c65deb50", null ],
-    [ "InfoDouble", "class_info_double.html#a959f67a3d8ddb30662b4f09947580adf", null ],
-    [ "decodificar", "class_info_double.html#af280e760d348ad21bb640bc888977f0f", null ],
-    [ "exibir", "class_info_double.html#a7bb6d3a96ce59e19a3b015b0d26198ff", null ]
+    [ "InfoDouble", "class_info_double.html#a06b75fb75ca43fe59bfac5667ebcb041", null ],
+    [ "decodificar", "class_info_double.html#a92f243a1779ad66005ea290c7d27d8b7", null ],
+    [ "exibir", "class_info_double.html#acce34c80d4452de536e15d409f298d1e", null ],
+    [ "get", "class_info_double.html#abdb995e402bf5740a39bc38e37276431", null ]
 ];

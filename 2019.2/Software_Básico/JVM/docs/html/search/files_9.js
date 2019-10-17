@@ -6,6 +6,6 @@ var searchData=
   ['tabcampos_2ehpp',['TabCampos.hpp',['../_tab_campos_8hpp.html',1,'']]],
   ['tabmetodos_2ecpp',['TabMetodos.cpp',['../_tab_metodos_8cpp.html',1,'']]],
   ['tabmetodos_2ehpp',['TabMetodos.hpp',['../_tab_metodos_8hpp.html',1,'']]],
-  ['tabsimbolo_2ecpp',['TabSimbolo.cpp',['../_tab_simbolo_8cpp.html',1,'']]],
-  ['tabsimbolo_2ehpp',['TabSimbolo.hpp',['../_tab_simbolo_8hpp.html',1,'']]]
+  ['tabsimbolos_2ecpp',['TabSimbolos.cpp',['../_tab_simbolos_8cpp.html',1,'']]],
+  ['tabsimbolos_2ehpp',['TabSimbolos.hpp',['../_tab_simbolos_8hpp.html',1,'']]]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['parametros_2ecpp',['Parametros.cpp',['../_parametros_8cpp.html',1,'']]],
-  ['parametros_2ehpp',['Parametros.hpp',['../_parametros_8hpp.html',1,'']]],
-  ['principal_2ecpp',['Principal.cpp',['../_principal_8cpp.html',1,'']]]
+  ['nome_5farqs',['nome_arqs',['../class_parametros.html#a5429ff81652c997e454084e1a6011878',1,'Parametros']]]
 ];

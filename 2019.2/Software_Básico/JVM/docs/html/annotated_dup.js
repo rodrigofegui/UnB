@@ -5,6 +5,7 @@ var annotated_dup =
     [ "AttrCode", "class_attr_code.html", "class_attr_code" ],
     [ "AttrLinhaNum", "class_attr_linha_num.html", "class_attr_linha_num" ],
     [ "AttrSilenciado", "class_attr_silenciado.html", "class_attr_silenciado" ],
+    [ "bc", "structbc.html", "structbc" ],
     [ "Campo", "class_campo.html", "class_campo" ],
     [ "Excessao", "class_excessao.html", "class_excessao" ],
     [ "InfoClasse", "class_info_classe.html", "class_info_classe" ],
@@ -13,6 +14,7 @@ var annotated_dup =
     [ "InfoInteiro", "class_info_inteiro.html", "class_info_inteiro" ],
     [ "InfoLong", "class_info_long.html", "class_info_long" ],
     [ "InfoNomeTipo", "class_info_nome_tipo.html", "class_info_nome_tipo" ],
+    [ "InfoPadding", "class_info_padding.html", "class_info_padding" ],
     [ "InfoRefCampo", "class_info_ref_campo.html", "class_info_ref_campo" ],
     [ "InfoRefMetInterface", "class_info_ref_met_interface.html", "class_info_ref_met_interface" ],
     [ "InfoRefMetodo", "class_info_ref_metodo.html", "class_info_ref_metodo" ],
@@ -21,8 +23,9 @@ var annotated_dup =
     [ "InterAtributo", "class_inter_atributo.html", "class_inter_atributo" ],
     [ "InterCPDado", "class_inter_c_p_dado.html", "class_inter_c_p_dado" ],
     [ "InterTabela", "class_inter_tabela.html", "class_inter_tabela" ],
+    [ "Parametros", "class_parametros.html", "class_parametros" ],
     [ "TabAtributos", "class_tab_atributos.html", "class_tab_atributos" ],
     [ "TabCampos", "class_tab_campos.html", "class_tab_campos" ],
     [ "TabMetodos", "class_tab_metodos.html", "class_tab_metodos" ],
-    [ "TabSimbolo", "class_tab_simbolo.html", "class_tab_simbolo" ]
+    [ "TabSimbolos", "class_tab_simbolos.html", "class_tab_simbolos" ]
 ];

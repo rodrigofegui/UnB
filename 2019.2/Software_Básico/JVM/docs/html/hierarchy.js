@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "ArqClass", "class_arq_class.html", null ],
+    [ "bc", "structbc.html", null ],
     [ "Campo", "class_campo.html", null ],
     [ "Excessao", "class_excessao.html", null ],
     [ "InterAtributo", "class_inter_atributo.html", [
@@ -16,6 +17,7 @@ var hierarchy =
       [ "InfoInteiro", "class_info_inteiro.html", null ],
       [ "InfoLong", "class_info_long.html", null ],
       [ "InfoNomeTipo", "class_info_nome_tipo.html", null ],
+      [ "InfoPadding", "class_info_padding.html", null ],
       [ "InfoRefCampo", "class_info_ref_campo.html", null ],
       [ "InfoRefMetInterface", "class_info_ref_met_interface.html", null ],
       [ "InfoRefMetodo", "class_info_ref_metodo.html", null ],
@@ -26,6 +28,7 @@ var hierarchy =
       [ "TabAtributos", "class_tab_atributos.html", null ],
       [ "TabCampos", "class_tab_campos.html", null ],
       [ "TabMetodos", "class_tab_metodos.html", null ],
-      [ "TabSimbolo", "class_tab_simbolo.html", null ]
-    ] ]
+      [ "TabSimbolos", "class_tab_simbolos.html", null ]
+    ] ],
+    [ "Parametros", "class_parametros.html", null ]
 ];

@@ -2,7 +2,7 @@
     #define TABELA_SIMBOLO_HPP
 
     /**
-     *  @file   TabSimbolo.hpp
+     *  @file   TabSimbolos.hpp
      *  @author Rodrigo F. Guimarães
      */
     #include <vector>

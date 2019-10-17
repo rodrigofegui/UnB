@@ -38,10 +38,7 @@
             void decodificar (FILE *const arq) override;
 
             /**
-             *  Exibição do atributo __Code__ na saída padrão, conhecendo-se a tabela de
-             *  símbolos do arquivo corrente, para exibir as referências, além do controle
-             *  de tabulação
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
+             *  Exibição do atributo __Code__ na saída padrão, conhecendo-se o controle de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (const u1 qnt_tabs) override;
@@ -83,10 +80,7 @@
             void decodificar (FILE *const arq) override;
 
             /**
-             *  Exibição do atributo __LineNumberTable__ na saída padrão, conhecendo-se
-             *  a tabela de símbolos do arquivo corrente, para exibir as referências,
-             *  além do controle de tabulação
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
+             *  Exibição do atributo __Code__ na saída padrão, conhecendo-se o controle de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (const u1 qnt_tabs) override;
@@ -119,10 +113,7 @@
             void decodificar (FILE *const arq) override;
 
             /**
-             *  Exibição do atributo __SourceFile__ na saída padrão, conhecendo-se a
-             *  tabela de símbolos do arquivo corrente, para exibir as referências,
-             *  além do controle de tabulação
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
+             *  Exibição do atributo __Code__ na saída padrão, conhecendo-se o controle de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (const u1 qnt_tabs) override;
@@ -150,10 +141,7 @@
             void decodificar (FILE *const arq) override;
 
             /**
-             *  Exibição do atributo não tratável na saída padrão, conhecendo-se a
-             *  tabela de símbolos do arquivo corrente, para exibir as referências,
-             *  além do controle de tabulação
-             *  @param tab_simbolos Tabela de símbolos que está vinculado
+             *  Exibição do atributo __Code__ na saída padrão, conhecendo-se o controle de tabulação
              *  @param qnt_tabs Quantidade de TABs
              */
             void exibir (const u1 qnt_tabs) override;

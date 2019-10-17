@@ -1,17 +1,15 @@
 var searchData=
 [
-  ['v10',['V10',['../_flags___tags_8hpp.html#aba49d4f4d3d87ef469844f4a9713907a',1,'Flags_Tags.hpp']]],
-  ['v11',['V11',['../_flags___tags_8hpp.html#a87942002cab74af29b13ec07a3b27edf',1,'Flags_Tags.hpp']]],
-  ['v12',['V12',['../_flags___tags_8hpp.html#a30a3d62562a3da42fdc0697719aad10f',1,'Flags_Tags.hpp']]],
-  ['v13',['V13',['../_flags___tags_8hpp.html#a0a003d29cd234d27c6861de9f4903338',1,'Flags_Tags.hpp']]],
-  ['v14',['V14',['../_flags___tags_8hpp.html#a435bc64873617df94fc530a624f06d5b',1,'Flags_Tags.hpp']]],
-  ['v1_5f1',['V1_1',['../_flags___tags_8hpp.html#a05622e52507651466d8076952c52f833',1,'Flags_Tags.hpp']]],
-  ['v1_5f2',['V1_2',['../_flags___tags_8hpp.html#afa8edad0bfc11563f529fd78ddabd5b0',1,'Flags_Tags.hpp']]],
-  ['v1_5f3',['V1_3',['../_flags___tags_8hpp.html#acaa7c4a1f30f8d59e81b7adf8039eabe',1,'Flags_Tags.hpp']]],
-  ['v1_5f4',['V1_4',['../_flags___tags_8hpp.html#ab41cd4739db90a67aebb8f4c2fbd9279',1,'Flags_Tags.hpp']]],
-  ['v5',['V5',['../_flags___tags_8hpp.html#af0c0aecd8b9687c5234896f8509eef3f',1,'Flags_Tags.hpp']]],
-  ['v6',['V6',['../_flags___tags_8hpp.html#ab5f422186589bf7d0defb0649efbc240',1,'Flags_Tags.hpp']]],
-  ['v7',['V7',['../_flags___tags_8hpp.html#a82b67b532b9f80cb66a382596d17d4fa',1,'Flags_Tags.hpp']]],
-  ['v8',['V8',['../_flags___tags_8hpp.html#adc1407a2859e63b6b7115fc2dcf5ac98',1,'Flags_Tags.hpp']]],
-  ['v9',['V9',['../_flags___tags_8hpp.html#afdb5bb692f90f217f3b7562be47d238b',1,'Flags_Tags.hpp']]]
+  ['tag_5fclas',['TAG_CLAS',['../_flags___tags_8hpp.html#a017da43af9c26791ca457db0c6de4d33',1,'Flags_Tags.hpp']]],
+  ['tag_5fdbl',['TAG_DBL',['../_flags___tags_8hpp.html#a47b865eda1bc9dcc807327e2506874a6',1,'Flags_Tags.hpp']]],
+  ['tag_5fflt',['TAG_FLT',['../_flags___tags_8hpp.html#a1046619df26185fb3ca9440439bff9e6',1,'Flags_Tags.hpp']]],
+  ['tag_5fint',['TAG_INT',['../_flags___tags_8hpp.html#a4b16c8b8d53e6cf0887c366023e64020',1,'Flags_Tags.hpp']]],
+  ['tag_5flng',['TAG_LNG',['../_flags___tags_8hpp.html#a2d186c2d6af7fe6ed23fb2b642388c1f',1,'Flags_Tags.hpp']]],
+  ['tag_5fnom_5ftip',['TAG_NOM_TIP',['../_flags___tags_8hpp.html#ab2cdd23f8021877581fa02019f9ff962',1,'Flags_Tags.hpp']]],
+  ['tag_5fref_5fcmp',['TAG_REF_CMP',['../_flags___tags_8hpp.html#a4c4a66e95ff5f6079336d57854f2634c',1,'Flags_Tags.hpp']]],
+  ['tag_5fref_5fmtd',['TAG_REF_MTD',['../_flags___tags_8hpp.html#a50339c33eb3372f9e56b5740c6e3afc3',1,'Flags_Tags.hpp']]],
+  ['tag_5fref_5fmtd_5fitf',['TAG_REF_MTD_ITF',['../_flags___tags_8hpp.html#a3d24899cbe678bbb7cd89402903a6633',1,'Flags_Tags.hpp']]],
+  ['tag_5fstr',['TAG_STR',['../_flags___tags_8hpp.html#a149de8b5ff30bab6266838029340b0e1',1,'Flags_Tags.hpp']]],
+  ['tag_5futf',['TAG_UTF',['../_flags___tags_8hpp.html#acf692dd13052c05d505ac4e9d8e76280',1,'Flags_Tags.hpp']]],
+  ['tipo_5farq_5faceito',['TIPO_ARQ_ACEITO',['../_parametros_8hpp.html#a2c8def722c50f464d70ab3f59d729439',1,'Parametros.hpp']]]
 ];

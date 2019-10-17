@@ -87,7 +87,16 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html','');});
 <h2>Ferramentas</h2>
 <p>Sendo um código desenvolvido em C/C++ o analisador estático é o <a href="https://github.com/danmar/cppcheck">CppCheck</a> na versão 1.89 (a mais recente até o momento), podendo ser instalado, em Linux, a partir dos comandos:</p>
 <div class="fragment"><div class="line">git clone git://github.com/danmar/cppcheck.git</div><div class="line">cd cppcheck/</div><div class="line"># Substituir pela mais recente</div><div class="line">git checkout 1.89</div><div class="line">make MATCHCOMPILER=yes FILESDIR=/usr/share/cppcheck HAVE_RULES=yes CXXFLAGS=&quot;-O2 -DNDEBUG -Wall -Wno-sign-compare -Wno-unused-function&quot;</div><div class="line">sudo FILESDIR=/usr/share/cppcheck make install</div><div class="line"># Testando se foi instalado</div><div class="line">cppcheck --version</div></div><!-- fragment --><p>Enquanto que para o analisador dinâmico, é utilizado o <a href="http://www.valgrind.org/">Valgrind</a> na versão 3.15.0 (a mais recente até o momento), podendo ser instalado, em Linux, a partir dos comandos:</p>
-<div class="fragment"><div class="line">wget https://sourceware.org/pub/valgrind/valgrind-3.15.0.tar.bz2</div><div class="line">tar -jxvf valgrind-3.15.0.tar.bz2</div><div class="line">cd valgrind-3.15.0/</div><div class="line">./configure</div><div class="line">make</div><div class="line">sudo make install</div><div class="line"># Testando se foi instalado</div><div class="line">valgrind --version</div></div><!-- fragment --> </div></div><!-- contents -->
+<div class="fragment"><div class="line">wget https://sourceware.org/pub/valgrind/valgrind-3.15.0.tar.bz2</div><div class="line">tar -jxvf valgrind-3.15.0.tar.bz2</div><div class="line">cd valgrind-3.15.0/</div><div class="line">./configure</div><div class="line">make</div><div class="line">sudo make install</div><div class="line"># Testando se foi instalado</div><div class="line">valgrind --version</div></div><!-- fragment --><h2>A fazer</h2>
+<ul>
+<li>Nenhum arquivo possuia interfaces para poder programar tal parte<ul>
+<li>Embora pareça ser somente uma lista de índices</li>
+</ul>
+</li>
+<li>Expandir tipos de atributos manipulados</li>
+<li>Opção de imprimir num arquivo </li>
+</ul>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

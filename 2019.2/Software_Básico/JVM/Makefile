@@ -28,6 +28,8 @@ DIR_FONTES = `find . -type f -iname *.cpp -print |  sed -e ':a' -e 'N' -e '$!ba'
 DIR_OBJETOS = obj/
 # Arquivo executável
 EXECUTAVEL = leitor.out
+# Arquivo de configuração do doxygen
+DOC_CONFIG = doxyfile.conf
 
 ###################
 # Constantes
@@ -56,6 +58,7 @@ help:
 	@echo "    limpar_obj        Apaga todos os arquivos objetos .o já gerados"
 	@echo "    limpar_bin        Apaga o arquivo executável .out já gerado"
 	@echo "    limpar            Apaga tantos os arquivos objetos quanto o executável"
+	@echo "    doc               Gera a documentação do projeto"
 	@echo "    estatico          Analisador estático recursivo sobre o diretório corrente"
 	@echo "    objetos           Gera os arquivos objetos .o para todos os arquivos"
 	@echo "                      .c encontrados recursivamente a partir do diretório corrente"
@@ -93,6 +96,9 @@ limpar_bin:
 
 limpar: limpar_obj limpar_bin
 
+
+doc:
+	doxygen $(DOC_CONFIG)
 
 estatico:
 	@echo "${DESTAQUE}"

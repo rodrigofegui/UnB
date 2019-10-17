@@ -32,7 +32,7 @@ valgrind --version
 
 ## A fazer
 
-- Nenhum arquivo possuia interfaces para poder programar tal parte;
-    - Embora pareça ser somente uma lista de índices;
-- Opção de imprimir num arquivo;
-- Tradutor dos códigos do Code.
+- Nenhum arquivo possuia interfaces para poder programar tal parte
+    - Embora pareça ser somente uma lista de índices
+- Expandir tipos de atributos manipulados
+- Opção de imprimir num arquivo
